@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy • Multi Game Clock (Billiards · Chess · Go)</title>
+  <meta name="description" content="Privacy Policy for Multi Game Clock (Billiards · Chess · Go) app." />
+  <meta name="theme-color" content="#0F766E" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy • Multi Game Clock" />
+  <meta property="og:description" content="Privacy Policy for Multi Game Clock (Billiards · Chess · Go) app." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#121821; --text:#eef2f6; --muted:#a7b0bb;
+      --accent:#10b981; --link:#60a5fa; --border:#243041; --maxw:880px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--maxw);margin:40px auto;padding:0 16px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px}
+    h1{font-size:28px;margin:0 0 8px}
+    h2{font-size:20px;margin:28px 0 8px}
+    .muted{color:var(--muted)}
+    .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+    .badge{display:inline-block;border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted)}
+    .lang-switch{margin-left:auto}
+    button.switch{background:#0f766e;border:0;color:#fff;border-radius:10px;padding:10px 14px;cursor:pointer;font-weight:700}
+    button.switch[aria-pressed="false"]{opacity:.75}
+    .toc{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px}
+    .toc a{border:1px solid var(--border);padding:6px 10px;border-radius:10px}
+    .note{border-left:4px solid var(--accent);padding:10px 12px;background:rgba(16,185,129,.08);border-radius:8px}
+    .small{font-size:13px}
+    hr{border:0;border-top:1px solid var(--border);margin:24px 0}
+    .code{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;background:#0b1220;border:1px solid var(--border);padding:2px 6px;border-radius:6px}
+    .lang-section{display:none}
+    .lang-section.active{display:block}
+    footer{margin:26px 0 10px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="row">
+        <h1>Privacy Policy</h1>
+        <span class="badge">App: <span class="code">Multi Game Clock (Billiards · Chess · Go)</span></span>
+        <span class="badge">Package: <span class="code">com.yourcompany.multigameclock</span></span><!-- TODO: 변경 -->
+        <div class="lang-switch">
+          <button class="switch" id="btn-ko" aria-pressed="true">한국어</button>
+          <button class="switch" id="btn-en" aria-pressed="false">English</button>
+        </div>
+      </div>
+      <div class="muted small">Effective date: <strong>Oct 24, 2025 (KST)</strong> · Last updated: <strong>Oct 24, 2025</strong></div>
+
+      <nav class="toc small">
+        <a href="#intro">Intro</a>
+        <a href="#data">Data Collection</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#device">Device Features</a>
+        <a href="#third">Third-Party Services</a>
+        <a href="#ads">Advertising</a>
+        <a href="#children">Children</a>
+        <a href="#security">Security</a>
+        <a href="#changes">Changes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Korean -->
+      <section id="ko" class="lang-section active" lang="ko">
+        <h2 id="intro">소개</h2>
+        <p><strong>Multi Game Clock</strong> 앱(이하 “앱”)은 <strong>당구·체스·바둑 타이머</strong> 기능을 제공합니다. 현재 버전은 <strong>광고 및 제3자 SDK가 없으며</strong>, 단말 내에서 타이머 기능만 수행합니다.</p>
+
+        <h2 id="data">수집되는 데이터</h2>
+        <div class="note">
+          <p><strong>우리는 사용자의 개인 데이터를 수집·저장·처리·공유하지 않습니다.</strong></p>
+        </div>
+        <ul>
+          <li>계정, 이메일, 이름 등의 <strong>식별자 미수집</strong></li>
+          <li>점수/설정 등 앱 내 데이터는 <strong>로컬에서만 사용</strong>되며 외부로 전송하지 않습니다.</li>
+          <li>분석/로그 전송 <strong>없음</strong> (네트워크 비의존 동작)</li>
+        </ul>
+
+        <h2 id="permissions">권한</h2>
+        <p>앱은 동작에 필요한 최소 권한만 사용합니다. 현재 버전 기준:</p>
+        <ul>
+          <li><strong>네트워크 권한</strong> 없음(광고/분석 미사용)</li>
+          <li>(선택적으로 도입 가능) <span class="code">WAKE_LOCK</span>: 경기 중 화면 꺼짐 방지 옵션 제공 시 사용</li>
+          <li>(선택적으로 도입 가능) 진동/사운드 사용 시 관련 권한 또는 기기 기능 접근</li>
+        </ul>
+
+        <h2 id="device">디바이스 기능</h2>
+        <ul>
+          <li>타이머 정확도를 위해 <strong>기기 시간</strong>을 사용합니다.</li>
+          <li>선택 기능(도입 시): <strong>화면 꺼짐 방지</strong>, <strong>진동/사운드 알림</strong></li>
+        </ul>
+
+        <h2 id="third">제3자 서비스</h2>
+        <p>현재 버전은 제3자 SDK(광고, 분석, 크래시 리포트 등)를 포함하지 않습니다.</p>
+
+        <h2 id="ads">광고/수익화</h2>
+        <p>현재 버전은 광고를 표시하지 않습니다. 추후 광고 또는 분석을 도입하는 경우, 본 방침을 업데이트하고 관련 SDK 정책 링크를 추가하겠습니다.</p>
+
+        <h2 id="children">아동의 개인정보</h2>
+        <p>앱은 아동을 대상으로 설계되지 않았으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+        <h2 id="security">보안</h2>
+        <ul>
+          <li>앱은 네트워크에 의존하지 않으므로 외부 전송이 없습니다.</li>
+          <li>사용자 단말의 일반적인 보안 관행(잠금 화면, OS 업데이트 등)을 권장합니다.</li>
+        </ul>
+
+        <h2 id="changes">본 방침의 변경</h2>
+        <p>우리는 본 방침을 수시로 업데이트할 수 있습니다. 변경 시 본 페이지의 “Last updated”를 갱신합니다. 중요한 변경이 있는 경우, 앱 내 공지 또는 스토어 노트를 통해 고지합니다.</p>
+
+        <h2 id="contact">문의</h2>
+        <p>본 방침에 관해 질문이 있으시면 아래로 연락해 주세요.</p>
+        <ul>
+          <li>회사/개발자: <span class="code">Your Company / Developer</span> <!-- TODO --></li>
+          <li>이메일: <a href="mailto:support@example.com">support@example.com</a> <!-- TODO --></li>
+          <li>주소(선택): <span class="code">Your Address</span> <!-- TODO --></li>
+        </ul>
+      </section>
+
+      <!-- English -->
+      <section id="en" class="lang-section" lang="en">
+        <h2 id="intro">Introduction</h2>
+        <p>The <strong>Multi Game Clock</strong> app provides timers for <strong>Billiards, Chess, and Go (Baduk)</strong>. The current version has <strong>no ads and no third-party SDKs</strong>, and runs timers locally on the device.</p>
+
+        <h2 id="data">Data We Collect</h2>
+        <div class="note">
+          <p><strong>We do not collect, store, process, or share any personal data.</strong></p>
+        </div>
+        <ul>
+          <li>No collection of identifiers (accounts, emails, names, etc.).</li>
+          <li>Scores and settings are used <strong>locally</strong> and are not transmitted.</li>
+          <li>No analytics/logging to remote servers (no network dependency).</li>
+        </ul>
+
+        <h2 id="permissions">Permissions</h2>
+        <p>The App uses only minimal permissions. In the current release:</p>
+        <ul>
+          <li><strong>No network permissions</strong> (no ads/analytics).</li>
+          <li>(Optionally, if enabled) <span class="code">WAKE_LOCK</span> to keep the screen on during matches.</li>
+          <li>(Optionally, if enabled) Vibration/Sound features may access device capabilities.</li>
+        </ul>
+
+        <h2 id="device">Device Features</h2>
+        <ul>
+          <li>The timer relies on the <strong>device clock</strong> for accuracy.</li>
+          <li>Optional features (if provided): <strong>keep screen on</strong>, <strong>vibration/sound cues</strong>.</li>
+        </ul>
+
+        <h2 id="third">Third-Party Services</h2>
+        <p>The current version does not include any third-party SDKs (ads, analytics, crash reporting, authentication, etc.).</p>
+
+        <h2 id="ads">Advertising / Monetization</h2>
+        <p>No ads are shown in this release. If we introduce ads or analytics in the future, we will update this Policy and include links to the relevant SDK policies.</p>
+
+        <h2 id="children">Children’s Privacy</h2>
+        <p>The App is not directed to children, and we do not knowingly collect personal data from children.</p>
+
+        <h2 id="security">Security</h2>
+        <ul>
+          <li>The App does not transmit data to external servers.</li>
+          <li>We recommend standard device security practices (screen lock, OS updates, etc.).</li>
+        </ul>
+
+        <h2 id="changes">Changes to This Policy</h2>
+        <p>We may update this Policy from time to time. We will update the “Last updated” date above and, for material changes, provide notice in-app or via store release notes.</p>
+
+        <h2 id="contact">Contact</h2>
+        <p>If you have questions about this Policy, please contact us:</p>
+        <ul>
+          <li>Company/Developer: <span class="code">Your Company / Developer</span> <!-- TODO --></li>
+          <li>Email: <a href="mailto:support@example.com">support@example.com</a> <!-- TODO --></li>
+          <li>Address (optional): <span class="code">Your Address</span> <!-- TODO --></li>
+        </ul>
+      </section>
+
+      <hr />
+      <p class="small muted">
+        Host this URL in your store listing and link it from within the App (Settings or Help menu).
+      </p>
+      <footer class="small">© <span id="yy"></span> Your Company. All rights reserved.</footer>
+    </div>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('yy').textContent = new Date().getFullYear();
+
+    // Language toggle
+    const $ko = document.getElementById('ko');
+    const $en = document.getElementById('en');
+    const btnKo = document.getElementById('btn-ko');
+    const btnEn = document.getElementById('btn-en');
+
+    function setLang(lang){
+      if(lang==='ko'){
+        $ko.classList.add('active'); $en.classList.remove('active');
+        btnKo.setAttribute('aria-pressed','true'); btnEn.setAttribute('aria-pressed','false');
+      }else{
+        $en.classList.add('active'); $ko.classList.remove('active');
+        btnEn.setAttribute('aria-pressed','true'); btnKo.setAttribute('aria-pressed','false');
+      }
+      history.replaceState(null,'',location.pathname + (lang==='ko'?'':'?lang=en'));
+      document.documentElement.lang = lang;
+    }
+
+    btnKo.addEventListener('click',()=>setLang('ko'));
+    btnEn.addEventListener('click',()=>setLang('en'));
+
+    // Init from query (?lang=en)
+    const params=new URLSearchParams(location.search);
+    setLang(params.get('lang')==='en'?'en':'ko');
+  </script>
+</body>
+</html>
