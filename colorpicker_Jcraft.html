@@ -24,13 +24,14 @@
     footer { margin-top:24px; font-size:0.92rem; color:var(--muted); }
     .hidden { display:none; }
     ul.compact li { margin:4px 0; }
+    a { color: inherit; }
   </style>
 </head>
 <body>
   <main class="wrap">
     <h1>Privacy Policy <span class="muted">— ColorPicker</span></h1>
     <div class="meta">
-      <span id="effective">Effective date: <strong>2025-10-24</strong></span> ·
+      <span id="effective">Effective date: <strong>2025-10-28</strong></span> ·
       <span>Developer: <strong>JCraft Studio</strong></span>
     </div>
 
@@ -46,89 +47,91 @@
         <h2>Overview</h2>
         <p>
           This Privacy Policy explains how the <strong>ColorPicker</strong> app (“the App”, “we”) handles your information.
-          The App itself does not create an account, upload your personal content to our servers, or sell your data.
-          <strong>As of this version, the App includes Google AdMob to display ads.</strong> AdMob and its partners may
-          process certain device and usage information to provide, measure, and improve ads. Details are below.
+          The App does not create user accounts, upload your personal content to our servers, or sell your data.
+          <strong>This version integrates Google AdMob to display ads.</strong> AdMob and its certified partners may process
+          certain device and usage data to provide, measure, and improve ads. Details are below.
         </p>
       </div>
 
       <div class="card">
-        <h2>What We Collect</h2>
-        <p>We do not directly collect or store personally identifiable information on our own servers. However, when ads are shown, <strong>Google AdMob</strong> (as an independent controller) may collect and/or process:</p>
+        <h2>SDKs We Use</h2>
+        <ul class="compact">
+          <li><strong>Google Mobile Ads (AdMob)</strong> — ad serving, measurement, fraud prevention, and frequency capping. Personalised or non-personalised ads may be shown depending on your settings and region (see “Consent & Choices”).</li>
+        </ul>
+        <p>We do not embed separate analytics SDKs in this build beyond AdMob/mediation if enabled.</p>
+      </div>
+
+      <div class="card">
+        <h2>What Is Collected When Ads Are Shown</h2>
+        <p>We do not directly store personally identifiable information on our own servers. However, when ads are requested or displayed, <strong>Google AdMob</strong> (as an independent controller) may collect and/or process:</p>
         <ul class="compact">
           <li><strong>Identifiers:</strong> Advertising ID (AAID), IP address.</li>
-          <li><strong>Device & App Info:</strong> device model, OS version, app version, crash/diagnostic data.</li>
-          <li><strong>Ad Data:</strong> ad impressions, clicks, frequency, performance, and fraud-prevention signals.</li>
+          <li><strong>Device & App Info:</strong> device model, OS version, app version, crash/diagnostic signals.</li>
+          <li><strong>Ad Data:</strong> ad requests, impressions, clicks, viewability, frequency, performance, and anti-fraud signals.</li>
           <li><strong>Approximate Location:</strong> inferred from IP or signals for ad delivery and reporting (we do not request precise GPS).</li>
         </ul>
-        <p>AdMob uses this information for purposes such as ad selection, delivery, measurement, security, and compliance. Data handling (including retention and sharing with certified partners/mediation) follows Google’s policies.</p>
+        <p>Processing purposes include ad selection/delivery/measurement, security, and compliance. Data handling (retention, sharing with certified partners, mediation) follows Google’s policies.</p>
       </div>
 
       <div class="card">
-        <h2>Data Sharing</h2>
-        <p>
-          Ads in the App are served by <strong>Google AdMob</strong>. AdMob may share data with its certified ad technology providers for the purposes listed above. We do not sell your personal information. We do not receive raw device identifiers from AdMob.
-        </p>
-        <p class="muted">Learn more: Google Privacy &amp; Terms, AdMob Policies, Ads Settings (see “Your Choices” below).</p>
+        <h2>Consent & Your Choices</h2>
+        <ul class="compact">
+          <li><strong>EEA/UK (GDPR):</strong> Where required, we use Google’s <em>User Messaging Platform (UMP)</em> to obtain consent and to serve <em>non-personalised ads</em> if consent is not granted.</li>
+          <li><strong>Reset / Limit Advertising ID:</strong> Android Settings → Privacy → Ads to reset your Advertising ID or limit ad personalisation.</li>
+          <li><strong>Ads Settings:</strong> Manage your Google ad personalisation at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
+        </ul>
       </div>
 
       <div class="card">
         <h2>Permissions</h2>
-        <p>
-          To function and show ads, the App may use standard permissions such as:
-        </p>
+        <p>The App uses standard permissions to function and show ads:</p>
         <ul class="compact">
-          <li><strong>Internet/Network Access:</strong> to request and display ads.</li>
-          <li><strong>Advertising ID (Android):</strong> used by AdMob for ad delivery and measurement. You can reset/limit this in Android settings.</li>
+          <li><strong>INTERNET / Network access</strong> — to request and display ads.</li>
+          <li><strong>Advertising ID (Android)</strong> — used by AdMob for ad delivery and measurement.
+            The permission <code>com.google.android.gms.permission.AD_ID</code> may be declared in the AdMob library manifest and merged into the App’s manifest.</li>
         </ul>
-        <p>We do <strong>not</strong> request sensitive permissions (Contacts, precise Location, Photos/Media) for this App version.</p>
+        <p>We do <strong>not</strong> request sensitive permissions (Contacts, precise Location, Photos/Media) in this version.</p>
       </div>
 
       <div class="card">
-        <h2>Your Choices & Opt-Out</h2>
-        <ul class="compact">
-          <li><strong>Reset / Limit Advertising ID:</strong> Android Settings → Privacy → Ads (or similar) to reset your Advertising ID or opt out of personalized ads.</li>
-          <li><strong>Ads Settings:</strong> Manage Google ad personalisation at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
-          <li><strong>Do Not Track / Limit Ad Tracking:</strong> Respect is subject to device/OS support and ad network behavior.</li>
-        </ul>
+        <h2>Data Sharing</h2>
+        <p>Ads are served by <strong>Google AdMob</strong>. AdMob may share data with certified ad technology providers for the purposes above. We do not sell personal information and we do not receive raw device identifiers from AdMob.</p>
+        <p class="muted">See also: Google Privacy &amp; Terms, AdMob Policies, Google’s list of certified ad technology providers.</p>
       </div>
 
       <div class="card">
         <h2>Regional Rights</h2>
-        <p><strong>EEA/UK (GDPR):</strong> Where required, Google provides consent management and limited ads. Your rights may include access, correction, deletion, objection, and portability. You can exercise certain choices via Ads Settings and your device.</p>
-        <p><strong>California (CCPA/CPRA):</strong> You can opt out of “sale”/“sharing” for cross-context behavioral advertising through Google Ads Settings and Android ad preferences. We do not sell personal information.</p>
+        <p><strong>GDPR (EEA/UK):</strong> Rights may include access, correction, deletion, objection, restriction, and portability. Certain choices can be exercised via device settings and Ads Settings.</p>
+        <p><strong>California (CCPA/CPRA):</strong> You may opt out of “sale”/“sharing” for cross-context behavioral advertising via Ads Settings and Android ad preferences. We do not sell personal information.</p>
       </div>
 
       <div class="card">
         <h2>Children’s Privacy</h2>
-        <p>
-          The App is not directed to children under the age of 13 (or as defined by local law) and does not knowingly collect personal information from children. We do not enable “Designed for Families” or child-directed ad settings.
-        </p>
+        <p>The App is not directed to children under 13 (or as defined by local law) and does not knowingly collect personal information from children. We do not enable “Designed for Families” or child-directed ad settings.</p>
       </div>
 
       <div class="card">
         <h2>Security & Retention</h2>
-        <p>
-          We do not maintain user profiles on our own servers for this App. AdMob stores and secures data according to Google’s policies and industry standards. We encourage you to keep your device and OS up to date.
-        </p>
+        <p>We do not maintain user profiles on our own servers for this App. AdMob stores and secures data according to Google’s policies and industry standards. Keep your device/OS up to date for best security.</p>
+      </div>
+
+      <div class="card">
+        <h2>Publisher file (app-ads.txt)</h2>
+        <p>If you have a website domain, we recommend hosting an <code>app-ads.txt</code> file to improve ad revenue quality/consistency. This is optional but encouraged.</p>
       </div>
 
       <div class="card">
         <h2>Changes to This Policy</h2>
-        <p>
-          We may update this Policy from time to time. The “Effective date” above will be revised accordingly. Material changes will be highlighted in release notes and/or within the App.
-        </p>
+        <p>We may update this Policy from time to time. The “Effective date” above will be revised accordingly. Material changes will be highlighted in release notes and/or within the App.</p>
       </div>
 
       <div class="card">
         <h2>Contact</h2>
-        <p>
-          Questions? Contact <a href="mailto:jcraftstudio111@gmail.com">jcraftstudio111@gmail.com</a>.
-        </p>
+        <p>Questions? Contact <a href="mailto:jcraftstudio111@gmail.com">jcraftstudio111@gmail.com</a>.</p>
       </div>
 
       <p class="muted">
-        Note for reviewers: This build includes Google AdMob for ads. No analytics SDKs beyond AdMob/mediation are included.
+        Note for reviewers: This build uses Google AdMob for ads. No analytics SDKs beyond AdMob/mediation are included. AD_ID permission may be merged via the library manifest.
       </p>
     </section>
 
@@ -138,89 +141,90 @@
         <h2>개요</h2>
         <p>
           본 개인정보처리방침은 <strong>ColorPicker</strong> 앱(이하 “앱”)이 정보를 어떻게 처리하는지 설명합니다.
-          앱 자체는 당사 서버로 사용자의 개인 콘텐츠를 업로드하거나 계정을 생성하지 않으며, 사용자의 정보를 판매하지 않습니다.
-          <strong>본 버전부터 광고 표기를 위해 Google AdMob이 포함됩니다.</strong> AdMob 및 그 파트너는 광고 제공·측정·개선을 위해
-          기기/이용 정보를 처리할 수 있습니다(아래 상세).
+          앱은 계정을 생성하거나 사용자의 개인 콘텐츠를 당사 서버로 업로드하지 않으며, 사용자의 정보를 판매하지 않습니다.
+          <strong>본 버전에는 광고 게재를 위해 Google AdMob이 포함됩니다.</strong> AdMob 및 인증된 파트너는 광고 제공·측정·개선을 위해
+          기기/이용 데이터를 처리할 수 있습니다. 자세한 내용은 아래를 확인하세요.
         </p>
       </div>
 
       <div class="card">
-        <h2>수집·처리되는 정보</h2>
-        <p>당사는 자체 서버에 사용자를 식별할 수 있는 정보를 직접 저장하지 않습니다. 다만 광고가 표시되는 과정에서 <strong>Google AdMob</strong>(독립적인 개인정보처리자)이 다음 정보를 수집·처리할 수 있습니다.</p>
+        <h2>사용 중인 SDK</h2>
+        <ul class="compact">
+          <li><strong>Google Mobile Ads(AdMob)</strong> — 광고 제공, 측정, 부정행위 방지, 빈도 제어. 지역/설정에 따라 <em>개인맞춤형</em> 또는 <em>비개인맞춤형</em> 광고가 표시될 수 있습니다(“동의 및 선택” 참조).</li>
+        </ul>
+        <p>본 빌드에는 AdMob/중개(mediation) 외 별도의 분석 SDK를 포함하지 않습니다.</p>
+      </div>
+
+      <div class="card">
+        <h2>광고 표시 시 수집·처리되는 정보</h2>
+        <p>당사는 본 앱과 관련하여 당사 자체 서버에 개인을 직접 식별할 정보를 저장하지 않습니다. 다만 광고 요청/표시 과정에서 <strong>Google AdMob</strong>(독립적 개인정보처리자)이 다음 정보를 수집·처리할 수 있습니다.</p>
         <ul class="compact">
           <li><strong>식별자:</strong> 광고 ID(AAID), IP 주소</li>
-          <li><strong>기기·앱 정보:</strong> 기기 모델, OS 버전, 앱 버전, 오류/진단 정보</li>
-          <li><strong>광고 데이터:</strong> 광고 노출·클릭·빈도·성과, 이상 탐지/부정 방지 신호</li>
+          <li><strong>기기·앱 정보:</strong> 기기 모델, OS 버전, 앱 버전, 오류/진단 신호</li>
+          <li><strong>광고 데이터:</strong> 광고 요청/노출/클릭, 가시성, 빈도, 성과, 이상 탐지/부정 방지 신호</li>
           <li><strong>대략적 위치:</strong> IP 등으로 추정(정밀 GPS는 요청하지 않음)</li>
         </ul>
-        <p>AdMob은 위 정보를 광고 선정·전달·측정, 보안 및 규정 준수를 위해 사용하며, 보관·공유는 Google 정책을 따릅니다.</p>
+        <p>처리 목적에는 광고 선정·전달·측정, 보안 및 규정 준수가 포함되며, 보관·공유(인증된 파트너/중개 포함)는 Google 정책을 따릅니다.</p>
+      </div>
+
+      <div class="card">
+        <h2>동의 및 선택(옵트아웃)</h2>
+        <ul class="compact">
+          <li><strong>EEA/영국(GDPR):</strong> 필요한 경우 Google의 <em>User Messaging Platform(UMP)</em>을 통해 동의를 받으며, 동의가 없을 때는 <em>비개인맞춤형 광고</em>가 제공될 수 있습니다.</li>
+          <li><strong>광고 ID 재설정/제한:</strong> 안드로이드 설정 → 개인정보 보호 → 광고에서 광고 ID 재설정 또는 맞춤형 광고 제한.</li>
+          <li><strong>광고 설정:</strong> <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>에서 Google 맞춤형 광고 설정 관리.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>권한</h2>
+        <p>앱 및 광고 기능을 위해 다음과 같은 일반 권한이 사용됩니다.</p>
+        <ul class="compact">
+          <li><strong>인터넷/네트워크 접근</strong> — 광고 요청 및 표시.</li>
+          <li><strong>광고 ID(Android)</strong> — AdMob의 광고 제공·측정에 사용. <code>com.google.android.gms.permission.AD_ID</code> 권한은 AdMob 라이브러리 매니페스트에 선언되어 앱 매니페스트에 병합될 수 있습니다.</li>
+        </ul>
+        <p>본 버전은 <strong>연락처, 정밀 위치, 사진/미디어</strong> 등의 민감 권한을 요청하지 않습니다.</p>
       </div>
 
       <div class="card">
         <h2>데이터 공유</h2>
-        <p>
-          앱의 광고는 <strong>Google AdMob</strong>이 제공합니다. AdMob은 인증된 광고 기술 파트너와 위 목적 범위 내에서 데이터를 공유할 수 있습니다.
-          당사는 개인 정보를 판매하지 않으며, AdMob으로부터 원시 기기 식별자를 제공받지 않습니다.
-        </p>
-        <p class="muted">자세히 보기: Google 개인정보처리방침/약관, AdMob 정책, 광고 설정(아래 “선택 사항” 참조)</p>
-      </div>
-
-      <div class="card">
-        <h2>권한 사용</h2>
-        <p>앱 및 광고 기능을 위해 다음과 같은 일반 권한이 사용될 수 있습니다.</p>
-        <ul class="compact">
-          <li><strong>인터넷/네트워크 접근:</strong> 광고 요청 및 표시</li>
-          <li><strong>광고 ID(Android):</strong> AdMob의 광고 제공·측정에 사용(설정에서 재설정/제한 가능)</li>
-        </ul>
-        <p>본 버전은 <strong>연락처, 정밀 위치, 사진/미디어</strong>와 같은 민감 권한을 요청하지 않습니다.</p>
-      </div>
-
-      <div class="card">
-        <h2>사용자 선택(옵트아웃)</h2>
-        <ul class="compact">
-          <li><strong>광고 ID 재설정/제한:</strong> 안드로이드 설정 → 개인정보 보호 → 광고(또는 유사 경로)에서 광고 ID 재설정 또는 맞춤형 광고 제한</li>
-          <li><strong>광고 설정:</strong> <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a> 에서 Google 맞춤형 광고 설정 관리</li>
-          <li><strong>추적 제한:</strong> 기기/OS 및 광고 네트워크 지원 범위 내에서 적용</li>
-        </ul>
+        <p>앱의 광고는 <strong>Google AdMob</strong>이 제공합니다. AdMob은 위 목적 범위 내에서 인증된 광고 기술 파트너와 데이터를 공유할 수 있습니다. 당사는 개인 정보를 판매하지 않으며, AdMob으로부터 원시 기기 식별자를 제공받지 않습니다.</p>
+        <p class="muted">참고: Google 개인정보처리방침/약관, AdMob 정책, 인증된 광고 기술 파트너 목록.</p>
       </div>
 
       <div class="card">
         <h2>지역별 권리</h2>
-        <p><strong>EEA/영국(GDPR):</strong> 필요한 경우 Google은 동의 관리 및 제한 광고(Non-Personalized Ads)를 제공합니다. 이용자는 접근·정정·삭제·처리 제한·이의 제기·이동권 등의 권리를 가질 수 있습니다(일부 권리는 광고 설정/기기 설정을 통해 행사).</p>
-        <p><strong>캘리포니아(CCPA/CPRA):</strong> 교차문맥 행태기반 광고 “판매/공유” 옵트아웃을 광고 설정 및 Android 광고 환경설정에서 관리할 수 있습니다. 당사는 개인 정보를 판매하지 않습니다.</p>
+        <p><strong>GDPR(EEA/영국):</strong> 접근·정정·삭제·처리 제한·이의 제기·이동권 등의 권리가 적용될 수 있습니다. 일부 권리는 기기 설정 및 광고 설정을 통해 행사할 수 있습니다.</p>
+        <p><strong>캘리포니아(CCPA/CPRA):</strong> 교차문맥 행태기반 광고에 대한 “판매/공유” 옵트아웃을 광고 설정 및 Android 광고 환경설정에서 관리할 수 있습니다. 당사는 개인 정보를 판매하지 않습니다.</p>
       </div>
 
       <div class="card">
         <h2>아동의 개인정보</h2>
-        <p>
-          본 앱은 만 13세 미만(또는 지역 법령상 해당 연령)의 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.
-          “아동용으로 설계됨(Designed for Families)” 설정을 사용하지 않습니다.
-        </p>
+        <p>본 앱은 만 13세 미만(또는 지역 법령상 해당 연령)의 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다. “아동용으로 설계됨(Designed for Families)” 설정을 사용하지 않습니다.</p>
       </div>
 
       <div class="card">
         <h2>보안 및 보관</h2>
-        <p>
-          당사는 본 앱과 관련하여 자체 서버에 사용자 프로필을 보관하지 않습니다. AdMob 데이터의 저장·보안은 Google 정책과 업계 표준에 따릅니다. 기기/OS를 최신 상태로 유지하시기 바랍니다.
-        </p>
+        <p>당사는 본 앱과 관련하여 자체 서버에 사용자 프로필을 보관하지 않습니다. AdMob 데이터의 저장·보안은 Google 정책과 업계 표준에 따릅니다. 기기/OS를 최신 상태로 유지하시기 바랍니다.</p>
+      </div>
+
+      <div class="card">
+        <h2>퍼블리셔 파일(app-ads.txt)</h2>
+        <p>웹사이트 도메인이 있는 경우 <code>app-ads.txt</code>를 호스팅하는 것을 권장합니다(수익 품질/안정성 향상). 필수는 아니나 권장 사항입니다.</p>
       </div>
 
       <div class="card">
         <h2>방침 변경</h2>
-        <p>
-          본 방침은 수시로 업데이트될 수 있으며, 변경 시 상단 “시행일”을 수정합니다. 중요한 변경은 업데이트 노트 및/또는 앱 내 공지로 안내합니다.
-        </p>
+        <p>본 방침은 수시로 업데이트될 수 있으며, 변경 시 상단 “시행일”을 수정합니다. 중요한 변경은 출시 노트 및/또는 앱 내 공지로 안내합니다.</p>
       </div>
 
       <div class="card">
         <h2>문의처</h2>
-        <p>
-          문의 사항: <a href="mailto:jcraftstudio111@gmail.com">jcraftstudio111@gmail.com</a>
-        </p>
+        <p>문의: <a href="mailto:jcraftstudio111@gmail.com">jcraftstudio111@gmail.com</a></p>
       </div>
 
       <p class="muted">
-        검수 참고: 본 빌드는 광고 게재를 위해 Google AdMob을 포함합니다. AdMob/중개 외 분석 SDK는 포함하지 않습니다.
+        검수 참고: 본 빌드는 광고 게재를 위해 Google AdMob을 포함합니다. AdMob/중개 외 별도 분석 SDK는 포함하지 않습니다. AD_ID 권한은 라이브러리 매니페스트 병합을 통해 사용될 수 있습니다.
       </p>
     </section>
 
@@ -232,9 +236,9 @@
   <!--
     ✅ AdMob integrated version.
     Before each release:
-    1) Verify Google Play “Data safety” answers match this Policy.
+    1) Ensure Google Play “Data safety” answers match this Policy.
     2) If you add mediation/other SDKs, list them here and update categories.
-    3) Keep “Effective date” in sync with console disclosures.
+    3) Keep the “Effective date” in sync with console disclosures.
   -->
 
   <script>
@@ -256,9 +260,6 @@
 
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // 👉 Replace these if needed:
-    // Developer name, contact email
   </script>
 </body>
 </html>
