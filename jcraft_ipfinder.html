@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – IP Finder & VPN Check</title>
+  <meta name="description" content="Privacy Policy for IP Finder & VPN Check by JCraft Studio." />
+  <style>
+    :root {
+      --fg:#0f172a; --bg:#fff; --muted:#64748b; --card:#f8fafc; --accent:#0ea5e9;
+      --ok:#0ea5e9; --border:#e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg:#e2e8f0; --bg:#0b1220; --muted:#94a3b8; --card:#0f172a; --border:#1f2740; }
+    }
+    * { box-sizing:border-box }
+    html,body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple SD Gothic Neo, Noto Sans KR, "맑은 고딕", sans-serif; color:var(--fg); background:var(--bg); }
+    a { color:var(--accent); text-decoration:none }
+    a:hover { text-decoration:underline }
+    .wrap { max-width:880px; margin:0 auto; padding:32px 20px 80px }
+    .header { display:flex; align-items:center; gap:12px; margin-bottom:16px }
+    .logo { width:40px; height:40px; border-radius:999px; display:grid; place-items:center; background:rgba(14,165,233,.15); color:var(--accent); font-weight:800 }
+    h1 { font-size:28px; margin:0 }
+    .meta { color:var(--muted); font-size:14px; margin:6px 0 18px }
+    .lang { display:flex; gap:8px; margin:8px 0 20px }
+    .lang button {
+      padding:8px 12px; border:1px solid var(--border); background:transparent; color:var(--fg);
+      border-radius:10px; cursor:pointer; font-weight:600
+    }
+    .lang button.active { background:var(--card); }
+    .card {
+      border:1px solid var(--border); background:var(--card);
+      border-radius:16px; padding:20px; margin:14px 0;
+    }
+    h2 { font-size:20px; margin:8px 0 10px }
+    p,li { line-height:1.7; }
+    ul { padding-left:20px; margin:8px 0 }
+    .note { font-size:13px; color:var(--muted) }
+    footer { margin-top:28px; font-size:13px; color:var(--muted) }
+    .sep { height:1px; background:var(--border); margin:24px 0 }
+    .badge { display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; border:1px solid var(--border); background:var(--bg); color:var(--muted) }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="logo">IP</div>
+      <div>
+        <h1>Privacy Policy – IP Finder & VPN Check</h1>
+        <div class="meta">
+          Developer: <strong>JCraft Studio</strong> · Last updated: <time datetime="2025-10-30">2025-10-30</time>
+        </div>
+      </div>
+    </div>
+
+    <!-- Language Switch -->
+    <div class="lang">
+      <button id="btn-ko" class="active" onclick="setLang('ko')">한국어</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+
+    <!-- Korean -->
+    <section id="ko">
+      <div class="card">
+        <h2>1. 개요</h2>
+        <p><em>IP Finder & VPN Check</em>(이하 “앱”)은 사용자의 로그인이나 회원가입 없이, 네트워크 정보를 조회해 화면에 보여주는 유틸리티입니다. 본 정책은 당사가 어떤 정보를 어떻게 처리하는지 설명합니다.</p>
+        <p class="badge">현재 버전(1.0.0) 기준: 자체 수집 없음 · 광고 미도입</p>
+      </div>
+
+      <div class="card">
+        <h2>2. 우리가 수집하는 정보</h2>
+        <ul>
+          <li><strong>사용자 식별 정보</strong>: 앱은 이름, 이메일, 전화번호 등 <u>개인 식별 정보(PII)를 수집하지 않습니다</u>.</li>
+          <li><strong>기기 권한</strong>: 인터넷(네트워크 요청)을 제외한 권한을 요구하지 않습니다.</li>
+          <li><strong>네트워크 조회</strong>: 사용자의 네트워크 특성(공인 IP, 국가, VPN/Proxy 여부 등)을 <span class="mono">Cloudflare Worker</span>를 통해 제3자 정보원(예: ipify, ipinfo 등)에서 조회합니다. 이 과정에서 사용자의 <em>공인 IP 주소</em>가 <u>해당 제3자 API로 전송될 수 있습니다</u>. 우리는 이 데이터를 별도 저장하지 않습니다.</li>
+        </ul>
+        <p class="note">※ 제3자 API는 각각의 개인정보 처리방침을 가질 수 있습니다. 서비스 안정성을 위해 추후 제공자 변경 또는 다중 소스를 사용할 수 있습니다.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. 데이터 저장 및 보관</h2>
+        <ul>
+          <li>앱은 조회 결과를 <strong>일시적으로 메모리</strong>에 보관하여 화면에 표시합니다.</li>
+          <li>당사(개발자)는 사용자의 IP, 조회 결과를 <strong>서버에 저장하지 않습니다</strong>.</li>
+          <li>오류 분석을 위해 <span class="mono">Cloudflare Worker</span> 측에서 <em>집계성·비식별 로그(예: 상태 코드, 응답 시간)</em>가 <u>짧은 기간</u> 캐시에 남을 수 있습니다. 해당 로그에는 개인 식별 목적의 정보가 포함되지 않도록 설계합니다.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>4. 광고 및 분석 도구</h2>
+        <p><strong>현재 버전(1.0.0)에는 광고 및 제3자 분석 SDK가 포함되어 있지 않습니다.</strong> 추후 광고(예: Google AdMob)를 도입하는 경우, 관련 SDK에서 디바이스 식별자/광고 ID 등을 처리할 수 있으므로 본 정책을 업데이트하고 앱에서 동의 절차를 제공합니다.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. 아동의 개인정보</h2>
+        <p>본 앱은 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. 보안</h2>
+        <p>네트워크 통신은 HTTPS로 암호화되며, Worker에서 캐시/서명 검증 등 기본 보안 조치를 적용합니다. 단, 인터넷 특성상 100% 보안을 보장할 수는 없습니다.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. 권리 및 문의</h2>
+        <p>문의 또는 요청(정책, 보안, 신고 등)은 아래 연락처로 보내주세요. 가능하면 앱 이름과 버전을 함께 적어 주시기 바랍니다.</p>
+        <ul>
+          <li>이메일: <a href="mailto:jcraftstudio.dev@example.com">jcraftstudio.dev@example.com</a></li>
+          <li>웹사이트: <a href="https://jcraftstudio.example.com">https://jcraftstudio.example.com</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>8. 정책 변경</h2>
+        <p>법령·기능 변경에 따라 본 정책을 갱신할 수 있습니다. 중요한 변경 사항은 앱 내 공지 또는 웹사이트에 게시합니다. 최신 버전은 본 문서 상단의 “Last updated”를 확인하세요.</p>
+      </div>
+    </section>
+
+    <!-- English -->
+    <section id="en" style="display:none">
+      <div class="card">
+        <h2>1. Overview</h2>
+        <p><em>IP Finder & VPN Check</em> (the “App”) is a utility that displays network information without login or account creation. This policy explains what we process and how.</p>
+        <p class="badge">As of version 1.0.0: No first-party data collection · Ads not enabled</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Information We Collect</h2>
+        <ul>
+          <li><strong>Personal Identifiers</strong>: We do <u>not</u> collect names, emails, phone numbers, or other PII.</li>
+          <li><strong>Permissions</strong>: No permissions beyond Internet access.</li>
+          <li><strong>Network Queries</strong>: Your public IP, country, and VPN/Proxy status are queried via our <span class="mono">Cloudflare Worker</span> from third-party sources (e.g., ipify, ipinfo). Your <em>public IP address</em> may be transmitted to those providers. We do not store this data on our servers.</li>
+        </ul>
+        <p class="note">Third-party APIs may have their own privacy policies. Providers may change over time for reliability.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. Storage & Retention</h2>
+        <ul>
+          <li>Results are kept <strong>in memory</strong> temporarily to display on screen.</li>
+          <li>We do <strong>not</strong> store your IP or query results on our servers.</li>
+          <li>Our <span class="mono">Cloudflare Worker</span> may keep short-lived, aggregated, non-identifying logs (e.g., status codes, latency) for error analysis. Logs are designed to avoid personal identification.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>4. Ads & Analytics</h2>
+        <p><strong>No ad/analytics SDKs are included</strong> in the current release. If we later enable ads (e.g., Google AdMob), we will update this policy and provide in-app consent flows as required.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Children’s Privacy</h2>
+        <p>The App is not directed to children under 13, and we do not knowingly collect their personal information.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. Security</h2>
+        <p>All traffic uses HTTPS. The Worker applies basic safeguards (e.g., caching, signature checks). However, no method is 100% secure.</p>
+      </div>
+
+      <div class="card">
+        <h2>7. Your Rights & Contact</h2>
+        <p>For questions or requests, contact us:</p>
+        <ul>
+          <li>Email: <a href="mailto:jcraftstudio.dev@example.com">jcraftstudio.dev@example.com</a></li>
+          <li>Website: <a href="https://jcraftstudio.example.com">https://jcraftstudio.example.com</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this policy for legal or product reasons. Material changes will be announced in-app or on our website. See “Last updated” above.</p>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+    <footer>
+      <p class="note">This document is provided for information purposes only and does not constitute legal advice. Please adapt it to your actual data flows and platform policies.</p>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const ko = document.getElementById('ko');
+      const en = document.getElementById('en');
+      const bKo = document.getElementById('btn-ko');
+      const bEn = document.getElementById('btn-en');
+      if (lang === 'ko') {
+        ko.style.display = '';
+        en.style.display = 'none';
+        bKo.classList.add('active');
+        bEn.classList.remove('active');
+        document.documentElement.lang = 'ko';
+      } else {
+        ko.style.display = 'none';
+        en.style.display = '';
+        bKo.classList.remove('active');
+        bEn.classList.add('active');
+        document.documentElement.lang = 'en';
+      }
+      window.scrollTo({top:0, behavior:'instant'});
+    }
+  </script>
+</body>
+</html>
