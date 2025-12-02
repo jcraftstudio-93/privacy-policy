@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy • Billiards Shot Timer</title>
+  <meta name="description" content="Privacy Policy for Billiards Shot Timer app." />
+  <meta name="theme-color" content="#0F766E" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy • Billiards Shot Timer" />
+  <meta property="og:description" content="Privacy Policy for Billiards Shot Timer app." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#121821; --text:#eef2f6; --muted:#a7b0bb;
+      --accent:#10b981; --link:#60a5fa; --border:#243041; --maxw:880px;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;padding:0;background:var(--bg);color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif
+    }
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--maxw);margin:40px auto;padding:0 16px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px}
+    h1{font-size:28px;margin:0 0 8px}
+    h2{font-size:20px;margin:28px 0 8px}
+    .muted{color:var(--muted)}
+    .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+    .badge{display:inline-block;border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted)}
+    .lang-switch{margin-left:auto}
+    button.switch{
+      background:#0f766e;border:0;color:#fff;border-radius:10px;
+      padding:10px 14px;cursor:pointer;font-weight:700
+    }
+    button.switch[aria-pressed="false"]{opacity:.75}
+    .toc{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px}
+    .toc a{border:1px solid var(--border);padding:6px 10px;border-radius:10px}
+    .note{border-left:4px solid var(--accent);padding:10px 12px;background:rgba(16,185,129,.08);border-radius:8px}
+    .small{font-size:13px}
+    hr{border:0;border-top:1px solid var(--border);margin:24px 0}
+    .code{
+      font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background:#0b1220;border:1px solid var(--border);padding:2px 6px;border-radius:6px
+    }
+    .lang-section{display:none}
+    .lang-section.active{display:block}
+    footer{margin:26px 0 10px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="row">
+        <h1>Privacy Policy</h1>
+        <span class="badge">App: <span class="code">Billiards Shot Timer</span></span>
+        <!-- <span class="badge">Package: <span class="code">com.yourcompany.billiardsshottimer</span></span> TODO: 패키지명에 맞게 수정 -->
+        <div class="lang-switch">
+          <button class="switch" id="btn-ko" aria-pressed="true">한국어</button>
+          <button class="switch" id="btn-en" aria-pressed="false">English</button>
+        </div>
+      </div>
+      <div class="muted small">
+        Effective date: <strong>Dec 2, 2025 (KST)</strong> · Last updated: <strong>Dec 2, 2025</strong>
+      </div>
+
+      <nav class="toc small">
+        <a href="#intro">Intro</a>
+        <a href="#data">Data Collection</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#device">Device Features</a>
+        <a href="#third">Third-Party Services</a>
+        <a href="#ads">Advertising</a>
+        <a href="#children">Children</a>
+        <a href="#security">Security</a>
+        <a href="#changes">Changes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Korean -->
+      <section id="ko" class="lang-section active" lang="ko">
+        <h2 id="intro">소개</h2>
+        <p>
+          <strong>Billiards Shot Timer</strong> 앱(이하 “앱”)은
+          <strong>당구 경기(3구, 4구, 포켓볼 등)를 위한 샷 타이머 및 간단한 점수 관리 기능</strong>을 제공합니다.
+          현재 버전은 <strong>제3자 SDK를 사용하지 않으며</strong>, 단말 내에서 타이머와 점수 기능만 수행합니다.
+        </p>
+
+        <h2 id="data">수집되는 데이터</h2>
+        <div class="note">
+          <p><strong>우리는 사용자의 개인 데이터를 수집·저장·처리·공유하지 않습니다.</strong></p>
+        </div>
+        <ul>
+          <li>계정, 이메일, 이름 등의 <strong>개인 식별자 미수집</strong></li>
+          <li>점수, 이닝, 플레이어 이름, 설정 등 앱 내 데이터는 <strong>로컬에서만 사용</strong>되며 외부 서버로 전송되지 않습니다.</li>
+          <li>서버로 전송되는 분석/로그 수집 기능을 <strong>사용하지 않습니다</strong>.</li>
+        </ul>
+
+        <h2 id="permissions">권한</h2>
+        <p>앱은 기능 제공에 필요한 최소한의 권한만 사용합니다. 현재 버전 기준:</p>
+        <ul>
+          <li>네트워크 접근 권한 없음 (원격 서버 연동, 원격 분석 기능 미사용)</li>
+          <li>(선택적으로 도입 가능) <span class="code">WAKE_LOCK</span>:
+            경기 중 화면 꺼짐 방지 옵션을 제공하는 경우에만 사용될 수 있습니다.</li>
+          <li>(선택적으로 도입 가능) 진동/사운드 알림 기능 사용 시, 기기 진동/소리 기능에 접근할 수 있습니다.</li>
+        </ul>
+
+        <h2 id="device">디바이스 기능</h2>
+        <ul>
+          <li>타이머 정확도를 위해 <strong>기기 시스템 시간</strong>을 사용합니다.</li>
+          <li>선택 기능(도입 시):
+            <ul>
+              <li><strong>화면 꺼짐 방지</strong>를 위한 화면 유지 기능</li>
+              <li>샷 종료 알림을 위한 <strong>진동/사운드</strong> 표시</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2 id="third">제3자 서비스</h2>
+        <p>
+          현재 버전은 광고, 분석, 크래시 리포트, 인증 등
+          <strong>어떠한 제3자 SDK도 포함하지 않습니다</strong>.
+        </p>
+
+        <h2 id="ads">광고/수익화</h2>
+        <p>
+          이 버전의 앱은 <strong>광고를 표시하지 않으며, 인앱 결제도 제공하지 않습니다</strong>.
+          향후 광고 또는 분석 도구를 도입하는 경우,
+          본 개인정보 처리방침을 업데이트하고, 관련 SDK의 정책 링크 및 필요한 동의 절차를 추가하겠습니다.
+        </p>
+
+        <h2 id="children">아동의 개인정보</h2>
+        <p>
+          앱은 특정 연령대(아동)를 주요 대상으로 설계되지 않았으며,
+          아동의 개인정보를 고의로 수집하지 않습니다. 만약 아동의 개인정보가 수집된 사실을 인지하게 되는 경우,
+          가능한 한 신속히 해당 정보를 삭제하기 위한 조치를 취하겠습니다.
+        </p>
+
+        <h2 id="security">보안</h2>
+        <ul>
+          <li>앱은 데이터를 외부 서버로 전송하지 않으며, 대부분의 데이터는 사용자 기기 내에서만 처리됩니다.</li>
+          <li>사용자께서는 기기 잠금 설정, 운영체제 및 보안 패치 최신화 등
+              일반적인 모바일 보안 수칙을 준수하실 것을 권장드립니다.</li>
+        </ul>
+
+        <h2 id="changes">본 방침의 변경</h2>
+        <p>
+          우리는 법령 변경, 서비스 개선 등으로 인해 본 방침을 수시로 업데이트할 수 있습니다.
+          변경 시 본 페이지의 “Last updated” 날짜를 갱신하며,
+          중요한 변경사항이 있는 경우 앱 내 공지 또는 스토어 릴리스 노트를 통해 추가로 안내드릴 수 있습니다.
+        </p>
+
+        <h2 id="contact">문의</h2>
+        <p>본 방침 또는 앱의 개인정보 보호에 관해 질문이 있으신 경우 아래로 연락해 주세요.</p>
+        <ul>
+          <li>개발자: <span class="code">JCraft Studio</span></li>
+          <li>이메일: <a href="mailto:jcraftstudio111@gmail.com">jcraftstudio111@gmail.com</a></li>
+          <!-- 주소는 필요 시 실제 주소로 교체하거나 삭제 가능합니다. -->
+          <!-- <li>주소(선택): <span class="code">Your Address</span></li> -->
+        </ul>
+      </section>
+
+      <!-- English -->
+      <section id="en" class="lang-section" lang="en">
+        <h2 id="intro">Introduction</h2>
+        <p>
+          The <strong>Billiards Shot Timer</strong> app (the “App”) provides a
+          <strong>shot clock and simple score tracking for billiards games</strong>
+          (including 3-cushion, 4-ball, and pocket billiards). The current version
+          <strong>does not use any third-party SDKs</strong> and runs its timer and score
+          features locally on the device.
+        </p>
+
+        <h2 id="data">Data We Collect</h2>
+        <div class="note">
+          <p><strong>We do not collect, store, process, or share any personal data.</strong></p>
+        </div>
+        <ul>
+          <li>No collection of personal identifiers (accounts, emails, real names, etc.).</li>
+          <li>In-app data such as scores, innings, player names, and settings are used
+              <strong>locally on your device only</strong> and are not transmitted to external servers.</li>
+          <li>No analytics or logging is sent to remote servers (no online tracking).</li>
+        </ul>
+
+        <h2 id="permissions">Permissions</h2>
+        <p>The App uses only minimal permissions necessary for its features. In the current release:</p>
+        <ul>
+          <li><strong>No network permissions</strong> are required for core functionality
+              (no remote server integration, no remote analytics).</li>
+          <li>(Optionally, if implemented) <span class="code">WAKE_LOCK</span>:
+              May be used to keep the screen on during matches when a “keep screen awake” option is provided.</li>
+          <li>(Optionally, if implemented) Vibration/Sound:
+              May use the device’s vibration and sound features to provide shot-completion alerts.</li>
+        </ul>
+
+        <h2 id="device">Device Features</h2>
+        <ul>
+          <li>The shot timer relies on the <strong>device clock</strong> for timing accuracy.</li>
+          <li>Optional features (if enabled in future updates) may include:
+            <ul>
+              <li><strong>Keep screen on</strong> during active matches.</li>
+              <li><strong>Vibration/sound cues</strong> when time is about to expire or has expired.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h2 id="third">Third-Party Services</h2>
+        <p>
+          The current version of the App does <strong>not</strong> integrate any third-party SDKs,
+          such as advertising networks, analytics platforms, crash reporting tools, or authentication providers.
+        </p>
+
+        <h2 id="ads">Advertising / Monetization</h2>
+        <p>
+          This release of the App <strong>does not display ads</strong> and does not offer in-app purchases.
+          If we introduce ads, analytics, or other monetization features in the future, we will update this Policy,
+          add references to the relevant SDK policies, and obtain any required user consent where applicable.
+        </p>
+
+        <h2 id="children">Children’s Privacy</h2>
+        <p>
+          The App is not specifically directed to children, and we do not knowingly collect personal data from children.
+          If we become aware that we have collected personal data from a child, we will take reasonable steps to delete
+          such information as soon as possible.
+        </p>
+
+        <h2 id="security">Security</h2>
+        <ul>
+          <li>The App does not transmit user data to external servers; most data stays on your device.</li>
+          <li>We recommend that you follow standard mobile security practices,
+              such as setting a device screen lock and keeping your operating system and security patches up to date.</li>
+        </ul>
+
+        <h2 id="changes">Changes to This Policy</h2>
+        <p>
+          We may update this Policy from time to time to reflect changes in laws, regulations, or App features.
+          When we do, we will revise the “Last updated” date at the top of this page.
+          For material changes, we may also provide additional notice in the App or via store release notes.
+        </p>
+
+        <h2 id="contact">Contact</h2>
+        <p>If you have any questions about this Policy or the App’s privacy practices, please contact:</p>
+        <ul>
+          <li>Developer: <span class="code">JCraft Studio</span></li>
+          <li>Email: <a href="mailto:jcraftstudio111@gmail.com">jcraftstudio111@gmail.com</a></li>
+          <!-- Address is optional; you may add your actual address here or leave it out. -->
+          <!-- <li>Address (optional): <span class="code">Your Address</span></li> -->
+        </ul>
+      </section>
+
+      <hr />
+      <p class="small muted">
+        Use this URL in your Google Play store listing (Privacy Policy field) and, if desired,
+        link it from within the App (e.g., Settings → Privacy Policy).
+      </p>
+      <footer class="small">© <span id="yy"></span> JCraft Studio. All rights reserved.</footer>
+    </div>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('yy').textContent = new Date().getFullYear();
+
+    // Language toggle
+    const $ko = document.getElementById('ko');
+    const $en = document.getElementById('en');
+    const btnKo = document.getElementById('btn-ko');
+    const btnEn = document.getElementById('btn-en');
+
+    function setLang(lang){
+      if(lang === 'ko'){
+        $ko.classList.add('active');
+        $en.classList.remove('active');
+        btnKo.setAttribute('aria-pressed','true');
+        btnEn.setAttribute('aria-pressed','false');
+      }else{
+        $en.classList.add('active');
+        $ko.classList.remove('active');
+        btnEn.setAttribute('aria-pressed','true');
+        btnKo.setAttribute('aria-pressed','false');
+      }
+      history.replaceState(null,'',location.pathname + (lang === 'ko' ? '' : '?lang=en'));
+      document.documentElement.lang = lang;
+    }
+
+    btnKo.addEventListener('click',()=>setLang('ko'));
+    btnEn.addEventListener('click',()=>setLang('en'));
+
+    // Init from query (?lang=en)
+    const params = new URLSearchParams(location.search);
+    setLang(params.get('lang') === 'en' ? 'en' : 'ko');
+  </script>
+</body>
+</html>
