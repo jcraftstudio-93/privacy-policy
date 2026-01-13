@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privacy Policy – ColorPicker</title>
-  <meta name="description" content="Privacy Policy for the ColorPicker app." />
+  <title>Privacy Policy – Color Picker Pro</title>
+  <meta name="description" content="Privacy Policy for the Color Picker Pro app." />
   <style>
     :root { --fg:#0f172a; --bg:#fff; --muted:#64748b; --card:#f8fafc; }
     @media (prefers-color-scheme: dark) {
@@ -17,7 +17,7 @@
     .card { background:var(--card); border-radius:14px; padding:18px; margin:12px 0; }
     h2 { font-size:1.15rem; margin:0 0 8px; }
     p, li { line-height:1.65; }
-    .lang { display:flex; gap:8px; margin:10px 0 18px; }
+    .lang { display:flex; gap:8px; margin:10px 0 18px; flex-wrap: wrap; }
     .lang button { border:1px solid var(--muted); background:transparent; color:var(--fg); border-radius:10px; padding:6px 10px; cursor:pointer; }
     .lang button.active { border-color:currentColor; font-weight:600; }
     .muted { color:var(--muted); }
@@ -25,13 +25,14 @@
     .hidden { display:none; }
     ul.compact li { margin:4px 0; }
     a { color: inherit; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <h1>Privacy Policy <span class="muted">— ColorPicker</span></h1>
+    <h1>Privacy Policy <span class="muted">— Color Picker Pro</span></h1>
     <div class="meta">
-      <span id="effective">Effective date: <strong>2025-10-28</strong></span> ·
+      <span id="effective">Effective date: <strong>2026-01-14</strong></span> ·
       <span>Developer: <strong>JCraft Studio</strong></span>
     </div>
 
@@ -46,10 +47,24 @@
       <div class="card">
         <h2>Overview</h2>
         <p>
-          This Privacy Policy explains how the <strong>ColorPicker</strong> app (“the App”, “we”) handles your information.
-          The App does not create user accounts, upload your personal content to our servers, or sell your data.
+          This Privacy Policy explains how the <strong>Color Picker Pro</strong> app (“the App”, “we”) handles your information.
+          The App does not create user accounts and does not run our own backend servers for storing your personal content.
+          Your saved colors, folders, tags, and preferences are stored <strong>locally on your device</strong> (via on-device storage).
           <strong>This version integrates Google AdMob to display ads.</strong> AdMob and its certified partners may process
           certain device and usage data to provide, measure, and improve ads. Details are below.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>What the App Does (Local Features)</h2>
+        <ul class="compact">
+          <li><strong>Color picking:</strong> choose colors from Material palettes and shades.</li>
+          <li><strong>Image eyedropper:</strong> pick an image from <strong>gallery</strong> or <strong>camera</strong> and tap to sample colors.</li>
+          <li><strong>Saved library:</strong> manage recent colors, favorites, folders, and tags.</li>
+          <li><strong>Local persistence:</strong> saved items and “slot expansion” state are stored on-device (Hive + SharedPreferences).</li>
+        </ul>
+        <p class="muted">
+          We do not upload your images or saved colors to our servers. Images you select are processed on-device for color sampling.
         </p>
       </div>
 
@@ -63,7 +78,10 @@
 
       <div class="card">
         <h2>What Is Collected When Ads Are Shown</h2>
-        <p>We do not directly store personally identifiable information on our own servers. However, when ads are requested or displayed, <strong>Google AdMob</strong> (as an independent controller) may collect and/or process:</p>
+        <p>
+          We do not directly store personally identifiable information on our own servers.
+          However, when ads are requested or displayed, <strong>Google AdMob</strong> (as an independent controller) may collect and/or process:
+        </p>
         <ul class="compact">
           <li><strong>Identifiers:</strong> Advertising ID (AAID), IP address.</li>
           <li><strong>Device & App Info:</strong> device model, OS version, app version, crash/diagnostic signals.</li>
@@ -71,6 +89,16 @@
           <li><strong>Approximate Location:</strong> inferred from IP or signals for ad delivery and reporting (we do not request precise GPS).</li>
         </ul>
         <p>Processing purposes include ad selection/delivery/measurement, security, and compliance. Data handling (retention, sharing with certified partners, mediation) follows Google’s policies.</p>
+      </div>
+
+      <div class="card">
+        <h2>Images & Camera/Gallery Access</h2>
+        <p>
+          If you choose the “From Image” feature, the App may request access to your <strong>camera</strong> and/or <strong>photos/media</strong>
+          depending on your device and Android version. The selected image is used only to sample colors <strong>on-device</strong>.
+          We do not upload your images to our servers.
+        </p>
+        <p class="muted">Note: AdMob may access network information to request ads. The App does not request precise GPS location.</p>
       </div>
 
       <div class="card">
@@ -84,18 +112,23 @@
 
       <div class="card">
         <h2>Permissions</h2>
-        <p>The App uses standard permissions to function and show ads:</p>
+        <p>The App uses permissions to function and show ads:</p>
         <ul class="compact">
           <li><strong>INTERNET / Network access</strong> — to request and display ads.</li>
+          <li><strong>ACCESS_NETWORK_STATE</strong> — to check network connectivity for ad loading.</li>
           <li><strong>Advertising ID (Android)</strong> — used by AdMob for ad delivery and measurement.
             The permission <code>com.google.android.gms.permission.AD_ID</code> may be declared in the AdMob library manifest and merged into the App’s manifest.</li>
+          <li><strong>Camera / Photos (optional)</strong> — only used if you choose to pick an image from camera or gallery for color sampling (handled by the OS runtime permission prompts).</li>
         </ul>
-        <p>We do <strong>not</strong> request sensitive permissions (Contacts, precise Location, Photos/Media) in this version.</p>
+        <p>We do <strong>not</strong> request precise location in this version.</p>
       </div>
 
       <div class="card">
         <h2>Data Sharing</h2>
-        <p>Ads are served by <strong>Google AdMob</strong>. AdMob may share data with certified ad technology providers for the purposes above. We do not sell personal information and we do not receive raw device identifiers from AdMob.</p>
+        <p>
+          Ads are served by <strong>Google AdMob</strong>. AdMob may share data with certified ad technology providers for the purposes above.
+          We do not sell personal information and we do not receive raw device identifiers from AdMob.
+        </p>
         <p class="muted">See also: Google Privacy &amp; Terms, AdMob Policies, Google’s list of certified ad technology providers.</p>
       </div>
 
@@ -112,7 +145,11 @@
 
       <div class="card">
         <h2>Security & Retention</h2>
-        <p>We do not maintain user profiles on our own servers for this App. AdMob stores and secures data according to Google’s policies and industry standards. Keep your device/OS up to date for best security.</p>
+        <p>
+          We do not maintain user profiles on our own servers for this App.
+          Your saved colors/folders/tags are stored locally on your device.
+          AdMob stores and secures ad-related data according to Google’s policies and industry standards.
+        </p>
       </div>
 
       <div class="card">
@@ -131,7 +168,8 @@
       </div>
 
       <p class="muted">
-        Note for reviewers: This build uses Google AdMob for ads. No analytics SDKs beyond AdMob/mediation are included. AD_ID permission may be merged via the library manifest.
+        Note for reviewers: This build uses Google AdMob for ads. Saved colors are stored on-device. Images selected for sampling are processed on-device.
+        No analytics SDKs beyond AdMob/mediation are included. AD_ID permission may be merged via the library manifest.
       </p>
     </section>
 
@@ -140,10 +178,24 @@
       <div class="card">
         <h2>개요</h2>
         <p>
-          본 개인정보처리방침은 <strong>ColorPicker</strong> 앱(이하 “앱”)이 정보를 어떻게 처리하는지 설명합니다.
-          앱은 계정을 생성하거나 사용자의 개인 콘텐츠를 당사 서버로 업로드하지 않으며, 사용자의 정보를 판매하지 않습니다.
+          본 개인정보처리방침은 <strong>Color Picker Pro</strong> 앱(이하 “앱”)이 정보를 어떻게 처리하는지 설명합니다.
+          앱은 계정을 생성하지 않으며, 사용자의 개인 콘텐츠를 저장하기 위한 별도의 자체 서버를 운영하지 않습니다.
+          저장한 색상/폴더/태그/설정값은 <strong>사용자 기기 내부(로컬 저장소)</strong>에 저장됩니다.
           <strong>본 버전에는 광고 게재를 위해 Google AdMob이 포함됩니다.</strong> AdMob 및 인증된 파트너는 광고 제공·측정·개선을 위해
-          기기/이용 데이터를 처리할 수 있습니다. 자세한 내용은 아래를 확인하세요.
+          일부 기기/이용 데이터를 처리할 수 있습니다. 자세한 내용은 아래를 확인하세요.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>앱 기능(로컬 처리)</h2>
+        <ul class="compact">
+          <li><strong>색상 선택:</strong> Material 팔레트/명도(Shade)에서 색상을 선택합니다.</li>
+          <li><strong>이미지 스포이드:</strong> <strong>갤러리</strong> 또는 <strong>카메라</strong> 이미지를 불러와 탭한 지점의 색상을 추출합니다.</li>
+          <li><strong>저장 라이브러리:</strong> 최근/즐겨찾기/폴더/태그로 색상을 관리합니다.</li>
+          <li><strong>로컬 저장:</strong> 저장 데이터와 슬롯 확장 상태는 기기 내부에 저장됩니다(Hive + SharedPreferences).</li>
+        </ul>
+        <p class="muted">
+          당사는 사용자가 선택한 이미지나 저장된 색상을 당사 서버로 업로드하지 않습니다. 이미지 색상 추출은 기기 내부에서 처리됩니다.
         </p>
       </div>
 
@@ -168,6 +220,15 @@
       </div>
 
       <div class="card">
+        <h2>이미지 및 카메라/갤러리 접근</h2>
+        <p>
+          “사진에서” 기능을 사용할 경우, 기기/안드로이드 버전에 따라 <strong>카메라</strong> 및/또는 <strong>사진/미디어</strong> 접근 권한을 요청할 수 있습니다.
+          선택한 이미지는 색상 추출(샘플링)을 위해 <strong>기기 내부에서만</strong> 처리되며, 당사 서버로 업로드되지 않습니다.
+        </p>
+        <p class="muted">참고: AdMob은 광고 요청을 위해 네트워크 정보를 사용할 수 있습니다. 본 앱은 정밀 위치(GPS)를 요청하지 않습니다.</p>
+      </div>
+
+      <div class="card">
         <h2>동의 및 선택(옵트아웃)</h2>
         <ul class="compact">
           <li><strong>EEA/영국(GDPR):</strong> 필요한 경우 Google의 <em>User Messaging Platform(UMP)</em>을 통해 동의를 받으며, 동의가 없을 때는 <em>비개인맞춤형 광고</em>가 제공될 수 있습니다.</li>
@@ -178,12 +239,14 @@
 
       <div class="card">
         <h2>권한</h2>
-        <p>앱 및 광고 기능을 위해 다음과 같은 일반 권한이 사용됩니다.</p>
+        <p>앱 및 광고 기능을 위해 다음과 같은 권한이 사용될 수 있습니다.</p>
         <ul class="compact">
-          <li><strong>인터넷/네트워크 접근</strong> — 광고 요청 및 표시.</li>
+          <li><strong>INTERNET / 네트워크</strong> — 광고 요청 및 표시.</li>
+          <li><strong>ACCESS_NETWORK_STATE</strong> — 광고 로드를 위한 네트워크 상태 확인.</li>
           <li><strong>광고 ID(Android)</strong> — AdMob의 광고 제공·측정에 사용. <code>com.google.android.gms.permission.AD_ID</code> 권한은 AdMob 라이브러리 매니페스트에 선언되어 앱 매니페스트에 병합될 수 있습니다.</li>
+          <li><strong>카메라/사진(선택)</strong> — 사용자가 카메라/갤러리에서 이미지를 선택해 색상을 추출할 때만 사용(런타임 권한 안내는 OS가 표시).</li>
         </ul>
-        <p>본 버전은 <strong>연락처, 정밀 위치, 사진/미디어</strong> 등의 민감 권한을 요청하지 않습니다.</p>
+        <p>본 버전은 <strong>정밀 위치</strong> 권한을 요청하지 않습니다.</p>
       </div>
 
       <div class="card">
@@ -205,7 +268,11 @@
 
       <div class="card">
         <h2>보안 및 보관</h2>
-        <p>당사는 본 앱과 관련하여 자체 서버에 사용자 프로필을 보관하지 않습니다. AdMob 데이터의 저장·보안은 Google 정책과 업계 표준에 따릅니다. 기기/OS를 최신 상태로 유지하시기 바랍니다.</p>
+        <p>
+          당사는 본 앱과 관련하여 자체 서버에 사용자 프로필을 보관하지 않습니다.
+          저장한 색상/폴더/태그는 기기 내부에 저장됩니다.
+          AdMob 데이터의 저장·보안은 Google 정책과 업계 표준에 따릅니다.
+        </p>
       </div>
 
       <div class="card">
@@ -224,7 +291,8 @@
       </div>
 
       <p class="muted">
-        검수 참고: 본 빌드는 광고 게재를 위해 Google AdMob을 포함합니다. AdMob/중개 외 별도 분석 SDK는 포함하지 않습니다. AD_ID 권한은 라이브러리 매니페스트 병합을 통해 사용될 수 있습니다.
+        검수 참고: 본 빌드는 광고 게재를 위해 Google AdMob을 포함합니다. 저장 데이터는 기기 로컬에 저장되며, 색상 추출용 이미지도 기기 내부에서 처리됩니다.
+        AdMob/중개 외 별도 분석 SDK는 포함하지 않습니다. AD_ID 권한은 라이브러리 매니페스트 병합을 통해 사용될 수 있습니다.
       </p>
     </section>
 
@@ -234,11 +302,11 @@
   </main>
 
   <!--
-    ✅ AdMob integrated version.
-    Before each release:
-    1) Ensure Google Play “Data safety” answers match this Policy.
-    2) If you add mediation/other SDKs, list them here and update categories.
-    3) Keep the “Effective date” in sync with console disclosures.
+    ✅ Color Picker Pro build notes
+    1) This app stores saved colors locally (Hive + SharedPreferences).
+    2) Selected images are processed on-device for sampling.
+    3) Ads: Google AdMob (banner + rewarded).
+    4) Keep Google Play “Data safety” answers consistent with this policy.
   -->
 
   <script>
@@ -247,6 +315,7 @@
     const ko = document.getElementById('ko');
     const btnEn = document.getElementById('btn-en');
     const btnKo = document.getElementById('btn-ko');
+
     btnEn.addEventListener('click', () => {
       en.classList.remove('hidden'); ko.classList.add('hidden');
       btnEn.classList.add('active'); btnKo.classList.remove('active');
