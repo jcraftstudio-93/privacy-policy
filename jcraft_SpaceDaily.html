@@ -4,52 +4,96 @@
   <meta charset="utf-8">
   <title>Privacy Policy | Space Daily</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
   <style>
-    body {
+    :root{
+      --bg:#0b1220;
+      --bg2:#070b12;
+      --card:#0e1522;
+      --line:#1f2a3a;
+      --text:#e6f1ff;
+      --muted:#9fb2cc;
+      --accent:#28e98c;
+    }
+    body{
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #0b1220;
-      color: #e6f1ff;
-      line-height: 1.6;
+      margin:0; padding:0;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.65;
     }
-    header {
-      background: #070b12;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #1f2a3a;
+    header{
+      background:var(--bg2);
+      padding:22px 16px;
+      text-align:center;
+      border-bottom:1px solid var(--line);
     }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
+    header h1{ margin:0 0 6px; font-size:22px; color:var(--accent); }
+    header p{ margin:0; color:var(--muted); font-size:13px; }
+    main{
+      max-width:900px;
+      margin:0 auto;
+      padding:18px 16px 28px;
     }
-    h1, h2, h3 {
-      color: #28e98c;
+    h2{
+      color:var(--accent);
+      margin:18px 0 10px;
+      font-size:18px;
     }
-    section {
-      margin-bottom: 32px;
+    h3{
+      color:var(--accent);
+      margin:14px 0 8px;
+      font-size:16px;
     }
-    .lang {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 2px solid #1f2a3a;
+    section{ margin-bottom:24px; }
+    .card{
+      background:rgba(14,21,34,0.35);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:14px 14px;
     }
-    footer {
-      text-align: center;
-      padding: 16px;
-      font-size: 13px;
-      color: #9fb2cc;
-      border-top: 1px solid #1f2a3a;
+    ul{ margin:10px 0 0 18px; }
+    li{ margin:6px 0; }
+    a{ color:var(--accent); word-break:break-word; }
+    .lang{
+      margin-top:34px;
+      padding-top:22px;
+      border-top:2px solid var(--line);
     }
-    a { color: #28e98c; }
+    .pill{
+      display:inline-block;
+      padding:4px 10px;
+      border:1px solid rgba(40,233,140,0.35);
+      background:rgba(40,233,140,0.12);
+      border-radius:999px;
+      color:var(--accent);
+      font-weight:800;
+      font-size:12px;
+      letter-spacing:0.2px;
+      margin-bottom:10px;
+    }
+    .small{ color:var(--muted); font-size:13px; }
+    footer{
+      text-align:center;
+      padding:16px;
+      font-size:13px;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+      background:var(--bg2);
+    }
+    code{
+      background:rgba(255,255,255,0.06);
+      padding:2px 6px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
   </style>
 </head>
-<body>
 
+<body>
 <header>
   <h1>Privacy Policy – Space Daily</h1>
-  <p>Last updated: 2026-01-29</p>
+  <p>Last updated: 2026-01-30</p>
 </header>
 
 <main>
@@ -57,185 +101,185 @@
 <!-- ========================= -->
 <!-- English Version -->
 <!-- ========================= -->
-<section>
+<section class="card">
+  <div class="pill">English</div>
+
   <h2>1. Introduction</h2>
   <p>
-    Space Daily ("the App") respects your privacy and is committed to protecting your personal information.
-    This Privacy Policy explains how we collect, use, and protect your data when you use our App.
+    Space Daily ("the App") respects your privacy. This Privacy Policy explains what information may be processed
+    when you use the App, how it is used, and what choices you have.
   </p>
-  <p>
-    Developer information, including company name and contact details, follows the information registered
-    on the Google Play Store listing of this app.
+  <p class="small">
+    Developer information (company name, contact details, etc.) follows the information shown on this App’s Google Play listing.
   </p>
-</section>
 
-<section>
   <h2>2. Information We Collect</h2>
-  <p>Space Daily does not collect personally identifiable information such as name, email address, or phone number.</p>
-  <p>The App may collect the following non-personal data:</p>
-  <ul>
-    <li>App usage data (for app stability and improvement)</li>
-    <li>Anonymous advertising identifiers provided by Google</li>
-    <li>Device and system information (OS version, language, app version)</li>
-  </ul>
-</section>
-
-<section>
-  <h2>3. Advertising</h2>
   <p>
-    Space Daily uses Google AdMob to display banner, interstitial, and rewarded advertisements.
+    The App does not ask you to create an account and does not directly collect personally identifiable information
+    such as your name, email address, or phone number.
+  </p>
+  <p>
+    The App may process the following data:
   </p>
   <ul>
-    <li>Ads are served by Google and may use cookies or advertising identifiers.</li>
-    <li>We do not control the data collected by Google.</li>
-    <li>You can learn more at: 
-      <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
+    <li><strong>Local app data (on your device):</strong> favorites (stored as IDs only) and daily unlock status for rewarded features.</li>
+    <li><strong>Device/app technical data:</strong> device model, OS version, language, and app version for basic operation and troubleshooting.</li>
+    <li><strong>Advertising data (via Google AdMob):</strong> Google may collect data such as advertising identifiers (Advertising ID),
+      IP address, approximate location, device information, and ad performance events, depending on your device settings and Google’s policies.</li>
+  </ul>
+  <p class="small">
+    Note: The developer does not receive your personal identifiers directly from the App. Advertising/analytics processing is handled by Google’s SDKs.
+  </p>
+
+  <h2>3. Advertising (Google AdMob)</h2>
+  <p>
+    Space Daily uses Google AdMob to show ads (banner and user-initiated interstitial/rewarded ads).
+    Ad content and related data processing are provided by Google.
+  </p>
+  <ul>
+    <li>Ads may use identifiers and network signals to serve and measure advertising.</li>
+    <li>The developer does not control the data collected by Google through its advertising services.</li>
+    <li>Google’s Privacy Policy:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
     </li>
   </ul>
-</section>
 
-<section>
-  <h2>4. Copyright and Content Usage</h2>
+  <h2>4. NASA/APOD Content and Copyright</h2>
   <p>
-    Space Daily uses metadata from NASA’s Astronomy Picture of the Day (APOD) API.
+    The App uses metadata from NASA’s Astronomy Picture of the Day (APOD) API and provides links to external pages.
+    The App is designed to be <strong>copyright-safe</strong>:
   </p>
   <ul>
-    <li>Images are not stored, downloaded, or redistributed by the App.</li>
-    <li>All images are accessed via external links provided by NASA.</li>
-    <li>Copyright information is displayed when provided by NASA.</li>
-    <li>If no copyright information exists, it is shown as "Not provided".</li>
+    <li><strong>Links only:</strong> the App does not provide features to download, store, or redistribute APOD image files.</li>
+    <li><strong>Attribution:</strong> the App displays the attribution line
+      <strong>“Data provided by NASA (APOD)”</strong>.
+    </li>
+    <li><strong>Copyright display:</strong> if the source provides a <code>copyright</code> field, the App displays it as-is.
+      If not provided, the App shows “Not provided”.</li>
+    <li><strong>External sites:</strong> when you open links, the content is served by the external site and is subject to that site’s policies.</li>
+    <li><strong>No NASA branding:</strong> the App does not use NASA logos/insignia as branding and is not affiliated with or endorsed by NASA.</li>
   </ul>
-  <p>
-    Attribution is always displayed as:<br>
-    <strong>“Data provided by NASA (Astronomy Picture of the Day)”</strong>
-  </p>
-  <p>
-    The App does not use NASA logos, insignias, or branding in its identity and is not affiliated with or endorsed by NASA.
-  </p>
-</section>
 
-<section>
   <h2>5. Data Storage</h2>
-  <p>
-    Space Daily only stores minimal local data:
-  </p>
+  <p>The App stores minimal data on your device only:</p>
   <ul>
-    <li>Favorite items (stored as IDs only)</li>
-    <li>Daily unlock status for rewarded features</li>
+    <li><strong>Favorites:</strong> APOD IDs (date-based IDs only). No image files are stored by the App.</li>
+    <li><strong>Daily unlock status:</strong> whether rewarded features are unlocked for the current day.</li>
   </ul>
-  <p>
-    No image files, videos, or copyrighted content are stored on your device by the App.
-  </p>
-</section>
+  <p class="small">The App does not maintain a user database and does not upload your favorites/unlock status to the developer’s server.</p>
 
-<section>
   <h2>6. Sharing Policy</h2>
-  <p>
-    The App allows sharing of text and links only.
-  </p>
+  <p>The App allows sharing of <strong>text and links only</strong>.</p>
   <ul>
-    <li>No image file downloads</li>
-    <li>No image redistribution</li>
-    <li>Only official NASA links are shared</li>
+    <li>No image file downloads or file-based exporting from the App.</li>
+    <li>Shared content is link-based (e.g., APOD source page link and related URLs) and includes attribution text.</li>
   </ul>
-</section>
 
-<section>
-  <h2>7. Children’s Privacy</h2>
+  <h2>7. Data Deletion</h2>
   <p>
-    Space Daily does not knowingly collect data from children under the age of 13.
+    You can delete locally stored data at any time by clearing the App’s data in your device settings or uninstalling the App.
   </p>
-</section>
 
-<section>
-  <h2>8. Changes to This Policy</h2>
+  <h2>8. Children’s Privacy</h2>
   <p>
-    We may update this Privacy Policy from time to time. Changes will be reflected on this page.
+    The App is not directed to children under 13 and does not knowingly collect personal information from children under 13.
+  </p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. The “Last updated” date above will be changed accordingly.
   </p>
 </section>
 
 <!-- ========================= -->
 <!-- Korean Version -->
 <!-- ========================= -->
-<section class="lang">
-  <h1>개인정보 처리방침 – Space Daily</h1>
+<section class="card lang">
+  <div class="pill">한국어</div>
 
   <h2>1. 소개</h2>
   <p>
     Space Daily(이하 “앱”)는 사용자의 개인정보 보호를 중요하게 생각합니다.
-    본 방침은 앱 이용 시 어떤 정보가 수집되고 어떻게 사용되는지를 설명합니다.
+    본 개인정보 처리방침은 앱 이용 시 처리될 수 있는 정보의 종류, 이용 목적, 사용자 선택권을 설명합니다.
   </p>
-  <p>
-    개발자 정보(회사명, 연락처 등)는 Google Play 스토어에 등록된 정보를 기준으로 합니다.
+  <p class="small">
+    개발자 정보(회사명, 연락처 등)는 Google Play 스토어에 표시된 이 앱의 등록정보를 따릅니다.
   </p>
 
-  <h2>2. 수집하는 정보</h2>
-  <p>본 앱은 이름, 이메일, 전화번호와 같은 개인정보를 직접 수집하지 않습니다.</p>
-  <p>다음과 같은 비식별 정보가 수집될 수 있습니다:</p>
+  <h2>2. 수집·처리하는 정보</h2>
+  <p>
+    본 앱은 계정 생성이 필요 없으며 이름, 이메일, 전화번호 등 개인정보를 직접 입력받아 수집하지 않습니다.
+  </p>
+  <p>다만 앱 이용 과정에서 다음 정보가 처리될 수 있습니다:</p>
   <ul>
-    <li>앱 사용 통계 (안정성 및 개선 목적)</li>
-    <li>Google 광고 식별자(Ad ID)</li>
-    <li>기기 정보(OS, 언어, 앱 버전 등)</li>
+    <li><strong>로컬 앱 데이터(기기 내 저장):</strong> 즐겨찾기(날짜 기반 ID만 저장) 및 보상형 언락의 당일 여부</li>
+    <li><strong>기기/앱 기술 정보:</strong> 기기 모델, OS 버전, 언어, 앱 버전 등(기본 동작/오류 대응 목적)</li>
+    <li><strong>광고 데이터(AdMob):</strong> Google AdMob SDK를 통해 광고 식별자(Advertising ID), IP 주소, 대략적 위치,
+      기기 정보, 광고 성능 이벤트 등이 기기 설정 및 Google 정책에 따라 처리될 수 있습니다.</li>
   </ul>
+  <p class="small">
+    참고: 광고 관련 데이터 처리는 Google의 광고 SDK가 수행하며, 개발자는 사용자 개인식별 정보를 앱에서 직접 받지 않습니다.
+  </p>
 
-  <h2>3. 광고</h2>
+  <h2>3. 광고 (Google AdMob)</h2>
   <p>
-    Space Daily는 Google AdMob 광고를 사용합니다.
+    Space Daily는 Google AdMob을 사용하여 광고(배너 및 사용자의 선택에 의해 실행되는 전면/보상형 광고)를 표시합니다.
+    광고 제공 및 관련 데이터 처리는 Google이 수행합니다.
   </p>
   <ul>
-    <li>광고 데이터는 Google이 직접 수집 및 관리합니다.</li>
-    <li>개발자는 광고 데이터에 직접 접근하지 않습니다.</li>
-    <li>자세한 내용:
-      <a href="https://policies.google.com/privacy" target="_blank">
-        https://policies.google.com/privacy
-      </a>
+    <li>광고는 노출/측정을 위해 식별자 및 네트워크 신호를 사용할 수 있습니다.</li>
+    <li>개발자는 Google이 수집·처리하는 광고 데이터의 범위를 직접 통제할 수 없습니다.</li>
+    <li>Google 개인정보처리방침:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
     </li>
   </ul>
 
-  <h2>4. 저작권 및 콘텐츠 정책</h2>
+  <h2>4. NASA/APOD 콘텐츠 및 저작권</h2>
   <p>
-    Space Daily는 NASA APOD(Astronomy Picture of the Day) API의 메타데이터를 사용합니다.
+    본 앱은 NASA의 Astronomy Picture of the Day(APOD) API에서 제공하는 <strong>메타데이터</strong>를 사용하며,
+    외부 링크를 제공합니다. 저작권 이슈를 줄이기 위해 다음 원칙을 따릅니다:
   </p>
   <ul>
-    <li>이미지 파일을 다운로드하거나 저장하지 않습니다.</li>
-    <li>이미지는 NASA에서 제공한 링크로만 접근합니다.</li>
-    <li>저작권 정보가 제공되면 그대로 표시합니다.</li>
-    <li>제공되지 않으면 “Not provided”로 표기합니다.</li>
+    <li><strong>링크만 제공:</strong> 앱은 APOD 이미지 파일을 다운로드/저장/재배포하는 기능을 제공하지 않습니다.</li>
+    <li><strong>출처 표기:</strong> 앱은 항상 <strong>“Data provided by NASA (APOD)”</strong> 문구를 표시합니다.</li>
+    <li><strong>저작권 표시:</strong> 원본 데이터에 <code>copyright</code> 필드가 있으면 그대로 표시하고,
+      없으면 “Not provided(제공되지 않음)”로 표시합니다.</li>
+    <li><strong>외부 사이트:</strong> 링크를 열면 해당 콘텐츠는 외부 사이트에서 제공되며, 해당 사이트의 정책을 따릅니다.</li>
+    <li><strong>NASA 로고/인장:</strong> 앱은 NASA 로고/인장을 브랜딩(아이콘/마케팅) 용도로 사용하지 않으며,
+      NASA와 제휴·후원·승인을 받지 않았습니다.</li>
   </ul>
-  <p>
-    항상 다음과 같은 출처 문구를 표시합니다:<br>
-    <strong>“Data provided by NASA (Astronomy Picture of the Day)”</strong>
-  </p>
-  <p>
-    본 앱은 NASA의 공식 앱이 아니며, NASA와 제휴·후원·승인을 받지 않았습니다.
-    NASA 로고나 인장은 사용하지 않습니다.
-  </p>
 
-  <h2>5. 데이터 저장 정책</h2>
+  <h2>5. 데이터 저장</h2>
+  <p>본 앱은 다음과 같은 최소한의 정보를 <strong>기기 내</strong>에만 저장합니다:</p>
   <ul>
-    <li>즐겨찾기: 날짜 기반 ID만 저장</li>
-    <li>광고 언락 상태: 당일 여부만 저장</li>
+    <li><strong>즐겨찾기:</strong> APOD ID(날짜 기반 ID만). 앱은 이미지 파일을 저장하지 않습니다.</li>
+    <li><strong>언락 상태:</strong> 보상형 기능이 “오늘” 언락되었는지 여부</li>
   </ul>
-  <p>
-    이미지 파일이나 저작권이 있는 콘텐츠는 기기에 저장하지 않습니다.
+  <p class="small">
+    개발자는 즐겨찾기/언락 상태를 별도의 사용자 DB로 수집하거나 개발자 서버로 업로드하지 않습니다.
   </p>
 
   <h2>6. 공유 정책</h2>
+  <p>본 앱의 공유 기능은 <strong>텍스트 및 링크 공유만</strong>을 허용합니다.</p>
   <ul>
-    <li>텍스트 및 링크 공유만 허용</li>
-    <li>이미지 다운로드/파일 공유 불가</li>
-    <li>NASA 공식 링크만 사용</li>
+    <li>이미지 파일 다운로드/파일 내보내기/파일 기반 공유 기능이 없습니다.</li>
+    <li>공유는 링크 기반(예: 원본 페이지 링크 및 관련 URL)이며 출처 문구를 포함합니다.</li>
   </ul>
 
-  <h2>7. 아동 개인정보 보호</h2>
+  <h2>7. 데이터 삭제 방법</h2>
   <p>
-    본 앱은 13세 미만 아동의 개인정보를 고의로 수집하지 않습니다.
+    기기 설정에서 앱 데이터 삭제(저장공간/캐시/데이터 삭제) 또는 앱 제거(삭제)를 통해
+    로컬 저장 데이터를 삭제할 수 있습니다.
   </p>
 
-  <h2>8. 정책 변경</h2>
+  <h2>8. 아동 개인정보 보호</h2>
   <p>
-    개인정보 처리방침은 필요 시 변경될 수 있으며,
-    변경 사항은 본 페이지에 게시됩니다.
+    본 앱은 13세 미만 아동을 대상으로 하지 않으며, 13세 미만 아동의 개인정보를 고의로 수집하지 않습니다.
+  </p>
+
+  <h2>9. 정책 변경</h2>
+  <p>
+    본 개인정보 처리방침은 필요 시 변경될 수 있으며, 상단의 “Last updated” 날짜로 변경 여부를 안내합니다.
   </p>
 </section>
 
