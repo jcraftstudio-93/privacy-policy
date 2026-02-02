@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy | WiFi Log &amp; Password Memo</title>
+  <meta name="description" content="WiFi Log & Password Memo privacy policy (Korean/English)" />
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#0f172a; --muted:#475569; --card:#f8fafc; --line:#e2e8f0;
+      --accent:#0f766e; --accent2:#b91c1c; --shadow:0 10px 28px rgba(2,6,23,.08);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b1220; --fg:#e5e7eb; --muted:#94a3b8; --card:#0f172a; --line:#22304a;
+        --accent:#34d399; --accent2:#fb7185; --shadow:0 10px 28px rgba(0,0,0,.45);
+      }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:900px; margin:0 auto; padding:28px 16px 64px}
+    header{
+      display:flex; gap:14px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;
+      padding:16px 0 8px; border-bottom:1px solid var(--line);
+    }
+    .title{display:flex; flex-direction:column; gap:6px}
+    h1{margin:0; font-size:20px}
+    .sub{color:var(--muted); font-size:13px}
+    .langbar{display:flex; gap:8px; align-items:center}
+    .btn{
+      border:1px solid var(--line); background:transparent; color:var(--fg);
+      padding:8px 10px; border-radius:10px; font-weight:700; cursor:pointer;
+    }
+    .btn[aria-pressed="true"]{border-color:var(--accent); box-shadow:0 0 0 2px rgba(16,185,129,.15) inset}
+    .card{
+      background:var(--card); border:1px solid var(--line); border-radius:16px;
+      padding:16px; margin-top:14px; box-shadow:var(--shadow);
+    }
+    h2{margin:0 0 8px; font-size:16px}
+    h3{margin:18px 0 8px; font-size:14px}
+    ul{margin:8px 0 0 18px}
+    code, .mono{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12.5px;
+    }
+    .pill{
+      display:inline-block; padding:2px 8px; border-radius:999px; font-weight:800; font-size:12px;
+      border:1px solid var(--line); background:rgba(15,118,110,.08); color:var(--fg);
+    }
+    .note{
+      border-left:4px solid var(--accent2);
+      padding:10px 12px; background:rgba(185,28,28,.08); border-radius:12px;
+      margin-top:10px;
+    }
+    .grid{
+      display:grid; grid-template-columns: 1fr; gap:12px;
+    }
+    @media (min-width:820px){
+      .grid{grid-template-columns: 1fr 1fr;}
+    }
+    table{
+      width:100%; border-collapse:collapse; margin-top:8px; overflow:hidden; border-radius:12px;
+      border:1px solid var(--line);
+    }
+    th, td{
+      text-align:left; padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top;
+      font-size: 13px;
+    }
+    th{background:rgba(148,163,184,.12); font-weight:900}
+    footer{
+      margin-top:22px; color:var(--muted); font-size:12px;
+      border-top:1px solid var(--line); padding-top:12px;
+    }
+    .hide{display:none!important}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <h1>WiFi Log &amp; Password Memo — Privacy Policy</h1>
+        <div class="sub">
+          Last updated: <span class="mono" id="lastUpdated">2026-02-02</span>
+          · This page is provided in Korean and English.
+        </div>
+      </div>
+      <div class="langbar" role="group" aria-label="Language">
+        <button class="btn" id="btnEN" aria-pressed="true" type="button">English</button>
+        <button class="btn" id="btnKO" aria-pressed="false" type="button">한국어</button>
+      </div>
+    </header>
+
+    <!-- ENGLISH -->
+    <section id="secEN">
+      <div class="card">
+        <h2>1) Overview</h2>
+        <p>
+          <strong>WiFi Log &amp; Password Memo</strong> (the “App”) is designed to help you
+          record Wi-Fi SSIDs and notes, and optionally store passwords/hints that you type in.
+        </p>
+        <p class="note">
+          <strong>Important:</strong> The App does <strong>not</strong> upload your data to a server.
+          All entries are stored <strong>locally on your device</strong>.
+          Wi-Fi passwords are <strong>not</strong> collected automatically by the operating system;
+          they can only be stored if <strong>you enter them manually</strong>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>2) Data We Collect</h2>
+        <p>The App may store the following information <span class="pill">on-device only</span>:</p>
+        <ul>
+          <li><strong>Wi-Fi SSID</strong> (network name) that you type or the App reads (where permitted by OS/device policy)</li>
+          <li><strong>Memos/notes</strong> you enter</li>
+          <li><strong>Optional password</strong> and <strong>hint</strong> you enter</li>
+          <li><strong>Timestamps</strong> (e.g., “saved at” time)</li>
+          <li><strong>App settings</strong> (e.g., chosen language, unlock-expiry timestamps)</li>
+        </ul>
+
+        <h3>Encryption</h3>
+        <p>
+          Some data (History/Favorites) is stored in an encrypted local database (Hive with AES encryption).
+          The encryption key is generated on the device and stored in the device’s secure storage.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>3) Permissions</h2>
+        <p>
+          The App may request permissions to read the current Wi-Fi SSID. Due to Android policies and device differences,
+          reading SSID may not work on all devices. If SSID cannot be read, you can type it manually.
+        </p>
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Location (When in use)</strong></td>
+              <td>Needed on some Android versions to access Wi-Fi SSID information.</td>
+            </tr>
+            <tr>
+              <td><strong>Nearby Wi-Fi devices</strong></td>
+              <td>Needed on Android 13+ to access Wi-Fi related device information (SSID reading).</td>
+            </tr>
+            <tr>
+              <td><strong>Storage / Files (indirect)</strong></td>
+              <td>Used to create a temporary CSV export file and share it via the system share sheet.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>4) Advertising (Google AdMob)</h2>
+        <p>
+          The App displays advertisements using <strong>Google Mobile Ads SDK (AdMob)</strong>.
+          Ads may be shown as banner ads and (optionally) rewarded/interstitial ads depending on your app version and features.
+        </p>
+        <div class="grid">
+          <div>
+            <h3>What AdMob may collect</h3>
+            <p>
+              Ad providers may collect device identifiers and usage data to provide and measure ads, and to prevent fraud.
+              This data is handled by Google and its partners according to their policies.
+            </p>
+          </div>
+          <div>
+            <h3>Developer access</h3>
+            <p>
+              The developer does <strong>not</strong> receive your stored Wi-Fi passwords/hints/memos via ads.
+              Your saved records remain on your device.
+            </p>
+          </div>
+        </div>
+        <p>
+          For details, see Google’s policies:
+          <span class="mono">Google Privacy Policy</span> and <span class="mono">AdMob</span> documentation.
+          (Please refer to Google’s official pages in your region.)
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>5) Data Sharing</h2>
+        <p>
+          The App does not share your local records with a server.
+          The only time data may leave the device is when you explicitly use:
+        </p>
+        <ul>
+          <li><strong>Share</strong> feature (e.g., sharing a memo/password you chose to share)</li>
+          <li><strong>CSV export</strong> feature (sharing the exported CSV file via other apps)</li>
+        </ul>
+        <p>
+          In these cases, the content is shared to the destination app/service you select, and their privacy policies apply.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>6) Data Retention &amp; Deletion</h2>
+        <ul>
+          <li>You can delete individual History/Favorite entries inside the App.</li>
+          <li>History and Favorites may be capped (e.g., up to 100 items) and older items may be removed according to app logic.</li>
+          <li>You can delete all data by uninstalling the App or clearing app data in system settings.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>7) Children’s Privacy</h2>
+        <p>
+          The App is not designed to knowingly collect personal information from children.
+          Because the App stores data locally and does not require account registration, it generally collects minimal data.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>8) Changes to This Policy</h2>
+        <p>
+          We may update this policy from time to time. The “Last updated” date will be changed accordingly.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>9) Contact</h2>
+        <p>
+          Developer information (name, email, address if applicable) is provided on the Google Play Store listing.
+          Please refer to the store page for contact details.
+        </p>
+      </div>
+    </section>
+
+    <!-- KOREAN -->
+    <section id="secKO" class="hide" lang="ko">
+      <div class="card">
+        <h2>1) 개요</h2>
+        <p>
+          <strong>WiFi Log &amp; Password Memo</strong>(이하 “앱”)은
+          Wi-Fi SSID(네트워크 이름)와 메모를 기록하고, 사용자가 직접 입력한 비밀번호/힌트를 선택적으로 저장할 수 있도록 설계되었습니다.
+        </p>
+        <p class="note">
+          <strong>중요:</strong> 앱은 사용자의 데이터를 <strong>서버로 업로드하지 않습니다.</strong>
+          모든 기록은 <strong>기기 로컬</strong>에 저장됩니다.
+          또한 Wi-Fi 비밀번호는 운영체제 정책상 <strong>자동 수집이 불가능</strong>하며,
+          <strong>사용자가 직접 입력한 경우에만</strong> 저장됩니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>2) 수집/저장하는 데이터</h2>
+        <p>앱은 다음 정보를 <span class="pill">기기 내에만</span> 저장할 수 있습니다:</p>
+        <ul>
+          <li><strong>Wi-Fi SSID</strong>(직접 입력 또는 OS/기기 정책상 허용되는 경우에 한해 읽어온 값)</li>
+          <li><strong>메모</strong>(사용자 입력)</li>
+          <li><strong>비밀번호(선택)</strong> 및 <strong>힌트(선택)</strong>(사용자 입력)</li>
+          <li><strong>저장 시각</strong> 등 타임스탬프</li>
+          <li><strong>앱 설정</strong>(언어 선택, 광고 해금 만료 시각 등)</li>
+        </ul>
+
+        <h3>암호화</h3>
+        <p>
+          일부 데이터(History/Favorites)는 로컬 DB(Hive)를 AES 방식으로 암호화하여 저장합니다.
+          암호화 키는 기기에서 생성되며, 기기의 보안 저장소(secure storage)에 저장됩니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>3) 권한(퍼미션)</h2>
+        <p>
+          앱은 현재 연결된 Wi-Fi SSID를 읽기 위해 권한을 요청할 수 있습니다.
+          Android 정책/기기 제조사/OS 버전에 따라 SSID 읽기가 제한될 수 있으며,
+          읽기에 실패하면 사용자가 직접 SSID를 입력하도록 안내합니다.
+        </p>
+        <table>
+          <thead>
+            <tr><th>권한</th><th>사용 목적</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>위치(사용 중)</strong></td>
+              <td>일부 Android 버전에서 Wi-Fi SSID 정보 접근에 필요할 수 있습니다.</td>
+            </tr>
+            <tr>
+              <td><strong>근처 Wi-Fi 기기</strong></td>
+              <td>Android 13+에서 Wi-Fi 관련 정보(SSID 등) 접근에 필요할 수 있습니다.</td>
+            </tr>
+            <tr>
+              <td><strong>파일/공유(간접)</strong></td>
+              <td>CSV 내보내기 파일을 임시로 생성하고, 시스템 공유 기능으로 전달할 때 사용됩니다.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>4) 광고(AdMob)</h2>
+        <p>
+          앱은 <strong>Google Mobile Ads SDK(AdMob)</strong>를 통해 광고를 표시할 수 있습니다.
+          버전/기능에 따라 배너 광고 및 (선택적으로) 보상형/전면 광고가 포함될 수 있습니다.
+        </p>
+        <div class="grid">
+          <div>
+            <h3>AdMob이 처리할 수 있는 정보</h3>
+            <p>
+              광고 제공을 위해 Google 및 파트너는 기기 식별자, 광고 성과 측정 데이터, 부정 클릭 방지 데이터 등을 처리할 수 있습니다.
+              이 데이터는 Google의 정책에 따라 처리됩니다.
+            </p>
+          </div>
+          <div>
+            <h3>개발자 접근</h3>
+            <p>
+              개발자는 광고를 통해 사용자의 Wi-Fi 비밀번호/힌트/메모 등의 로컬 저장 데이터를 수집하지 않습니다.
+              사용자의 기록은 기기 내부에만 저장됩니다.
+            </p>
+          </div>
+        </div>
+        <p>
+          자세한 내용은 Google의 공식 개인정보처리방침 및 AdMob 관련 문서를 참고해 주세요
+          (지역/언어에 따라 Google 공식 페이지가 다를 수 있습니다).
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>5) 데이터 공유</h2>
+        <p>
+          앱은 사용자의 로컬 기록을 서버로 전송하거나 공유하지 않습니다.
+          다만, 사용자가 다음 기능을 <strong>직접 실행</strong>하는 경우에만 외부로 나갈 수 있습니다:
+        </p>
+        <ul>
+          <li><strong>공유</strong> 기능(사용자가 선택한 내용을 다른 앱/서비스로 공유)</li>
+          <li><strong>CSV 내보내기</strong>(생성된 CSV 파일을 공유 시트로 전달)</li>
+        </ul>
+        <p>
+          이 경우 데이터는 사용자가 선택한 대상 앱/서비스로 전달되며, 해당 서비스의 개인정보처리방침이 적용됩니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>6) 보관 및 삭제</h2>
+        <ul>
+          <li>앱 내에서 History/Favorites 항목을 개별 삭제할 수 있습니다.</li>
+          <li>History/Favorites는 최대 개수 제한(예: 100개)이 적용될 수 있으며, 초과 시 앱 로직에 따라 오래된 항목이 삭제될 수 있습니다.</li>
+          <li>앱 삭제 또는 시스템 설정에서 “앱 데이터 삭제/초기화”를 수행하면 저장 데이터가 제거됩니다.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>7) 아동의 개인정보</h2>
+        <p>
+          앱은 아동의 개인정보를 의도적으로 수집하지 않습니다.
+          앱은 계정 가입이 필요 없고, 데이터는 기기 로컬에 저장되는 방식으로 최소한의 정보만 처리합니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>8) 정책 변경</h2>
+        <p>
+          본 개인정보처리방침은 필요 시 변경될 수 있으며, 변경 시 상단의 “Last updated” 날짜가 갱신됩니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>9) 개발자/문의</h2>
+        <p>
+          개발자 정보(이메일 등)는 Google Play 스토어 앱 상세 페이지에 기재된 내용을 참고해 주세요.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        This document is provided for transparency. If any section conflicts with local law, applicable law prevails.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const btnEN = document.getElementById('btnEN');
+      const btnKO = document.getElementById('btnKO');
+      const secEN = document.getElementById('secEN');
+      const secKO = document.getElementById('secKO');
+
+      function setLang(lang){
+        const isKO = lang === 'ko';
+        secEN.classList.toggle('hide', isKO);
+        secKO.classList.toggle('hide', !isKO);
+        btnEN.setAttribute('aria-pressed', String(!isKO));
+        btnKO.setAttribute('aria-pressed', String(isKO));
+        try { localStorage.setItem('pp_lang', lang); } catch(e) {}
+        document.documentElement.lang = isKO ? 'ko' : 'en';
+      }
+
+      btnEN.addEventListener('click', () => setLang('en'));
+      btnKO.addEventListener('click', () => setLang('ko'));
+
+      // init: saved > browser
+      let init = 'en';
+      try { init = localStorage.getItem('pp_lang') || init; } catch(e) {}
+      if (!init){
+        const nav = (navigator.language || 'en').toLowerCase();
+        init = nav.startsWith('ko') ? 'ko' : 'en';
+      }
+      setLang(init);
+    })();
+  </script>
+</body>
+</html>
