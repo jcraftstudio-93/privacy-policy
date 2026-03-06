@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | PDF Merge - Combine PDF Files</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --line:#e5e7eb;
+      --primary:#d32f2f;
+      --primary-soft:#fdecec;
+      --shadow:0 10px 30px rgba(0,0,0,.06);
+      --radius:18px;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+
+    .wrap{
+      max-width:920px;
+      margin:0 auto;
+      padding:24px 16px 48px;
+    }
+
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      margin-bottom:18px;
+      flex-wrap:wrap;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand-badge{
+      width:48px;
+      height:48px;
+      border-radius:14px;
+      background:linear-gradient(135deg,#ff7b7b,#d32f2f);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:22px;
+      font-weight:700;
+      box-shadow:var(--shadow);
+    }
+
+    .brand-text h1{
+      margin:0;
+      font-size:22px;
+      line-height:1.2;
+    }
+
+    .brand-text p{
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .lang-switch{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-btn{
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--text);
+      padding:10px 14px;
+      border-radius:12px;
+      cursor:pointer;
+      font-size:14px;
+      font-weight:700;
+      transition:.2s ease;
+    }
+
+    .lang-btn.active{
+      background:var(--primary);
+      color:#fff;
+      border-color:var(--primary);
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero{
+      padding:24px;
+      background:linear-gradient(180deg,#fff,#fff7f7);
+      border-bottom:1px solid var(--line);
+    }
+
+    .hero h2{
+      margin:0 0 8px;
+      font-size:28px;
+      line-height:1.25;
+    }
+
+    .hero p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    .content{
+      padding:24px;
+    }
+
+    .section{
+      margin-bottom:22px;
+      padding-bottom:18px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .section:last-child{
+      margin-bottom:0;
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .section h3{
+      margin:0 0 10px;
+      font-size:18px;
+      color:var(--primary);
+    }
+
+    .section p{
+      margin:0 0 10px;
+    }
+
+    .section ul{
+      margin:8px 0 0 20px;
+      padding:0;
+    }
+
+    .section li{
+      margin:6px 0;
+    }
+
+    .note{
+      background:var(--primary-soft);
+      border:1px solid #f8caca;
+      border-radius:14px;
+      padding:14px 16px;
+      margin-top:10px;
+    }
+
+    .muted{
+      color:var(--muted);
+    }
+
+    .footer{
+      margin-top:18px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .lang-block{
+      display:none;
+    }
+
+    .lang-block.active{
+      display:block;
+    }
+
+    .meta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+
+    .chip{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:8px 12px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    code{
+      background:#f3f4f6;
+      padding:2px 6px;
+      border-radius:6px;
+      font-size:13px;
+    }
+
+    @media (max-width:640px){
+      .hero h2{font-size:24px}
+      .content,.hero{padding:18px}
+      .brand-text h1{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-badge">PDF</div>
+        <div class="brand-text">
+          <h1>PDF Merge - Combine PDF Files</h1>
+          <p>Privacy Policy / 개인정보처리방침</p>
+        </div>
+      </div>
+
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="ko">한국어</button>
+        <button class="lang-btn" data-lang="en">English</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="hero">
+        <div class="lang-block active" data-content="ko">
+          <h2>개인정보처리방침</h2>
+          <p>
+            PDF Merge - Combine PDF Files(이하 “앱”)는 사용자의 개인정보 보호를 중요하게 생각합니다.
+            본 페이지는 앱 사용 시 어떤 정보가 처리될 수 있는지, 그리고 그 방식이 무엇인지 설명합니다.
+          </p>
+          <div class="meta">
+            <span class="chip">앱명: PDF Merge - Combine PDF Files</span>
+            <span class="chip">지원 언어: 한국어 / English</span>
+            <span class="chip">최종 업데이트: 2026-03-06</span>
+          </div>
+        </div>
+
+        <div class="lang-block" data-content="en">
+          <h2>Privacy Policy</h2>
+          <p>
+            PDF Merge - Combine PDF Files (the “App”) values your privacy.
+            This page explains what information may be processed when you use the App and how that information is handled.
+          </p>
+          <div class="meta">
+            <span class="chip">App: PDF Merge - Combine PDF Files</span>
+            <span class="chip">Languages: Korean / English</span>
+            <span class="chip">Last updated: 2026-03-06</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="lang-block active" data-content="ko">
+          <div class="section">
+            <h3>1. 수집하는 정보</h3>
+            <p>
+              본 앱은 기본적으로 사용자의 이름, 이메일 주소, 전화번호와 같은 직접적인 개인정보를 자체적으로 수집하지 않습니다.
+            </p>
+            <p>
+              앱의 핵심 기능인 PDF 병합은 사용자의 기기 내에서 처리되며, 문서 파일은 원칙적으로 외부 서버로 업로드되지 않습니다.
+            </p>
+            <div class="note">
+              본 앱은 PDF 파일 병합 기능을 위해 사용자가 선택한 파일에 접근할 수 있으나,
+              해당 파일은 사용자의 기기 내에서만 처리되도록 설계되었습니다.
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>2. 파일 및 문서 처리 방식</h3>
+            <p>
+              사용자가 선택한 PDF 파일은 병합 기능 수행을 위해 일시적으로 앱에서 읽고 처리할 수 있습니다.
+              병합 결과 파일은 사용자가 지정한 위치 또는 기기 저장공간에 저장될 수 있습니다.
+            </p>
+            <ul>
+              <li>선택한 PDF 파일 읽기</li>
+              <li>파일 순서 변경 및 병합 처리</li>
+              <li>병합된 결과 파일 저장</li>
+              <li>최근 작업 기록 표시를 위한 로컬 정보 저장</li>
+            </ul>
+            <p class="muted">
+              본 앱은 문서 내용을 자체 서버로 전송하거나 저장하지 않는 것을 기본 원칙으로 합니다.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>3. 광고 및 제3자 서비스</h3>
+            <p>
+              본 앱은 광고 제공을 위해 Google AdMob과 같은 제3자 광고 서비스를 사용할 수 있습니다.
+              이러한 서비스는 광고 제공, 성능 측정, 부정 사용 방지 등을 위해 기기 식별자 또는 사용 관련 정보를 처리할 수 있습니다.
+            </p>
+            <p>
+              광고 관련 데이터 처리 방식은 해당 제3자 서비스 제공자의 정책을 따릅니다.
+            </p>
+            <div class="note">
+              광고 SDK를 사용하는 경우, 일부 비개인식별 정보 또는 광고 식별자가 처리될 수 있습니다.
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>4. 로컬 저장 정보</h3>
+            <p>
+              앱은 더 나은 사용 경험을 위해 일부 정보를 사용자의 기기에 로컬로 저장할 수 있습니다.
+            </p>
+            <ul>
+              <li>최근 병합 파일 기록</li>
+              <li>앱 설정 값 (예: 언어 설정)</li>
+              <li>광고 표시 제한을 위한 내부 상태값</li>
+            </ul>
+            <p>
+              이러한 정보는 사용자의 기기 내에 저장되며, 일반적으로 외부 서버로 전송되지 않습니다.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>5. 데이터 공유</h3>
+            <p>
+              본 앱은 사용자의 문서 파일 자체를 개발자 서버로 업로드하거나 판매하지 않습니다.
+            </p>
+            <p>
+              다만 광고 또는 분석 기능이 포함된 경우, 해당 SDK 제공업체가 자체 정책에 따라 제한적인 기술 정보를 처리할 수 있습니다.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>6. 아동의 개인정보</h3>
+            <p>
+              본 앱은 특정 연령대 아동을 주요 대상으로 설계된 서비스가 아닙니다.
+              개발자는 아동으로부터 개인정보를 의도적으로 수집하지 않습니다.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>7. 보안</h3>
+            <p>
+              개발자는 사용자의 문서와 기기 내 정보가 안전하게 처리되도록 합리적인 수준의 주의를 기울입니다.
+              다만 사용자의 기기 보안 상태, 운영체제 환경, 또는 제3자 서비스 요인에 따라 완전한 보안을 절대적으로 보장할 수는 없습니다.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>8. 정책 변경</h3>
+            <p>
+              본 개인정보처리방침은 필요 시 변경될 수 있습니다.
+              변경이 있는 경우 이 페이지를 통해 최신 내용을 제공합니다.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>9. 개발자 정보 및 문의</h3>
+            <p>
+              개발자 정보 및 연락처는 Google Play 스토어의 개발자 정보 항목을 참고해 주세요.
+            </p>
+            <p class="muted">
+              Developer / Contact information: Please refer to the Google Play Store developer information section.
+            </p>
+          </div>
+        </div>
+
+        <div class="lang-block" data-content="en">
+          <div class="section">
+            <h3>1. Information We Collect</h3>
+            <p>
+              The App does not directly collect personal information such as your name, email address, or phone number by default.
+            </p>
+            <p>
+              The core PDF merge feature is designed to work on your device, and your document files are not intended to be uploaded to external servers as part of normal use.
+            </p>
+            <div class="note">
+              The App may access PDF files selected by you in order to perform the merge function,
+              but those files are intended to be processed locally on your device.
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>2. How Files and Documents Are Processed</h3>
+            <p>
+              PDF files selected by the user may be read and processed temporarily in order to merge them.
+              The merged output file may be saved to a location chosen by the user or to device storage.
+            </p>
+            <ul>
+              <li>Reading selected PDF files</li>
+              <li>Reordering files and merging them</li>
+              <li>Saving the merged output file</li>
+              <li>Storing local recent-history information for convenience</li>
+            </ul>
+            <p class="muted">
+              The App is intended to avoid uploading or storing the contents of your documents on the developer’s server.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>3. Advertising and Third-Party Services</h3>
+            <p>
+              The App may use third-party services such as Google AdMob to display ads.
+              These services may process device identifiers or usage-related information for ad delivery, performance measurement, and fraud prevention.
+            </p>
+            <p>
+              Any handling of ad-related data is subject to the privacy policies of those third-party providers.
+            </p>
+            <div class="note">
+              If an ad SDK is used, some non-personally identifying data or advertising identifiers may be processed by the ad provider.
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>4. Local Storage</h3>
+            <p>
+              The App may store limited information locally on your device to improve usability.
+            </p>
+            <ul>
+              <li>Recent merged file history</li>
+              <li>App settings such as language preference</li>
+              <li>Internal values used for ad display limits</li>
+            </ul>
+            <p>
+              This information is generally stored on your device and is not intended to be sent to an external server.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>5. Data Sharing</h3>
+            <p>
+              The App does not upload, sell, or share the contents of your document files with the developer’s own server as part of the normal merge function.
+            </p>
+            <p>
+              However, if advertising or analytics tools are included, the providers of those SDKs may process limited technical information according to their own policies.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>6. Children’s Privacy</h3>
+            <p>
+              The App is not specifically designed for children as a primary audience.
+              The developer does not knowingly collect personal information from children.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>7. Security</h3>
+            <p>
+              The developer takes reasonable care to help ensure that documents and local information are handled safely.
+              However, absolute security cannot be guaranteed in all cases due to device conditions, operating system environments, or third-party service factors.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>8. Changes to This Policy</h3>
+            <p>
+              This Privacy Policy may be updated when necessary.
+              If changes are made, the latest version will be provided on this page.
+            </p>
+          </div>
+
+          <div class="section">
+            <h3>9. Developer Information and Contact</h3>
+            <p>
+              For developer information and contact details, please refer to the developer information section on the Google Play Store.
+            </p>
+            <p class="muted">
+              개발자 정보 및 연락처는 Google Play 스토어의 개발자 정보 항목을 참고해 주세요.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2026 PDF Merge - Combine PDF Files
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.lang-btn');
+    const blocks = document.querySelectorAll('.lang-block');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        blocks.forEach(block => {
+          const target = block.getAttribute('data-content');
+          block.classList.toggle('active', target === lang);
+        });
+
+        document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
+      });
+    });
+  </script>
+</body>
+</html>
