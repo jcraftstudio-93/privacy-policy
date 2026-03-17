@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!-- privacy-policy.html -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | 개인정보처리방침</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #121a2b;
+      --text: #e5ecf6;
+      --muted: #9fb0c9;
+      --line: #24324a;
+      --accent: #7c9eff;
+      --accent-soft: rgba(124, 158, 255, 0.14);
+      --max: 980px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background: linear-gradient(180deg, #0b1220 0%, #0e1728 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: #a9c1ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .hero {
+      padding: 28px 22px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(124, 158, 255, 0.12), rgba(18, 26, 43, 0.98));
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+    }
+
+    .title {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .lang-btn {
+      border: 1px solid var(--line);
+      background: #172238;
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .notice {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(124, 158, 255, 0.28);
+      color: #d9e5ff;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-top: 18px;
+      padding: 22px 20px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--card);
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    .section h3 {
+      margin: 18px 0 8px;
+      font-size: 17px;
+    }
+
+    .section p {
+      margin: 10px 0;
+    }
+
+    .section ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    .section li {
+      margin: 6px 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .lang-block {
+      display: none;
+    }
+
+    .lang-block.active {
+      display: block;
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: #101829;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    code.inline {
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 640px) {
+      .title {
+        font-size: 26px;
+      }
+
+      .section {
+        padding: 18px 16px;
+      }
+
+      .section h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1 class="title">Privacy Policy | 개인정보처리방침</h1>
+      <p class="subtitle">This page provides both English and Korean versions. / 이 페이지는 영어와 한국어 버전을 함께 제공합니다.</p>
+
+      <div class="toolbar" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="ko" type="button">한국어</button>
+        <button class="lang-btn" data-lang="en" type="button">English</button>
+      </div>
+
+      <div class="notice">
+        <div class="lang-block active" data-lang-content="ko">
+          본 개인정보처리방침의 개발자 정보, 연락처, 앱 정보 등은 Google Play 스토어에 게시된 개발자 정보를 참고해 주시기 바랍니다.
+        </div>
+        <div class="lang-block" data-lang-content="en">
+          For developer details, contact information, and app information, please refer to the developer information published on the Google Play Store.
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section lang-block active" data-lang-content="ko">
+        <h2>1. 개요</h2>
+        <p>본 개인정보처리방침은 본 앱 및 관련 서비스에서 어떤 정보를 처리하는지, 어떤 목적으로 사용하는지, 그리고 이용자가 어떤 권리를 가질 수 있는지 설명하기 위해 마련되었습니다.</p>
+        <p>본 앱의 개발자 정보, 이메일 주소, 배포 앱 목록 등은 Google Play 스토어에 표시된 개발자 정보를 기준으로 확인해 주시기 바랍니다.</p>
+
+        <h2>2. 수집할 수 있는 정보</h2>
+        <p>본 앱은 기능 제공, 앱 안정성 유지, 광고 제공, 성능 분석을 위해 아래와 같은 정보가 처리될 수 있습니다.</p>
+        <ul>
+          <li>앱 내에서 사용자가 직접 입력하거나 저장한 정보</li>
+          <li>기기 정보(기기 모델, 운영체제 버전, 언어 설정 등)</li>
+          <li>광고 식별자 또는 광고 제공에 필요한 정보</li>
+          <li>앱 사용 기록, 오류 로그, 진단 정보</li>
+          <li>광고 또는 분석 SDK에서 자동으로 수집하는 정보</li>
+        </ul>
+        <p>앱의 실제 기능에 따라 수집 또는 처리되는 정보 범위는 달라질 수 있습니다.</p>
+
+        <h2>3. 정보 이용 목적</h2>
+        <ul>
+          <li>앱 기능 제공 및 사용자 설정 저장</li>
+          <li>오류 수정 및 앱 안정성 향상</li>
+          <li>광고 제공 및 광고 성과 측정</li>
+          <li>서비스 운영, 부정 사용 방지, 기본 통계 확인</li>
+        </ul>
+
+        <h2>4. 로컬 저장 정보</h2>
+        <p>본 앱은 사용자 편의를 위해 일부 데이터를 기기 내부 저장소에 저장할 수 있습니다. 예를 들어 카운트 값, 앱 설정, 언어 설정, 사용 기록 등의 정보가 로컬에 저장될 수 있습니다.</p>
+        <p>이러한 정보는 일반적으로 사용자의 기기 안에 저장되며, 사용자가 앱을 삭제하면 함께 삭제될 수 있습니다. 다만 운영체제 또는 제조사 정책에 따라 일부 캐시 데이터는 즉시 제거되지 않을 수 있습니다.</p>
+
+        <h2>5. 광고 및 제3자 서비스</h2>
+        <p>본 앱은 광고 제공을 위해 Google AdMob 등 제3자 서비스를 사용할 수 있습니다. 이러한 서비스 제공자는 관련 법령과 자체 정책에 따라 정보를 처리할 수 있습니다.</p>
+        <p>광고 SDK 또는 분석 도구는 광고 식별자, 기기 정보, 앱 상호작용 정보 등을 수집할 수 있으며, 이는 맞춤형 광고 제공, 광고 빈도 제어, 성능 측정 등에 사용될 수 있습니다.</p>
+        <p>제3자 서비스의 개인정보 처리에 대해서는 각 서비스 제공자의 정책을 함께 확인하시기 바랍니다.</p>
+
+        <h2>6. 개인정보의 보관 및 삭제</h2>
+        <p>개인정보 또는 관련 정보는 수집 목적 달성 시까지 또는 관련 법령이 요구하는 기간 동안만 보관될 수 있습니다.</p>
+        <p>앱 내부 로컬 저장 데이터는 사용자가 앱 삭제, 데이터 삭제, 기기 설정 변경 등을 통해 직접 제거할 수 있습니다.</p>
+
+        <h2>7. 이용자의 권리</h2>
+        <p>이용자는 관련 법령이 허용하는 범위에서 개인정보 열람, 정정, 삭제, 처리 정지 요청 등의 권리를 가질 수 있습니다.</p>
+        <p>개발자 정보 및 문의 방법은 Google Play 스토어의 개발자 정보에서 확인해 주시기 바랍니다.</p>
+
+        <h2>8. 아동의 개인정보</h2>
+        <p>본 앱은 일반 이용자를 대상으로 제공될 수 있으며, 법적으로 요구되는 경우 아동 개인정보 보호 관련 기준을 준수하기 위해 필요한 조치를 취할 수 있습니다.</p>
+        <p>앱이 아동 대상이 아닌 경우에도, 관련 법령 또는 플랫폼 정책에 따라 광고 및 데이터 처리 방식이 제한될 수 있습니다.</p>
+
+        <h2>9. 정책 변경</h2>
+        <p>본 개인정보처리방침은 앱 기능 변경, 법령 변경, 플랫폼 정책 변경 등에 따라 수정될 수 있습니다. 변경 시 본 페이지를 통해 최신 버전이 게시됩니다.</p>
+
+        <h2>10. 문의</h2>
+        <p>개인정보처리방침 또는 앱 운영에 관한 문의는 Google Play 스토어에 표시된 개발자 연락처를 참고해 주시기 바랍니다.</p>
+      </section>
+
+      <section class="section lang-block" data-lang-content="en">
+        <h2>1. Overview</h2>
+        <p>This Privacy Policy explains what information may be processed when you use this app and related services, why that information is used, and what rights users may have.</p>
+        <p>For developer details, email address, and published app information, please refer to the developer information shown on the Google Play Store.</p>
+
+        <h2>2. Information That May Be Collected</h2>
+        <p>This app may process certain information to provide app features, maintain app stability, display ads, and measure performance.</p>
+        <ul>
+          <li>Information entered or saved directly by the user inside the app</li>
+          <li>Device information such as device model, OS version, and language settings</li>
+          <li>Advertising identifiers or information required to serve ads</li>
+          <li>App usage data, crash logs, and diagnostic information</li>
+          <li>Information automatically collected by advertising or analytics SDKs</li>
+        </ul>
+        <p>The exact scope of data processed may vary depending on the actual features of the app.</p>
+
+        <h2>3. Purpose of Use</h2>
+        <ul>
+          <li>To provide app functions and save user settings</li>
+          <li>To fix errors and improve app stability</li>
+          <li>To display ads and measure ad performance</li>
+          <li>To operate the service, prevent abuse, and review basic statistics</li>
+        </ul>
+
+        <h2>4. Local Storage</h2>
+        <p>This app may store certain data locally on your device for convenience. For example, count values, app settings, language preferences, or usage-related data may be stored on-device.</p>
+        <p>Such information is generally stored on the user’s device and may be deleted when the app is removed. However, depending on the operating system or manufacturer policy, some cached data may not be removed immediately.</p>
+
+        <h2>5. Advertising and Third-Party Services</h2>
+        <p>This app may use third-party services such as Google AdMob to display advertisements. These service providers may process information in accordance with applicable laws and their own privacy policies.</p>
+        <p>Advertising SDKs or analytics tools may collect advertising identifiers, device information, and app interaction data for purposes such as ad delivery, frequency control, performance measurement, and fraud prevention.</p>
+        <p>Please also review the privacy policies of relevant third-party service providers for more information about their data handling practices.</p>
+
+        <h2>6. Retention and Deletion</h2>
+        <p>Personal information or related data may be retained only for as long as necessary to fulfill the stated purposes or for the period required by applicable law.</p>
+        <p>Data stored locally within the app may be removed by deleting the app, clearing app data, or changing device settings.</p>
+
+        <h2>7. User Rights</h2>
+        <p>To the extent permitted by applicable law, users may have rights regarding access, correction, deletion, or restriction of processing of their personal information.</p>
+        <p>Please refer to the developer information on the Google Play Store for contact details and inquiry methods.</p>
+
+        <h2>8. Children’s Privacy</h2>
+        <p>This app may be provided for general audiences. Where required by law, appropriate measures may be taken to comply with applicable rules relating to children’s privacy.</p>
+        <p>Even if the app is not specifically directed to children, the way ads and data are handled may be limited by platform rules or applicable regulations.</p>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>This Privacy Policy may be updated from time to time due to changes in app features, legal requirements, or platform policies. The latest version will be posted on this page.</p>
+
+        <h2>10. Contact</h2>
+        <p>For questions regarding this Privacy Policy or the operation of the app, please refer to the developer contact information shown on the Google Play Store.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="lang-block active" data-lang-content="ko">
+        최종 안내: 이 문서의 개발자 정보와 연락처는 Google Play 스토어의 개발자 정보를 참고하도록 구성되어 있습니다.
+      </div>
+      <div class="lang-block" data-lang-content="en">
+        Final note: This document is written so that developer details and contact information are referenced from the Google Play Store listing.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const buttons = document.querySelectorAll('.lang-btn');
+      const blocks = document.querySelectorAll('[data-lang-content]');
+
+      function setLanguage(lang) {
+        buttons.forEach((button) => {
+          button.classList.toggle('active', button.dataset.lang === lang);
+        });
+
+        blocks.forEach((block) => {
+          block.classList.toggle('active', block.dataset.langContent === lang);
+        });
+
+        document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', function () {
+          setLanguage(this.dataset.lang);
+        });
+      });
+
+      setLanguage('ko');
+    })();
+  </script>
+</body>
+</html>
