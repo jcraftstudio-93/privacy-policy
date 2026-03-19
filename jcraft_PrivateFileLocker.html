@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 / Privacy Policy - Private File Locker PIN Lock</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --sub: #475569;
+      --line: #dbe4f0;
+      --accent: #1d4ed8;
+      --warn-bg: #fff8e8;
+      --warn-line: #f3c969;
+      --warn-text: #7c2d12;
+      --pill-bg: #eff6ff;
+      --shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 55%, #2563eb 100%);
+      color: #ffffff;
+      border-radius: 26px;
+      padding: 30px 24px;
+      box-shadow: 0 18px 40px rgba(29, 78, 216, 0.18);
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 30px;
+      line-height: 1.2;
+      letter-spacing: -0.3px;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .meta {
+      display: inline-block;
+      padding: 9px 13px;
+      background: rgba(255, 255, 255, 0.14);
+      color: #ffffff;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .lang-switch {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .lang-switch button {
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+      transition: all 0.15s ease;
+    }
+
+    .lang-switch button.active {
+      background: #ffffff;
+      color: #1d4ed8;
+    }
+
+    .card {
+      margin-top: 16px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .warning {
+      background: var(--warn-bg);
+      border-color: var(--warn-line);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.3;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 17px;
+      line-height: 1.45;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--sub);
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 0 0 12px 20px;
+      padding: 0;
+      color: var(--sub);
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .warning h2,
+    .warning h3,
+    .warning p,
+    .warning li {
+      color: var(--warn-text);
+    }
+
+    .footer {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 18px 0;
+    }
+
+    .lang-block {
+      display: none;
+    }
+
+    .lang-block.active {
+      display: block;
+    }
+
+    .section-pill {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 7px 11px;
+      background: var(--pill-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .warning .section-pill {
+      background: rgba(180, 83, 9, 0.12);
+      color: #92400e;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 24px 18px;
+        border-radius: 22px;
+      }
+
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .card {
+        padding: 20px 16px;
+        border-radius: 18px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>개인정보처리방침 / Privacy Policy</h1>
+      <p>Private File Locker PIN Lock</p>
+      <div class="meta-row">
+        <div class="meta">Effective Date / 시행일: 2026-03-19</div>
+        <div class="meta">Local Privacy Utility</div>
+      </div>
+      <div class="lang-switch">
+        <button id="btn-ko" class="active" type="button" onclick="setLang('ko')">한국어</button>
+        <button id="btn-en" type="button" onclick="setLang('en')">English</button>
+      </div>
+    </section>
+
+    <div id="lang-ko" class="lang-block active">
+      <section class="card">
+        <div class="section-pill">1. 소개</div>
+        <h2>개인정보처리방침 안내</h2>
+        <p>
+          본 개인정보처리방침은 Private File Locker PIN Lock(이하 “앱”) 이용 시 정보가 어떤 방식으로 처리되는지 설명합니다.
+          이 앱은 사용자가 선택한 파일 사본을 앱 내부 저장소에 보관하고, PIN을 통해 앱 접근을 제한할 수 있도록 설계된 로컬 개인 프라이버시 보조 도구입니다.
+        </p>
+        <p>
+          개발자명, 연락처 등 개발자 식별 정보는 본 앱의 Google Play 스토어 등록 정보 페이지를 참고하시기 바랍니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">2. 기본 원칙</div>
+        <h2>로컬 중심 처리 방식</h2>
+        <p>
+          본 앱은 원칙적으로 사용자 기기 내에서 동작하도록 설계되었습니다.
+          사용자가 선택한 파일은 앱 내부 저장소에 복사되어 보관될 수 있으며, 본 앱은 클라우드 저장 서비스로 설계되지 않았습니다.
+        </p>
+        <ul>
+          <li>사용자가 선택한 파일 사본은 기기 내 앱 내부 저장소에 저장될 수 있습니다.</li>
+          <li>PIN 접근 제어를 위한 해시 정보와 기본 설정 값은 기기 로컬에 저장될 수 있습니다.</li>
+          <li>본 앱은 전문 보안 제품이 아니라 개인 프라이버시 편의 기능 제공을 목적으로 합니다.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">3. 처리될 수 있는 정보</div>
+        <h2>앱이 처리할 수 있는 정보 항목</h2>
+
+        <h3>3.1 사용자가 직접 선택한 파일</h3>
+        <p>
+          사용자가 파일 선택 기능을 통해 이미 존재하는 파일을 고르면, 앱은 해당 파일의 사본을 앱 내부 저장소에 복사할 수 있습니다.
+          여기에는 이미지, PDF 문서, 압축 파일 및 사용자가 직접 선택한 기타 파일 유형이 포함될 수 있습니다.
+        </p>
+
+        <h3>3.2 앱 접근 및 운영 정보</h3>
+        <p>앱의 기본 기능 제공을 위해 다음과 같은 제한적 정보가 기기 내에 로컬 저장될 수 있습니다.</p>
+        <ul>
+          <li>PIN 접근 제어를 위한 PIN 해시 정보</li>
+          <li>파일명, 파일 유형, 저장 경로, 크기, 생성일 등의 파일 목록 메타데이터</li>
+          <li>선택 언어, 광고 노출 상태 등 기본 앱 설정 정보</li>
+        </ul>
+
+        <h3>3.3 광고 관련 정보</h3>
+        <p>
+          본 앱은 Google AdMob 등 제3자 광고 서비스를 통해 광고를 표시할 수 있습니다.
+          이러한 제3자 서비스는 자체 정책에 따라 기기 관련 정보 또는 광고 관련 정보를 수집·처리할 수 있습니다.
+        </p>
+        <p>
+          개발자는 제3자 광고 서비스 제공자가 자체 플랫폼에서 어떠한 방식으로 데이터를 수집·이용·보관하는지 직접 통제하지 않으며,
+          관련 내용은 각 서비스 제공자의 개인정보처리방침을 별도로 확인해야 합니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">4. 이용 목적</div>
+        <h2>정보 이용 목적</h2>
+        <p>앱이 처리하는 정보는 다음 목적 범위에서만 사용될 수 있습니다.</p>
+        <ul>
+          <li>선택된 파일 사본을 앱 내부 저장소에 보관하기 위한 목적</li>
+          <li>사용자 PIN을 통한 앱 접근 제한 기능 제공 목적</li>
+          <li>앱 내 파일 목록 표시, 열기, 내보내기, 삭제 기능 지원 목적</li>
+          <li>기본 앱 설정 유지 목적</li>
+          <li>광고 표시 및 기본 광고 노출 규칙 관리 목적</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">5. 저장 방식</div>
+        <h2>파일 저장 및 원본 파일 관련 안내</h2>
+        <p>
+          본 앱은 일반적으로 사용자가 선택한 파일을 앱 내부 저장소에 복사합니다.
+          이 경우 원본 파일은 기존 저장 위치에 그대로 남아 있을 수 있습니다.
+        </p>
+        <p>
+          따라서 원본 파일은 기기 전체 검색, 갤러리 앱, 다운로드 폴더, 제조사 기본 파일 앱, 제3자 파일 관리자 앱 등에서 계속 노출될 수 있습니다.
+          본 앱은 원본 파일의 자동 숨김, 자동 이동, 자동 삭제를 보장하지 않습니다.
+        </p>
+        <p>
+          즉, 본 앱에 파일을 추가하는 행위는 앱 내부에 별도 사본을 만드는 행위일 수 있으며,
+          기기 환경과 운영체제, 제조사 정책, 미디어 인덱싱 상태에 따라 원본 파일은 계속 다른 위치에서 보일 수 있습니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">6. 제3자 제공</div>
+        <h2>정보 공유</h2>
+        <p>
+          개발자는 앱의 핵심 로컬 저장 기능을 통해 보관된 사용자 파일을 개발자 자체 서버에 업로드하거나 판매할 목적으로 공유하지 않습니다.
+        </p>
+        <p>
+          다만 광고 서비스 등 앱 운영에 필요한 범위에서 일부 데이터가 제3자 서비스 제공자에 의해 처리될 수 있으며,
+          이 경우 해당 처리 행위는 각 제3자 서비스의 정책에 따릅니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">7. 보관 기간</div>
+        <h2>데이터 보관 및 삭제</h2>
+        <p>
+          앱 내부에 저장된 파일 사본과 관련 데이터는 사용자가 직접 삭제하거나, 앱 데이터가 초기화되거나,
+          앱이 삭제되거나, 기기가 초기화되거나, 저장소 상태가 변경되기 전까지 기기 내에 남아 있을 수 있습니다.
+        </p>
+        <p>
+          앱 삭제, 앱 데이터 초기화, 운영체제 정책 변경, 저장소 손상, 기기 교체, 백업 정책 차이 등으로 인해 저장 파일이 삭제되거나
+          접근 불가 상태가 되거나 복구 불가능해질 수 있습니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">8. 사용자 선택권</div>
+        <h2>사용자가 할 수 있는 선택</h2>
+        <ul>
+          <li>파일을 앱에 추가할지 여부를 직접 선택할 수 있습니다.</li>
+          <li>앱 내부에 저장된 파일 사본을 앱에서 삭제할 수 있습니다.</li>
+          <li>PIN을 변경하거나 앱 사용을 중단할 수 있습니다.</li>
+          <li>앱을 삭제할 수 있으나, 앱 내부에만 보관된 파일은 함께 삭제될 수 있습니다.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">9. 아동</div>
+        <h2>아동 관련 안내</h2>
+        <p>
+          본 앱은 특정 아동 대상 서비스로 설계되지 않았습니다.
+          사용자는 관련 법령, 플랫폼 정책 및 연령 요건을 준수하여 앱을 이용해야 합니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">10. 제3자 서비스</div>
+        <h2>제3자 서비스 및 외부 구성요소</h2>
+        <p>본 앱은 다음과 같은 제3자 서비스 또는 플랫폼 구성요소를 사용할 수 있습니다.</p>
+        <ul>
+          <li>Google Play 서비스</li>
+          <li>Google AdMob</li>
+          <li>Android 시스템 파일 선택기 및 플랫폼 저장소 구성요소</li>
+          <li>파일 열기 또는 내보내기 시 연동되는 외부 앱</li>
+        </ul>
+        <p>
+          이러한 서비스는 각자의 약관, 개인정보처리방침, 법적 체계에 따라 운영됩니다.
+          개발자는 직접 운영하지 않는 제3자 서비스의 개인정보 처리, 보안, 가용성, 적법성 또는 데이터 처리 방식에 대해 책임지지 않습니다.
+        </p>
+      </section>
+
+      <section class="card warning">
+        <div class="section-pill">11. 중요 고지 및 면책</div>
+        <h2>법적 고지 및 책임 제한</h2>
+
+        <h3>11.1 전문 보안 제품이 아님</h3>
+        <p>
+          본 앱은 일반적인 개인 프라이버시 및 로컬 파일 정리 편의 앱입니다.
+          본 앱은 인증된 암호화 제품, 기업용 보안 솔루션, 전자증거 보존 시스템, 법적 보관 시스템, 규제 준수용 저장 시스템 또는 완전한 데이터 보호 솔루션으로 제공되지 않습니다.
+        </p>
+
+        <h3>11.2 완전한 비공개·은닉·비노출 보장 없음</h3>
+        <p>
+          개발자는 파일, 파일명, 사본, 원본 파일, 메타데이터, 검색 결과, 썸네일, 미디어 인덱스, 백업 데이터, 동기화 데이터, 내보내기 파일 등이
+          모든 기기 환경, 운영체제, 루팅 상태, 악성 앱, 제3자 앱, 포렌식 방식, 사용자 오조작, 플랫폼 동작 등으로부터 완전히 숨겨지거나 보호된다고 보장하지 않습니다.
+        </p>
+
+        <h3>11.3 원본 파일 노출 가능성</h3>
+        <p>
+          파일을 앱에 추가하더라도 원본 파일이 자동으로 제거되거나 숨김 처리되거나 삭제된다고 보장하지 않습니다.
+          원본 파일은 기기 검색, 갤러리, 다운로드 폴더, 제조사 백업, 제3자 파일 앱 등 다른 위치에서 계속 보일 수 있습니다.
+        </p>
+
+        <h3>11.4 데이터 손실 및 복구 실패에 대한 책임 제한</h3>
+        <p>
+          관련 법령상 허용되는 최대 범위 내에서, 개발자는 파일 손실, 데이터 손상, 실수 삭제, 저장소 손상, 기기 고장, 운영체제 변경,
+          외부 앱 호환성 문제, 인덱싱 노출, PIN 분실, 복구 실패 등으로 발생하는 직·간접 손해에 대해 책임을 지지 않습니다.
+        </p>
+
+        <h3>11.5 사용자 책임 및 백업 의무</h3>
+        <p>
+          사용자는 본 앱이 자신의 목적에 적합한지 스스로 판단해야 하며, 중요한 데이터는 반드시 별도의 위치에 백업해야 합니다.
+          법적 보관 의무가 있는 문서, 업무상 핵심 자료, 계약 원본, 회계 자료, 의료 기록, 고도의 민감 정보, 지식재산 원본, 복구 불가능한 파일 등은
+          본 앱만을 단독 저장 수단으로 사용해서는 안 됩니다.
+        </p>
+
+        <h3>11.6 저작권·콘텐츠 적법성 관련 고지</h3>
+        <p>
+          사용자가 앱을 통해 보관·복사·내보내기·관리하는 파일의 적법성은 전적으로 사용자 본인의 책임입니다.
+          개발자는 사용자 파일의 소유권을 주장하지 않으며, 해당 파일이 적법한지, 정당한 이용허락을 받았는지, 저작권을 침해하지 않는지, 제3자 권리를 침해하지 않는지 확인하지 않습니다.
+        </p>
+        <p>
+          사용자는 저작권법, 개인정보 보호법, 형사법, 근로계약상 비밀유지의무, 업무상 의무, 기타 적용 법령 및 제3자 권리를 위반하는 방식으로 본 앱을 사용해서는 안 됩니다.
+        </p>
+
+        <h3>11.7 플랫폼 정책 관련 고지</h3>
+        <p>
+          본 개인정보처리방침은 플랫폼 정책상 투명성 요구를 충족하기 위한 목적도 포함합니다.
+          본 정책의 어떠한 내용도 절대적 보안 보장, 완전한 비밀 유지 보장, 모든 사용 사례에 대한 법적 적합성 보장 또는 규제 대상 저장 의무 충족 보장으로 해석되어서는 안 됩니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">12. 변경</div>
+        <h2>개인정보처리방침 변경</h2>
+        <p>
+          본 개인정보처리방침은 필요에 따라 변경될 수 있습니다.
+          변경 내용은 앱 업데이트, 스토어 등록 정보, 웹페이지 또는 적절한 공지 수단을 통해 반영될 수 있으며,
+          관련 법령상 허용되는 범위 내에서 변경 이후 앱을 계속 사용하는 경우 변경된 정책에 동의한 것으로 간주될 수 있습니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">13. 문의</div>
+        <h2>연락처</h2>
+        <p>
+          개발자 신원 및 스토어 관련 연락처 정보는 Google Play 스토어의 본 앱 등록 페이지에 표시된 개발자 정보를 확인해 주시기 바랍니다.
+        </p>
+      </section>
+    </div>
+
+    <div id="lang-en" class="lang-block">
+      <section class="card">
+        <div class="section-pill">1. Introduction</div>
+        <h2>Privacy Policy Overview</h2>
+        <p>
+          This Privacy Policy explains how information may be handled when you use Private File Locker PIN Lock (“the App”).
+          The App is designed as a local personal privacy utility that allows users to store copies of selected files inside app-internal storage
+          and limit access to the App with a PIN.
+        </p>
+        <p>
+          For developer identity and contact information, please refer to the Google Play Store listing page for this App.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">2. Core Principle</div>
+        <h2>Local-First Processing</h2>
+        <p>
+          The App is designed to work primarily on the user’s device.
+          Files selected by the user may be copied into app-internal storage, and the App is not designed as a cloud storage service.
+        </p>
+        <ul>
+          <li>Copies of user-selected files may be stored in app-internal local storage on the device.</li>
+          <li>PIN access control data and basic app settings may be stored locally on the device.</li>
+          <li>The App is intended as a personal privacy utility, not a professional security product.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">3. Information Processed</div>
+        <h2>Types of Information the App May Process</h2>
+
+        <h3>3.1 Files Selected by the User</h3>
+        <p>
+          When the user selects files through the App, the App may create copies of those files in app-internal storage.
+          These files may include images, PDF documents, compressed files, and other file types voluntarily selected by the user.
+        </p>
+
+        <h3>3.2 Access and App Operation Data</h3>
+        <p>The following limited information may be stored locally on the device for App functionality.</p>
+        <ul>
+          <li>PIN hash data used for local access control</li>
+          <li>File list metadata such as file names, file types, stored paths, sizes, and creation dates</li>
+          <li>Basic app settings such as selected language and ad display state</li>
+        </ul>
+
+        <h3>3.3 Advertising-Related Data</h3>
+        <p>
+          The App may display ads through third-party advertising services such as Google AdMob.
+          Those third-party services may collect or process device-related or advertising-related data according to their own policies.
+        </p>
+        <p>
+          The developer does not directly control how third-party providers collect, use, or retain data on their own systems,
+          and users should review those providers’ policies separately.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">4. Purpose</div>
+        <h2>How Information May Be Used</h2>
+        <p>Information processed by the App may be used only for the following purposes.</p>
+        <ul>
+          <li>To store copies of selected files inside app-internal storage</li>
+          <li>To restrict access to the App using a user-created PIN</li>
+          <li>To display, open, export, and delete stored file copies inside the App</li>
+          <li>To maintain basic app settings</li>
+          <li>To display ads and manage basic ad display rules</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">5. Storage Notice</div>
+        <h2>File Storage and Original File Notice</h2>
+        <p>
+          The App generally copies selected files into app-internal storage.
+          In many cases, the original file may still remain in its original location.
+        </p>
+        <p>
+          Because of this, original files may still appear in device-wide search, gallery apps, download folders, manufacturer file apps,
+          or third-party file manager apps. The App does not guarantee automatic hiding, moving, or deletion of original files.
+        </p>
+        <p>
+          In other words, adding a file to the App may create an additional stored copy while the original may continue to remain visible elsewhere,
+          depending on the device, operating system, manufacturer behavior, and indexing state.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">6. Sharing</div>
+        <h2>Data Sharing</h2>
+        <p>
+          The developer does not intentionally upload or sell user-stored files to the developer’s own server through the App’s core local storage feature.
+        </p>
+        <p>
+          However, data may be processed by third-party service providers where necessary for app operation, such as advertising services,
+          and such processing is governed by each provider’s own policies.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">7. Retention</div>
+        <h2>Retention and Deletion</h2>
+        <p>
+          Files stored inside the App and related local data may remain on the device until the user deletes them, clears app data,
+          uninstalls the App, resets the device, or otherwise removes the App’s local storage content.
+        </p>
+        <p>
+          App removal, clearing app data, OS policy changes, storage damage, device replacement, or backup differences may cause stored files
+          to be deleted, become inaccessible, or become unrecoverable.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">8. Your Choices</div>
+        <h2>User Choices</h2>
+        <ul>
+          <li>You may choose whether to add files to the App.</li>
+          <li>You may delete stored copies from within the App.</li>
+          <li>You may change your PIN or stop using the App at any time.</li>
+          <li>You may uninstall the App, but files stored only inside the App may also be removed.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">9. Children</div>
+        <h2>Children</h2>
+        <p>
+          The App is not specifically designed as a dedicated child-directed service.
+          Users must use the App in compliance with applicable law, platform policy, and age requirements.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">10. Third Parties</div>
+        <h2>Third-Party Services and Components</h2>
+        <p>The App may rely on third-party services or platform components such as the following.</p>
+        <ul>
+          <li>Google Play services</li>
+          <li>Google AdMob</li>
+          <li>Android system file picker and platform storage components</li>
+          <li>External apps used when opening or exporting files</li>
+        </ul>
+        <p>
+          These services operate under their own terms, privacy policies, and legal frameworks.
+          The developer is not responsible for the privacy, security, availability, legality, or data practices of third-party services not directly operated by the developer.
+        </p>
+      </section>
+
+      <section class="card warning">
+        <div class="section-pill">11. Legal Notice</div>
+        <h2>Important Legal Notice and Disclaimer</h2>
+
+        <h3>11.1 Not a Professional Security Product</h3>
+        <p>
+          The App is a general personal privacy and local file organization utility.
+          It is not provided as a certified encryption product, enterprise security suite, digital evidence preservation system,
+          legal archive platform, regulatory compliance storage system, or guaranteed data protection solution.
+        </p>
+
+        <h3>11.2 No Guarantee of Complete Privacy or Non-Discovery</h3>
+        <p>
+          The developer does not guarantee that files, file names, copies, original files, metadata, search results, thumbnails, media indexes,
+          backups, synced data, or exported files will remain hidden, undiscoverable, or protected from every possible device condition,
+          operating system behavior, rooted environment, malware, third-party app, forensic method, user error, or platform behavior.
+        </p>
+
+        <h3>11.3 Original Files May Still Be Visible</h3>
+        <p>
+          Adding files to the App does not guarantee that original files will be automatically removed, hidden, or deleted.
+          Original files may still appear in device search, gallery apps, download folders, manufacturer backup systems, or third-party file apps.
+        </p>
+
+        <h3>11.4 Limitation of Liability for Data Loss or Recovery Failure</h3>
+        <p>
+          To the maximum extent permitted by applicable law, the developer is not responsible for direct or indirect loss arising from file loss,
+          data corruption, accidental deletion, storage damage, device failure, OS changes, compatibility issues, indexing exposure, lost PIN,
+          recovery failure, or similar events.
+        </p>
+
+        <h3>11.5 User Responsibility and Backup Duty</h3>
+        <p>
+          The user is solely responsible for determining whether this App is appropriate for the intended purpose and for maintaining separate backups of important data.
+          The App should not be used as the sole storage method for legally required records, business-critical documents, original contracts, accounting materials,
+          medical records, highly sensitive information, intellectual property originals, or irreplaceable files.
+        </p>
+
+        <h3>11.6 Copyright and Legality of User Content</h3>
+        <p>
+          The legality of files stored, copied, exported, or managed through the App is entirely the responsibility of the user.
+          The developer does not claim ownership of user files and does not verify whether user-selected content is lawful, properly licensed,
+          non-infringing, or compliant with third-party rights.
+        </p>
+        <p>
+          Users must not use the App in violation of copyright law, privacy law, criminal law, confidentiality obligations, employment duties,
+          contractual obligations, or any other applicable law or third-party rights.
+        </p>
+
+        <h3>11.7 Platform Policy Transparency</h3>
+        <p>
+          This Privacy Policy is also intended to support platform transparency requirements.
+          Nothing in this policy should be interpreted as a promise of absolute security, guaranteed secrecy, universal legal suitability,
+          or compliance with regulated record-retention obligations.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">12. Updates</div>
+        <h2>Changes to This Policy</h2>
+        <p>
+          This Privacy Policy may be updated when necessary.
+          Updated content may be reflected through app updates, the store listing, a webpage, or another appropriate notice method.
+          Continued use of the App after changes may be treated as acceptance of the revised policy where permitted by applicable law.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-pill">13. Contact</div>
+        <h2>Contact</h2>
+        <p>
+          For developer identity and store-related contact information, please refer to the developer information shown on the Google Play Store listing page for this App.
+        </p>
+      </section>
+    </div>
+
+    <div class="footer">
+      Last updated / 최종 수정일: 2026-03-19
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      var ko = document.getElementById('lang-ko');
+      var en = document.getElementById('lang-en');
+      var btnKo = document.getElementById('btn-ko');
+      var btnEn = document.getElementById('btn-en');
+
+      if (lang === 'ko') {
+        ko.classList.add('active');
+        en.classList.remove('active');
+        btnKo.classList.add('active');
+        btnEn.classList.remove('active');
+        document.documentElement.lang = 'ko';
+      } else {
+        en.classList.add('active');
+        ko.classList.remove('active');
+        btnEn.classList.add('active');
+        btnKo.classList.remove('active');
+        document.documentElement.lang = 'en';
+      }
+    }
+  </script>
+</body>
+</html>
