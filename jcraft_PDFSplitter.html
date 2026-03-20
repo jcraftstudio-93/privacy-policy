@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy / 개인정보처리방침</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --sub: #4b5563;
+      --line: #dbe3ee;
+      --accent: #2563eb;
+      --warn-bg: #fff8e1;
+      --warn-line: #f4c542;
+      --warn-text: #7a5200;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+
+    h1 {
+      font-size: 28px;
+      line-height: 1.3;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 21px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      margin-top: 18px;
+      font-size: 17px;
+    }
+
+    p, li {
+      color: var(--sub);
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 0;
+    }
+
+    .top-note {
+      margin: 12px 0 24px;
+      color: var(--sub);
+      font-size: 14px;
+    }
+
+    .lang-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .lang-btn {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .lang-section {
+      display: none;
+    }
+
+    .lang-section.active {
+      display: block;
+    }
+
+    .warn {
+      margin: 18px 0 8px;
+      padding: 14px 16px;
+      border: 1px solid var(--warn-line);
+      background: var(--warn-bg);
+      color: var(--warn-text);
+      border-radius: 12px;
+      font-size: 14px;
+    }
+
+    .mono {
+      font-family: Consolas, Monaco, monospace;
+      font-size: 14px;
+      color: var(--text);
+      word-break: break-all;
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 13px;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="lang-bar">
+        <button class="lang-btn active" type="button" onclick="showLang('ko')" id="btn-ko">한국어</button>
+        <button class="lang-btn" type="button" onclick="showLang('en')" id="btn-en">English</button>
+      </div>
+
+      <div id="ko" class="lang-section active">
+        <h1>개인정보처리방침</h1>
+        <p class="top-note">
+          본 개인정보처리방침은 PDF Splitter 앱(이하 “앱”)에 적용됩니다.
+        </p>
+
+        <div class="warn">
+          중요 안내: 본 앱은 사용자의 편의를 위한 PDF 분할 및 파일 처리 기능을 제공합니다. 사용자는 중요한 문서에 대해 별도의 백업을 유지해야 하며, 개발자는 사용자의 기기 상태, 파일 손상, 앱 삭제, 운영체제 제한, 저장소 오류, 사용자 조작 실수, 제3자 앱 동작 등으로 인해 발생할 수 있는 데이터 손실이나 간접적 손해에 대하여 법이 허용하는 최대 범위 내에서 책임을 제한합니다.
+        </div>
+
+        <h2>1. 운영자 정보</h2>
+        <p>
+          개발자 정보는 Google Play 스토어의 개발자 정보 항목을 참고해 주세요.
+        </p>
+
+        <h2>2. 수집하는 정보</h2>
+        <p>
+          본 앱은 기본적으로 사용자가 선택한 PDF 파일을 분할하는 기능을 제공합니다. 앱 운영 과정에서 아래와 같은 정보가 처리될 수 있습니다.
+        </p>
+        <ul>
+          <li>사용자가 직접 선택한 파일 정보(파일명, 경로, 크기 등)</li>
+          <li>앱 내부에서 생성된 분할 결과 파일 정보</li>
+          <li>광고 제공 및 앱 안정성 확보를 위한 기기 관련 비식별 정보</li>
+          <li>오류 분석 또는 성능 개선에 필요한 제한적 기술 정보</li>
+        </ul>
+
+        <h2>3. 개인정보의 수집 방식</h2>
+        <ul>
+          <li>사용자가 직접 파일을 선택하거나 앱 기능을 사용하는 과정</li>
+          <li>광고 SDK 또는 운영체제가 자동으로 처리하는 기술 정보</li>
+          <li>파일 열기, 공유, 저장 등의 기능 사용 과정</li>
+        </ul>
+
+        <h2>4. 정보 이용 목적</h2>
+        <ul>
+          <li>PDF 파일 분할 및 결과 파일 생성</li>
+          <li>선택한 파일의 처리 및 결과 제공</li>
+          <li>앱 성능 유지, 오류 확인 및 안정성 개선</li>
+          <li>광고 제공 및 서비스 운영</li>
+        </ul>
+
+        <h2>5. 파일 및 저장소 관련 안내</h2>
+        <p>
+          본 앱은 사용자가 선택한 파일을 처리하고, 분할 결과 파일을 기기 저장소 또는 앱이 접근 가능한 위치에 저장할 수 있습니다.
+        </p>
+        <ul>
+          <li>앱 삭제, 저장소 정리, 기기 초기화, 권한 변경, 운영체제 정책 변경 등에 따라 저장된 파일이 삭제되거나 접근이 불가능해질 수 있습니다.</li>
+          <li>중요한 문서 및 결과 파일은 사용자가 별도로 백업해야 합니다.</li>
+          <li>개발자는 사용자가 저장하지 않았거나, 백업하지 않은 파일의 보존을 보장하지 않습니다.</li>
+          <li>파일 공유 또는 외부 앱으로 열기 기능 이용 시, 해당 외부 서비스 또는 외부 앱의 처리 방식은 각 서비스 제공자의 정책을 따릅니다.</li>
+        </ul>
+
+        <h2>6. 광고 및 제3자 서비스</h2>
+        <p>
+          본 앱은 광고 제공을 위해 제3자 서비스(예: 광고 SDK)를 사용할 수 있습니다. 이러한 제3자 서비스는 광고 제공, 성과 측정, 부정 사용 방지 등을 위해 기기 식별자 또는 비식별 기술 정보를 처리할 수 있습니다.
+        </p>
+        <p>
+          제3자 서비스의 정보 처리에 대해서는 각 서비스 제공자의 정책이 적용될 수 있습니다.
+        </p>
+
+        <h2>7. 정보 보관 및 삭제</h2>
+        <ul>
+          <li>앱 내부에서 생성되거나 저장된 일부 데이터는 사용자의 기기 내에 보관될 수 있습니다.</li>
+          <li>사용자는 앱 삭제, 앱 데이터 삭제, 파일 삭제 등을 통해 일부 정보를 직접 제거할 수 있습니다.</li>
+          <li>단, 외부 저장소 또는 외부 앱으로 복사·공유된 파일은 사용자가 직접 관리해야 합니다.</li>
+        </ul>
+
+        <h2>8. 아동의 개인정보</h2>
+        <p>
+          본 앱은 아동을 주요 대상으로 설계되지 않았습니다. 보호자는 아동이 앱을 사용하는 경우 파일 처리 및 공유 기능 사용에 주의해 주시기 바랍니다.
+        </p>
+
+        <h2>9. 보안에 관한 안내</h2>
+        <p>
+          개발자는 합리적인 범위에서 앱의 안정성과 보안을 고려하지만, 인터넷 환경, 기기 보안 상태, 운영체제 제한, 루팅 또는 탈옥 환경, 악성코드, 외부 앱 충돌 등 모든 상황에 대해 완전한 보안을 보장할 수는 없습니다.
+        </p>
+        <ul>
+          <li>중요 문서는 별도로 백업해 주세요.</li>
+          <li>신뢰할 수 없는 앱과의 공유는 주의해 주세요.</li>
+          <li>사용자의 기기 보안 상태에 따라 파일 보호 수준은 달라질 수 있습니다.</li>
+        </ul>
+
+        <h2>10. 책임의 제한</h2>
+        <p>
+          본 앱은 “있는 그대로(as is)” 제공됩니다. 개발자는 관련 법령이 허용하는 최대 범위 내에서 다음 사항에 대한 책임을 제한하거나 부담하지 않을 수 있습니다.
+        </p>
+        <ul>
+          <li>파일 손상, 누락, 중복 저장, 저장 실패, 분할 실패</li>
+          <li>앱 삭제, 기기 변경, 운영체제 업데이트, 저장소 오류로 인한 데이터 손실</li>
+          <li>외부 앱, 외부 저장소, 공유 기능 사용 과정에서 발생한 문제</li>
+          <li>간접 손해, 특별 손해, 부수적 손해, 결과적 손해, 영업 손실, 기회 손실</li>
+          <li>사용자의 부주의, 오사용, 잘못된 설정, 백업 미실시로 인한 문제</li>
+        </ul>
+        <p>
+          사용자는 본 앱을 사용하기 전에 중요한 문서를 직접 백업하고, 결과 파일을 스스로 확인할 책임이 있습니다.
+        </p>
+
+        <h2>11. 정책 변경</h2>
+        <p>
+          본 개인정보처리방침은 필요에 따라 변경될 수 있습니다. 중요한 변경이 있는 경우 업데이트된 정책이 본 페이지에 게시될 수 있습니다.
+        </p>
+
+        <h2>12. 문의</h2>
+        <p>
+          문의가 필요한 경우 Google Play 스토어의 개발자 정보 항목을 참고해 주세요.
+        </p>
+
+        <p class="top-note">
+          시행일: 2026-03-20
+        </p>
+      </div>
+
+      <div id="en" class="lang-section">
+        <h1>Privacy Policy</h1>
+        <p class="top-note">
+          This Privacy Policy applies to the PDF Splitter app (the “App”).
+        </p>
+
+        <div class="warn">
+          Important Notice: This App is provided for user convenience to split and process PDF files. Users should keep separate backups of important documents. To the maximum extent permitted by applicable law, the developer limits liability for data loss, indirect damages, or other losses arising from device conditions, file corruption, app deletion, operating system restrictions, storage errors, user mistakes, or the behavior of third-party apps or services.
+        </div>
+
+        <h2>1. Developer Information</h2>
+        <p>
+          Please refer to the developer information listed on the Google Play Store.
+        </p>
+
+        <h2>2. Information We May Process</h2>
+        <p>
+          The App mainly provides PDF splitting and related file handling features. During operation, the following types of information may be processed:
+        </p>
+        <ul>
+          <li>File information selected directly by the user, such as file name, path, and size</li>
+          <li>Information about output files generated by the App</li>
+          <li>Non-personally identifying device-related information used for advertising and app stability</li>
+          <li>Limited technical information needed for error analysis and performance improvement</li>
+        </ul>
+
+        <h2>3. How Information Is Collected</h2>
+        <ul>
+          <li>When the user selects files or uses App features</li>
+          <li>Automatically through the operating system or third-party advertising SDKs</li>
+          <li>When the user opens, shares, or saves processed files</li>
+        </ul>
+
+        <h2>4. Why Information Is Used</h2>
+        <ul>
+          <li>To split PDF files and create output files</li>
+          <li>To process selected files and provide results</li>
+          <li>To maintain performance, review errors, and improve stability</li>
+          <li>To support advertising and app operations</li>
+        </ul>
+
+        <h2>5. File and Storage Notice</h2>
+        <p>
+          The App may process user-selected files and save output files to device storage or another accessible location on the device.
+        </p>
+        <ul>
+          <li>Saved files may be deleted or become inaccessible because of app removal, storage cleanup, device reset, permission changes, or operating system policies.</li>
+          <li>Users are responsible for maintaining backups of important documents and output files.</li>
+          <li>The developer does not guarantee permanent preservation of any file that the user does not separately save or back up.</li>
+          <li>If users open or share files with external apps or services, those external providers may process data under their own terms and privacy policies.</li>
+        </ul>
+
+        <h2>6. Advertising and Third-Party Services</h2>
+        <p>
+          The App may use third-party services, such as advertising SDKs, to provide ads, measure performance, and prevent abuse. Those third parties may process device identifiers or technical information in accordance with their own policies.
+        </p>
+        <p>
+          Their handling of information is governed by their respective privacy policies and terms.
+        </p>
+
+        <h2>7. Retention and Deletion</h2>
+        <ul>
+          <li>Some locally generated or stored data may remain on the user’s device.</li>
+          <li>Users may remove certain data by deleting files, clearing app data, or uninstalling the App.</li>
+          <li>Files copied to external storage or shared with third-party apps must be managed by the user directly.</li>
+        </ul>
+
+        <h2>8. Children’s Privacy</h2>
+        <p>
+          The App is not primarily directed to children. Parents or guardians should supervise file handling and sharing features when children use the App.
+        </p>
+
+        <h2>9. Security Notice</h2>
+        <p>
+          The developer makes reasonable efforts to consider app stability and security. However, complete security cannot be guaranteed in every environment, including situations involving device compromise, rooting, jailbreaking, malware, operating system restrictions, or third-party app conflicts.
+        </p>
+        <ul>
+          <li>Please keep separate backups of important documents.</li>
+          <li>Please be careful when sharing files with untrusted apps or services.</li>
+          <li>The level of file protection may vary depending on the device and its security condition.</li>
+        </ul>
+
+        <h2>10. Limitation of Liability</h2>
+        <p>
+          The App is provided on an “as is” basis. To the maximum extent permitted by applicable law, the developer may limit or disclaim liability for:
+        </p>
+        <ul>
+          <li>File corruption, missing files, duplicated files, save failures, or split failures</li>
+          <li>Data loss caused by app deletion, device changes, operating system updates, or storage issues</li>
+          <li>Problems arising from external apps, external storage, or file sharing features</li>
+          <li>Indirect, incidental, special, consequential, or business-related damages</li>
+          <li>Issues caused by user negligence, misuse, incorrect settings, or failure to keep backups</li>
+        </ul>
+        <p>
+          Users are responsible for backing up important documents and verifying output files before relying on them.
+        </p>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time. Any material update may be posted on this page.
+        </p>
+
+        <h2>12. Contact</h2>
+        <p>
+          For contact information, please refer to the developer information on the Google Play Store.
+        </p>
+
+        <p class="top-note">
+          Effective date: 2026-03-20
+        </p>
+      </div>
+
+      <div class="footer">
+        Privacy Policy / 개인정보처리방침
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      var sections = document.querySelectorAll('.lang-section');
+      var buttons = document.querySelectorAll('.lang-btn');
+
+      sections.forEach(function(section) {
+        section.classList.remove('active');
+      });
+
+      buttons.forEach(function(button) {
+        button.classList.remove('active');
+      });
+
+      document.getElementById(lang).classList.add('active');
+      document.getElementById('btn-' + lang).classList.add('active');
+      document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
+    }
+  </script>
+</body>
+</html>
