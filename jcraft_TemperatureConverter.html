@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Temperature Converter</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --sub: #475569;
+      --line: #dbe3ee;
+      --accent: #2563eb;
+      --accent-soft: #eaf2ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      line-height: 1.65;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .lang-switch button {
+      border: 0;
+      background: transparent;
+      color: var(--sub);
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.25;
+    }
+
+    .updated {
+      margin: 0 0 20px;
+      color: var(--sub);
+      font-size: 14px;
+    }
+
+    .notice {
+      background: var(--accent-soft);
+      border: 1px solid #cfe0ff;
+      color: #173b87;
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-bottom: 22px;
+      font-size: 14px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0 0 14px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .lang-section {
+      display: none;
+    }
+
+    .lang-section.active {
+      display: block;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--sub);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 16px 12px 36px;
+      }
+
+      .card {
+        padding: 18px;
+        border-radius: 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .lang-switch button {
+        padding: 10px 14px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="lang-switch" aria-label="Language switcher">
+        <button id="btn-ko" class="active" type="button" onclick="setLang('ko')">한국어</button>
+        <button id="btn-en" type="button" onclick="setLang('en')">English</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <section id="lang-ko" class="lang-section active" lang="ko">
+        <h1>개인정보처리방침</h1>
+        <p class="updated">최종 업데이트일: 2026-03-23</p>
+
+        <div class="notice">
+          본 개인정보처리방침은 Temperature Converter 앱(이하 "앱")의 개인정보 처리 방침을 설명합니다.
+          개발자 정보는 Google Play 스토어의 개발자 정보 항목을 참고해 주세요.
+        </div>
+
+        <p>
+          본 앱은 온도 단위 변환 기능을 제공하기 위한 간단한 유틸리티 앱입니다.
+          본 앱은 사용자의 개인정보를 최소한으로 처리하는 방향으로 설계되었습니다.
+        </p>
+
+        <h2>1. 수집하는 정보</h2>
+        <p>개발자는 원칙적으로 사용자를 직접 식별할 수 있는 개인정보를 수집하거나 저장하지 않습니다.</p>
+        <p>다만 아래와 같은 정보가 기기 내부 또는 제3자 서비스에 의해 처리될 수 있습니다.</p>
+        <ul>
+          <li>앱 설정 정보 (예: 언어 설정, 테마 설정)</li>
+          <li>사용자가 앱 내에서 생성한 최근 기록 데이터</li>
+          <li>광고 제공 및 성능 측정을 위한 비개인식별 정보</li>
+          <li>기기 정보, 광고 ID, 앱 사용 정보 등 제3자 SDK가 자동으로 처리할 수 있는 정보</li>
+        </ul>
+
+        <h2>2. 정보 이용 목적</h2>
+        <p>앱은 다음 목적 범위 내에서만 정보를 이용할 수 있습니다.</p>
+        <ul>
+          <li>온도 변환 기능 제공</li>
+          <li>사용자 설정 저장</li>
+          <li>앱 품질 및 안정성 개선</li>
+          <li>광고 표시 및 광고 성과 측정</li>
+        </ul>
+
+        <h2>3. 기기 내 저장 정보</h2>
+        <p>
+          일부 데이터는 사용자 편의를 위해 사용자의 기기 내부에 저장될 수 있습니다.
+          예를 들어 최근 변환 기록, 테마 설정, 언어 설정 등이 이에 해당할 수 있습니다.
+        </p>
+        <p>
+          이러한 데이터는 일반적으로 외부 서버로 전송되지 않으며, 사용자가 앱을 삭제하거나 앱 데이터를 삭제할 경우 함께 제거될 수 있습니다.
+        </p>
+
+        <h2>4. 광고 및 제3자 서비스</h2>
+        <p>
+          본 앱은 광고 제공을 위해 제3자 서비스를 사용할 수 있습니다. 예를 들어 Google AdMob과 같은 광고 플랫폼이 사용될 수 있습니다.
+        </p>
+        <p>
+          이러한 제3자 서비스는 광고 제공, 부정 사용 방지, 성능 분석 등을 위해 기기 정보, 광고 ID, 앱 사용 정보 등을 자동으로 처리할 수 있습니다.
+        </p>
+        <p>
+          제3자 서비스의 데이터 처리 방식은 해당 서비스 제공자의 정책을 따릅니다.
+        </p>
+        <ul>
+          <li>Google Play 서비스</li>
+          <li>Google AdMob</li>
+          <li>기타 앱 운영에 필요한 합법적 제3자 서비스</li>
+        </ul>
+
+        <h2>5. 아동의 개인정보</h2>
+        <p>
+          본 앱은 특정 연령의 아동만을 주요 대상으로 설계되지 않았습니다.
+          개발자는 아동의 개인정보를 의도적으로 수집하지 않습니다.
+        </p>
+
+        <h2>6. 개인정보 보관 및 삭제</h2>
+        <p>
+          개발자가 직접 보관하는 개인정보는 원칙적으로 없습니다.
+          앱 내부 저장 데이터는 사용자의 기기에서 관리되며, 앱 삭제 또는 데이터 삭제 시 제거될 수 있습니다.
+        </p>
+
+        <h2>7. 외부 링크 및 제3자 정책</h2>
+        <p>
+          본 앱은 제3자 서비스와 연동될 수 있으며, 해당 서비스의 개인정보처리방침은 각 제공자의 정책에 따릅니다.
+          사용자는 필요 시 각 서비스의 정책을 별도로 확인해야 합니다.
+        </p>
+
+        <h2>8. 정책 변경</h2>
+        <p>
+          본 개인정보처리방침은 법령, 서비스 내용 또는 운영 정책 변경에 따라 수정될 수 있습니다.
+          중요한 변경이 있는 경우 이 페이지를 통해 최신 내용을 안내합니다.
+        </p>
+
+        <h2>9. 문의</h2>
+        <p>
+          개인정보처리방침 또는 앱 운영 관련 문의가 있는 경우,
+          Google Play 스토어에 표시된 개발자 연락처 정보를 참고해 주세요.
+        </p>
+      </section>
+
+      <section id="lang-en" class="lang-section" lang="en">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: 2026-03-23</p>
+
+        <div class="notice">
+          This Privacy Policy explains how the Temperature Converter app ("the App") handles information.
+          Please refer to the developer information shown on the Google Play Store for developer contact details.
+        </div>
+
+        <p>
+          The App is a simple utility designed to provide temperature conversion features.
+          The App is designed to minimize the handling of personal information.
+        </p>
+
+        <h2>1. Information We Collect</h2>
+        <p>
+          As a general rule, the developer does not directly collect or store personally identifiable information from users.
+        </p>
+        <p>
+          However, the following types of information may be processed locally on the device or by third-party services:
+        </p>
+        <ul>
+          <li>App preference data, such as language or theme settings</li>
+          <li>Recent history data created by the user inside the App</li>
+          <li>Non-personally identifying data used for advertising and performance measurement</li>
+          <li>Device information, advertising ID, and app usage data that may be processed automatically by third-party SDKs</li>
+        </ul>
+
+        <h2>2. How Information Is Used</h2>
+        <p>The App may use information only for the following purposes:</p>
+        <ul>
+          <li>Providing temperature conversion features</li>
+          <li>Saving user preferences</li>
+          <li>Improving app quality and stability</li>
+          <li>Displaying ads and measuring ad performance</li>
+        </ul>
+
+        <h2>3. Data Stored on the Device</h2>
+        <p>
+          Some data may be stored locally on the user's device for convenience.
+          This may include recent conversion history, theme settings, and language settings.
+        </p>
+        <p>
+          Such data is generally not transmitted to external servers by the developer and may be removed when the user deletes the App or clears app data.
+        </p>
+
+        <h2>4. Advertising and Third-Party Services</h2>
+        <p>
+          The App may use third-party services to provide advertisements. For example, advertising platforms such as Google AdMob may be used.
+        </p>
+        <p>
+          These third-party services may automatically process device information, advertising ID, and app usage information for purposes such as ad delivery, fraud prevention, and analytics.
+        </p>
+        <p>
+          The handling of such data is governed by the privacy policies of the relevant third-party providers.
+        </p>
+        <ul>
+          <li>Google Play Services</li>
+          <li>Google AdMob</li>
+          <li>Other lawful third-party services necessary for app operation</li>
+        </ul>
+
+        <h2>5. Children's Privacy</h2>
+        <p>
+          The App is not specifically directed to children as its primary audience.
+          The developer does not knowingly collect personal information from children.
+        </p>
+
+        <h2>6. Data Retention and Deletion</h2>
+        <p>
+          The developer does not generally retain personal information directly.
+          Any locally stored app data remains on the user's device and may be removed when the App is deleted or its data is cleared.
+        </p>
+
+        <h2>7. External Links and Third-Party Policies</h2>
+        <p>
+          The App may interact with third-party services, and their privacy practices are governed by their own policies.
+          Users should review those policies separately when necessary.
+        </p>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>
+          This Privacy Policy may be updated due to legal requirements, service changes, or operational needs.
+          Any important updates will be reflected on this page.
+        </p>
+
+        <h2>9. Contact</h2>
+        <p>
+          For questions about this Privacy Policy or the App, please refer to the developer contact information provided on the Google Play Store listing.
+        </p>
+      </section>
+    </div>
+
+    <div class="footer">
+      © Temperature Converter
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      var ko = document.getElementById('lang-ko');
+      var en = document.getElementById('lang-en');
+      var btnKo = document.getElementById('btn-ko');
+      var btnEn = document.getElementById('btn-en');
+
+      if (lang === 'en') {
+        ko.classList.remove('active');
+        en.classList.add('active');
+        btnKo.classList.remove('active');
+        btnEn.classList.add('active');
+        document.documentElement.lang = 'en';
+      } else {
+        en.classList.remove('active');
+        ko.classList.add('active');
+        btnEn.classList.remove('active');
+        btnKo.classList.add('active');
+        document.documentElement.lang = 'ko';
+      }
+    }
+  </script>
+</body>
+</html>
