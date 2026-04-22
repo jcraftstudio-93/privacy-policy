@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Random Team Maker</title>
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --text:#0f172a;
+      --sub:#475569;
+      --line:#e2e8f0;
+      --primary:#2563eb;
+      --primary-soft:#eff6ff;
+      --shadow:0 10px 30px rgba(15,23,42,0.08);
+      --radius:20px;
+    }
+    *{box-sizing:border-box;}
+    html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;}
+    body{padding:24px;}
+    .wrap{max-width:980px;margin:0 auto;}
+    .hero{
+      background:linear-gradient(135deg,#2563eb,#4f46e5);
+      color:#fff;
+      border-radius:28px;
+      padding:28px 24px;
+      box-shadow:var(--shadow);
+      margin-bottom:20px;
+    }
+    .hero h1{
+      margin:0 0 10px;
+      font-size:30px;
+      line-height:1.2;
+    }
+    .hero p{
+      margin:0;
+      color:rgba(255,255,255,0.92);
+      font-size:15px;
+    }
+    .toolbar{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:0 0 20px;
+    }
+    .lang-btn{
+      border:none;
+      border-radius:999px;
+      padding:10px 16px;
+      font-size:14px;
+      font-weight:700;
+      cursor:pointer;
+      background:#fff;
+      color:var(--text);
+      box-shadow:0 4px 14px rgba(15,23,42,0.08);
+    }
+    .lang-btn.active{
+      background:var(--primary);
+      color:#fff;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:22px 20px;
+      box-shadow:var(--shadow);
+      margin-bottom:16px;
+    }
+    h2{
+      margin:0 0 12px;
+      font-size:21px;
+      line-height:1.3;
+    }
+    h3{
+      margin:0 0 10px;
+      font-size:17px;
+      line-height:1.4;
+    }
+    p{margin:0 0 12px;color:var(--sub);}
+    ul{margin:0;padding-left:20px;color:var(--sub);}
+    li{margin:0 0 8px;}
+    .note{
+      background:var(--primary-soft);
+      border:1px solid #bfdbfe;
+      color:#1e3a8a;
+      border-radius:16px;
+      padding:14px 16px;
+      font-size:14px;
+      margin-top:10px;
+    }
+    .footer{
+      text-align:center;
+      color:var(--sub);
+      font-size:13px;
+      padding:10px 0 2px;
+    }
+    [data-lang-content]{display:none;}
+    [data-lang-content].active{display:block;}
+    .mono{word-break:break-word;}
+    a{color:var(--primary);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    @media (max-width:640px){
+      body{padding:16px;}
+      .hero{padding:22px 18px;border-radius:22px;}
+      .hero h1{font-size:25px;}
+      .card{padding:18px 16px;}
+      h2{font-size:19px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Privacy Policy</h1>
+      <p>Random Team Maker / 랜덤 팀 나누기 - 조편성 생성기</p>
+    </div>
+
+    <div class="toolbar">
+      <button class="lang-btn active" type="button" data-lang="ko">한국어</button>
+      <button class="lang-btn" type="button" data-lang="en">English</button>
+    </div>
+
+    <div data-lang-content="ko" class="active">
+      <section class="card">
+        <h2>개인정보처리방침</h2>
+        <p>본 개인정보처리방침은 Random Team Maker(이하 “앱”)의 개인정보 처리 방식에 대해 설명합니다.</p>
+        <p>이 앱은 사용자의 팀 나누기, 조편성, 기록 저장 기능을 제공하기 위한 목적으로 제작되었습니다.</p>
+      </section>
+
+      <section class="card">
+        <h2>1. 수집하는 정보</h2>
+        <p>앱은 기본적으로 사용자가 직접 입력한 정보와 앱 기능 제공에 필요한 최소한의 기술 정보를 처리할 수 있습니다.</p>
+        <ul>
+          <li>사용자가 직접 입력한 이름 또는 팀 구성 데이터</li>
+          <li>앱 내 기록 저장 기능을 위한 로컬 저장 데이터</li>
+          <li>광고 제공 과정에서 광고 서비스 제공업체가 처리할 수 있는 기기 관련 정보</li>
+        </ul>
+        <div class="note">
+          입력한 이름, 팀 결과, 기록 데이터는 앱 기능 제공을 위해 기기 내부에 저장될 수 있으며, 개발자가 별도로 수집하거나 직접 서버로 전송하도록 설계하지 않았습니다.
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>2. 정보의 이용 목적</h2>
+        <ul>
+          <li>랜덤 팀 나누기 및 조편성 기능 제공</li>
+          <li>기록 저장 및 다시 보기 기능 제공</li>
+          <li>앱 품질 유지 및 기본 기능 동작 지원</li>
+          <li>광고 표시 기능 제공</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>3. 로컬 저장</h2>
+        <p>앱은 사용 편의를 위해 일부 데이터를 사용자의 기기 내부에 저장할 수 있습니다.</p>
+        <ul>
+          <li>팀 나누기 기록</li>
+          <li>언어 설정 등 앱 사용 설정</li>
+          <li>광고 표시 횟수 제한과 같은 앱 동작 관련 값</li>
+        </ul>
+        <p>이러한 데이터는 일반적으로 사용자의 기기 내부에 저장되며, 사용자가 앱을 삭제하거나 앱 내부 기능을 통해 삭제할 수 있습니다.</p>
+      </section>
+
+      <section class="card">
+        <h2>4. 광고 및 제3자 서비스</h2>
+        <p>앱은 광고 제공을 위해 제3자 광고 서비스를 사용할 수 있습니다. 이 과정에서 광고 서비스 제공업체가 관련 정보를 처리할 수 있습니다.</p>
+        <p>광고 서비스의 정보 처리 방식은 각 서비스 제공업체의 정책에 따릅니다.</p>
+        <p>개발자는 제3자 서비스의 시스템 외부 동작, 정책 변경, 데이터 처리 방식에 대해 직접 통제하지 않습니다.</p>
+      </section>
+
+      <section class="card">
+        <h2>5. 개인정보의 제3자 제공</h2>
+        <p>개발자는 사용자의 입력 데이터를 별도로 판매하거나 임의로 제3자에게 제공하는 것을 목적으로 하지 않습니다.</p>
+        <p>다만 광고, 분석, 운영상 필요한 외부 서비스가 사용되는 경우 해당 서비스 제공업체의 정책에 따라 정보가 처리될 수 있습니다.</p>
+      </section>
+
+      <section class="card">
+        <h2>6. 아동의 개인정보</h2>
+        <p>앱은 특정 연령층을 식별하여 별도로 민감한 개인정보를 수집하는 것을 목적으로 하지 않습니다.</p>
+        <p>보호자 또는 법정대리인이 앱 사용과 관련하여 우려가 있는 경우, 앱 사용을 중단하고 필요 시 앱을 삭제해 주시기 바랍니다.</p>
+      </section>
+
+      <section class="card">
+        <h2>7. 보안</h2>
+        <p>개발자는 일반적인 범위에서 앱의 안전한 운영을 위해 노력합니다. 다만 인터넷, 모바일 기기, 운영체제, 제3자 서비스 환경의 특성상 절대적인 보안을 보장할 수는 없습니다.</p>
+      </section>
+
+      <section class="card">
+        <h2>8. 저작권 및 법적 안내</h2>
+        <p>이 앱은 일반적인 팀 나누기 및 조편성 기능을 제공하는 유틸리티 앱입니다.</p>
+        <p>앱 내 텍스트, 디자인, 기능 구성은 자체 제작 또는 일반적인 앱 기능 설명을 기반으로 하며, 특정 제3자의 상표, 브랜드, 서비스와의 공식 제휴를 의미하지 않습니다.</p>
+        <p>사용자가 입력한 이름, 문구, 데이터에 대한 책임은 해당 사용자에게 있으며, 개발자는 사용자가 입력한 내용 자체에 대한 권리관계를 보증하지 않습니다.</p>
+      </section>
+
+      <section class="card">
+        <h2>9. 정책 변경</h2>
+        <p>본 개인정보처리방침은 앱 기능 변경, 법령 변경, 운영 정책 변경 등에 따라 수정될 수 있습니다. 변경 시 본 페이지의 내용을 업데이트할 수 있습니다.</p>
+      </section>
+
+      <section class="card">
+        <h2>10. 개발자 정보</h2>
+        <p>개발자 정보 및 연락처는 Google Play 스토어의 개발자 정보 항목에서 확인해 주시기 바랍니다.</p>
+        <p class="mono">Please refer to the developer information provided on Google Play.</p>
+      </section>
+    </div>
+
+    <div data-lang-content="en">
+      <section class="card">
+        <h2>Privacy Policy</h2>
+        <p>This Privacy Policy explains how Random Team Maker (the “App”) handles information.</p>
+        <p>The App is designed to provide random team generation, group splitting, and history-saving features.</p>
+      </section>
+
+      <section class="card">
+        <h2>1. Information the App May Process</h2>
+        <p>The App may process information directly entered by users and limited technical information required to provide its core features.</p>
+        <ul>
+          <li>Names or team-related data entered by the user</li>
+          <li>Locally stored history data used for app features</li>
+          <li>Device-related information that may be processed by advertising providers</li>
+        </ul>
+        <div class="note">
+          Names, team results, and saved records may be stored locally on the user’s device for app functionality. The App is not designed for the developer to separately collect such content or directly transmit it to a dedicated developer-operated server.
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>2. Purpose of Use</h2>
+        <ul>
+          <li>Providing random team generation and group split features</li>
+          <li>Saving and showing history records</li>
+          <li>Supporting normal app operation and quality maintenance</li>
+          <li>Displaying advertisements</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>3. Local Storage</h2>
+        <p>The App may store certain data locally on the user’s device for convenience and feature support.</p>
+        <ul>
+          <li>Team split history</li>
+          <li>Language preferences and app settings</li>
+          <li>App operation values such as ad display limits</li>
+        </ul>
+        <p>Such data is generally stored on the user’s device and may be removed by deleting the app or using available in-app deletion features.</p>
+      </section>
+
+      <section class="card">
+        <h2>4. Ads and Third-Party Services</h2>
+        <p>The App may use third-party advertising services to display ads. In that process, the advertising provider may process certain information in accordance with its own policies.</p>
+        <p>The developer does not directly control external systems, policy updates, or independent data-handling practices of third-party services.</p>
+      </section>
+
+      <section class="card">
+        <h2>5. Sharing with Third Parties</h2>
+        <p>The developer does not operate this App for the purpose of selling user-entered content or arbitrarily sharing it with third parties.</p>
+        <p>However, when advertising, analytics, or operational third-party services are used, information may be processed according to the relevant provider’s policies.</p>
+      </section>
+
+      <section class="card">
+        <h2>6. Children’s Privacy</h2>
+        <p>The App is not intended to specifically collect sensitive personal information from children.</p>
+        <p>If a parent or legal guardian has concerns regarding the use of the App, they should discontinue use and remove the App if necessary.</p>
+      </section>
+
+      <section class="card">
+        <h2>7. Security</h2>
+        <p>The developer makes reasonable efforts to support safe operation of the App. However, absolute security cannot be guaranteed due to the nature of mobile devices, operating systems, networks, and third-party services.</p>
+      </section>
+
+      <section class="card">
+        <h2>8. Copyright and Legal Notice</h2>
+        <p>This App is a general utility app for team generation and group splitting.</p>
+        <p>The texts, design elements, and feature structure are based on original implementation or common utility app concepts, and do not imply any official affiliation with any third-party brand, trademark, or service.</p>
+        <p>The user is responsible for the names, text, and other content entered into the App. The developer does not guarantee ownership or rights related to user-provided input.</p>
+      </section>
+
+      <section class="card">
+        <h2>9. Changes to This Policy</h2>
+        <p>This Privacy Policy may be updated in response to feature changes, legal requirements, or operational policy changes. The latest version may be posted on this page.</p>
+      </section>
+
+      <section class="card">
+        <h2>10. Developer Information</h2>
+        <p>Please refer to the developer information and contact details provided on Google Play.</p>
+      </section>
+    </div>
+
+    <div class="footer">
+      © Random Team Maker
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const buttons = document.querySelectorAll('.lang-btn');
+      const contents = document.querySelectorAll('[data-lang-content]');
+
+      function setLanguage(lang) {
+        buttons.forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+
+        contents.forEach(section => {
+          section.classList.toggle('active', section.getAttribute('data-lang-content') === lang);
+        });
+
+        document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function () {
+          setLanguage(this.dataset.lang);
+        });
+      });
+
+      setLanguage('ko');
+    })();
+  </script>
+</body>
+</html>
