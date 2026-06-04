@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy | Tournament Bracket Generator</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    background:#f5f7fb;
+    color:#222;
+    font-family:Arial,sans-serif;
+    line-height:1.7;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:24px;
+}
+.card{
+    background:#fff;
+    border-radius:16px;
+    padding:24px;
+    margin-bottom:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
+}
+h1{
+    margin-top:0;
+}
+.lang{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+button{
+    border:none;
+    border-radius:8px;
+    padding:10px 14px;
+    cursor:pointer;
+}
+.active{
+    background:#4f46e5;
+    color:#fff;
+}
+.hidden{
+    display:none;
+}
+</style>
+
+<script>
+function showLang(lang){
+    document.getElementById('ko').classList.add('hidden');
+    document.getElementById('en').classList.add('hidden');
+
+    document.getElementById(lang).classList.remove('hidden');
+
+    document.getElementById('btnKo').classList.remove('active');
+    document.getElementById('btnEn').classList.remove('active');
+
+    if(lang==='ko'){
+        document.getElementById('btnKo').classList.add('active');
+    }else{
+        document.getElementById('btnEn').classList.add('active');
+    }
+}
+</script>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="lang">
+<button id="btnKo" class="active" onclick="showLang('ko')">한국어</button>
+<button id="btnEn" onclick="showLang('en')">English</button>
+</div>
+
+<div id="ko">
+
+<div class="card">
+<h1>개인정보처리방침</h1>
+
+<p>
+Tournament Bracket Generator(이하 "앱")는 사용자의 개인정보 보호를 중요하게 생각합니다.
+본 개인정보처리방침은 앱 사용 시 처리되는 정보에 대해 설명합니다.
+</p>
+
+<p>
+최종 업데이트: 2026-06-04
+</p>
+</div>
+
+<div class="card">
+<h2>1. 수집하는 정보</h2>
+
+<p>
+앱은 회원가입 기능을 제공하지 않습니다.
+</p>
+
+<p>
+사용자가 입력한 참가자 이름, 토너먼트 기록, 앱 설정 정보는 사용자의 기기 내부 저장소에 저장될 수 있습니다.
+</p>
+
+<p>
+개발자는 해당 데이터를 직접 수집하거나 서버로 전송하지 않습니다.
+</p>
+</div>
+
+<div class="card">
+<h2>2. 광고</h2>
+
+<p>
+앱은 Google AdMob 광고 서비스를 사용할 수 있습니다.
+</p>
+
+<p>
+Google은 광고 제공 과정에서 광고 식별자, 기기 정보, 사용 정보 등을 처리할 수 있습니다.
+</p>
+
+<p>
+Google의 개인정보 처리 방식은 아래 정책을 참고하십시오.
+</p>
+
+<p>
+https://policies.google.com/privacy
+</p>
+</div>
+
+<div class="card">
+<h2>3. 데이터 저장</h2>
+
+<p>
+토너먼트 참가자 정보와 기록은 사용자의 기기에 저장될 수 있습니다.
+</p>
+
+<p>
+개발자는 해당 데이터에 접근하지 않습니다.
+</p>
+
+<p>
+앱 삭제 시 저장 데이터가 제거될 수 있습니다.
+</p>
+</div>
+
+<div class="card">
+<h2>4. 개인정보 판매</h2>
+
+<p>
+개발자는 사용자의 개인정보를 판매하지 않습니다.
+</p>
+
+<p>
+사용자의 개인정보를 제3자에게 판매, 임대 또는 거래하지 않습니다.
+</p>
+</div>
+
+<div class="card">
+<h2>5. 저작권 및 상표</h2>
+
+<p>
+사용자가 입력한 참가자 이름, 팀명, 대회명 등에 대한 권리는 해당 권리자에게 있습니다.
+</p>
+
+<p>
+앱은 사용자가 입력한 데이터를 표시하는 도구일 뿐이며 어떠한 상표권, 저작권 또는 지식재산권도 주장하지 않습니다.
+</p>
+
+<p>
+앱은 특정 스포츠 단체, 게임사, 대회 운영사 또는 공식 이벤트와 관련되어 있지 않습니다.
+</p>
+</div>
+
+<div class="card">
+<h2>6. 면책조항</h2>
+
+<p>
+앱은 토너먼트 진행을 지원하는 유틸리티 도구입니다.
+</p>
+
+<p>
+생성된 대진표, 경기 결과, 참가자 정보의 정확성은 사용자의 입력에 따라 달라질 수 있습니다.
+</p>
+
+<p>
+개발자는 사용자가 입력한 정보 또는 생성된 결과에 대해 법적 책임을 지지 않습니다.
+</p>
+</div>
+
+<div class="card">
+<h2>7. 아동 개인정보</h2>
+
+<p>
+앱은 의도적으로 아동의 개인정보를 수집하지 않습니다.
+</p>
+
+<p>
+개발자가 아동 개인정보가 수집되었음을 인지하는 경우 적절한 조치를 취할 수 있습니다.
+</p>
+</div>
+
+<div class="card">
+<h2>8. 정책 변경</h2>
+
+<p>
+본 개인정보처리방침은 필요에 따라 변경될 수 있습니다.
+</p>
+
+<p>
+변경 시 본 페이지를 통해 공지됩니다.
+</p>
+</div>
+
+<div class="card">
+<h2>9. 개발자 정보 및 문의</h2>
+
+<p>
+개발자 정보, 앱 제공자 정보, 연락처 및 추가 문의 방법은 Google Play 스토어에 표시된 개발자 정보를 참고해 주십시오.
+</p>
+</div>
+
+</div>
+
+<div id="en" class="hidden">
+
+<div class="card">
+<h1>Privacy Policy</h1>
+
+<p>
+Tournament Bracket Generator ("the App") respects your privacy.
+This Privacy Policy explains how information may be handled when using the App.
+</p>
+
+<p>
+Last Updated: June 4, 2026
+</p>
+</div>
+
+<div class="card">
+<h2>1. Information We Collect</h2>
+
+<p>
+The App does not require account registration.
+</p>
+
+<p>
+Participant names, tournament records, and application settings entered by users may be stored locally on the user's device.
+</p>
+
+<p>
+The developer does not directly collect or transmit this information to external servers.
+</p>
+</div>
+
+<div class="card">
+<h2>2. Advertising</h2>
+
+<p>
+The App may use Google AdMob advertising services.
+</p>
+
+<p>
+Google may process advertising identifiers, device information, and usage data in accordance with its own policies.
+</p>
+
+<p>
+For more information, please visit:
+</p>
+
+<p>
+https://policies.google.com/privacy
+</p>
+</div>
+
+<div class="card">
+<h2>3. Data Storage</h2>
+
+<p>
+Tournament participants and bracket records may be stored locally on the user's device.
+</p>
+
+<p>
+The developer does not have access to such locally stored information.
+</p>
+
+<p>
+Deleting the App may remove locally stored data.
+</p>
+</div>
+
+<div class="card">
+<h2>4. Sale of Personal Information</h2>
+
+<p>
+The developer does not sell personal information.
+</p>
+
+<p>
+Personal information is not sold, rented, or traded to third parties.
+</p>
+</div>
+
+<div class="card">
+<h2>5. Copyright and Trademarks</h2>
+
+<p>
+Names, teams, tournaments, and other content entered by users remain the property of their respective owners.
+</p>
+
+<p>
+The App merely displays information entered by users and does not claim ownership of any intellectual property.
+</p>
+
+<p>
+The App is not affiliated with any sports organization, game company, tournament operator, or official event.
+</p>
+</div>
+
+<div class="card">
+<h2>6. Disclaimer</h2>
+
+<p>
+The App is provided as a tournament management utility tool.
+</p>
+
+<p>
+Bracket generation, match results, and participant information depend on user input.
+</p>
+
+<p>
+The developer is not responsible for any loss, damage, dispute, or consequence arising from the use of the App.
+</p>
+</div>
+
+<div class="card">
+<h2>7. Children's Privacy</h2>
+
+<p>
+The App does not knowingly collect personal information from children.
+</p>
+
+<p>
+If the developer becomes aware of such collection, appropriate actions may be taken.
+</p>
+</div>
+
+<div class="card">
+<h2>8. Changes to This Policy</h2>
+
+<p>
+This Privacy Policy may be updated from time to time.
+</p>
+
+<p>
+Updates will be posted on this page.
+</p>
+</div>
+
+<div class="card">
+<h2>9. Developer Information and Contact</h2>
+
+<p>
+For developer information, app provider details, contact information, and additional inquiry methods, please refer to the developer information displayed on the Google Play Store listing.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
