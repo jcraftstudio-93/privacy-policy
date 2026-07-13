@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Privacy Policy for Image to PDF - Insert Images"
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <title>
+    Privacy Policy | Image to PDF - Insert Images
+  </title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+
+      --primary: #5b5bd6;
+      --primary-soft: #eeeeff;
+      --background: #f5f6fa;
+      --surface: #ffffff;
+      --text: #1b1b22;
+      --muted: #62636f;
+      --border: #e2e3ea;
+      --notice: #f0f4ff;
+      --notice-border: #cbd6ff;
+      --shadow: 0 12px 40px rgba(30, 31, 40, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #bfc2ff;
+        --primary-soft: #292b55;
+        --background: #0f1015;
+        --surface: #18191f;
+        --text: #f2f2f6;
+        --muted: #b7b8c2;
+        --border: #30323c;
+        --notice: #1d2234;
+        --notice-border: #3d4a78;
+        --shadow: none;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans KR",
+        "Apple SD Gothic Neo",
+        Arial,
+        sans-serif;
+      line-height: 1.72;
+      word-break: keep-all;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+
+    .header {
+      margin-bottom: 18px;
+      padding: 32px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 28px;
+      background:
+        linear-gradient(
+          135deg,
+          #5758d8 0%,
+          #7568df 55%,
+          #9a6fdd 100%
+        );
+      color: #ffffff;
+      box-shadow: var(--shadow);
+    }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      right: -55px;
+      top: -55px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .header h1 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 10px;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+    }
+
+    .header p {
+      position: relative;
+      z-index: 1;
+      margin: 4px 0;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .language-switcher {
+      display: flex;
+      gap: 10px;
+      margin: 18px 0;
+      padding: 8px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .language-button {
+      flex: 1;
+      min-height: 46px;
+      border: 0;
+      border-radius: 13px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .language-button.active {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .card {
+      margin-bottom: 16px;
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .notice {
+      padding: 18px;
+      border: 1px solid var(--notice-border);
+      border-radius: 18px;
+      background: var(--notice);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 22px;
+      line-height: 1.35;
+      letter-spacing: -0.35px;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .summary-list strong {
+      color: var(--primary);
+    }
+
+    .language-section[hidden] {
+      display: none;
+    }
+
+    .footer {
+      padding: 20px 10px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding-top: 16px;
+      }
+
+      .header {
+        padding: 25px 21px;
+        border-radius: 22px;
+      }
+
+      .card {
+        padding: 21px 18px;
+        border-radius: 20px;
+      }
+
+      body {
+        word-break: normal;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main id="top" class="page">
+    <header class="header">
+      <h1>Privacy Policy</h1>
+
+      <p>
+        Image to PDF - Insert Images
+      </p>
+
+      <p>
+        Effective date: July 13, 2026
+      </p>
+    </header>
+
+    <nav
+      class="language-switcher"
+      aria-label="Language selection"
+    >
+      <button
+        id="show-ko"
+        class="language-button active"
+        type="button"
+        aria-pressed="true"
+      >
+        한국어
+      </button>
+
+      <button
+        id="show-en"
+        class="language-button"
+        type="button"
+        aria-pressed="false"
+      >
+        English
+      </button>
+    </nav>
+
+    <!-- Korean Privacy Policy -->
+    <section
+      id="privacy-ko"
+      class="language-section"
+      lang="ko"
+    >
+      <article class="card">
+        <h2>개인정보처리방침</h2>
+
+        <p>
+          JCraft Studio(이하 “개발자”)는
+          <strong>Image to PDF - Insert Images</strong>
+          애플리케이션(이하 “앱”) 이용자의 개인정보를 중요하게
+          생각합니다.
+        </p>
+
+        <p>
+          본 개인정보처리방침은 앱이 이용자의 정보와 파일에
+          접근하는 방식, 해당 정보의 이용 목적, 제3자 서비스 및
+          이용자의 권리를 설명합니다.
+        </p>
+
+        <div class="notice">
+          <strong>핵심 안내</strong>
+
+          <ul class="summary-list">
+            <li>
+              선택한 이미지와 PDF 파일은
+              <strong>이용자의 기기 내부에서 처리</strong>됩니다.
+            </li>
+
+            <li>
+              개발자는 이용자가 선택한 이미지 또는 PDF 파일을
+              개발자 서버로 전송하거나 저장하지 않습니다.
+            </li>
+
+            <li>
+              앱은 광고 제공을 위해 Google AdMob을 사용하며,
+              Google은 광고 제공 과정에서 일부 기기 및 이용 정보를
+              처리할 수 있습니다.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>1. 개발자가 직접 수집하는 개인정보</h2>
+
+        <p>
+          개발자는 앱을 통해 이름, 이메일 주소, 전화번호, 계정
+          정보, 주소 또는 결제정보와 같은 이용자를 직접 식별하는
+          개인정보를 별도로 요구하거나 수집하지 않습니다.
+        </p>
+
+        <p>
+          앱에는 개발자가 운영하는 회원가입, 로그인 또는 자체
+          서버 업로드 기능이 없습니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>2. 이용자가 선택하는 파일과 미디어</h2>
+
+        <p>
+          앱은 다음 기능을 제공하기 위해 이용자가 기기에서 직접
+          선택한 파일에 접근할 수 있습니다.
+        </p>
+
+        <ul>
+          <li>이미지를 PDF 파일로 변환</li>
+          <li>기존 PDF 파일 불러오기</li>
+          <li>기존 PDF 페이지 사이에 이미지 삽입</li>
+          <li>PDF 페이지 순서 변경 및 회전</li>
+          <li>완성된 PDF 파일 저장, 열기 및 공유</li>
+        </ul>
+
+        <p>
+          앱은 운영체제의 파일 선택 화면을 통해 이용자가 명시적으로
+          선택한 파일에만 접근합니다.
+        </p>
+
+        <p>
+          선택한 이미지와 PDF 파일은 요청한 기능을 실행하기 위해
+          기기 내부에서 처리됩니다. 개발자는 이러한 파일을 자체
+          서버로 업로드하거나 원격으로 열람하지 않습니다.
+        </p>
+
+        <p>
+          앱에서 생성한 PDF 파일은 이용자의 기기 내부 저장공간
+          또는 이용자가 선택한 저장 위치에 보관될 수 있습니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>3. 앱 내부에 저장되는 정보</h2>
+
+        <p>
+          앱은 원활한 기능 제공을 위해 다음 정보를 이용자의 기기에
+          저장할 수 있습니다.
+        </p>
+
+        <ul>
+          <li>선택한 언어 설정</li>
+          <li>라이트, 다크 또는 시스템 테마 설정</li>
+          <li>생성된 PDF의 파일명, 저장 경로, 생성일 및 페이지 수</li>
+          <li>앱에서 생성한 PDF 기록</li>
+        </ul>
+
+        <p>
+          해당 정보는 앱의 설정 유지 및 생성 기록 표시를 위해
+          사용되며, 개발자 서버로 자동 전송되지 않습니다.
+        </p>
+
+        <p>
+          앱을 삭제하거나 앱 데이터 및 생성된 파일을 직접 삭제하면
+          기기에 저장된 관련 정보도 삭제될 수 있습니다. 앱 외부
+          저장 위치에 복사된 파일은 이용자가 직접 삭제해야 합니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>4. 광고 및 제3자 서비스</h2>
+
+        <p>
+          앱은 광고를 제공하기 위해 Google LLC가 제공하는
+          Google AdMob 및 Google Mobile Ads SDK를 사용할 수
+          있습니다.
+        </p>
+
+        <p>
+          광고 제공업체는 광고 표시, 광고 성과 측정, 사기 방지,
+          서비스 보안 및 관련 법규 준수를 위해 다음과 같은 정보를
+          자동으로 처리할 수 있습니다.
+        </p>
+
+        <ul>
+          <li>광고 식별자</li>
+          <li>IP 주소</li>
+          <li>기기 종류, 운영체제 및 앱 버전</li>
+          <li>대략적인 위치 정보</li>
+          <li>광고 노출, 클릭 및 상호작용 정보</li>
+          <li>진단, 성능 및 오류 관련 정보</li>
+        </ul>
+
+        <p>
+          이러한 정보는 개발자가 직접 수집하는 것이 아니라
+          Google의 SDK 및 서비스에 의해 처리될 수 있습니다.
+        </p>
+
+        <p>
+          Google의 개인정보 처리 방식은 아래 문서에서 확인할 수
+          있습니다.
+        </p>
+
+        <ul>
+          <li>
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google 개인정보처리방침
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://policies.google.com/technologies/ads"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google 광고 기술 안내
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://support.google.com/admob/answer/6128543"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google AdMob 개인정보 관련 안내
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          이용자는 기기 설정 또는 Google 광고 설정을 통해 광고
+          식별자를 재설정하거나 맞춤형 광고와 관련된 선택을 변경할
+          수 있습니다.
+        </p>
+
+        <p>
+          관련 법률이 요구되는 지역에서는 Google의 동의 관리
+          도구를 통해 개인정보 및 맞춤형 광고 사용에 대한 선택
+          화면이 표시될 수 있습니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>5. 파일 공유 및 외부 앱</h2>
+
+        <p>
+          이용자가 공유 기능을 선택하면 앱은 운영체제의 공유
+          화면을 실행합니다.
+        </p>
+
+        <p>
+          이후 이용자가 선택한 이메일, 메신저, 클라우드 저장소 또는
+          기타 외부 앱으로 PDF 파일이 전달될 수 있습니다.
+        </p>
+
+        <p>
+          외부 앱으로 전달된 파일과 정보에는 해당 외부 서비스의
+          개인정보처리방침과 이용약관이 적용됩니다. 개발자는
+          이용자가 선택한 외부 서비스의 개인정보 처리 방식이나
+          보안 관행을 통제하지 않습니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>6. Google Play 및 외부 링크</h2>
+
+        <p>
+          앱은 개발자의 다른 앱을 소개하기 위해 Google Play
+          스토어로 연결되는 외부 링크를 제공할 수 있습니다.
+        </p>
+
+        <p>
+          외부 사이트나 서비스에 접속한 이후에는 해당 서비스의
+          개인정보처리방침과 이용약관이 적용됩니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>7. 개인정보의 공유 및 판매</h2>
+
+        <p>
+          개발자는 이용자의 개인정보 또는 이용자가 선택한 PDF와
+          이미지 파일을 판매하지 않습니다.
+        </p>
+
+        <p>
+          개발자는 이용자의 파일을 광고주에게 제공하지 않으며,
+          광고 SDK가 처리하는 정보는 해당 제3자 서비스의 정책에
+          따라 처리됩니다.
+        </p>
+
+        <p>
+          개발자는 법률, 법원 명령 또는 정부기관의 적법한 요구에
+          따라 필요한 경우에만 관련 법률이 허용하는 범위에서
+          정보를 제공할 수 있습니다. 다만, 개발자가 보유하지 않는
+          이용자 파일이나 개인정보는 제공할 수 없습니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>8. 정보의 보관 및 삭제</h2>
+
+        <p>
+          앱 설정, PDF 생성 기록 및 생성된 파일은 이용자의 기기에
+          보관됩니다.
+        </p>
+
+        <p>
+          이용자는 앱의 기록 삭제 기능, 기기의 파일 관리 앱 또는
+          앱 삭제 기능을 이용하여 관련 정보를 삭제할 수 있습니다.
+        </p>
+
+        <p>
+          Google AdMob이 처리하는 데이터의 보관과 삭제에는
+          Google의 개인정보처리방침 및 관련 정책이 적용됩니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>9. 보안</h2>
+
+        <p>
+          개발자는 이용자가 선택한 파일을 불필요하게 외부 서버로
+          전송하지 않고 가능한 범위에서 기기 내부에서 처리하도록
+          앱을 설계했습니다.
+        </p>
+
+        <p>
+          다만, 어떠한 전자적 저장 또는 전송 방법도 절대적인
+          보안을 보장할 수는 없습니다. 이용자는 민감하거나 중요한
+          문서를 처리하기 전에 원본 파일을 별도로 백업하고 기기
+          보안을 적절히 유지해야 합니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>10. 아동의 개인정보</h2>
+
+        <p>
+          이 앱은 일반적인 PDF 및 파일 유틸리티이며, 아동을 주요
+          대상으로 설계된 서비스가 아닙니다.
+        </p>
+
+        <p>
+          개발자는 아동의 개인정보를 고의로 요구하거나 직접
+          수집하지 않습니다.
+        </p>
+
+        <p>
+          법정대리인이 아동의 개인정보가 부적절하게 처리되었다고
+          판단하는 경우 Google Play 스토어에 표시된 개발자 연락처를
+          통해 문의할 수 있습니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>11. 이용자의 권리</h2>
+
+        <p>
+          이용자는 적용되는 개인정보 보호법에 따라 개인정보의
+          접근, 정정, 삭제, 처리 제한 또는 이의를 요청할 권리가
+          있을 수 있습니다.
+        </p>
+
+        <p>
+          개발자가 별도의 계정이나 서버 기반 개인정보를 보유하지
+          않는 경우, 개발자가 직접 확인하거나 삭제할 수 있는
+          개인정보가 존재하지 않을 수 있습니다.
+        </p>
+
+        <p>
+          기기에 저장된 파일과 기록은 이용자가 앱 또는 기기의 파일
+          관리 기능을 통해 직접 관리할 수 있습니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>12. 국제적 데이터 처리</h2>
+
+        <p>
+          Google과 같은 제3자 광고 서비스는 이용자의 거주 국가가
+          아닌 다른 국가에서 정보를 처리할 수 있습니다.
+        </p>
+
+        <p>
+          해당 처리에는 각 서비스 제공자의 개인정보처리방침 및
+          적용 가능한 데이터 보호 장치가 적용됩니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>13. 개인정보처리방침의 변경</h2>
+
+        <p>
+          앱 기능, 법률 또는 제3자 서비스의 변경에 따라 본
+          개인정보처리방침이 수정될 수 있습니다.
+        </p>
+
+        <p>
+          중요한 변경사항이 있는 경우 이 페이지의 시행일을
+          갱신하거나 앱 또는 스토어 등록정보를 통해 안내할 수
+          있습니다.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>14. 문의</h2>
+
+        <p>
+          개인정보 보호 또는 본 개인정보처리방침에 관한 문의는
+          Google Play 스토어의 앱 등록정보에 표시된 개발자
+          연락처를 이용해 주시기 바랍니다.
+        </p>
+
+        <ul>
+          <li>개발자: JCraft Studio</li>
+          <li>앱: Image to PDF - Insert Images</li>
+          <li>연락처: Google Play 스토어의 개발자 연락처 참조</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>15. 시행일</h2>
+
+        <p>
+          본 개인정보처리방침은
+          <strong>2026년 7월 13일</strong>부터 적용됩니다.
+        </p>
+
+        <a class="top-link" href="#top">
+          페이지 위로 이동
+        </a>
+      </article>
+    </section>
+
+    <!-- English Privacy Policy -->
+    <section
+      id="privacy-en"
+      class="language-section"
+      lang="en"
+      hidden
+    >
+      <article class="card">
+        <h2>Privacy Policy</h2>
+
+        <p>
+          JCraft Studio (“Developer,” “we,” “us,” or “our”)
+          respects the privacy of users of
+          <strong>Image to PDF - Insert Images</strong>
+          (“App”).
+        </p>
+
+        <p>
+          This Privacy Policy explains how the App accesses files and
+          information, how such information is used, the involvement of
+          third-party services, and the choices available to users.
+        </p>
+
+        <div class="notice">
+          <strong>Key information</strong>
+
+          <ul class="summary-list">
+            <li>
+              Images and PDF files selected by the user are
+              <strong>processed locally on the user’s device</strong>.
+            </li>
+
+            <li>
+              The Developer does not upload or store selected images or
+              PDF documents on a Developer-operated server.
+            </li>
+
+            <li>
+              The App uses Google AdMob for advertising. Google may
+              process certain device and usage information while
+              providing advertisements.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>1. Personal Information Collected Directly by the Developer</h2>
+
+        <p>
+          The Developer does not require or directly collect information
+          that personally identifies users, such as names, email
+          addresses, telephone numbers, account details, postal
+          addresses, or payment information.
+        </p>
+
+        <p>
+          The App does not include a Developer-operated account,
+          registration, login, or cloud upload service.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>2. Files and Media Selected by the User</h2>
+
+        <p>
+          The App may access files explicitly selected by the user to
+          provide the following features:
+        </p>
+
+        <ul>
+          <li>Convert images into a PDF document</li>
+          <li>Open an existing PDF file</li>
+          <li>Insert images between existing PDF pages</li>
+          <li>Reorder or rotate pages</li>
+          <li>Save, open, and share completed PDF documents</li>
+        </ul>
+
+        <p>
+          The App accesses only files that the user selects through the
+          operating system’s file selection interface.
+        </p>
+
+        <p>
+          Selected images and PDF documents are processed locally on the
+          device to perform the requested operation. The Developer does
+          not upload these files to a Developer-operated server or
+          remotely review their contents.
+        </p>
+
+        <p>
+          PDF files created by the App may be stored in the App’s local
+          storage area or in another storage location selected by the
+          user.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>3. Information Stored Within the App</h2>
+
+        <p>
+          The App may store the following information locally on the
+          user’s device:
+        </p>
+
+        <ul>
+          <li>Selected language preference</li>
+          <li>Light, dark, or system theme preference</li>
+          <li>
+            File name, storage path, creation date, and page count of
+            generated PDF files
+          </li>
+          <li>History of PDF files generated through the App</li>
+        </ul>
+
+        <p>
+          This information is used to preserve App settings and display
+          generated-file history. It is not automatically transmitted
+          to a Developer-operated server.
+        </p>
+
+        <p>
+          Local data may be removed by deleting records, clearing App
+          data, deleting generated files, or uninstalling the App.
+          Files copied to locations outside the App must be deleted by
+          the user separately.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>4. Advertising and Third-Party Services</h2>
+
+        <p>
+          The App may use Google AdMob and the Google Mobile Ads SDK,
+          services provided by Google LLC, to display advertisements.
+        </p>
+
+        <p>
+          Advertising providers may automatically process information
+          such as the following for ad delivery, measurement, fraud
+          prevention, security, and legal compliance:
+        </p>
+
+        <ul>
+          <li>Advertising identifiers</li>
+          <li>IP address</li>
+          <li>Device type, operating system, and App version</li>
+          <li>Approximate location information</li>
+          <li>Ad impressions, clicks, and interaction information</li>
+          <li>Diagnostics, performance, and error information</li>
+        </ul>
+
+        <p>
+          This information may be processed by Google and its services
+          rather than being directly collected by the Developer.
+        </p>
+
+        <p>
+          More information about Google’s privacy practices is available
+          through the following documents:
+        </p>
+
+        <ul>
+          <li>
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://policies.google.com/technologies/ads"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              How Google uses information for advertising
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://support.google.com/admob/answer/6128543"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google AdMob privacy information
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          Users may be able to reset their advertising identifier or
+          change personalized advertising choices through device or
+          Google advertising settings.
+        </p>
+
+        <p>
+          Where required by applicable law, a consent or privacy choices
+          message may be displayed through Google’s consent management
+          tools.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>5. File Sharing and External Apps</h2>
+
+        <p>
+          When the user selects the sharing feature, the App opens the
+          operating system’s sharing interface.
+        </p>
+
+        <p>
+          The PDF file may then be transferred to an email application,
+          messaging service, cloud storage provider, or another external
+          application selected by the user.
+        </p>
+
+        <p>
+          Information shared with an external application is governed
+          by that external service’s own privacy policy and terms. The
+          Developer does not control the privacy or security practices
+          of services selected by the user.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>6. Google Play and External Links</h2>
+
+        <p>
+          The App may provide links to Google Play to introduce other
+          applications offered by the Developer.
+        </p>
+
+        <p>
+          Once a user visits an external website or service, the privacy
+          policy and terms of that external service apply.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>7. Sale and Sharing of Personal Information</h2>
+
+        <p>
+          The Developer does not sell users’ personal information,
+          images, or PDF documents.
+        </p>
+
+        <p>
+          The Developer does not provide user-selected files to
+          advertisers. Information processed through an advertising SDK
+          is handled under the applicable third-party provider’s
+          policies.
+        </p>
+
+        <p>
+          Information may be disclosed when required by applicable law,
+          a valid court order, or a lawful request from a governmental
+          authority. The Developer cannot disclose user files or
+          personal information that the Developer does not possess.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>8. Data Retention and Deletion</h2>
+
+        <p>
+          App settings, generated-file history, and generated files are
+          retained locally on the user’s device.
+        </p>
+
+        <p>
+          Users may delete this information through the App’s history
+          deletion feature, the device’s file manager, the device’s App
+          data settings, or by uninstalling the App.
+        </p>
+
+        <p>
+          Information processed by Google AdMob is retained and deleted
+          in accordance with Google’s privacy policies and applicable
+          terms.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>9. Security</h2>
+
+        <p>
+          The App is designed to process user-selected files locally
+          whenever reasonably possible and not transmit them
+          unnecessarily to an external Developer-operated server.
+        </p>
+
+        <p>
+          However, no electronic storage or transmission method can be
+          guaranteed to be completely secure. Users should maintain
+          appropriate device security and keep separate backups of
+          important documents.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>10. Children’s Privacy</h2>
+
+        <p>
+          The App is a general PDF and file utility and is not designed
+          primarily for children.
+        </p>
+
+        <p>
+          The Developer does not knowingly request or directly collect
+          personal information from children.
+        </p>
+
+        <p>
+          A parent or legal guardian who believes that a child’s
+          personal information has been handled improperly may contact
+          the Developer using the contact details shown on the App’s
+          Google Play listing.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>11. User Rights</h2>
+
+        <p>
+          Depending on applicable privacy law, users may have rights to
+          request access, correction, deletion, restriction, or
+          objection regarding the processing of their personal
+          information.
+        </p>
+
+        <p>
+          Because the Developer does not operate user accounts or a
+          server-based personal information database for this App,
+          there may be no personal information held by the Developer
+          that can be directly identified or deleted.
+        </p>
+
+        <p>
+          Files and history stored locally on the device can be managed
+          directly through the App or the device’s file management
+          features.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>12. International Data Processing</h2>
+
+        <p>
+          Third-party providers such as Google may process information
+          in countries other than the user’s country of residence.
+        </p>
+
+        <p>
+          Such processing is governed by the provider’s privacy policy
+          and any applicable data protection safeguards.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>13. Changes to This Privacy Policy</h2>
+
+        <p>
+          This Privacy Policy may be updated when the App’s features,
+          applicable laws, or third-party services change.
+        </p>
+
+        <p>
+          When material changes are made, the effective date on this
+          page may be updated, and notice may be provided through the
+          App or its store listing where appropriate.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>14. Contact</h2>
+
+        <p>
+          For questions regarding privacy or this Privacy Policy, please
+          use the Developer contact information displayed on the App’s
+          Google Play listing.
+        </p>
+
+        <ul>
+          <li>Developer: JCraft Studio</li>
+          <li>App: Image to PDF - Insert Images</li>
+          <li>
+            Contact: Refer to the Developer contact details on Google
+            Play
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>15. Effective Date</h2>
+
+        <p>
+          This Privacy Policy is effective as of
+          <strong>July 13, 2026</strong>.
+        </p>
+
+        <a class="top-link" href="#top">
+          Back to top
+        </a>
+      </article>
+    </section>
+
+    <footer class="footer">
+      © 2026 JCraft Studio. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const koreanButton = document.getElementById("show-ko");
+      const englishButton = document.getElementById("show-en");
+
+      const koreanSection = document.getElementById("privacy-ko");
+      const englishSection = document.getElementById("privacy-en");
+
+      function selectLanguage(language) {
+        const isKorean = language === "ko";
+
+        koreanSection.hidden = !isKorean;
+        englishSection.hidden = isKorean;
+
+        koreanButton.classList.toggle("active", isKorean);
+        englishButton.classList.toggle("active", !isKorean);
+
+        koreanButton.setAttribute(
+          "aria-pressed",
+          String(isKorean)
+        );
+
+        englishButton.setAttribute(
+          "aria-pressed",
+          String(!isKorean)
+        );
+
+        document.documentElement.lang = isKorean ? "ko" : "en";
+
+        try {
+          localStorage.setItem(
+            "image-to-pdf-privacy-language",
+            language
+          );
+        } catch (_) {
+          // Local storage may be unavailable in some browsers.
+        }
+      }
+
+      koreanButton.addEventListener("click", function () {
+        selectLanguage("ko");
+      });
+
+      englishButton.addEventListener("click", function () {
+        selectLanguage("en");
+      });
+
+      let savedLanguage = null;
+
+      try {
+        savedLanguage = localStorage.getItem(
+          "image-to-pdf-privacy-language"
+        );
+      } catch (_) {
+        savedLanguage = null;
+      }
+
+      if (savedLanguage === "ko" || savedLanguage === "en") {
+        selectLanguage(savedLanguage);
+        return;
+      }
+
+      const browserLanguage = (
+        navigator.language ||
+        navigator.userLanguage ||
+        "en"
+      ).toLowerCase();
+
+      selectLanguage(
+        browserLanguage.startsWith("ko") ? "ko" : "en"
+      );
+    }());
+  </script>
+</body>
+</html>
