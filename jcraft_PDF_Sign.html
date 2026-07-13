@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="PDF Sign application privacy policy in Korean and English."
+  />
+
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  <title>PDF Sign - Privacy Policy</title>
+
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --background: #f7f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --text: #111827;
+      --sub-text: #4b5563;
+      --border: #e2e8f0;
+      --notice-background: #eef2ff;
+      --notice-border: #c7d2fe;
+      --warning-background: #fff7ed;
+      --warning-border: #fed7aa;
+      --success-background: #f0fdf4;
+      --success-border: #bbf7d0;
+      --shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Noto Sans KR",
+        "Noto Sans",
+        Arial,
+        sans-serif;
+      line-height: 1.75;
+      word-break: keep-all;
+    }
+
+    a {
+      color: var(--primary-dark);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+
+    .hero {
+      padding: 34px;
+      margin-bottom: 20px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(99, 102, 241, 0.98),
+          rgba(139, 92, 246, 0.95)
+        );
+      color: #ffffff;
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .app-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .app-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 17px;
+      font-size: 27px;
+      backdrop-filter: blur(8px);
+    }
+
+    .app-name {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(28px, 6vw, 42px);
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-description {
+      margin: 14px 0 0;
+      max-width: 690px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 15px;
+    }
+
+    .language-selector {
+      flex-shrink: 0;
+      display: flex;
+      gap: 8px;
+      padding: 5px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 14px;
+    }
+
+    .language-button {
+      min-width: 62px;
+      padding: 9px 13px;
+      color: #ffffff;
+      background: transparent;
+      border: 0;
+      border-radius: 10px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .language-button.active {
+      color: var(--primary-dark);
+      background: #ffffff;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 22px;
+    }
+
+    .meta-chip {
+      padding: 7px 11px;
+      color: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .content {
+      padding: 30px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .language-section {
+      display: none;
+    }
+
+    .language-section.active {
+      display: block;
+    }
+
+    .summary-box,
+    .notice-box,
+    .warning-box,
+    .success-box {
+      padding: 18px 20px;
+      margin: 0 0 24px;
+      border-radius: 18px;
+    }
+
+    .summary-box,
+    .notice-box {
+      background: var(--notice-background);
+      border: 1px solid var(--notice-border);
+    }
+
+    .warning-box {
+      background: var(--warning-background);
+      border: 1px solid var(--warning-border);
+    }
+
+    .success-box {
+      background: var(--success-background);
+      border: 1px solid var(--success-border);
+    }
+
+    .summary-box strong,
+    .notice-box strong,
+    .warning-box strong,
+    .success-box strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    section {
+      padding: 5px 0 15px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.4;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 0 0 13px;
+      color: var(--sub-text);
+    }
+
+    ul {
+      margin: 8px 0 14px;
+      padding-left: 22px;
+      color: var(--sub-text);
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .table-wrapper {
+      width: 100%;
+      margin: 14px 0 18px;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 660px;
+      border-collapse: collapse;
+      background: var(--surface);
+    }
+
+    th,
+    td {
+      padding: 14px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    th {
+      color: var(--text);
+      background: var(--surface-soft);
+      font-weight: 800;
+    }
+
+    td {
+      color: var(--sub-text);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .footer {
+      padding: 24px 10px 0;
+      color: #64748b;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      color: inherit;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding-top: 10px;
+      }
+
+      .hero {
+        padding: 24px 20px;
+        border-radius: 22px;
+      }
+
+      .hero-top {
+        flex-direction: column;
+      }
+
+      .language-selector {
+        width: 100%;
+      }
+
+      .language-button {
+        flex: 1;
+      }
+
+      .content {
+        padding: 22px 18px;
+        border-radius: 22px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0f172a;
+        --surface: #111827;
+        --surface-soft: #1f2937;
+        --text: #f8fafc;
+        --sub-text: #cbd5e1;
+        --border: #334155;
+        --notice-background: #1e1b4b;
+        --notice-border: #4338ca;
+        --warning-background: #431407;
+        --warning-border: #9a3412;
+        --success-background: #052e16;
+        --success-border: #166534;
+        --shadow: 0 12px 35px rgba(0, 0, 0, 0.28);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page" id="top">
+    <header class="hero">
+      <div class="hero-top">
+        <div>
+          <div class="app-mark">
+            <div class="app-icon" aria-hidden="true">✍️</div>
+
+            <p class="app-name">
+              PDF Sign
+            </p>
+          </div>
+
+          <h1
+            class="language-title"
+            data-ko="개인정보처리방침"
+            data-en="Privacy Policy"
+          >
+            개인정보처리방침
+          </h1>
+
+          <p
+            class="hero-description"
+            data-ko="PDF Sign 앱의 데이터 처리 방식과 이용자의 개인정보 보호에 관한 안내입니다."
+            data-en="This policy explains how the PDF Sign app handles data and protects user privacy."
+          >
+            PDF Sign 앱의 데이터 처리 방식과 이용자의 개인정보 보호에 관한 안내입니다.
+          </p>
+        </div>
+
+        <div
+          class="language-selector"
+          role="group"
+          aria-label="Language selector"
+        >
+          <button
+            type="button"
+            class="language-button active"
+            id="button-ko"
+            onclick="changeLanguage('ko')"
+          >
+            한국어
+          </button>
+
+          <button
+            type="button"
+            class="language-button"
+            id="button-en"
+            onclick="changeLanguage('en')"
+          >
+            English
+          </button>
+        </div>
+      </div>
+
+      <div class="meta-row">
+        <span
+          class="meta-chip"
+          data-ko="시행일: 2026년 7월 13일"
+          data-en="Effective date: July 13, 2026"
+        >
+          시행일: 2026년 7월 13일
+        </span>
+
+        <span
+          class="meta-chip"
+          data-ko="최종 수정일: 2026년 7월 13일"
+          data-en="Last updated: July 13, 2026"
+        >
+          최종 수정일: 2026년 7월 13일
+        </span>
+
+        <span
+          class="meta-chip"
+          data-ko="한국어·영어 지원"
+          data-en="Available in Korean and English"
+        >
+          한국어·영어 지원
+        </span>
+      </div>
+    </header>
+
+    <article class="content">
+      <!-- Korean Privacy Policy -->
+      <div
+        id="privacy-ko"
+        class="language-section active"
+        lang="ko"
+      >
+        <div class="summary-box">
+          <strong>핵심 안내</strong>
+
+          PDF Sign은 사용자가 선택한 PDF 문서와 작성한 서명을
+          개발자의 서버로 업로드하거나 저장하지 않습니다.
+
+          PDF 처리와 서명 파일 생성은 원칙적으로 사용자의 기기에서
+          수행됩니다. 다만 앱에 포함된 Google AdMob 광고 SDK는
+          광고 제공, 분석, 보안 및 부정 이용 방지를 위해 일부 정보를
+          처리할 수 있습니다.
+        </div>
+
+        <section>
+          <h2>1. 총칙</h2>
+
+          <p>
+            본 개인정보처리방침은 PDF Sign(이하 “앱”)이 이용자의
+            정보와 문서를 어떻게 처리하는지 설명합니다.
+          </p>
+
+          <p>
+            앱을 설치하거나 사용하는 경우 이용자는 본 개인정보처리방침의
+            내용을 확인한 것으로 간주됩니다. 이용자가 본 방침에 동의하지
+            않는 경우 앱 사용을 중단하고 기기에서 앱을 삭제할 수 있습니다.
+          </p>
+
+          <p>
+            본 방침에서 “개발자”란 Google Play 스토어의 해당 앱
+            등록정보에 표시된 개발자 또는 운영 주체를 의미합니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. 앱의 주요 기능</h2>
+
+          <p>앱은 다음 기능을 제공합니다.</p>
+
+          <ul>
+            <li>사용자 기기에서 PDF 파일 선택</li>
+            <li>손가락 또는 스타일러스를 이용한 서명 작성</li>
+            <li>PDF 페이지별 서명 배치, 이동 및 크기 조절</li>
+            <li>서명이 포함된 새로운 PDF 파일 생성</li>
+            <li>생성된 PDF 파일 저장 및 공유</li>
+            <li>최근 생성한 PDF 기록 관리</li>
+            <li>언어와 화면 모드 설정 저장</li>
+            <li>광고 표시</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. 개발자가 직접 수집하는 개인정보</h2>
+
+          <div class="success-box">
+            <strong>개발자 서버로의 문서 전송 없음</strong>
+
+            앱은 회원가입 기능이나 개발자 운영 서버를 사용하지 않으며,
+            사용자가 선택한 PDF, 작성한 서명 및 생성된 PDF를 개발자에게
+            전송하도록 설계되지 않았습니다.
+          </div>
+
+          <p>
+            앱 자체는 다음 정보를 개발자의 서버에 직접 수집하거나
+            저장하지 않습니다.
+          </p>
+
+          <ul>
+            <li>이름, 생년월일, 주소 또는 전화번호</li>
+            <li>이메일 주소 또는 계정 비밀번호</li>
+            <li>사용자가 선택한 PDF 문서 내용</li>
+            <li>사용자가 작성한 서명 이미지 또는 서명 획 정보</li>
+            <li>앱에서 생성된 서명 PDF 내용</li>
+            <li>연락처, 문자 메시지 또는 통화 기록</li>
+            <li>정확한 위치 정보</li>
+            <li>결제 정보 또는 금융 계좌 정보</li>
+          </ul>
+
+          <p>
+            향후 앱 기능이 변경되어 별도의 서버, 계정, 클라우드 백업,
+            분석 도구 또는 추가 데이터 수집 기능이 도입되는 경우,
+            개발자는 본 개인정보처리방침을 수정하고 필요한 경우
+            별도의 동의 절차를 제공합니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. PDF 및 서명 데이터의 처리</h2>
+
+          <h3>4.1 기기 내 처리</h3>
+
+          <p>
+            사용자가 선택한 PDF와 앱에서 작성한 서명은 서명 PDF를
+            생성하기 위해 사용자의 기기에서 처리됩니다.
+          </p>
+
+          <p>
+            앱은 원본 PDF를 직접 수정하지 않고, 서명이 적용된 새로운
+            PDF 파일을 생성하는 방식을 사용합니다.
+          </p>
+
+          <h3>4.2 저장 위치</h3>
+
+          <p>
+            생성된 PDF 파일과 관련 기록은 앱 내부 저장공간 또는
+            사용자가 선택한 기기 저장 위치에 저장될 수 있습니다.
+          </p>
+
+          <p>
+            저장된 파일은 기기의 운영체제, 파일 관리 정책, 백업 설정
+            또는 사용자가 사용하는 파일 관리 앱의 영향을 받을 수 있습니다.
+          </p>
+
+          <h3>4.3 공유 기능</h3>
+
+          <p>
+            이용자가 공유 기능을 직접 실행하면 생성된 PDF 파일이
+            이용자가 선택한 이메일, 메신저, 클라우드 저장소, 파일 관리 앱
+            또는 기타 외부 앱으로 전달될 수 있습니다.
+          </p>
+
+          <p>
+            공유 이후의 데이터 처리는 해당 외부 앱 또는 서비스의
+            개인정보처리방침과 이용약관에 따릅니다. 개발자는 이용자가
+            선택한 외부 서비스의 데이터 처리 방식에 대해 통제할 수 없습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. 기기 권한과 파일 접근</h2>
+
+          <p>
+            앱은 PDF 선택, 저장 및 공유 기능을 제공하기 위해 Android의
+            시스템 파일 선택기, 저장소 접근 인터페이스 또는 공유 기능을
+            사용할 수 있습니다.
+          </p>
+
+          <p>
+            앱은 사용자가 직접 선택한 파일 또는 앱이 생성한 파일을
+            처리하는 데 필요한 범위에서만 파일에 접근하도록 설계됩니다.
+          </p>
+
+          <p>
+            Android 버전과 기기 제조사의 정책에 따라 표시되는 권한
+            요청 또는 파일 접근 방식이 달라질 수 있습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. 광고와 제3자 서비스</h2>
+
+          <p>
+            앱은 무료 서비스 제공과 운영을 위해 Google AdMob의
+            광고 서비스를 사용할 수 있습니다.
+          </p>
+
+          <p>
+            Google Mobile Ads SDK는 광고 표시, 광고 성과 측정,
+            분석, 서비스 운영, 보안 및 부정 이용 방지를 위해 다음과 같은
+            정보를 자동으로 처리할 수 있습니다.
+          </p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>정보 유형</th>
+                  <th>처리 목적</th>
+                  <th>처리 주체</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>IP 주소 및 대략적인 위치 정보</td>
+                  <td>광고 제공, 지역 추정, 보안 및 부정 이용 방지</td>
+                  <td>Google 및 광고 파트너</td>
+                </tr>
+
+                <tr>
+                  <td>광고 식별자 또는 기기 식별자</td>
+                  <td>광고 제공, 빈도 제한, 분석 및 부정 이용 방지</td>
+                  <td>Google 및 광고 파트너</td>
+                </tr>
+
+                <tr>
+                  <td>앱 실행, 광고 조회, 탭 등 상호작용</td>
+                  <td>광고 성과 측정, 분석 및 서비스 개선</td>
+                  <td>Google 및 광고 파트너</td>
+                </tr>
+
+                <tr>
+                  <td>충돌, 앱 실행 시간, 성능 등 진단 정보</td>
+                  <td>안정성, 성능 분석 및 문제 해결</td>
+                  <td>Google</td>
+                </tr>
+
+                <tr>
+                  <td>기기 종류, 운영체제, 언어 등 기술 정보</td>
+                  <td>광고 호환성, 분석 및 서비스 제공</td>
+                  <td>Google 및 광고 파트너</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            광고 데이터의 실제 처리 범위는 사용자의 지역, 기기 설정,
+            광고 동의 상태, Google의 정책 및 광고 설정에 따라 달라질 수
+            있습니다.
+          </p>
+
+          <p>
+            이용자는 기기의 광고 개인정보 설정 또는 Google 광고 설정을
+            통해 맞춤형 광고와 관련된 선택 사항을 관리할 수 있습니다.
+          </p>
+
+          <p>
+            Google의 개인정보 처리에 관한 자세한 내용은 다음 문서에서
+            확인할 수 있습니다.
+          </p>
+
+          <ul>
+            <li>
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google 개인정보처리방침
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://policies.google.com/technologies/ads"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google 광고에서의 데이터 사용
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://support.google.com/admob/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google AdMob 도움말 및 정책
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>7. 광고 동의와 개인정보 선택권</h2>
+
+          <p>
+            관련 법률 또는 Google 정책에서 요구하는 지역의 이용자에게는
+            광고 개인화, 데이터 처리 또는 개인정보 선택과 관련된 동의
+            메시지가 표시될 수 있습니다.
+          </p>
+
+          <p>
+            이용자는 표시되는 동의 화면 또는 개인정보 옵션을 통해
+            동의 여부와 광고 관련 선택을 관리할 수 있습니다.
+          </p>
+
+          <p>
+            광고 동의를 거부하더라도 앱의 핵심 PDF 서명 기능을 사용할 수
+            있으나, 비개인화 광고 또는 제한된 광고가 표시될 수 있습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. 데이터 보관 및 삭제</h2>
+
+          <h3>8.1 앱 내부 데이터</h3>
+
+          <p>
+            앱이 생성한 PDF 파일, 최근 기록, 언어 설정 및 화면 설정은
+            사용자 기기에 저장될 수 있습니다.
+          </p>
+
+          <p>
+            이용자는 앱 내 삭제 기능, 기기의 파일 관리 기능 또는 앱
+            삭제를 통해 해당 정보를 삭제할 수 있습니다.
+          </p>
+
+          <p>
+            앱을 삭제하면 앱 내부 저장공간에 보관된 설정과 기록은 삭제될
+            수 있습니다. 다만 사용자가 외부 저장공간에 내보낸 파일,
+            다른 앱에 공유한 파일 또는 기기 백업에 포함된 데이터는
+            별도로 남을 수 있습니다.
+          </p>
+
+          <h3>8.2 광고 데이터</h3>
+
+          <p>
+            Google 및 광고 파트너가 처리하는 데이터의 보관 기간과 삭제
+            방식은 해당 사업자의 개인정보처리방침 및 법적 의무에 따릅니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. 데이터 보안</h2>
+
+          <p>
+            개발자는 불필요한 데이터 수집을 최소화하고 PDF와 서명 작업을
+            기기 내에서 처리하도록 앱을 설계합니다.
+          </p>
+
+          <p>
+            다만 어떠한 전자적 저장 또는 전송 방식도 완전한 보안을
+            보장할 수 없습니다. 기기 분실, 악성 프로그램, 운영체제 취약점,
+            사용자가 선택한 공유 대상 또는 외부 저장소로 인해 데이터가
+            노출될 수 있습니다.
+          </p>
+
+          <p>
+            이용자는 중요한 문서를 처리할 때 기기 잠금, 운영체제 업데이트,
+            신뢰할 수 있는 공유 대상 선택 및 안전한 저장소 사용 등의
+            보호 조치를 취해야 합니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. 아동의 개인정보</h2>
+
+          <p>
+            앱은 일반적인 PDF 문서 편집이 필요한 사용자를 위한 도구이며,
+            특정 연령 미만의 아동을 주요 대상으로 제작된 서비스가 아닙니다.
+          </p>
+
+          <p>
+            개발자는 앱을 통해 아동의 개인정보를 의도적으로 수집하지
+            않습니다. 보호자는 아동이 문서나 개인정보를 외부 앱으로
+            공유하지 않도록 지도해야 합니다.
+          </p>
+
+          <p>
+            법령 또는 앱 배포 설정에 따라 아동 대상 광고 제한 또는
+            연령에 적합한 광고 설정이 적용될 수 있습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>11. 이용자의 책임</h2>
+
+          <div class="warning-box">
+            <strong>문서 사용 권한 확인</strong>
+
+            이용자는 앱에서 열거나 수정하거나 공유하는 문서에 대해
+            적법한 접근 및 사용 권한을 보유해야 합니다.
+          </div>
+
+          <p>
+            이용자는 다음 사항에 대한 책임을 부담합니다.
+          </p>
+
+          <ul>
+            <li>
+              본인에게 열람, 수정, 서명 또는 공유 권한이 있는 문서만
+              사용하는 것
+            </li>
+
+            <li>
+              타인의 개인정보, 영업비밀, 저작물 또는 기밀 문서를
+              무단으로 사용하지 않는 것
+            </li>
+
+            <li>
+              위조, 사칭, 사기 또는 기타 위법한 목적으로 서명을 사용하지
+              않는 것
+            </li>
+
+            <li>
+              생성된 PDF의 내용과 서명 위치를 저장 또는 공유 전에
+              확인하는 것
+            </li>
+
+            <li>
+              문서 수신자와 관련 기관이 요구하는 서명 방식과 법적 요건을
+              확인하는 것
+            </li>
+          </ul>
+
+          <p>
+            이용자의 문서 또는 서명 사용으로 인해 발생하는 분쟁,
+            제3자의 권리 침해 또는 법률 위반에 대해서는 이용자 본인이
+            책임을 부담합니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>12. 전자서명의 법적 효력</h2>
+
+          <p>
+            앱은 PDF에 시각적인 손글씨 서명 이미지를 추가하는 도구입니다.
+          </p>
+
+          <p>
+            앱은 본인 인증, 인증서 기반 전자서명, 공인전자서명,
+            타임스탬프, 공증, 신원 검증 또는 문서 무결성 인증 서비스를
+            제공하지 않습니다.
+          </p>
+
+          <p>
+            앱을 이용해 추가한 서명이 특정 국가, 기관, 계약 또는 거래에서
+            법적 효력을 갖는지는 관련 법률, 계약 당사자의 합의, 문서 종류,
+            서명 방식 및 요구되는 인증 수준에 따라 달라질 수 있습니다.
+          </p>
+
+          <p>
+            중요한 계약, 법률 문서, 금융 문서, 부동산 문서 또는 공공기관
+            제출 문서에 앱을 사용하는 경우 이용자는 필요한 법적 요건을
+            직접 확인하거나 자격을 갖춘 전문가에게 문의해야 합니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>13. 저작권 및 제3자 권리</h2>
+
+          <p>
+            앱의 프로그램 코드, 디자인, 아이콘, 문구 및 자체 제작 콘텐츠에
+            관한 권리는 개발자 또는 정당한 권리자에게 귀속됩니다.
+          </p>
+
+          <p>
+            Android, Google Play, Google AdMob 및 기타 Google 서비스의
+            명칭과 상표는 Google LLC 또는 해당 권리자에게 귀속됩니다.
+            앱은 Google이 직접 제작하거나 보증하는 공식 앱이 아닙니다.
+          </p>
+
+          <p>
+            사용자가 앱에서 처리하는 PDF, 서명 및 기타 문서의 권리는
+            해당 사용자 또는 원래 권리자에게 귀속됩니다. 개발자는 사용자가
+            처리하는 문서의 소유권을 주장하지 않습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>14. 외부 서비스 및 링크</h2>
+
+          <p>
+            앱 또는 본 페이지에는 Google Play, Google AdMob,
+            개인정보처리방침, 다른 앱 또는 기타 제3자 사이트로 이동하는
+            링크가 포함될 수 있습니다.
+          </p>
+
+          <p>
+            개발자는 제3자 서비스의 콘텐츠, 운영, 보안, 개인정보 처리
+            또는 서비스 중단에 대해 통제하거나 보증하지 않습니다.
+            이용자는 외부 서비스를 이용하기 전에 해당 서비스의 정책을
+            확인해야 합니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>15. 보증의 제한</h2>
+
+          <p>
+            앱은 관련 법령에서 허용되는 범위 내에서 현재 상태 그대로
+            제공됩니다.
+          </p>
+
+          <p>
+            개발자는 앱이 모든 기기, 모든 PDF 형식 또는 모든 문서에서
+            오류 없이 작동하거나, 앱의 결과가 특정 법적·업무적 목적에
+            적합하다는 점을 보증하지 않습니다.
+          </p>
+
+          <p>
+            PDF 구조, 암호화, 손상된 파일, 특수 글꼴, 양식, 인증서,
+            디지털 서명 또는 기기 환경에 따라 일부 문서가 정상적으로
+            처리되지 않을 수 있습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>16. 책임의 제한</h2>
+
+          <p>
+            관련 법령에서 허용되는 최대 범위 내에서 개발자는 다음 사유로
+            발생한 직접적 또는 간접적 손해에 대해 책임을 부담하지 않습니다.
+          </p>
+
+          <ul>
+            <li>사용자의 잘못된 파일 선택, 삭제, 저장 또는 공유</li>
+            <li>원본 또는 생성 파일의 손상, 유실 또는 접근 불가</li>
+            <li>서명 위치, 크기 또는 문서 내용 확인 누락</li>
+            <li>외부 앱, 클라우드 서비스 또는 광고 서비스의 동작</li>
+            <li>기기 고장, 운영체제 오류, 저장공간 부족 또는 네트워크 문제</li>
+            <li>앱을 이용한 위법 행위 또는 제3자 권리 침해</li>
+            <li>생성된 서명의 법적 효력 불인정</li>
+          </ul>
+
+          <p>
+            다만 관련 법률에 따라 제한하거나 배제할 수 없는 책임은
+            본 조항의 적용을 받지 않습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>17. 국제적인 데이터 처리</h2>
+
+          <p>
+            Google AdMob과 같은 제3자 서비스 제공자는 이용자의 거주 국가
+            외의 지역에 있는 서버 또는 사업자를 통해 광고 관련 데이터를
+            처리할 수 있습니다.
+          </p>
+
+          <p>
+            이러한 처리에는 해당 서비스 제공자의 개인정보 보호 조치와
+            관련 법률이 적용됩니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>18. 개인정보처리방침 변경</h2>
+
+          <p>
+            개발자는 앱 기능, 제3자 SDK, 관련 법령 또는 Google Play
+            정책의 변경을 반영하기 위해 본 개인정보처리방침을 수정할 수
+            있습니다.
+          </p>
+
+          <p>
+            중요한 변경이 있는 경우 본 페이지의 최종 수정일을 변경하거나,
+            앱 또는 스토어 등록정보를 통해 필요한 안내를 제공할 수 있습니다.
+          </p>
+
+          <p>
+            이용자는 최신 내용을 확인하기 위해 본 페이지를 정기적으로
+            검토할 수 있습니다.
+          </p>
+        </section>
+
+        <section>
+          <h2>19. 개발자 정보 및 문의</h2>
+
+          <p>
+            개발자의 이름, 사업자 또는 개발자 표시명, 이메일 주소 및
+            기타 연락처는 국가와 스토어 정책에 따라 변경될 수 있으므로
+            최신 정보는 Google Play 스토어의 PDF Sign 앱 등록정보에
+            표시된 개발자 연락처를 참고해 주시기 바랍니다.
+          </p>
+
+          <p>
+            개인정보, 데이터 처리, 파일 삭제 또는 본 개인정보처리방침에
+            관한 문의는 Google Play 스토어 등록정보에 표시된 개발자
+            이메일 또는 문의 수단을 이용해 주시기 바랍니다.
+          </p>
+        </section>
+      </div>
+
+      <!-- English Privacy Policy -->
+      <div
+        id="privacy-en"
+        class="language-section"
+        lang="en"
+      >
+        <div class="summary-box">
+          <strong>Summary</strong>
+
+          PDF Sign does not upload or store PDFs selected by users,
+          handwritten signatures, or generated signed PDFs on a
+          developer-operated server.
+
+          PDF processing and signed PDF generation are generally performed
+          on the user's device. However, the Google AdMob advertising SDK
+          included in the app may process certain information for advertising,
+          analytics, security, and fraud prevention.
+        </div>
+
+        <section>
+          <h2>1. Introduction</h2>
+
+          <p>
+            This Privacy Policy explains how PDF Sign (the “App”) handles
+            user information and documents.
+          </p>
+
+          <p>
+            By installing or using the App, you acknowledge that you have
+            reviewed this Privacy Policy. If you do not agree with this
+            Policy, you may stop using the App and remove it from your device.
+          </p>
+
+          <p>
+            In this Policy, the “Developer” means the developer or operating
+            entity identified in the App's Google Play store listing.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. App Features</h2>
+
+          <p>The App provides features including:</p>
+
+          <ul>
+            <li>Selecting PDF files from the user's device</li>
+            <li>Drawing a signature using a finger or stylus</li>
+            <li>Placing, moving, and resizing signatures on PDF pages</li>
+            <li>Creating a new PDF containing the selected signatures</li>
+            <li>Saving and sharing generated PDF files</li>
+            <li>Managing a history of recently generated PDFs</li>
+            <li>Saving language and display settings</li>
+            <li>Displaying advertisements</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. Personal Data Collected Directly by the Developer</h2>
+
+          <div class="success-box">
+            <strong>No document upload to a developer server</strong>
+
+            The App does not require an account and does not use a
+            developer-operated server to receive the PDFs, signatures, or
+            signed PDF files created by users.
+          </div>
+
+          <p>
+            The App itself is not designed to directly collect or store the
+            following information on a Developer-operated server:
+          </p>
+
+          <ul>
+            <li>Name, date of birth, address, or telephone number</li>
+            <li>Email address or account password</li>
+            <li>Contents of PDF documents selected by the user</li>
+            <li>Signature images or signature stroke information</li>
+            <li>Contents of signed PDFs generated by the App</li>
+            <li>Contacts, text messages, or call history</li>
+            <li>Precise location information</li>
+            <li>Payment or financial account information</li>
+          </ul>
+
+          <p>
+            If future versions introduce accounts, servers, cloud backup,
+            analytics tools, or other data collection features, this Privacy
+            Policy will be updated and additional consent will be obtained
+            where required.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Processing of PDFs and Signatures</h2>
+
+          <h3>4.1 On-device processing</h3>
+
+          <p>
+            PDFs selected by the user and signatures created in the App are
+            processed on the user's device to generate a signed PDF.
+          </p>
+
+          <p>
+            The App is designed to preserve the original PDF and create a
+            separate PDF containing the added signatures.
+          </p>
+
+          <h3>4.2 Storage</h3>
+
+          <p>
+            Generated PDF files and related records may be stored in the
+            App's internal storage or in a device location selected by the
+            user.
+          </p>
+
+          <p>
+            Stored files may be affected by the device operating system,
+            file-management policies, backup settings, or file-management
+            applications used by the user.
+          </p>
+
+          <h3>4.3 Sharing</h3>
+
+          <p>
+            When the user initiates the sharing feature, a generated PDF may
+            be transferred to an email app, messenger, cloud storage provider,
+            file manager, or another external app selected by the user.
+          </p>
+
+          <p>
+            Once shared, the file is handled according to the privacy policy
+            and terms of the selected external app or service. The Developer
+            does not control how those third parties process shared files.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Device Permissions and File Access</h2>
+
+          <p>
+            The App may use Android's system file picker, storage interfaces,
+            and sharing functions to allow users to open, save, and share PDF
+            files.
+          </p>
+
+          <p>
+            The App is designed to access only files selected by the user or
+            files created by the App, to the extent necessary to provide the
+            requested functionality.
+          </p>
+
+          <p>
+            Permission prompts and file access methods may vary depending on
+            the Android version and device manufacturer.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Advertising and Third-Party Services</h2>
+
+          <p>
+            The App may use Google AdMob advertising services to support the
+            availability and operation of the free App.
+          </p>
+
+          <p>
+            The Google Mobile Ads SDK may automatically process information
+            for ad delivery, measurement, analytics, service operation,
+            security, and fraud prevention, including:
+          </p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Data type</th>
+                  <th>Purpose</th>
+                  <th>Processor</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>IP address and approximate location</td>
+                  <td>
+                    Ad delivery, general location estimation, security,
+                    and fraud prevention
+                  </td>
+                  <td>Google and advertising partners</td>
+                </tr>
+
+                <tr>
+                  <td>Advertising or device identifiers</td>
+                  <td>
+                    Ad delivery, frequency capping, analytics,
+                    and fraud prevention
+                  </td>
+                  <td>Google and advertising partners</td>
+                </tr>
+
+                <tr>
+                  <td>App launches, ad views, taps, and interactions</td>
+                  <td>
+                    Advertising measurement, analytics,
+                    and service improvement
+                  </td>
+                  <td>Google and advertising partners</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Crash information, app launch time,
+                    and performance diagnostics
+                  </td>
+                  <td>
+                    Stability analysis, performance improvement,
+                    and troubleshooting
+                  </td>
+                  <td>Google</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Device model, operating system, language,
+                    and technical information
+                  </td>
+                  <td>
+                    Advertising compatibility, analytics,
+                    and service delivery
+                  </td>
+                  <td>Google and advertising partners</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            The exact scope of advertising-related data processing may depend
+            on the user's location, device settings, consent choices,
+            Google's policies, and advertising settings.
+          </p>
+
+          <p>
+            Users may manage certain personalized advertising choices through
+            their device privacy settings or Google advertising settings.
+          </p>
+
+          <p>
+            More information about Google's data practices is available at:
+          </p>
+
+          <ul>
+            <li>
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Privacy Policy
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://policies.google.com/technologies/ads"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                How Google uses data for advertising
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://support.google.com/admob/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google AdMob Help and Policies
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>7. Advertising Consent and Privacy Choices</h2>
+
+          <p>
+            Users in regions where consent is required by law or Google policy
+            may be shown a privacy or advertising consent message.
+          </p>
+
+          <p>
+            Users may manage consent and advertising-related choices through
+            the displayed consent form or privacy options entry point.
+          </p>
+
+          <p>
+            Refusing personalized advertising consent does not prevent use of
+            the core PDF signing features, but non-personalized or limited ads
+            may be displayed.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Data Retention and Deletion</h2>
+
+          <h3>8.1 App data</h3>
+
+          <p>
+            Generated PDFs, recent records, language settings, and display
+            settings may be stored on the user's device.
+          </p>
+
+          <p>
+            Users may delete this data through the App, the device file
+            manager, or by uninstalling the App.
+          </p>
+
+          <p>
+            Uninstalling the App may remove records and settings stored in the
+            App's internal storage. Files exported to external storage,
+            shared with other apps, or included in a device backup may remain
+            after the App is uninstalled.
+          </p>
+
+          <h3>8.2 Advertising data</h3>
+
+          <p>
+            Data processed by Google and advertising partners is retained and
+            deleted according to their respective privacy policies and legal
+            obligations.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Data Security</h2>
+
+          <p>
+            The Developer seeks to minimize unnecessary data collection and
+            to process PDF and signature operations on the user's device.
+          </p>
+
+          <p>
+            No electronic storage or transmission method can be guaranteed to
+            be completely secure. Data may be exposed due to device loss,
+            malware, operating system vulnerabilities, external storage, or
+            sharing destinations selected by the user.
+          </p>
+
+          <p>
+            Users should protect important documents by using device locking,
+            installing operating system updates, selecting trusted sharing
+            destinations, and using secure storage.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. Children's Privacy</h2>
+
+          <p>
+            The App is a general PDF document tool and is not primarily
+            directed to children below the age required by applicable law.
+          </p>
+
+          <p>
+            The Developer does not knowingly collect children's personal
+            information through the App. Parents and guardians should ensure
+            that children do not share personal documents through external
+            apps without appropriate supervision.
+          </p>
+
+          <p>
+            Age-appropriate or child-directed advertising restrictions may be
+            applied where required by law or app distribution settings.
+          </p>
+        </section>
+
+        <section>
+          <h2>11. User Responsibilities</h2>
+
+          <div class="warning-box">
+            <strong>Authority to use documents</strong>
+
+            Users must have lawful authority to access, edit, sign, and share
+            every document processed through the App.
+          </div>
+
+          <p>Users are responsible for:</p>
+
+          <ul>
+            <li>
+              Processing only documents they are authorized to access,
+              edit, sign, or distribute
+            </li>
+
+            <li>
+              Not misusing personal information, confidential information,
+              trade secrets, copyrighted works, or third-party documents
+            </li>
+
+            <li>
+              Not using signatures for forgery, impersonation, fraud,
+              or any unlawful activity
+            </li>
+
+            <li>
+              Reviewing document content and signature placement before
+              saving or sharing a file
+            </li>
+
+            <li>
+              Confirming the signature method and legal requirements
+              applicable to the relevant transaction or institution
+            </li>
+          </ul>
+
+          <p>
+            The user is responsible for disputes, legal violations, or
+            third-party rights claims arising from documents or signatures
+            processed through the App.
+          </p>
+        </section>
+
+        <section>
+          <h2>12. Legal Effect of Electronic Signatures</h2>
+
+          <p>
+            The App is a tool that adds a visible handwritten signature image
+            to a PDF document.
+          </p>
+
+          <p>
+            The App does not provide identity verification, certificate-based
+            digital signatures, qualified electronic signatures, trusted
+            timestamps, notarization, authentication, or document integrity
+            certification.
+          </p>
+
+          <p>
+            Whether a signature created with the App is legally valid or
+            enforceable depends on applicable law, agreements between the
+            parties, the type of document, the signature method, and the level
+            of authentication required.
+          </p>
+
+          <p>
+            Before using the App for important contracts, legal documents,
+            financial documents, real estate documents, or government
+            submissions, users should verify applicable requirements or seek
+            advice from a qualified professional.
+          </p>
+        </section>
+
+        <section>
+          <h2>13. Copyright and Third-Party Rights</h2>
+
+          <p>
+            Rights in the App's original source code, design, icons, text, and
+            content belong to the Developer or their respective lawful owners.
+          </p>
+
+          <p>
+            Android, Google Play, Google AdMob, and other Google names and
+            trademarks belong to Google LLC or their respective owners.
+            The App is not an official app produced or endorsed by Google.
+          </p>
+
+          <p>
+            Rights in PDFs, signatures, and documents processed by users
+            remain with the user or the relevant rights holder. The Developer
+            does not claim ownership of user documents.
+          </p>
+        </section>
+
+        <section>
+          <h2>14. External Services and Links</h2>
+
+          <p>
+            The App or this page may include links to Google Play, Google
+            AdMob, privacy policies, other applications, or third-party
+            websites.
+          </p>
+
+          <p>
+            The Developer does not control or guarantee third-party content,
+            operations, security, privacy practices, or availability. Users
+            should review the policies of external services before using them.
+          </p>
+        </section>
+
+        <section>
+          <h2>15. Disclaimer of Warranties</h2>
+
+          <p>
+            To the extent permitted by applicable law, the App is provided on
+            an “as is” and “as available” basis.
+          </p>
+
+          <p>
+            The Developer does not warrant that the App will work without
+            errors on every device, with every PDF format, or for every
+            document, or that the results will be suitable for a particular
+            legal or business purpose.
+          </p>
+
+          <p>
+            Certain PDFs may not be processed correctly due to file structure,
+            encryption, corruption, special fonts, forms, certificates,
+            existing digital signatures, or device-specific conditions.
+          </p>
+        </section>
+
+        <section>
+          <h2>16. Limitation of Liability</h2>
+
+          <p>
+            To the maximum extent permitted by applicable law, the Developer
+            is not responsible for direct or indirect loss arising from:
+          </p>
+
+          <ul>
+            <li>Incorrect file selection, deletion, saving, or sharing</li>
+            <li>Loss, corruption, or inaccessibility of files</li>
+            <li>Failure to review document content or signature placement</li>
+            <li>
+              The operation of external apps, cloud providers,
+              or advertising services
+            </li>
+            <li>
+              Device failure, operating system errors, insufficient storage,
+              or network problems
+            </li>
+            <li>Unlawful use or infringement of third-party rights</li>
+            <li>Rejection of a generated signature's legal effect</li>
+          </ul>
+
+          <p>
+            This limitation does not apply to liability that cannot be
+            excluded or limited under applicable law.
+          </p>
+        </section>
+
+        <section>
+          <h2>17. International Data Processing</h2>
+
+          <p>
+            Third-party services such as Google AdMob may process
+            advertising-related information through servers or service
+            providers located outside the user's country of residence.
+          </p>
+
+          <p>
+            Such processing is subject to the third party's privacy safeguards
+            and applicable laws.
+          </p>
+        </section>
+
+        <section>
+          <h2>18. Changes to This Privacy Policy</h2>
+
+          <p>
+            The Developer may update this Privacy Policy to reflect changes
+            to App features, third-party SDKs, applicable laws, or Google Play
+            policies.
+          </p>
+
+          <p>
+            Material changes may be communicated by updating the “Last
+            updated” date on this page or by providing notice through the App
+            or its store listing where appropriate.
+          </p>
+
+          <p>
+            Users are encouraged to review this page periodically for the
+            latest information.
+          </p>
+        </section>
+
+        <section>
+          <h2>19. Developer Information and Contact</h2>
+
+          <p>
+            Because the Developer's display name, business information,
+            email address, or other contact information may change according
+            to country or store policy, please refer to the current developer
+            contact details displayed on the PDF Sign Google Play store
+            listing.
+          </p>
+
+          <p>
+            Questions concerning privacy, data processing, file deletion, or
+            this Privacy Policy may be submitted using the developer email
+            address or contact method shown on the Google Play store listing.
+          </p>
+        </section>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <p>
+        © <span id="current-year"></span> PDF Sign.
+        All rights reserved.
+      </p>
+
+      <p
+        data-ko="최신 개발자 정보와 문의처는 Google Play 스토어 등록정보를 확인해 주세요."
+        data-en="Please refer to the Google Play store listing for current developer and contact information."
+      >
+        최신 개발자 정보와 문의처는 Google Play 스토어 등록정보를
+        확인해 주세요.
+      </p>
+
+      <a
+        class="top-link"
+        href="#top"
+        data-ko="맨 위로 이동"
+        data-en="Back to top"
+      >
+        맨 위로 이동
+      </a>
+    </footer>
+  </main>
+
+  <script>
+    const supportedLanguages = ["ko", "en"];
+
+    function changeLanguage(language) {
+      const selectedLanguage = supportedLanguages.includes(language)
+        ? language
+        : "en";
+
+      document.documentElement.lang = selectedLanguage;
+
+      document.querySelectorAll(".language-section").forEach((section) => {
+        section.classList.remove("active");
+      });
+
+      document.querySelectorAll(".language-button").forEach((button) => {
+        button.classList.remove("active");
+      });
+
+      const targetSection = document.getElementById(
+        `privacy-${selectedLanguage}`
+      );
+
+      const targetButton = document.getElementById(
+        `button-${selectedLanguage}`
+      );
+
+      if (targetSection) {
+        targetSection.classList.add("active");
+      }
+
+      if (targetButton) {
+        targetButton.classList.add("active");
+      }
+
+      document.querySelectorAll("[data-ko][data-en]").forEach((element) => {
+        const translatedText = element.dataset[selectedLanguage];
+
+        if (translatedText) {
+          element.textContent = translatedText;
+        }
+      });
+
+      const title =
+        selectedLanguage === "ko"
+          ? "PDF Sign - 개인정보처리방침"
+          : "PDF Sign - Privacy Policy";
+
+      document.title = title;
+
+      try {
+        localStorage.setItem(
+          "pdf_sign_privacy_language",
+          selectedLanguage
+        );
+      } catch (_) {
+        // Local storage may be unavailable in some browser environments.
+      }
+    }
+
+    function resolveInitialLanguage() {
+      try {
+        const savedLanguage = localStorage.getItem(
+          "pdf_sign_privacy_language"
+        );
+
+        if (supportedLanguages.includes(savedLanguage)) {
+          return savedLanguage;
+        }
+      } catch (_) {
+        // Ignore unavailable local storage.
+      }
+
+      const browserLanguage = (
+        navigator.language ||
+        navigator.userLanguage ||
+        "en"
+      ).toLowerCase();
+
+      return browserLanguage.startsWith("ko") ? "ko" : "en";
+    }
+
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+
+    changeLanguage(resolveInitialLanguage());
+  </script>
+</body>
+</html>
