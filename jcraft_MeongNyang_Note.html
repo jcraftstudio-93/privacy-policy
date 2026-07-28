@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>멍냥노트 개인정보처리방침 | MeongNyang Note Privacy Policy</title>
+
+    <meta
+        name="description"
+        content="멍냥노트(MeongNyang Note)의 개인정보처리방침입니다."
+    >
+
+    <style>
+        :root {
+            --primary: #5f6f52;
+            --primary-dark: #43503a;
+            --background: #f7f8f5;
+            --card: #ffffff;
+            --text: #202124;
+            --sub-text: #5f6368;
+            --border: #dfe3dc;
+            --notice: #f1f5ed;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Noto Sans KR",
+                Arial,
+                sans-serif;
+            line-height: 1.75;
+        }
+
+        .container {
+            width: min(960px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 32px 0 64px;
+        }
+
+        .header {
+            margin-bottom: 24px;
+            padding: 32px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.05);
+        }
+
+        .header h1 {
+            margin: 0 0 12px;
+            color: var(--primary-dark);
+            font-size: clamp(26px, 5vw, 40px);
+            line-height: 1.3;
+        }
+
+        .header p {
+            margin: 6px 0;
+            color: var(--sub-text);
+        }
+
+        .language-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 22px;
+        }
+
+        .language-button {
+            padding: 10px 18px;
+            border: 1px solid var(--primary);
+            border-radius: 999px;
+            background: #ffffff;
+            color: var(--primary-dark);
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .language-button:hover,
+        .language-button.active {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .policy-section {
+            margin-bottom: 20px;
+            padding: 28px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+        }
+
+        .policy-section h2 {
+            margin: 0 0 16px;
+            color: var(--primary-dark);
+            font-size: 22px;
+            line-height: 1.4;
+        }
+
+        .policy-section h3 {
+            margin: 22px 0 10px;
+            font-size: 18px;
+        }
+
+        .policy-section p {
+            margin: 10px 0;
+        }
+
+        .policy-section ul {
+            margin: 10px 0;
+            padding-left: 24px;
+        }
+
+        .policy-section li {
+            margin-bottom: 8px;
+        }
+
+        .notice {
+            margin: 18px 0;
+            padding: 18px;
+            background: var(--notice);
+            border-left: 5px solid var(--primary);
+            border-radius: 10px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin-top: 16px;
+        }
+
+        table {
+            width: 100%;
+            min-width: 680px;
+            border-collapse: collapse;
+            background: #ffffff;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            border: 1px solid var(--border);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: var(--notice);
+            color: var(--primary-dark);
+        }
+
+        a {
+            color: var(--primary-dark);
+            word-break: break-all;
+        }
+
+        .footer {
+            padding: 22px;
+            color: var(--sub-text);
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .language-content {
+            display: none;
+        }
+
+        .language-content.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: min(100% - 20px, 960px);
+                padding-top: 16px;
+            }
+
+            .header,
+            .policy-section {
+                padding: 22px;
+                border-radius: 14px;
+            }
+
+            .policy-section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <header class="header">
+            <h1>멍냥노트 개인정보처리방침</h1>
+
+            <p>
+                MeongNyang Note Privacy Policy
+            </p>
+
+            <p>
+                시행일 / Effective date: 2026년 7월 28일 / July 28, 2026
+            </p>
+
+            <div class="language-buttons">
+                <button
+                    type="button"
+                    id="ko-button"
+                    class="language-button active"
+                    onclick="changeLanguage('ko')"
+                >
+                    한국어
+                </button>
+
+                <button
+                    type="button"
+                    id="en-button"
+                    class="language-button"
+                    onclick="changeLanguage('en')"
+                >
+                    English
+                </button>
+            </div>
+        </header>
+
+        <!-- 한국어 개인정보처리방침 -->
+        <section id="ko-content" class="language-content active">
+
+            <article class="policy-section">
+                <h2>1. 개인정보처리방침 안내</h2>
+
+                <p>
+                    JCraft Studio(이하 “개발자”)는 멍냥노트 애플리케이션
+                    (이하 “앱”)을 이용하는 사용자의 개인정보와 권리를 중요하게
+                    생각합니다.
+                </p>
+
+                <p>
+                    본 개인정보처리방침은 앱이 사용자 정보와 기기 데이터를
+                    어떻게 접근, 처리, 저장 또는 공유할 수 있는지를 설명합니다.
+                </p>
+
+                <div class="notice">
+                    본 앱은 회원가입 기능이나 개발자가 직접 운영하는 사용자
+                    계정 서버를 제공하지 않습니다. 사용자가 앱에 입력한 반려동물
+                    정보와 각종 기록은 원칙적으로 사용자의 기기에 로컬로
+                    저장됩니다.
+                </div>
+            </article>
+
+            <article class="policy-section">
+                <h2>2. 앱의 주요 기능</h2>
+
+                <p>
+                    멍냥노트는 반려동물의 일상과 건강 관련 기록을 사용자가 직접
+                    작성하고 관리할 수 있도록 제공되는 기록 관리 애플리케이션입니다.
+                </p>
+
+                <p>앱에서 제공할 수 있는 주요 기능은 다음과 같습니다.</p>
+
+                <ul>
+                    <li>반려동물 프로필 등록 및 관리</li>
+                    <li>식사, 산책 및 일상 활동 기록</li>
+                    <li>체중 및 건강 관련 기록</li>
+                    <li>예방접종, 병원 방문 및 투약 기록</li>
+                    <li>목욕, 미용 및 기타 관리 기록</li>
+                    <li>일정 및 알림 관리</li>
+                    <li>사용자가 작성한 메모 관리</li>
+                    <li>기록 데이터의 백업 및 복원</li>
+                    <li>앱 내 광고 표시</li>
+                </ul>
+            </article>
+
+            <article class="policy-section">
+                <h2>3. 사용자가 입력하는 정보</h2>
+
+                <p>
+                    사용자는 앱을 이용하면서 다음과 같은 정보를 직접 입력할 수
+                    있습니다.
+                </p>
+
+                <ul>
+                    <li>반려동물의 이름</li>
+                    <li>반려동물의 종류, 품종, 성별 및 생년월일</li>
+                    <li>반려동물 사진</li>
+                    <li>식사, 산책, 체중 및 활동 기록</li>
+                    <li>예방접종, 병원 방문, 투약 및 건강 관련 기록</li>
+                    <li>목욕, 미용 및 기타 돌봄 기록</li>
+                    <li>사용자가 직접 작성한 메모와 일정</li>
+                </ul>
+
+                <p>
+                    이러한 정보는 앱 기능을 제공하기 위해 사용되며, 원칙적으로
+                    사용자의 기기 내부 저장공간에 저장됩니다.
+                </p>
+
+                <p>
+                    개발자는 사용자가 입력한 반려동물 기록을 개발자가 직접
+                    운영하는 서버로 전송하거나 별도로 열람하지 않습니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>4. 앱이 직접 수집하는 개인정보</h2>
+
+                <p>
+                    개발자는 앱을 통해 사용자의 이름, 주소, 전화번호, 이메일,
+                    계정 비밀번호와 같은 직접적인 개인 식별정보를 별도의 개발자
+                    서버에 수집하거나 저장하지 않습니다.
+                </p>
+
+                <p>
+                    다만 앱에 포함된 광고 또는 기타 제3자 서비스 제공업체의
+                    소프트웨어 개발 키트(SDK)는 서비스 제공, 광고 표시, 부정
+                    사용 방지, 보안 및 성능 개선을 위하여 일정한 기기 정보나
+                    이용 정보를 자동으로 처리할 수 있습니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>5. 제3자 서비스 및 광고</h2>
+
+                <p>
+                    본 앱은 무료 서비스 제공과 앱 운영을 위하여 Google의 광고
+                    서비스인 Google AdMob 또는 Google Mobile Ads SDK를 사용할
+                    수 있습니다.
+                </p>
+
+                <p>
+                    Google 및 광고 파트너는 광고 제공, 광고 성과 측정, 부정
+                    클릭 및 부정 사용 방지, 서비스 보안과 개선을 위하여 다음과
+                    같은 정보를 자동으로 처리할 수 있습니다.
+                </p>
+
+                <ul>
+                    <li>광고 식별자</li>
+                    <li>기기 또는 기타 식별자</li>
+                    <li>기기 모델, 운영체제 및 앱 버전 정보</li>
+                    <li>IP 주소 및 대략적인 위치 정보</li>
+                    <li>앱 상호작용 및 광고 상호작용 정보</li>
+                    <li>오류, 진단, 성능 및 보안 관련 정보</li>
+                </ul>
+
+                <p>
+                    이러한 정보는 개발자가 직접 수집하는 것이 아니라 해당
+                    제3자 서비스 제공업체의 정책과 기술에 따라 처리될 수 있습니다.
+                </p>
+
+                <p>
+                    Google의 개인정보 처리에 관한 자세한 내용은 Google의
+                    개인정보처리방침 및 광고 관련 정책을 확인하시기 바랍니다.
+                </p>
+
+                <ul>
+                    <li>
+                        Google 개인정보처리방침:
+                        <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            https://policies.google.com/privacy
+                        </a>
+                    </li>
+
+                    <li>
+                        Google의 광고 기술:
+                        <a
+                            href="https://policies.google.com/technologies/ads"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            https://policies.google.com/technologies/ads
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    사용자의 지역, 기기 설정, 동의 여부 및 관련 법령에 따라
+                    맞춤형 광고 또는 맞춤화되지 않은 광고가 표시될 수 있습니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>6. 데이터 이용 목적</h2>
+
+                <p>
+                    앱 또는 앱에 포함된 제3자 서비스는 다음과 같은 목적으로
+                    정보를 처리할 수 있습니다.
+                </p>
+
+                <ul>
+                    <li>사용자가 요청한 앱 기능 제공</li>
+                    <li>반려동물 기록의 저장, 조회 및 관리</li>
+                    <li>백업 및 복원 기능 제공</li>
+                    <li>알림 및 일정 기능 제공</li>
+                    <li>광고 표시 및 광고 성과 측정</li>
+                    <li>부정 사용, 보안 사고 및 오류 방지</li>
+                    <li>앱 안정성, 성능 및 사용자 경험 개선</li>
+                    <li>법적 의무 이행 및 권리 보호</li>
+                </ul>
+            </article>
+
+            <article class="policy-section">
+                <h2>7. 데이터 저장 방식</h2>
+
+                <p>
+                    사용자가 앱에 입력한 반려동물 정보와 기록은 원칙적으로
+                    사용자의 기기 내부에 저장됩니다.
+                </p>
+
+                <p>
+                    개발자는 이러한 기록을 저장하기 위한 별도의 온라인 사용자
+                    데이터베이스를 운영하지 않습니다.
+                </p>
+
+                <p>
+                    사용자가 앱을 삭제하거나 앱 데이터를 초기화하면 기기에
+                    저장된 기록이 삭제될 수 있으며, 삭제된 기록은 개발자가
+                    복구할 수 없습니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>8. 백업 및 복원</h2>
+
+                <p>
+                    앱은 사용자가 직접 기록을 파일 형태로 내보내거나 백업하고,
+                    해당 백업 파일을 이용하여 기록을 복원할 수 있는 기능을
+                    제공할 수 있습니다.
+                </p>
+
+                <p>
+                    사용자가 생성한 백업 파일의 저장 위치, 이동, 공유, 보관 및
+                    삭제는 사용자의 선택과 책임에 따라 이루어집니다.
+                </p>
+
+                <p>
+                    사용자가 백업 파일을 Google Drive, 이메일, 메신저, 클라우드
+                    저장공간 또는 기타 외부 서비스에 저장하거나 공유하는 경우,
+                    해당 정보에는 각 외부 서비스 제공업체의 개인정보처리방침이
+                    적용됩니다.
+                </p>
+
+                <div class="notice">
+                    중요한 기록은 사용자가 안전한 위치에 별도로 백업할 것을
+                    권장합니다. 기기 고장, 앱 삭제, 저장공간 손상, 운영체제 오류
+                    또는 사용자의 실수로 인한 데이터 손실에 대해 개발자가
+                    복구를 보장할 수는 없습니다.
+                </div>
+            </article>
+
+            <article class="policy-section">
+                <h2>9. 기기 권한</h2>
+
+                <p>
+                    앱은 특정 기능을 제공하기 위해 사용자의 기기에서 다음과 같은
+                    권한을 요청할 수 있습니다.
+                </p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>권한 또는 접근 항목</th>
+                                <th>이용 목적</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>사진 또는 미디어 접근</td>
+                                <td>
+                                    사용자가 반려동물 사진을 직접 선택하거나
+                                    변경하는 기능을 제공하기 위함
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>파일 및 저장공간 접근</td>
+                                <td>
+                                    사용자가 선택한 백업 파일을 저장하거나
+                                    불러오기 위함
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>알림 권한</td>
+                                <td>
+                                    사용자가 설정한 일정 및 반려동물 관리 알림을
+                                    표시하기 위함
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>인터넷 접근</td>
+                                <td>
+                                    광고 표시, 제3자 서비스 연결 및 필요한
+                                    온라인 기능 제공을 위함
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    권한은 사용자가 관련 기능을 이용할 때 요청될 수 있으며,
+                    사용자는 기기 설정에서 권한을 허용하거나 거부할 수 있습니다.
+                </p>
+
+                <p>
+                    일부 권한을 거부하는 경우 해당 권한이 필요한 일부 기능이
+                    정상적으로 작동하지 않을 수 있습니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>10. 정보의 공유 및 제공</h2>
+
+                <p>
+                    개발자는 사용자가 앱에 직접 입력한 반려동물 기록을 판매하지
+                    않습니다.
+                </p>
+
+                <p>
+                    개발자는 다음과 같은 경우를 제외하고 사용자의 정보를
+                    임의로 제3자에게 제공하지 않습니다.
+                </p>
+
+                <ul>
+                    <li>사용자가 직접 공유 또는 내보내기 기능을 실행한 경우</li>
+                    <li>서비스 제공을 위해 제3자 SDK가 정보를 처리하는 경우</li>
+                    <li>법령 또는 적법한 절차에 따라 제공이 요구되는 경우</li>
+                    <li>사용자 또는 다른 사람의 안전과 권리를 보호해야 하는 경우</li>
+                    <li>부정 사용, 보안 문제 또는 법적 분쟁에 대응해야 하는 경우</li>
+                </ul>
+            </article>
+
+            <article class="policy-section">
+                <h2>11. 개인정보의 보유 및 삭제</h2>
+
+                <p>
+                    사용자가 앱에 입력한 기록은 사용자의 기기에 저장되며,
+                    사용자가 앱 내 삭제 기능을 이용하거나 앱 데이터 또는 앱
+                    자체를 삭제할 때까지 보관될 수 있습니다.
+                </p>
+
+                <p>
+                    사용자는 앱에서 개별 기록 또는 반려동물 프로필을 직접
+                    삭제할 수 있습니다.
+                </p>
+
+                <p>
+                    앱을 삭제하거나 기기 설정에서 앱 데이터를 삭제하면 로컬에
+                    저장된 기록도 삭제될 수 있습니다.
+                </p>
+
+                <p>
+                    개발자가 별도의 사용자 계정 서버를 운영하지 않으므로,
+                    개발자는 사용자의 기기에 저장된 데이터를 원격으로 확인,
+                    수정 또는 삭제할 수 없습니다.
+                </p>
+
+                <p>
+                    광고 서비스 등 제3자 제공업체가 처리하는 데이터의 보유와
+                    삭제는 해당 제공업체의 정책에 따릅니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>12. 데이터 보안</h2>
+
+                <p>
+                    개발자는 앱의 안전성과 사용자 정보 보호를 위해 합리적으로
+                    가능한 기술적·관리적 조치를 적용하기 위해 노력합니다.
+                </p>
+
+                <p>
+                    다만 인터넷 통신, 모바일 기기, 운영체제 또는 전자적 저장
+                    방식은 절대적인 보안을 보장할 수 없습니다.
+                </p>
+
+                <p>
+                    사용자는 자신의 기기를 안전하게 관리하고, 화면 잠금,
+                    운영체제 업데이트, 안전한 백업 위치 사용 등 적절한 보안
+                    조치를 취해야 합니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>13. 아동의 개인정보</h2>
+
+                <p>
+                    본 앱은 반려동물 기록과 관리를 위한 일반 사용자용
+                    애플리케이션이며, 아동의 개인정보를 의도적으로 직접
+                    수집하기 위한 목적으로 제공되지 않습니다.
+                </p>
+
+                <p>
+                    법정대리인은 아동이 앱에 개인정보를 입력하거나 외부로
+                    공유하지 않도록 지도해야 합니다.
+                </p>
+
+                <p>
+                    개발자가 아동의 개인정보가 관련 법령에 위반되는 방식으로
+                    처리되었다는 사실을 알게 되는 경우, 합리적으로 가능한
+                    범위에서 필요한 조치를 취할 수 있습니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>14. 건강 및 의료 관련 면책</h2>
+
+                <div class="notice">
+                    본 앱은 반려동물의 기록과 일정 관리를 보조하는 도구이며,
+                    수의학적 진단, 치료, 처방 또는 전문적인 의료 서비스를
+                    제공하지 않습니다.
+                </div>
+
+                <p>
+                    앱에 기록된 체중, 투약, 예방접종, 증상 또는 기타 건강 관련
+                    정보는 사용자가 직접 입력한 참고용 정보입니다.
+                </p>
+
+                <p>
+                    반려동물의 건강 상태, 질병, 약물 투여, 예방접종 또는 치료와
+                    관련된 결정은 반드시 자격을 갖춘 수의사 또는 관련 전문가와
+                    상담하여 이루어져야 합니다.
+                </p>
+
+                <p>
+                    앱의 기록, 알림 또는 정보만을 근거로 의료적 판단을 내리거나
+                    치료를 지연해서는 안 됩니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>15. 알림 기능에 관한 안내</h2>
+
+                <p>
+                    앱의 알림 기능은 사용자의 기기 설정, 배터리 절전 설정,
+                    운영체제 정책, 알림 권한, 백그라운드 제한 및 기기 제조사의
+                    설정에 따라 지연되거나 표시되지 않을 수 있습니다.
+                </p>
+
+                <p>
+                    사용자는 중요한 투약, 예방접종, 진료 또는 건강 관련 일정을
+                    앱의 알림에만 의존해서는 안 되며, 필요한 경우 별도의 방법을
+                    통해 일정을 확인해야 합니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>16. 서비스 제공 및 책임의 제한</h2>
+
+                <p>
+                    앱은 관련 법령이 허용하는 범위에서 현재 상태 그대로
+                    제공됩니다.
+                </p>
+
+                <p>
+                    개발자는 앱이 모든 기기에서 항상 오류 없이 작동하거나,
+                    서비스가 중단되지 않거나, 사용자의 모든 목적에 적합하다는
+                    점을 보증하지 않습니다.
+                </p>
+
+                <p>
+                    다음과 같은 사유로 발생하는 손해에 대해서는 관련 법령이
+                    허용하는 범위에서 개발자의 책임이 제한될 수 있습니다.
+                </p>
+
+                <ul>
+                    <li>사용자의 기기 고장, 분실, 초기화 또는 교체</li>
+                    <li>앱 삭제 또는 앱 데이터 삭제</li>
+                    <li>백업 파일의 분실, 훼손, 유출 또는 호환성 문제</li>
+                    <li>운영체제 또는 기기 제조사 정책의 변경</li>
+                    <li>제3자 서비스, 광고 서비스 또는 외부 저장공간의 장애</li>
+                    <li>사용자가 잘못된 정보를 입력하거나 기록을 삭제한 경우</li>
+                    <li>불가항력, 통신 장애, 보안 사고 또는 기타 통제하기 어려운 사유</li>
+                    <li>앱의 정보를 의료적 판단이나 긴급상황 대응에 사용한 경우</li>
+                </ul>
+
+                <p>
+                    본 조항은 관련 법령상 제한하거나 배제할 수 없는 개발자의
+                    책임을 부당하게 제한하기 위한 것이 아닙니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>17. 지식재산권 및 저작권</h2>
+
+                <p>
+                    앱의 프로그램, 디자인, 화면 구성, 문구, 그래픽, 아이콘,
+                    데이터 구조 및 개발자가 직접 제작한 기타 콘텐츠에 관한
+                    저작권과 지식재산권은 개발자 또는 적법한 권리자에게 있습니다.
+                </p>
+
+                <p>
+                    사용자는 관련 법령에서 허용하는 경우를 제외하고 개발자의
+                    사전 허가 없이 앱 또는 앱의 일부를 복제, 수정, 배포,
+                    판매, 대여, 역설계, 디컴파일 또는 상업적으로 이용해서는
+                    안 됩니다.
+                </p>
+
+                <p>
+                    Google, Google Play, Android, Google AdMob 및 기타 회사명,
+                    서비스명, 상표와 로고는 각 권리자의 재산입니다.
+                </p>
+
+                <p>
+                    본 앱은 Google이 직접 제작하거나 보증하는 공식 앱이 아닙니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>18. 외부 링크 및 제3자 서비스</h2>
+
+                <p>
+                    앱 또는 개인정보처리방침에는 제3자가 운영하는 웹사이트나
+                    서비스로 이동하는 링크가 포함될 수 있습니다.
+                </p>
+
+                <p>
+                    개발자는 제3자가 운영하는 서비스의 콘텐츠, 개인정보 처리,
+                    보안 또는 운영 방식에 대해 통제하지 않습니다.
+                </p>
+
+                <p>
+                    사용자는 외부 서비스 이용 전 해당 서비스의 이용약관과
+                    개인정보처리방침을 확인해야 합니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>19. 개인정보처리방침의 변경</h2>
+
+                <p>
+                    개발자는 관련 법령, Google Play 정책, 앱 기능 또는
+                    제3자 서비스의 변경을 반영하기 위해 본 개인정보처리방침을
+                    수정할 수 있습니다.
+                </p>
+
+                <p>
+                    개인정보처리방침이 변경되는 경우 이 페이지의 시행일을
+                    변경하거나 앱 또는 스토어 등록정보를 통해 필요한 내용을
+                    안내할 수 있습니다.
+                </p>
+
+                <p>
+                    사용자는 앱을 계속 이용하기 전에 최신 개인정보처리방침을
+                    정기적으로 확인할 것을 권장합니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>20. 준거법</h2>
+
+                <p>
+                    본 개인정보처리방침은 대한민국의 관련 법령을 기본으로
+                    해석하고 적용합니다.
+                </p>
+
+                <p>
+                    다만 사용자의 거주 국가 또는 지역에서 강제 적용되는
+                    개인정보보호 관련 법령이 있는 경우 해당 법령이 우선 적용될
+                    수 있습니다.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>21. 개발자 정보 및 문의</h2>
+
+                <p>
+                    개발자명: JCraft Studio
+                </p>
+
+                <p>
+                    앱명: 멍냥노트
+                </p>
+
+                <p>
+                    개발자의 최신 이메일 주소, 연락처 및 기타 개발자 정보는
+                    Google Play 스토어의 본 앱 등록정보에 표시된
+                    <strong>개발자 연락처</strong> 또는
+                    <strong>앱 지원</strong> 항목을 참고하시기 바랍니다.
+                </p>
+
+                <p>
+                    개인정보, 데이터 처리, 앱 이용 또는 본 개인정보처리방침과
+                    관련된 문의는 Google Play 스토어에 공개된 개발자 연락처를
+                    통해 제출할 수 있습니다.
+                </p>
+
+                <p>
+                    문의 시 앱 이름, 사용 중인 앱 버전, 기기 모델과 문의 내용을
+                    함께 제공하면 확인에 도움이 될 수 있습니다. 단, 비밀번호,
+                    주민등록번호, 금융정보 등 불필요한 민감정보는 보내지
+                    마십시오.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- English Privacy Policy -->
+        <section id="en-content" class="language-content">
+
+            <article class="policy-section">
+                <h2>1. Introduction</h2>
+
+                <p>
+                    JCraft Studio (“Developer,” “we,” “us,” or “our”) respects
+                    the privacy and rights of users of the MeongNyang Note
+                    application (“App”).
+                </p>
+
+                <p>
+                    This Privacy Policy explains how the App may access,
+                    process, store, or share user information and device data.
+                </p>
+
+                <div class="notice">
+                    The App does not provide account registration or operate a
+                    user account server managed directly by the Developer.
+                    Information entered by users is generally stored locally
+                    on the user's device.
+                </div>
+            </article>
+
+            <article class="policy-section">
+                <h2>2. Main Features of the App</h2>
+
+                <p>
+                    MeongNyang Note is a record-management application that
+                    allows users to create and manage information about their
+                    pets' daily activities and health.
+                </p>
+
+                <p>The App may provide features including:</p>
+
+                <ul>
+                    <li>Creating and managing pet profiles</li>
+                    <li>Recording meals, walks, and daily activities</li>
+                    <li>Recording weight and health-related information</li>
+                    <li>Recording vaccinations, veterinary visits, and medication</li>
+                    <li>Recording bathing, grooming, and other pet care activities</li>
+                    <li>Managing schedules and reminders</li>
+                    <li>Managing notes created by the user</li>
+                    <li>Backing up and restoring records</li>
+                    <li>Displaying advertisements</li>
+                </ul>
+            </article>
+
+            <article class="policy-section">
+                <h2>3. Information Entered by Users</h2>
+
+                <p>
+                    Users may voluntarily enter information such as:
+                </p>
+
+                <ul>
+                    <li>Pet name</li>
+                    <li>Pet species, breed, sex, and date of birth</li>
+                    <li>Pet photographs</li>
+                    <li>Meal, walk, weight, and activity records</li>
+                    <li>Vaccination, veterinary, medication, and health records</li>
+                    <li>Bathing, grooming, and other care records</li>
+                    <li>Notes and schedules created by the user</li>
+                </ul>
+
+                <p>
+                    This information is used to provide the App's functions and
+                    is generally stored locally on the user's device.
+                </p>
+
+                <p>
+                    The Developer does not intentionally transmit these pet
+                    records to a server directly operated by the Developer and
+                    does not independently review them.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>4. Personal Information Collected Directly by the App</h2>
+
+                <p>
+                    The Developer does not collect or store direct personal
+                    identifiers such as the user's name, home address, telephone
+                    number, email address, or account password on a separate
+                    Developer-operated server.
+                </p>
+
+                <p>
+                    However, advertising SDKs or other third-party service SDKs
+                    included in the App may automatically process certain
+                    device or usage information for service delivery,
+                    advertising, fraud prevention, security, diagnostics, and
+                    performance improvement.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>5. Third-Party Services and Advertising</h2>
+
+                <p>
+                    The App may use Google AdMob or the Google Mobile Ads SDK
+                    to support free service delivery and App operation.
+                </p>
+
+                <p>
+                    Google and its advertising partners may automatically
+                    process information such as:
+                </p>
+
+                <ul>
+                    <li>Advertising identifiers</li>
+                    <li>Device or other identifiers</li>
+                    <li>Device model, operating system, and App version</li>
+                    <li>IP address and approximate location</li>
+                    <li>App interactions and advertising interactions</li>
+                    <li>Crash, diagnostic, performance, security, and fraud-prevention data</li>
+                </ul>
+
+                <p>
+                    Such information may be processed by third-party service
+                    providers according to their own technologies and privacy
+                    policies, rather than collected directly by the Developer.
+                </p>
+
+                <p>
+                    For more information about Google's handling of information,
+                    please review the following policies:
+                </p>
+
+                <ul>
+                    <li>
+                        Google Privacy Policy:
+                        <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            https://policies.google.com/privacy
+                        </a>
+                    </li>
+
+                    <li>
+                        Google Advertising Technologies:
+                        <a
+                            href="https://policies.google.com/technologies/ads"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            https://policies.google.com/technologies/ads
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    Depending on the user's region, device settings, consent
+                    choices, and applicable laws, personalized or
+                    non-personalized advertisements may be displayed.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>6. Purposes of Processing</h2>
+
+                <p>
+                    The App or its third-party service providers may process
+                    information for the following purposes:
+                </p>
+
+                <ul>
+                    <li>Providing features requested by users</li>
+                    <li>Saving, displaying, and managing pet records</li>
+                    <li>Providing backup and restore functions</li>
+                    <li>Providing schedules and reminders</li>
+                    <li>Displaying advertisements and measuring advertising performance</li>
+                    <li>Preventing fraud, misuse, security incidents, and errors</li>
+                    <li>Improving App stability, performance, and user experience</li>
+                    <li>Complying with legal obligations and protecting legal rights</li>
+                </ul>
+            </article>
+
+            <article class="policy-section">
+                <h2>7. Local Data Storage</h2>
+
+                <p>
+                    Information and records entered by users are generally
+                    stored locally on the user's device.
+                </p>
+
+                <p>
+                    The Developer does not operate a separate online user
+                    database for storing these records.
+                </p>
+
+                <p>
+                    If the user deletes the App, clears the App's storage, loses
+                    the device, or resets the device, locally stored information
+                    may be deleted. The Developer may be unable to recover such
+                    deleted information.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>8. Backup and Restore</h2>
+
+                <p>
+                    The App may allow users to export or back up their records
+                    as files and restore records from those backup files.
+                </p>
+
+                <p>
+                    The user is responsible for choosing where backup files are
+                    stored, moved, shared, retained, or deleted.
+                </p>
+
+                <p>
+                    If a user stores or shares a backup file through Google
+                    Drive, email, messaging applications, cloud storage, or
+                    another external service, the privacy policy of that
+                    external service applies.
+                </p>
+
+                <div class="notice">
+                    Users are encouraged to maintain important backups in a
+                    secure location. The Developer cannot guarantee recovery
+                    of data lost due to device failure, App deletion, storage
+                    corruption, operating-system errors, or user action.
+                </div>
+            </article>
+
+            <article class="policy-section">
+                <h2>9. Device Permissions</h2>
+
+                <p>
+                    The App may request the following permissions or access to
+                    provide specific functions:
+                </p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Permission or Access</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Photos or media</td>
+                                <td>
+                                    To allow users to select or update pet
+                                    photographs
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Files or storage</td>
+                                <td>
+                                    To save or open backup files selected by
+                                    the user
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Notifications</td>
+                                <td>
+                                    To display reminders and schedules created
+                                    by the user
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Internet access</td>
+                                <td>
+                                    To display advertisements, connect to
+                                    third-party services, and provide necessary
+                                    online functions
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    Permissions may be requested when the relevant feature is
+                    used. Users may allow or deny permissions through their
+                    device settings.
+                </p>
+
+                <p>
+                    Certain features may not function properly if the required
+                    permissions are denied.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>10. Sharing and Disclosure</h2>
+
+                <p>
+                    The Developer does not sell pet records entered by users.
+                </p>
+
+                <p>
+                    Information may be disclosed or processed only in
+                    circumstances such as:
+                </p>
+
+                <ul>
+                    <li>When the user initiates a share or export action</li>
+                    <li>When third-party SDKs process information to provide their services</li>
+                    <li>When disclosure is required by law or valid legal process</li>
+                    <li>When necessary to protect the safety or rights of users or others</li>
+                    <li>When necessary to respond to fraud, abuse, security incidents, or legal disputes</li>
+                </ul>
+            </article>
+
+            <article class="policy-section">
+                <h2>11. Data Retention and Deletion</h2>
+
+                <p>
+                    Records entered by users may remain stored on the user's
+                    device until the user deletes individual records, removes
+                    a pet profile, clears the App's storage, or uninstalls the
+                    App.
+                </p>
+
+                <p>
+                    Users may delete individual records or pet profiles through
+                    the functions provided in the App.
+                </p>
+
+                <p>
+                    Uninstalling the App or clearing its storage may delete
+                    locally stored information.
+                </p>
+
+                <p>
+                    Because the Developer does not operate a user account
+                    server for these records, the Developer cannot remotely
+                    access, modify, or delete data stored solely on the user's
+                    device.
+                </p>
+
+                <p>
+                    Data processed by advertising or other third-party service
+                    providers is retained and deleted in accordance with each
+                    provider's applicable policies.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>12. Data Security</h2>
+
+                <p>
+                    The Developer makes reasonable efforts to apply appropriate
+                    technical and organizational measures to protect users and
+                    improve the security of the App.
+                </p>
+
+                <p>
+                    However, no method of internet transmission, mobile-device
+                    operation, or electronic storage can guarantee absolute
+                    security.
+                </p>
+
+                <p>
+                    Users should protect their devices by using screen locks,
+                    keeping the operating system updated, and storing backup
+                    files in secure locations.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>13. Children's Privacy</h2>
+
+                <p>
+                    The App is a general-purpose pet record and care-management
+                    application and is not intentionally designed to collect
+                    children's personal information.
+                </p>
+
+                <p>
+                    Parents and legal guardians should supervise children and
+                    prevent them from entering or sharing personal information
+                    through the App.
+                </p>
+
+                <p>
+                    If the Developer becomes aware that children's personal
+                    information has been processed in violation of applicable
+                    law, the Developer may take reasonable steps as appropriate.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>14. Veterinary and Medical Disclaimer</h2>
+
+                <div class="notice">
+                    The App is a record-keeping and scheduling tool. It does
+                    not provide veterinary diagnosis, medical treatment,
+                    prescriptions, or professional veterinary services.
+                </div>
+
+                <p>
+                    Weight, medication, vaccination, symptom, and other
+                    health-related information recorded in the App is entered
+                    by the user and is provided for reference purposes only.
+                </p>
+
+                <p>
+                    Decisions concerning an animal's health, disease,
+                    medication, vaccination, or treatment should be made in
+                    consultation with a qualified veterinarian or other
+                    appropriate professional.
+                </p>
+
+                <p>
+                    Users should not delay professional treatment or make
+                    medical decisions solely on the basis of information,
+                    reminders, or records in the App.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>15. Reminder Disclaimer</h2>
+
+                <p>
+                    Notifications may be delayed or may not appear due to device
+                    settings, battery optimization, operating-system policies,
+                    notification permissions, background restrictions, or
+                    manufacturer-specific settings.
+                </p>
+
+                <p>
+                    Users should not rely solely on App notifications for
+                    important medication, vaccination, veterinary, or emergency
+                    schedules and should use additional methods where necessary.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>16. Availability and Limitation of Liability</h2>
+
+                <p>
+                    The App is provided on an “as available” and “as is” basis
+                    to the extent permitted by applicable law.
+                </p>
+
+                <p>
+                    The Developer does not guarantee that the App will operate
+                    without interruption or error on every device or that it
+                    will be suitable for every user's specific purpose.
+                </p>
+
+                <p>
+                    To the extent permitted by applicable law, the Developer's
+                    liability may be limited for losses resulting from:
+                </p>
+
+                <ul>
+                    <li>Device failure, loss, reset, replacement, or damage</li>
+                    <li>App deletion or clearing of App data</li>
+                    <li>Loss, damage, exposure, or incompatibility of backup files</li>
+                    <li>Changes to operating systems or device-manufacturer policies</li>
+                    <li>Failure of third-party services, advertising services, or external storage</li>
+                    <li>Incorrect information entered or deleted by the user</li>
+                    <li>Force majeure, communication failures, security incidents, or events beyond reasonable control</li>
+                    <li>Use of App information for medical decisions or emergency response</li>
+                </ul>
+
+                <p>
+                    Nothing in this section is intended to unlawfully exclude
+                    or restrict liability that cannot be excluded under
+                    applicable law.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>17. Intellectual Property and Copyright</h2>
+
+                <p>
+                    Copyright and other intellectual-property rights relating
+                    to the App's software, design, interface, text, graphics,
+                    icons, data structure, and original content belong to the
+                    Developer or the applicable lawful rights holder.
+                </p>
+
+                <p>
+                    Except where permitted by applicable law, users may not
+                    copy, modify, distribute, sell, rent, reverse engineer,
+                    decompile, or commercially exploit the App or any portion
+                    of it without prior authorization.
+                </p>
+
+                <p>
+                    Google, Google Play, Android, Google AdMob, and other
+                    company names, service names, trademarks, and logos are
+                    the property of their respective owners.
+                </p>
+
+                <p>
+                    This App is not an official application created, endorsed,
+                    or sponsored by Google.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>18. External Links and Third-Party Services</h2>
+
+                <p>
+                    The App or this Privacy Policy may contain links to websites
+                    or services operated by third parties.
+                </p>
+
+                <p>
+                    The Developer does not control the content, privacy
+                    practices, security, or operation of third-party services.
+                </p>
+
+                <p>
+                    Users should review the terms and privacy policies of any
+                    external service before using it.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>19. Changes to This Privacy Policy</h2>
+
+                <p>
+                    The Developer may update this Privacy Policy to reflect
+                    changes in applicable law, Google Play policies, App
+                    features, or third-party services.
+                </p>
+
+                <p>
+                    When this Privacy Policy is updated, the effective date on
+                    this page may be revised, and additional notice may be
+                    provided through the App or its store listing where
+                    appropriate.
+                </p>
+
+                <p>
+                    Users are encouraged to review the current Privacy Policy
+                    periodically.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>20. Governing Law</h2>
+
+                <p>
+                    This Privacy Policy is generally governed by and interpreted
+                    in accordance with the applicable laws of the Republic of
+                    Korea.
+                </p>
+
+                <p>
+                    Mandatory privacy laws in the user's country or region may
+                    apply where required.
+                </p>
+            </article>
+
+            <article class="policy-section">
+                <h2>21. Developer Information and Contact</h2>
+
+                <p>
+                    Developer: JCraft Studio
+                </p>
+
+                <p>
+                    App: MeongNyang Note
+                </p>
+
+                <p>
+                    For the Developer's current email address, contact details,
+                    and other verified developer information, please refer to
+                    the <strong>Developer contact</strong> or
+                    <strong>App support</strong> section of this App's Google
+                    Play Store listing.
+                </p>
+
+                <p>
+                    Privacy, data-processing, App-use, and policy-related
+                    inquiries may be submitted through the Developer contact
+                    information published on Google Play.
+                </p>
+
+                <p>
+                    When contacting the Developer, providing the App name, App
+                    version, device model, and a description of the issue may
+                    assist with review. Please do not send unnecessary
+                    sensitive information such as passwords, government
+                    identification numbers, or financial information.
+                </p>
+            </article>
+
+        </section>
+
+        <footer class="footer">
+            <p>
+                © 2026 JCraft Studio. All rights reserved.
+            </p>
+
+            <p>
+                멍냥노트 / MeongNyang Note
+            </p>
+        </footer>
+
+    </main>
+
+    <script>
+        function changeLanguage(language) {
+            const koreanContent = document.getElementById("ko-content");
+            const englishContent = document.getElementById("en-content");
+            const koreanButton = document.getElementById("ko-button");
+            const englishButton = document.getElementById("en-button");
+
+            if (language === "en") {
+                koreanContent.classList.remove("active");
+                englishContent.classList.add("active");
+
+                koreanButton.classList.remove("active");
+                englishButton.classList.add("active");
+
+                document.documentElement.lang = "en";
+                document.title =
+                    "MeongNyang Note Privacy Policy | 멍냥노트 개인정보처리방침";
+
+                localStorage.setItem("privacyPolicyLanguage", "en");
+            } else {
+                englishContent.classList.remove("active");
+                koreanContent.classList.add("active");
+
+                englishButton.classList.remove("active");
+                koreanButton.classList.add("active");
+
+                document.documentElement.lang = "ko";
+                document.title =
+                    "멍냥노트 개인정보처리방침 | MeongNyang Note Privacy Policy";
+
+                localStorage.setItem("privacyPolicyLanguage", "ko");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const savedLanguage =
+                localStorage.getItem("privacyPolicyLanguage");
+
+            const browserLanguage =
+                navigator.language || navigator.userLanguage || "ko";
+
+            if (savedLanguage === "en") {
+                changeLanguage("en");
+            } else if (savedLanguage === "ko") {
+                changeLanguage("ko");
+            } else if (browserLanguage.toLowerCase().startsWith("en")) {
+                changeLanguage("en");
+            } else {
+                changeLanguage("ko");
+            }
+        });
+    </script>
+</body>
+</html>
