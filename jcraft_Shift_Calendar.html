@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Privacy Policy for Shift Calendar & Work Log"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>Privacy Policy | Shift Calendar &amp; Work Log</title>
+
+    <style>
+        :root {
+            color-scheme: light;
+            --background-color: #f4f6f8;
+            --surface-color: #ffffff;
+            --primary-color: #2563eb;
+            --primary-dark-color: #1d4ed8;
+            --text-color: #1f2937;
+            --secondary-text-color: #5f6b7a;
+            --border-color: #dfe3e8;
+            --notice-background: #eff6ff;
+            --notice-border: #93c5fd;
+            --warning-background: #fff8e6;
+            --warning-border: #f4c76b;
+            --shadow-color: rgba(15, 23, 42, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--background-color);
+            color: var(--text-color);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Noto Sans KR",
+                "Noto Sans",
+                Arial,
+                sans-serif;
+            font-size: 16px;
+            line-height: 1.75;
+            word-break: keep-all;
+            overflow-wrap: break-word;
+        }
+
+        .page-container {
+            width: min(920px, calc(100% - 32px));
+            margin: 32px auto;
+        }
+
+        .policy-card {
+            padding: 40px;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+
+        .header {
+            padding-bottom: 24px;
+            margin-bottom: 28px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .app-name {
+            margin: 0 0 8px;
+            color: var(--primary-color);
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: clamp(1.9rem, 5vw, 2.6rem);
+            line-height: 1.3;
+            letter-spacing: -0.03em;
+        }
+
+        .effective-date {
+            margin: 0;
+            color: var(--secondary-text-color);
+            font-size: 0.95rem;
+        }
+
+        .language-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 24px 0 8px;
+        }
+
+        .language-button {
+            min-width: 110px;
+            padding: 11px 18px;
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+            background: var(--surface-color);
+            color: var(--text-color);
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .language-button:hover {
+            transform: translateY(-1px);
+            border-color: var(--primary-color);
+        }
+
+        .language-button.active {
+            border-color: var(--primary-color);
+            background: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .language-button:focus-visible {
+            outline: 3px solid rgba(37, 99, 235, 0.25);
+            outline-offset: 2px;
+        }
+
+        .language-section {
+            display: none;
+        }
+
+        .language-section.active {
+            display: block;
+        }
+
+        section {
+            margin-top: 38px;
+        }
+
+        h2 {
+            padding-bottom: 10px;
+            margin: 0 0 14px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 1.35rem;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            margin: 24px 0 8px;
+            font-size: 1.08rem;
+            line-height: 1.5;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin: 12px 0;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        a {
+            color: var(--primary-dark-color);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            text-decoration-thickness: 2px;
+        }
+
+        .notice {
+            padding: 18px 20px;
+            margin: 22px 0;
+            border: 1px solid var(--notice-border);
+            border-radius: 12px;
+            background: var(--notice-background);
+        }
+
+        .warning {
+            padding: 18px 20px;
+            margin: 22px 0;
+            border: 1px solid var(--warning-border);
+            border-radius: 12px;
+            background: var(--warning-background);
+        }
+
+        .summary-table-wrapper {
+            width: 100%;
+            margin: 18px 0;
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+
+        table {
+            width: 100%;
+            min-width: 680px;
+            border-collapse: collapse;
+            background: var(--surface-color);
+        }
+
+        th,
+        td {
+            padding: 14px;
+            border-bottom: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th:last-child,
+        td:last-child {
+            border-right: none;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        th {
+            background: #f8fafc;
+            font-weight: 700;
+        }
+
+        .footer {
+            padding-top: 24px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--secondary-text-color);
+            font-size: 0.92rem;
+            text-align: center;
+        }
+
+        .developer-name {
+            color: var(--text-color);
+            font-weight: 700;
+        }
+
+        @media (max-width: 640px) {
+            .page-container {
+                width: min(100% - 20px, 920px);
+                margin: 10px auto;
+            }
+
+            .policy-card {
+                padding: 24px 18px;
+                border-radius: 14px;
+            }
+
+            .language-button {
+                flex: 1;
+                min-width: 0;
+            }
+
+            h2 {
+                font-size: 1.22rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .page-container {
+                width: 100%;
+                margin: 0;
+            }
+
+            .policy-card {
+                padding: 0;
+                border: none;
+                box-shadow: none;
+            }
+
+            .language-controls {
+                display: none;
+            }
+
+            .language-section {
+                display: block;
+            }
+
+            #english-policy {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page-container">
+        <article class="policy-card">
+            <header class="header">
+                <p class="app-name">
+                    Shift Calendar &amp; Work Log
+                </p>
+
+                <h1 id="page-title">
+                    개인정보처리방침
+                </h1>
+
+                <p class="effective-date" id="effective-date">
+                    시행일: 2026년 7월 31일
+                </p>
+
+                <div
+                    class="language-controls"
+                    role="group"
+                    aria-label="Language selection"
+                >
+                    <button
+                        type="button"
+                        id="korean-button"
+                        class="language-button active"
+                        onclick="changeLanguage('ko')"
+                        aria-pressed="true"
+                    >
+                        한국어
+                    </button>
+
+                    <button
+                        type="button"
+                        id="english-button"
+                        class="language-button"
+                        onclick="changeLanguage('en')"
+                        aria-pressed="false"
+                    >
+                        English
+                    </button>
+                </div>
+            </header>
+
+            <!-- =========================================================
+                 Korean Privacy Policy
+            ========================================================== -->
+            <div
+                id="korean-policy"
+                class="language-section active"
+                lang="ko"
+            >
+                <div class="notice">
+                    <strong>핵심 안내</strong>
+                    <p>
+                        이 앱은 회원가입 기능이나 자체 운영 서버를 사용하지
+                        않습니다. 사용자가 입력한 근무 일정, 작업일지 및 설정은
+                        원칙적으로 사용자의 기기에 저장됩니다.
+                    </p>
+                    <p>
+                        다만 앱에 포함된 광고 서비스는 광고 제공, 광고 성과 측정,
+                        부정 이용 방지 및 서비스 보안을 위해 기기 정보,
+                        광고 식별자, 광고 상호작용 정보 등을 처리할 수 있습니다.
+                    </p>
+                </div>
+
+                <section>
+                    <h2>1. 개인정보처리방침의 목적</h2>
+
+                    <p>
+                        본 개인정보처리방침은
+                        <strong>Shift Calendar &amp; Work Log</strong>
+                        애플리케이션(이하 “앱”)에서 이용자의 정보가 어떠한
+                        방식으로 처리되는지 설명합니다.
+                    </p>
+
+                    <p>
+                        앱의 개발자 및 제공자는
+                        <strong>JCraft Studio</strong>
+                        입니다.
+                    </p>
+
+                    <p>
+                        개발자의 최신 연락처, 이메일 주소 및 기타 사업자 또는
+                        개발자 정보는 이 앱이 배포되는
+                        <strong>Google Play 스토어 등록정보의 개발자 연락처
+                        항목</strong>을 참고하시기 바랍니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>2. 앱에서 이용자가 입력하는 정보</h2>
+
+                    <p>
+                        이용자는 앱을 사용하면서 다음과 같은 정보를 직접 입력하거나
+                        생성할 수 있습니다.
+                    </p>
+
+                    <ul>
+                        <li>근무 날짜 및 근무 유형</li>
+                        <li>주간, 야간, 휴무, 연차 등의 근무 일정</li>
+                        <li>사용자 지정 근무 유형 및 색상</li>
+                        <li>작업일지, 메모 및 업무 기록</li>
+                        <li>근무 알림 시간 및 알림 설정</li>
+                        <li>앱 언어, 표시 방식 및 기타 환경설정</li>
+                    </ul>
+
+                    <p>
+                        이러한 정보는 앱의 근무 일정 관리, 작업일지 작성,
+                        통계 표시, 알림, 위젯, PDF 생성, 백업 및 복원 기능을
+                        제공하기 위해 사용됩니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>3. 정보의 저장 및 전송</h2>
+
+                    <h3>3.1 기기 내부 저장</h3>
+
+                    <p>
+                        이용자가 입력한 근무 일정, 작업일지, 사용자 지정 근무
+                        유형 및 앱 설정은 원칙적으로 이용자의 기기 내부에
+                        저장됩니다.
+                    </p>
+
+                    <p>
+                        개발자는 이러한 앱 기록을 저장하기 위한 별도의 자체 서버나
+                        클라우드 데이터베이스를 운영하지 않으며, 해당 기록을
+                        개발자의 서버로 자동 전송하지 않습니다.
+                    </p>
+
+                    <h3>3.2 홈 화면 위젯</h3>
+
+                    <p>
+                        이용자가 홈 화면 위젯을 추가하면 위젯 표시를 위해 필요한
+                        근무 일정의 일부가 앱과 위젯이 접근할 수 있는 기기 내부
+                        저장공간에 보관될 수 있습니다.
+                    </p>
+
+                    <p>
+                        위젯에 표시되는 정보는 기기의 잠금 상태나 홈 화면 설정에
+                        따라 주변 사람에게 노출될 수 있으므로, 이용자는 위젯
+                        사용 여부를 직접 판단해야 합니다.
+                    </p>
+
+                    <h3>3.3 클라우드 백업 미제공</h3>
+
+                    <p>
+                        앱은 개발자가 운영하는 클라우드 백업 기능을 제공하지
+                        않습니다. 앱 데이터는 이용자가 직접 생성하고 관리하는
+                        JSON 백업 파일을 통해서만 이전하거나 복원할 수 있습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>4. JSON 백업 및 복원</h2>
+
+                    <p>
+                        이용자가 백업 기능을 실행하면 앱은 근무 일정, 작업일지,
+                        사용자 설정 등의 데이터를 JSON 파일로 생성할 수 있습니다.
+                    </p>
+
+                    <p>
+                        백업 파일의 저장 위치는 이용자가 기기의 파일 선택 화면을
+                        통해 직접 선택합니다. 이용자가 해당 파일을 외부 저장소,
+                        클라우드 저장소 또는 다른 서비스에 저장하는 경우, 그
+                        이후의 데이터 처리는 해당 저장 위치나 서비스 제공자의
+                        개인정보처리방침이 적용될 수 있습니다.
+                    </p>
+
+                    <p>
+                        복원 기능을 사용하는 경우 이용자가 직접 선택한 JSON
+                        파일을 앱이 읽어 기존 앱 데이터에 반영할 수 있습니다.
+                        복원으로 인해 기존 데이터가 변경되거나 덮어쓰여질 수
+                        있으므로 이용자는 중요한 데이터를 별도로 보관해야 합니다.
+                    </p>
+
+                    <div class="warning">
+                        백업 파일에는 이용자가 작성한 작업일지나 일정 등 개인적인
+                        내용이 포함될 수 있습니다. 이용자는 백업 파일을 안전하게
+                        보관하고 다른 사람에게 공개되지 않도록 관리해야 합니다.
+                    </div>
+                </section>
+
+                <section>
+                    <h2>5. PDF 생성 및 공유</h2>
+
+                    <p>
+                        앱은 이용자가 입력한 근무 일정을 기반으로 월간 근무표 등의
+                        PDF 문서를 생성할 수 있습니다.
+                    </p>
+
+                    <p>
+                        PDF 생성은 앱 기능 제공을 위해 이용자의 기기에서
+                        처리됩니다. 이용자가 공유 기능을 실행하면 Android의 공유
+                        화면을 통해 이메일, 메신저, 클라우드 저장소 또는 기타
+                        외부 앱을 직접 선택할 수 있습니다.
+                    </p>
+
+                    <p>
+                        이용자가 선택한 외부 앱 또는 서비스로 PDF 파일이 전달된
+                        이후의 수집, 저장, 공유 및 이용에는 해당 외부 서비스의
+                        약관과 개인정보처리방침이 적용됩니다.
+                    </p>
+
+                    <p>
+                        개발자는 이용자가 선택한 공유 대상, 외부 앱의 처리 방식
+                        또는 이용자가 공유한 PDF 파일의 이후 사용을 통제하거나
+                        책임지지 않습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>6. 알림 기능</h2>
+
+                    <p>
+                        앱은 근무 일정 또는 이용자가 설정한 시간에 맞춰 기기에서
+                        로컬 알림을 표시할 수 있습니다.
+                    </p>
+
+                    <p>
+                        알림을 제공하기 위해 알림 권한을 요청할 수 있으며, 이용자는
+                        기기 설정에서 언제든지 알림 권한을 허용하거나 거부하고
+                        변경할 수 있습니다.
+                    </p>
+
+                    <p>
+                        알림 제목이나 내용은 잠금 화면 또는 알림 화면에 표시될 수
+                        있습니다. 알림 내용의 공개 범위는 이용자의 기기 잠금 화면
+                        및 알림 표시 설정에 따라 달라집니다.
+                    </p>
+
+                    <p>
+                        근무 알림은 편의를 위한 보조 기능이며, 운영체제 설정,
+                        절전 기능, 기기 제조사의 백그라운드 제한, 앱 삭제,
+                        기기 재시작 또는 기타 기술적 사유로 지연되거나 표시되지
+                        않을 수 있습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>7. 광고 및 제3자 서비스</h2>
+
+                    <p>
+                        앱은 무료 서비스 제공 및 운영을 위해 Google AdMob을
+                        포함한 광고 서비스를 사용할 수 있습니다.
+                    </p>
+
+                    <p>
+                        광고 서비스 제공자는 광고 제공, 광고 빈도 제한,
+                        광고 성과 측정, 맞춤형 또는 비맞춤형 광고 제공,
+                        부정 클릭·부정 노출 방지, 오류 분석 및 보안 유지를 위해
+                        다음과 같은 정보를 자동으로 처리할 수 있습니다.
+                    </p>
+
+                    <ul>
+                        <li>광고 식별자와 같은 기기 또는 기타 식별자</li>
+                        <li>기기 종류, 운영체제 및 앱 버전</li>
+                        <li>IP 주소 및 이를 통해 추정될 수 있는 대략적인 위치</li>
+                        <li>광고 노출, 클릭 및 광고 상호작용 정보</li>
+                        <li>앱 성능, 진단, 충돌 및 오류 정보</li>
+                        <li>네트워크 및 언어 설정과 같은 기술 정보</li>
+                    </ul>
+
+                    <p>
+                        위 정보의 구체적인 처리 범위는 이용자의 지역, 기기 설정,
+                        광고 동의 상태, Google 서비스 설정 및 광고 SDK의 정책에
+                        따라 달라질 수 있습니다.
+                    </p>
+
+                    <p>
+                        관련 내용은 다음 정책에서 확인할 수 있습니다.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a
+                                href="https://policies.google.com/privacy"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Google 개인정보처리방침
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://policies.google.com/technologies/ads"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Google 광고 기술
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p>
+                        관련 법령에 따라 필요한 경우 앱 또는 Google의 동의 관리
+                        화면을 통해 맞춤형 광고 등에 대한 동의를 요청할 수
+                        있습니다. 이용 가능한 경우 이용자는 해당 화면 또는 기기의
+                        개인정보·광고 설정을 통해 선택 사항을 변경할 수 있습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>8. 수집 및 처리 정보 요약</h2>
+
+                    <div class="summary-table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>정보 유형</th>
+                                    <th>처리 목적</th>
+                                    <th>처리 위치 또는 대상</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        근무 일정, 작업일지, 메모,
+                                        사용자 설정
+                                    </td>
+                                    <td>
+                                        일정 관리, 작업 기록, 통계,
+                                        위젯, 알림, PDF 및 백업
+                                    </td>
+                                    <td>
+                                        원칙적으로 이용자 기기 내부
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        JSON 백업 파일
+                                    </td>
+                                    <td>
+                                        데이터 백업 및 복원
+                                    </td>
+                                    <td>
+                                        이용자가 직접 선택한 저장 위치
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        PDF 문서
+                                    </td>
+                                    <td>
+                                        근무표 저장 및 공유
+                                    </td>
+                                    <td>
+                                        이용자 기기 및 이용자가 선택한 외부 앱
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        광고 식별자, 기기 정보,
+                                        광고 상호작용 및 진단 정보
+                                    </td>
+                                    <td>
+                                        광고 제공, 측정, 보안 및 부정 이용 방지
+                                    </td>
+                                    <td>
+                                        Google 등 광고 서비스 제공자
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>9. 앱 권한</h2>
+
+                    <p>
+                        앱은 기능 제공을 위해 다음과 같은 권한이나 운영체제 기능을
+                        사용할 수 있습니다.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>알림 권한:</strong>
+                            근무 일정 및 설정된 알림을 표시하기 위해 사용됩니다.
+                        </li>
+
+                        <li>
+                            <strong>파일 접근 또는 시스템 파일 선택 기능:</strong>
+                            이용자가 JSON 백업 파일이나 PDF 파일의 저장 또는
+                            불러오기 위치를 직접 선택할 때 사용됩니다.
+                        </li>
+
+                        <li>
+                            <strong>인터넷 접근:</strong>
+                            광고 콘텐츠를 불러오고 광고 서비스를 제공하기 위해
+                            사용될 수 있습니다.
+                        </li>
+
+                        <li>
+                            <strong>홈 화면 위젯 기능:</strong>
+                            홈 화면에 근무 일정을 표시하기 위해 사용됩니다.
+                        </li>
+                    </ul>
+
+                    <p>
+                        앱은 기능 제공에 필요하지 않은 권한을 의도적으로
+                        요청하지 않습니다. 기기와 Android 버전에 따라 실제로
+                        표시되는 권한 항목은 달라질 수 있습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>10. 개인정보의 공유 및 판매</h2>
+
+                    <p>
+                        개발자는 이용자가 앱에 직접 입력한 근무 일정이나 작업일지
+                        내용을 판매하지 않습니다.
+                    </p>
+
+                    <p>
+                        개발자는 자체 서버를 통해 해당 기록을 수집하거나 제3자에게
+                        임의로 제공하지 않습니다.
+                    </p>
+
+                    <p>
+                        다만 다음의 경우 정보가 제3자에게 전달되거나 처리될 수
+                        있습니다.
+                    </p>
+
+                    <ul>
+                        <li>
+                            광고 제공을 위해 Google 등 광고 서비스 제공자가
+                            기기 및 광고 관련 정보를 처리하는 경우
+                        </li>
+
+                        <li>
+                            이용자가 PDF 또는 백업 파일을 외부 앱이나 서비스에
+                            직접 공유하거나 저장하는 경우
+                        </li>
+
+                        <li>
+                            관련 법률, 법원 명령 또는 적법한 정부기관의 요청을
+                            준수하기 위해 필요한 경우
+                        </li>
+
+                        <li>
+                            이용자, 개발자 또는 제3자의 권리와 안전을 보호하기
+                            위해 법적으로 허용되는 범위에서 필요한 경우
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>11. 정보의 보유 및 삭제</h2>
+
+                    <h3>11.1 기기 내부 데이터</h3>
+
+                    <p>
+                        근무 일정, 작업일지 및 앱 설정은 이용자가 개별 기록을
+                        삭제하거나 앱의 데이터 초기화 기능을 사용하거나,
+                        운영체제 설정에서 앱 데이터를 삭제하거나, 앱을 제거할
+                        때까지 기기에 보관될 수 있습니다.
+                    </p>
+
+                    <p>
+                        앱 삭제 또는 앱 데이터 삭제 후에는 기기에 저장된 앱
+                        데이터가 복구되지 않을 수 있습니다.
+                    </p>
+
+                    <h3>11.2 백업 및 공유 파일</h3>
+
+                    <p>
+                        이용자가 별도로 생성한 JSON 백업 파일이나 PDF 파일은 앱을
+                        삭제하더라도 이용자가 선택한 저장 위치에 계속 남아 있을 수
+                        있습니다. 해당 파일은 이용자가 파일 관리자나 저장 서비스에서
+                        직접 삭제해야 합니다.
+                    </p>
+
+                    <h3>11.3 광고 서비스 정보</h3>
+
+                    <p>
+                        광고 서비스 제공자가 처리하는 정보의 보유 및 삭제 기간은
+                        해당 서비스 제공자의 정책과 이용자의 광고 설정에 따라
+                        결정됩니다.
+                    </p>
+
+                    <h3>11.4 계정 삭제</h3>
+
+                    <p>
+                        앱은 회원가입 또는 자체 계정 생성 기능을 제공하지 않으므로
+                        별도의 계정 삭제 절차가 존재하지 않습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>12. 정보 보안</h2>
+
+                    <p>
+                        개발자는 앱이 처리하는 정보를 보호하기 위해 합리적인
+                        기술적·관리적 조치를 적용하기 위해 노력합니다.
+                    </p>
+
+                    <p>
+                        그러나 어떠한 전자적 저장 방식이나 데이터 전송 방식도
+                        절대적인 안전을 보장할 수 없습니다. 특히 다음과 같은
+                        상황에서는 정보가 손실되거나 노출될 수 있습니다.
+                    </p>
+
+                    <ul>
+                        <li>기기의 분실, 도난 또는 무단 접근</li>
+                        <li>악성코드, 루팅 또는 변조된 운영체제</li>
+                        <li>안전하지 않은 외부 저장 위치</li>
+                        <li>이용자가 백업 또는 PDF 파일을 제3자에게 공유한 경우</li>
+                        <li>운영체제, 기기 또는 외부 서비스의 오류</li>
+                    </ul>
+
+                    <p>
+                        이용자는 기기 잠금, 운영체제 업데이트, 백업 파일 보호 등
+                        적절한 보안 조치를 직접 취해야 합니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>13. 이용자의 선택 및 권리</h2>
+
+                    <p>
+                        이용자는 다음과 같은 방식으로 자신의 정보와 앱 기능을
+                        관리할 수 있습니다.
+                    </p>
+
+                    <ul>
+                        <li>앱에서 개별 근무 일정 또는 작업일지 수정·삭제</li>
+                        <li>앱의 데이터 초기화 기능 사용</li>
+                        <li>기기 설정에서 앱 데이터 삭제</li>
+                        <li>앱 삭제</li>
+                        <li>기기 설정에서 알림 권한 변경</li>
+                        <li>광고 동의 화면 또는 기기 광고 설정 변경</li>
+                        <li>생성된 JSON 및 PDF 파일 직접 삭제</li>
+                    </ul>
+
+                    <p>
+                        광고 서비스 제공자가 보유한 정보에 관한 권리는 해당
+                        서비스 제공자의 개인정보 도구와 절차를 통해 행사해야 할
+                        수 있습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>14. 아동의 개인정보</h2>
+
+                    <p>
+                        앱은 일반적인 근무 일정 및 작업 기록 관리를 목적으로 하며,
+                        아동을 주된 대상으로 설계된 서비스가 아닙니다.
+                    </p>
+
+                    <p>
+                        개발자는 앱을 통해 아동의 개인정보를 의도적으로 직접
+                        수집하지 않습니다. 보호자가 아동이 부적절하게 앱을
+                        사용하거나 개인정보를 입력한 사실을 확인한 경우,
+                        해당 기기에서 관련 데이터를 삭제해 주시기 바랍니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>15. 이용자 콘텐츠 및 법적 책임</h2>
+
+                    <p>
+                        이용자가 앱에 입력하거나 PDF 또는 백업 파일로 생성하는
+                        일정, 메모, 작업일지 및 기타 내용에 대한 책임은 해당
+                        이용자에게 있습니다.
+                    </p>
+
+                    <p>
+                        이용자는 다음에 해당하는 내용을 입력, 저장 또는 공유해서는
+                        안 됩니다.
+                    </p>
+
+                    <ul>
+                        <li>타인의 개인정보나 비밀정보를 침해하는 내용</li>
+                        <li>저작권, 상표권 또는 기타 지식재산권을 침해하는 내용</li>
+                        <li>명예훼손, 협박, 차별 또는 불법 행위와 관련된 내용</li>
+                        <li>관련 법령이나 제3자의 권리를 침해하는 내용</li>
+                    </ul>
+
+                    <p>
+                        개발자는 이용자가 직접 작성하거나 공유한 내용의 적법성,
+                        정확성 또는 이용 결과에 대해 통제하지 않습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>16. 저작권 및 지식재산권</h2>
+
+                    <p>
+                        앱의 프로그램, 디자인, 화면 구성, 로고, 문구 및 개발자가
+                        직접 제작한 콘텐츠에 관한 저작권과 기타 지식재산권은
+                        개발자 또는 정당한 권리자에게 귀속됩니다.
+                    </p>
+
+                    <p>
+                        관련 법령에서 허용하는 경우를 제외하고, 이용자는 개발자의
+                        사전 허가 없이 앱의 전부 또는 일부를 복제, 수정, 배포,
+                        재판매, 역설계하거나 상업적으로 이용해서는 안 됩니다.
+                    </p>
+
+                    <p>
+                        Android, Google Play, Google AdMob 및 기타 Google
+                        관련 명칭과 상표는 Google LLC 또는 해당 권리자의
+                        자산입니다. 앱은 별도의 명시가 없는 한 Google의 공식
+                        애플리케이션이 아니며 Google이 직접 제작하거나 보증하는
+                        서비스가 아닙니다.
+                    </p>
+
+                    <p>
+                        앱에서 사용되는 오픈소스 소프트웨어와 제3자 라이브러리는
+                        각각의 라이선스 및 저작권 고지에 따릅니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>17. 서비스 이용에 관한 면책</h2>
+
+                    <p>
+                        앱은 근무 일정과 작업 기록을 편리하게 관리하기 위한
+                        보조 도구입니다. 앱에서 제공되는 일정, 통계, 알림,
+                        위젯 및 PDF 자료는 법률상 공식 근무기록, 출퇴근 인증,
+                        급여 산정 자료 또는 고용계약상 증빙을 대체하지 않습니다.
+                    </p>
+
+                    <p>
+                        이용자는 중요한 근무 일정, 휴가, 급여, 출퇴근 기록 및
+                        업무 지시를 소속 기관이나 고용주가 제공하는 공식 자료와
+                        별도로 확인해야 합니다.
+                    </p>
+
+                    <p>
+                        앱은 관련 법령이 허용하는 범위에서 현재 상태 그대로
+                        제공됩니다. 개발자는 다음 사항을 포함하여 앱의 완전성,
+                        정확성, 지속적인 제공 또는 특정 목적에 대한 적합성을
+                        보장하지 않습니다.
+                    </p>
+
+                    <ul>
+                        <li>알림 지연 또는 미표시</li>
+                        <li>위젯 갱신 지연</li>
+                        <li>기기 변경, 운영체제 업데이트 또는 앱 오류</li>
+                        <li>데이터 손실, 백업 실패 또는 복원 오류</li>
+                        <li>PDF 생성 또는 외부 공유 과정의 오류</li>
+                        <li>광고 또는 외부 서비스의 내용과 동작</li>
+                    </ul>
+
+                    <p>
+                        개발자의 고의 또는 중대한 과실이 있거나 관련 법령상 책임을
+                        제한할 수 없는 경우를 제외하고, 개발자는 앱의 사용 또는
+                        사용 불가로 인해 발생한 간접적, 부수적, 특별한 또는
+                        결과적 손해에 대해 관련 법령이 허용하는 범위 내에서
+                        책임을 지지 않습니다.
+                    </p>
+
+                    <p>
+                        본 조항은 적용 법률에 따라 제한하거나 배제할 수 없는
+                        소비자의 권리를 제한하지 않습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>18. 외부 서비스 및 링크</h2>
+
+                    <p>
+                        앱 또는 광고에는 제3자가 운영하는 웹사이트, 앱 또는
+                        서비스로 연결되는 링크가 포함될 수 있습니다.
+                    </p>
+
+                    <p>
+                        제3자 서비스는 개발자가 관리하지 않으며, 해당 서비스의
+                        콘텐츠, 보안, 가용성, 상품, 광고 또는 개인정보 처리
+                        방식에 대해서는 해당 제3자의 약관과 정책이 적용됩니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>19. 국제적 데이터 처리</h2>
+
+                    <p>
+                        Google과 같은 제3자 광고 서비스 제공자는 여러 국가에서
+                        서버와 서비스를 운영할 수 있습니다. 이에 따라 광고 관련
+                        정보가 이용자의 거주 국가 외의 지역에서 처리될 수
+                        있습니다.
+                    </p>
+
+                    <p>
+                        이러한 정보의 국제 이전 및 보호 조치는 해당 서비스
+                        제공자의 개인정보처리방침과 적용 법률에 따릅니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>20. 개인정보처리방침의 변경</h2>
+
+                    <p>
+                        앱 기능, 제3자 서비스, 관련 법령 또는 Google Play 정책이
+                        변경되는 경우 본 개인정보처리방침이 수정될 수 있습니다.
+                    </p>
+
+                    <p>
+                        중요한 변경이 있는 경우 앱 업데이트, 앱 내부 안내,
+                        Google Play 등록정보 또는 본 페이지를 통해 알릴 수
+                        있습니다.
+                    </p>
+
+                    <p>
+                        변경된 개인정보처리방침은 본 페이지에 게시된 시행일부터
+                        적용됩니다. 이용자는 정기적으로 본 페이지를 확인할 것을
+                        권장합니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>21. 준거법</h2>
+
+                    <p>
+                        본 개인정보처리방침 및 앱 이용과 관련된 사항은 이용자에게
+                        적용되는 강행 법규를 침해하지 않는 범위에서 대한민국
+                        법률을 기준으로 해석될 수 있습니다.
+                    </p>
+
+                    <p>
+                        특정 국가 또는 지역의 소비자에게 강제적으로 적용되는
+                        개인정보 보호법이나 소비자보호법이 있는 경우 해당 법률이
+                        우선 적용될 수 있습니다.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>22. 문의 방법</h2>
+
+                    <p>
+                        개인정보 처리, 앱 데이터 삭제 방법, 앱 기능 또는 본
+                        개인정보처리방침에 관한 문의는 Google Play 스토어에서
+                        이 앱의 등록정보를 열고
+                        <strong>개발자 연락처</strong>에 표시된 최신 연락 방법을
+                        이용해 주시기 바랍니다.
+                    </p>
+
+                    <p>
+                        개발자명:
+                        <strong>JCraft Studio</strong>
+                    </p>
+
+                    <p>
+                        앱 이름:
+                        <strong>Shift Calendar &amp; Work Log</strong>
+                    </p>
+                </section>
+            </div>
+
+            <!-- =========================================================
+                 English Privacy Policy
+            ========================================================== -->
+            <div
+                id="english-policy"
+                class="language-section"
+                lang="en"
+            >
+                <div class="notice">
+                    <strong>Key Notice</strong>
+
+                    <p>
+                        This App does not require user registration and does
+                        not use a developer-operated server or cloud backup
+                        service. Shift schedules, work logs and settings
+                        entered by the user are generally stored locally on
+                        the user's device.
+                    </p>
+
+                    <p>
+                        However, advertising services included in the App may
+                        process device information, advertising identifiers,
+                        advertising interactions and related technical data
+                        to provide advertisements, measure performance,
+                        prevent fraud and protect service security.
+                    </p>
+                </div>
+
+                <section>
+                    <h2>1. Purpose of This Privacy Policy</h2>
+
+                    <p>
+                        This Privacy Policy explains how information is
+                        processed in the
+                        <strong>Shift Calendar &amp; Work Log</strong>
+                        application, referred to as the “App.”
+                    </p>
+
+                    <p>
+                        The developer and provider of the App is
+                        <strong>JCraft Studio</strong>.
+                    </p>
+
+                    <p>
+                        For the developer's current email address, contact
+                        method and other developer information, please refer
+                        to the
+                        <strong>Developer contact section of the App's Google
+                        Play Store listing</strong>.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>2. Information Entered by Users</h2>
+
+                    <p>
+                        Users may enter or create the following information
+                        while using the App:
+                    </p>
+
+                    <ul>
+                        <li>Work dates and shift types</li>
+                        <li>Day, night, off-day and leave schedules</li>
+                        <li>Custom shift types and colors</li>
+                        <li>Work logs, notes and job-related records</li>
+                        <li>Reminder times and notification settings</li>
+                        <li>
+                            Language, display preferences and other App
+                            settings
+                        </li>
+                    </ul>
+
+                    <p>
+                        This information is used to provide schedule
+                        management, work log, statistics, notification,
+                        widget, PDF generation, backup and restoration
+                        features.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>3. Storage and Transmission of Information</h2>
+
+                    <h3>3.1 Local Device Storage</h3>
+
+                    <p>
+                        Shift schedules, work logs, custom shift types and
+                        App settings entered by users are generally stored
+                        locally on the user's device.
+                    </p>
+
+                    <p>
+                        The Developer does not operate a separate server or
+                        cloud database for storing these records and does not
+                        automatically transmit these records to a
+                        Developer-operated server.
+                    </p>
+
+                    <h3>3.2 Home Screen Widgets</h3>
+
+                    <p>
+                        When a user adds a home screen widget, a limited
+                        portion of schedule information required to display
+                        the widget may be stored in local device storage
+                        accessible by the App and widget.
+                    </p>
+
+                    <p>
+                        Information displayed in a widget may be visible to
+                        other people depending on the device's lock-screen
+                        and home-screen settings. Users are responsible for
+                        deciding whether to use the widget.
+                    </p>
+
+                    <h3>3.3 No Developer-Operated Cloud Backup</h3>
+
+                    <p>
+                        The App does not provide a cloud backup service
+                        operated by the Developer. App data may only be
+                        transferred or restored through JSON backup files
+                        created and managed directly by the user.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>4. JSON Backup and Restoration</h2>
+
+                    <p>
+                        When a user activates the backup feature, the App may
+                        create a JSON file containing shift schedules, work
+                        logs and App settings.
+                    </p>
+
+                    <p>
+                        The user selects the location in which the backup file
+                        will be saved through the device's system file
+                        interface. If the user saves the file to external
+                        storage, cloud storage or another service, subsequent
+                        processing may be governed by the privacy policy of
+                        that storage location or service provider.
+                    </p>
+
+                    <p>
+                        When the restore feature is used, the App may read a
+                        JSON file selected by the user and apply its contents
+                        to the App. Restoration may change or overwrite
+                        existing data. Users should separately preserve
+                        important information.
+                    </p>
+
+                    <div class="warning">
+                        Backup files may contain personal work schedules,
+                        notes or work-log content. Users are responsible for
+                        storing backup files securely and preventing
+                        unauthorized disclosure.
+                    </div>
+                </section>
+
+                <section>
+                    <h2>5. PDF Generation and Sharing</h2>
+
+                    <p>
+                        The App may create PDF documents, including monthly
+                        shift schedules, based on information entered by the
+                        user.
+                    </p>
+
+                    <p>
+                        PDF generation is processed on the user's device to
+                        provide the requested feature. When the user selects
+                        the sharing feature, the Android system share screen
+                        may allow the user to select email, messaging, cloud
+                        storage or another external application.
+                    </p>
+
+                    <p>
+                        After a PDF file is transferred to an external
+                        application or service chosen by the user, the
+                        collection, storage, sharing and use of that file are
+                        governed by the terms and privacy policy of the
+                        external service.
+                    </p>
+
+                    <p>
+                        The Developer does not control and is not responsible
+                        for the recipient chosen by the user, the processing
+                        practices of an external application or the subsequent
+                        use of a shared PDF file.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>6. Notifications</h2>
+
+                    <p>
+                        The App may display local notifications on the device
+                        according to a work schedule or a time selected by
+                        the user.
+                    </p>
+
+                    <p>
+                        The App may request notification permission. Users
+                        may allow, deny or modify notification permission at
+                        any time through their device settings.
+                    </p>
+
+                    <p>
+                        Notification titles or content may appear on a lock
+                        screen or notification panel. Visibility depends on
+                        the user's device and notification privacy settings.
+                    </p>
+
+                    <p>
+                        Reminders are convenience features only. They may be
+                        delayed or may not appear because of operating-system
+                        settings, battery optimization, manufacturer
+                        restrictions, device restarts, App removal or other
+                        technical reasons.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>7. Advertising and Third-Party Services</h2>
+
+                    <p>
+                        The App may use advertising services, including
+                        Google AdMob, to support the operation and free
+                        availability of the App.
+                    </p>
+
+                    <p>
+                        Advertising service providers may automatically
+                        process the following information to provide
+                        advertisements, limit advertising frequency, measure
+                        advertising performance, provide personalized or
+                        non-personalized advertising, prevent invalid clicks
+                        or impressions, diagnose errors and maintain service
+                        security:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Device or other identifiers, including an
+                            advertising identifier
+                        </li>
+
+                        <li>
+                            Device type, operating system and App version
+                        </li>
+
+                        <li>
+                            IP address and approximate location that may be
+                            inferred from it
+                        </li>
+
+                        <li>
+                            Advertisement impressions, clicks and interaction
+                            information
+                        </li>
+
+                        <li>
+                            App performance, diagnostic, crash and error
+                            information
+                        </li>
+
+                        <li>
+                            Technical information such as network and language
+                            settings
+                        </li>
+                    </ul>
+
+                    <p>
+                        The specific scope of processing may vary depending
+                        on the user's region, device settings, advertising
+                        consent status, Google service settings and the
+                        policies of the advertising SDK.
+                    </p>
+
+                    <p>
+                        More information is available in the following
+                        policies:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a
+                                href="https://policies.google.com/privacy"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Google Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://policies.google.com/technologies/ads"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                How Google Uses Advertising Technologies
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p>
+                        Where required by applicable law, the App or Google's
+                        consent-management interface may request consent for
+                        personalized advertising or related processing.
+                        Where available, users may modify their choices
+                        through that interface or their device's privacy and
+                        advertising settings.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>8. Summary of Information Processing</h2>
+
+                    <div class="summary-table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Information Type</th>
+                                    <th>Purpose</th>
+                                    <th>Location or Recipient</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Shift schedules, work logs,
+                                        notes and user settings
+                                    </td>
+                                    <td>
+                                        Schedule management, records,
+                                        statistics, widgets, notifications,
+                                        PDF and backup features
+                                    </td>
+                                    <td>
+                                        Generally stored locally on the
+                                        user's device
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        JSON backup files
+                                    </td>
+                                    <td>
+                                        Data backup and restoration
+                                    </td>
+                                    <td>
+                                        A storage location selected by
+                                        the user
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        PDF documents
+                                    </td>
+                                    <td>
+                                        Saving and sharing schedules
+                                    </td>
+                                    <td>
+                                        The user's device and external
+                                        applications selected by the user
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Advertising identifier, device
+                                        information, advertising interactions
+                                        and diagnostic information
+                                    </td>
+                                    <td>
+                                        Advertising, measurement, security
+                                        and fraud prevention
+                                    </td>
+                                    <td>
+                                        Advertising service providers,
+                                        including Google
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>9. App Permissions</h2>
+
+                    <p>
+                        The App may use the following permissions or
+                        operating-system capabilities to provide its
+                        features:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <strong>Notification permission:</strong>
+                            Used to display shift schedules and reminders
+                            selected by the user.
+                        </li>
+
+                        <li>
+                            <strong>
+                                File access or system file-selection
+                                capability:
+                            </strong>
+                            Used when the user selects a location for saving
+                            or opening a JSON backup file or PDF document.
+                        </li>
+
+                        <li>
+                            <strong>Internet access:</strong>
+                            May be used to load advertisements and provide
+                            advertising services.
+                        </li>
+
+                        <li>
+                            <strong>Home screen widget capability:</strong>
+                            Used to display work schedules on the device's
+                            home screen.
+                        </li>
+                    </ul>
+
+                    <p>
+                        The App is not intended to request permissions that
+                        are unnecessary for its functions. Permissions
+                        actually displayed may vary depending on the device
+                        and Android version.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>10. Sharing and Sale of Information</h2>
+
+                    <p>
+                        The Developer does not sell shift schedules or work
+                        logs directly entered by users.
+                    </p>
+
+                    <p>
+                        The Developer does not collect such records through
+                        a Developer-operated server or arbitrarily provide
+                        them to third parties.
+                    </p>
+
+                    <p>
+                        Information may nevertheless be transferred to or
+                        processed by a third party in the following
+                        circumstances:
+                    </p>
+
+                    <ul>
+                        <li>
+                            When advertising service providers, including
+                            Google, process device and advertising-related
+                            information to provide advertising services
+                        </li>
+
+                        <li>
+                            When the user directly shares or saves a PDF or
+                            backup file through an external application or
+                            service
+                        </li>
+
+                        <li>
+                            When necessary to comply with applicable law,
+                            a court order or a lawful government request
+                        </li>
+
+                        <li>
+                            When legally permitted and reasonably necessary
+                            to protect the rights and safety of users, the
+                            Developer or a third party
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>11. Data Retention and Deletion</h2>
+
+                    <h3>11.1 Locally Stored Data</h3>
+
+                    <p>
+                        Shift schedules, work logs and App settings may remain
+                        on the user's device until the user deletes individual
+                        records, uses the App's data-reset function, clears
+                        the App's data through operating-system settings or
+                        uninstalls the App.
+                    </p>
+
+                    <p>
+                        Locally stored App data may not be recoverable after
+                        the App is uninstalled or its data is cleared.
+                    </p>
+
+                    <h3>11.2 Backup and Shared Files</h3>
+
+                    <p>
+                        JSON backup files and PDF documents separately created
+                        by the user may remain in the selected storage location
+                        even after the App is uninstalled. The user must delete
+                        such files directly through a file manager or storage
+                        service.
+                    </p>
+
+                    <h3>11.3 Advertising Service Data</h3>
+
+                    <p>
+                        The retention and deletion periods for information
+                        processed by advertising service providers are
+                        determined by those providers' policies and the
+                        user's advertising settings.
+                    </p>
+
+                    <h3>11.4 Account Deletion</h3>
+
+                    <p>
+                        The App does not offer registration or creation of a
+                        Developer-operated account. Therefore, there is no
+                        separate account-deletion procedure.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>12. Data Security</h2>
+
+                    <p>
+                        The Developer seeks to apply reasonable technical and
+                        administrative safeguards to protect information
+                        processed through the App.
+                    </p>
+
+                    <p>
+                        However, no electronic storage or data-transmission
+                        method can guarantee absolute security. Information
+                        may be lost or disclosed in circumstances including:
+                    </p>
+
+                    <ul>
+                        <li>Loss, theft or unauthorized access to a device</li>
+                        <li>
+                            Malware, device rooting or a modified operating
+                            system
+                        </li>
+                        <li>An insecure external storage location</li>
+                        <li>
+                            Sharing a backup or PDF file with another person
+                        </li>
+                        <li>
+                            An operating-system, device or external-service
+                            failure
+                        </li>
+                    </ul>
+
+                    <p>
+                        Users should take appropriate precautions, including
+                        using a device lock, installing operating-system
+                        updates and protecting backup files.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>13. User Choices and Rights</h2>
+
+                    <p>
+                        Users may manage their information and App features
+                        by:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Editing or deleting individual schedules and
+                            work logs in the App
+                        </li>
+
+                        <li>Using the App's data-reset function</li>
+
+                        <li>
+                            Clearing App data through device settings
+                        </li>
+
+                        <li>Uninstalling the App</li>
+
+                        <li>
+                            Modifying notification permission through device
+                            settings
+                        </li>
+
+                        <li>
+                            Modifying advertising consent or device
+                            advertising settings
+                        </li>
+
+                        <li>
+                            Directly deleting generated JSON and PDF files
+                        </li>
+                    </ul>
+
+                    <p>
+                        Rights relating to information held by an advertising
+                        provider may need to be exercised through that
+                        provider's privacy tools and procedures.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>14. Children's Privacy</h2>
+
+                    <p>
+                        The App is intended for general work-schedule and
+                        work-record management and is not designed primarily
+                        for children.
+                    </p>
+
+                    <p>
+                        The Developer does not intentionally collect children's
+                        personal information directly through the App. If a
+                        parent or guardian discovers that a child has entered
+                        personal information into the App, the relevant data
+                        should be deleted from the device.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>15. User Content and Legal Responsibility</h2>
+
+                    <p>
+                        Users are responsible for schedules, notes, work logs
+                        and other content that they enter into the App or
+                        create as PDF or backup files.
+                    </p>
+
+                    <p>
+                        Users must not enter, store or share content that:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Violates another person's privacy or confidential
+                            information
+                        </li>
+
+                        <li>
+                            Infringes copyright, trademark or other
+                            intellectual-property rights
+                        </li>
+
+                        <li>
+                            Is defamatory, threatening, discriminatory or
+                            related to unlawful conduct
+                        </li>
+
+                        <li>
+                            Violates applicable law or a third party's rights
+                        </li>
+                    </ul>
+
+                    <p>
+                        The Developer does not control the legality, accuracy
+                        or consequences of content created or shared directly
+                        by users.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>16. Copyright and Intellectual Property</h2>
+
+                    <p>
+                        Copyright and other intellectual-property rights in
+                        the App's software, design, interface, logo, text and
+                        content created by the Developer belong to the
+                        Developer or the applicable rights holder.
+                    </p>
+
+                    <p>
+                        Except as permitted by applicable law, users may not
+                        reproduce, modify, distribute, resell, reverse
+                        engineer or commercially exploit all or any part of
+                        the App without prior authorization from the
+                        Developer.
+                    </p>
+
+                    <p>
+                        Android, Google Play, Google AdMob and other Google
+                        names and marks are the property of Google LLC or
+                        their respective rights holders. Unless expressly
+                        stated otherwise, the App is not an official Google
+                        application and is not produced, sponsored or
+                        endorsed by Google.
+                    </p>
+
+                    <p>
+                        Open-source software and third-party libraries used
+                        by the App remain subject to their respective
+                        licenses and copyright notices.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>17. Disclaimer and Limitation of Liability</h2>
+
+                    <p>
+                        The App is a convenience tool intended to assist users
+                        in managing work schedules and work records.
+                        Schedules, statistics, notifications, widgets and
+                        PDF documents provided by the App do not replace
+                        official attendance records, payroll records,
+                        employment-contract evidence or legally recognized
+                        workplace documentation.
+                    </p>
+
+                    <p>
+                        Users should independently verify important schedules,
+                        leave, payroll, attendance records and work
+                        instructions against official information provided by
+                        their employer or organization.
+                    </p>
+
+                    <p>
+                        To the extent permitted by applicable law, the App is
+                        provided on an “as is” and “as available” basis. The
+                        Developer does not guarantee uninterrupted operation,
+                        complete accuracy or fitness for a particular purpose,
+                        including in relation to:
+                    </p>
+
+                    <ul>
+                        <li>Delayed or missing notifications</li>
+                        <li>Delayed widget updates</li>
+                        <li>
+                            Device changes, operating-system updates or App
+                            errors
+                        </li>
+                        <li>
+                            Data loss, backup failure or restoration errors
+                        </li>
+                        <li>
+                            PDF generation or external sharing errors
+                        </li>
+                        <li>
+                            The content or operation of advertisements and
+                            external services
+                        </li>
+                    </ul>
+
+                    <p>
+                        Except where caused by the Developer's intentional
+                        misconduct or gross negligence, or where liability
+                        cannot legally be limited, the Developer will not be
+                        liable, to the extent permitted by applicable law,
+                        for indirect, incidental, special or consequential
+                        losses resulting from use of or inability to use the
+                        App.
+                    </p>
+
+                    <p>
+                        Nothing in this section limits consumer rights that
+                        cannot be limited or excluded under applicable law.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>18. External Services and Links</h2>
+
+                    <p>
+                        The App or advertisements may include links to
+                        websites, applications or services operated by third
+                        parties.
+                    </p>
+
+                    <p>
+                        Third-party services are not controlled by the
+                        Developer. Their content, security, availability,
+                        products, advertisements and processing of personal
+                        information are governed by their own terms and
+                        privacy policies.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>19. International Data Processing</h2>
+
+                    <p>
+                        Third-party advertising providers, including Google,
+                        may operate servers and services in multiple
+                        countries. Advertising-related information may
+                        therefore be processed outside the user's country of
+                        residence.
+                    </p>
+
+                    <p>
+                        International transfers and related safeguards are
+                        governed by the privacy policy of the applicable
+                        service provider and applicable law.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>20. Changes to This Privacy Policy</h2>
+
+                    <p>
+                        This Privacy Policy may be revised when App features,
+                        third-party services, applicable laws or Google Play
+                        policies change.
+                    </p>
+
+                    <p>
+                        Material changes may be communicated through an App
+                        update, an in-App notice, the Google Play listing or
+                        this page.
+                    </p>
+
+                    <p>
+                        A revised Privacy Policy takes effect on the effective
+                        date posted on this page. Users are encouraged to
+                        review this page periodically.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>21. Governing Law</h2>
+
+                    <p>
+                        This Privacy Policy and matters concerning use of the
+                        App may be interpreted under the laws of the Republic
+                        of Korea, except where doing so would conflict with
+                        mandatory laws applicable to a user.
+                    </p>
+
+                    <p>
+                        Where mandatory privacy or consumer-protection laws
+                        apply in a particular jurisdiction, those laws may
+                        take precedence.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>22. Contact</h2>
+
+                    <p>
+                        For questions about privacy, deletion of locally
+                        stored App data, App features or this Privacy Policy,
+                        open the App's listing on Google Play and use the
+                        current contact method shown in the
+                        <strong>Developer contact</strong> section.
+                    </p>
+
+                    <p>
+                        Developer:
+                        <strong>JCraft Studio</strong>
+                    </p>
+
+                    <p>
+                        App:
+                        <strong>Shift Calendar &amp; Work Log</strong>
+                    </p>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <p>
+                    <span class="developer-name">JCraft Studio</span>
+                    · Shift Calendar &amp; Work Log
+                </p>
+
+                <p>
+                    © 2026 JCraft Studio. All rights reserved.
+                </p>
+            </footer>
+        </article>
+    </main>
+
+    <script>
+        "use strict";
+
+        function changeLanguage(language) {
+            const koreanPolicy =
+                document.getElementById("korean-policy");
+            const englishPolicy =
+                document.getElementById("english-policy");
+
+            const koreanButton =
+                document.getElementById("korean-button");
+            const englishButton =
+                document.getElementById("english-button");
+
+            const pageTitle =
+                document.getElementById("page-title");
+            const effectiveDate =
+                document.getElementById("effective-date");
+
+            const isEnglish = language === "en";
+
+            koreanPolicy.classList.toggle("active", !isEnglish);
+            englishPolicy.classList.toggle("active", isEnglish);
+
+            koreanButton.classList.toggle("active", !isEnglish);
+            englishButton.classList.toggle("active", isEnglish);
+
+            koreanButton.setAttribute(
+                "aria-pressed",
+                String(!isEnglish)
+            );
+
+            englishButton.setAttribute(
+                "aria-pressed",
+                String(isEnglish)
+            );
+
+            document.documentElement.lang =
+                isEnglish ? "en" : "ko";
+
+            document.title = isEnglish
+                ? "Privacy Policy | Shift Calendar & Work Log"
+                : "개인정보처리방침 | Shift Calendar & Work Log";
+
+            pageTitle.textContent =
+                isEnglish
+                    ? "Privacy Policy"
+                    : "개인정보처리방침";
+
+            effectiveDate.textContent =
+                isEnglish
+                    ? "Effective date: July 31, 2026"
+                    : "시행일: 2026년 7월 31일";
+
+            try {
+                window.localStorage.setItem(
+                    "privacy-policy-language",
+                    language
+                );
+            } catch (error) {
+                console.warn(
+                    "Unable to save language preference.",
+                    error
+                );
+            }
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        function initializeLanguage() {
+            let savedLanguage = null;
+
+            try {
+                savedLanguage =
+                    window.localStorage.getItem(
+                        "privacy-policy-language"
+                    );
+            } catch (error) {
+                console.warn(
+                    "Unable to read language preference.",
+                    error
+                );
+            }
+
+            if (savedLanguage === "ko" || savedLanguage === "en") {
+                changeLanguage(savedLanguage);
+                return;
+            }
+
+            const browserLanguage =
+                navigator.language ||
+                navigator.userLanguage ||
+                "ko";
+
+            if (
+                typeof browserLanguage === "string" &&
+                browserLanguage.toLowerCase().startsWith("en")
+            ) {
+                changeLanguage("en");
+            } else {
+                changeLanguage("ko");
+            }
+        }
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            initializeLanguage
+        );
+    </script>
+</body>
+</html>
