@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Morse Code Translator 개인정보처리방침 및 Privacy Policy"
+  />
+  <meta name="robots" content="index, follow" />
+  <title>Morse Code Translator - 개인정보처리방침 | Privacy Policy</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f5ef;
+      --surface: #ffffff;
+      --surface-soft: #f0f2e8;
+      --text: #1d241e;
+      --muted: #59635b;
+      --primary: #334b36;
+      --primary-text: #ffffff;
+      --border: #cbd2c8;
+      --notice: #fff8db;
+      --notice-border: #d3b85a;
+      --shadow: 0 12px 30px rgba(28, 38, 30, 0.08);
+      --radius: 14px;
+      --max-width: 900px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #121713;
+        --surface: #1c241e;
+        --surface-soft: #253028;
+        --text: #eff4ef;
+        --muted: #b7c2b9;
+        --primary: #b6cc9b;
+        --primary-text: #142016;
+        --border: #3d4a40;
+        --notice: #342f1d;
+        --notice-border: #8d7a38;
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans KR",
+        "Apple SD Gothic Neo",
+        Arial,
+        sans-serif;
+      line-height: 1.75;
+      word-break: keep-all;
+    }
+
+    a {
+      color: var(--primary);
+      text-underline-offset: 3px;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .page {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 0 auto;
+      padding: 28px 0 60px;
+    }
+
+    .header {
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .header-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .app-label {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 5vw, 2.65rem);
+      line-height: 1.25;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .language-switcher {
+      display: flex;
+      flex: 0 0 auto;
+      gap: 8px;
+      padding: 5px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface-soft);
+    }
+
+    .language-button {
+      min-width: 66px;
+      padding: 8px 12px;
+      border: 0;
+      border-radius: 7px;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .language-button[aria-pressed="true"] {
+      background: var(--primary);
+      color: var(--primary-text);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .notice {
+      margin: 18px 0;
+      padding: 16px 18px;
+      border: 1px solid var(--notice-border);
+      border-radius: 12px;
+      background: var(--notice);
+    }
+
+    .notice strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .toc,
+    .section {
+      margin-top: 18px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .toc h2,
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    .section h3 {
+      margin: 22px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .section p {
+      margin: 8px 0;
+    }
+
+    .section ul {
+      margin: 10px 0;
+      padding-left: 22px;
+    }
+
+    .section li + li {
+      margin-top: 7px;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 22px;
+      columns: 2;
+      column-gap: 36px;
+    }
+
+    .toc li {
+      margin: 6px 0;
+      break-inside: avoid;
+    }
+
+    .data-table {
+      width: 100%;
+      margin-top: 14px;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 12px;
+      border: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      background: var(--surface-soft);
+    }
+
+    .footer {
+      margin-top: 24px;
+      padding: 20px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .language-panel[hidden] {
+      display: none !important;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(calc(100% - 20px), var(--max-width));
+        padding-top: 10px;
+      }
+
+      .header {
+        padding: 20px;
+      }
+
+      .header-top {
+        flex-direction: column;
+      }
+
+      .language-switcher {
+        width: 100%;
+      }
+
+      .language-button {
+        flex: 1;
+      }
+
+      .toc ol {
+        columns: 1;
+      }
+
+      .section {
+        padding: 18px;
+      }
+
+      .data-table {
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+      }
+    }
+
+    @media print {
+      .language-switcher,
+      .back-to-top {
+        display: none;
+      }
+
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      .header,
+      .toc,
+      .section {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main id="top" class="page">
+    <header class="header">
+      <div class="header-top">
+        <div>
+          <span class="app-label">Morse Code Translator</span>
+
+          <div class="language-panel" data-language="ko">
+            <h1>개인정보처리방침</h1>
+            <p class="subtitle">
+              Morse Code Translator의 개인정보 및 기기 데이터 처리 방침입니다.
+            </p>
+          </div>
+
+          <div class="language-panel" data-language="en" hidden>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">
+              This policy explains how Morse Code Translator handles user and
+              device data.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="language-switcher"
+          role="group"
+          aria-label="Language selector"
+        >
+          <button
+            id="ko-button"
+            class="language-button"
+            type="button"
+            data-set-language="ko"
+            aria-pressed="true"
+          >
+            한국어
+          </button>
+          <button
+            id="en-button"
+            class="language-button"
+            type="button"
+            data-set-language="en"
+            aria-pressed="false"
+          >
+            English
+          </button>
+        </div>
+      </div>
+
+      <div class="meta">
+        <span>
+          <strong class="language-panel" data-language="ko">시행일:</strong>
+          <strong class="language-panel" data-language="en" hidden>
+            Effective date:
+          </strong>
+          2026-08-05
+        </span>
+
+        <span>
+          <strong class="language-panel" data-language="ko">대상 앱:</strong>
+          <strong class="language-panel" data-language="en" hidden>
+            Application:
+          </strong>
+          Morse Code Translator
+        </span>
+      </div>
+    </header>
+
+    <!-- Korean Policy -->
+    <article class="language-panel" data-language="ko">
+      <div class="notice">
+        <strong>중요 안내</strong>
+        본 방침은 현재 앱 기능을 기준으로 작성되었습니다. 향후 광고 SDK,
+        분석 도구, 서버 기능, 로그인 기능 또는 수집 데이터가 변경되는 경우
+        실제 처리 방식에 맞게 본 방침과 Google Play 데이터 보안 양식을 함께
+        수정합니다.
+      </div>
+
+      <nav class="toc" aria-label="목차">
+        <h2>목차</h2>
+        <ol>
+          <li><a href="#ko-1">총칙</a></li>
+          <li><a href="#ko-2">앱이 직접 처리하는 정보</a></li>
+          <li><a href="#ko-3">광고 서비스가 처리할 수 있는 정보</a></li>
+          <li><a href="#ko-4">권한 및 기기 기능</a></li>
+          <li><a href="#ko-5">이용 목적</a></li>
+          <li><a href="#ko-6">제3자 제공 및 처리</a></li>
+          <li><a href="#ko-7">보관 및 삭제</a></li>
+          <li><a href="#ko-8">보안</a></li>
+          <li><a href="#ko-9">아동의 개인정보</a></li>
+          <li><a href="#ko-10">국제적 데이터 처리</a></li>
+          <li><a href="#ko-11">이용자의 선택권</a></li>
+          <li><a href="#ko-12">외부 링크 및 제3자 서비스</a></li>
+          <li><a href="#ko-13">책임 제한</a></li>
+          <li><a href="#ko-14">지식재산권</a></li>
+          <li><a href="#ko-15">방침 변경</a></li>
+          <li><a href="#ko-16">개발자 및 문의</a></li>
+        </ol>
+      </nav>
+
+      <section id="ko-1" class="section">
+        <h2>1. 총칙</h2>
+        <p>
+          본 개인정보처리방침은 <strong>Morse Code Translator</strong>
+          (이하 “앱”)가 이용자의 정보와 기기 데이터를 어떻게 접근, 이용,
+          저장 및 공유하는지 설명합니다.
+        </p>
+        <p>
+          앱은 영문 텍스트와 국제 모스부호의 변환, 모스부호 도감, 소리·진동·
+          플래시 신호 재생, 변환 기록, 설정 저장 및 JSON 백업·복원 기능을
+          제공합니다.
+        </p>
+        <p>
+          앱은 회원가입 또는 자체 사용자 계정을 제공하지 않으며, 개발자가
+          운영하는 별도 서버에 변환 내용이나 기록을 업로드하도록 설계되지
+          않았습니다.
+        </p>
+      </section>
+
+      <section id="ko-2" class="section">
+        <h2>2. 앱이 직접 처리하는 정보</h2>
+
+        <h3>2.1 사용자가 입력한 텍스트 및 모스부호</h3>
+        <p>
+          변환을 위해 입력한 텍스트와 모스부호는 기기 안에서 처리됩니다.
+          앱은 해당 내용을 개발자 서버로 전송하지 않습니다.
+        </p>
+
+        <h3>2.2 변환 기록 및 설정</h3>
+        <p>
+          이용자가 생성한 변환 기록과 다음 설정은 앱 기능 제공을 위해 기기
+          내부 저장공간에 저장될 수 있습니다.
+        </p>
+        <ul>
+          <li>선택한 화면 언어</li>
+          <li>라이트 모드 또는 다크 모드 설정</li>
+          <li>소리, 진동 및 플래시 사용 설정</li>
+          <li>신호 재생 속도</li>
+          <li>최근 변환 기록</li>
+          <li>광고 표시 주기 계산을 위한 성공한 변환 횟수</li>
+        </ul>
+
+        <h3>2.3 JSON 백업 파일</h3>
+        <p>
+          백업 기능을 사용하면 기록과 설정이 포함된 JSON 파일이 기기에
+          생성되고, 이용자가 선택한 공유 또는 저장 수단으로 전달될 수
+          있습니다. 앱은 이용자가 직접 내보내기를 실행하지 않는 한 백업
+          파일을 생성하지 않습니다.
+        </p>
+        <p>
+          백업 파일을 제3자 앱, 클라우드 저장소 또는 다른 사람에게 공유한
+          이후의 보관과 처리는 해당 서비스 또는 수신자의 방침에 따릅니다.
+        </p>
+      </section>
+
+      <section id="ko-3" class="section">
+        <h2>3. 광고 서비스가 처리할 수 있는 정보</h2>
+        <p>
+          앱은 광고 제공을 위해 Google Mobile Ads SDK(AdMob)를 사용할 수
+          있습니다. 광고 SDK는 광고 제공, 광고 성과 측정, 분석, 보안 및
+          부정행위 방지를 위해 다음과 같은 정보를 자동으로 수집하거나
+          처리할 수 있습니다.
+        </p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>정보 유형</th>
+              <th>예시</th>
+              <th>주요 목적</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>기기 또는 기타 식별자</td>
+              <td>광고 ID, 앱 세트 ID 및 관련 식별자</td>
+              <td>광고 제공, 측정, 보안 및 부정행위 방지</td>
+            </tr>
+            <tr>
+              <td>네트워크 정보</td>
+              <td>IP 주소</td>
+              <td>대략적인 지역 판단, 광고 제공 및 보안</td>
+            </tr>
+            <tr>
+              <td>앱 상호작용</td>
+              <td>광고 노출, 클릭 및 앱과의 상호작용 정보</td>
+              <td>광고 성과 측정 및 분석</td>
+            </tr>
+            <tr>
+              <td>진단 정보</td>
+              <td>충돌 정보, 성능 및 SDK 진단 데이터</td>
+              <td>안정성 개선 및 문제 해결</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          실제 수집 범위는 이용자의 지역, 기기 설정, 광고 동의 상태, Google
+          서비스 설정 및 사용 중인 SDK 버전에 따라 달라질 수 있습니다.
+        </p>
+        <p>
+          관련된 Google의 데이터 처리에 관한 자세한 사항은 Google의
+          개인정보처리방침과 Google 광고 관련 안내를 확인하시기 바랍니다.
+        </p>
+      </section>
+
+      <section id="ko-4" class="section">
+        <h2>4. 권한 및 기기 기능</h2>
+
+        <h3>4.1 인터넷</h3>
+        <p>
+          인터넷 연결은 광고 콘텐츠 로드와 광고 서비스 통신을 위해 사용될
+          수 있습니다.
+        </p>
+
+        <h3>4.2 카메라 및 플래시</h3>
+        <p>
+          카메라 또는 플래시 관련 권한과 API는 모스부호를 기기 플래시로
+          재생하기 위해서만 사용됩니다. 앱은 사진이나 동영상을 촬영, 저장
+          또는 개발자 서버로 전송하지 않습니다.
+        </p>
+
+        <h3>4.3 진동</h3>
+        <p>
+          진동 기능은 모스부호 신호를 기기 진동으로 재생하기 위해 사용됩니다.
+        </p>
+
+        <h3>4.4 파일 선택 및 공유</h3>
+        <p>
+          시스템 파일 선택기와 공유 기능은 이용자가 JSON 백업 파일을 직접
+          내보내거나 복원할 때 사용됩니다. 앱은 이용자가 선택하지 않은 다른
+          파일을 임의로 탐색하거나 업로드하지 않습니다.
+        </p>
+      </section>
+
+      <section id="ko-5" class="section">
+        <h2>5. 정보 이용 목적</h2>
+        <p>앱과 관련 SDK는 정보를 다음 목적으로만 이용합니다.</p>
+        <ul>
+          <li>텍스트와 모스부호 변환 기능 제공</li>
+          <li>변환 기록 및 이용자 설정 유지</li>
+          <li>소리, 진동 및 플래시 신호 재생</li>
+          <li>백업 파일 생성, 공유 및 복원</li>
+          <li>광고 제공 및 광고 성과 측정</li>
+          <li>앱 안정성, 보안 및 부정행위 방지</li>
+          <li>법적 의무 및 관련 정책 준수</li>
+        </ul>
+        <p>
+          앱은 이용자가 입력한 변환 내용을 판매하지 않으며, 개발자 자체의
+          광고 프로필 구축을 위해 사용하지 않습니다.
+        </p>
+      </section>
+
+      <section id="ko-6" class="section">
+        <h2>6. 제3자 제공 및 처리</h2>
+        <p>
+          개발자는 앱에 광고 기능을 제공하기 위해 Google 및 Google의 광고
+          관련 서비스 제공업체가 정보를 처리하도록 할 수 있습니다.
+        </p>
+        <p>
+          또한 이용자가 백업 또는 변환 결과를 공유하는 경우, 선택한 메신저,
+          이메일, 클라우드 저장소 또는 기타 공유 대상이 해당 정보를 처리할
+          수 있습니다.
+        </p>
+        <p>
+          개발자는 법령, 법적 절차 또는 유효한 정부 요청에 따라 공개가
+          요구되는 경우를 제외하고, 앱이 직접 저장한 변환 기록을 임의로
+          제3자에게 판매하거나 제공하지 않습니다.
+        </p>
+      </section>
+
+      <section id="ko-7" class="section">
+        <h2>7. 보관 및 삭제</h2>
+
+        <h3>7.1 기기 내부 데이터</h3>
+        <p>
+          변환 기록과 설정은 이용자가 삭제하거나 앱을 제거할 때까지 기기
+          내부에 저장될 수 있습니다.
+        </p>
+
+        <h3>7.2 기록 삭제</h3>
+        <p>
+          이용자는 앱의 기록 화면에서 개별 기록 또는 전체 기록을 삭제할 수
+          있습니다.
+        </p>
+
+        <h3>7.3 앱 데이터 초기화 및 앱 삭제</h3>
+        <p>
+          운영체제의 앱 설정에서 앱 데이터를 삭제하거나 앱을 제거하면 기기
+          내부에 저장된 앱 데이터가 삭제될 수 있습니다. 이용자가 외부로
+          내보낸 백업 파일은 별도로 삭제해야 합니다.
+        </p>
+
+        <h3>7.4 광고 관련 정보</h3>
+        <p>
+          Google 또는 광고 관련 서비스 제공업체가 처리하는 정보의 보관과
+          삭제는 각 서비스 제공업체의 정책과 이용자 설정에 따릅니다.
+        </p>
+      </section>
+
+      <section id="ko-8" class="section">
+        <h2>8. 보안</h2>
+        <p>
+          개발자는 불필요한 데이터 접근을 제한하고, 앱 기능에 필요한 최소한의
+          권한만 사용하도록 노력합니다.
+        </p>
+        <p>
+          앱이 직접 관리하는 변환 기록과 설정은 기본적으로 기기 내부에
+          저장됩니다. 광고 SDK와의 네트워크 통신 보안은 해당 SDK와 서비스
+          제공업체의 기술적 보호조치에 따릅니다.
+        </p>
+        <p>
+          다만 어떠한 전자적 저장 또는 전송 방식도 절대적인 보안을 보장할 수
+          없으며, 개발자는 법이 허용하는 범위에서 합리적인 보호조치를
+          적용합니다.
+        </p>
+      </section>
+
+      <section id="ko-9" class="section">
+        <h2>9. 아동의 개인정보</h2>
+        <p>
+          앱은 아동을 주된 대상으로 설계된 서비스가 아니며, 이용자의 이름,
+          이메일 주소, 전화번호 또는 생년월일을 직접 입력받는 계정 기능을
+          제공하지 않습니다.
+        </p>
+        <p>
+          보호자는 아동이 기기를 사용할 때 광고 및 개인정보 설정을 검토하고
+          필요한 감독을 제공해야 합니다. 개발자가 법적으로 보호되는 아동의
+          개인정보가 의도치 않게 수집되었다는 사실을 알게 되는 경우, 관련
+          법령과 기술적으로 가능한 범위에서 적절한 조치를 취합니다.
+        </p>
+      </section>
+
+      <section id="ko-10" class="section">
+        <h2>10. 국제적 데이터 처리</h2>
+        <p>
+          Google과 같은 제3자 서비스 제공업체는 이용자의 거주 국가 외 지역에
+          위치한 서버나 시설에서 정보를 처리할 수 있습니다. 이 경우 해당
+          서비스 제공업체의 개인정보 보호조치와 관련 법령이 적용됩니다.
+        </p>
+      </section>
+
+      <section id="ko-11" class="section">
+        <h2>11. 이용자의 선택권</h2>
+        <ul>
+          <li>앱 설정에서 소리, 진동 및 플래시 기능을 끌 수 있습니다.</li>
+          <li>기기 설정에서 카메라 관련 권한을 관리할 수 있습니다.</li>
+          <li>기기 설정에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</li>
+          <li>Google 설정을 통해 광고 개인 최적화 관련 선택을 관리할 수 있습니다.</li>
+          <li>앱 안에서 변환 기록을 삭제할 수 있습니다.</li>
+          <li>앱 데이터 삭제 또는 앱 제거를 통해 로컬 데이터를 삭제할 수 있습니다.</li>
+        </ul>
+        <p>
+          지역 법령에 따라 광고 동의가 필요한 경우, Google 또는 관련 동의
+          관리 도구를 통해 선택 화면이 제공될 수 있습니다.
+        </p>
+      </section>
+
+      <section id="ko-12" class="section">
+        <h2>12. 외부 링크 및 제3자 서비스</h2>
+        <p>
+          앱 또는 본 페이지는 Google Play, Google 개인정보처리방침 등 외부
+          서비스로 연결되는 정보를 포함할 수 있습니다. 외부 서비스의 내용과
+          개인정보 처리에 대해서는 해당 운영자가 책임집니다.
+        </p>
+      </section>
+
+      <section id="ko-13" class="section">
+        <h2>13. 책임 제한</h2>
+        <p>
+          앱은 모스부호 학습, 변환 및 일반적인 신호 재생을 위한 도구입니다.
+          앱은 긴급 통신, 구조 요청, 위치 확인, 항해, 의료 또는 안전 서비스를
+          제공하거나 보장하지 않습니다.
+        </p>
+        <p>
+          플래시, 진동 및 소리의 작동 여부는 기기 하드웨어, 운영체제 설정,
+          배터리 상태, 권한 상태 및 제조사 제한에 따라 달라질 수 있습니다.
+        </p>
+      </section>
+
+      <section id="ko-14" class="section">
+        <h2>14. 지식재산권</h2>
+        <p>
+          앱의 고유한 소프트웨어 코드, 화면 구성, 그래픽, 문구 및 관련
+          콘텐츠에 대한 권리는 개발자 또는 정당한 권리자에게 귀속됩니다.
+        </p>
+        <p>
+          “Morse Code” 및 국제 모스부호 체계에 관한 일반적·사실적 설명은
+          특정 제3자와의 제휴, 승인 또는 보증을 의미하지 않습니다. 앱은
+          특정 정부기관, 구조기관, 통신기관, 게임사 또는 기기 제조사의 공식
+          앱이 아닙니다.
+        </p>
+        <p>
+          제3자 서비스명과 상표는 식별과 설명을 위해 필요한 범위에서만
+          사용되며, 각 권리자에게 귀속됩니다.
+        </p>
+      </section>
+
+      <section id="ko-15" class="section">
+        <h2>15. 개인정보처리방침의 변경</h2>
+        <p>
+          앱 기능, 사용 SDK, 법령 또는 Google Play 정책이 변경되는 경우 본
+          방침을 수정할 수 있습니다. 중요한 변경사항이 있는 경우 시행일을
+          갱신하고, 필요한 경우 앱 또는 스토어 등록정보를 통해 안내합니다.
+        </p>
+      </section>
+
+      <section id="ko-16" class="section">
+        <h2>16. 개발자 정보 및 문의</h2>
+        <p>
+          앱 운영자, 개발자 이름, 연락처 및 지원 이메일은
+          <strong>Morse Code Translator의 Google Play 스토어 등록정보에
+          표시된 개발자 정보를 참고해 주세요.</strong>
+        </p>
+        <p>
+          개인정보 관련 문의는 Google Play 등록정보에 게시된 개발자 연락처를
+          이용해 제출할 수 있습니다. 문의 시 앱 이름과 문의 내용을 함께
+          기재해 주세요.
+        </p>
+        <a class="back-to-top" href="#top">맨 위로 이동</a>
+      </section>
+    </article>
+
+    <!-- English Policy -->
+    <article class="language-panel" data-language="en" hidden>
+      <div class="notice">
+        <strong>Important notice</strong>
+        This policy reflects the app's current functionality. If the app later
+        adds or changes advertising SDKs, analytics, server features, account
+        features, or data practices, this policy and the Google Play Data
+        safety declarations will be updated to match the actual practices.
+      </div>
+
+      <nav class="toc" aria-label="Table of contents">
+        <h2>Table of contents</h2>
+        <ol>
+          <li><a href="#en-1">Overview</a></li>
+          <li><a href="#en-2">Data handled directly by the app</a></li>
+          <li><a href="#en-3">Data handled by advertising services</a></li>
+          <li><a href="#en-4">Permissions and device features</a></li>
+          <li><a href="#en-5">Purposes of processing</a></li>
+          <li><a href="#en-6">Third-party processing and disclosure</a></li>
+          <li><a href="#en-7">Retention and deletion</a></li>
+          <li><a href="#en-8">Security</a></li>
+          <li><a href="#en-9">Children's privacy</a></li>
+          <li><a href="#en-10">International processing</a></li>
+          <li><a href="#en-11">Your choices</a></li>
+          <li><a href="#en-12">External links and services</a></li>
+          <li><a href="#en-13">Limitations</a></li>
+          <li><a href="#en-14">Intellectual property</a></li>
+          <li><a href="#en-15">Changes to this policy</a></li>
+          <li><a href="#en-16">Developer information and contact</a></li>
+        </ol>
+      </nav>
+
+      <section id="en-1" class="section">
+        <h2>1. Overview</h2>
+        <p>
+          This Privacy Policy explains how <strong>Morse Code Translator</strong>
+          (the “App”) accesses, uses, stores, and shares user and device data.
+        </p>
+        <p>
+          The App provides English text and International Morse code conversion,
+          a Morse reference guide, sound, vibration and flash signal playback,
+          conversion history, settings storage, and JSON backup and restore.
+        </p>
+        <p>
+          The App does not provide account registration or a developer-operated
+          user account. It is not designed to upload conversion content or
+          history to a server operated by the developer.
+        </p>
+      </section>
+
+      <section id="en-2" class="section">
+        <h2>2. Data handled directly by the App</h2>
+
+        <h3>2.1 Text and Morse code entered by the user</h3>
+        <p>
+          Text and Morse code entered for conversion are processed on the
+          device. The App does not send this content to a developer-operated
+          server.
+        </p>
+
+        <h3>2.2 Conversion history and settings</h3>
+        <p>
+          The following information may be stored locally on the device to
+          provide App functionality:
+        </p>
+        <ul>
+          <li>Selected interface language</li>
+          <li>Light or dark display theme</li>
+          <li>Sound, vibration, and flash settings</li>
+          <li>Signal playback speed</li>
+          <li>Recent conversion history</li>
+          <li>
+            Successful conversion count used to determine the advertising
+            display interval
+          </li>
+        </ul>
+
+        <h3>2.3 JSON backup files</h3>
+        <p>
+          When the backup feature is used, the App creates a JSON file
+          containing history and settings and sends it to the storage or sharing
+          destination selected by the user. The App does not create a backup
+          file unless the user initiates an export.
+        </p>
+        <p>
+          After a backup file is shared with a third-party app, cloud storage
+          service, or another person, the recipient's or service provider's
+          privacy practices apply.
+        </p>
+      </section>
+
+      <section id="en-3" class="section">
+        <h2>3. Data that may be handled by advertising services</h2>
+        <p>
+          The App may use the Google Mobile Ads SDK (AdMob) to provide
+          advertising. The advertising SDK may automatically collect or process
+          the following information for ad delivery, measurement, analytics,
+          security, and fraud prevention:
+        </p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Data category</th>
+              <th>Examples</th>
+              <th>Primary purposes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Device or other identifiers</td>
+              <td>Advertising ID, app set ID, and related identifiers</td>
+              <td>Ad delivery, measurement, security, and fraud prevention</td>
+            </tr>
+            <tr>
+              <td>Network information</td>
+              <td>IP address</td>
+              <td>Approximate location, ad delivery, and security</td>
+            </tr>
+            <tr>
+              <td>App interactions</td>
+              <td>Ad impressions, clicks, and app interaction information</td>
+              <td>Advertising measurement and analytics</td>
+            </tr>
+            <tr>
+              <td>Diagnostics</td>
+              <td>Crash, performance, and SDK diagnostic information</td>
+              <td>Stability, security, and troubleshooting</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          The actual data handled may vary depending on the user's location,
+          device settings, consent status, Google service settings, and the SDK
+          version in use.
+        </p>
+        <p>
+          For more information about Google's processing, please review the
+          Google Privacy Policy and Google's advertising privacy information.
+        </p>
+      </section>
+
+      <section id="en-4" class="section">
+        <h2>4. Permissions and device features</h2>
+
+        <h3>4.1 Internet access</h3>
+        <p>
+          Internet access may be used to load advertising content and
+          communicate with advertising services.
+        </p>
+
+        <h3>4.2 Camera and flash</h3>
+        <p>
+          Camera or flash-related permissions and APIs are used only to play
+          Morse signals through the device flash. The App does not capture,
+          store, or send photos or videos to the developer.
+        </p>
+
+        <h3>4.3 Vibration</h3>
+        <p>
+          The vibration feature is used to play Morse signals through device
+          vibration.
+        </p>
+
+        <h3>4.4 File selection and sharing</h3>
+        <p>
+          The system file picker and share sheet are used when the user exports
+          or restores a JSON backup. The App does not intentionally browse or
+          upload files that the user has not selected.
+        </p>
+      </section>
+
+      <section id="en-5" class="section">
+        <h2>5. Purposes of processing</h2>
+        <p>The App and related SDKs use information only for the following purposes:</p>
+        <ul>
+          <li>Providing text and Morse code conversion</li>
+          <li>Maintaining conversion history and user settings</li>
+          <li>Playing sound, vibration, and flash signals</li>
+          <li>Creating, sharing, and restoring backup files</li>
+          <li>Providing and measuring advertising</li>
+          <li>Maintaining App stability, security, and fraud prevention</li>
+          <li>Complying with legal obligations and applicable policies</li>
+        </ul>
+        <p>
+          The App does not sell user-entered conversion content or use it to
+          create a developer-operated advertising profile.
+        </p>
+      </section>
+
+      <section id="en-6" class="section">
+        <h2>6. Third-party processing and disclosure</h2>
+        <p>
+          Google and advertising service providers may process information to
+          provide advertising within the App.
+        </p>
+        <p>
+          If the user shares a backup or conversion result, the selected
+          messenger, email provider, cloud storage provider, or recipient may
+          process that information.
+        </p>
+        <p>
+          The developer does not intentionally sell or disclose locally stored
+          conversion history to third parties, except where disclosure is
+          required by law, legal process, or a valid governmental request.
+        </p>
+      </section>
+
+      <section id="en-7" class="section">
+        <h2>7. Retention and deletion</h2>
+
+        <h3>7.1 Local App data</h3>
+        <p>
+          Conversion history and settings may remain on the device until the
+          user deletes them, clears App data, or uninstalls the App.
+        </p>
+
+        <h3>7.2 Deleting history</h3>
+        <p>
+          Users can delete individual history items or all history within the
+          App.
+        </p>
+
+        <h3>7.3 Clearing App data or uninstalling</h3>
+        <p>
+          Clearing the App's data through the operating system or uninstalling
+          the App may delete locally stored App data. Backup files previously
+          exported by the user must be deleted separately.
+        </p>
+
+        <h3>7.4 Advertising data</h3>
+        <p>
+          Information processed by Google or advertising providers is retained
+          and deleted according to those providers' policies and user settings.
+        </p>
+      </section>
+
+      <section id="en-8" class="section">
+        <h2>8. Security</h2>
+        <p>
+          The developer seeks to limit unnecessary data access and use only the
+          permissions reasonably required for the App's functions.
+        </p>
+        <p>
+          Conversion history and settings managed directly by the App are
+          stored locally by default. Security for network communications
+          performed by advertising SDKs is governed by the SDK and service
+          provider's technical safeguards.
+        </p>
+        <p>
+          No method of electronic storage or transmission is completely secure.
+          The developer applies reasonable safeguards within the scope permitted
+          by law and the App's technical design.
+        </p>
+      </section>
+
+      <section id="en-9" class="section">
+        <h2>9. Children's privacy</h2>
+        <p>
+          The App is not specifically designed as a child-directed service. It
+          does not provide an account feature that directly asks users to submit
+          a name, email address, telephone number, or date of birth.
+        </p>
+        <p>
+          Parents and guardians should review advertising and privacy settings
+          and provide appropriate supervision when children use a device. If
+          the developer becomes aware that legally protected personal
+          information of a child has been unintentionally collected, reasonable
+          steps will be taken where required by applicable law and technically
+          feasible.
+        </p>
+      </section>
+
+      <section id="en-10" class="section">
+        <h2>10. International processing</h2>
+        <p>
+          Third-party providers such as Google may process information on
+          servers or facilities located outside the user's country. Such
+          processing is subject to the provider's privacy safeguards and
+          applicable law.
+        </p>
+      </section>
+
+      <section id="en-11" class="section">
+        <h2>11. Your choices</h2>
+        <ul>
+          <li>Sound, vibration, and flash can be disabled in the App.</li>
+          <li>Camera-related permissions can be managed in device settings.</li>
+          <li>The advertising ID can be reset or deleted in device settings.</li>
+          <li>Ad personalization choices can be managed through Google settings.</li>
+          <li>Conversion history can be deleted within the App.</li>
+          <li>Local data can be removed by clearing App data or uninstalling.</li>
+        </ul>
+        <p>
+          Where consent is legally required for advertising, Google or an
+          applicable consent management tool may present a consent choice.
+        </p>
+      </section>
+
+      <section id="en-12" class="section">
+        <h2>12. External links and third-party services</h2>
+        <p>
+          The App or this page may refer or link to external services, including
+          Google Play and Google's privacy information. Those third parties are
+          responsible for their own content and privacy practices.
+        </p>
+      </section>
+
+      <section id="en-13" class="section">
+        <h2>13. Limitations</h2>
+        <p>
+          The App is a general tool for Morse code learning, translation, and
+          signal playback. It does not provide or guarantee emergency
+          communication, rescue, location, navigation, medical, or safety
+          services.
+        </p>
+        <p>
+          Flash, vibration, and sound availability may depend on hardware,
+          operating system settings, battery state, permissions, and
+          manufacturer restrictions.
+        </p>
+      </section>
+
+      <section id="en-14" class="section">
+        <h2>14. Intellectual property</h2>
+        <p>
+          Rights in the App's original software code, interface, graphics,
+          wording, and related content belong to the developer or the applicable
+          rights holder.
+        </p>
+        <p>
+          References to “Morse Code” and factual descriptions of International
+          Morse code do not imply affiliation with, endorsement by, or approval
+          from any third party. The App is not an official application of any
+          government agency, rescue organization, communications organization,
+          game company, or device manufacturer.
+        </p>
+        <p>
+          Third-party service names and trademarks are used only as reasonably
+          necessary for identification and description and remain the property
+          of their respective owners.
+        </p>
+      </section>
+
+      <section id="en-15" class="section">
+        <h2>15. Changes to this Privacy Policy</h2>
+        <p>
+          This policy may be updated when App functionality, SDKs, laws, or
+          Google Play policies change. For material changes, the effective date
+          will be updated and notice may be provided through the App or store
+          listing where appropriate.
+        </p>
+      </section>
+
+      <section id="en-16" class="section">
+        <h2>16. Developer information and contact</h2>
+        <p>
+          For the App operator's name, developer information, support email, and
+          contact details, please refer to the developer information displayed
+          on the <strong>Google Play store listing for Morse Code Translator</strong>.
+        </p>
+        <p>
+          Privacy inquiries may be submitted using the developer contact details
+          published on the Google Play store listing. Please include the App
+          name and a description of the inquiry.
+        </p>
+        <a class="back-to-top" href="#top">Back to top</a>
+      </section>
+    </article>
+
+    <footer class="footer">
+      <p>© 2026 Morse Code Translator. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const storageKey = "morse-privacy-language";
+      const panels = Array.from(
+        document.querySelectorAll(".language-panel")
+      );
+      const buttons = Array.from(
+        document.querySelectorAll("[data-set-language]")
+      );
+
+      function supportedLanguage(value) {
+        return value === "ko" || value === "en";
+      }
+
+      function detectInitialLanguage() {
+        try {
+          const saved = window.localStorage.getItem(storageKey);
+          if (supportedLanguage(saved)) {
+            return saved;
+          }
+        } catch (_) {
+          // The page remains usable when storage is blocked.
+        }
+
+        const browserLanguage =
+          navigator.language || navigator.userLanguage || "en";
+
+        return browserLanguage.toLowerCase().startsWith("ko") ? "ko" : "en";
+      }
+
+      function setLanguage(language, savePreference) {
+        if (!supportedLanguage(language)) {
+          language = "en";
+        }
+
+        document.documentElement.lang = language;
+
+        panels.forEach((panel) => {
+          panel.hidden = panel.dataset.language !== language;
+        });
+
+        buttons.forEach((button) => {
+          const selected = button.dataset.setLanguage === language;
+          button.setAttribute("aria-pressed", String(selected));
+        });
+
+        document.title =
+          language === "ko"
+            ? "Morse Code Translator - 개인정보처리방침"
+            : "Morse Code Translator - Privacy Policy";
+
+        if (savePreference) {
+          try {
+            window.localStorage.setItem(storageKey, language);
+          } catch (_) {
+            // No action is needed if browser storage is unavailable.
+          }
+        }
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          setLanguage(button.dataset.setLanguage, true);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      });
+
+      setLanguage(detectInitialLanguage(), false);
+    })();
+  </script>
+</body>
+</html>
