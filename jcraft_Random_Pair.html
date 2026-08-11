@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <meta
+    name="description"
+    content="Privacy Policy for Pair Maker / 짝꿍 만들기 by JCraft Studio."
+  >
+
+  <title>
+    Privacy Policy | Pair Maker
+  </title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+
+      background: #f4f8f7;
+
+      color: #1f2d29;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Noto Sans KR",
+        "Noto Sans",
+        Arial,
+        sans-serif;
+
+      line-height: 1.75;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 920px;
+
+      margin: 0 auto;
+
+      padding: 40px 20px 70px;
+    }
+
+    .header {
+      margin-bottom: 24px;
+
+      padding: 30px;
+
+      background: #ffffff;
+
+      border: 1px solid #d7e4df;
+      border-radius: 24px;
+
+      box-shadow:
+        0 8px 28px rgba(15, 118, 110, 0.07);
+    }
+
+    .brand {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      margin-bottom: 14px;
+
+      padding: 7px 12px;
+
+      background: #e4f3ef;
+
+      border-radius: 999px;
+
+      color: #0f766e;
+
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+
+      font-size: 32px;
+      line-height: 1.25;
+
+      color: #15352f;
+    }
+
+    .subtitle {
+      margin: 0;
+
+      color: #5b6f69;
+
+      font-size: 15px;
+    }
+
+    .language-buttons {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-top: 22px;
+    }
+
+    .language-buttons button {
+      padding: 10px 16px;
+
+      border: 1px solid #b9d2ca;
+      border-radius: 12px;
+
+      background: #ffffff;
+
+      color: #31534a;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      cursor: pointer;
+    }
+
+    .language-buttons button:hover {
+      background: #eef7f4;
+    }
+
+    .language-buttons button.active {
+      border-color: #0f766e;
+
+      background: #0f766e;
+
+      color: #ffffff;
+    }
+
+    .content {
+      padding: 30px;
+
+      background: #ffffff;
+
+      border: 1px solid #d7e4df;
+      border-radius: 24px;
+
+      box-shadow:
+        0 8px 28px rgba(15, 118, 110, 0.05);
+    }
+
+    section {
+      margin-bottom: 34px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 13px;
+
+      padding-bottom: 9px;
+
+      border-bottom: 1px solid #e5eeeb;
+
+      color: #174d43;
+
+      font-size: 21px;
+    }
+
+    h3 {
+      margin: 20px 0 9px;
+
+      color: #264d45;
+
+      font-size: 17px;
+    }
+
+    p {
+      margin: 9px 0;
+
+      color: #3f514c;
+    }
+
+    ul {
+      margin: 10px 0 10px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 7px 0;
+
+      color: #3f514c;
+    }
+
+    .notice {
+      margin: 15px 0;
+
+      padding: 16px;
+
+      background: #edf7f4;
+
+      border-left: 4px solid #0f766e;
+      border-radius: 10px;
+
+      color: #35564d;
+    }
+
+    .small {
+      color: #71827d;
+
+      font-size: 13px;
+    }
+
+    .footer {
+      margin-top: 25px;
+
+      text-align: center;
+
+      color: #73837e;
+
+      font-size: 13px;
+    }
+
+    .lang {
+      display: none;
+    }
+
+    .lang.active {
+      display: block;
+    }
+
+    a {
+      color: #0f766e;
+
+      word-break: break-all;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 20px 14px 45px;
+      }
+
+      .header,
+      .content {
+        padding: 21px;
+
+        border-radius: 18px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <div class="header">
+
+    <div class="brand">
+      JCraft Studio
+    </div>
+
+    <h1>
+      Privacy Policy
+    </h1>
+
+    <p class="subtitle">
+      Pair Maker / 짝꿍 만들기
+    </p>
+
+    <div class="language-buttons">
+
+      <button
+        id="btn-ko"
+        class="active"
+        type="button"
+        onclick="changeLanguage('ko')"
+      >
+        한국어
+      </button>
+
+      <button
+        id="btn-en"
+        type="button"
+        onclick="changeLanguage('en')"
+      >
+        English
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div class="content">
+
+    <!-- ======================================================
+         KOREAN
+         ====================================================== -->
+
+    <div
+      id="lang-ko"
+      class="lang active"
+    >
+
+      <section>
+
+        <h2>
+          개인정보처리방침
+        </h2>
+
+        <p>
+          JCraft Studio(이하 "개발자")는
+          "짝꿍 만들기" 애플리케이션(이하 "앱")을
+          이용하는 사용자의 개인정보를 중요하게 생각합니다.
+        </p>
+
+        <p>
+          본 개인정보처리방침은 앱이 어떤 정보를 처리하고,
+          해당 정보가 어떻게 사용되는지 설명합니다.
+        </p>
+
+        <div class="notice">
+          본 앱은 회원가입이나 사용자 계정을 요구하지 않으며,
+          참가자 이름, 랜덤 그룹 결과 및 앱 설정과 같은
+          앱 기능 데이터는 원칙적으로 사용자의 기기 내부에 저장됩니다.
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          1. 앱에서 처리하는 정보
+        </h2>
+
+        <h3>
+          1.1 사용자가 입력하는 정보
+        </h3>
+
+        <p>
+          사용자는 랜덤 짝 또는 그룹 생성을 위해
+          참가자의 이름이나 별칭을 직접 입력할 수 있습니다.
+        </p>
+
+        <p>
+          이러한 정보는 앱 기능을 제공하기 위한 목적으로만 사용되며,
+          앱 자체 기능에 의해 개발자의 서버로 전송되거나
+          개발자가 별도로 수집하지 않습니다.
+        </p>
+
+        <h3>
+          1.2 앱 설정 및 기록
+        </h3>
+
+        <p>
+          앱은 다음과 같은 정보를 사용자의 기기 내부에 저장할 수 있습니다.
+        </p>
+
+        <ul>
+          <li>
+            최근 생성한 랜덤 짝 또는 그룹 결과
+          </li>
+
+          <li>
+            선택한 언어
+          </li>
+
+          <li>
+            다크 모드 설정
+          </li>
+
+          <li>
+            애니메이션 설정
+          </li>
+
+          <li>
+            앱 내부 기능 사용 횟수와 같은 로컬 설정값
+          </li>
+        </ul>
+
+        <p>
+          이러한 정보는 앱의 기능 제공 및 사용자 설정 유지 목적으로
+          기기 내부 저장소에서 처리됩니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          2. 광고 및 제3자 서비스
+        </h2>
+
+        <p>
+          본 앱은 광고 제공을 위해
+          Google Mobile Ads SDK(AdMob)를 사용할 수 있습니다.
+        </p>
+
+        <p>
+          광고 서비스 제공 과정에서 Google 또는 관련 광고 서비스 제공자가
+          기기 식별자, 광고 식별자, IP 주소, 광고 상호작용 정보,
+          대략적인 위치 정보 또는 기타 기술적 정보를
+          관련 법률과 Google의 정책에 따라 처리할 수 있습니다.
+        </p>
+
+        <p>
+          이러한 데이터 처리는 개발자가 직접 운영하는 서버가 아니라
+          해당 제3자 서비스 제공자의 시스템에서 이루어질 수 있습니다.
+        </p>
+
+        <p>
+          제3자 서비스의 데이터 처리 방식은
+          각 서비스 제공자의 개인정보처리방침 및 정책에 따릅니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          3. 정보의 이용 목적
+        </h2>
+
+        <p>
+          본 앱은 필요한 범위 내에서 정보를 다음 목적으로 처리합니다.
+        </p>
+
+        <ul>
+          <li>
+            랜덤 짝 및 그룹 생성 기능 제공
+          </li>
+
+          <li>
+            사용자가 이전 결과를 확인할 수 있도록 기록 유지
+          </li>
+
+          <li>
+            언어, 화면 모드 등 사용자가 선택한 설정 유지
+          </li>
+
+          <li>
+            앱 내 광고 제공
+          </li>
+
+          <li>
+            앱의 안정적인 기능 제공 및 오류 방지
+          </li>
+        </ul>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          4. 개인정보의 공유 및 판매
+        </h2>
+
+        <p>
+          개발자는 사용자가 앱에 입력한 참가자 이름이나 그룹 결과를
+          판매하지 않습니다.
+        </p>
+
+        <p>
+          또한 해당 정보를 개발자가 운영하는 별도의 서버에 업로드하여
+          제3자에게 제공하지 않습니다.
+        </p>
+
+        <p>
+          다만 광고 기능과 같이 앱에 포함된 제3자 SDK는
+          자체 정책 및 관련 법률에 따라
+          광고 제공에 필요한 정보를 처리할 수 있습니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          5. 데이터 보관 및 삭제
+        </h2>
+
+        <p>
+          앱의 참가자 정보, 그룹 생성 기록 및 설정 정보는
+          사용자의 기기 내부에 저장됩니다.
+        </p>
+
+        <p>
+          사용자는 앱에서 제공하는 기록 삭제 기능을 통해
+          저장된 그룹 기록을 삭제할 수 있습니다.
+        </p>
+
+        <p>
+          앱을 삭제하면 운영체제의 일반적인 앱 데이터 처리 방식에 따라
+          해당 앱의 로컬 데이터도 삭제될 수 있습니다.
+        </p>
+
+        <p>
+          개발자가 별도의 사용자 계정이나
+          사용자별 서버 데이터베이스를 운영하지 않으므로,
+          본 앱에는 별도의 온라인 계정 삭제 절차가 없습니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          6. 데이터 보호
+        </h2>
+
+        <p>
+          개발자는 앱에서 처리하는 정보의 범위를
+          기능 제공에 필요한 최소 수준으로 제한하도록 노력합니다.
+        </p>
+
+        <p>
+          사용자가 앱에 입력한 데이터는 원칙적으로
+          기기 내부에서 처리됩니다.
+        </p>
+
+        <p>
+          인터넷을 통해 처리될 수 있는 광고 관련 데이터의 보안은
+          해당 제3자 서비스 제공자의 보안 정책과 기술적 보호조치의
+          적용을 받을 수 있습니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          7. 어린이의 개인정보
+        </h2>
+
+        <p>
+          본 앱은 사용자의 개인정보를 직접 수집하기 위한 목적으로
+          설계되지 않았습니다.
+        </p>
+
+        <p>
+          사용자는 참가자 이름 입력 시
+          불필요한 개인정보, 민감정보 또는 식별 가능한 정보를
+          입력하지 않는 것을 권장합니다.
+        </p>
+
+        <p>
+          보호자가 어린이가 입력한 정보와 관련해 문의할 사항이 있는 경우
+          Google Play 스토어에 표시된 개발자 연락 정보를 통해
+          개발자에게 문의할 수 있습니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          8. 사용자 선택 및 동의
+        </h2>
+
+        <p>
+          일부 국가 또는 지역에서는
+          광고 개인화, 광고 저장 또는 관련 데이터 처리에 대해
+          사용자의 동의가 요구될 수 있습니다.
+        </p>
+
+        <p>
+          해당되는 경우 Google 및 관련 광고 플랫폼이 제공하는
+          동의 관리 기능이 적용될 수 있으며,
+          사용자는 제공되는 동의 화면을 통해 선택할 수 있습니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          9. 외부 링크
+        </h2>
+
+        <p>
+          본 앱에는 Google Play의 다른 앱 페이지 등
+          외부 웹사이트 또는 서비스로 연결되는 링크가 포함될 수 있습니다.
+        </p>
+
+        <p>
+          외부 서비스의 콘텐츠, 개인정보 처리 또는 보안 정책은
+          해당 서비스 제공자가 관리하며,
+          개발자는 해당 외부 서비스의 정책을 통제하지 않습니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          10. 지식재산권
+        </h2>
+
+        <p>
+          본 앱의 자체 제작된 디자인, 프로그램 코드,
+          텍스트 및 기타 콘텐츠에 대한 권리는
+          관련 법률에 따라 개발자 또는 정당한 권리자에게 귀속됩니다.
+        </p>
+
+        <p>
+          Google, Google Play, AdMob 및 기타 제3자의
+          상표, 로고, 서비스명 및 관련 권리는
+          각각 해당 권리자에게 귀속됩니다.
+        </p>
+
+        <p>
+          본 앱은 별도의 명시가 없는 한
+          제3자의 상표권자 또는 서비스 제공자와
+          공식적인 제휴, 보증 또는 후원 관계가 있음을 의미하지 않습니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          11. 면책 및 서비스 이용
+        </h2>
+
+        <p>
+          랜덤 짝 및 그룹 생성 결과는
+          무작위 기능에 의해 생성되는 참고용 결과입니다.
+        </p>
+
+        <p>
+          사용자는 생성된 결과를 자신의 상황과 목적에 맞게 판단하여
+          사용할 책임이 있습니다.
+        </p>
+
+        <p>
+          개발자는 법률상 허용되는 범위 내에서
+          사용자의 앱 이용 방식 또는 랜덤 결과의 활용으로 인해 발생한
+          간접적 손실에 대해 책임을 제한할 수 있습니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          12. 개인정보처리방침의 변경
+        </h2>
+
+        <p>
+          앱 기능, 관련 법률, Google Play 정책 또는
+          제3자 서비스의 변경에 따라
+          본 개인정보처리방침이 수정될 수 있습니다.
+        </p>
+
+        <p>
+          중요한 변경이 있는 경우
+          본 페이지의 내용을 갱신하는 방식으로 안내합니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          13. 개발자 정보 및 문의
+        </h2>
+
+        <p>
+          개발자명:
+          <strong>JCraft Studio</strong>
+        </p>
+
+        <p>
+          개발자의 최신 연락처,
+          이메일 및 기타 공개 정보는
+          본 앱의 Google Play 스토어 등록정보에 표시된
+          개발자 정보를 참고해 주세요.
+        </p>
+
+        <p>
+          개인정보 관련 문의 역시
+          Google Play 스토어의 개발자 연락처를 통해
+          접수할 수 있습니다.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          14. 시행일
+        </h2>
+
+        <p>
+          본 개인정보처리방침은
+          2026년 8월 11일부터 적용됩니다.
+        </p>
+
+      </section>
+
+    </div>
+
+
+    <!-- ======================================================
+         ENGLISH
+         ====================================================== -->
+
+    <div
+      id="lang-en"
+      class="lang"
+    >
+
+      <section>
+
+        <h2>
+          Privacy Policy
+        </h2>
+
+        <p>
+          JCraft Studio ("Developer", "we", "us", or "our")
+          respects the privacy of users of the
+          Pair Maker application ("App").
+        </p>
+
+        <p>
+          This Privacy Policy explains what information may be processed
+          through the App and how such information is used.
+        </p>
+
+        <div class="notice">
+          The App does not require account registration.
+          Participant names, random group results, and App preferences
+          are generally stored locally on the user's device.
+        </div>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          1. Information Processed by the App
+        </h2>
+
+        <h3>
+          1.1 Information Entered by Users
+        </h3>
+
+        <p>
+          Users may enter participant names or nicknames
+          in order to create random pairs or groups.
+        </p>
+
+        <p>
+          This information is used only to provide the requested App functionality.
+          The App itself does not upload this information to a server operated
+          by the Developer or separately collect it for the Developer.
+        </p>
+
+        <h3>
+          1.2 App Settings and History
+        </h3>
+
+        <p>
+          The App may store the following information locally on the device:
+        </p>
+
+        <ul>
+          <li>
+            Recent random pair or group results
+          </li>
+
+          <li>
+            Selected language
+          </li>
+
+          <li>
+            Dark mode preference
+          </li>
+
+          <li>
+            Animation preference
+          </li>
+
+          <li>
+            Local counters or settings required for App functionality
+          </li>
+        </ul>
+
+        <p>
+          These items are processed locally in order to provide App features
+          and preserve user preferences.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          2. Advertising and Third-Party Services
+        </h2>
+
+        <p>
+          The App may use Google Mobile Ads SDK (AdMob)
+          to display advertising.
+        </p>
+
+        <p>
+          In connection with advertising services,
+          Google or related advertising service providers may process
+          device identifiers, advertising identifiers, IP addresses,
+          ad interaction information, approximate location information,
+          or other technical information in accordance with applicable law
+          and their own policies.
+        </p>
+
+        <p>
+          Such processing may occur through the systems of third-party
+          service providers rather than through servers operated by the Developer.
+        </p>
+
+        <p>
+          The handling of information by third-party services is governed
+          by the privacy policies and terms of those service providers.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          3. Purposes of Processing
+        </h2>
+
+        <p>
+          Information may be processed only as reasonably necessary
+          for purposes including:
+        </p>
+
+        <ul>
+          <li>
+            Creating random pairs and groups
+          </li>
+
+          <li>
+            Maintaining recent group history for the user
+          </li>
+
+          <li>
+            Preserving language, display, and animation preferences
+          </li>
+
+          <li>
+            Providing advertisements
+          </li>
+
+          <li>
+            Maintaining reliable App functionality
+          </li>
+        </ul>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          4. Sharing and Sale of Information
+        </h2>
+
+        <p>
+          The Developer does not sell participant names
+          or random group results entered or generated through the App.
+        </p>
+
+        <p>
+          The Developer does not upload such information
+          to a Developer-operated server for disclosure to third parties.
+        </p>
+
+        <p>
+          However, third-party SDKs included for functions such as advertising
+          may process certain information under their own policies
+          and applicable legal requirements.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          5. Data Retention and Deletion
+        </h2>
+
+        <p>
+          Participant-related information, group history,
+          and preferences are stored locally on the user's device.
+        </p>
+
+        <p>
+          Users may delete stored group history
+          through the history deletion feature available in the App.
+        </p>
+
+        <p>
+          Removing the App may also remove locally stored App data
+          in accordance with the normal behavior of the device operating system.
+        </p>
+
+        <p>
+          Because the App does not provide user accounts
+          or maintain a user-specific online database,
+          there is no separate online account deletion process.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          6. Data Security
+        </h2>
+
+        <p>
+          The Developer seeks to limit information processing
+          to what is reasonably necessary for App functionality.
+        </p>
+
+        <p>
+          Information entered directly into the App
+          is generally processed locally on the user's device.
+        </p>
+
+        <p>
+          Advertising-related information that may be processed online
+          may be subject to the security practices and safeguards
+          of the applicable third-party service provider.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          7. Children's Privacy
+        </h2>
+
+        <p>
+          The App is not designed for the purpose of directly collecting
+          personal information from users.
+        </p>
+
+        <p>
+          Users are encouraged not to enter unnecessary personal,
+          sensitive, or directly identifying information
+          when entering participant names.
+        </p>
+
+        <p>
+          A parent or guardian with questions regarding information
+          entered by a child may contact the Developer using
+          the contact information shown on the App's Google Play listing.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          8. User Choice and Consent
+        </h2>
+
+        <p>
+          In certain countries or regions,
+          user consent may be required for advertising personalization,
+          advertising storage, or related data processing.
+        </p>
+
+        <p>
+          Where applicable, consent management features provided by
+          Google or the relevant advertising platform may be presented,
+          allowing users to make available privacy choices.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          9. External Links
+        </h2>
+
+        <p>
+          The App may include links to external websites or services,
+          including Google Play pages for other applications.
+        </p>
+
+        <p>
+          External services are responsible for their own content,
+          privacy practices, and security policies.
+          The Developer does not control the privacy practices
+          of third-party services.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          10. Intellectual Property
+        </h2>
+
+        <p>
+          Rights in the original design, software code,
+          text, and other content created for the App
+          belong to the Developer or the applicable lawful rights holder,
+          subject to applicable law.
+        </p>
+
+        <p>
+          Google, Google Play, AdMob,
+          and other third-party trademarks, logos, service names,
+          and related rights belong to their respective owners.
+        </p>
+
+        <p>
+          Unless expressly stated otherwise,
+          use of third-party services does not imply
+          endorsement, sponsorship, or official affiliation
+          with the relevant trademark or service owner.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          11. Disclaimer and Use of the App
+        </h2>
+
+        <p>
+          Pair and group results are generated randomly
+          and are provided as a convenience feature.
+        </p>
+
+        <p>
+          Users are responsible for deciding whether
+          and how generated results are used in their own activities.
+        </p>
+
+        <p>
+          To the extent permitted by applicable law,
+          the Developer may limit liability for indirect losses
+          arising from a user's use of the App
+          or reliance on randomly generated results.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          12. Changes to This Privacy Policy
+        </h2>
+
+        <p>
+          This Privacy Policy may be updated
+          when App functionality, applicable law,
+          Google Play policies, or third-party services change.
+        </p>
+
+        <p>
+          Material changes will be reflected
+          by updating this page.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          13. Developer Information and Contact
+        </h2>
+
+        <p>
+          Developer:
+          <strong>JCraft Studio</strong>
+        </p>
+
+        <p>
+          For the Developer's current contact information,
+          email address, and other public details,
+          please refer to the developer information displayed
+          on this App's Google Play store listing.
+        </p>
+
+        <p>
+          Privacy-related inquiries may also be submitted
+          through the Developer contact information
+          provided on Google Play.
+        </p>
+
+      </section>
+
+
+      <section>
+
+        <h2>
+          14. Effective Date
+        </h2>
+
+        <p>
+          This Privacy Policy is effective as of
+          August 11, 2026.
+        </p>
+
+      </section>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer">
+    © 2026 JCraft Studio
+  </div>
+
+</div>
+
+
+<script>
+
+  function changeLanguage(language) {
+
+    const korean =
+      document.getElementById('lang-ko');
+
+    const english =
+      document.getElementById('lang-en');
+
+    const koreanButton =
+      document.getElementById('btn-ko');
+
+    const englishButton =
+      document.getElementById('btn-en');
+
+
+    korean.classList.remove('active');
+    english.classList.remove('active');
+
+    koreanButton.classList.remove('active');
+    englishButton.classList.remove('active');
+
+
+    if (language === 'en') {
+
+      english.classList.add('active');
+      englishButton.classList.add('active');
+
+      document.documentElement.lang = 'en';
+
+    } else {
+
+      korean.classList.add('active');
+      koreanButton.classList.add('active');
+
+      document.documentElement.lang = 'ko';
+
+    }
+
+  }
+
+</script>
+
+</body>
+</html>
