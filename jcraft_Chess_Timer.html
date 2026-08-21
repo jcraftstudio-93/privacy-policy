@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Chess Clock - JCraft Studio Privacy Policy">
+  <title>개인정보처리방침 | Chess Clock - JCraft Studio</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root {
+      --bg: #f5f3ef;
+      --card: #ffffff;
+      --text: #25231f;
+      --muted: #746f67;
+      --line: #e8e3da;
+      --accent: #8a642d;
+      --accent-soft: #f3eadb;
+      --notice: #f8f6f2;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+      line-height: 1.75;
+    }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(245,243,239,.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: -.3px;
+    }
+    .lang {
+      display: flex;
+      gap: 6px;
+    }
+    .lang button {
+      border: 1px solid #ddd6ca;
+      background: #fff;
+      color: #5f5a52;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .lang button.active {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+    .container {
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 34px 20px 70px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 44px;
+      box-shadow: 0 12px 36px rgba(50, 42, 30, .06);
+    }
+    .hero {
+      padding-bottom: 28px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .badge {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.25;
+      letter-spacing: -.7px;
+    }
+    h2 {
+      margin: 38px 0 12px;
+      font-size: 21px;
+      line-height: 1.4;
+      letter-spacing: -.3px;
+    }
+    p { margin: 10px 0; }
+    ul { padding-left: 24px; }
+    li { margin: 6px 0; }
+    a { color: #4168a7; word-break: break-all; }
+    .subtitle { margin: 0; color: var(--muted); }
+    .updated { margin-top: 8px; color: #969087; font-size: 14px; }
+    .notice {
+      margin: 20px 0;
+      padding: 17px 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--notice);
+    }
+    .contact {
+      background: var(--accent-soft);
+      border-radius: 16px;
+      padding: 18px;
+    }
+    .footer {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: #8a847b;
+      font-size: 13px;
+      text-align: center;
+    }
+    #enContent { display: none; }
+    @media (max-width: 640px) {
+      .topbar-inner { padding: 10px 14px; }
+      .container { padding: 18px 10px 50px; }
+      .card { padding: 26px 20px; border-radius: 16px; }
+      h1 { font-size: 27px; }
+      h2 { font-size: 19px; }
+      .brand { font-size: 14px; }
+      .lang button { padding: 7px 11px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">JCraft Studio · Chess Clock</div>
+      <div class="lang">
+        <button id="koButton" class="active" onclick="setLanguage('ko')">한국어</button>
+        <button id="enButton" onclick="setLanguage('en')">English</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <main id="koContent">
+        <section class="hero">
+          <div class="badge">PRIVACY</div>
+          <h1>개인정보처리방침</h1>
+          <p class="subtitle">Chess Clock - JCraft Studio</p>
+          <p class="updated">최종 업데이트: 2026년 8월 21일</p>
+        </section>
+
+        <p>JCraft Studio(이하 "개발자")는 Chess Clock(이하 "앱") 이용자의 개인정보와 프라이버시를 중요하게 생각합니다.</p>
+        <p>본 개인정보처리방침은 앱 이용 과정에서 처리될 수 있는 정보, 이용 목적, 제3자 서비스, 데이터 보관 및 이용자의 권리에 관한 사항을 설명합니다.</p>
+        <p>관련 법령에 따라 별도 동의가 필요한 데이터 처리가 이루어지는 경우 개발자 또는 관련 서비스 제공자는 필요한 동의 절차를 제공할 수 있습니다.</p>
+
+        <h2>1. 개발자가 직접 수집하는 개인정보</h2>
+        <p>본 앱은 기본적인 체스 시계 기능 제공을 위해 회원가입이나 계정 생성을 요구하지 않습니다.</p>
+        <p>개발자는 앱의 기본 기능을 통해 이용자의 이름, 이메일 주소, 전화번호, 주소, 연락처, 사진, 금융정보 등 직접적인 개인 식별정보를 개발자의 별도 서버로 직접 수집하도록 설계하지 않았습니다.</p>
+        <p>다만 앱에 포함된 광고 SDK 등 제3자 서비스는 아래와 같이 특정 기기정보 또는 이용정보를 자동으로 처리할 수 있습니다.</p>
+
+        <h2>2. 기기에 저장되는 데이터</h2>
+        <p>앱 기능 제공을 위해 다음 정보가 이용자의 기기에 로컬로 저장될 수 있습니다.</p>
+        <ul>
+          <li>체스 플레이어 이름 또는 이용자가 입력한 표시 이름</li>
+          <li>체스 게임 및 대국 기록</li>
+          <li>게임 시간 및 인크리먼트 설정</li>
+          <li>언어 및 테마 설정</li>
+          <li>사운드 및 진동 설정</li>
+          <li>화면 켜짐 유지 설정</li>
+          <li>기타 앱 환경설정</li>
+        </ul>
+        <p>이러한 정보는 앱 기능 제공을 위해 이용자의 기기에 저장되며 개발자가 별도 서버를 통해 직접 수집하도록 설계하지 않았습니다. 앱 삭제, 앱 데이터 삭제 또는 기기 환경에 따라 삭제될 수 있습니다.</p>
+
+        <h2>3. 광고 및 Google AdMob</h2>
+        <p>본 앱은 앱 운영 및 서비스 제공을 위해 Google AdMob을 통한 광고를 표시할 수 있습니다.</p>
+        <p>Google Mobile Ads SDK 및 관련 Google 서비스는 적용 법령, 이용자의 설정 및 동의 상태 등에 따라 다음과 같은 정보를 자동으로 처리할 수 있습니다.</p>
+        <ul>
+          <li>IP 주소 및 이를 통해 추정되는 일반적인 위치 정보</li>
+          <li>광고 ID 등 기기 또는 앱 관련 식별자</li>
+          <li>앱 실행, 탭 등 앱 상호작용 정보</li>
+          <li>광고 노출 및 광고 상호작용 정보</li>
+          <li>앱 및 SDK 성능 정보</li>
+          <li>충돌 및 진단 정보</li>
+          <li>기기 및 운영체제 관련 기술 정보</li>
+        </ul>
+        <p>이러한 정보는 광고 제공, 성과 측정, 분석, 서비스 개선, 보안 및 부정행위 방지 등의 목적으로 처리될 수 있습니다.</p>
+        <p>Google 개인정보처리방침: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+        <p>Google 광고 관련 정보: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a></p>
+
+        <h2>4. 맞춤형 광고 및 개인정보 보호 선택</h2>
+        <p>이용자의 지역, 연령, 기기 설정, Google 계정 설정, 관련 법령 및 동의 상태 등에 따라 맞춤형 광고 또는 맞춤형이 아닌 광고가 표시될 수 있습니다.</p>
+        <p>이용자는 Android 또는 Google 계정에서 제공되는 개인정보 보호 및 광고 관련 설정을 통해 일부 옵션을 관리할 수 있습니다.</p>
+
+        <h2>5. 제3자 서비스</h2>
+        <p>앱은 기능 제공, 광고 또는 외부 콘텐츠 연결을 위해 다음과 같은 제3자 서비스나 SDK를 사용할 수 있습니다.</p>
+        <ul>
+          <li>Google Play Services</li>
+          <li>Google AdMob / Google Mobile Ads SDK</li>
+          <li>Google Play Store</li>
+        </ul>
+        <p>제3자 서비스가 처리하는 정보에는 해당 서비스 제공자의 개인정보처리방침 및 이용약관이 적용될 수 있습니다. 개발자는 제3자가 독립적으로 운영하는 서비스의 개인정보 처리, 서비스 내용 또는 정책 변경을 직접 통제하지 않습니다.</p>
+
+        <h2>6. 외부 링크 및 추천 앱</h2>
+        <p>본 앱은 Google Play Store의 다른 앱, 개발자가 제공하는 다른 앱 또는 기타 외부 페이지로 연결되는 링크를 제공할 수 있습니다.</p>
+        <p>외부 서비스로 이동한 이후의 데이터 처리, 콘텐츠, 거래 및 개인정보 보호 관행은 해당 서비스 제공자의 정책에 따릅니다.</p>
+
+        <h2>7. 개인정보의 공유 및 판매</h2>
+        <p>개발자는 이용자의 직접적인 개인정보를 임의로 판매하기 위한 목적으로 앱을 운영하지 않습니다.</p>
+        <p>다만 Google AdMob 등 제3자 SDK를 통한 데이터 처리는 광고, 분석, 보안 및 부정행위 방지 등의 목적으로 제3자에게 전송 또는 공유되는 것으로 분류될 수 있습니다.</p>
+        <p>또한 법률, 법원 명령 또는 적법한 정부기관의 요청 등 법적 의무를 준수하기 위해 필요한 범위에서 정보를 처리하거나 제공할 수 있습니다.</p>
+
+        <h2>8. 데이터 보관 및 삭제</h2>
+        <p>게임 기록과 설정 등 로컬 데이터는 일반적으로 이용자의 기기에 저장됩니다. 이용자는 앱의 삭제 기능, Android의 앱 데이터 삭제 기능 또는 앱 삭제를 통해 해당 데이터를 삭제할 수 있습니다.</p>
+        <p>Google 등 제3자 서비스가 처리하는 데이터의 보관 및 삭제 기준은 해당 서비스 제공자의 정책에 따릅니다.</p>
+
+        <h2>9. 데이터 보안</h2>
+        <p>개발자는 앱에서 처리되는 정보를 보호하기 위해 합리적인 기술적·관리적 조치를 유지하도록 노력합니다. 다만 어떠한 전자적 시스템도 절대적인 보안을 보장할 수 없습니다.</p>
+
+        <h2>10. 아동의 개인정보</h2>
+        <p>본 앱은 일반적인 체스 시계 및 타이머 도구이며 아동으로부터 개인정보를 의도적으로 수집하기 위한 목적으로 설계되지 않았습니다.</p>
+        <p>관련 법령 또는 플랫폼 정책상 추가적인 의무가 적용되는 경우 필요한 조치를 취할 수 있습니다.</p>
+
+        <h2>11. 앱의 성격 및 이용자 책임</h2>
+        <p>본 앱은 체스 대국의 시간 측정을 보조하기 위한 일반적인 유틸리티입니다.</p>
+        <p>앱의 시간, 기록, 통계 등의 정보는 이용자의 편의를 위한 것이며 공식 대회 결과, 경기 판정 또는 공식 시간 측정을 보증하지 않습니다.</p>
+        <p>공식 경기나 대회에서 이용하는 경우 해당 대회 주최자 또는 관련 체스 단체의 장비 및 시간 측정 규칙을 직접 확인하시기 바랍니다.</p>
+
+        <h2>12. 서비스 제공 및 책임의 제한</h2>
+        <p>개발자는 안정적인 서비스 제공을 위해 합리적인 노력을 기울이지만, 관련 법령에서 허용되는 범위 내에서 앱이 모든 환경에서 오류 또는 중단 없이 작동함을 보증하지 않습니다.</p>
+        <p>기기 상태, 운영체제, 배터리 절전 기능, 백그라운드 제한, 시스템 시간, 하드웨어 성능, 네트워크 상태, 제3자 SDK 및 Google Play 서비스 등 개발자가 합리적으로 통제하기 어려운 요인으로 앱의 동작에 차이가 발생할 수 있습니다.</p>
+        <div class="notice">본 조항은 관련 법률에 따라 제한하거나 배제할 수 없는 소비자의 법적 권리 또는 개발자의 법적 책임을 제한하기 위한 것이 아닙니다.</div>
+
+        <h2>13. 지식재산권 및 저작권</h2>
+        <p>별도로 명시되지 않는 한 본 앱의 자체 제작 소프트웨어 코드, 사용자 인터페이스 구성, 디자인 요소, 문구 및 기타 개발자가 제작한 콘텐츠에 관한 권리는 JCraft Studio 또는 정당한 권리자에게 귀속됩니다.</p>
+        <p>제3자의 상표, 서비스명, 오픈소스 소프트웨어, 라이브러리, 아이콘 또는 기타 자료가 사용되는 경우 해당 권리는 각각의 권리자에게 귀속되며 해당 라이선스 및 이용조건이 적용됩니다.</p>
+        <p>Google, Google Play, AdMob, Android 등의 명칭 및 상표는 각각 해당 권리자의 상표 또는 등록상표일 수 있으며, 본 앱과의 연동만으로 해당 제3자가 본 앱을 후원·보증하거나 공식 제휴한다는 의미는 아닙니다.</p>
+
+        <h2>14. 개인정보처리방침의 변경</h2>
+        <p>앱 기능, SDK, 관련 법령 또는 플랫폼 정책 변경에 따라 본 개인정보처리방침이 수정될 수 있습니다.</p>
+        <p>중요한 변경이 있는 경우 이 페이지의 최종 업데이트 날짜를 변경하거나 필요한 방식으로 이용자에게 알릴 수 있습니다.</p>
+
+        <h2>15. 관련 법령</h2>
+        <p>본 개인정보처리방침과 앱의 개인정보 처리는 대한민국의 적용 가능한 법령과 서비스 제공 지역에서 강제적으로 적용되는 개인정보 보호 및 소비자 보호 법령의 적용을 받을 수 있습니다.</p>
+        <p>본 방침의 어떠한 내용도 법률에 따라 배제할 수 없는 이용자의 권리를 배제하는 것으로 해석되지 않습니다.</p>
+
+        <h2>16. 문의</h2>
+        <div class="contact">
+          개발자: JCraft Studio<br>
+          앱: Chess Clock<br>
+          이메일: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>
+        </div>
+      </main>
+
+      <main id="enContent">
+        <section class="hero">
+          <div class="badge">PRIVACY</div>
+          <h1>Privacy Policy</h1>
+          <p class="subtitle">Chess Clock - JCraft Studio</p>
+          <p class="updated">Last updated: August 21, 2026</p>
+        </section>
+
+        <p>JCraft Studio ("Developer", "we", "us", or "our") respects the privacy of users of Chess Clock (the "App").</p>
+        <p>This Privacy Policy explains the information that may be processed when you use the App, its purposes, third-party services, data retention, and your privacy choices.</p>
+
+        <h2>1. Personal Information Collected Directly by the Developer</h2>
+        <p>The App does not require registration or creation of a user account for its basic chess clock functionality.</p>
+        <p>The App is not designed to directly collect through a separate Developer-operated server information such as your email address, phone number, postal address, contacts, photographs, financial information, or other directly identifying information.</p>
+        <p>Third-party services integrated into the App, including advertising SDKs, may automatically process certain device and usage information as described below.</p>
+
+        <h2>2. Data Stored on Your Device</h2>
+        <p>Information stored locally may include player names entered by you, game history, time controls, increments, language, theme, sound, vibration, keep-screen-on preferences, and other App settings.</p>
+        <p>This information is used for App functionality and is not designed to be transmitted to a separate Developer-operated server. It may be removed by clearing App data or uninstalling the App.</p>
+
+        <h2>3. Advertising and Google AdMob</h2>
+        <p>The App may display advertising through Google AdMob.</p>
+        <p>The Google Mobile Ads SDK and related Google services may process information such as IP address, general location inferred from IP, device or application identifiers, App interactions, advertising impressions and interactions, performance information, crash and diagnostic information, and device or operating system information.</p>
+        <p>This information may be used for advertising, measurement, analytics, service improvement, security, and fraud prevention.</p>
+        <p>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+        <p>Google Advertising Information: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a></p>
+
+        <h2>4. Personalized Advertising and Privacy Choices</h2>
+        <p>Personalized or non-personalized advertising may be displayed depending on your region, age, privacy settings, applicable law, and consent choices.</p>
+        <p>You may be able to manage advertising and privacy preferences through Android settings or your Google account.</p>
+
+        <h2>5. Third-Party Services</h2>
+        <ul>
+          <li>Google Play Services</li>
+          <li>Google AdMob / Google Mobile Ads SDK</li>
+          <li>Google Play Store</li>
+        </ul>
+        <p>Third-party services are governed by their own privacy policies and terms. The Developer does not directly control their independent data processing practices or policy changes.</p>
+
+        <h2>6. External Links and Recommended Apps</h2>
+        <p>The App may provide links to other applications on Google Play, other applications offered by the Developer, or other external pages.</p>
+        <p>After leaving the App, the external provider's privacy policy and terms apply.</p>
+
+        <h2>7. Sharing and Sale of Personal Information</h2>
+        <p>The Developer does not operate the App for the purpose of arbitrarily selling personal information directly provided by users.</p>
+        <p>However, processing through third-party SDKs such as Google AdMob may be classified as collection or sharing for advertising, analytics, security, and fraud prevention purposes.</p>
+        <p>Information may also be processed or disclosed when reasonably necessary to comply with applicable law, a valid court order, lawful governmental request, or other legal obligation.</p>
+
+        <h2>8. Data Retention and Deletion</h2>
+        <p>Game records and settings are generally stored on your device. You may delete such information using App functions, Android application data controls, or by uninstalling the App.</p>
+        <p>Data processed by third-party services is subject to their own retention and deletion policies.</p>
+
+        <h2>9. Data Security</h2>
+        <p>The Developer seeks to maintain reasonable technical and organizational safeguards. However, no electronic system can guarantee absolute security.</p>
+
+        <h2>10. Children's Privacy</h2>
+        <p>The App is a general chess clock and timer utility and is not designed for the purpose of intentionally collecting personal information from children.</p>
+        <p>Where applicable law or platform rules impose additional requirements, the Developer may take reasonably necessary measures to comply.</p>
+
+        <h2>11. Nature of the App and User Responsibility</h2>
+        <p>The App is a general utility intended to assist with time measurement during chess games.</p>
+        <p>Times, records, statistics, and other information are provided for convenience and are not intended to guarantee official tournament results, decisions, or official timekeeping.</p>
+        <p>For official competitions, users should verify the relevant organizer's or chess organization's rules regarding devices and timekeeping.</p>
+
+        <h2>12. Service Availability and Limitation of Liability</h2>
+        <p>The Developer uses reasonable efforts to provide a stable service. To the extent permitted by applicable law, the Developer does not warrant uninterrupted or error-free operation on every device or operating system.</p>
+        <p>Functionality may be affected by device conditions, operating systems, battery optimization, background restrictions, system clocks, hardware performance, networks, third-party SDKs, or Google Play services.</p>
+        <div class="notice">Nothing in this section is intended to exclude or limit any consumer right or liability that cannot lawfully be excluded or limited.</div>
+
+        <h2>13. Intellectual Property and Copyright</h2>
+        <p>Unless otherwise stated, rights in original software code, user-interface arrangements, design elements, written materials, and other Developer-created content belong to JCraft Studio or the applicable lawful rights holder.</p>
+        <p>Third-party trademarks, service names, open-source software, libraries, icons, and other materials remain subject to the rights and licenses of their respective owners.</p>
+        <p>Google, Google Play, AdMob, Android, and other third-party names and marks may be trademarks of their respective owners. Integration or linking does not itself imply sponsorship, endorsement, or official affiliation.</p>
+
+        <h2>14. Changes to This Privacy Policy</h2>
+        <p>This Privacy Policy may be updated when App functionality, SDKs, applicable law, or platform policies change. The Last updated date may be revised accordingly.</p>
+
+        <h2>15. Applicable Law</h2>
+        <p>This Privacy Policy and the App's processing of information may be subject to applicable laws of the Republic of Korea and mandatory privacy, data protection, and consumer protection laws in jurisdictions where the App is offered.</p>
+        <p>Nothing in this Policy is intended to waive rights that cannot lawfully be waived.</p>
+
+        <h2>16. Contact</h2>
+        <div class="contact">
+          Developer: JCraft Studio<br>
+          Application: Chess Clock<br>
+          Email: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>
+        </div>
+      </main>
+
+      <footer class="footer">© 2026 JCraft Studio. All rights reserved.</footer>
+    </div>
+  </div>
+
+  <script>
+    function setLanguage(language) {
+      const ko = document.getElementById('koContent');
+      const en = document.getElementById('enContent');
+      const koBtn = document.getElementById('koButton');
+      const enBtn = document.getElementById('enButton');
+
+      if (language === 'en') {
+        ko.style.display = 'none';
+        en.style.display = 'block';
+        koBtn.classList.remove('active');
+        enBtn.classList.add('active');
+        document.documentElement.lang = 'en';
+        document.title = 'Privacy Policy | Chess Clock - JCraft Studio';
+        localStorage.setItem('privacyLanguage', 'en');
+      } else {
+        ko.style.display = 'block';
+        en.style.display = 'none';
+        enBtn.classList.remove('active');
+        koBtn.classList.add('active');
+        document.documentElement.lang = 'ko';
+        document.title = '개인정보처리방침 | Chess Clock - JCraft Studio';
+        localStorage.setItem('privacyLanguage', 'ko');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const saved = localStorage.getItem('privacyLanguage');
+      if (saved === 'en') {
+        setLanguage('en');
+        return;
+      }
+      if (saved === 'ko') {
+        setLanguage('ko');
+        return;
+      }
+      const browserLanguage = navigator.language || 'ko';
+      setLanguage(browserLanguage.toLowerCase().startsWith('ko') ? 'ko' : 'en');
+    });
+  </script>
+</body>
+</html>
