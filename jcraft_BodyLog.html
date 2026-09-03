@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BodyLog Privacy Policy | 개인정보처리방침</title>
+
+    <meta name="description"
+          content="Privacy Policy for BodyLog - Weight & BMI Tracker by JCraft Studio. BodyLog 개인정보처리방침.">
+
+    <meta name="robots" content="index, follow">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f7f8fa;
+            color: #25282d;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Noto Sans KR",
+                "Noto Sans",
+                Arial,
+                sans-serif;
+            line-height: 1.75;
+        }
+
+        .container {
+            width: min(920px, calc(100% - 32px));
+            margin: 40px auto;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e7e9ed;
+            border-radius: 20px;
+            padding: 42px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+        }
+
+        .header {
+            margin-bottom: 32px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #eceef1;
+        }
+
+        .app-name {
+            margin: 0 0 8px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #60656f;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 34px;
+            line-height: 1.3;
+            color: #17191c;
+        }
+
+        .subtitle {
+            margin: 0;
+            color: #686d76;
+            font-size: 15px;
+        }
+
+        .language-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .language-button {
+            border: 1px solid #dfe2e7;
+            background: #ffffff;
+            color: #33373d;
+            padding: 10px 18px;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .language-button:hover {
+            background: #f1f3f5;
+        }
+
+        .language-button.active {
+            background: #17191c;
+            color: #ffffff;
+            border-color: #17191c;
+        }
+
+        .language-section {
+            display: none;
+        }
+
+        .language-section.active {
+            display: block;
+        }
+
+        h2 {
+            margin-top: 38px;
+            margin-bottom: 14px;
+            font-size: 22px;
+            line-height: 1.4;
+            color: #1d2024;
+        }
+
+        h3 {
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-size: 17px;
+            color: #292d32;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            margin: 10px 0 16px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        .notice {
+            margin: 20px 0;
+            padding: 18px 20px;
+            background: #f5f6f8;
+            border-radius: 12px;
+            color: #41464e;
+        }
+
+        .warning {
+            margin: 20px 0;
+            padding: 18px 20px;
+            background: #fff8ed;
+            border: 1px solid #f3dfbd;
+            border-radius: 12px;
+            color: #5c4930;
+        }
+
+        a {
+            color: #315da8;
+            word-break: break-all;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0 22px;
+            font-size: 14px;
+        }
+
+        .info-table th,
+        .info-table td {
+            border: 1px solid #e4e6ea;
+            padding: 12px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .info-table th {
+            width: 28%;
+            background: #f7f8fa;
+            font-weight: 700;
+        }
+
+        .footer {
+            margin-top: 42px;
+            padding-top: 24px;
+            border-top: 1px solid #eceef1;
+            text-align: center;
+            color: #7a7f87;
+            font-size: 13px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                width: min(100% - 20px, 920px);
+                margin: 10px auto 24px;
+            }
+
+            .card {
+                padding: 26px 20px;
+                border-radius: 15px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .info-table th,
+            .info-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .info-table th {
+                border-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <main class="card">
+
+        <header class="header">
+            <p class="app-name">BodyLog - Weight & BMI Tracker</p>
+
+            <h1>
+                Privacy Policy<br>
+                개인정보처리방침
+            </h1>
+
+            <p class="subtitle">
+                Effective date / 시행일: September 3, 2026
+            </p>
+
+            <div class="language-buttons">
+                <button
+                    id="btn-ko"
+                    class="language-button active"
+                    onclick="showLanguage('ko')">
+                    한국어
+                </button>
+
+                <button
+                    id="btn-en"
+                    class="language-button"
+                    onclick="showLanguage('en')">
+                    English
+                </button>
+            </div>
+        </header>
+
+
+        <!-- ========================================================= -->
+        <!-- Korean Privacy Policy -->
+        <!-- ========================================================= -->
+
+        <section id="ko" class="language-section active">
+
+            <h2>1. 개인정보처리방침 개요</h2>
+
+            <p>
+                JCraft Studio(이하 "개발자")는
+                <strong>BodyLog - Weight & BMI Tracker</strong>
+                (이하 "앱") 사용자의 개인정보와 데이터를 중요하게 생각합니다.
+            </p>
+
+            <p>
+                본 개인정보처리방침은 앱이 어떤 데이터를 처리하는지,
+                데이터가 어떤 목적으로 사용되는지,
+                데이터가 어디에 저장되는지,
+                그리고 제3자 서비스가 어떤 방식으로 데이터를 처리할 수 있는지를
+                설명합니다.
+            </p>
+
+            <p>
+                앱을 설치하거나 이용하는 경우 본 개인정보처리방침의 내용을
+                확인한 것으로 간주됩니다.
+                다만 관련 법령에 따라 별도의 동의가 요구되는 데이터 처리에 대해서는
+                필요한 경우 별도의 동의 절차가 적용될 수 있습니다.
+            </p>
+
+
+            <h2>2. 개발자 및 앱 정보</h2>
+
+            <table class="info-table">
+                <tr>
+                    <th>앱 이름</th>
+                    <td>BodyLog - Weight & BMI Tracker</td>
+                </tr>
+
+                <tr>
+                    <th>개발자</th>
+                    <td>JCraft Studio</td>
+                </tr>
+
+                <tr>
+                    <th>개발자 연락처</th>
+                    <td>
+                        최신 개발자 연락처 및 지원 정보는
+                        BodyLog의 공식 Google Play 스토어 등록정보에 표시된
+                        개발자 연락처를 참고해 주세요.
+                    </td>
+                </tr>
+            </table>
+
+
+            <h2>3. 앱에서 사용자가 입력하는 데이터</h2>
+
+            <p>
+                BodyLog는 앱의 핵심 기능을 제공하기 위해 사용자가 직접 입력한
+                다음과 같은 정보를 처리할 수 있습니다.
+            </p>
+
+            <ul>
+                <li>체중</li>
+                <li>신장(키)</li>
+                <li>목표 체중</li>
+                <li>체중 측정 날짜 및 시간</li>
+                <li>체중 기록에 사용자가 작성한 메모</li>
+                <li>BMI 계산을 위해 필요한 정보</li>
+                <li>체중 측정 알림 설정</li>
+                <li>앱 언어, 다크 모드 등 앱 환경설정</li>
+            </ul>
+
+            <div class="notice">
+                이러한 체중 기록 및 관련 정보는 원칙적으로
+                사용자의 기기 내부에 저장되며,
+                JCraft Studio가 운영하는 별도의 서버로 전송하여
+                저장하도록 설계되어 있지 않습니다.
+            </div>
+
+
+            <h2>4. 건강 관련 정보</h2>
+
+            <p>
+                체중, 신장 및 BMI와 같은 정보는 사용자의 건강 상태와 관련될 수 있는
+                정보입니다.
+            </p>
+
+            <p>
+                BodyLog는 이러한 정보를 체중 기록,
+                BMI 계산, 체중 변화 확인 및 목표 체중 관리 등
+                사용자가 요청한 앱 기능을 제공하기 위해 사용합니다.
+            </p>
+
+            <p>
+                개발자는 앱에 입력된 체중 및 BMI 기록을
+                광고 목적으로 직접 판매하거나,
+                개발자가 운영하는 서버에 업로드하여
+                사용자 프로필을 구축하는 용도로 사용하지 않습니다.
+            </p>
+
+
+            <h2>5. 데이터 저장 방식</h2>
+
+            <p>
+                사용자가 BodyLog에 입력한 주요 앱 데이터는
+                사용자의 기기 내부 저장공간에 저장됩니다.
+            </p>
+
+            <p>
+                앱을 삭제하거나 앱 데이터를 삭제할 경우
+                기기에 저장된 데이터가 삭제될 수 있습니다.
+            </p>
+
+            <p>
+                기기 분실, 앱 삭제, 운영체제 오류, 저장소 손상,
+                사용자 조작 등으로 인한 데이터 손실을 방지하기 위해
+                중요한 기록은 사용자가 직접 백업할 것을 권장합니다.
+            </p>
+
+
+            <h2>6. JSON 백업 및 복원</h2>
+
+            <p>
+                BodyLog는 사용자가 자신의 데이터를 직접 보관할 수 있도록
+                JSON 형식의 백업 및 복원 기능을 제공할 수 있습니다.
+            </p>
+
+            <p>
+                백업 기능을 사용하는 경우 사용자가 선택한 위치에
+                BodyLog 데이터가 포함된 파일이 생성될 수 있습니다.
+            </p>
+
+            <p>
+                생성된 백업 파일의 보관, 복사, 전송, 공유 및 삭제에 대한 관리는
+                사용자에게 있습니다.
+            </p>
+
+            <p>
+                사용자가 백업 파일을 클라우드 저장소, 이메일,
+                메신저 또는 기타 제3자 서비스에 직접 업로드하거나 공유하는 경우,
+                해당 서비스의 개인정보처리방침과 보안 정책이 적용됩니다.
+            </p>
+
+
+            <h2>7. 알림 기능</h2>
+
+            <p>
+                BodyLog는 사용자가 설정한 체중 측정 일정을 알려주기 위해
+                기기의 로컬 알림 기능을 사용할 수 있습니다.
+            </p>
+
+            <p>
+                알림 기능을 사용하기 위해 운영체제의 알림 권한이 요청될 수 있으며,
+                사용자는 기기 설정에서 언제든지 알림 권한을 변경하거나
+                알림을 비활성화할 수 있습니다.
+            </p>
+
+            <p>
+                알림 일정은 체중 측정 알림을 제공하기 위한 목적으로 사용됩니다.
+            </p>
+
+
+            <h2>8. 광고 및 Google Mobile Ads</h2>
+
+            <p>
+                BodyLog는 앱 운영 및 개발을 지원하기 위해
+                Google이 제공하는 Google Mobile Ads SDK(AdMob)를
+                사용할 수 있습니다.
+            </p>
+
+            <p>
+                Google Mobile Ads와 같은 제3자 광고 서비스는
+                광고 제공, 광고 성과 측정, 부정 사용 방지,
+                서비스 보안 및 관련 기능 제공을 위해
+                다음과 같은 정보를 자동으로 처리할 수 있습니다.
+            </p>
+
+            <ul>
+                <li>광고 식별자와 같은 기기 식별 정보</li>
+                <li>IP 주소</li>
+                <li>기기 및 운영체제 관련 정보</li>
+                <li>광고 조회, 클릭 등 광고와의 상호작용 정보</li>
+                <li>앱 또는 SDK 작동과 관련된 진단 정보</li>
+                <li>관련 법령 및 Google 정책에 따라 처리되는 기타 정보</li>
+            </ul>
+
+            <p>
+                이러한 정보의 실제 수집 및 처리 범위는
+                사용자의 기기 설정, 지역, 동의 상태,
+                Google의 서비스 설정과 정책에 따라 달라질 수 있습니다.
+            </p>
+
+            <p>
+                Google의 데이터 처리 방식에 관한 자세한 내용은
+                다음 공식 문서를 참고할 수 있습니다.
+            </p>
+
+            <ul>
+                <li>
+                    <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Google 개인정보처리방침
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://policies.google.com/technologies/ads"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Google 광고 관련 개인정보 처리 안내
+                    </a>
+                </li>
+            </ul>
+
+            <div class="notice">
+                BodyLog에 사용자가 직접 입력한 체중, 목표 체중 및 메모 등의
+                앱 기록을 개발자가 Google Mobile Ads에
+                광고 타게팅 목적으로 직접 제공하도록 설계하지 않았습니다.
+            </div>
+
+
+            <h2>9. 제3자 서비스</h2>
+
+            <p>
+                BodyLog는 앱 기능 제공을 위해 Google Play,
+                Google Mobile Ads 또는 사용자의 운영체제가 제공하는
+                서비스와 기능을 사용할 수 있습니다.
+            </p>
+
+            <p>
+                사용자가 앱 외부의 웹사이트, 앱스토어 또는
+                제3자 서비스로 이동한 이후의 데이터 처리는
+                해당 서비스의 약관과 개인정보처리방침의 적용을 받습니다.
+            </p>
+
+            <p>
+                개발자는 독립적인 제3자가 운영하는 서비스의
+                개인정보 처리, 서비스 내용 또는 보안 정책을
+                직접 통제하지 않습니다.
+            </p>
+
+
+            <h2>10. 데이터 판매</h2>
+
+            <p>
+                JCraft Studio는 BodyLog 사용자가 직접 입력한
+                체중 기록, BMI 관련 정보 또는 메모를
+                데이터 중개업체에 판매하지 않습니다.
+            </p>
+
+
+            <h2>11. 계정</h2>
+
+            <p>
+                현재 BodyLog는 앱 사용을 위한 별도의
+                JCraft Studio 회원 계정 생성을 요구하지 않습니다.
+            </p>
+
+            <p>
+                따라서 개발자가 운영하는 별도의 BodyLog 계정 서버에
+                사용자의 체중 기록을 저장하는 구조가 아닙니다.
+            </p>
+
+            <p>
+                향후 계정 기능 또는 클라우드 동기화 기능이 추가되는 경우
+                해당 기능의 데이터 처리 방식과 삭제 절차를 반영하여
+                본 개인정보처리방침을 변경할 수 있습니다.
+            </p>
+
+
+            <h2>12. 데이터 보관 및 삭제</h2>
+
+            <p>
+                앱 내부에 저장되는 체중 기록 및 관련 데이터는
+                사용자가 삭제할 때까지 기기에 보관될 수 있습니다.
+            </p>
+
+            <p>
+                사용자는 앱에서 제공하는 기록 삭제 기능을 사용하거나,
+                기기의 앱 데이터 삭제 기능 또는 앱 제거를 통해
+                기기에 저장된 데이터를 삭제할 수 있습니다.
+            </p>
+
+            <p>
+                사용자가 직접 생성한 JSON 백업 파일은
+                앱 내부 기록을 삭제하거나 앱을 제거해도
+                별도의 저장 위치에 남아 있을 수 있습니다.
+                해당 파일은 사용자가 직접 삭제해야 합니다.
+            </p>
+
+            <p>
+                Google과 같은 제3자 서비스가 처리하는 데이터의
+                보관 및 삭제 정책은 해당 제3자의 개인정보처리방침에 따릅니다.
+            </p>
+
+
+            <h2>13. 데이터 보안</h2>
+
+            <p>
+                개발자는 앱 기능에 필요하지 않은 개인정보의 수집을
+                최소화하는 것을 원칙으로 하며,
+                사용자의 주요 체중 기록을 기기 내부에서 처리하도록
+                앱을 설계합니다.
+            </p>
+
+            <p>
+                그러나 어떠한 전자적 저장 또는 전송 방식도
+                100% 완벽한 보안을 보장할 수는 없습니다.
+            </p>
+
+            <p>
+                사용자는 자신의 기기를 안전하게 관리하고,
+                민감한 정보가 포함될 수 있는 JSON 백업 파일을
+                안전한 위치에 보관할 책임이 있습니다.
+            </p>
+
+
+            <h2>14. 아동 및 미성년자</h2>
+
+            <p>
+                BodyLog는 일반적인 체중 기록 및 BMI 관리 도구이며
+                아동을 주요 대상으로 제작된 서비스가 아닙니다.
+            </p>
+
+            <p>
+                미성년자가 체중, BMI 또는 건강과 관련된 정보를 이용하는 경우
+                필요한 경우 부모, 보호자 또는 의료 전문가와 함께
+                사용하는 것을 권장합니다.
+            </p>
+
+
+            <h2>15. 의료 및 건강 관련 고지</h2>
+
+            <div class="warning">
+                BodyLog는 의료기기, 의료서비스 또는 의료진을 대체하는 서비스가
+                아닙니다.
+            </div>
+
+            <p>
+                앱이 제공하는 BMI, 체중 변화, 적정 체중 범위 및 기타 계산 결과는
+                일반적인 정보와 개인 기록 관리를 위한 참고 자료입니다.
+            </p>
+
+            <p>
+                BMI는 개인의 건강 상태, 체지방률, 근육량,
+                질병 여부, 임신 여부, 연령 및 기타 의학적 요소를
+                완전히 반영하지 못할 수 있습니다.
+            </p>
+
+            <p>
+                앱의 정보를 질병의 진단, 치료, 예방,
+                투약 결정 또는 긴급한 의료 판단에 사용해서는 안 됩니다.
+            </p>
+
+            <p>
+                건강 또는 체중과 관련하여 우려되는 증상이 있거나
+                의료적 판단이 필요한 경우 의사 또는 자격을 갖춘
+                의료 전문가와 상담해야 합니다.
+            </p>
+
+
+            <h2>16. 데이터 정확성 및 사용자 입력</h2>
+
+            <p>
+                BodyLog의 계산 결과는 사용자가 입력한 데이터에 기반합니다.
+            </p>
+
+            <p>
+                잘못된 신장, 체중, 날짜 또는 기타 정보가 입력될 경우
+                결과 역시 정확하지 않을 수 있습니다.
+            </p>
+
+            <p>
+                사용자는 앱에 입력하는 정보를 확인하고
+                필요한 경우 수정해야 합니다.
+            </p>
+
+
+            <h2>17. 서비스 제공 및 책임 제한</h2>
+
+            <p>
+                개발자는 앱의 안정적인 제공을 위해 노력하지만,
+                모든 기기, 운영체제 및 사용 환경에서
+                앱이 항상 중단 없이 동작하거나 오류가 전혀 없음을
+                보장하지는 않습니다.
+            </p>
+
+            <p>
+                법률이 허용하는 범위에서 개발자는
+                사용자의 기기 상태, 운영체제 오류,
+                제3자 서비스 장애, 사용자 실수,
+                앱 제거, 저장소 손상 또는 백업 관리 실패 등
+                개발자의 합리적인 통제를 벗어난 사유로 발생한
+                데이터 손실이나 서비스 이용상의 문제에 대해
+                책임이 제한될 수 있습니다.
+            </p>
+
+            <p>
+                본 조항은 관련 법률에 따라 제한하거나 배제할 수 없는
+                소비자의 법적 권리를 제한하지 않습니다.
+            </p>
+
+
+            <h2>18. 지식재산권 및 저작권</h2>
+
+            <p>
+                관련 법률 또는 별도의 라이선스에서 달리 허용하는 경우를 제외하고,
+                BodyLog의 앱 디자인, 자체 제작된 화면 구성,
+                프로그램 코드, 문구, 그래픽 및 기타 개발자가 제작한 콘텐츠에 대한
+                권리는 JCraft Studio 또는 정당한 권리자에게 있습니다.
+            </p>
+
+            <p>
+                앱에서 사용되는 Flutter, Android, Google,
+                Google Play, Google Mobile Ads 및 기타
+                제3자 소프트웨어, 라이브러리, 상표와 서비스 명칭은
+                각각의 권리자에게 권리가 있으며
+                해당 라이선스와 이용 조건의 적용을 받습니다.
+            </p>
+
+            <p>
+                Google, Google Play 및 Android는
+                Google LLC의 상표 또는 등록상표일 수 있습니다.
+                JCraft Studio와 BodyLog는 Google LLC가 제작하거나
+                공식적으로 보증하는 서비스가 아닙니다.
+            </p>
+
+
+            <h2>19. 외부 링크</h2>
+
+            <p>
+                BodyLog는 Google Play 또는 기타 외부 웹페이지로 연결되는
+                링크를 제공할 수 있습니다.
+            </p>
+
+            <p>
+                외부 사이트의 콘텐츠, 보안,
+                서비스 운영 및 개인정보 처리에 대해서는
+                해당 사이트 운영자가 책임을 집니다.
+            </p>
+
+
+            <h2>20. 개인정보처리방침의 변경</h2>
+
+            <p>
+                앱 기능, 관련 법령, Google Play 정책,
+                사용 중인 제3자 SDK 또는 서비스가 변경되는 경우
+                본 개인정보처리방침이 수정될 수 있습니다.
+            </p>
+
+            <p>
+                중요한 변경이 있는 경우 시행일을 변경하거나
+                앱 또는 스토어 등록정보 등 적절한 방법을 통해
+                변경 내용을 알릴 수 있습니다.
+            </p>
+
+            <p>
+                사용자는 앱을 이용하기 전에 최신 개인정보처리방침을
+                정기적으로 확인할 것을 권장합니다.
+            </p>
+
+
+            <h2>21. 개인정보 관련 문의</h2>
+
+            <p>
+                BodyLog의 개인정보 처리와 관련된 문의사항이 있는 경우,
+                Google Play의 BodyLog 공식 스토어 등록정보에 표시된
+                <strong>개발자 연락처</strong>를 통해 JCraft Studio에
+                문의할 수 있습니다.
+            </p>
+
+            <p>
+                정확한 최신 연락처를 제공하기 위해
+                개발자 연락처 정보는 Google Play의 공식 앱 등록정보를
+                기준으로 안내합니다.
+            </p>
+
+        </section>
+
+
+        <!-- ========================================================= -->
+        <!-- English Privacy Policy -->
+        <!-- ========================================================= -->
+
+        <section id="en" class="language-section">
+
+            <h2>1. Introduction</h2>
+
+            <p>
+                JCraft Studio ("Developer", "we", "us", or "our")
+                respects the privacy of users of
+                <strong>BodyLog - Weight & BMI Tracker</strong>
+                ("BodyLog" or the "App").
+            </p>
+
+            <p>
+                This Privacy Policy explains what information may be processed
+                when you use BodyLog, how the information is used,
+                where App data is stored, and how third-party services
+                may process certain information.
+            </p>
+
+            <p>
+                By installing or using the App, you acknowledge this
+                Privacy Policy. Where applicable law requires separate
+                consent for particular processing activities,
+                an additional consent process may be provided.
+            </p>
+
+
+            <h2>2. App and Developer Information</h2>
+
+            <table class="info-table">
+                <tr>
+                    <th>Application</th>
+                    <td>BodyLog - Weight & BMI Tracker</td>
+                </tr>
+
+                <tr>
+                    <th>Developer</th>
+                    <td>JCraft Studio</td>
+                </tr>
+
+                <tr>
+                    <th>Developer Contact</th>
+                    <td>
+                        For the latest developer contact and support information,
+                        please refer to the Developer Contact section
+                        on the official BodyLog Google Play Store listing.
+                    </td>
+                </tr>
+            </table>
+
+
+            <h2>3. Information You Enter Into the App</h2>
+
+            <p>
+                BodyLog may process information that you voluntarily enter
+                in order to provide its core functionality, including:
+            </p>
+
+            <ul>
+                <li>Weight</li>
+                <li>Height</li>
+                <li>Goal weight</li>
+                <li>Dates and times associated with weight measurements</li>
+                <li>Notes entered with weight records</li>
+                <li>Information required to calculate BMI</li>
+                <li>Weight measurement reminder settings</li>
+                <li>Language, dark mode and other App preferences</li>
+            </ul>
+
+            <div class="notice">
+                These weight records and related App data are generally
+                stored locally on your device and are not designed to be
+                uploaded to or stored on a server operated by JCraft Studio.
+            </div>
+
+
+            <h2>4. Health-Related Information</h2>
+
+            <p>
+                Weight, height and BMI information may be considered
+                health-related information.
+            </p>
+
+            <p>
+                BodyLog processes this information to provide the features
+                requested by the user, including weight tracking,
+                BMI calculation, weight trend visualization and
+                goal-weight tracking.
+            </p>
+
+            <p>
+                JCraft Studio does not sell the weight records,
+                BMI-related information or personal notes entered into
+                BodyLog to data brokers, nor is the App designed to upload
+                these records to a Developer-operated server for the purpose
+                of building advertising profiles.
+            </p>
+
+
+            <h2>5. Local Data Storage</h2>
+
+            <p>
+                The primary records entered into BodyLog are stored locally
+                on the user's device.
+            </p>
+
+            <p>
+                Data stored locally may be removed if the user deletes
+                App data or uninstalls the App.
+            </p>
+
+            <p>
+                Device loss, operating system failure, storage corruption,
+                App removal or user actions may result in data loss.
+                Users are encouraged to create backups of important records.
+            </p>
+
+
+            <h2>6. JSON Backup and Restore</h2>
+
+            <p>
+                BodyLog may provide JSON backup and restore functionality
+                so users can keep a copy of their App data.
+            </p>
+
+            <p>
+                When the backup feature is used, a file containing
+                BodyLog data may be created at a location selected
+                by the user.
+            </p>
+
+            <p>
+                The user is responsible for managing the storage,
+                copying, transmission, sharing and deletion of
+                exported backup files.
+            </p>
+
+            <p>
+                If a user uploads or shares a backup through a cloud provider,
+                email service, messaging service or another third party,
+                the privacy and security practices of that third party apply.
+            </p>
+
+
+            <h2>7. Notifications</h2>
+
+            <p>
+                BodyLog may use local device notifications to remind
+                users to record their weight at times selected by the user.
+            </p>
+
+            <p>
+                The operating system may request notification permission.
+                Users can disable or modify notification permissions
+                at any time through their device settings.
+            </p>
+
+            <p>
+                Reminder schedules are used for the purpose of providing
+                the user-requested measurement reminder functionality.
+            </p>
+
+
+            <h2>8. Advertising and Google Mobile Ads</h2>
+
+            <p>
+                BodyLog may use the Google Mobile Ads SDK (AdMob)
+                to display advertisements and support continued
+                development and operation of the App.
+            </p>
+
+            <p>
+                Third-party advertising services such as Google Mobile Ads
+                may automatically process certain information for purposes
+                including advertising, ad measurement, fraud prevention,
+                security and service operation.
+            </p>
+
+            <p>
+                Depending on your device, location, consent status
+                and Google service settings, such information may include:
+            </p>
+
+            <ul>
+                <li>Device identifiers, including advertising identifiers</li>
+                <li>IP address</li>
+                <li>Device and operating system information</li>
+                <li>Advertising impressions, clicks and interactions</li>
+                <li>SDK or application diagnostic information</li>
+                <li>
+                    Other information processed in accordance with
+                    applicable law and Google's policies
+                </li>
+            </ul>
+
+            <p>
+                The actual scope of processing may vary depending on
+                user settings, jurisdiction, consent choices,
+                Google service configuration and applicable policies.
+            </p>
+
+            <p>
+                For more information about Google's data practices,
+                please review:
+            </p>
+
+            <ul>
+                <li>
+                    <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Google Privacy Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://policies.google.com/technologies/ads"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        How Google Uses Data for Advertising
+                    </a>
+                </li>
+            </ul>
+
+            <div class="notice">
+                BodyLog is not designed to provide the weight,
+                goal-weight or personal note records entered by the user
+                directly to Google Mobile Ads for advertising targeting.
+            </div>
+
+
+            <h2>9. Third-Party Services</h2>
+
+            <p>
+                BodyLog may interact with services and functionality
+                provided by Google Play, Google Mobile Ads,
+                the user's operating system or other necessary
+                platform services.
+            </p>
+
+            <p>
+                Once users leave BodyLog and access an external website,
+                app store or third-party service, the privacy policy
+                and terms of that third party apply.
+            </p>
+
+            <p>
+                JCraft Studio does not directly control the data handling,
+                security or operation of independent third-party services.
+            </p>
+
+
+            <h2>10. Sale of User Data</h2>
+
+            <p>
+                JCraft Studio does not sell weight records,
+                BMI-related information or personal notes
+                voluntarily entered into BodyLog to data brokers.
+            </p>
+
+
+            <h2>11. User Accounts</h2>
+
+            <p>
+                BodyLog currently does not require users to create
+                a separate JCraft Studio account to use the App.
+            </p>
+
+            <p>
+                Accordingly, BodyLog is not currently designed to store
+                user weight records in a Developer-operated
+                BodyLog account server.
+            </p>
+
+            <p>
+                If account functionality or cloud synchronization
+                is introduced in the future, this Privacy Policy
+                may be updated to describe the applicable processing
+                and deletion procedures.
+            </p>
+
+
+            <h2>12. Data Retention and Deletion</h2>
+
+            <p>
+                Weight records and related App data stored locally
+                may remain on the device until the user deletes them.
+            </p>
+
+            <p>
+                Users may delete individual records using features
+                provided within the App or delete locally stored App data
+                by clearing application data or uninstalling the App,
+                subject to the behavior of the operating system.
+            </p>
+
+            <p>
+                JSON backup files created separately by the user may remain
+                in the selected storage location even after the App itself
+                or its internal records have been deleted.
+                Users must delete those backup files separately.
+            </p>
+
+            <p>
+                Information processed by third-party providers such as Google
+                is subject to the retention and deletion practices
+                of those providers.
+            </p>
+
+
+            <h2>13. Data Security</h2>
+
+            <p>
+                JCraft Studio seeks to minimize the collection of information
+                that is not necessary for the App's functionality and
+                designs the App so that primary BodyLog records
+                can be processed locally on the user's device.
+            </p>
+
+            <p>
+                However, no electronic storage or transmission method
+                can guarantee absolute security.
+            </p>
+
+            <p>
+                Users are responsible for maintaining the security
+                of their devices and for securely storing any exported
+                JSON backup files that may contain sensitive information.
+            </p>
+
+
+            <h2>14. Children and Minors</h2>
+
+            <p>
+                BodyLog is a general weight and BMI tracking utility
+                and is not primarily designed or directed toward children.
+            </p>
+
+            <p>
+                Where appropriate, minors should use health or
+                weight-related information with the involvement
+                of a parent, guardian or qualified healthcare professional.
+            </p>
+
+
+            <h2>15. Medical and Health Disclaimer</h2>
+
+            <div class="warning">
+                BodyLog is not a medical device, healthcare provider
+                or substitute for professional medical advice,
+                diagnosis or treatment.
+            </div>
+
+            <p>
+                BMI values, weight trends, reference weight ranges
+                and other calculations provided by BodyLog are intended
+                only for general informational and personal tracking purposes.
+            </p>
+
+            <p>
+                BMI may not accurately represent an individual's
+                overall health, body fat percentage, muscle mass,
+                medical conditions, pregnancy, age or other
+                medically relevant factors.
+            </p>
+
+            <p>
+                Information provided by BodyLog should not be used
+                to diagnose, treat or prevent disease, determine medication,
+                or make urgent medical decisions.
+            </p>
+
+            <p>
+                Users with health concerns or symptoms requiring
+                medical judgment should consult a physician or
+                other qualified healthcare professional.
+            </p>
+
+
+            <h2>16. Accuracy of Information</h2>
+
+            <p>
+                Calculations and results provided by BodyLog depend
+                on information entered by the user.
+            </p>
+
+            <p>
+                Incorrect height, weight, date or other input
+                may result in inaccurate calculations or displayed information.
+            </p>
+
+            <p>
+                Users are responsible for reviewing the information
+                they enter and correcting it where necessary.
+            </p>
+
+
+            <h2>17. Availability and Limitation of Liability</h2>
+
+            <p>
+                JCraft Studio endeavors to provide a stable application,
+                but does not guarantee that BodyLog will operate
+                continuously, without interruption or without errors
+                on every device, operating system or configuration.
+            </p>
+
+            <p>
+                To the extent permitted by applicable law,
+                liability may be limited for loss of data or
+                service issues resulting from circumstances outside
+                the Developer's reasonable control, including
+                device failure, operating system errors,
+                third-party service failures, user error,
+                App removal, storage corruption or failure
+                to maintain backups.
+            </p>
+
+            <p>
+                Nothing in this Privacy Policy excludes or limits
+                consumer rights or liabilities that cannot legally
+                be excluded or limited under applicable law.
+            </p>
+
+
+            <h2>18. Intellectual Property and Copyright</h2>
+
+            <p>
+                Except where otherwise permitted by applicable law
+                or applicable third-party licenses, rights in
+                BodyLog's original application design,
+                Developer-created user interface elements,
+                source code, text, graphics and other original content
+                belong to JCraft Studio or their respective lawful owners.
+            </p>
+
+            <p>
+                Flutter, Android, Google, Google Play,
+                Google Mobile Ads, third-party libraries,
+                trademarks and service names used in connection with
+                the App remain the property of their respective owners
+                and are subject to their respective licenses and terms.
+            </p>
+
+            <p>
+                Google, Google Play and Android may be trademarks
+                of Google LLC.
+                BodyLog and JCraft Studio are not produced,
+                endorsed or officially sponsored by Google LLC.
+            </p>
+
+
+            <h2>19. External Links</h2>
+
+            <p>
+                BodyLog may contain links that open Google Play
+                or other external websites or services.
+            </p>
+
+            <p>
+                The operators of those services are responsible
+                for their own content, privacy practices,
+                security and operation.
+            </p>
+
+
+            <h2>20. Changes to This Privacy Policy</h2>
+
+            <p>
+                This Privacy Policy may be updated when App functionality,
+                applicable law, Google Play policies,
+                third-party SDKs or services change.
+            </p>
+
+            <p>
+                If material changes are made,
+                the effective date may be updated and users may
+                be informed through appropriate means,
+                including the App or its store listing where appropriate.
+            </p>
+
+            <p>
+                Users are encouraged to periodically review
+                the current version of this Privacy Policy.
+            </p>
+
+
+            <h2>21. Privacy Inquiries</h2>
+
+            <p>
+                For questions about privacy or data processing
+                relating to BodyLog, users may contact
+                <strong>JCraft Studio</strong> using the
+                Developer Contact information displayed on the
+                official BodyLog Google Play Store listing.
+            </p>
+
+            <p>
+                The official Google Play listing is used as the reference
+                for the Developer's current contact information.
+            </p>
+
+        </section>
+
+
+        <footer class="footer">
+            <p>
+                © 2026 JCraft Studio. All rights reserved.
+            </p>
+
+            <p>
+                BodyLog - Weight & BMI Tracker
+            </p>
+        </footer>
+
+    </main>
+</div>
+
+
+<script>
+    function showLanguage(language) {
+        const sections = document.querySelectorAll(".language-section");
+        const buttons = document.querySelectorAll(".language-button");
+
+        sections.forEach(function(section) {
+            section.classList.remove("active");
+        });
+
+        buttons.forEach(function(button) {
+            button.classList.remove("active");
+        });
+
+        document.getElementById(language).classList.add("active");
+        document.getElementById("btn-" + language).classList.add("active");
+
+        document.documentElement.lang =
+            language === "ko" ? "ko" : "en";
+    }
+</script>
+
+</body>
+</html>
