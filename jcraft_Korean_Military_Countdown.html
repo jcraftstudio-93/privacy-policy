@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>개인정보처리방침 | 전역계산기</title>
+
+  <meta
+    name="description"
+    content="전역계산기 앱의 개인정보처리방침입니다. Privacy Policy for the Korean Military Discharge Calculator app."
+  >
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --sub-text: #6b7280;
+      --primary: #315b97;
+      --primary-light: #eaf1fb;
+      --border: #e5e7eb;
+      --notice-bg: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans KR",
+        "Apple SD Gothic Neo",
+        Arial,
+        sans-serif;
+      line-height: 1.75;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: 40px auto;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    .header {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-size: 30px;
+      line-height: 1.35;
+    }
+
+    h2 {
+      margin-top: 38px;
+      margin-bottom: 12px;
+      color: var(--primary);
+      font-size: 21px;
+    }
+
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    a {
+      color: var(--primary);
+      word-break: break-all;
+    }
+
+    .sub {
+      color: var(--sub-text);
+      font-size: 14px;
+    }
+
+    .language-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 20px 0 4px;
+    }
+
+    .language-buttons button {
+      appearance: none;
+      border: 1px solid var(--primary);
+      background: #fff;
+      color: var(--primary);
+      border-radius: 999px;
+      padding: 9px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .language-buttons button.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .notice {
+      background: var(--notice-bg);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+
+    .highlight {
+      background: var(--primary-light);
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+
+    .language-section {
+      display: none;
+    }
+
+    .language-section.active {
+      display: block;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--sub-text);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 20px, 920px);
+        margin: 16px auto;
+      }
+
+      .card {
+        padding: 24px 20px;
+        border-radius: 14px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <div class="header">
+      <h1>개인정보처리방침 / Privacy Policy</h1>
+
+      <p class="sub">
+        전역계산기 · Korean Military Discharge Calculator
+      </p>
+
+      <p class="sub">
+        시행일 / Effective Date: 2026-09-10
+      </p>
+
+      <div class="language-buttons">
+        <button
+          id="btn-ko"
+          class="active"
+          type="button"
+          onclick="setLanguage('ko')"
+        >
+          한국어
+        </button>
+
+        <button
+          id="btn-en"
+          type="button"
+          onclick="setLanguage('en')"
+        >
+          English
+        </button>
+      </div>
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Korean Privacy Policy -->
+    <!-- ========================= -->
+
+    <section id="ko" class="language-section active">
+
+      <p>
+        본 개인정보처리방침은 <strong>전역계산기</strong> 앱
+        (이하 "앱")에서 이용자의 정보가 어떻게 처리되는지를 설명합니다.
+      </p>
+
+      <p>
+        본 앱은 대한민국 군 복무와 관련된 예상 전역일, 복무기간,
+        D-Day, 휴가 일정 등을 사용자가 편리하게 계산하고 관리할 수 있도록
+        제공되는 독립적인 유틸리티 앱입니다.
+      </p>
+
+      <div class="notice">
+        본 앱은 대한민국 정부, 국방부, 병무청, 각 군 또는
+        기타 정부·공공기관에서 제작, 제공, 승인 또는 운영하는
+        공식 앱이 아닙니다.
+      </div>
+
+
+      <h2>1. 앱에서 처리하는 정보</h2>
+
+      <p>
+        앱은 주요 기능 제공을 위해 사용자가 직접 입력하거나 선택한
+        다음 정보를 기기 내부에 저장할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>입대일</li>
+        <li>복무 유형</li>
+        <li>휴가 일정 및 사용자가 입력한 휴가 관련 정보</li>
+        <li>앱 언어 설정</li>
+        <li>다크 모드 등 앱 환경설정</li>
+        <li>앱 기능 동작을 위해 필요한 일부 로컬 설정값</li>
+        <li>홈 화면 위젯 표시를 위해 필요한 계산 결과 및 설정값</li>
+      </ul>
+
+      <p>
+        이러한 정보는 앱의 기능 제공을 목적으로 사용자의 기기 내부에
+        저장되며, 개발자가 운영하는 별도의 서버로 직접 전송하거나
+        별도의 사용자 계정과 연결하여 저장하지 않습니다.
+      </p>
+
+
+      <h2>2. 개인정보의 이용 목적</h2>
+
+      <p>
+        기기 내부에 저장되는 정보는 다음 목적에 사용됩니다.
+      </p>
+
+      <ul>
+        <li>예상 전역일 및 남은 복무기간 계산</li>
+        <li>전역 D-Day 및 실시간 카운트다운 표시</li>
+        <li>복무 진행률 계산</li>
+        <li>휴가 일정 저장 및 표시</li>
+        <li>홈 화면 위젯 표시</li>
+        <li>사용자가 선택한 언어 및 화면 설정 유지</li>
+        <li>앱의 정상적인 기능 제공</li>
+      </ul>
+
+
+      <h2>3. 광고 서비스 및 제3자 SDK</h2>
+
+      <p>
+        본 앱은 광고 제공을 위해
+        <strong>Google AdMob / Google Mobile Ads SDK</strong>를
+        사용할 수 있습니다.
+      </p>
+
+      <p>
+        Google Mobile Ads SDK는 광고 제공, 광고 성과 측정,
+        분석, 보안 및 부정행위 방지 등의 목적으로 일부 사용자 또는
+        기기 관련 정보를 자동으로 처리할 수 있습니다.
+      </p>
+
+      <p>
+        처리될 수 있는 정보에는 Google의 서비스 및 SDK 구성에 따라
+        다음과 같은 정보가 포함될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>IP 주소 및 이를 통해 추정되는 대략적인 위치 정보</li>
+        <li>광고 식별자 또는 기타 기기/앱 관련 식별자</li>
+        <li>앱 실행, 탭 등 앱 또는 광고와의 상호작용 정보</li>
+        <li>광고 노출 및 광고 관련 정보</li>
+        <li>앱 및 SDK 성능 관련 정보</li>
+        <li>오류, 충돌 및 기타 진단 정보</li>
+      </ul>
+
+      <p>
+        이러한 정보의 실제 처리 범위는 이용자의 기기 설정,
+        지역, 동의 여부, Google 서비스 설정 및 사용되는 SDK의
+        버전에 따라 달라질 수 있습니다.
+      </p>
+
+      <p>
+        Google의 데이터 처리 방식에 대한 자세한 내용은
+        Google 개인정보처리방침을 확인하시기 바랍니다.
+      </p>
+
+      <p>
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://policies.google.com/privacy
+        </a>
+      </p>
+
+
+      <h2>4. 외부 링크 및 Google Play 연결</h2>
+
+      <p>
+        앱은 다른 앱을 소개하거나 Google Play 스토어의 앱 페이지로
+        이동하기 위한 외부 링크를 제공할 수 있습니다.
+      </p>
+
+      <p>
+        이용자가 외부 링크를 선택한 이후의 개인정보 처리에는
+        해당 서비스 또는 플랫폼의 개인정보처리방침 및 이용약관이
+        적용됩니다.
+      </p>
+
+
+      <h2>5. 홈 화면 위젯</h2>
+
+      <p>
+        사용자가 Android 홈 화면 위젯을 사용하는 경우,
+        위젯은 전역 D-Day, 남은 일수, 예상 전역일,
+        복무 진행률 및 다음 휴가 등의 정보를 표시할 수 있습니다.
+      </p>
+
+      <p>
+        위젯에 사용되는 정보는 앱 기능 제공을 위해 사용자의 기기에서
+        처리되며, 개발자가 운영하는 별도의 서버로 전송하기 위한
+        목적으로 사용되지 않습니다.
+      </p>
+
+
+      <h2>6. 개인정보의 제3자 제공</h2>
+
+      <p>
+        개발자는 이용자가 앱에 직접 입력한 입대일, 복무 유형,
+        휴가 일정 등의 정보를 개발자가 운영하는 별도 서버를 통해
+        제3자에게 판매하거나 제공하지 않습니다.
+      </p>
+
+      <p>
+        다만, 앱에 포함된 Google Mobile Ads SDK와 같은
+        제3자 서비스 제공자는 해당 서비스의 제공, 광고, 분석,
+        보안 및 부정행위 방지 등의 목적으로 데이터를 처리하거나
+        공유할 수 있습니다.
+      </p>
+
+
+      <h2>7. 데이터의 보관 및 삭제</h2>
+
+      <p>
+        사용자가 앱에 입력한 주요 정보와 설정값은 원칙적으로
+        사용자의 기기에 로컬 형태로 저장됩니다.
+      </p>
+
+      <p>
+        사용자는 앱에서 관련 데이터를 수정하거나 삭제할 수 있으며,
+        앱을 삭제하거나 기기 설정을 통해 앱 데이터를 삭제하면
+        기기에 저장된 앱 데이터가 삭제될 수 있습니다.
+      </p>
+
+      <p>
+        개발자는 이러한 로컬 데이터를 별도의 사용자 계정이나
+        자체 서버에 보관하지 않으므로, 개발자 서버에서 별도로
+        삭제를 요청해야 하는 사용자 계정 데이터는 존재하지 않습니다.
+      </p>
+
+      <p>
+        제3자 서비스에서 처리되는 정보의 보관 및 삭제 정책은
+        해당 서비스 제공자의 정책에 따릅니다.
+      </p>
+
+
+      <h2>8. 데이터 보안</h2>
+
+      <p>
+        앱은 필요한 기능의 범위 내에서 정보를 처리하도록 설계되어
+        있으며, 사용자가 입력한 주요 일정 및 설정 정보는
+        기기 내부 저장소를 이용하여 처리합니다.
+      </p>
+
+      <p>
+        인터넷을 통해 제3자 서비스로 전달되는 정보가 있는 경우,
+        해당 서비스 제공자가 제공하는 보안 통신 및 데이터 보호
+        절차가 적용될 수 있습니다.
+      </p>
+
+      <p>
+        다만 어떠한 전자적 저장 및 전송 방식도 절대적인 보안을
+        보장할 수 없으므로, 개발자는 법령상 허용되는 범위 내에서
+        합리적인 보호 조치를 유지하기 위해 노력합니다.
+      </p>
+
+
+      <h2>9. 아동의 개인정보</h2>
+
+      <p>
+        본 앱은 아동을 대상으로 설계된 서비스가 아니며,
+        개발자는 앱을 통해 아동의 개인정보를 의도적으로
+        직접 수집하기 위한 기능을 제공하지 않습니다.
+      </p>
+
+      <p>
+        광고 서비스의 데이터 처리는 이용 지역, 연령,
+        Google의 광고 정책 및 관련 법령의 적용을 받을 수 있습니다.
+      </p>
+
+
+      <h2>10. 예상 전역일 등 계산 결과에 관한 안내</h2>
+
+      <p>
+        앱에서 표시하는 예상 전역일, 남은 복무기간,
+        복무 진행률 및 기타 계산 결과는 사용자가 입력한 정보와
+        앱에 설정된 계산 기준을 바탕으로 제공되는 참고용 정보입니다.
+      </p>
+
+      <p>
+        실제 복무기간 및 전역일은 개인별 상황, 복무형태,
+        법령, 행정처분, 제도 또는 정책 변경 등에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <div class="highlight">
+        입영, 복무기간, 전역일 및 기타 군 복무와 관련된
+        중요한 사항은 반드시 대한민국 정부 및 관계 기관에서
+        제공하는 최신 공식 정보를 확인하시기 바랍니다.
+      </div>
+
+
+      <h2>11. 정부기관과의 관계</h2>
+
+      <p>
+        본 앱은 개인 개발자가 제공하는 독립적인 편의 도구이며,
+        대한민국 정부, 국방부, 병무청, 대한민국 육군,
+        해군, 공군, 해병대 또는 기타 공공기관과 공식적으로
+        제휴, 승인, 후원 또는 운영 관계에 있지 않습니다.
+      </p>
+
+      <p>
+        정부기관, 군 기관 및 기타 기관의 명칭은 이용자가
+        앱의 기능과 적용 범위를 이해하는 데 필요한 설명 목적으로만
+        사용될 수 있으며, 해당 기관의 공식 앱임을 의미하지 않습니다.
+      </p>
+
+
+      <h2>12. 지식재산권</h2>
+
+      <p>
+        앱 및 본 웹페이지에서 개발자가 독자적으로 제작한
+        프로그램 코드, UI 구성, 문구 및 기타 콘텐츠에 관한 권리는
+        관련 법령에 따라 보호될 수 있습니다.
+      </p>
+
+      <p>
+        Google, Google Play, AdMob 및 기타 제3자의 상표,
+        서비스명 및 콘텐츠에 관한 권리는 각각의 권리자에게 있습니다.
+        본 앱에서 제3자 명칭이 사용되는 경우 해당 서비스 또는 기능을
+        식별하거나 설명하기 위한 목적으로 사용됩니다.
+      </p>
+
+
+      <h2>13. 개인정보처리방침의 변경</h2>
+
+      <p>
+        앱의 기능, 사용되는 SDK, 관련 법령 또는 서비스 정책이
+        변경되는 경우 본 개인정보처리방침이 수정될 수 있습니다.
+      </p>
+
+      <p>
+        중요한 변경이 있는 경우 본 페이지의 시행일을 변경하거나
+        앱 또는 Google Play 스토어 등을 통해 적절한 방법으로
+        안내할 수 있습니다.
+      </p>
+
+
+      <h2>14. 개발자 정보 및 문의</h2>
+
+      <p>
+        본 앱의 최신 개발자 정보 및 문의 가능한 연락처는
+        <strong>Google Play 스토어의 전역계산기 앱 등록정보에
+        표시된 개발자 정보를 참고해 주시기 바랍니다.</strong>
+      </p>
+
+      <p>
+        개인정보 또는 본 개인정보처리방침과 관련된 문의 역시
+        Google Play 스토어 등록정보에 제공된 개발자 연락처를
+        통해 문의하실 수 있습니다.
+      </p>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- English Privacy Policy -->
+    <!-- ========================= -->
+
+    <section id="en" class="language-section">
+
+      <p>
+        This Privacy Policy explains how information is handled in the
+        <strong>Korean Military Discharge Calculator</strong>
+        application (the "App").
+      </p>
+
+      <p>
+        The App is an independent utility designed to help users
+        calculate and manage estimated military discharge dates,
+        service countdowns, progress, and leave schedules based on
+        South Korean military service periods.
+      </p>
+
+      <div class="notice">
+        This App is not an official application created, provided,
+        approved, sponsored, or operated by the Government of the
+        Republic of Korea, the Ministry of National Defense,
+        the Military Manpower Administration, any branch of the
+        armed forces, or any other government or public authority.
+      </div>
+
+
+      <h2>1. Information Processed by the App</h2>
+
+      <p>
+        To provide its main features, the App may store information
+        entered or selected by the user locally on the user's device,
+        including:
+      </p>
+
+      <ul>
+        <li>Enlistment date</li>
+        <li>Military service type</li>
+        <li>Leave schedules and related information entered by the user</li>
+        <li>Language preferences</li>
+        <li>Dark mode and other application preferences</li>
+        <li>Local settings required for application functionality</li>
+        <li>Calculated values and settings required for the home screen widget</li>
+      </ul>
+
+      <p>
+        This information is stored locally on the user's device for
+        application functionality. It is not directly transmitted to
+        or stored on a separate server operated by the developer,
+        nor is it linked to a developer-managed user account.
+      </p>
+
+
+      <h2>2. Purposes of Local Data Processing</h2>
+
+      <p>
+        Information stored locally may be used to:
+      </p>
+
+      <ul>
+        <li>Calculate an estimated military discharge date</li>
+        <li>Calculate remaining military service time</li>
+        <li>Display a discharge D-Day and countdown</li>
+        <li>Calculate military service progress</li>
+        <li>Store and display leave schedules</li>
+        <li>Provide home screen widget information</li>
+        <li>Remember language and display preferences</li>
+        <li>Provide and maintain normal App functionality</li>
+      </ul>
+
+
+      <h2>3. Advertising and Third-Party SDKs</h2>
+
+      <p>
+        The App may use
+        <strong>Google AdMob / Google Mobile Ads SDK</strong>
+        to display advertisements.
+      </p>
+
+      <p>
+        The Google Mobile Ads SDK may automatically process certain
+        user or device-related information for purposes such as
+        advertising, measurement, analytics, security, and fraud
+        prevention.
+      </p>
+
+      <p>
+        Depending on Google's services, SDK configuration, device
+        settings, region, and user consent, such information may include:
+      </p>
+
+      <ul>
+        <li>IP address and approximate location derived from it</li>
+        <li>Advertising identifiers or other device/app identifiers</li>
+        <li>App launches, taps, and other interaction information</li>
+        <li>Advertising and ad impression information</li>
+        <li>App and SDK performance information</li>
+        <li>Crash reports and diagnostic information</li>
+      </ul>
+
+      <p>
+        The exact information processed may vary depending on the
+        user's device settings, location, consent choices, Google
+        service configuration, and the version of the SDK being used.
+      </p>
+
+      <p>
+        For more information about how Google processes information,
+        please review Google's Privacy Policy:
+      </p>
+
+      <p>
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://policies.google.com/privacy
+        </a>
+      </p>
+
+
+      <h2>4. External Links and Google Play</h2>
+
+      <p>
+        The App may provide links to Google Play or other external
+        services, including links used to recommend other applications.
+      </p>
+
+      <p>
+        Once a user leaves the App and accesses an external service,
+        the privacy policy and terms of that third-party service apply
+        to any subsequent processing of information.
+      </p>
+
+
+      <h2>5. Home Screen Widget</h2>
+
+      <p>
+        If the user enables the Android home screen widget, the widget
+        may display information such as the discharge D-Day, remaining
+        days, estimated discharge date, service progress, and next leave.
+      </p>
+
+      <p>
+        Information used for the widget is processed on the user's
+        device to provide the widget functionality and is not used for
+        the purpose of transmitting those military schedule details to
+        a separate server operated by the developer.
+      </p>
+
+
+      <h2>6. Sharing of Information</h2>
+
+      <p>
+        The developer does not sell or provide user-entered enlistment
+        dates, service types, leave schedules, or similar locally stored
+        information to third parties through a developer-operated server.
+      </p>
+
+      <p>
+        However, third-party service providers integrated into the App,
+        such as the Google Mobile Ads SDK, may process or share certain
+        information as necessary to provide advertising, analytics,
+        security, measurement, and fraud-prevention services.
+      </p>
+
+
+      <h2>7. Data Retention and Deletion</h2>
+
+      <p>
+        Information entered into the App and application preferences
+        are generally stored locally on the user's device.
+      </p>
+
+      <p>
+        Users may modify or delete relevant information through the App.
+        Locally stored application data may also be removed by
+        uninstalling the App or clearing the App's data through the
+        device settings.
+      </p>
+
+      <p>
+        Because the developer does not maintain a user account system
+        or separately store this local information on a developer-operated
+        server, there is no corresponding account data stored on such a
+        server that requires a separate deletion request.
+      </p>
+
+      <p>
+        Data processed by third-party services is subject to the
+        retention and deletion policies of the relevant service provider.
+      </p>
+
+
+      <h2>8. Data Security</h2>
+
+      <p>
+        The App is designed to process information only to the extent
+        reasonably necessary to provide its functions. Important
+        schedules and preferences entered by the user are generally
+        handled through local device storage.
+      </p>
+
+      <p>
+        Where information is transmitted to third-party services over
+        the Internet, the security and data protection measures
+        provided by those services may apply.
+      </p>
+
+      <p>
+        No electronic storage or transmission method can guarantee
+        absolute security. The developer therefore seeks to maintain
+        reasonable safeguards within the scope permitted and required
+        by applicable law.
+      </p>
+
+
+      <h2>9. Children's Privacy</h2>
+
+      <p>
+        The App is not designed specifically for children and does not
+        intentionally provide functionality for the developer to
+        directly collect personal information from children.
+      </p>
+
+      <p>
+        Data processing by advertising services may be subject to the
+        user's region, age, applicable laws, and Google's advertising
+        and privacy requirements.
+      </p>
+
+
+      <h2>10. Disclaimer Regarding Calculation Results</h2>
+
+      <p>
+        Estimated discharge dates, remaining military service periods,
+        service progress, and other calculated results displayed by the
+        App are provided for informational and convenience purposes.
+      </p>
+
+      <p>
+        Results are based on information entered by the user and the
+        calculation rules configured in the App.
+      </p>
+
+      <p>
+        Actual military service periods and discharge dates may vary
+        depending on individual circumstances, service arrangements,
+        administrative decisions, or changes in laws, regulations,
+        policies, or military service systems.
+      </p>
+
+      <div class="highlight">
+        Users should always verify important information concerning
+        enlistment, military service periods, discharge dates, and
+        related obligations through the latest official information
+        provided by the Government of the Republic of Korea and the
+        relevant competent authorities.
+      </div>
+
+
+      <h2>11. Relationship with Government Authorities</h2>
+
+      <p>
+        The App is an independently developed utility and is not
+        officially affiliated with, endorsed by, sponsored by,
+        approved by, or operated by the Government of the Republic
+        of Korea, the Ministry of National Defense, the Military
+        Manpower Administration, the Republic of Korea Army, Navy,
+        Air Force, Marine Corps, or any other public authority.
+      </p>
+
+      <p>
+        References to government agencies, military organizations,
+        or service categories are used only when reasonably necessary
+        to describe the functionality and scope of the App and do not
+        imply official status or endorsement.
+      </p>
+
+
+      <h2>12. Intellectual Property</h2>
+
+      <p>
+        Program code, interface elements, text, and other content
+        independently created by the developer may be protected under
+        applicable intellectual property laws.
+      </p>
+
+      <p>
+        Google, Google Play, AdMob, and other third-party names,
+        trademarks, services, and content remain the property of their
+        respective owners. References to third-party names are made
+        solely for identification or descriptive purposes where applicable.
+      </p>
+
+
+      <h2>13. Changes to This Privacy Policy</h2>
+
+      <p>
+        This Privacy Policy may be updated when App functionality,
+        third-party SDKs, applicable laws, regulations, or platform
+        policies change.
+      </p>
+
+      <p>
+        When material changes are made, the effective date displayed
+        on this page may be updated, and notice may be provided through
+        the App, Google Play, or another appropriate method where required.
+      </p>
+
+
+      <h2>14. Developer Information and Contact</h2>
+
+      <p>
+        For the most current developer identity and contact information,
+        please refer to the
+        <strong>developer information displayed on the Google Play
+        store listing for the Korean Military Discharge Calculator
+        application.</strong>
+      </p>
+
+      <p>
+        Questions regarding privacy or this Privacy Policy may be
+        submitted using the developer contact information provided
+        on the Google Play store listing.
+      </p>
+
+    </section>
+
+
+    <div class="footer">
+      <p>
+        © 2026. All rights reserved.
+      </p>
+
+      <p>
+        전역계산기 · Korean Military Discharge Calculator
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+  function setLanguage(language) {
+    const koreanSection = document.getElementById('ko');
+    const englishSection = document.getElementById('en');
+
+    const koreanButton = document.getElementById('btn-ko');
+    const englishButton = document.getElementById('btn-en');
+
+    if (language === 'en') {
+      koreanSection.classList.remove('active');
+      englishSection.classList.add('active');
+
+      koreanButton.classList.remove('active');
+      englishButton.classList.add('active');
+
+      document.documentElement.lang = 'en';
+      document.title =
+        'Privacy Policy | Korean Military Discharge Calculator';
+
+      localStorage.setItem('privacy-language', 'en');
+    } else {
+      englishSection.classList.remove('active');
+      koreanSection.classList.add('active');
+
+      englishButton.classList.remove('active');
+      koreanButton.classList.add('active');
+
+      document.documentElement.lang = 'ko';
+      document.title = '개인정보처리방침 | 전역계산기';
+
+      localStorage.setItem('privacy-language', 'ko');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const savedLanguage = localStorage.getItem('privacy-language');
+
+    if (savedLanguage === 'ko' || savedLanguage === 'en') {
+      setLanguage(savedLanguage);
+      return;
+    }
+
+    const browserLanguage =
+      navigator.language || navigator.userLanguage || 'en';
+
+    if (browserLanguage.toLowerCase().startsWith('ko')) {
+      setLanguage('ko');
+    } else {
+      setLanguage('en');
+    }
+  });
+</script>
+
+</body>
+</html>
