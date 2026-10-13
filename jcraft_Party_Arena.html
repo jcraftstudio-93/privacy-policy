@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Party Arena Privacy Policy by JCraft Studio. Available in English and Korean.">
+  <meta name="robots" content="index, follow">
+  <title>Privacy Policy | Party Arena | JCraft Studio</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f6f8fc;
+      --surface: #ffffff;
+      --text: #172238;
+      --muted: #5d6a7e;
+      --accent: #2859ce;
+      --border: #e1e7f0;
+      --focus: #ffb62e;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      overflow-wrap: break-word;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+    [hidden] { display: none !important; }
+    .topbar {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .topbar-inner {
+      max-width: 930px;
+      margin: 0 auto;
+      padding: 15px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .brand { font-size: 15px; font-weight: 800; letter-spacing: .01em; }
+    .brand small { display: block; font-weight: 500; color: var(--muted); }
+    .switcher {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--background);
+    }
+    .switcher button {
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 9px;
+      padding: 8px 14px;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .switcher button[aria-pressed="true"] {
+      background: var(--accent);
+      color: #fff;
+    }
+    main { max-width: 930px; margin: 32px auto 70px; padding: 0 24px; }
+    .document {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: clamp(24px, 5vw, 54px);
+      box-shadow: 0 12px 34px rgba(14, 38, 76, .045);
+    }
+    h1, h2, h3 { line-height: 1.38; letter-spacing: -.02em; }
+    h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 38px); }
+    h2 { margin: 35px 0 12px; font-size: 21px; }
+    h3 { margin: 20px 0 8px; font-size: 17px; }
+    p { margin: 11px 0; }
+    ul { margin: 10px 0 16px; padding-left: 25px; }
+    li + li { margin-top: 7px; }
+    .meta { font-size: 14px; color: var(--muted); margin-bottom: 25px; }
+    .lead { font-size: 17px; }
+    .toc {
+      border-block: 1px solid var(--border);
+      padding: 16px 0;
+      margin: 27px 0;
+    }
+    .toc strong { display: block; margin-bottom: 4px; }
+    .toc a { margin-right: 13px; font-size: 14px; display: inline-block; }
+    .note { font-size: 14px; color: var(--muted); }
+    footer {
+      max-width: 930px;
+      margin: 0 auto 32px;
+      padding: 0 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    @media (max-width: 520px) {
+      .topbar-inner { padding: 14px 16px; }
+      main { margin-top: 18px; padding: 0 12px; }
+      .document { border-radius: 14px; padding: 23px 18px; }
+      h2 { font-size: 19px; }
+    }
+    @media print {
+      body { background: white; }
+      .topbar { display: none; }
+      main { max-width: none; margin: 0; padding: 0; }
+      .document { border: 0; padding: 0; box-shadow: none; }
+      .toc { display: none; }
+      a { color: inherit; }
+    }
+  </style>
+  <noscript>
+    <style>
+      #policy-ko[hidden] { display: block !important; margin-top: 50px; }
+    </style>
+  </noscript>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">JCraft Studio <small>Party Arena</small></div>
+      <nav class="switcher" aria-label="Policy language / 언어 선택">
+        <button id="button-en" type="button" lang="en" aria-pressed="true">English</button>
+        <button id="button-ko" type="button" lang="ko" aria-pressed="false">한국어</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article id="policy-en" class="document" lang="en">
+      <h1>Privacy Policy</h1>
+      <div class="meta">Party Arena · JCraft Studio · Effective date: October 13, 2026</div>
+      <p class="lead">
+        JCraft Studio (the “Developer”) provides Party Arena (the “App”), a companion
+        tool for in-person Mafia, Liar, and random tagger selection games. This policy
+        explains how the App handles information, including data handled by its advertising provider.
+      </p>
+      <p>
+        The App does not require an account. Its main game information is stored on your
+        device, but third-party advertising technology may collect and process certain
+        device and usage information as described below.
+      </p>
+
+      <nav class="toc" aria-label="Contents">
+        <strong>Contents</strong>
+        <a href="#en-data">Information</a>
+        <a href="#en-use">Use and sharing</a>
+        <a href="#en-retention">Retention and deletion</a>
+        <a href="#en-rights">Your choices</a>
+        <a href="#en-contact">Contact</a>
+      </nav>
+
+      <h2 id="en-data">1. Information handled by the App</h2>
+      <h3>1.1 Information stored locally</h3>
+      <p>The App may save the following information on your device to provide its features:</p>
+      <ul>
+        <li>Participant names you enter; game setup, assignments, rounds, and outcomes.</li>
+        <li>Saved game history, including roles, selected words, and game-related results.</li>
+        <li>Categories and secret words you create or modify for the Liar game.</li>
+        <li>Language, theme, animation preferences, and the expiry time of an earned ad-free interval.</li>
+        <li>In-progress game state, which helps restore your session after restarting the App.</li>
+      </ul>
+      <p>
+        These items are stored in the App's local storage. In the currently described
+        version, JCraft Studio does not operate a user-account server, upload this game
+        content to a Developer-controlled server, or provide a game-data cloud-sync feature.
+        Names and other words entered by users may be personal information, so avoid
+        entering sensitive or unnecessary information about yourself or others.
+      </p>
+
+      <h3>1.2 Advertising and consent information</h3>
+      <p>
+        The App integrates Google AdMob (Google Mobile Ads SDK) to display banner,
+        interstitial, and optional rewarded ads, and Google's User Messaging Platform
+        (UMP) to manage applicable ad privacy choices. Depending on device settings,
+        applicable law, consent, and Google service configuration, Google's SDKs may
+        automatically collect or process:
+      </p>
+      <ul>
+        <li>IP address, which can be used to infer an approximate location.</li>
+        <li>Advertising ID, app set ID, and other applicable device or account identifiers.</li>
+        <li>App interactions, such as launches, taps, and ad impressions or video views.</li>
+        <li>Diagnostic and performance information, such as errors, app launch timing, and stability metrics.</li>
+        <li>Ad privacy consent or preference signals needed to apply your choices.</li>
+      </ul>
+      <p>
+        Google and its advertising partners may process data according to their
+        own policies and applicable legal requirements. The Developer does not receive
+        your locally entered participant lists or secret words from these ad integrations.
+        Advertising-related collection can occur even when ads are non-personalized,
+        subject to the relevant consent and technical settings.
+      </p>
+
+      <h2 id="en-use">2. Purposes of use and sharing</h2>
+      <p>Information is used or processed for the following purposes:</p>
+      <ul>
+        <li><strong>Game functions:</strong> assigning roles, selecting players, tracking rounds, saving history, and retaining settings locally.</li>
+        <li><strong>Advertising:</strong> showing and measuring ads and administering the voluntary rewarded-ad feature.</li>
+        <li><strong>Security and quality:</strong> detecting invalid ad activity, preventing fraud, and diagnosing service or SDK issues.</li>
+        <li><strong>Legal compliance:</strong> implementing applicable consent or privacy choices and meeting legal obligations.</li>
+      </ul>
+      <p>
+        The Developer does not sell the participant names, custom topics, or game
+        history you enter locally. Advertising-related device and interaction data may
+        be shared with Google and advertising partners as part of the advertising service.
+        If you choose to open a recommendation for another app, you leave Party Arena and
+        the destination service's privacy practices apply.
+      </p>
+
+      <h2>3. Third-party services</h2>
+      <p>The App uses or may link to these external services:</p>
+      <ul>
+        <li>
+          <strong>Google AdMob / Google Mobile Ads and UMP:</strong> ad delivery,
+          measurement, fraud prevention, and consent management.
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> ·
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's partner-data explanation</a>.
+        </li>
+        <li>
+          <strong>Google Play:</strong> app distribution and optional links to other apps.
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+        </li>
+      </ul>
+      <p>
+        The App does not currently implement a separate Developer-operated analytics
+        account, social login, or cloud game-data backup service. If the services
+        integrated into the App change, this policy will be updated as appropriate.
+      </p>
+
+      <h2 id="en-retention">4. Retention and deletion</h2>
+      <ul>
+        <li>
+          <strong>Local game data:</strong> generally remains until you delete individual
+          items through an available in-app function, clear the App's storage in Android
+          settings, or uninstall the App. Clearing App data or uninstalling can remove
+          locally saved history and preferences.
+        </li>
+        <li>
+          <strong>Device backups:</strong> depending on your Android and backup settings,
+          some local App data may be included in operating-system backup or device-transfer
+          services, which are administered separately from JCraft Studio.
+        </li>
+        <li>
+          <strong>Advertising data:</strong> retained and deleted in accordance with
+          Google's applicable policies, legal requirements, and available privacy controls.
+          JCraft Studio cannot directly erase records held by Google simply by deleting
+          locally stored game data.
+        </li>
+      </ul>
+      <p>
+        Because this version of the App does not create user accounts or upload game
+        history to a Developer-controlled server, the Developer cannot remotely retrieve
+        or erase content saved only on your device. For data held by a third-party
+        provider, please also use that provider's privacy tools.
+      </p>
+
+      <h2>5. Information security</h2>
+      <p>
+        The App uses Android application storage for local game information and
+        standard SDK mechanisms for applicable advertising and consent features.
+        Google states that data transmitted by the Google Mobile Ads SDK is encrypted
+        in transit. However, no method of storage or transmission can be guaranteed
+        completely secure. Please protect access to your device and avoid including
+        sensitive information in participant names or custom words.
+      </p>
+
+      <h2 id="en-rights">6. Your choices and privacy rights</h2>
+      <ul>
+        <li>Edit or remove player lists, history entries, and custom topics using the App's available controls.</li>
+        <li>Clear all local App storage or uninstall the App using Android device settings.</li>
+        <li>Where required and available, open the App's <strong>Privacy and ad choices</strong> option to review advertising privacy preferences.</li>
+        <li>Manage or delete the Android advertising ID through the privacy controls provided by your device.</li>
+        <li>Use Google's privacy controls for data processed by Google: <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener noreferrer">Google Data &amp; Privacy</a>.</li>
+        <li>Contact the Developer through the Google Play contact route below to make a privacy inquiry or exercise rights available under applicable law.</li>
+      </ul>
+      <p>
+        Ad consent and privacy options vary by region and service configuration.
+        Changing an advertising choice does not necessarily stop every form of
+        processing that is permitted or required for security, fraud prevention,
+        or non-personalized ad delivery.
+      </p>
+
+      <h2>7. Children and other participants</h2>
+      <p>
+        The App does not require users to submit email addresses, phone numbers,
+        or account details to play its main games. When minors participate, a parent,
+        guardian, or responsible organizer should supervise the information entered
+        and ensure appropriate use. Do not include sensitive details about children
+        in player names or custom content. Advertising and age-related safeguards
+        depend on the App's published audience settings and applicable law.
+      </p>
+
+      <h2>8. International processing</h2>
+      <p>
+        Google and its service providers may process advertising and related device
+        information in countries outside your country of residence, subject to their
+        privacy policies and applicable legal safeguards. The App's locally stored
+        game information is not independently transferred to a Developer-controlled
+        overseas server by the current game features.
+      </p>
+
+      <h2>9. Updates to this policy</h2>
+      <p>
+        This Privacy Policy may be revised to reflect changes in the App, third-party
+        services, or applicable requirements. An updated version will be published
+        on this page with its effective date. Where additional notice or consent is
+        legally required, appropriate steps will be taken.
+      </p>
+
+      <h2 id="en-contact">10. Developer information and contact</h2>
+      <p>
+        <strong>App:</strong> Party Arena<br>
+        <strong>Developer:</strong> JCraft Studio<br>
+        <strong>Developer contact / privacy inquiries:</strong> See the official
+        <a href="https://play.google.com/store/apps/details?id=com.jcraft.party_arena"
+           target="_blank" rel="noopener noreferrer">Party Arena Google Play listing</a>
+        and use the contact details provided under <strong>App support</strong> or
+        <strong>Developer contact</strong>. This is the contact route designated by
+        the Developer for inquiries about this App, including requests concerning privacy.
+      </p>
+      <p class="note">
+        The Google Play listing is the source for the Developer's currently published
+        business and contact details. The listing must be publicly accessible and its
+        contact details must be kept current.
+      </p>
+    </article>
+
+    <article id="policy-ko" class="document" lang="ko" hidden>
+      <h1>개인정보처리방침</h1>
+      <div class="meta">Party Arena(파티 아레나) · JCraft Studio · 시행일: 2026년 10월 13일</div>
+      <p class="lead">
+        JCraft Studio(이하 “개발자”)는 마피아 게임, 라이어 게임 및 술래뽑기 진행을
+        돕는 Party Arena(이하 “앱”)를 제공합니다. 본 개인정보처리방침은 앱의
+        정보 처리 방식과 광고 서비스 제공업체의 정보 처리에 관하여 안내합니다.
+      </p>
+      <p>
+        앱의 주요 기능은 회원가입 없이 이용할 수 있으며, 게임 정보는 원칙적으로
+        이용자의 기기에 저장됩니다. 다만 외부 광고 기술을 통해 일부 기기 정보와
+        이용 관련 정보가 수집·처리될 수 있습니다.
+      </p>
+
+      <nav class="toc" aria-label="목차">
+        <strong>목차</strong>
+        <a href="#ko-data">처리 정보</a>
+        <a href="#ko-use">이용 목적 및 제공</a>
+        <a href="#ko-retention">보관 및 삭제</a>
+        <a href="#ko-rights">이용자 권리</a>
+        <a href="#ko-contact">개발자 문의</a>
+      </nav>
+
+      <h2 id="ko-data">1. 앱에서 처리하는 정보</h2>
+      <h3>1.1 기기에 저장되는 정보</h3>
+      <p>앱의 기능 제공을 위해 다음과 같은 정보가 기기 내부에 저장될 수 있습니다.</p>
+      <ul>
+        <li>직접 입력한 참가자 이름, 게임 설정, 역할 배정, 라운드 및 게임 결과</li>
+        <li>역할, 제시어, 게임 관련 결과가 포함된 저장 기록</li>
+        <li>라이어 게임에서 직접 추가·수정한 주제와 제시어</li>
+        <li>언어, 테마, 애니메이션 설정 및 보상형 광고 시청에 따른 전면광고 면제 종료 시각</li>
+        <li>앱 재실행 시 진행 상황을 복원하기 위한 게임 상태</li>
+      </ul>
+      <p>
+        이러한 정보는 앱의 로컬 저장 공간에 보관됩니다. 현재 설명된 버전에서는
+        개발자가 별도의 회원 계정 서버를 운영하거나, 참가자 명단·게임 기록·직접
+        입력한 제시어를 개발자 운영 서버로 전송하거나, 게임 데이터 클라우드 동기화
+        기능을 제공하지 않습니다. 참가자 이름이나 자유 입력 문구는 개인정보가 될
+        수 있으므로 본인 또는 타인의 민감한 정보를 입력하지 않기를 권장합니다.
+      </p>
+
+      <h3>1.2 광고 및 동의 관련 정보</h3>
+      <p>
+        앱은 배너광고, 전면광고, 선택적 보상형 광고를 제공하기 위해 Google AdMob
+        (Google Mobile Ads SDK)을 사용하며, 적용되는 광고 개인정보 선택사항의
+        관리를 위해 Google UMP(User Messaging Platform)를 이용합니다.
+        기기 설정, 법률, 동의 여부 및 서비스 구성에 따라 Google의 SDK에서 다음
+        정보를 자동으로 수집하거나 처리할 수 있습니다.
+      </p>
+      <ul>
+        <li>대략적인 위치 추정에 사용될 수 있는 IP 주소</li>
+        <li>광고 ID, 앱 세트 ID 및 적용 가능한 기타 기기·계정 식별자</li>
+        <li>앱 실행, 화면 터치, 광고 노출 및 동영상 시청 등 앱 상호작용 정보</li>
+        <li>오류, 앱 시작 시간, 안정성 등 진단 및 성능 관련 정보</li>
+        <li>광고 개인정보 선택사항을 반영하기 위해 필요한 동의 상태와 선호 정보</li>
+      </ul>
+      <p>
+        Google 및 광고 파트너는 자체 개인정보처리방침과 적용 법령에 따라 관련
+        정보를 처리할 수 있습니다. 개발자는 해당 광고 연동만으로 이용자가 앱에
+        입력한 참가자 명단이나 비밀 제시어를 전달받지 않습니다. 비개인 맞춤형
+        광고가 제공되는 경우에도 관련 동의 및 기술 설정에 따라 일부 정보가 처리될
+        수 있습니다.
+      </p>
+
+      <h2 id="ko-use">2. 처리 목적 및 제3자 관련 사항</h2>
+      <p>정보는 다음 목적을 위해 이용되거나 처리됩니다.</p>
+      <ul>
+        <li><strong>게임 기능 제공:</strong> 역할 배정, 참가자 선정, 라운드 진행, 기록과 설정의 기기 내 저장</li>
+        <li><strong>광고 제공:</strong> 광고 표시·성과 측정 및 이용자가 선택한 보상형 광고 기능 운영</li>
+        <li><strong>보안 및 품질 관리:</strong> 무효 광고 활동 탐지, 부정행위 방지, SDK 문제 진단</li>
+        <li><strong>법적 의무 준수:</strong> 필요한 동의·개인정보 선택사항 반영 및 관련 법적 요구사항 이행</li>
+      </ul>
+      <p>
+        개발자는 이용자가 기기에 저장한 참가자 이름, 직접 추가한 제시어 또는
+        게임 기록을 판매하지 않습니다. 광고 서비스 운영 과정에서 광고 관련 기기
+        정보와 상호작용 정보가 Google 및 광고 파트너와 공유될 수 있습니다.
+        다른 앱 추천 링크를 선택하는 경우 외부 서비스로 이동하며, 이동한 서비스의
+        개인정보 처리 방식이 적용됩니다.
+      </p>
+
+      <h2>3. 외부 서비스</h2>
+      <p>앱은 다음 외부 서비스를 사용하거나 해당 서비스로 연결할 수 있습니다.</p>
+      <ul>
+        <li>
+          <strong>Google AdMob / Google Mobile Ads 및 UMP:</strong> 광고 게재,
+          측정, 부정행위 방지 및 개인정보 동의 관리.
+          <a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a> ·
+          <a href="https://policies.google.com/technologies/partner-sites?hl=ko" target="_blank" rel="noopener noreferrer">Google의 파트너 서비스 정보 처리 안내</a>.
+        </li>
+        <li>
+          <strong>Google Play:</strong> 앱 배포 및 다른 앱으로 연결하는 선택적 링크.
+          <a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a>.
+        </li>
+      </ul>
+      <p>
+        현재 앱에는 개발자가 별도로 운영하는 분석 계정 서비스, 소셜 로그인 또는
+        게임 데이터 클라우드 백업 기능이 구현되어 있지 않습니다. 연동 서비스가
+        변경되는 경우 필요한 범위에서 본 방침도 변경합니다.
+      </p>
+
+      <h2 id="ko-retention">4. 정보의 보관 기간 및 삭제</h2>
+      <ul>
+        <li>
+          <strong>기기 내 게임 정보:</strong> 앱의 삭제 기능으로 해당 정보를
+          삭제하거나, Android 설정에서 앱 데이터를 삭제하거나, 앱을 제거하기 전까지
+          일반적으로 기기에 보관됩니다. 앱 데이터 삭제나 제거 시 기록과 설정이
+          함께 삭제될 수 있습니다.
+        </li>
+        <li>
+          <strong>기기 백업:</strong> Android 및 이용자 백업 설정에 따라 로컬
+          데이터 일부가 운영체제의 백업 또는 기기 이전 서비스에 포함될 수 있습니다.
+          해당 서비스는 개발자와 별도로 운영됩니다.
+        </li>
+        <li>
+          <strong>광고 관련 정보:</strong> Google의 적용 정책, 법적 요구사항 및
+          제공되는 개인정보 관리 수단에 따라 보관·삭제됩니다. 개발자가 기기 내
+          게임 정보를 삭제하는 것만으로 Google이 보유한 정보를 직접 삭제할 수는 없습니다.
+        </li>
+      </ul>
+      <p>
+        현재 앱은 회원 계정을 만들거나 게임 기록을 개발자 운영 서버에 업로드하지
+        않으므로, 기기에만 저장된 정보를 개발자가 원격으로 조회하거나 삭제할 수
+        없습니다. 외부 서비스가 보유한 정보에 대해서는 해당 서비스의 개인정보
+        관리 수단도 이용해 주세요.
+      </p>
+
+      <h2>5. 정보 보호 조치</h2>
+      <p>
+        앱은 게임 정보를 Android의 앱 저장 공간에 보관하고, 광고·동의 기능에는
+        관련 SDK의 일반적인 보호 체계를 이용합니다. Google은 Google Mobile Ads
+        SDK를 통해 전송되는 정보에 전송 구간 암호화(TLS)가 적용된다고 안내합니다.
+        다만 모든 저장·통신 방식의 완전한 안전을 보장할 수는 없습니다. 기기 접근을
+        보호하고 참가자 이름이나 사용자 제시어에 민감한 정보를 입력하지 마세요.
+      </p>
+
+      <h2 id="ko-rights">6. 이용자의 선택권 및 권리 행사</h2>
+      <ul>
+        <li>앱에서 제공하는 기능을 통해 참가자 명단, 게임 기록, 사용자 지정 주제를 수정하거나 삭제할 수 있습니다.</li>
+        <li>Android 기기 설정에서 앱 데이터를 삭제하거나 앱을 제거할 수 있습니다.</li>
+        <li>관련 지역과 설정에서 제공되는 경우 앱의 <strong>개인정보 및 광고 선택</strong> 메뉴에서 광고 관련 선택사항을 다시 확인할 수 있습니다.</li>
+        <li>Android의 개인정보 설정에서 광고 ID를 관리하거나 삭제할 수 있습니다.</li>
+        <li>Google이 처리하는 정보는 <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener noreferrer">Google 데이터 및 개인정보</a> 페이지에서 관리할 수 있습니다.</li>
+        <li>적용 법령에 따른 개인정보 문의 및 권리 행사는 아래 Google Play 개발자 연락처를 통해 요청할 수 있습니다.</li>
+      </ul>
+      <p>
+        광고 동의와 개인정보 선택사항은 지역 및 서비스 설정에 따라 다르게
+        제공될 수 있습니다. 광고 관련 선택을 변경하더라도 보안, 부정행위 방지 또는
+        비개인 맞춤형 광고 제공을 위해 법령상 허용되거나 필요한 모든 정보 처리가
+        중단되는 것은 아닐 수 있습니다.
+      </p>
+
+      <h2>7. 아동 및 다른 참가자의 정보</h2>
+      <p>
+        앱의 주요 게임은 이메일 주소, 전화번호 또는 계정 정보 입력 없이 이용할
+        수 있습니다. 미성년자가 참가하는 경우 보호자 또는 책임 있는 진행자가
+        입력 정보를 관리하고 적절한 이용을 지도해 주세요. 아동의 민감한 정보를
+        참가자 이름이나 사용자 지정 제시어에 입력하지 않도록 주의해 주세요.
+        아동 대상 광고 보호 조치는 앱의 게시된 이용자 연령 설정 및 적용 법령에
+        따라 달라집니다.
+      </p>
+
+      <h2>8. 국외 정보 처리</h2>
+      <p>
+        Google 및 관련 서비스 제공업체는 자체 개인정보 보호 정책과 적용 가능한
+        법적 보호 조치에 따라 이용자의 국가 외 지역에서 광고 및 기기 관련 정보를
+        처리할 수 있습니다. 현재 게임 기능은 기기 내 게임 정보를 개발자가 운영하는
+        해외 서버로 별도 전송하지 않습니다.
+      </p>
+
+      <h2>9. 개인정보처리방침의 변경</h2>
+      <p>
+        앱 기능, 외부 서비스 또는 관련 법적 요구사항이 변경되면 본 방침도
+        개정될 수 있습니다. 변경된 방침은 시행일과 함께 이 페이지에 게시하며,
+        법령에 따라 추가 고지 또는 동의가 필요한 경우 적절한 절차를 진행합니다.
+      </p>
+
+      <h2 id="ko-contact">10. 개발자 정보 및 문의</h2>
+      <p>
+        <strong>앱 이름:</strong> Party Arena(파티 아레나)<br>
+        <strong>개발자:</strong> JCraft Studio<br>
+        <strong>개발자 연락처 및 개인정보 문의:</strong>
+        <a href="https://play.google.com/store/apps/details?id=com.jcraft.party_arena"
+           target="_blank" rel="noopener noreferrer">Party Arena의 공식 Google Play 스토어 등록정보</a>에서
+        <strong>앱 지원</strong> 또는 <strong>개발자 연락처</strong> 항목에 게시된
+        연락 수단을 이용해 주세요. 개인정보 관련 문의 및 권리 행사 요청 역시
+        해당 연락 수단으로 접수할 수 있습니다.
+      </p>
+      <p class="note">
+        개발자의 공개 사업자·연락처 정보는 Google Play 등록정보를 기준으로
+        확인할 수 있습니다. 스토어 등록정보는 누구나 접근 가능해야 하며,
+        공개 연락처는 최신 상태로 유지되어야 합니다.
+      </p>
+    </article>
+  </main>
+
+  <footer>© 2026 JCraft Studio · Party Arena</footer>
+
+  <script>
+    (function () {
+      'use strict';
+      const english = document.getElementById('policy-en');
+      const korean = document.getElementById('policy-ko');
+      const enButton = document.getElementById('button-en');
+      const koButton = document.getElementById('button-ko');
+
+      function setLanguage(language) {
+        const ko = language === 'ko';
+        english.hidden = ko;
+        korean.hidden = !ko;
+        enButton.setAttribute('aria-pressed', String(!ko));
+        koButton.setAttribute('aria-pressed', String(ko));
+        document.documentElement.lang = ko ? 'ko' : 'en';
+        document.title = ko
+          ? '개인정보처리방침 | Party Arena | JCraft Studio'
+          : 'Privacy Policy | Party Arena | JCraft Studio';
+      }
+
+      enButton.addEventListener('click', function () { setLanguage('en'); });
+      koButton.addEventListener('click', function () { setLanguage('ko'); });
+
+      const preferred = (navigator.language || 'en').toLowerCase();
+      const hash = window.location.hash.toLowerCase();
+      const initialLanguage = hash.startsWith('#ko-') ? 'ko'
+        : hash.startsWith('#en-') ? 'en'
+        : preferred.startsWith('ko') ? 'ko' : 'en';
+      setLanguage(initialLanguage);
+    }());
+  </script>
+</body>
+</html>
