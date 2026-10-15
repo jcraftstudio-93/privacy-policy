@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Privacy Policy for Kids Monthly Planner by JCraft Studio. English and Korean.">
+  <title>Privacy Policy | Kids Monthly Planner | JCraft Studio</title>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f8f6;
+      --surface: #ffffff;
+      --ink: #25372f;
+      --muted: #617269;
+      --accent: #276954;
+      --light: #e7f3eb;
+      --line: #dfe8e2;
+      --shadow: 0 10px 35px rgba(28, 61, 42, .055);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Apple SD Gothic Neo",
+                   "Malgun Gothic", "Segoe UI", sans-serif;
+      line-height: 1.85;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+    button { font: inherit; }
+
+    .shell {
+      width: min(100% - 36px, 850px);
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #215845, #3d8265);
+      color: #fff;
+      padding: 40px 0 38px;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: .3px;
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 6px;
+      background: rgba(255,255,255,.13);
+      padding: 5px;
+      border-radius: 13px;
+    }
+
+    .lang-switch button {
+      border: 0;
+      border-radius: 9px;
+      padding: 7px 16px;
+      color: #fff;
+      background: transparent;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .lang-switch button[aria-pressed="true"] {
+      background: #fff;
+      color: #205a44;
+    }
+
+    .eyebrow {
+      margin: 32px 0 7px;
+      font-size: 13px;
+      opacity: .86;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: clamp(27px, 6vw, 38px);
+      letter-spacing: -.7px;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .subtitle {
+      margin: 12px 0 0;
+      color: rgba(255,255,255,.89);
+      font-size: 14px;
+    }
+
+    .meta {
+      font-size: 13px;
+      margin-top: 15px;
+      color: rgba(255,255,255,.84);
+    }
+
+    main { padding: 24px 0 38px; }
+
+    .policy {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 14px clamp(19px, 5vw, 40px) 28px;
+    }
+
+    .policy[hidden] { display: none !important; }
+
+    .notice {
+      margin-top: 19px;
+      background: var(--light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      padding: 12px 17px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 18px 0 5px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child { border-bottom: 0; }
+
+    h2 {
+      font-size: 19px;
+      line-height: 1.4;
+      margin: 0 0 10px;
+      color: var(--accent);
+    }
+
+    p { margin: 9px 0 14px; }
+    ul { margin: 8px 0 16px; padding-left: 23px; }
+    li { padding: 2px 0; }
+    strong { font-weight: 750; }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 4px 0 28px;
+      font-size: 13px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --bg: #17211c;
+        --surface: #202b25;
+        --ink: #edf4ef;
+        --muted: #b6c8bb;
+        --accent: #a7dfbc;
+        --light: #294333;
+        --line: #3c5142;
+        --shadow: none;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1a4837, #246647);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="shell">
+      <div class="top">
+        <div class="brand">JCraft Studio</div>
+
+        <div class="lang-switch" role="group" aria-label="Language / 언어">
+          <button type="button" id="lang-en"
+                  aria-pressed="true"
+                  onclick="setLanguage('en')">English</button>
+
+          <button type="button" id="lang-ko"
+                  aria-pressed="false"
+                  onclick="setLanguage('ko')">한국어</button>
+        </div>
+      </div>
+
+      <p class="eyebrow">KIDS MONTHLY PLANNER</p>
+      <h1 id="page-title">Privacy Policy</h1>
+
+      <p class="subtitle" id="page-subtitle">
+        How the app handles your schedules, notice photos, and related data.
+      </p>
+
+      <p class="meta" id="page-date">
+        Effective date: October 15, 2026
+      </p>
+    </div>
+  </header>
+
+  <main class="shell">
+
+    <!-- ENGLISH PRIVACY POLICY -->
+    <article id="policy-en" class="policy" lang="en">
+
+      <div class="notice">
+        <strong>At a glance:</strong>
+        Notice photos and recognized text are processed on your device
+        for the app's core features. Google ML Kit may transmit technical
+        diagnostics, and Google AdMob may collect and share
+        advertising-related data. Please read the details below.
+      </div>
+
+      <section>
+        <h2>1. About this policy</h2>
+        <p>
+          This Privacy Policy describes how
+          <strong>Kids Monthly Planner</strong> (the "App"),
+          provided by <strong>JCraft Studio</strong> (the "Developer"),
+          accesses, uses, stores, and otherwise handles information.
+          The App is designed primarily for parents, guardians,
+          and adult caregivers to manage school and childcare notices.
+          It is not intended for children to use independently.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Information used by the App</h2>
+        <ul>
+          <li>
+            <strong>Photos you choose:</strong>
+            The App accesses a notice image only after you select it
+            through the device's photo or file selection interface.
+            The App does not require access to your entire photo
+            collection for normal operation.
+          </li>
+          <li>
+            <strong>Recognized text and schedules:</strong>
+            Text extracted from images, notices you type, dates,
+            event details, important markers, and editable drafts
+            are used to display and manage your calendar.
+          </li>
+          <li>
+            <strong>Preferences:</strong>
+            Language, display theme, and the expiration time
+            of a rewarded-ad benefit may be stored locally.
+          </li>
+          <li>
+            <strong>SDK technical data:</strong>
+            The ML Kit and Google advertising/consent SDKs may
+            process technical, diagnostic, device, usage, and
+            consent-related information as described in Section 4.
+          </li>
+        </ul>
+
+        <p>
+          The App does not require account registration or ask for names,
+          phone numbers, contacts, or precise location to provide
+          its calendar and OCR functions. However, information appearing
+          in a notice photo or its text may contain personal information
+          that you choose to enter.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Photos, OCR, and local storage</h2>
+        <p>
+          The App uses <strong>Google ML Kit Text Recognition</strong>
+          to recognize writing in selected images.
+          The image input and recognized text are processed on the
+          device for OCR; the App does not upload those images or
+          recognized text to a server operated by JCraft Studio.
+          OCR results may be inaccurate.
+          Review and correct dates, activities, and other details
+          before saving.
+        </p>
+
+        <p>
+          Saved schedules, editable text drafts, preferences,
+          and reward-expiration information are stored in the
+          App's local storage (using Android app storage and
+          SharedPreferences). The selected original image remains
+          in its original location; the system or image picker
+          may also create temporary copies in the App's cache.
+          The App's current storage feature does not intentionally
+          keep a permanent copy of each selected image.
+        </p>
+
+        <p>
+          Locally stored information generally remains until you change
+          or delete it, clear the App's data, or uninstall the App.
+          Android system backup settings may separately back up
+          eligible app data. JCraft Studio does not provide a separate
+          cloud synchronization service for these schedules.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Third-party services and advertising</h2>
+
+        <p>
+          <strong>Google ML Kit:</strong>
+          In addition to processing OCR images on the device,
+          ML Kit may send Google technical metrics such as device and
+          app information, installation-related identifiers,
+          performance measurements, feature usage, and error data
+          for diagnostics and service improvement.
+          According to Google's ML Kit documentation, image inputs
+          and OCR outputs are not sent to Google servers for
+          this processing.
+        </p>
+
+        <p>
+          <strong>Google AdMob / Google Mobile Ads SDK:</strong>
+          The App may show banner, interstitial, and optional rewarded ads.
+          Google and its advertising partners may process and share
+          data such as IP address (which may indicate approximate
+          location), app interactions, device or advertising identifiers
+          where permitted, and diagnostic information for ad delivery,
+          measurement, security, and fraud prevention.
+          Advertising and data processing depend on applicable law,
+          settings, and consent choices.
+        </p>
+
+        <p>
+          <strong>Consent management:</strong>
+          Where applicable, the App uses Google's User Messaging Platform
+          (UMP) to request or manage advertising privacy choices.
+          Available privacy options can be accessed through the
+          App's settings when supported.
+          Completing an optional rewarded ad may pause interstitial
+          ads for 15 minutes; it does not necessarily stop banner ads
+          or all SDK processing.
+        </p>
+
+        <p class="links">
+          <a href="https://policies.google.com/privacy"
+             target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+
+          <a href="https://developers.google.com/ml-kit/terms"
+             target="_blank" rel="noopener noreferrer">ML Kit Terms &amp; Privacy</a>
+
+          <a href="https://developers.google.com/ml-kit/android-data-disclosure"
+             target="_blank" rel="noopener noreferrer">ML Kit Data Disclosure</a>
+
+          <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure"
+             target="_blank" rel="noopener noreferrer">Google Mobile Ads Data Disclosure</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Why information is used</h2>
+        <p>
+          Information is used to allow you to select and recognize
+          notice images, review text, manage and save schedules,
+          apply your preferences, provide ads and optional ad benefits,
+          manage privacy choices, and maintain the reliability and
+          security of the SDKs used by the App.
+          JCraft Studio does not sell the contents of your school
+          notices or calendar.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Data security</h2>
+        <p>
+          Local schedule data is kept in the App's Android-managed
+          storage and is generally isolated from other apps by Android's
+          application sandbox. The App does not claim that locally
+          stored text is separately end-to-end encrypted.
+          Third-party SDK providers use their own security measures;
+          Google states that relevant SDK telemetry is encrypted in transit.
+          No security method can guarantee absolute protection.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Retention, deletion, and your choices</h2>
+        <ul>
+          <li>
+            You can edit or delete individual events and delete all
+            saved events from the App's schedule-management interface.
+          </li>
+          <li>
+            You can edit or clear OCR text in the input field.
+            To remove other local settings and drafts, use Android's
+            <strong>Settings &gt; Apps &gt; Kids Monthly Planner
+            &gt; Storage &gt; Clear data</strong>,
+            or uninstall the App. Menu names vary by device.
+          </li>
+          <li>
+            Uninstalling or clearing local data does not necessarily
+            remove copies retained through an Android system backup
+            or data already processed by external SDK providers.
+            For SDK-held information and privacy choices, refer to
+            the providers' policies and applicable controls.
+          </li>
+          <li>
+            The App currently has no user account system,
+            so it has no separate account-deletion procedure.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. Children's information and third-party content</h2>
+        <p>
+          The App is intended for adult caregivers, although notices
+          entered by a caregiver may include information about children.
+          Please avoid adding unnecessary sensitive information and
+          take care when choosing photos. The Developer does not
+          intentionally request information directly from children
+          through the App's calendar or OCR features.
+          If the App's declared Google Play target audience changes
+          to include children, the Developer must reassess advertising
+          and data practices under the applicable Families policies.
+        </p>
+
+        <p>
+          Photos and notice documents may belong to their authors,
+          schools, or other rights holders. You should use only material
+          that you are entitled to access and process.
+          The App does not claim ownership of your submitted content.
+          Third-party names and trademarks remain the property
+          of their respective owners. This App is not affiliated with
+          or endorsed by any school or government organization.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Policy updates</h2>
+        <p>
+          This policy may be updated if the App's features, SDKs,
+          applicable requirements, or data practices change.
+          The effective date at the top will be updated.
+          Material changes may also be communicated in the App
+          or its store listing when appropriate.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Developer information and privacy inquiries</h2>
+        <p>
+          <strong>Developer: JCraft Studio.</strong>
+          For the current developer identity, contact details,
+          and privacy-related inquiries, please refer to the
+          <strong>Developer contact</strong> section on the official
+          <strong>Kids Monthly Planner Google Play listing</strong>
+          and use the contact method published there.
+          This page does not publish or replace those current
+          store contact details.
+        </p>
+
+        <p>
+          <a href="https://play.google.com/store/apps"
+             target="_blank" rel="noopener noreferrer">Open Google Play</a>
+          and search for <strong>Kids Monthly Planner</strong>
+          or <strong>JCraft Studio</strong>.
+        </p>
+      </section>
+    </article>
+
+    <!-- KOREAN PRIVACY POLICY -->
+    <article id="policy-ko" class="policy" lang="ko" hidden>
+
+      <div class="notice">
+        <strong>핵심 안내:</strong>
+        안내장 사진과 OCR 인식 결과는 앱의 주요 기능을 위해
+        기기에서 처리합니다. 다만 Google ML Kit은 기술·진단 정보를
+        전송할 수 있으며, Google AdMob은 광고 관련 데이터를
+        수집·공유할 수 있습니다. 아래 내용을 확인해 주세요.
+      </div>
+
+      <section>
+        <h2>1. 개인정보처리방침 안내</h2>
+        <p>
+          본 개인정보처리방침은 <strong>JCraft Studio</strong>
+          (이하 '개발자')가 제공하는 <strong>아이 일정표</strong>
+          (이하 '앱')가 어떤 정보를 접근·이용·저장·처리하는지
+          설명합니다. 앱은 부모, 보호자, 성인 양육자가
+          어린이집·유치원·학교 안내장과 일정을 관리하도록
+          설계되었으며, 아동의 독립적인 사용을 주된 목적으로
+          하지 않습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. 앱이 사용하는 정보</h2>
+        <ul>
+          <li>
+            <strong>사용자가 선택한 사진:</strong>
+            기기의 사진·파일 선택 화면에서 사용자가 직접 선택한
+            안내장 이미지만 해당 작업에 사용합니다.
+            일반적인 사용을 위해 전체 사진 보관함에 대한 접근을
+            요구하지 않습니다.
+          </li>
+          <li>
+            <strong>OCR 인식 내용과 일정:</strong>
+            이미지에서 추출한 글자, 직접 입력한 안내문,
+            일정 날짜와 내용, 중요 표시, 입력 중인 임시 문구 등을
+            달력 관리에 사용합니다.
+          </li>
+          <li>
+            <strong>사용 환경 설정:</strong>
+            언어, 화면 테마, 보상형 광고 혜택의 종료 시각 등을
+            기기에 저장할 수 있습니다.
+          </li>
+          <li>
+            <strong>SDK 기술 정보:</strong>
+            ML Kit과 Google 광고·동의 SDK는 아래 4항에 설명한
+            기술·진단·기기·사용 및 동의 관련 정보를 처리할 수 있습니다.
+          </li>
+        </ul>
+
+        <p>
+          앱의 일정·OCR 기능을 이용하기 위해 별도 계정 가입이나
+          이름, 전화번호, 연락처, 정밀 위치를 요구하지 않습니다.
+          다만 사용자가 선택한 안내장 사진과 입력 내용 자체에는
+          개인정보가 포함될 수 있습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. 사진·OCR 처리 및 기기 내 저장</h2>
+        <p>
+          앱은 <strong>Google ML Kit 문자 인식</strong> 기능으로
+          선택한 사진의 글자를 인식합니다.
+          OCR에 입력한 이미지와 인식 결과는 기기 내부에서 처리되며,
+          개발자가 운영하는 별도 서버로 업로드하지 않습니다.
+          OCR은 오인식할 수 있으므로, 저장 전에 날짜·활동·준비물 등을
+          반드시 확인하고 잘못된 내용은 수정해 주세요.
+        </p>
+
+        <p>
+          일정, 안내문 입력 초안, 언어·테마 설정,
+          보상형 광고 면제 종료 시각 등은 Android 앱 저장 영역과
+          SharedPreferences를 이용하여 기기에 저장합니다.
+          선택한 원본 사진은 기존 위치에 남으며, Android 또는
+          이미지 선택 도구가 앱 임시 캐시에 사본을 만들 수 있습니다.
+          현재 저장 기능은 선택한 이미지 자체를 각 일정에
+          영구 보관하도록 의도적으로 설계되어 있지 않습니다.
+        </p>
+
+        <p>
+          기기 내 저장 데이터는 사용자가 수정·삭제하거나
+          앱 데이터를 초기화·앱을 삭제할 때까지 남을 수 있습니다.
+          Android 시스템 백업 설정에 따라 일부 데이터가
+          별도로 백업될 수 있습니다.
+          개발자는 일정의 별도 클라우드 동기화 서비스를
+          제공하지 않습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 외부 SDK 및 광고 데이터 처리</h2>
+
+        <p>
+          <strong>Google ML Kit:</strong>
+          OCR 이미지와 인식 결과는 기기에서 처리하지만,
+          ML Kit은 서비스 진단과 개선을 위해 기기·앱 정보,
+          설치 관련 식별자, 처리 성능, 기능 사용 현황,
+          오류 정보 등의 기술 지표를 Google에 전송할 수 있습니다.
+          Google의 ML Kit 안내에 따르면 OCR 입력 이미지와
+          인식 결과는 이러한 처리를 위해 Google 서버로
+          전송되지 않습니다.
+        </p>
+
+        <p>
+          <strong>Google AdMob / Google Mobile Ads SDK:</strong>
+          앱에는 배너광고, 전면광고, 선택형 보상형 광고가
+          표시될 수 있습니다.
+          Google 및 광고 관련 협력사는 광고 제공·측정·보안·
+          부정행위 방지를 위해 IP 주소(대략적인 위치 추정에
+          이용될 수 있음), 앱 사용 상호작용, 허용되는 범위의
+          광고·기기 식별자, 진단 정보 등을 수집·공유할 수 있습니다.
+          광고 및 정보 처리 방식은 적용 법령, 기기 설정,
+          동의 선택에 따라 달라질 수 있습니다.
+        </p>
+
+        <p>
+          <strong>광고 동의 관리:</strong>
+          필요한 지역에서는 Google 사용자 메시지 플랫폼(UMP)을
+          통해 광고 개인정보 관련 선택을 요청하거나 관리합니다.
+          지원되는 경우 앱 설정에서 개인정보 관련 선택 사항을
+          다시 확인할 수 있습니다.
+          선택형 보상형 광고를 완료하면 전면광고가 15분간
+          면제될 수 있으나, 배너광고 또는 모든 SDK 데이터
+          처리가 중단된다는 의미는 아닙니다.
+        </p>
+
+        <p class="links">
+          <a href="https://policies.google.com/privacy?hl=ko"
+             target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a>
+
+          <a href="https://developers.google.com/ml-kit/terms"
+             target="_blank" rel="noopener noreferrer">ML Kit 약관·개인정보</a>
+
+          <a href="https://developers.google.com/ml-kit/android-data-disclosure?hl=ko"
+             target="_blank" rel="noopener noreferrer">ML Kit 데이터 공개</a>
+
+          <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure"
+             target="_blank" rel="noopener noreferrer">Google 광고 SDK 데이터 공개</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>5. 정보 이용 목적</h2>
+        <p>
+          사진 선택과 문자 인식, 인식 결과 검토,
+          일정 등록·조회·관리, 개인 설정 유지,
+          광고 제공 및 보상형 광고 혜택,
+          개인정보 관련 선택 관리, SDK 안정성과 보안 유지에
+          필요한 범위에서 정보를 이용합니다.
+          개발자는 사용자의 안내장 원문이나 달력 내용을
+          판매하지 않습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. 정보 보호</h2>
+        <p>
+          기기 내 일정 데이터는 Android가 관리하는 앱 저장
+          영역에 보관되며 일반적으로 Android의 앱별 분리
+          기능으로 다른 앱과 격리됩니다.
+          앱은 저장된 텍스트에 별도의 종단 간 암호화가
+          적용된다고 주장하지 않습니다.
+          외부 SDK 제공업체는 자체 보안 조치를 적용하며,
+          Google은 관련 SDK 진단 정보가 전송 중
+          암호화된다고 안내합니다.
+          어떤 보안 방식도 절대적인 안전을 보장하지는 않습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. 보관·삭제 및 사용자 선택권</h2>
+        <ul>
+          <li>
+            앱의 일정관리 화면에서 개별 일정을 수정·삭제하거나
+            전체 일정을 삭제할 수 있습니다.
+          </li>
+          <li>
+            OCR 입력창의 문구를 수정하거나 지울 수 있습니다.
+            기타 저장된 설정이나 입력 초안까지 초기화하려면
+            Android의
+            <strong>설정 &gt; 앱 &gt; 아이 일정표
+            &gt; 저장공간 &gt; 데이터 삭제</strong>를 이용하거나
+            앱을 삭제할 수 있습니다.
+            메뉴 이름은 기기마다 다를 수 있습니다.
+          </li>
+          <li>
+            앱 삭제·데이터 초기화는 Android 시스템 백업에
+            남아 있는 사본이나 외부 SDK 제공업체가 이미
+            처리한 정보를 반드시 삭제하지는 않습니다.
+            해당 정보의 처리 및 선택권은 제공업체의 안내를
+            확인해 주세요.
+          </li>
+          <li>
+            현재 앱에는 회원 계정 기능이 없으므로 별도의
+            계정 탈퇴 절차는 없습니다.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. 아동 관련 정보와 제3자 콘텐츠</h2>
+        <p>
+          앱은 성인 보호자의 사용을 주된 목적으로 하나,
+          보호자가 등록한 안내문에는 아동 관련 정보가
+          포함될 수 있습니다.
+          불필요한 민감정보를 입력하지 말고 사진 선택에
+          유의해 주세요.
+          개발자는 일정·OCR 기능을 통해 아동에게 직접
+          개인정보 제공을 요청하도록 설계하지 않았습니다.
+          향후 Google Play에 신고하는 이용 대상에 아동이
+          포함되는 경우 적용되는 가족 정책에 맞춰 광고 및
+          데이터 처리 방식을 재검토해야 합니다.
+        </p>
+
+        <p>
+          학교 안내문과 사진 등의 저작권은 작성자·학교 등
+          해당 권리자에게 있을 수 있습니다.
+          사용자는 접근·처리 권한이 있는 자료만 이용해야 합니다.
+          앱은 사용자가 등록한 내용의 소유권을 주장하지 않습니다.
+          제3자 상표와 명칭에 관한 권리는 각 권리자에게 있으며,
+          앱은 특정 학교나 정부기관과 제휴하거나 공식 인증을
+          받은 서비스가 아닙니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. 방침 변경</h2>
+        <p>
+          앱 기능, 사용 SDK, 관계 법령, 실제 데이터 처리
+          방식이 바뀌면 본 방침을 수정할 수 있습니다.
+          변경 시 상단 시행일을 갱신하고, 필요한 경우
+          앱 또는 스토어 등록정보를 통해 중요한 변경 사항을
+          안내합니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. 개발자 정보 및 개인정보 문의</h2>
+        <p>
+          <strong>개발자: JCraft Studio.</strong>
+          최신 개발자 정보, 연락처 및 개인정보 관련 문의는
+          <strong>Google Play의 ‘아이 일정표’ 앱 등록 페이지에
+          있는 ‘개발자 연락처’</strong>를 참고하시고,
+          등록된 연락 수단을 이용해 주세요.
+          본 페이지는 스토어의 최신 개발자 연락처를
+          대신 게시하지 않습니다.
+        </p>
+
+        <p>
+          <a href="https://play.google.com/store/apps"
+             target="_blank" rel="noopener noreferrer">Google Play 열기</a>에서
+          <strong>아이 일정표</strong> 또는
+          <strong>JCraft Studio</strong>를 검색해 주세요.
+        </p>
+      </section>
+    </article>
+
+  </main>
+
+  <footer class="shell">
+    &copy; <span id="copyright-year">2026</span>
+    JCraft Studio. All rights reserved.
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const content = {
+        en: {
+          title: 'Privacy Policy',
+          subtitle: 'How the app handles your schedules, notice photos, and related data.',
+          date: 'Effective date: October 15, 2026'
+        },
+        ko: {
+          title: '개인정보처리방침',
+          subtitle: '아이 일정표의 안내장 사진, 일정 및 관련 정보 처리 안내',
+          date: '시행일: 2026년 10월 15일'
+        }
+      };
+
+      window.setLanguage = function (lang) {
+        const selected = lang === 'ko' ? 'ko' : 'en';
+
+        document.documentElement.lang = selected;
+
+        document.getElementById('policy-en').hidden = selected !== 'en';
+        document.getElementById('policy-ko').hidden = selected !== 'ko';
+
+        document.getElementById('lang-en')
+          .setAttribute('aria-pressed', String(selected === 'en'));
+
+        document.getElementById('lang-ko')
+          .setAttribute('aria-pressed', String(selected === 'ko'));
+
+        document.getElementById('page-title').textContent =
+          content[selected].title;
+
+        document.getElementById('page-subtitle').textContent =
+          content[selected].subtitle;
+
+        document.getElementById('page-date').textContent =
+          content[selected].date;
+
+        document.title =
+          content[selected].title + ' | Kids Monthly Planner | JCraft Studio';
+      };
+
+      const queryLang = new URLSearchParams(window.location.search).get('lang');
+      const browserLang = (navigator.language || 'en').toLowerCase();
+
+      setLanguage(
+        queryLang === 'ko' || queryLang === 'en'
+          ? queryLang
+          : (browserLang.startsWith('ko') ? 'ko' : 'en')
+      );
+
+      document.getElementById('copyright-year').textContent =
+        String(new Date().getFullYear());
+    })();
+  </script>
+</body>
+</html>
