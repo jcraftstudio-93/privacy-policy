@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Privacy Policy for Binary Translator by JCraft Studio. / JCraft Studio 이진수 변환기 개인정보처리방침">
+  <title>Binary Translator | Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7f5;
+      --paper: #ffffff;
+      --ink: #183126;
+      --muted: #536b5c;
+      --accent: #167449;
+      --outline: #dce7df;
+      --soft: #eaf5ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 28px 18px 56px; }
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .brand { font-size: 14px; font-weight: 750; letter-spacing: .03em; }
+    .languages { display: flex; gap: 6px; }
+    .languages button {
+      appearance: none;
+      border: 1px solid var(--outline);
+      border-radius: 10px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 650;
+      padding: 7px 14px;
+      cursor: pointer;
+    }
+    .languages button[aria-pressed="true"] {
+      color: #fff;
+      border-color: var(--accent);
+      background: var(--accent);
+    }
+    .languages button:focus-visible, a:focus-visible {
+      outline: 3px solid #65bb85;
+      outline-offset: 3px;
+    }
+    main {
+      background: var(--paper);
+      border: 1px solid var(--outline);
+      border-radius: 20px;
+      padding: clamp(22px, 5vw, 48px);
+      box-shadow: 0 6px 30px rgba(16, 60, 34, .035);
+    }
+    h1 { margin: 0 0 4px; font-size: clamp(26px, 4vw, 35px); line-height: 1.35; }
+    .subtitle { margin: 0 0 16px; font-weight: 700; color: var(--accent); }
+    .updated { font-size: 13px; color: var(--muted); }
+    .summary {
+      background: var(--soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 9px 9px 0;
+      padding: 15px 17px;
+      margin: 22px 0 28px;
+    }
+    h2 { margin: 29px 0 8px; font-size: 18px; line-height: 1.5; }
+    p { margin: 9px 0; }
+    ul { padding-left: 23px; margin: 10px 0; }
+    li + li { margin-top: 6px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    strong { font-weight: 740; }
+    footer { margin: 24px 5px 0; color: var(--muted); font-size: 12px; text-align: center; }
+    [hidden] { display: none !important; }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --bg: #0d1510;
+        --paper: #15251b;
+        --ink: #e2f4e7;
+        --muted: #abc3b3;
+        --accent: #70daa0;
+        --outline: #2d4534;
+        --soft: #183625;
+      }
+      .languages button[aria-pressed="true"] {
+        background: #2f8655;
+        color: #fff;
+        border-color: #2f8655;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">JCraft Studio · Binary Translator</div>
+      <nav class="languages" aria-label="Language / 언어 선택">
+        <button id="choose-ko" type="button" data-choose="ko" aria-controls="policy-ko" aria-pressed="true">한국어</button>
+        <button id="choose-en" type="button" data-choose="en" aria-controls="policy-en" aria-pressed="false">English</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 자바스크립트가 꺼져 있으면 두 언어의 정책이 모두 보입니다. -->
+      <article id="policy-ko" lang="ko" aria-labelledby="title-ko">
+        <h1 id="title-ko">개인정보처리방침</h1>
+        <p class="subtitle">Binary Translator (이진수 변환기)</p>
+        <p class="updated">시행 및 최종 수정일: 2026년 10월 19일</p>
+        <div class="summary">
+          <strong>핵심 안내</strong>
+          <p>JCraft Studio의 Binary Translator는 문자와 이진수 변환을 기기 내에서 처리합니다. 입력 내용과 변환 기록은 앱의 로컬 저장소에 보관되며, 개발자가 운영하는 별도 서버로 전송하지 않습니다. 다만 광고를 제공하기 위해 사용하는 Unity Ads SDK는 아래에 설명된 기기 및 광고 관련 정보를 처리할 수 있습니다.</p>
+        </div>
+
+        <h2>1. 적용 범위 및 운영자</h2>
+        <p>이 방침은 JCraft Studio가 제공하는 Android 앱 <strong>Binary Translator</strong>에 적용됩니다. 앱의 주요 기능은 텍스트와 UTF-8 기반 이진수 간의 양방향 변환, 변환 기록 및 즐겨찾기 관리입니다.</p>
+
+        <h2>2. 앱 내부에서 처리하는 정보</h2>
+        <ul>
+          <li><strong>사용자 입력 및 변환 결과:</strong> 변환 기능에 사용하며, 기기에서 직접 처리합니다.</li>
+          <li><strong>변환 기록 및 즐겨찾기:</strong> 이전 변환 결과, 저장 시각, 즐겨찾기 여부를 앱의 로컬 저장소에 보관합니다.</li>
+          <li><strong>앱 설정:</strong> 선택 언어, 화면 테마, 표시 옵션 및 마지막 입력 상태 등을 기기에 저장할 수 있습니다.</li>
+          <li><strong>광고 면제 종료 시각:</strong> 보상형 광고 시청에 따른 10분간의 전면광고 면제 상태를 기기에 저장합니다.</li>
+        </ul>
+        <p>이 정보는 앱 기능 제공을 위해 로컬에서 사용됩니다. 개발자는 회원가입을 요구하지 않으며, 위 입력 내용과 기록을 개발자 서버에 업로드하는 기능을 제공하지 않습니다. 단, 사용자가 복사·붙여넣기 기능을 이용할 경우 해당 내용은 기기의 클립보드에 전달될 수 있습니다.</p>
+
+        <h2>3. 광고 SDK를 통한 정보 처리</h2>
+        <p>앱에는 <strong>Unity Ads</strong> 광고 SDK가 포함될 수 있으며, 일반 배너·전면광고·선택형 보상형광고를 제공하기 위해 인터넷 연결을 사용할 수 있습니다. Unity Ads는 SDK 버전, 설정 및 적용 법률에 따라 다음과 같은 정보를 수집·이용·공유할 수 있습니다.</p>
+        <ul>
+          <li>IP 주소 및 IP 주소에서 추정되는 대략적인 지역 정보(정밀 GPS 위치가 아님)</li>
+          <li>광고 식별자와 기타 기기 식별 정보, 운영체제 및 기기·앱 관련 정보</li>
+          <li>광고 노출, 시청, 클릭 등 광고와의 상호작용 정보</li>
+          <li>앱·광고 이용 및 진단 정보, 광고 측정과 부정 이용 방지에 필요한 정보</li>
+          <li>적용되는 경우 Unity가 공개한 추가 광고 관련 데이터 유형(예: 구매 관련 신호)</li>
+        </ul>
+        <p>이러한 처리는 광고 게재, 성과 측정, 광고의 관련성 향상, 보안 및 부정행위 방지 등의 목적으로 이루어질 수 있으며, Unity 및 그 광고·측정 협력사가 관련 정보를 처리할 수 있습니다. 앱 자체는 인앱 결제나 계정 생성 기능을 제공하지 않습니다.</p>
+        <p>Unity의 구체적인 처리 방식, 보관 기간 및 개인정보 선택권은 <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Unity 게임 플레이어 및 앱 사용자 개인정보처리방침</a>에서 확인할 수 있습니다.</p>
+
+        <h2>4. 정보 공유 및 외부 전송</h2>
+        <p>개발자는 사용자가 입력한 문장, 이진수 결과, 로컬 기록을 자체 서버에 수집하거나 광고 제공업체에 의도적으로 전달하지 않습니다. 다만 Unity Ads SDK는 광고 제공을 위해 위에 기재된 광고 관련 정보를 Unity 및 관련 제3자에게 전송·공유할 수 있으며, 처리 국가가 사용자의 거주국과 다를 수 있습니다.</p>
+
+        <h2>5. 보관, 삭제 및 이용자 선택</h2>
+        <ul>
+          <li><strong>로컬 변환 기록:</strong> 사용자가 앱 내에서 개별 삭제 또는 전체 삭제할 때까지 보관됩니다.</li>
+          <li><strong>앱 설정과 보상 면제 시간:</strong> 기기에 보관됩니다. 앱 데이터 삭제 또는 앱 제거로 삭제될 수 있습니다. 운영체제의 백업 설정에 따라 백업 사본이 존재할 수 있습니다.</li>
+          <li><strong>Unity Ads 관련 정보:</strong> Unity의 정책 및 법적 보관 요건에 따라 관리되며, 앱 내 기록 삭제만으로 Unity 보유 정보가 삭제되지는 않습니다.</li>
+        </ul>
+        <p>Unity Ads 광고에 표시되는 개인정보 선택 기능 및 <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Unity 개인정보처리방침</a>을 통해 가능한 열람·삭제·광고 관련 선택권을 확인할 수 있습니다. 기기 설정에서도 지원되는 광고 개인정보 옵션을 관리할 수 있습니다.</p>
+
+        <h2>6. 보안 및 접근 권한</h2>
+        <p>변환 기록은 Android의 앱 전용 저장 영역에 보관하며, 앱은 광고 제공을 위해 인터넷 및 네트워크 상태 확인 기능을 사용할 수 있습니다. Unity는 광고 관련 데이터의 전송 중 암호화 등 자체 보안 조치를 적용합니다. 어떠한 전자적 처리 방식도 절대적인 보안을 보장할 수는 없습니다.</p>
+        <p>기본 변환 기능은 인터넷 없이 사용할 수 있지만 광고 표시에는 인터넷 연결이 필요할 수 있습니다. 앱의 기본 기능은 연락처, 카메라, 마이크, 정밀 위치 정보에 대한 접근을 요구하지 않습니다.</p>
+
+        <h2>7. 아동 및 지역별 개인정보 보호</h2>
+        <p>이 앱은 일반적인 문자 변환 도구로 제작되었습니다. 아동을 대상으로 별도 개인정보를 요청하는 기능은 제공하지 않습니다. 거주 지역의 법률에 따라 광고 관련 동의, 거부 또는 기타 개인정보 선택권이 적용될 수 있으며, 해당하는 경우 앱 및 SDK에서 적절한 절차를 제공해야 합니다.</p>
+
+        <h2>8. 방침 변경</h2>
+        <p>앱 기능, 광고 SDK 또는 관련 법령이 변경되면 이 방침을 수정할 수 있습니다. 변경된 내용은 이 페이지에 게시하고 상단의 최종 수정일을 갱신합니다. 중요한 변경에는 관련 법령에 따라 추가 안내 또는 동의 절차가 적용될 수 있습니다.</p>
+
+        <h2>9. 개발자 정보 및 개인정보 문의</h2>
+        <p><strong>앱:</strong> Binary Translator<br>
+           <strong>개발자 표시명:</strong> JCraft Studio</p>
+        <p>개발자 연락처와 최신 개발자 정보는 <strong>Google Play 스토어의 Binary Translator 앱 상세 페이지 → 앱 지원(또는 개발자 연락처)</strong>에서 확인해 주세요. 개인정보 관련 문의도 해당 페이지에 표시된 개발자 이메일을 통해 접수할 수 있습니다.</p>
+      </article>
+
+      <article id="policy-en" lang="en" aria-labelledby="title-en">
+        <h1 id="title-en">Privacy Policy</h1>
+        <p class="subtitle">Binary Translator</p>
+        <p class="updated">Effective and last updated: October 19, 2026</p>
+        <div class="summary">
+          <strong>At a glance</strong>
+          <p>Binary Translator by JCraft Studio converts text and binary locally on your device. Your input and conversion history are stored locally and are not uploaded to a server operated by the developer. However, the Unity Ads SDK used for advertising may process device and advertising-related information as described below.</p>
+        </div>
+
+        <h2>1. Scope and developer</h2>
+        <p>This policy applies to <strong>Binary Translator</strong>, an Android app published by JCraft Studio. The app provides two-way conversion between text and UTF-8 binary data, as well as conversion history and favorites.</p>
+
+        <h2>2. Information processed locally</h2>
+        <ul>
+          <li><strong>Input and conversion output:</strong> Processed locally to perform conversions.</li>
+          <li><strong>History and favorites:</strong> Previous inputs and outputs, timestamps, and favorite status are saved in app-local storage.</li>
+          <li><strong>App preferences:</strong> Language, appearance, display options, and the most recent input state may be saved on your device.</li>
+          <li><strong>Rewarded-ad exemption expiry:</strong> The expiry time for a 10-minute interstitial-ad exemption earned through a rewarded ad is saved locally.</li>
+        </ul>
+        <p>These items are used to operate app features. The developer does not require an account and does not provide a feature to upload your entered text or conversion history to a developer-operated server. If you choose to copy or paste content, that content may be transferred to your device's clipboard.</p>
+
+        <h2>3. Advertising SDK and information collected</h2>
+        <p>The app may include the <strong>Unity Ads</strong> SDK to serve standard banner ads, interstitial ads, and optional rewarded ads. Internet access may be used to deliver advertising. Depending on SDK version, configuration, and applicable law, Unity Ads may collect, use, and share:</p>
+        <ul>
+          <li>IP address and approximate location inferred from it (not precise GPS location)</li>
+          <li>Advertising identifiers, other device identifiers, operating system, and device/app information</li>
+          <li>Ad impressions, views, clicks, and other interactions with advertisements</li>
+          <li>App/ad usage and diagnostic information used for measurement and fraud prevention</li>
+          <li>Other advertising-related data types disclosed by Unity where applicable (such as purchase-related signals)</li>
+        </ul>
+        <p>Unity and its advertising or measurement partners may process such information to serve ads, measure performance, improve relevance, maintain security, and prevent fraud. The app itself does not offer in-app purchases or account registration.</p>
+        <p>For details about Unity's data practices, retention, and privacy options, read the <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Unity Game Player and App User Privacy Policy</a>.</p>
+
+        <h2>4. Disclosure and sharing</h2>
+        <p>The developer does not intentionally transmit your entered text, binary conversion results, or local history to its own servers or advertising providers. The Unity Ads SDK may, however, transmit or share the advertising-related information described above with Unity and relevant third parties. Such processing may take place in countries other than your country of residence.</p>
+
+        <h2>5. Retention, deletion, and your choices</h2>
+        <ul>
+          <li><strong>Local history:</strong> Kept until you delete individual records or clear the history in the app.</li>
+          <li><strong>Preferences and reward expiry:</strong> Stored on the device and may be deleted by clearing app data or uninstalling the app. Backup copies may exist depending on operating-system backup settings.</li>
+          <li><strong>Unity Ads data:</strong> Managed according to Unity's policies and applicable retention requirements. Deleting app history does not delete information held by Unity.</li>
+        </ul>
+        <p>Where available, you may use privacy controls presented in Unity ads or consult <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Unity's privacy information</a> to learn about access, deletion, and advertising choices. Supported advertising privacy settings may also be available on your device.</p>
+
+        <h2>6. Security and permissions</h2>
+        <p>Conversion records are stored within Android's app-specific storage area. The app may use internet and network-state access for advertising. Unity applies its own security measures, including encryption of advertising data in transit. No method of electronic storage or transmission can be guaranteed completely secure.</p>
+        <p>The core converter works offline; displaying ads may require an internet connection. Core conversion features do not require access to contacts, camera, microphone, or precise location.</p>
+
+        <h2>7. Children and regional privacy rights</h2>
+        <p>The app is designed as a general-purpose text conversion utility and does not ask children to provide personal information through a dedicated feature. Depending on your location, consent, opt-out, and other privacy rights may apply to advertising-related processing, and appropriate procedures must be provided by the app and its SDK where required.</p>
+
+        <h2>8. Changes to this policy</h2>
+        <p>We may update this policy if the app's functions, advertising SDK, or applicable laws change. Updates will be posted on this page with a revised date. Where legally required, material changes may also involve additional notice or consent.</p>
+
+        <h2>9. Developer information and privacy inquiries</h2>
+        <p><strong>App:</strong> Binary Translator<br>
+           <strong>Developer display name:</strong> JCraft Studio</p>
+        <p>For current developer details and contact information, open the <strong>Binary Translator listing on Google Play → App support (or Developer contact)</strong>. Privacy inquiries can be submitted using the developer email displayed in that section.</p>
+      </article>
+    </main>
+    <footer>© 2026 JCraft Studio · Binary Translator</footer>
+  </div>
+
+  <script>
+    // 브라우저 언어를 처음 한 번 확인하며, 수동 버튼으로 언제든 변경할 수 있습니다.
+    // 언어 선택을 추적하거나 서버에 보내지 않으며 쿠키도 사용하지 않습니다.
+    (() => {
+      const panels = {
+        ko: document.getElementById('policy-ko'),
+        en: document.getElementById('policy-en')
+      };
+      const buttons = document.querySelectorAll('[data-choose]');
+      function showLanguage(language) {
+        const chosen = language === 'ko' ? 'ko' : 'en';
+        Object.entries(panels).forEach(([code, panel]) => {
+          panel.hidden = code !== chosen;
+        });
+        buttons.forEach(button => {
+          button.setAttribute('aria-pressed', String(button.dataset.choose === chosen));
+        });
+        document.documentElement.lang = chosen;
+        document.title = chosen === 'ko'
+          ? 'Binary Translator | 개인정보처리방침'
+          : 'Binary Translator | Privacy Policy';
+      }
+      buttons.forEach(button => {
+        button.addEventListener('click', () => showLanguage(button.dataset.choose));
+      });
+      const browserLanguage = (navigator.language || 'en').toLowerCase();
+      showLanguage(browserLanguage.startsWith('ko') ? 'ko' : 'en');
+    })();
+  </script>
+</body>
+</html>
