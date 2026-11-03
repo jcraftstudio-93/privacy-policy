@@ -1,186 +1,1262 @@
+
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy | Spitto Sales Tracker & QR Check</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="description"
+        content="Privacy Policy for Spitto Sales Tracker & QR Check by JCraft Studio.">
+
+  <title>
+    Privacy Policy | Spitto Sales Tracker & QR Check
+  </title>
+
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; line-height: 1.6; margin: 24px; max-width: 980px; }
-    header { display:flex; gap:12px; align-items: baseline; flex-wrap: wrap; }
-    .lang { margin-left:auto; }
-    .lang a { margin-right: 10px; text-decoration:none; }
-    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; margin: 16px 0; }
-    h1 { font-size: 22px; margin: 0; }
-    h2 { font-size: 18px; margin-top: 0; }
-    ul { padding-left: 20px; }
-    .muted { color: #6b7280; }
-    code { background:#f3f4f6; padding:2px 6px; border-radius:6px; }
-  </style>
-  <script>
-    function setLang(lang){
-      document.documentElement.lang = lang;
-      document.querySelectorAll('[data-lang]').forEach(el=>{
-        el.style.display = (el.getAttribute('data-lang')===lang) ? 'block' : 'none';
-      });
-      history.replaceState(null, '', '#'+lang);
+    :root {
+      color-scheme: light;
+      --primary: #1e40af;
+      --background: #f8fafc;
+      --surface: #ffffff;
+      --text: #111827;
+      --muted: #64748b;
+      --border: #e2e8f0;
     }
-    window.addEventListener('DOMContentLoaded', ()=>{
-      const hash = (location.hash || '').replace('#','').toLowerCase();
-      setLang(hash==='en' ? 'en' : 'ko');
-      document.getElementById('toKo').addEventListener('click', (e)=>{ e.preventDefault(); setLang('ko'); });
-      document.getElementById('toEn').addEventListener('click', (e)=>{ e.preventDefault(); setLang('en'); });
-    });
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Noto Sans KR",
+        sans-serif;
+
+      line-height: 1.75;
+      margin: 0;
+      padding: 24px;
+      background: var(--background);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    h2 {
+      font-size: 19px;
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      overflow-wrap: anywhere;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      margin: 18px 0;
+    }
+
+    .notice {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .lang {
+      display: flex;
+      gap: 8px;
+    }
+
+    .lang button {
+      padding: 9px 16px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: white;
+      color: var(--text);
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .lang button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+      font-weight: 600;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 3px 6px;
+      border-radius: 5px;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    [data-lang][hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 14px;
+      }
+
+      .card {
+        padding: 17px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+
+  <script>
+    function setLang(lang) {
+      const selected = lang === "en" ? "en" : "ko";
+
+      document.documentElement.lang = selected;
+
+      document.querySelectorAll("[data-lang]")
+        .forEach(function(el) {
+          el.hidden =
+            el.getAttribute("data-lang") !== selected;
+        });
+
+      document.querySelectorAll("[data-select-lang]")
+        .forEach(function(button) {
+          const active =
+            button.getAttribute("data-select-lang")
+            === selected;
+
+          button.classList.toggle("active", active);
+          button.setAttribute(
+            "aria-pressed",
+            String(active)
+          );
+        });
+
+      document.title =
+        "Privacy Policy | Spitto Sales Tracker & QR Check";
+
+      if (location.hash !== "#" + selected) {
+        history.replaceState(
+          null,
+          "",
+          "#" + selected
+        );
+      }
+    }
+
+    window.addEventListener(
+      "DOMContentLoaded",
+      function() {
+        const hash =
+          location.hash.replace("#", "").toLowerCase();
+
+        setLang(hash === "en" ? "en" : "ko");
+
+        document.querySelectorAll("[data-select-lang]")
+          .forEach(function(button) {
+            button.addEventListener(
+              "click",
+              function() {
+                setLang(
+                  button.getAttribute("data-select-lang")
+                );
+              }
+            );
+          });
+      }
+    );
   </script>
 </head>
+
 <body>
+<div class="container">
+
   <header>
-    <h1>Privacy Policy</h1>
-    <div class="muted">Last updated: 2026-02-27</div>
-    <div class="lang">
-      <a href="#ko" id="toKo">한국어</a>
-      <a href="#en" id="toEn">English</a>
+    <div>
+      <h1>Privacy Policy</h1>
+      <div class="muted">
+        JCraft Studio · Last updated: 2026-11-04
+      </div>
     </div>
+
+    <nav class="lang" aria-label="Language selection">
+      <button type="button"
+              data-select-lang="ko">
+        한국어
+      </button>
+
+      <button type="button"
+              data-select-lang="en">
+        English
+      </button>
+    </nav>
   </header>
 
+  <!-- ================================ -->
+  <!-- KOREAN PRIVACY POLICY            -->
+  <!-- ================================ -->
+
   <section class="card" data-lang="ko">
-    <h2>1) 개요</h2>
+
+    <h2>1. 개요</h2>
+
     <p>
-      본 개인정보처리방침(Privacy Policy)은 “스피또 판매현황 &amp; QR 확인”(이하 “앱”)에서 어떤 정보를
-      수집·이용·공유하는지, 그리고 이용자의 선택권을 설명합니다.
-    </p>
-    <p class="muted">
-      본 앱은 공식 기관/사업자(예: 동행복권 등)와 무관한 비공식(3rd party) 앱이며, 제공되는 정보는 참고용입니다.
-      최종 당첨 여부 및 결과는 반드시 <strong>공식 웹사이트</strong> 및 <strong>실물 복권</strong>으로 확인하세요.
+      본 개인정보처리방침은 JCraft Studio
+      (이하 "개발자")가 제공하는
+      "스피또 잔여율 추적기"
+      (Spitto Sales Tracker & QR Check,
+      이하 "앱")의 개인정보 처리 및
+      이용자 권리에 관한 사항을 설명합니다.
     </p>
 
-    <h2>2) 수집하는 정보</h2>
-    <p><strong>앱 자체는</strong> 회원가입을 받지 않으며, 이름/전화번호/이메일 등 직접적인 개인정보를 요구하지 않습니다.</p>
-    <ul>
-      <li><strong>QR 스캔</strong>: 카메라 권한이 필요할 수 있습니다. QR 이미지는 기본적으로 기기 내에서 처리되며, 앱은 QR 이미지를 별도로 저장하지 않습니다.</li>
-      <li><strong>로컬 저장</strong>: 사용자가 저장한 번호/기록/설정은 기기 내 로컬 저장소에 저장될 수 있습니다.</li>
-      <li><strong>네트워크 요청</strong>: 판매현황 정보를 가져오기 위해 서버(API)를 호출할 수 있으며, 이 과정에서 IP/요청 헤더가 서버/인프라 로그에 기록될 수 있습니다(보안/운영 목적).</li>
-    </ul>
-
-    <h2>3) 제3자 서비스(광고)</h2>
     <p>
-      앱은 광고 제공을 위해 Google AdMob 등 제3자 SDK를 사용할 수 있습니다.
-      제3자 광고 SDK는 광고 제공/측정/부정방지 등을 위해 광고 ID, IP 주소, 대략적인 위치(추정), 앱 사용 이벤트 등을 수집할 수 있습니다.
+      개발자는 이용자의 개인정보를 존중하며,
+      관련 법령과 Google Play 정책에 따라
+      개인정보 보호를 위해 노력합니다.
     </p>
-    <ul><li>Google AdMob / Google Mobile Ads SDK</li></ul>
 
-    <h2>4) 정보 이용 목적</h2>
-    <ul>
-      <li>핵심 기능 제공(판매현황 조회, QR 인식 후 공식 결과 페이지 열기 등)</li>
-      <li>품질 개선 및 오류 대응</li>
-      <li>광고 제공 및 성과 측정</li>
-      <li>보안(요청 위·변조 방지, 비정상 트래픽 차단 등)</li>
-    </ul>
+    <div class="notice">
+      <strong>비공식 서비스 안내</strong>
+      <p>
+        본 앱은 동행복권 및 기타 복권 운영기관과
+        제휴, 승인, 후원 또는 공식적인 관계가 없는
+        독립적인 제3자 애플리케이션입니다.
+      </p>
+      <p>
+        복권 판매현황, 잔여 정보 및 기타 제공 자료는
+        참고용이며, 실제 당첨 여부는 공식 웹사이트와
+        실물 복권을 통해 확인해야 합니다.
+      </p>
+    </div>
 
-    <h2>5) 정보의 공유</h2>
+    <h2>2. 수집 및 처리하는 정보</h2>
+
     <p>
-      개발자는 이용자의 로컬 저장 데이터를 외부로 전송하지 않으며, 개인식별정보를 판매하지 않습니다.
-      다만 광고 제공을 위해 제3자(예: AdMob)가 자체 정책에 따라 데이터를 처리할 수 있습니다.
+      앱은 회원가입을 요구하지 않으며,
+      이름, 전화번호, 이메일 주소 등의
+      직접적인 개인정보를 앱의 핵심 기능 이용을
+      위해 요구하지 않습니다.
     </p>
 
-    <h2>6) 데이터 보관</h2>
+    <h3>2.1 QR 코드 및 카메라</h3>
+
     <ul>
-      <li>로컬 데이터는 앱 삭제 시 일반적으로 함께 삭제됩니다(OS 정책에 따름).</li>
-      <li>서버/인프라 로그는 보안/운영 목적상 제한된 기간 동안 보관될 수 있습니다.</li>
+      <li>
+        QR 코드 인식을 위해 기기의 카메라
+        접근 권한을 요청할 수 있습니다.
+      </li>
+
+      <li>
+        QR 이미지의 인식 처리는 기기 내에서
+        수행되며, 앱은 카메라 촬영 이미지 자체를
+        별도 서버에 저장하지 않습니다.
+      </li>
+
+      <li>
+        QR 코드에 포함된 URL을 실행하는 경우
+        해당 외부 웹사이트와 네트워크 통신이
+        발생할 수 있습니다.
+      </li>
     </ul>
 
-    <h2>7) 이용자 선택권</h2>
+    <h3>2.2 기기 내 저장 정보</h3>
+
+    <p>
+      사용자가 생성하거나 저장하는 다음 정보는
+      기기의 로컬 저장소에 보관될 수 있습니다.
+    </p>
+
     <ul>
-      <li>기기 설정에서 카메라 권한을 거부/철회할 수 있습니다(QR 스캔 기능 제한).</li>
-      <li>Android 광고 설정에서 광고 개인 최적화를 제한하거나 광고 ID를 재설정할 수 있습니다.</li>
+      <li>복권 관련 조회 및 사용 기록</li>
+      <li>사용자가 저장한 번호 또는 결과 기록</li>
+      <li>언어 및 기타 앱 설정</li>
     </ul>
 
-    <h2>8) 아동의 개인정보</h2>
-    <p>본 앱은 만 13세 미만 아동을 대상으로 설계되지 않았으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+    <p>
+      이러한 데이터는 앱 기능 제공을 위해 사용되며,
+      개발자가 별도의 계정 데이터베이스에
+      저장하지 않습니다.
+    </p>
 
-    <h2>9) 면책(중요)</h2>
+    <h3>2.3 네트워크 및 서비스 정보</h3>
+
+    <p>
+      앱은 복권 판매현황 또는 관련 정보를
+      조회하거나 외부 웹사이트를 열기 위해
+      네트워크 통신을 수행할 수 있습니다.
+    </p>
+
+    <p>
+      이 과정에서 접속 대상 서버 또는
+      네트워크 제공업체가 IP 주소,
+      요청 시각, 요청 헤더 등의 기술적 정보를
+      처리할 수 있습니다.
+    </p>
+
+    <h3>2.4 광고 관련 정보</h3>
+
+    <p>
+      앱에는 Unity LevelPlay 및 Unity Ads를
+      통한 광고 기능이 포함될 수 있습니다.
+    </p>
+
+    <p>
+      광고 제공업체는 광고 송출, 측정,
+      부정행위 방지 및 서비스 운영을 위해
+      다음 유형의 정보를 처리할 수 있습니다.
+    </p>
+
     <ul>
-      <li>본 앱은 정보의 정확성/최신성/완전성을 보장하지 않습니다.</li>
-      <li>앱 사용으로 발생한 손해에 대해 개발자는 법이 허용하는 범위 내에서 책임을 지지 않습니다.</li>
-      <li>당첨/판매정보는 반드시 공식 출처 및 실물 복권으로 재확인하세요.</li>
-      <li>본 앱은 공식 기관/사업자와 제휴·승인·후원 관계가 아닙니다.</li>
+      <li>Android 광고 식별자(Advertising ID)</li>
+      <li>IP 주소 및 IP 기반 대략적 위치 정보</li>
+      <li>기기 모델, 운영체제 및 앱 관련 정보</li>
+      <li>광고 노출 및 클릭 등의 상호작용 정보</li>
+      <li>광고 성과 및 오류 진단 정보</li>
+      <li>
+        광고 제공과 관련된 기술적 식별자 및
+        네트워크 정보
+      </li>
     </ul>
 
-    <h2>10) 외부 링크</h2>
-    <p>앱은 외부 웹사이트를 열 수 있으며, 외부 사이트의 정책이 적용됩니다.</p>
-    <p class="muted">예시(공식): <code>https://www.dhlottery.co.kr</code></p>
+    <p>
+      실제로 처리되는 정보는 SDK 구성,
+      기기 설정, 지역별 개인정보 보호 규정,
+      광고 제공업체의 정책에 따라 달라질 수 있습니다.
+    </p>
 
-    <h2>11) 문의</h2>
-    <p>문의/요청은 Google Play 스토어의 “개발자 연락처(Developer contact)” 정보를 참고해 주세요.</p>
+    <h2>3. 제3자 서비스 및 광고</h2>
 
-    <h2>12) 정책 변경</h2>
-    <p>본 방침은 변경될 수 있으며, 변경 시 본 페이지에 최신 버전을 게시합니다.</p>
+    <p>
+      앱은 광고 송출과 수익화 관리를 위해
+      다음 제3자 서비스를 사용합니다.
+    </p>
+
+    <ul>
+      <li>
+        <strong>Unity LevelPlay</strong>
+        — 광고 미디에이션 및 광고 송출 관리
+      </li>
+
+      <li>
+        <strong>Unity Ads</strong>
+        — 광고 제공, 성과 측정 및 부정행위 방지
+      </li>
+    </ul>
+
+    <p>
+      위 서비스는 Unity가 제공하며,
+      서비스 운영에 필요한 기기 및 광고 관련
+      데이터를 자체 정책에 따라 처리할 수 있습니다.
+    </p>
+
+    <p>
+      광고 서비스 운영 과정에서 광고주,
+      광고 기술 협력사 및 측정 서비스 제공업체와
+      데이터가 공유될 수 있습니다.
+    </p>
+
+    <p>
+      자세한 내용은 다음 공식 문서를 참고하세요.
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://unity.com/legal/privacy-policy"
+           target="_blank"
+           rel="noopener noreferrer">
+          Unity Privacy Policy
+        </a>
+      </li>
+
+      <li>
+        <a href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+           target="_blank"
+           rel="noopener noreferrer">
+          Unity Game Player & App User Privacy FAQ
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      향후 광고 네트워크가 추가되거나
+      개인정보 처리 방식이 변경되는 경우,
+      관련 내용을 본 방침에 반영합니다.
+    </p>
+
+    <h2>4. 정보 이용 목적</h2>
+
+    <p>
+      앱 및 관련 서비스 제공업체는
+      다음 목적을 위해 필요한 정보를 처리합니다.
+    </p>
+
+    <ul>
+      <li>
+        복권 판매현황 및 잔여 정보 제공
+      </li>
+
+      <li>
+        QR 코드 인식 및 공식 웹사이트 연결
+      </li>
+
+      <li>
+        사용자 기록 및 설정 유지
+      </li>
+
+      <li>
+        앱 기능 유지 및 오류 대응
+      </li>
+
+      <li>
+        광고 제공, 광고 성과 측정 및 수익화 관리
+      </li>
+
+      <li>
+        보안 및 비정상적인 서비스 이용 방지
+      </li>
+
+      <li>
+        관련 법률 및 규제 의무 준수
+      </li>
+    </ul>
+
+    <h2>5. 정보 공유 및 제3자 처리</h2>
+
+    <p>
+      개발자는 이용자의 이름, 전화번호,
+      이메일 등 직접적인 개인정보를
+      판매하기 위한 목적으로 수집하지 않습니다.
+    </p>
+
+    <p>
+      앱의 로컬 기록 및 설정은
+      기본적으로 기기에 저장되며,
+      개발자의 별도 서버에 동기화되지 않습니다.
+    </p>
+
+    <p>
+      다만 광고 제공을 위해 Unity 및
+      관련 광고 기술 협력사가 기기 식별자,
+      IP 주소, 광고 이용 정보 등을
+      처리하거나 공유할 수 있습니다.
+    </p>
+
+    <p>
+      법적 의무를 이행해야 하는 경우 또는
+      적법한 요청에 대응해야 하는 경우에는
+      관련 법령에 따른 처리가 이루어질 수 있습니다.
+    </p>
+
+    <h2>6. 데이터 보관 및 삭제</h2>
+
+    <h3>6.1 로컬 데이터</h3>
+
+    <p>
+      앱에 저장된 기록 및 설정은
+      앱에서 제공하는 삭제 기능이나
+      기기 설정의 앱 데이터 삭제 기능을 통해
+      제거할 수 있습니다.
+    </p>
+
+    <p>
+      앱을 삭제하면 일반적으로
+      앱의 로컬 데이터도 삭제됩니다.
+      다만 운영체제의 백업 및 복원 기능에 따라
+      일부 데이터가 복원될 가능성이 있습니다.
+    </p>
+
+    <h3>6.2 제3자 광고 데이터</h3>
+
+    <p>
+      Unity 및 광고 관련 서비스 제공업체가
+      수집한 정보는 해당 업체의 개인정보처리방침,
+      보관 정책 및 관련 법령에 따라 관리됩니다.
+    </p>
+
+    <p>
+      해당 데이터의 삭제 및 개인정보 관련 요청은
+      각 서비스 제공업체의 공식 개인정보 보호
+      절차를 통해 진행할 수 있습니다.
+    </p>
+
+    <h2>7. 이용자 선택권 및 권리</h2>
+
+    <p>
+      이용자는 다음 방법으로 개인정보 관련
+      선택권을 행사할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        기기 설정에서 카메라 접근 권한을
+        거부하거나 철회할 수 있습니다.
+      </li>
+
+      <li>
+        Android 개인정보 보호 또는 광고 설정에서
+        광고 ID 삭제 등 지원되는 광고 개인정보
+        보호 기능을 이용할 수 있습니다.
+      </li>
+
+      <li>
+        Unity 광고에 개인정보 관련 선택 기능이
+        제공되는 경우 해당 기능을 이용할 수 있습니다.
+      </li>
+
+      <li>
+        앱 내 기록 삭제 또는 앱 데이터 삭제 기능을
+        통해 로컬 기록을 제거할 수 있습니다.
+      </li>
+
+      <li>
+        개인정보 관련 문의 및 요청은
+        Google Play 스토어의 개발자 연락처를 통해
+        제출할 수 있습니다.
+      </li>
+    </ul>
+
+    <p>
+      광고 개인화 설정 변경은
+      모든 광고의 표시 중단을 의미하지 않으며,
+      개인화되지 않은 광고가 표시될 수 있습니다.
+    </p>
+
+    <h2>8. 데이터 보안</h2>
+
+    <p>
+      개발자는 앱에서 처리되는 정보의 보호를 위해
+      필요한 범위에서 접근 권한을 제한하고,
+      불필요한 개인정보 수집을 최소화하도록
+      노력합니다.
+    </p>
+
+    <p>
+      제3자 SDK가 처리하는 데이터의 보안은
+      해당 서비스 제공업체의 보안 정책 및
+      기술적 보호 조치의 적용을 받습니다.
+    </p>
+
+    <p>
+      다만 인터넷 및 전자적 데이터 처리 환경의
+      특성상 절대적인 보안을 보장할 수는 없습니다.
+    </p>
+
+    <h2>9. 아동의 개인정보</h2>
+
+    <p>
+      본 앱은 만 13세 미만 아동을 대상으로
+      설계되거나 제공되는 서비스가 아닙니다.
+    </p>
+
+    <p>
+      개발자는 아동의 직접적인 개인정보를
+      고의적으로 수집하지 않습니다.
+    </p>
+
+    <p>
+      아동의 개인정보와 관련된 문제가 확인되면
+      관련 법령 및 적용 가능한 절차에 따라
+      필요한 조치를 검토합니다.
+    </p>
+
+    <h2>10. 복권 정보 및 면책 조항</h2>
+
+    <div class="notice">
+      <strong>중요 안내</strong>
+
+      <p>
+        본 앱은 복권 판매 또는 구매를
+        직접 중개하는 공식 복권 서비스가 아닙니다.
+      </p>
+    </div>
+
+    <ul>
+      <li>
+        앱에서 제공하는 판매현황, 잔여 수량,
+        잔여율 및 기타 통계는 참고용입니다.
+      </li>
+
+      <li>
+        자료의 갱신 지연, 외부 정보 변경,
+        통신 오류 등으로 표시 정보가
+        실제 현황과 다를 수 있습니다.
+      </li>
+
+      <li>
+        제공된 정보가 당첨 가능성을 보장하거나
+        특정 복권의 구매를 권유하는 것은 아닙니다.
+      </li>
+
+      <li>
+        복권 당첨 여부 및 실제 결과는 반드시
+        공식 운영기관의 안내와
+        실물 복권을 통해 확인해야 합니다.
+      </li>
+
+      <li>
+        본 앱은 동행복권 및 관련 공식 기관과
+        제휴, 승인, 후원 또는 공식적인
+        관계가 없습니다.
+      </li>
+
+      <li>
+        개발자는 법령상 허용되는 범위에서
+        서비스 정보의 오류, 지연 또는 중단으로
+        발생한 손해에 대한 책임을 제한합니다.
+        다만 관련 법령에 따라 제한할 수 없는
+        책임은 제외됩니다.
+      </li>
+    </ul>
+
+    <h2>11. 외부 웹사이트</h2>
+
+    <p>
+      앱의 QR 코드 기능이나 관련 링크를 이용하면
+      외부 웹사이트가 열릴 수 있습니다.
+    </p>
+
+    <p>
+      외부 웹사이트의 개인정보 처리 및
+      서비스 운영은 해당 웹사이트의
+      정책과 약관에 따릅니다.
+    </p>
+
+    <p>
+      공식 복권 정보 확인:
+      <a href="https://www.dhlottery.co.kr"
+         target="_blank"
+         rel="noopener noreferrer">
+        https://www.dhlottery.co.kr
+      </a>
+    </p>
+
+    <h2>12. 개인정보 관련 문의</h2>
+
+    <p>
+      <strong>개발자:</strong>
+      JCraft Studio
+    </p>
+
+    <p>
+      앱의 개인정보 처리와 관련된 문의,
+      삭제 요청 및 기타 개인정보 보호 요청은
+      Google Play 스토어에 게시된
+      개발자 연락처를 통해 제출할 수 있습니다.
+    </p>
+
+    <p>
+      Unity 광고 데이터와 관련된 요청은
+      Unity의 공식 개인정보 보호 안내 및
+      관련 요청 절차를 이용할 수 있습니다.
+    </p>
+
+    <h2>13. 개인정보처리방침 변경</h2>
+
+    <p>
+      본 개인정보처리방침은 관련 법령,
+      Google Play 정책, 앱 기능 또는
+      제3자 서비스의 변경에 따라
+      수정될 수 있습니다.
+    </p>
+
+    <p>
+      변경 사항은 본 페이지에 게시하며,
+      중요한 변경 사항이 있는 경우
+      적용 가능한 법령에 따라
+      추가적인 안내 또는 동의 절차를
+      진행할 수 있습니다.
+    </p>
+
+    <p>
+      <strong>최종 수정일:</strong>
+      2026년 11월 4일
+    </p>
+
   </section>
 
-  <section class="card" data-lang="en" style="display:none">
-    <h2>1) Overview</h2>
-    <p>This Privacy Policy explains what information is collected, used, and shared by the App, and what choices you have.</p>
-    <p class="muted">
-      This App is an independent, third-party app and is not affiliated with any official lottery operator/agency.
-      Always verify results on the official website and with your physical ticket.
+  <!-- ================================ -->
+  <!-- ENGLISH PRIVACY POLICY           -->
+  <!-- ================================ -->
+
+  <section class="card" data-lang="en" hidden>
+
+    <h2>1. Overview</h2>
+
+    <p>
+      This Privacy Policy explains how JCraft Studio
+      ("Developer") handles information in
+      Spitto Sales Tracker & QR Check
+      ("App") and describes users' privacy choices.
     </p>
 
-    <h2>2) Information We Collect</h2>
-    <p>The App does not require sign-up and does not ask for direct identifiers such as name, phone number, or email.</p>
+    <p>
+      The Developer respects user privacy
+      and seeks to protect information
+      in accordance with applicable laws
+      and Google Play policies.
+    </p>
+
+    <div class="notice">
+      <strong>Independent Application Notice</strong>
+
+      <p>
+        This App is independently developed
+        and is not affiliated with, endorsed by,
+        sponsored by, or officially connected
+        to Donghaeng Lottery or any other
+        official lottery operator.
+      </p>
+
+      <p>
+        Lottery information is provided
+        for reference purposes only.
+        Always verify results through official
+        sources and your physical lottery ticket.
+      </p>
+    </div>
+
+    <h2>2. Information Collected and Processed</h2>
+
+    <p>
+      The App does not require account registration
+      or request direct personal identifiers
+      such as names, phone numbers, or email
+      addresses for its core functionality.
+    </p>
+
+    <h3>2.1 QR Scanning and Camera</h3>
+
     <ul>
-      <li><strong>QR scanning</strong>: Camera permission may be required. QR images are processed on-device by default and are not intentionally stored by the App.</li>
-      <li><strong>On-device storage</strong>: Saved numbers/history/settings may be stored locally on your device.</li>
-      <li><strong>Network requests</strong>: The App may call an API server to fetch sales status data. IP address and request headers may appear in server/infrastructure logs for security/operations.</li>
+      <li>
+        Camera permission may be requested
+        to scan QR codes.
+      </li>
+
+      <li>
+        QR image recognition is performed
+        on the device, and the App does not
+        separately store captured camera images
+        on a developer-operated server.
+      </li>
+
+      <li>
+        Opening URLs contained in QR codes
+        may initiate communication with
+        external websites.
+      </li>
     </ul>
 
-    <h2>3) Third-Party Services (Advertising)</h2>
-    <p>The App may use Google AdMob. Ad SDKs may collect Advertising ID, IP address, inferred approximate location, and app interaction events for ad delivery/measurement/fraud prevention.</p>
-    <ul><li>Google AdMob / Google Mobile Ads SDK</li></ul>
+    <h3>2.2 Local Device Storage</h3>
 
-    <h2>4) How We Use Information</h2>
+    <p>
+      The following information may be
+      stored locally on the device:
+    </p>
+
     <ul>
-      <li>Provide core features</li>
-      <li>Improve quality and fix issues</li>
-      <li>Serve and measure ads</li>
-      <li>Security and abuse prevention</li>
+      <li>Lottery-related usage and lookup history</li>
+      <li>Saved numbers and result records</li>
+      <li>Language preferences and app settings</li>
     </ul>
 
-    <h2>5) Sharing</h2>
-    <p>The developer does not sell personally identifying information. On-device data is not transmitted by the developer. Ad providers may process data under their own policies.</p>
+    <p>
+      This information supports App functionality
+      and is not stored in a separate developer
+      account database.
+    </p>
 
-    <h2>6) Data Retention</h2>
+    <h3>2.3 Network Information</h3>
+
+    <p>
+      The App may access external services
+      to retrieve lottery-related information
+      or open official websites.
+    </p>
+
+    <p>
+      External servers or network providers
+      may process technical information,
+      including IP addresses, request timestamps,
+      and HTTP headers.
+    </p>
+
+    <h3>2.4 Advertising Data</h3>
+
+    <p>
+      The App may include advertising functionality
+      through Unity LevelPlay and Unity Ads.
+    </p>
+
+    <p>
+      Advertising providers may process
+      the following information for ad delivery,
+      measurement, fraud prevention,
+      and service operations:
+    </p>
+
     <ul>
-      <li>On-device data is generally removed when you uninstall the App (subject to OS behavior).</li>
-      <li>Server/infrastructure logs may be retained for a limited period.</li>
+      <li>Android Advertising ID</li>
+      <li>IP address and approximate IP-based location</li>
+      <li>Device model and operating system information</li>
+      <li>App and advertising interaction information</li>
+      <li>Ad impressions and click events</li>
+      <li>Advertising performance and diagnostic data</li>
+      <li>
+        Technical identifiers and network information
+        related to advertising services
+      </li>
     </ul>
 
-    <h2>7) Your Choices</h2>
+    <p>
+      Actual data processing depends on
+      SDK configuration, device settings,
+      regional privacy requirements,
+      and provider policies.
+    </p>
+
+    <h2>3. Third-Party Advertising Services</h2>
+
+    <p>
+      The App uses the following services
+      for advertising and monetization:
+    </p>
+
     <ul>
-      <li>You can deny/revoke camera permission in device settings.</li>
-      <li>You can limit ad personalization and reset Advertising ID in Android settings.</li>
+      <li>
+        <strong>Unity LevelPlay</strong>
+        — Advertising mediation and management
+      </li>
+
+      <li>
+        <strong>Unity Ads</strong>
+        — Ad delivery, measurement,
+        and fraud prevention
+      </li>
     </ul>
 
-    <h2>8) Children</h2>
-    <p>The App is not intended for children under 13 and does not knowingly collect their personal information.</p>
+    <p>
+      These services are provided by Unity.
+      Unity may process device and advertising
+      information according to its own policies.
+    </p>
 
-    <h2>9) Disclaimer (Important)</h2>
+    <p>
+      Information may also be shared with
+      advertising partners, advertisers,
+      and measurement providers involved
+      in advertising services.
+    </p>
+
+    <p>
+      For more information, please review:
+    </p>
+
     <ul>
-      <li>No guarantee of accuracy/timeliness/completeness.</li>
-      <li>To the maximum extent permitted by law, the developer is not liable for damages arising from use of the App.</li>
-      <li>Always verify on official sources and with your physical ticket.</li>
-      <li>Not endorsed/sponsored/approved/affiliated with any official operator/agency.</li>
+      <li>
+        <a href="https://unity.com/legal/privacy-policy"
+           target="_blank"
+           rel="noopener noreferrer">
+          Unity Privacy Policy
+        </a>
+      </li>
+
+      <li>
+        <a href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+           target="_blank"
+           rel="noopener noreferrer">
+          Unity Game Player & App User Privacy FAQ
+        </a>
+      </li>
     </ul>
 
-    <h2>10) External Links</h2>
-    <p>The App may open external websites. Those websites are governed by their own policies.</p>
-    <p class="muted">Example (official): <code>https://www.dhlottery.co.kr</code></p>
+    <p>
+      This policy will be updated if
+      additional advertising networks are
+      integrated or data practices change.
+    </p>
 
-    <h2>11) Contact</h2>
-    <p>Please refer to “Developer contact” on the Google Play store listing.</p>
+    <h2>4. Purposes of Data Processing</h2>
 
-    <h2>12) Changes</h2>
-    <p>We may update this policy from time to time. The latest version will be posted on this page.</p>
+    <ul>
+      <li>
+        Providing lottery sales and remaining
+        availability information
+      </li>
+
+      <li>
+        QR code recognition and opening
+        official websites
+      </li>
+
+      <li>
+        Maintaining saved records and preferences
+      </li>
+
+      <li>
+        App maintenance and error resolution
+      </li>
+
+      <li>
+        Advertising delivery, measurement,
+        and monetization management
+      </li>
+
+      <li>
+        Security and prevention of abusive activity
+      </li>
+
+      <li>
+        Compliance with applicable legal obligations
+      </li>
+    </ul>
+
+    <h2>5. Data Sharing</h2>
+
+    <p>
+      The Developer does not collect
+      direct identifiers such as names,
+      phone numbers, or email addresses
+      for the purpose of selling them.
+    </p>
+
+    <p>
+      Locally stored records and settings
+      are not synchronized with a separate
+      developer-operated server.
+    </p>
+
+    <p>
+      However, Unity and related advertising
+      technology partners may process or share
+      advertising identifiers, IP addresses,
+      and advertising interaction data.
+    </p>
+
+    <p>
+      Information may also be processed
+      when necessary to comply with
+      applicable legal obligations
+      or lawful requests.
+    </p>
+
+    <h2>6. Data Retention and Deletion</h2>
+
+    <h3>6.1 Local Data</h3>
+
+    <p>
+      Locally stored records and preferences
+      can be removed using available
+      in-app deletion features or
+      the device's application data controls.
+    </p>
+
+    <p>
+      Uninstalling the App generally removes
+      its local data. However, operating system
+      backup and restoration features may
+      restore certain information.
+    </p>
+
+    <h3>6.2 Third-Party Advertising Data</h3>
+
+    <p>
+      Data collected by Unity and advertising
+      partners is retained and processed
+      according to their respective
+      privacy policies, retention practices,
+      and applicable laws.
+    </p>
+
+    <p>
+      Privacy and deletion requests involving
+      third-party advertising data may be
+      submitted through the relevant
+      provider's official privacy procedures.
+    </p>
+
+    <h2>7. User Rights and Choices</h2>
+
+    <p>
+      Users may exercise privacy choices
+      through the following methods:
+    </p>
+
+    <ul>
+      <li>
+        Deny or revoke camera permission
+        through device settings.
+      </li>
+
+      <li>
+        Use supported Android privacy
+        and advertising settings,
+        including Advertising ID deletion.
+      </li>
+
+      <li>
+        Use privacy choices made available
+        within Unity advertisements,
+        where supported.
+      </li>
+
+      <li>
+        Delete locally saved information
+        through available app or device controls.
+      </li>
+
+      <li>
+        Contact the Developer through
+        the Google Play developer contact
+        information for privacy inquiries.
+      </li>
+    </ul>
+
+    <p>
+      Disabling personalized advertising
+      does not necessarily disable advertising.
+      Non-personalized advertisements
+      may still appear.
+    </p>
+
+    <h2>8. Data Security</h2>
+
+    <p>
+      The Developer seeks to minimize
+      unnecessary data collection and
+      restrict access to information
+      where appropriate.
+    </p>
+
+    <p>
+      Security measures for information
+      processed by third-party SDKs
+      are governed by the relevant
+      service providers' security practices.
+    </p>
+
+    <p>
+      No method of electronic data processing
+      or internet communication can guarantee
+      absolute security.
+    </p>
+
+    <h2>9. Children's Privacy</h2>
+
+    <p>
+      The App is not designed or intended
+      for children under the age of 13.
+    </p>
+
+    <p>
+      The Developer does not knowingly collect
+      direct personal information from children.
+    </p>
+
+    <p>
+      If a children's privacy concern is identified,
+      appropriate measures will be considered
+      in accordance with applicable laws
+      and available procedures.
+    </p>
+
+    <h2>10. Lottery Information Disclaimer</h2>
+
+    <div class="notice">
+      <strong>Important Notice</strong>
+
+      <p>
+        The App is not an official lottery service
+        and does not directly broker
+        the purchase or sale of lottery tickets.
+      </p>
+    </div>
+
+    <ul>
+      <li>
+        Lottery sales information, remaining
+        quantities, availability ratios,
+        and statistics are provided
+        for reference purposes only.
+      </li>
+
+      <li>
+        Displayed information may differ
+        from actual conditions due to updates,
+        external data changes, or network errors.
+      </li>
+
+      <li>
+        Information provided does not
+        guarantee winning probabilities
+        or recommend purchasing specific tickets.
+      </li>
+
+      <li>
+        Lottery results must be verified
+        through official sources and
+        physical lottery tickets.
+      </li>
+
+      <li>
+        The App is not affiliated with,
+        endorsed by, approved by,
+        or sponsored by Donghaeng Lottery
+        or any official lottery authority.
+      </li>
+
+      <li>
+        To the extent permitted by law,
+        the Developer limits liability
+        for damages arising from information
+        errors, delays, or service interruptions.
+        This does not exclude liability
+        that cannot lawfully be limited.
+      </li>
+    </ul>
+
+    <h2>11. External Websites</h2>
+
+    <p>
+      QR scanning and related links
+      may open external websites.
+    </p>
+
+    <p>
+      Those websites operate under
+      their own privacy policies
+      and terms of service.
+    </p>
+
+    <p>
+      Official lottery information:
+      <a href="https://www.dhlottery.co.kr"
+         target="_blank"
+         rel="noopener noreferrer">
+        https://www.dhlottery.co.kr
+      </a>
+    </p>
+
+    <h2>12. Privacy Contact</h2>
+
+    <p>
+      <strong>Developer:</strong>
+      JCraft Studio
+    </p>
+
+    <p>
+      For privacy inquiries, data deletion
+      requests, or related concerns,
+      please use the Developer contact
+      information provided in the
+      Google Play store listing.
+    </p>
+
+    <p>
+      For questions concerning information
+      processed by Unity advertising services,
+      please refer to Unity's official
+      privacy resources and request procedures.
+    </p>
+
+    <h2>13. Changes to This Policy</h2>
+
+    <p>
+      This Privacy Policy may be updated
+      to reflect changes in applicable laws,
+      Google Play policies, App functionality,
+      or third-party services.
+    </p>
+
+    <p>
+      Updates will be published on this page.
+      Where required by applicable law,
+      material changes may involve additional
+      notice or consent procedures.
+    </p>
+
+    <p>
+      <strong>Last updated:</strong>
+      November 4, 2026
+    </p>
+
   </section>
 
-  <p class="muted">© 2026 JCraft Studio. All rights reserved.</p>
+  <footer>
+    © 2026 JCraft Studio. All rights reserved.
+    <p>
+      Spitto Sales Tracker & QR Check
+    </p>
+  </footer>
+
+</div>
 </body>
 </html>
