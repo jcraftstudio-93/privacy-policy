@@ -1,301 +1,2621 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="Privacy Policy for Secure ZIP Tool by JCraft Studio. Korean and English.">
+
   <title>개인정보처리방침 | Secure ZIP Tool</title>
-  <meta name="description" content="Secure ZIP Tool(보안 ZIP 도구) 개인정보처리방침 (한국어/English)" />
+
   <style>
-    :root { --fg:#0f172a; --bg:#ffffff; --muted:#475569; --card:#f8fafc; --line:#e2e8f0; --accent:#4f46e5; }
-    @media (prefers-color-scheme: dark) {
-      :root { --fg:#e5e7eb; --bg:#0b1220; --muted:#94a3b8; --card:#0f172a; --line:#22304a; --accent:#8b5cf6; }
+    :root {
+      color-scheme: light dark;
+
+      --fg: #0f172a;
+      --bg: #ffffff;
+      --muted: #475569;
+      --card: #f8fafc;
+      --line: #e2e8f0;
+      --accent: #4f46e5;
+      --accent-soft: #eef2ff;
+      --notice-line: #a5b4fc;
+      --table-head: #eef2ff;
     }
-    html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans KR", "맑은 고딕", sans-serif; }
-    a { color: var(--accent); }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 22px 16px 44px; }
-    header { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom: 16px; }
-    h1 { font-size: 20px; margin: 0 0 6px; letter-spacing: -0.2px; }
-    .sub { color: var(--muted); font-size: 13px; line-height: 1.5; }
-    .lang { display:flex; gap:8px; align-items:center; }
-    .btn { border:1px solid var(--line); background:var(--card); color:var(--fg); padding:8px 10px; border-radius:10px; cursor:pointer; font-weight:600; }
-    .btn[aria-pressed="true"] { outline: 2px solid rgba(79,70,229,.35); border-color: rgba(79,70,229,.35); }
-    .card { background: var(--card); border:1px solid var(--line); border-radius: 16px; padding: 16px; margin: 12px 0; }
-    h2 { font-size: 16px; margin: 0 0 10px; }
-    h3 { font-size: 14px; margin: 16px 0 8px; }
-    p, li { color: var(--fg); line-height: 1.7; }
-    ul { margin: 6px 0 0 20px; }
-    code { background: rgba(148,163,184,.15); padding: 2px 6px; border-radius: 8px; }
-    .muted { color: var(--muted); }
-    .hr { height:1px; background:var(--line); margin: 14px 0; }
-    footer { margin-top: 14px; font-size: 12px; color: var(--muted); }
-    .notice { border-left: 4px solid var(--accent); padding-left: 12px; }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <div>
-        <h1>개인정보처리방침 / Privacy Policy</h1>
-        <div class="sub">
-          앱: <b>Secure ZIP Tool</b> (보안 ZIP 도구)<br/>
-          최종 업데이트: <span id="updated">2026-01-28</span>
-        </div>
-      </div>
-      <div class="lang" role="group" aria-label="Language toggle">
-        <button class="btn" id="btn-ko" aria-pressed="true" onclick="setLang('ko')">한국어</button>
-        <button class="btn" id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
-      </div>
-    </header>
 
-    <!-- ==================== KO ==================== -->
-    <section id="ko">
-      <div class="card">
-        <h2>1. 개요</h2>
-        <p class="notice">
-          Secure ZIP Tool(이하 “앱”)은 파일을 ZIP으로 압축하거나 ZIP을 해제하는 기능을 제공합니다. 본 방침은 앱 이용 과정에서 어떤 정보가 처리되는지, 그리고 <b>광고 SDK(AdMob)</b> 사용 여부를 포함하여 이용자에게 투명하게 안내하기 위해 작성되었습니다.
-        </p>
-        <p class="muted">
-          개발자(사업자/개인) 정보 및 문의처는 Google Play 스토어의 앱 등록 정보(“개발자 연락처”)에 기재된 내용을 따릅니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>2. 수집·이용하는 개인정보</h2>
-        <h3>(1) 앱이 직접 수집하는 정보</h3>
-        <p>
-          앱은 회원가입 기능이 없으며, 사용자의 이름/이메일/전화번호 등 <b>개인정보를 앱 내부에서 직접 수집하지 않습니다</b>.
-        </p>
-
-        <h3>(2) 사용자가 기기에서 선택하는 파일/폴더</h3>
-        <p>
-          앱은 사용자가 선택한 파일/폴더를 <b>기기 내에서만</b> 압축/해제 처리합니다.
-          파일 내용은 서버로 업로드되지 않으며, 개발자가 파일 내용을 열람·수집하지 않습니다.
-        </p>
-
-        <h3>(3) 자동으로 생성될 수 있는 정보(광고 SDK)</h3>
-        <p>
-          앱은 Google AdMob(google_mobile_ads)을 사용하여 광고를 표시할 수 있습니다.
-          이 과정에서 Google 및 광고 파트너는 광고 제공/부정 클릭 방지/빈도 제한 등의 목적을 위해
-          <b>광고 식별자(예: AAID)</b>, <b>IP 주소</b>, <b>기기 정보</b>, <b>광고 상호작용 정보</b> 등을 처리할 수 있습니다.
-          해당 정보 처리는 Google의 정책에 따릅니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>3. 권한(Permissions) 사용</h2>
-        <ul>
-          <li><code>android.permission.INTERNET</code>: 광고(AdMob) 로딩 및 네트워크 통신에 사용됩니다.</li>
-        </ul>
-        <p class="muted">
-          파일 선택/폴더 선택은 Android의 시스템 파일 선택기(SAF 등)를 통해 진행되며,
-          앱은 사용자가 선택한 범위 내에서만 파일에 접근합니다(기기/OS 정책에 따름).
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>4. 처리 목적</h2>
-        <ul>
-          <li>ZIP 압축 및 해제 기능 제공</li>
-          <li>(선택) AES ZIP 암호화 기능 제공</li>
-          <li class="muted">※ AES로 암호화된 ZIP은 일부 기본 파일앱/구형 압축앱에서 해제가 지원되지 않을 수 있습니다. 이 경우 PC 또는 AES 지원 압축앱을 사용해 주세요.</li>
-          <li>광고 제공 및 앱 운영(배너/보상형 광고)</li>
-          <li>광고 품질 개선 및 부정행위 방지(AdMob 정책 범위)</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>5. 제3자 제공 및 처리위탁</h2>
-        <p>
-          앱은 원칙적으로 사용자의 파일/콘텐츠를 제3자에게 제공하지 않습니다.
-          다만 광고 제공을 위해 Google AdMob SDK를 사용하며,
-          광고 관련 데이터 처리는 Google의 개인정보처리방침 및 정책에 따라 이루어집니다.
-        </p>
-        <ul>
-          <li>제공/처리 주체: Google (AdMob / Google Mobile Ads SDK)</li>
-          <li>관련 정책: Google Privacy Policy, Google Ad Policies(해당 서비스 정책)</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>6. 보관 및 파기</h2>
-        <p>
-          앱은 사용자의 개인정보를 별도로 수집·저장하지 않습니다.
-          사용자가 선택한 파일/폴더는 기기 내에서 처리되며, 서버로 전송되지 않습니다.
-        </p>
-        <p>
-          광고 SDK를 통해 처리되는 정보의 보관/파기는 Google의 정책에 따릅니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>7. 아동의 개인정보</h2>
-        <p>
-          앱은 아동을 주 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>8. 이용자 선택 및 통제</h2>
-        <ul>
-          <li>기기 설정에서 광고 식별자 재설정/삭제(지원되는 기기에서 가능)</li>
-          <li>네트워크 차단/제한 시 광고 로딩이 제한될 수 있음</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>9. 보안</h2>
-        <p>
-          앱은 ZIP 해제 시 경로 탈출(Zip Slip) 공격을 방지하기 위한 검증을 적용하는 등
-          안전한 파일 처리를 위해 노력합니다. 또한 작업은 기기 내에서 수행되며 외부 서버로 파일을 전송하지 않습니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>10. 문의</h2>
-        <p>
-          개인정보 관련 문의는 Google Play 스토어의 앱 등록 정보에 기재된 개발자 연락처로 요청해 주세요.
-        </p>
-      </div>
-
-      <footer>
-        본 방침은 필요 시 변경될 수 있으며, 변경 시 본 페이지의 “최종 업데이트” 날짜를 갱신합니다.
-      </footer>
-    </section>
-
-    <!-- ==================== EN ==================== -->
-    <section id="en" style="display:none;">
-      <div class="card">
-        <h2>1. Overview</h2>
-        <p class="notice">
-          Secure ZIP Tool (the “App”) provides ZIP compression and extraction features. This policy explains what information may be processed while using the App, including the use of advertising SDKs, in a transparent manner.
-        </p>
-        <p class="muted">
-          Developer contact details are available on the app’s Google Play listing (Developer Contact section).
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>2. Information We Collect and Use</h2>
-        <h3>(1) Information collected directly by the App</h3>
-        <p>
-          The App does not require account registration and does <b>not</b> directly collect personal information such as your name, email address, or phone number.
-        </p>
-
-        <h3>(2) Files/folders you select on your device</h3>
-        <p>
-          The App processes the files/folders you select <b>only on your device</b> for compression or extraction.
-          Your file contents are not uploaded to any server, and the developer does not access or collect your files.
-        </p>
-
-        <h3>(3) Information that may be processed by advertising SDKs</h3>
-        <p>
-          The App may display ads using Google AdMob (google_mobile_ads). For ad delivery, fraud prevention, frequency capping, and measurement,
-          Google and its partners may process information such as <b>advertising identifiers (e.g., AAID)</b>, <b>IP address</b>, <b>device information</b>,
-          and <b>ad interaction data</b>. Such processing is governed by Google’s policies.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>3. Permissions</h2>
-        <ul>
-          <li><code>android.permission.INTERNET</code>: Used to load ads (AdMob) and perform network communication.</li>
-        </ul>
-        <p class="muted">
-          File/folder selection is handled via the Android system picker (e.g., SAF). The App accesses files only within the scope you select, subject to OS policies.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>4. Purpose of Processing</h2>
-        <ul>
-          <li>Provide ZIP compression and extraction features</li>
-          <li>(Optional) Provide AES-encrypted ZIP creation</li>
-          <li class="muted">※ AES-encrypted ZIP may not open in some built-in/older ZIP apps. Use an AES-compatible ZIP app or a PC.</li>
-          <li>Ads to support app operation (banner/rewarded ads)</li>
-          <li>Ad quality improvement and fraud prevention (within AdMob policy scope)</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>5. Third-Party Sharing / Processors</h2>
-        <p>
-          The App does not share your files or content with third parties. However, the App uses Google AdMob SDK for advertising,
-          and ad-related data processing is governed by Google’s privacy policy and terms.
-        </p>
-        <ul>
-          <li>Third party: Google (AdMob / Google Mobile Ads SDK)</li>
-          <li>Policies: Google Privacy Policy and relevant ad/SDK policies</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>6. Retention and Deletion</h2>
-        <p>
-          The App does not independently collect or store personal data. Your selected files are processed locally on your device and are not sent to a server.
-        </p>
-        <p>
-          Data processed by the advertising SDK is retained/deleted according to Google’s policies.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>7. Children’s Privacy</h2>
-        <p>
-          The App is not directed at children and does not knowingly collect personal information from children.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>8. Your Choices and Controls</h2>
-        <ul>
-          <li>You may reset/delete your advertising ID in device settings (where supported).</li>
-          <li>If network access is blocked, ad loading may be limited.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>9. Security</h2>
-        <p>
-          The App applies safety checks (e.g., Zip Slip path traversal protection) during extraction and processes files locally on your device.
-          The App does not upload your files to external servers.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>10. Contact</h2>
-        <p>
-          For privacy-related inquiries, please use the developer contact information provided on the Google Play listing for this App.
-        </p>
-      </div>
-
-      <footer>
-        This policy may be updated from time to time. The “Last updated” date on this page will be revised accordingly.
-      </footer>
-    </section>
-  </div>
-
-  <script>
-    function setLang(lang) {
-      const ko = document.getElementById('ko');
-      const en = document.getElementById('en');
-      const bko = document.getElementById('btn-ko');
-      const ben = document.getElementById('btn-en');
-      if (lang === 'en') {
-        ko.style.display = 'none';
-        en.style.display = 'block';
-        bko.setAttribute('aria-pressed', 'false');
-        ben.setAttribute('aria-pressed', 'true');
-        document.documentElement.lang = 'en';
-        document.title = 'Privacy Policy | Secure ZIP Tool';
-      } else {
-        ko.style.display = 'block';
-        en.style.display = 'none';
-        bko.setAttribute('aria-pressed', 'true');
-        ben.setAttribute('aria-pressed', 'false');
-        document.documentElement.lang = 'ko';
-        document.title = '개인정보처리방침 | Secure ZIP Tool';
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e5e7eb;
+        --bg: #0b1220;
+        --muted: #94a3b8;
+        --card: #0f172a;
+        --line: #22304a;
+        --accent: #a78bfa;
+        --accent-soft: #1d2040;
+        --notice-line: #818cf8;
+        --table-head: #202846;
       }
     }
-  </script>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+
+      font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        "Apple SD Gothic Neo",
+        "Noto Sans KR",
+        "맑은 고딕",
+        sans-serif;
+
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 22px 16px 44px;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0 0 8px;
+      letter-spacing: -0.3px;
+      line-height: 1.35;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 12px;
+      line-height: 1.4;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin: 20px 0 10px;
+      line-height: 1.45;
+    }
+
+    p,
+    li {
+      color: var(--fg);
+      line-height: 1.75;
+      font-size: 14px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 8px 0 12px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .lang {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--fg);
+      padding: 9px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 13px;
+      transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .btn:hover {
+      border-color: var(--accent);
+    }
+
+    .btn[aria-pressed="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .btn[aria-pressed="true"] {
+        color: #111827;
+      }
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 14px 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .notice {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--notice-line);
+      padding: 15px 16px;
+      border-radius: 10px;
+      margin: 12px 0;
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    code {
+      background: rgba(148,163,184,0.15);
+      padding: 3px 6px;
+      border-radius: 7px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 14px 0;
+    }
+
+    table {
+      width: 100%;
+      min-width: 440px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th,
+    td {
+      padding: 11px;
+      border: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.6;
+    }
+
+    th {
+      background: var(--table-head);
+      font-weight: 700;
+    }
+
+    td {
+      color: var(--fg);
+    }
+
+    .policy-section {
+      display: none;
+    }
+
+    .policy-section.active {
+      display: block;
+    }
+
+    .hr {
+      height: 1px;
+      background: var(--line);
+      margin: 18px 0;
+    }
+
+    footer {
+      margin-top: 24px;
+      padding: 16px 0;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 16px 12px 34px;
+      }
+
+      h1 {
+        font-size: 21px;
+      }
+
+      h2 {
+        font-size: 17px;
+      }
+
+      .card {
+        padding: 17px 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .btn {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+
+  <header>
+    <div>
+      <h1>
+        개인정보처리방침 / Privacy Policy
+      </h1>
+
+      <div class="sub">
+        App:
+        <strong>Secure ZIP Tool</strong>
+        (보안 ZIP 도구)
+      </div>
+
+      <div class="sub">
+        Developer:
+        <strong>JCraft Studio</strong>
+      </div>
+
+      <div class="sub">
+        Last Updated / 최종 수정일:
+        <strong>2026-11-04</strong>
+      </div>
+    </div>
+
+    <nav
+      class="lang"
+      aria-label="Language selection"
+    >
+      <button
+        class="btn"
+        id="btn-ko"
+        type="button"
+        aria-pressed="true">
+        한국어
+      </button>
+
+      <button
+        class="btn"
+        id="btn-en"
+        type="button"
+        aria-pressed="false">
+        English
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================================== -->
+  <!-- KOREAN PRIVACY POLICY                 -->
+  <!-- ===================================== -->
+
+  <main
+    id="ko"
+    class="policy-section active"
+    lang="ko"
+  >
+
+    <div class="card">
+      <h2>1. 개요</h2>
+
+      <div class="notice">
+        <p>
+          <strong>
+            개인정보 보호 및 파일 처리 안내
+          </strong>
+        </p>
+
+        <p>
+          Secure ZIP Tool(이하 "앱")은
+          사용자가 선택한 파일을
+          ZIP으로 압축하거나
+          ZIP 파일을 해제하는
+          유틸리티 앱입니다.
+        </p>
+
+        <p>
+          앱은 ZIP 압축·해제 및
+          지원되는 경우 AES 암호화
+          ZIP 생성 기능을 제공합니다.
+        </p>
+
+        <p>
+          사용자가 선택한 파일 및
+          폴더는 핵심 기능을 위해
+          기기 내부에서 처리되도록
+          설계되어 있습니다.
+        </p>
+
+        <p>
+          다만 광고 제공에 사용되는
+          Unity LevelPlay 및
+          Unity Ads는 별도의
+          기기·광고 관련 기술 정보를
+          처리할 수 있습니다.
+        </p>
+      </div>
+
+      <p>
+        본 개인정보처리방침은
+        앱 이용 과정에서
+        처리될 수 있는 정보,
+        파일 접근 방식,
+        광고 서비스,
+        정보 보관·삭제,
+        이용자의 권리 및
+        관련 보안 사항을 설명합니다.
+      </p>
+
+      <p>
+        개발자 정보와 문의처는
+        Google Play 스토어의
+        해당 앱 등록정보에
+        표시된 개발자 연락처를
+        참고하시기 바랍니다.
+      </p>
+
+      <p class="muted">
+        최종 수정일:
+        2026년 11월 4일
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. 수집 및 처리하는 정보</h2>
+
+      <h3>2.1 앱에서 직접 처리하는 정보</h3>
+
+      <p>
+        앱의 기본 기능은
+        회원가입이나 사용자
+        계정 생성을 요구하지 않습니다.
+      </p>
+
+      <p>
+        개발자는 ZIP 압축 및
+        해제 기능을 제공하기 위해
+        사용자의 이름, 이메일 주소,
+        전화번호, 주민등록번호,
+        결제정보 등 직접 식별 가능한
+        개인정보를 별도로
+        입력하도록 요구하지 않습니다.
+      </p>
+
+      <p>
+        다만 사용자가 선택한 파일의
+        이름이나 내용에는
+        개인정보가 포함될 수 있으며,
+        앱은 필요한 범위에서
+        해당 파일을 기기 내부에서
+        처리할 수 있습니다.
+      </p>
+
+      <h3>2.2 사용자가 선택한 파일·폴더</h3>
+
+      <ul>
+        <li>
+          사용자가 직접 선택한
+          파일 또는 폴더
+        </li>
+
+        <li>
+          파일명, 파일 형식,
+          크기 및 경로 관련 정보
+        </li>
+
+        <li>
+          ZIP 압축에 필요한 파일 내용
+        </li>
+
+        <li>
+          ZIP 해제에 필요한
+          압축파일 내부 데이터
+        </li>
+
+        <li>
+          ZIP 생성 또는 해제 결과 파일
+        </li>
+
+        <li>
+          지원되는 경우
+          암호화 관련 사용자 입력값
+        </li>
+      </ul>
+
+      <p>
+        선택한 파일의 내용은
+        사용자가 요청한 압축 또는
+        해제 작업에 필요한 범위에서
+        처리되도록 설계되어 있습니다.
+      </p>
+
+      <p>
+        정상적인 파일 압축 및 해제
+        과정에서 개발자의 자체 서버로
+        파일 내용을 업로드하도록
+        설계하지 않았습니다.
+      </p>
+
+      <h3>2.3 앱 설정 및 로컬 정보</h3>
+
+      <ul>
+        <li>앱 언어 설정</li>
+        <li>기능 사용에 필요한 로컬 설정값</li>
+        <li>광고 표시 주기 관련 로컬 값</li>
+        <li>앱에서 저장하는 경우 최근 작업 정보</li>
+      </ul>
+
+      <h3>2.4 광고 SDK 처리 정보</h3>
+
+      <p>
+        Unity LevelPlay와
+        Unity Ads 및 관련
+        광고 기술 협력사는
+        광고 서비스 운영을 위해
+        다음과 같은 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 광고 ID 및
+          기타 허용된 식별자
+        </li>
+
+        <li>
+          IP 주소 및 IP 기반
+          대략적인 위치 정보
+        </li>
+
+        <li>
+          기기 제조사, 모델,
+          운영체제 및 버전
+        </li>
+
+        <li>
+          앱과 광고 SDK 관련
+          기술적 이벤트
+        </li>
+
+        <li>
+          광고 노출, 클릭,
+          시청 및 상호작용 정보
+        </li>
+
+        <li>
+          SDK 오류, 충돌 및
+          진단 정보
+        </li>
+
+        <li>
+          광고 부정행위 탐지 및
+          보안 관련 기술 정보
+        </li>
+      </ul>
+
+      <p>
+        실제 처리되는 정보의
+        범위는 SDK 버전,
+        광고 네트워크 구성,
+        기기 설정, 지역,
+        개인정보 보호 선택 및
+        관련 법령에 따라
+        달라질 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. 권한(Permissions) 사용</h2>
+
+      <h3>3.1 인터넷 권한</h3>
+
+      <p>
+        앱은 광고 서비스 및
+        필요한 네트워크 통신을 위해
+        다음 권한을
+        사용할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          <code>
+            android.permission.INTERNET
+          </code>
+          : Unity LevelPlay 및
+          Unity Ads 광고 요청,
+          광고 로딩 등
+          네트워크 통신
+        </li>
+      </ul>
+
+      <p>
+        이 권한을 사용한다고 해서
+        사용자가 선택한 ZIP 파일
+        내용이 개발자 서버로
+        전송된다는 의미는 아닙니다.
+      </p>
+
+      <h3>3.2 파일 및 폴더 접근</h3>
+
+      <p>
+        파일 및 폴더 선택은
+        Android 시스템 파일 선택기
+        또는 Storage Access Framework
+        (SAF) 등을 통해
+        처리될 수 있습니다.
+      </p>
+
+      <p>
+        앱은 사용자가 선택한
+        파일 또는 허용한
+        폴더 범위에서
+        파일 처리 기능을
+        수행하도록 설계되어 있습니다.
+      </p>
+
+      <p>
+        실제 권한 방식과
+        접근 가능 범위는
+        Android 버전,
+        앱 구현 및
+        기기 설정에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h3>3.3 광고 식별자</h3>
+
+      <p>
+        광고 서비스는
+        기기에서 이용 가능한
+        광고 식별자를
+        처리할 수 있습니다.
+      </p>
+
+      <p>
+        관련 식별자에 대한
+        접근 여부는
+        광고 SDK 구성,
+        Android 버전,
+        기기 설정 및
+        관련 정책에 따라
+        달라질 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. 정보 처리 목적</h2>
+
+      <ul>
+        <li>
+          ZIP 파일 압축 기능 제공
+        </li>
+
+        <li>
+          ZIP 파일 해제 기능 제공
+        </li>
+
+        <li>
+          지원되는 경우
+          AES 암호화 ZIP 생성
+        </li>
+
+        <li>
+          사용자가 선택한 파일 및
+          폴더에 대한 처리
+        </li>
+
+        <li>
+          압축 결과 및 해제 결과
+          파일 생성과 저장
+        </li>
+
+        <li>
+          앱 설정 및 필요한
+          로컬 정보 유지
+        </li>
+
+        <li>
+          광고 제공 및
+          광고 성과 측정
+        </li>
+
+        <li>
+          광고 노출 빈도 관리
+        </li>
+
+        <li>
+          오류 확인 및
+          안정성 개선
+        </li>
+
+        <li>
+          보안 유지 및
+          부정행위 방지
+        </li>
+
+        <li>
+          관련 법적 의무 준수
+        </li>
+      </ul>
+
+      <h3>4.1 AES 암호화 관련 안내</h3>
+
+      <p>
+        앱에서 AES 암호화
+        ZIP 생성 기능을
+        제공하는 경우,
+        해당 ZIP 파일은
+        일부 기본 파일 관리자나
+        구형 압축 프로그램에서
+        정상적으로 열리지
+        않을 수 있습니다.
+      </p>
+
+      <p>
+        호환되는 AES 지원
+        압축 프로그램이나
+        PC 압축 도구가
+        필요할 수 있습니다.
+      </p>
+
+      <p>
+        암호화 강도와 보안 수준은
+        사용한 암호화 방식,
+        설정 및 비밀번호의
+        안전성에 영향을 받습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. ZIP 파일 및 폴더 처리</h2>
+
+      <h3>5.1 기기 내부 처리</h3>
+
+      <p>
+        사용자가 선택한
+        파일과 폴더는
+        ZIP 압축 및 해제 기능을 위해
+        기기 내부에서
+        처리되도록 설계되었습니다.
+      </p>
+
+      <p>
+        개발자는 정상적인 파일 처리
+        과정에서 파일 내용을
+        별도의 개발자 운영 서버에
+        업로드하지 않습니다.
+      </p>
+
+      <h3>5.2 생성 및 해제 파일</h3>
+
+      <p>
+        생성된 ZIP 파일과
+        해제된 파일은
+        사용자가 선택한 위치,
+        앱 내부 저장소 또는
+        기기 저장소에
+        저장될 수 있습니다.
+      </p>
+
+      <p>
+        저장 위치에 따라
+        앱 삭제 후에도
+        결과 파일이
+        남아 있을 수 있습니다.
+      </p>
+
+      <h3>5.3 임시 파일</h3>
+
+      <p>
+        압축 또는 해제 작업을
+        수행하기 위해
+        임시 파일이나
+        캐시 데이터가
+        생성될 수 있습니다.
+      </p>
+
+      <p>
+        이러한 데이터의
+        보관 및 삭제 시점은
+        실제 앱 구현과
+        Android 저장소
+        관리 방식에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h3>5.4 외부 저장소 및 공유</h3>
+
+      <p>
+        이용자가 클라우드
+        저장소에서 파일을
+        선택하거나 외부 앱으로
+        결과 파일을 공유하면
+        해당 서비스가
+        파일을 처리할 수 있습니다.
+      </p>
+
+      <p>
+        이 경우에는
+        사용자가 선택한
+        외부 서비스의
+        개인정보처리방침이
+        별도로 적용됩니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. 광고 및 제3자 서비스</h2>
+
+      <p>
+        본 앱은 광고 미디에이션을 위해
+        <strong>Unity LevelPlay</strong>를
+        사용하며, 광고 제공을 위해
+        <strong>Unity Ads</strong>를
+        사용합니다.
+      </p>
+
+      <h3>6.1 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay는
+        광고 요청, 광고 형식,
+        연결된 광고 네트워크,
+        광고 성과 및 관련 운영을
+        관리하는 미디에이션
+        플랫폼입니다.
+      </p>
+
+      <h3>6.2 Unity Ads</h3>
+
+      <p>
+        Unity Ads는 앱 내부에
+        광고를 제공하는
+        광고 네트워크입니다.
+      </p>
+
+      <p>
+        Unity Ads 및 관련
+        광고 기술 협력사는
+        광고 제공, 측정,
+        보안 및 부정행위 방지를 위해
+        광고 관련 기술 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <h3>6.3 광고 데이터 유형</h3>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>정보 유형</th>
+              <th>처리될 수 있는 정보</th>
+              <th>처리 목적</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>광고 식별자</td>
+              <td>
+                Android 광고 ID 및
+                허용된 기타 식별자
+              </td>
+              <td>
+                광고 제공 및
+                성과 측정
+              </td>
+            </tr>
+
+            <tr>
+              <td>네트워크 정보</td>
+              <td>
+                IP 주소 및 IP 기반
+                대략적인 위치
+              </td>
+              <td>
+                광고 제공 및 보안
+              </td>
+            </tr>
+
+            <tr>
+              <td>기기 정보</td>
+              <td>
+                기기 모델, 제조사,
+                운영체제 및 버전
+              </td>
+              <td>
+                호환성 및 광고 제공
+              </td>
+            </tr>
+
+            <tr>
+              <td>광고 이벤트</td>
+              <td>
+                광고 노출, 클릭,
+                시청 및 관련 이벤트
+              </td>
+              <td>
+                광고 성과 측정
+              </td>
+            </tr>
+
+            <tr>
+              <td>진단 정보</td>
+              <td>
+                SDK 오류, 충돌 및
+                기술적 진단
+              </td>
+              <td>
+                안정성 및 오류 확인
+              </td>
+            </tr>
+
+            <tr>
+              <td>보안 정보</td>
+              <td>
+                광고 부정행위
+                탐지 관련 정보
+              </td>
+              <td>
+                부정행위 방지
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>6.4 광고 개인화</h3>
+
+      <p>
+        광고는 이용자의 지역,
+        기기 설정,
+        개인정보 보호 선택 및
+        관련 법령에 따라
+        개인화 또는 비개인화
+        형태로 제공될 수 있습니다.
+      </p>
+
+      <p>
+        일부 국가 또는 지역에서는
+        광고 관련 개인정보
+        처리에 이용자의 동의가
+        필요할 수 있습니다.
+      </p>
+
+      <p>
+        관련 법령상 필요한 경우
+        적절한 동의 절차와
+        개인정보 보호 선택
+        기능을 제공해야 합니다.
+      </p>
+
+      <p>
+        개인화 광고를 제한하더라도
+        모든 광고가
+        중단되는 것은 아닙니다.
+      </p>
+
+      <h3>6.5 Unity 공식 개인정보처리방침</h3>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and
+            App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        광고 네트워크가
+        추가되거나 실제
+        데이터 처리 방식이
+        변경되는 경우에는
+        본 방침을 검토하고
+        필요한 내용을
+        갱신할 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. 제3자 제공 및 처리</h2>
+
+      <p>
+        개발자는 이용자가
+        선택한 ZIP 파일,
+        원본 파일 또는
+        해당 파일 내용을
+        판매하지 않습니다.
+      </p>
+
+      <p>
+        정상적인 압축 및
+        해제 과정에서
+        파일 내용을
+        자체 서버로 전송하여
+        제3자에게 제공하지
+        않도록 설계되었습니다.
+      </p>
+
+      <p>
+        다만 Unity LevelPlay,
+        Unity Ads 및 관련 광고
+        기술 협력사는 광고 제공,
+        성과 측정, 보안 및
+        부정행위 방지를 위해
+        광고 식별자, IP 주소,
+        기기 정보 및
+        광고 이벤트 등을
+        처리하거나 공유할 수 있습니다.
+      </p>
+
+      <p>
+        관련 법령에 따른
+        적법한 요청이나
+        법적 의무가 있는 경우
+        필요한 범위에서
+        정보가 처리될 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. 정보 보관 및 삭제</h2>
+
+      <h3>8.1 로컬 데이터</h3>
+
+      <p>
+        앱 설정 및
+        저장된 작업 정보는
+        앱 기능을 제공하기 위해
+        기기 내부에
+        보관될 수 있습니다.
+      </p>
+
+      <h3>8.2 앱 데이터 삭제</h3>
+
+      <p>
+        Android 설정에서
+        앱 데이터를 삭제하거나
+        앱을 제거하면
+        일반적으로 앱 전용
+        저장소의 데이터가
+        삭제됩니다.
+      </p>
+
+      <h3>8.3 결과 파일 삭제</h3>
+
+      <p>
+        공유 저장소나
+        사용자가 선택한
+        외부 저장 위치에
+        생성된 ZIP 파일 및
+        해제 결과 파일은
+        앱 삭제 후에도
+        남아 있을 수 있습니다.
+      </p>
+
+      <p>
+        이러한 파일은
+        파일 관리자 등을 통해
+        별도로 삭제해야
+        할 수 있습니다.
+      </p>
+
+      <h3>8.4 광고 관련 데이터</h3>
+
+      <p>
+        Unity와 관련
+        광고 기술 협력사가
+        독립적으로 처리하는
+        정보의 보관 기간 및
+        삭제 방식은 해당
+        서비스의 정책에
+        따릅니다.
+      </p>
+
+      <p>
+        Android 백업 및
+        복원 설정에 따라
+        일부 로컬 데이터가
+        복원될 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. 아동의 개인정보</h2>
+
+      <p>
+        본 앱은 일반적인
+        ZIP 압축 및 해제
+        유틸리티로 아동을
+        주요 대상으로
+        설계된 서비스가 아닙니다.
+      </p>
+
+      <p>
+        기본 기능을 위해
+        아동의 이름, 연락처,
+        기타 직접 식별 가능한
+        개인정보를 요구하지 않습니다.
+      </p>
+
+      <p>
+        보호자는 아동이
+        개인정보가 포함된
+        파일을 외부 서비스에
+        공유하지 않도록
+        안내할 수 있습니다.
+      </p>
+
+      <p>
+        아동 및 연령 제한
+        대상 이용자에게는
+        관련 법령, Google Play 정책 및
+        광고 서비스의 추가
+        보호 요건이
+        적용될 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>10. 이용자의 권리 및 선택</h2>
+
+      <p>
+        이용자는 관련 법령에서
+        허용하는 범위 내에서
+        개인정보 열람, 정정,
+        삭제, 처리 제한 및
+        기타 개인정보 보호
+        권리를 행사할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 설정에서
+          앱 데이터 삭제
+        </li>
+
+        <li>
+          앱 제거를 통한
+          로컬 데이터 삭제
+        </li>
+
+        <li>
+          ZIP 결과 파일 및
+          해제 파일 직접 삭제
+        </li>
+
+        <li>
+          Android 광고 ID
+          관리 또는 삭제
+        </li>
+
+        <li>
+          Unity 개인정보 보호
+          요청 절차 확인
+        </li>
+
+        <li>
+          Google Play 개발자
+          연락처를 통한 문의
+        </li>
+      </ul>
+
+      <p>
+        광고 서비스가
+        독립적으로 처리하는
+        정보의 개인정보
+        관련 요청은
+        해당 서비스 제공업체의
+        절차를 따라야
+        할 수 있습니다.
+      </p>
+
+      <p>
+        네트워크 접근을
+        제한하는 경우
+        광고 로딩이
+        제한될 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>11. 보안</h2>
+
+      <h3>11.1 ZIP 해제 안전성</h3>
+
+      <p>
+        앱은 ZIP 파일을
+        해제할 때 경로 탈출
+        공격(Zip Slip)과 같은
+        비정상적인 파일 경로를
+        방지하기 위한 검증을
+        적용하도록 설계되었습니다.
+      </p>
+
+      <p>
+        다만 사용자가 선택한
+        파일이나 기기 환경에
+        따라 모든 보안 위험을
+        완전히 제거할 수
+        있는 것은 아닙니다.
+      </p>
+
+      <h3>11.2 암호화</h3>
+
+      <p>
+        AES 암호화 ZIP이
+        지원되는 경우,
+        사용한 비밀번호의
+        복잡성과 안전성은
+        파일 보호 수준에
+        영향을 줄 수 있습니다.
+      </p>
+
+      <p>
+        암호화 기능을 사용하지 않은
+        일반 ZIP 파일은
+        압축되었다는 이유만으로
+        내용이 암호화되거나
+        보호되는 것은 아닙니다.
+      </p>
+
+      <h3>11.3 기기 보안</h3>
+
+      <p>
+        기기의 보안 상태,
+        악성코드, 저장소 오류,
+        운영체제 제한 및
+        외부 앱의 동작에 따라
+        데이터 보안 수준이
+        달라질 수 있습니다.
+      </p>
+
+      <p>
+        중요한 파일은
+        별도로 백업하고,
+        신뢰할 수 없는
+        출처의 ZIP 파일을
+        해제할 때
+        주의하시기 바랍니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>12. 저작권 및 파일 이용 권한</h2>
+
+      <p>
+        본 앱은 사용자가
+        선택한 파일을
+        압축하거나 해제하는
+        유틸리티 도구입니다.
+      </p>
+
+      <p>
+        파일의 저작권과
+        기타 권리는
+        해당 파일의
+        정당한 권리자에게
+        귀속됩니다.
+      </p>
+
+      <p>
+        사용자는 적법한
+        접근 및 이용 권한이
+        있는 파일만
+        처리해야 합니다.
+      </p>
+
+      <p>
+        타인의 저작권,
+        개인정보, 영업비밀 및
+        기타 법적 권리를
+        침해하는 목적으로
+        앱을 이용해서는
+        안 됩니다.
+      </p>
+
+      <p>
+        앱 자체의 독창적인
+        코드, 디자인 및
+        자체 제작 콘텐츠는
+        JCraft Studio 또는
+        정당한 권리자의
+        보호를 받습니다.
+      </p>
+
+      <p>
+        Unity, Unity LevelPlay,
+        Unity Ads 및 Google Play 등의
+        상표는 해당 권리자에게
+        귀속됩니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>13. 책임 및 면책 안내</h2>
+
+      <p>
+        본 앱은 일반적인
+        ZIP 파일 압축 및
+        해제 유틸리티로
+        제공됩니다.
+      </p>
+
+      <p>
+        파일 구조, 암호화 방식,
+        손상된 압축파일,
+        저장공간 부족,
+        파일 권한 문제,
+        운영체제 제한 등으로
+        작업이 실패할 수 있습니다.
+      </p>
+
+      <p>
+        중요한 파일은
+        압축하거나 해제하기 전에
+        원본을 별도로
+        백업하는 것이 좋습니다.
+      </p>
+
+      <p>
+        작업 완료 후에는
+        생성된 ZIP 파일 또는
+        해제된 파일이
+        정상적으로 열리고
+        필요한 내용이
+        포함되어 있는지
+        확인하는 것이 좋습니다.
+      </p>
+
+      <p>
+        개발자의 책임은
+        관련 법령에서
+        허용하는 범위 내에서
+        제한될 수 있습니다.
+      </p>
+
+      <p>
+        법령상 면제하거나
+        제한할 수 없는
+        책임은 해당 제한의
+        적용을 받지 않습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>14. 정책 변경</h2>
+
+      <p>
+        본 개인정보처리방침은
+        앱 기능, 광고 SDK,
+        데이터 처리 방식,
+        관련 법령 또는
+        플랫폼 정책의 변경에
+        따라 수정될 수 있습니다.
+      </p>
+
+      <p>
+        변경된 내용은
+        본 페이지에 게시하며
+        최종 수정일을
+        갱신합니다.
+      </p>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        중요한 변경사항에 대해
+        추가 안내 또는 동의
+        절차가 적용될 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>15. 문의</h2>
+
+      <p>
+        <strong>개발자:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        앱 이용, 개인정보 처리,
+        파일 관리 및 데이터 삭제
+        관련 문의는 Google Play의
+        앱 등록정보에 표시된
+        개발자 연락처를
+        참고하시기 바랍니다.
+      </p>
+
+      <p>
+        광고 관련 개인정보
+        요청은 Unity의
+        공식 개인정보 보호
+        자료도 참고할 수 있습니다.
+      </p>
+
+      <p class="muted">
+        최종 수정일:
+        2026년 11월 4일
+      </p>
+    </div>
+
+  </main>
+
+  <!-- ===================================== -->
+  <!-- ENGLISH PRIVACY POLICY                -->
+  <!-- ===================================== -->
+
+  <main
+    id="en"
+    class="policy-section"
+    lang="en"
+  >
+
+    <div class="card">
+      <h2>1. Overview</h2>
+
+      <div class="notice">
+        <p>
+          <strong>
+            Privacy and File Processing Notice
+          </strong>
+        </p>
+
+        <p>
+          Secure ZIP Tool (the "App")
+          is a utility for creating
+          and extracting ZIP archives
+          from files selected by users.
+        </p>
+
+        <p>
+          The App provides ZIP
+          compression and extraction
+          and, where supported,
+          AES-encrypted ZIP creation.
+        </p>
+
+        <p>
+          Core file processing is
+          designed to take place
+          locally on the user's device.
+        </p>
+
+        <p>
+          Unity LevelPlay and Unity Ads
+          may independently process
+          device-related and
+          advertising-related
+          technical information.
+        </p>
+      </div>
+
+      <p>
+        This Privacy Policy explains
+        what information may be
+        processed when using the App,
+        how files are accessed,
+        the use of advertising services,
+        retention and deletion,
+        privacy rights, and security.
+      </p>
+
+      <p>
+        Developer contact
+        information is available
+        in the App's Google Play
+        Store listing.
+      </p>
+
+      <p class="muted">
+        Last updated:
+        November 4, 2026
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Information We Collect or Process</h2>
+
+      <h3>2.1 Information Handled by the App</h3>
+
+      <p>
+        Account registration
+        is not required for
+        the App's core functions.
+      </p>
+
+      <p>
+        The Developer does not
+        require users to enter
+        names, email addresses,
+        phone numbers, government
+        identification numbers,
+        or payment information
+        for ZIP compression
+        or extraction.
+      </p>
+
+      <p>
+        However, files selected
+        by users may contain
+        personal information,
+        and the App may process
+        such information locally
+        as necessary to perform
+        requested operations.
+      </p>
+
+      <h3>2.2 User-Selected Files and Folders</h3>
+
+      <ul>
+        <li>
+          Files or folders
+          selected by users
+        </li>
+
+        <li>
+          File names, types,
+          sizes, and path information
+        </li>
+
+        <li>
+          File contents necessary
+          for ZIP compression
+        </li>
+
+        <li>
+          Archive contents necessary
+          for ZIP extraction
+        </li>
+
+        <li>
+          Generated ZIP files
+          and extracted files
+        </li>
+
+        <li>
+          Encryption-related
+          user input, where supported
+        </li>
+      </ul>
+
+      <p>
+        Files are designed to be
+        processed only as necessary
+        for user-requested
+        compression or extraction.
+      </p>
+
+      <p>
+        The App is not designed
+        to upload file contents
+        to a separate
+        developer-operated server
+        during normal operations.
+      </p>
+
+      <h3>2.3 Application Settings</h3>
+
+      <ul>
+        <li>App language preferences</li>
+        <li>Local configuration values</li>
+        <li>Local advertising frequency values</li>
+        <li>Recent operation data, where stored</li>
+      </ul>
+
+      <h3>2.4 Advertising SDK Information</h3>
+
+      <p>
+        Unity LevelPlay,
+        Unity Ads, and related
+        advertising technology
+        partners may process:
+      </p>
+
+      <ul>
+        <li>
+          Android Advertising ID
+          and other permitted identifiers
+        </li>
+
+        <li>
+          IP addresses and
+          approximate IP-based location
+        </li>
+
+        <li>
+          Device manufacturer,
+          model, OS, and version
+        </li>
+
+        <li>
+          Technical App and
+          advertising SDK events
+        </li>
+
+        <li>
+          Advertising impressions,
+          clicks, views, and interactions
+        </li>
+
+        <li>
+          SDK errors,
+          crash data, and diagnostics
+        </li>
+
+        <li>
+          Advertising security
+          and fraud detection information
+        </li>
+      </ul>
+
+      <p>
+        Actual data processing
+        depends on SDK versions,
+        connected advertising networks,
+        device settings,
+        regional requirements,
+        privacy choices,
+        and applicable laws.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. Permissions</h2>
+
+      <h3>3.1 Internet Permission</h3>
+
+      <p>
+        The App may use the
+        following permission
+        for advertising and
+        necessary network communication:
+      </p>
+
+      <ul>
+        <li>
+          <code>
+            android.permission.INTERNET
+          </code>
+          : Used for Unity LevelPlay
+          and Unity Ads requests,
+          ad loading, and
+          related network operations.
+        </li>
+      </ul>
+
+      <p>
+        This permission does
+        not mean that user-selected
+        ZIP file contents are
+        transmitted to a
+        developer-operated server.
+      </p>
+
+      <h3>3.2 File and Folder Access</h3>
+
+      <p>
+        File and folder selection
+        may be handled through
+        Android's system file picker
+        or Storage Access Framework
+        (SAF).
+      </p>
+
+      <p>
+        The App is designed
+        to operate on files
+        or folders selected
+        or authorized by users.
+      </p>
+
+      <p>
+        Actual access behavior
+        depends on the Android
+        version, App implementation,
+        and device settings.
+      </p>
+
+      <h3>3.3 Advertising Identifiers</h3>
+
+      <p>
+        Advertising services
+        may process identifiers
+        available on the device.
+      </p>
+
+      <p>
+        Access depends on the
+        advertising SDK configuration,
+        Android version,
+        device settings,
+        and applicable policies.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. Purpose of Processing</h2>
+
+      <ul>
+        <li>Providing ZIP compression</li>
+        <li>Providing ZIP extraction</li>
+        <li>
+          Creating AES-encrypted ZIP
+          archives, where supported
+        </li>
+        <li>
+          Processing user-selected
+          files and folders
+        </li>
+        <li>
+          Generating and saving
+          output files
+        </li>
+        <li>
+          Maintaining App preferences
+          and necessary local data
+        </li>
+        <li>
+          Delivering and measuring ads
+        </li>
+        <li>
+          Managing advertising frequency
+        </li>
+        <li>
+          Maintaining App stability
+          and diagnosing errors
+        </li>
+        <li>
+          Security and fraud prevention
+        </li>
+        <li>
+          Compliance with legal obligations
+        </li>
+      </ul>
+
+      <h3>4.1 AES Encryption Notice</h3>
+
+      <p>
+        Where the App supports
+        AES-encrypted ZIP creation,
+        the resulting archives
+        may not open correctly
+        in certain default
+        file managers or
+        older ZIP utilities.
+      </p>
+
+      <p>
+        An AES-compatible
+        archive utility or
+        desktop application
+        may be required.
+      </p>
+
+      <p>
+        Encryption strength
+        and file security depend
+        on the encryption method,
+        configuration, and
+        password security.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. ZIP File and Folder Processing</h2>
+
+      <h3>5.1 Local Processing</h3>
+
+      <p>
+        Files and folders
+        selected by users
+        are designed to be
+        processed locally
+        for ZIP compression
+        or extraction.
+      </p>
+
+      <p>
+        The Developer does not
+        upload file contents
+        to its own server
+        during normal operations.
+      </p>
+
+      <h3>5.2 Generated and Extracted Files</h3>
+
+      <p>
+        Created ZIP archives
+        and extracted files
+        may be saved in
+        selected destinations,
+        private App storage,
+        or device storage.
+      </p>
+
+      <p>
+        Depending on the
+        destination, output
+        files may remain
+        available after
+        App uninstallation.
+      </p>
+
+      <h3>5.3 Temporary Files</h3>
+
+      <p>
+        Temporary files or
+        cached data may
+        be created during
+        compression or extraction.
+      </p>
+
+      <p>
+        Their retention
+        and deletion depend on
+        the actual App implementation
+        and Android storage management.
+      </p>
+
+      <h3>5.4 External Storage and Sharing</h3>
+
+      <p>
+        If users select
+        files from cloud storage
+        or share outputs with
+        external apps, those
+        services may process
+        the files independently.
+      </p>
+
+      <p>
+        Their own privacy
+        policies apply.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Advertising and Third-Party Services</h2>
+
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>
+        for advertising mediation
+        and <strong>Unity Ads</strong>
+        for advertisement delivery.
+      </p>
+
+      <h3>6.1 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay is
+        an advertising mediation
+        platform used to manage
+        ad requests, formats,
+        connected networks,
+        performance reporting,
+        and related operations.
+      </p>
+
+      <h3>6.2 Unity Ads</h3>
+
+      <p>
+        Unity Ads is an
+        advertising network
+        used to provide
+        advertisements
+        within the App.
+      </p>
+
+      <p>
+        Unity Ads and
+        related advertising
+        technology partners
+        may process technical
+        information for
+        ad delivery, measurement,
+        security, and
+        fraud prevention.
+      </p>
+
+      <h3>6.3 Advertising Data Categories</h3>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Examples</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Identifiers</td>
+              <td>
+                Android Advertising ID
+                and permitted identifiers
+              </td>
+              <td>
+                Ad delivery
+                and measurement
+              </td>
+            </tr>
+
+            <tr>
+              <td>Network information</td>
+              <td>
+                IP address and
+                approximate location
+              </td>
+              <td>
+                Ad delivery and security
+              </td>
+            </tr>
+
+            <tr>
+              <td>Device information</td>
+              <td>
+                Device model,
+                manufacturer,
+                OS, and version
+              </td>
+              <td>
+                Compatibility and delivery
+              </td>
+            </tr>
+
+            <tr>
+              <td>Advertising events</td>
+              <td>
+                Impressions,
+                clicks, views,
+                and interactions
+              </td>
+              <td>
+                Performance measurement
+              </td>
+            </tr>
+
+            <tr>
+              <td>Diagnostics</td>
+              <td>
+                SDK errors,
+                crashes,
+                and technical data
+              </td>
+              <td>
+                Stability and troubleshooting
+              </td>
+            </tr>
+
+            <tr>
+              <td>Security information</td>
+              <td>
+                Technical information
+                related to ad fraud
+              </td>
+              <td>
+                Fraud prevention
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>6.4 Advertising Personalization</h3>
+
+      <p>
+        Advertisements may be
+        personalized or
+        non-personalized based
+        on device settings,
+        user region,
+        privacy choices,
+        and applicable laws.
+      </p>
+
+      <p>
+        Certain jurisdictions
+        may require consent
+        for advertising-related
+        data processing.
+      </p>
+
+      <p>
+        Where legally required,
+        the App operator must
+        provide appropriate
+        consent and privacy
+        choice procedures.
+      </p>
+
+      <p>
+        Restricting personalized
+        advertising does not
+        necessarily disable
+        all ads.
+      </p>
+
+      <h3>6.5 Unity Privacy Resources</h3>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and
+            App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        If additional networks
+        are integrated or
+        data processing changes,
+        this policy may
+        be updated as necessary.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Third-Party Processing and Sharing</h2>
+
+      <p>
+        The Developer does not
+        sell user-selected
+        ZIP archives,
+        original files,
+        or file contents.
+      </p>
+
+      <p>
+        The App is designed
+        not to upload
+        file contents to a
+        developer-operated server
+        for arbitrary sharing
+        during normal processing.
+      </p>
+
+      <p>
+        However, Unity LevelPlay,
+        Unity Ads, and related
+        advertising partners
+        may process or share
+        advertising identifiers,
+        IP addresses,
+        device information,
+        and ad event data
+        for permitted purposes.
+      </p>
+
+      <p>
+        Information may also
+        be processed where
+        required by applicable
+        law or lawful requests.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. Retention and Deletion</h2>
+
+      <h3>8.1 Local Data</h3>
+
+      <p>
+        App settings and saved
+        operation information
+        may remain locally
+        on the device.
+      </p>
+
+      <h3>8.2 Clearing App Data</h3>
+
+      <p>
+        Clearing App data
+        through Android settings
+        or uninstalling the App
+        generally removes data
+        in private App storage.
+      </p>
+
+      <h3>8.3 Deleting Output Files</h3>
+
+      <p>
+        ZIP archives and
+        extracted files saved
+        to shared storage
+        or user-selected
+        locations may remain
+        after App removal.
+      </p>
+
+      <p>
+        Users may need to
+        delete those files
+        separately with
+        a file manager.
+      </p>
+
+      <h3>8.4 Advertising Data</h3>
+
+      <p>
+        Information independently
+        processed by Unity
+        and advertising partners
+        is subject to their
+        own retention and
+        deletion policies.
+      </p>
+
+      <p>
+        Device backup and
+        restoration features
+        may restore some
+        local information.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. Children's Privacy</h2>
+
+      <p>
+        The App is a
+        general-purpose ZIP
+        compression and
+        extraction utility
+        and is not primarily
+        directed at children.
+      </p>
+
+      <p>
+        The App does not
+        require children's names,
+        contact details,
+        or other directly
+        identifying information
+        for core functionality.
+      </p>
+
+      <p>
+        Parents and guardians
+        may encourage children
+        not to share
+        files containing
+        personal information
+        with external services.
+      </p>
+
+      <p>
+        Applicable laws,
+        Google Play policies,
+        and advertising
+        requirements may impose
+        additional protections
+        for children or
+        underage users.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>10. User Rights and Choices</h2>
+
+      <p>
+        Depending on applicable
+        privacy laws,
+        users may have rights
+        relating to access,
+        correction, deletion,
+        restriction of processing,
+        and other privacy choices.
+      </p>
+
+      <ul>
+        <li>
+          Clear App data
+          through Android settings.
+        </li>
+
+        <li>
+          Uninstall the App
+          to remove local
+          application data.
+        </li>
+
+        <li>
+          Delete generated
+          ZIP archives and
+          extracted files separately.
+        </li>
+
+        <li>
+          Manage or delete
+          the Android
+          Advertising ID.
+        </li>
+
+        <li>
+          Review Unity's
+          privacy request
+          procedures.
+        </li>
+
+        <li>
+          Contact the Developer
+          through Google Play.
+        </li>
+      </ul>
+
+      <p>
+        Requests about data
+        independently processed
+        by advertising providers
+        may need to be directed
+        to those providers.
+      </p>
+
+      <p>
+        Restricting network
+        access may limit
+        ad loading.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>11. Security</h2>
+
+      <h3>11.1 ZIP Extraction Safety</h3>
+
+      <p>
+        The App is designed
+        to apply checks against
+        unsafe archive paths
+        and path traversal
+        attacks such as Zip Slip.
+      </p>
+
+      <p>
+        However, not all
+        security risks can
+        be eliminated in
+        every device or
+        file environment.
+      </p>
+
+      <h3>11.2 Encryption</h3>
+
+      <p>
+        Where AES-encrypted
+        ZIP creation is supported,
+        password strength
+        and configuration
+        can affect the
+        protection provided.
+      </p>
+
+      <p>
+        Standard ZIP
+        compression without
+        encryption does not
+        provide confidentiality
+        by itself.
+      </p>
+
+      <h3>11.3 Device Security</h3>
+
+      <p>
+        Malware, storage errors,
+        operating system restrictions,
+        and external applications
+        may affect data security.
+      </p>
+
+      <p>
+        Users should preserve
+        backups of important
+        files and use caution
+        when extracting archives
+        from untrusted sources.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>12. Copyright and File Authorization</h2>
+
+      <p>
+        The App is a utility
+        for compressing or
+        extracting user-selected files.
+      </p>
+
+      <p>
+        Copyrights and other
+        rights to the files
+        belong to their
+        respective lawful owners.
+      </p>
+
+      <p>
+        Users should process
+        only files they are
+        authorized to access
+        and use.
+      </p>
+
+      <p>
+        The App must not
+        be used to unlawfully
+        infringe copyright,
+        privacy rights,
+        trade secrets,
+        or other rights.
+      </p>
+
+      <p>
+        Rights to original
+        software code, design,
+        and App materials
+        belong to JCraft Studio
+        or their lawful owners.
+      </p>
+
+      <p>
+        Unity, Unity LevelPlay,
+        Unity Ads, Google Play,
+        and other third-party
+        trademarks remain
+        the property of their
+        respective owners.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>13. Disclaimer and Liability</h2>
+
+      <p>
+        The App is provided
+        as a general-purpose
+        ZIP compression and
+        extraction utility.
+      </p>
+
+      <p>
+        Operations may fail
+        due to file structures,
+        encryption compatibility,
+        corrupted archives,
+        insufficient storage,
+        permission issues,
+        operating system restrictions,
+        or other technical factors.
+      </p>
+
+      <p>
+        Users are encouraged
+        to preserve backups
+        of important original
+        files before processing.
+      </p>
+
+      <p>
+        After processing,
+        users should verify
+        that ZIP archives
+        and extracted files
+        are readable and
+        contain the intended data.
+      </p>
+
+      <p>
+        To the extent permitted
+        by applicable law,
+        the Developer's
+        liability may be limited.
+      </p>
+
+      <p>
+        Nothing in this policy
+        excludes or limits
+        liability that cannot
+        legally be excluded
+        or restricted.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>14. Changes to This Policy</h2>
+
+      <p>
+        This Privacy Policy
+        may be updated
+        due to changes in
+        App features,
+        advertising SDKs,
+        data processing practices,
+        applicable laws,
+        or platform policies.
+      </p>
+
+      <p>
+        Updates will be published
+        on this page with
+        a revised update date.
+      </p>
+
+      <p>
+        Where legally required,
+        material changes may
+        involve additional
+        notice or consent.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>15. Contact</h2>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        For App support,
+        privacy questions,
+        file management, or
+        local data deletion,
+        please refer to
+        the Developer contact
+        information provided
+        on the App's Google Play
+        Store listing.
+      </p>
+
+      <p>
+        For advertising-related
+        privacy requests,
+        users may also consult
+        Unity's official
+        privacy resources.
+      </p>
+
+      <p class="muted">
+        Last updated:
+        November 4, 2026
+      </p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>
+      <strong>JCraft Studio</strong>
+    </p>
+
+    <p>
+      Secure ZIP Tool
+    </p>
+
+    <p>
+      Last Updated / 최종 수정일:
+      2026-11-04
+    </p>
+
+    <p>
+      © 2026 JCraft Studio.
+      All rights reserved.
+    </p>
+  </footer>
+</div>
+
+<!-- LANGUAGE SWITCHING -->
+
+<script>
+  (function () {
+    "use strict";
+
+    const STORAGE_KEY =
+      "secure-zip-tool-privacy-language";
+
+    const koSection =
+      document.getElementById("ko");
+
+    const enSection =
+      document.getElementById("en");
+
+    const koButton =
+      document.getElementById("btn-ko");
+
+    const enButton =
+      document.getElementById("btn-en");
+
+    function setLanguage(language, save) {
+      const selected =
+        language === "en" ? "en" : "ko";
+
+      koSection.classList.toggle(
+        "active",
+        selected === "ko"
+      );
+
+      enSection.classList.toggle(
+        "active",
+        selected === "en"
+      );
+
+      koButton.setAttribute(
+        "aria-pressed",
+        String(selected === "ko")
+      );
+
+      enButton.setAttribute(
+        "aria-pressed",
+        String(selected === "en")
+      );
+
+      document.documentElement.lang =
+        selected;
+
+      document.title =
+        selected === "ko"
+          ? "개인정보처리방침 | Secure ZIP Tool"
+          : "Privacy Policy | Secure ZIP Tool";
+
+      if (save) {
+        try {
+          localStorage.setItem(
+            STORAGE_KEY,
+            selected
+          );
+        } catch (error) {
+          // Switching still works if storage is blocked.
+        }
+      }
+    }
+
+    function getInitialLanguage() {
+      try {
+        const saved =
+          localStorage.getItem(STORAGE_KEY);
+
+        if (
+          saved === "ko" ||
+          saved === "en"
+        ) {
+          return saved;
+        }
+      } catch (error) {
+        // Use browser language.
+      }
+
+      const browserLanguage =
+        (
+          navigator.language ||
+          "en"
+        ).toLowerCase();
+
+      return browserLanguage.startsWith("ko")
+        ? "ko"
+        : "en";
+    }
+
+    koButton.addEventListener(
+      "click",
+      function () {
+        setLanguage("ko", true);
+      }
+    );
+
+    enButton.addEventListener(
+      "click",
+      function () {
+        setLanguage("en", true);
+      }
+    );
+
+    setLanguage(
+      getInitialLanguage(),
+      false
+    );
+  })();
+</script>
+
 </body>
 </html>
