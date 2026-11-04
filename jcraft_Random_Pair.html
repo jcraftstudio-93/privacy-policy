@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -18,11 +19,19 @@
     content="Privacy Policy for Pair Maker / 짝꿍 만들기 by JCraft Studio."
   >
 
-  <title>
-    Privacy Policy | Pair Maker
-  </title>
+  <title>Privacy Policy | Pair Maker</title>
 
   <style>
+    :root {
+      --background: #f4f8f7;
+      --surface: #ffffff;
+      --text: #1f2d29;
+      --primary: #0f766e;
+      --primary-dark: #15352f;
+      --border: #d7e4df;
+      --muted: #5b6f69;
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -35,9 +44,8 @@
       margin: 0;
       padding: 0;
 
-      background: #f4f8f7;
-
-      color: #1f2d29;
+      background: var(--background);
+      color: var(--text);
 
       font-family:
         -apple-system,
@@ -55,20 +63,17 @@
     .page {
       width: 100%;
       max-width: 920px;
-
       margin: 0 auto;
-
       padding: 40px 20px 70px;
     }
 
     .header {
       margin-bottom: 24px;
-
       padding: 30px;
 
-      background: #ffffff;
+      background: var(--surface);
 
-      border: 1px solid #d7e4df;
+      border: 1px solid var(--border);
       border-radius: 24px;
 
       box-shadow:
@@ -77,20 +82,16 @@
 
     .brand {
       display: inline-flex;
-
       align-items: center;
-
       gap: 10px;
 
       margin-bottom: 14px;
-
       padding: 7px 12px;
 
       background: #e4f3ef;
-
       border-radius: 999px;
 
-      color: #0f766e;
+      color: var(--primary);
 
       font-size: 14px;
       font-weight: 800;
@@ -102,24 +103,20 @@
       font-size: 32px;
       line-height: 1.25;
 
-      color: #15352f;
+      color: var(--primary-dark);
     }
 
     .subtitle {
       margin: 0;
 
-      color: #5b6f69;
-
+      color: var(--muted);
       font-size: 15px;
     }
 
     .language-buttons {
       display: flex;
-
       flex-wrap: wrap;
-
       gap: 8px;
-
       margin-top: 22px;
     }
 
@@ -130,7 +127,6 @@
       border-radius: 12px;
 
       background: #ffffff;
-
       color: #31534a;
 
       font-size: 14px;
@@ -144,19 +140,17 @@
     }
 
     .language-buttons button.active {
-      border-color: #0f766e;
-
-      background: #0f766e;
-
+      border-color: var(--primary);
+      background: var(--primary);
       color: #ffffff;
     }
 
     .content {
       padding: 30px;
 
-      background: #ffffff;
+      background: var(--surface);
 
-      border: 1px solid #d7e4df;
+      border: 1px solid var(--border);
       border-radius: 24px;
 
       box-shadow:
@@ -173,13 +167,11 @@
 
     h2 {
       margin: 0 0 13px;
-
       padding-bottom: 9px;
 
       border-bottom: 1px solid #e5eeeb;
 
       color: #174d43;
-
       font-size: 21px;
     }
 
@@ -187,13 +179,11 @@
       margin: 20px 0 9px;
 
       color: #264d45;
-
       font-size: 17px;
     }
 
     p {
       margin: 9px 0;
-
       color: #3f514c;
     }
 
@@ -204,18 +194,16 @@
 
     li {
       margin: 7px 0;
-
       color: #3f514c;
     }
 
     .notice {
       margin: 15px 0;
-
       padding: 16px;
 
       background: #edf7f4;
 
-      border-left: 4px solid #0f766e;
+      border-left: 4px solid var(--primary);
       border-radius: 10px;
 
       color: #35564d;
@@ -223,7 +211,6 @@
 
     .small {
       color: #71827d;
-
       font-size: 13px;
     }
 
@@ -231,7 +218,6 @@
       margin-top: 25px;
 
       text-align: center;
-
       color: #73837e;
 
       font-size: 13px;
@@ -246,9 +232,8 @@
     }
 
     a {
-      color: #0f766e;
-
-      word-break: break-all;
+      color: var(--primary);
+      overflow-wrap: anywhere;
     }
 
     @media (max-width: 640px) {
@@ -259,7 +244,6 @@
       .header,
       .content {
         padding: 21px;
-
         border-radius: 18px;
       }
 
@@ -278,117 +262,152 @@
 
 <div class="page">
 
-  <div class="header">
+  <header class="header">
 
     <div class="brand">
       JCraft Studio
     </div>
 
-    <h1>
-      Privacy Policy
+    <h1 id="page-title">
+      개인정보처리방침
     </h1>
 
     <p class="subtitle">
       Pair Maker / 짝꿍 만들기
     </p>
 
-    <div class="language-buttons">
+    <p class="small">
+      Last updated / 최종 수정일: 2026-11-04
+    </p>
+
+    <nav
+      class="language-buttons"
+      aria-label="Language selection"
+    >
 
       <button
         id="btn-ko"
         class="active"
         type="button"
-        onclick="changeLanguage('ko')"
-      >
+        onclick="changeLanguage('ko')">
         한국어
       </button>
 
       <button
         id="btn-en"
         type="button"
-        onclick="changeLanguage('en')"
-      >
+        onclick="changeLanguage('en')">
         English
       </button>
 
-    </div>
+    </nav>
 
-  </div>
+  </header>
 
+  <main class="content">
 
-  <div class="content">
+    <!-- ================================= -->
+    <!-- KOREAN PRIVACY POLICY             -->
+    <!-- ================================= -->
 
-    <!-- ======================================================
-         KOREAN
-         ====================================================== -->
-
-    <div
-      id="lang-ko"
-      class="lang active"
-    >
+    <div id="lang-ko" class="lang active">
 
       <section>
 
-        <h2>
-          개인정보처리방침
-        </h2>
+        <h2>개인정보처리방침</h2>
 
         <p>
-          JCraft Studio(이하 "개발자")는
-          "짝꿍 만들기" 애플리케이션(이하 "앱")을
-          이용하는 사용자의 개인정보를 중요하게 생각합니다.
+          <strong>JCraft Studio</strong>
+          (이하 "개발자")는
+          <strong>짝꿍 만들기</strong>
+          (Pair Maker, 이하 "앱")를
+          이용하는 사용자의 개인정보를
+          중요하게 생각합니다.
         </p>
 
         <p>
-          본 개인정보처리방침은 앱이 어떤 정보를 처리하고,
-          해당 정보가 어떻게 사용되는지 설명합니다.
+          본 개인정보처리방침은
+          앱에서 어떤 정보를 처리하며,
+          해당 정보가 어떻게 이용,
+          저장 및 공유되는지 설명합니다.
+        </p>
+
+        <p>
+          개발자는 관련 법령과
+          Google Play 정책에 따라
+          개인정보를 보호하고
+          투명하게 처리하기 위해
+          노력합니다.
         </p>
 
         <div class="notice">
-          본 앱은 회원가입이나 사용자 계정을 요구하지 않으며,
-          참가자 이름, 랜덤 그룹 결과 및 앱 설정과 같은
-          앱 기능 데이터는 원칙적으로 사용자의 기기 내부에 저장됩니다.
+          본 앱은 별도의 회원가입이나
+          사용자 계정을 요구하지 않습니다.
+
+          참가자 이름, 랜덤 짝 및 그룹 결과,
+          앱 환경설정 등은 기본적으로
+          사용자의 기기 내부에서 처리됩니다.
         </div>
 
       </section>
 
-
       <section>
 
-        <h2>
-          1. 앱에서 처리하는 정보
-        </h2>
+        <h2>1. 앱에서 처리하는 정보</h2>
 
-        <h3>
-          1.1 사용자가 입력하는 정보
-        </h3>
+        <h3>1.1 사용자가 입력하는 정보</h3>
 
         <p>
-          사용자는 랜덤 짝 또는 그룹 생성을 위해
-          참가자의 이름이나 별칭을 직접 입력할 수 있습니다.
+          사용자는 무작위 짝 또는
+          그룹을 생성하기 위해
+          참가자 이름이나 별칭을
+          직접 입력할 수 있습니다.
         </p>
 
         <p>
-          이러한 정보는 앱 기능을 제공하기 위한 목적으로만 사용되며,
-          앱 자체 기능에 의해 개발자의 서버로 전송되거나
-          개발자가 별도로 수집하지 않습니다.
+          해당 정보는 짝꿍 및 그룹
+          생성 기능을 제공하기 위한
+          목적으로 이용됩니다.
         </p>
 
-        <h3>
-          1.2 앱 설정 및 기록
-        </h3>
+        <p>
+          이용자가 입력한 참가자
+          정보는 기본적으로 기기
+          내부에서 처리됩니다.
+        </p>
 
         <p>
-          앱은 다음과 같은 정보를 사용자의 기기 내부에 저장할 수 있습니다.
+          개발자는 이러한 정보를
+          별도의 개발자 운영 서버로
+          전송하거나 사용자별
+          데이터베이스에 저장하지 않습니다.
+        </p>
+
+        <p>
+          이용자는 다른 사람의
+          개인정보나 민감한 정보를
+          불필요하게 입력하지 않는
+          것이 좋습니다.
+        </p>
+
+        <h3>1.2 앱 설정 및 기록</h3>
+
+        <p>
+          앱은 다음 정보를
+          기기 내부에 저장할 수 있습니다.
         </p>
 
         <ul>
           <li>
-            최근 생성한 랜덤 짝 또는 그룹 결과
+            최근 생성한 랜덤 짝 및 그룹 결과
           </li>
 
           <li>
-            선택한 언어
+            참가자 이름 및 관련 설정
+          </li>
+
+          <li>
+            사용자가 선택한 언어
           </li>
 
           <li>
@@ -396,61 +415,214 @@
           </li>
 
           <li>
-            애니메이션 설정
+            애니메이션 관련 설정
           </li>
 
           <li>
-            앱 내부 기능 사용 횟수와 같은 로컬 설정값
+            앱 기능 사용 횟수와 같은
+            일부 로컬 설정값
+          </li>
+
+          <li>
+            기타 앱 기능에 필요한
+            사용자 환경설정
           </li>
         </ul>
 
         <p>
-          이러한 정보는 앱의 기능 제공 및 사용자 설정 유지 목적으로
+          이러한 정보는 앱 기능 제공,
+          사용자 설정 유지 및
+          과거 결과 확인을 위해
           기기 내부 저장소에서 처리됩니다.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          2. 광고 및 제3자 서비스
-        </h2>
+        <h2>2. 광고 및 제3자 서비스</h2>
 
         <p>
-          본 앱은 광고 제공을 위해
-          Google Mobile Ads SDK(AdMob)를 사용할 수 있습니다.
+          본 앱은 광고 미디에이션을 위해
+          <strong>Unity LevelPlay</strong>를
+          사용하며, 광고 제공을 위해
+          <strong>Unity Ads</strong>를
+          사용합니다.
         </p>
 
         <p>
-          광고 서비스 제공 과정에서 Google 또는 관련 광고 서비스 제공자가
-          기기 식별자, 광고 식별자, IP 주소, 광고 상호작용 정보,
-          대략적인 위치 정보 또는 기타 기술적 정보를
-          관련 법률과 Google의 정책에 따라 처리할 수 있습니다.
+          Unity LevelPlay는 광고 요청,
+          광고 네트워크 연동 및
+          광고 수익화 관리를 위한
+          미디에이션 플랫폼입니다.
         </p>
 
         <p>
-          이러한 데이터 처리는 개발자가 직접 운영하는 서버가 아니라
-          해당 제3자 서비스 제공자의 시스템에서 이루어질 수 있습니다.
+          Unity Ads는 앱 내에
+          광고를 제공하는
+          광고 서비스입니다.
         </p>
 
         <p>
-          제3자 서비스의 데이터 처리 방식은
-          각 서비스 제공자의 개인정보처리방침 및 정책에 따릅니다.
+          광고 제공업체는 광고 송출,
+          광고 성과 측정,
+          보안, 부정행위 방지 및
+          관련 서비스 운영을 위해
+          일부 정보를 자동으로
+          처리할 수 있습니다.
+        </p>
+
+        <h3>2.1 광고 관련 처리 정보</h3>
+
+        <p>
+          기기 환경, SDK 구성,
+          이용자의 국가 및 지역,
+          개인정보 보호 선택,
+          관련 법령에 따라
+          다음 정보가 처리될 수 있습니다.
+        </p>
+
+        <ul>
+          <li>
+            IP 주소 및 IP 주소에서
+            추정되는 대략적인 위치 정보
+          </li>
+
+          <li>
+            Android 광고 식별자
+            (Advertising ID)
+          </li>
+
+          <li>
+            기타 허용된 기기 및
+            앱 관련 식별자
+          </li>
+
+          <li>
+            기기 제조사, 모델,
+            운영체제 및 버전 정보
+          </li>
+
+          <li>
+            앱 실행 및 광고 관련
+            상호작용 정보
+          </li>
+
+          <li>
+            광고 노출, 클릭 및
+            광고 성과 측정 정보
+          </li>
+
+          <li>
+            오류, 충돌, 성능 및
+            진단 관련 정보
+          </li>
+
+          <li>
+            광고 부정행위 방지 및
+            보안을 위한 기술적 정보
+          </li>
+        </ul>
+
+        <p>
+          실제 처리되는 정보의 종류와
+          범위는 SDK 버전,
+          광고 서비스 설정,
+          운영체제 및 지역별
+          개인정보 보호 요구사항에
+          따라 달라질 수 있습니다.
+        </p>
+
+        <h3>2.2 Unity LevelPlay</h3>
+
+        <p>
+          Unity LevelPlay는 광고 요청,
+          광고 미디에이션 및
+          광고 성과 관리를 위해
+          기술적인 정보를 처리할 수 있습니다.
+        </p>
+
+        <p>
+          광고 서비스의 안정성 유지,
+          성과 측정 및 부정행위
+          방지를 위한 정보 처리가
+          이루어질 수 있습니다.
+        </p>
+
+        <h3>2.3 Unity Ads</h3>
+
+        <p>
+          Unity Ads는 앱 내부에서
+          광고를 제공하며
+          광고 식별자, 기기 정보,
+          IP 주소 및 광고
+          상호작용 정보 등을
+          처리할 수 있습니다.
+        </p>
+
+        <p>
+          이러한 정보는 광고 제공,
+          성과 측정, 보안,
+          부정행위 방지 및
+          관련 법령에서 허용하는
+          개인화 광고 등에
+          이용될 수 있습니다.
+        </p>
+
+        <h3>2.4 제3자 개인정보처리방침</h3>
+
+        <p>
+          광고 관련 정보는 Unity 및
+          관련 광고 기술 협력사를
+          통해 처리되거나
+          공유될 수 있습니다.
+        </p>
+
+        <p>
+          자세한 사항은
+          Unity의 공식 개인정보
+          보호 문서를 참고하시기 바랍니다.
+        </p>
+
+        <ul>
+          <li>
+            <a
+              href="https://unity.com/legal/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer">
+              Unity Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+              target="_blank"
+              rel="noopener noreferrer">
+              Unity Game Player and App User Privacy FAQ
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          향후 추가 광고 네트워크가
+          연결되거나 정보 처리 방식이
+          변경되는 경우 본 방침을
+          검토하여 필요한 내용을
+          갱신합니다.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          3. 정보의 이용 목적
-        </h2>
+        <h2>3. 정보의 이용 목적</h2>
 
         <p>
-          본 앱은 필요한 범위 내에서 정보를 다음 목적으로 처리합니다.
+          본 앱 및 관련 서비스는
+          다음 목적을 위해
+          필요한 범위에서 정보를
+          처리할 수 있습니다.
         </p>
 
         <ul>
@@ -459,354 +631,568 @@
           </li>
 
           <li>
-            사용자가 이전 결과를 확인할 수 있도록 기록 유지
+            생성된 짝 및 그룹 결과 저장
           </li>
 
           <li>
-            언어, 화면 모드 등 사용자가 선택한 설정 유지
+            이전 결과 확인 및 기록 관리
           </li>
 
           <li>
-            앱 내 광고 제공
+            언어, 다크 모드 및
+            애니메이션 설정 유지
           </li>
 
           <li>
-            앱의 안정적인 기능 제공 및 오류 방지
+            앱 내 광고 제공 및
+            광고 성과 측정
+          </li>
+
+          <li>
+            앱 기능의 안정적인
+            운영 및 오류 대응
+          </li>
+
+          <li>
+            보안 및 부정행위 방지
+          </li>
+
+          <li>
+            관련 법적 의무 준수
           </li>
         </ul>
 
       </section>
 
-
       <section>
 
-        <h2>
-          4. 개인정보의 공유 및 판매
-        </h2>
+        <h2>4. 개인정보의 공유 및 판매</h2>
 
         <p>
-          개발자는 사용자가 앱에 입력한 참가자 이름이나 그룹 결과를
+          개발자는 이용자가
+          앱에 입력한 참가자 이름,
+          별칭 또는 랜덤 그룹 결과를
           판매하지 않습니다.
         </p>
 
         <p>
-          또한 해당 정보를 개발자가 운영하는 별도의 서버에 업로드하여
+          또한 해당 정보를
+          개발자가 운영하는
+          별도 서버에 업로드하여
           제3자에게 제공하지 않습니다.
         </p>
 
         <p>
-          다만 광고 기능과 같이 앱에 포함된 제3자 SDK는
-          자체 정책 및 관련 법률에 따라
-          광고 제공에 필요한 정보를 처리할 수 있습니다.
+          다만 광고 서비스를
+          제공하기 위해 Unity 및
+          관련 광고 기술 협력사가
+          광고 관련 정보를
+          처리하거나 공유할 수 있습니다.
+        </p>
+
+        <p>
+          이러한 정보에는
+          광고 식별자, IP 주소,
+          기기 정보, 광고 노출 및
+          클릭 정보 등이
+          포함될 수 있습니다.
+        </p>
+
+        <p>
+          관련 법령에서 요구하거나
+          적법한 법적 요청에
+          대응해야 하는 경우
+          필요한 범위에서 정보가
+          처리될 수 있습니다.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          5. 데이터 보관 및 삭제
-        </h2>
+        <h2>5. 데이터 보관 및 삭제</h2>
+
+        <h3>5.1 로컬 데이터</h3>
 
         <p>
-          앱의 참가자 정보, 그룹 생성 기록 및 설정 정보는
-          사용자의 기기 내부에 저장됩니다.
+          참가자 이름, 그룹 생성 기록,
+          언어 및 앱 설정은
+          이용자의 기기 내부에
+          저장될 수 있습니다.
         </p>
 
         <p>
-          사용자는 앱에서 제공하는 기록 삭제 기능을 통해
-          저장된 그룹 기록을 삭제할 수 있습니다.
+          이용자는 앱에서 제공하는
+          기록 삭제 기능을 통해
+          저장된 짝 및 그룹 기록을
+          삭제할 수 있습니다.
         </p>
 
         <p>
-          앱을 삭제하면 운영체제의 일반적인 앱 데이터 처리 방식에 따라
-          해당 앱의 로컬 데이터도 삭제될 수 있습니다.
+          Android 기기 설정에서
+          앱 데이터를 삭제하거나
+          앱을 제거하면 일반적으로
+          로컬 데이터가 삭제됩니다.
         </p>
 
         <p>
-          개발자가 별도의 사용자 계정이나
-          사용자별 서버 데이터베이스를 운영하지 않으므로,
-          본 앱에는 별도의 온라인 계정 삭제 절차가 없습니다.
+          다만 Android의 백업 및
+          복원 기능에 따라
+          일부 데이터가 복원될
+          가능성이 있습니다.
+        </p>
+
+        <p>
+          본 앱은 사용자별
+          온라인 계정 데이터베이스를
+          운영하지 않으므로
+          별도의 온라인 계정
+          삭제 절차는 제공하지 않습니다.
+        </p>
+
+        <h3>5.2 광고 관련 데이터</h3>
+
+        <p>
+          Unity 및 관련 광고 기술
+          협력사가 독립적으로
+          처리하는 정보는
+          해당 업체의 보관 및
+          삭제 정책에 따라 관리됩니다.
+        </p>
+
+        <p>
+          제3자 광고 데이터에 관한
+          개인정보 관련 요청은
+          해당 서비스 제공업체의
+          공식 개인정보 보호
+          절차를 이용할 수 있습니다.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          6. 데이터 보호
-        </h2>
+        <h2>6. 데이터 보호</h2>
 
         <p>
-          개발자는 앱에서 처리하는 정보의 범위를
-          기능 제공에 필요한 최소 수준으로 제한하도록 노력합니다.
+          개발자는 앱 기능 제공에
+          필요한 범위에서 정보를
+          처리하고 불필요한
+          개인정보 수집을
+          최소화하도록 노력합니다.
         </p>
 
         <p>
-          사용자가 앱에 입력한 데이터는 원칙적으로
-          기기 내부에서 처리됩니다.
+          이용자가 앱에 입력한
+          참가자 정보와 그룹 기록은
+          기본적으로 기기 내부에서
+          처리됩니다.
         </p>
 
         <p>
-          인터넷을 통해 처리될 수 있는 광고 관련 데이터의 보안은
-          해당 제3자 서비스 제공자의 보안 정책과 기술적 보호조치의
-          적용을 받을 수 있습니다.
+          인터넷을 통해 처리되는
+          광고 관련 정보에는
+          해당 제3자 서비스 제공업체의
+          보안 정책 및 기술적
+          보호 조치가 적용됩니다.
+        </p>
+
+        <p>
+          다만 어떠한 전자적 저장,
+          통신 및 데이터 처리
+          방식도 절대적인 보안을
+          보장할 수는 없습니다.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          7. 어린이의 개인정보
-        </h2>
+        <h2>7. 어린이의 개인정보</h2>
 
         <p>
-          본 앱은 사용자의 개인정보를 직접 수집하기 위한 목적으로
-          설계되지 않았습니다.
+          본 앱은 일반적인
+          랜덤 짝 및 그룹 생성
+          도구이며 어린이의
+          개인정보를 직접 수집하기 위한
+          목적으로 설계되지 않았습니다.
         </p>
 
         <p>
-          사용자는 참가자 이름 입력 시
-          불필요한 개인정보, 민감정보 또는 식별 가능한 정보를
-          입력하지 않는 것을 권장합니다.
+          이용자는 참가자 이름을
+          입력할 때 불필요한
+          개인정보, 민감정보 또는
+          식별 가능한 정보를
+          입력하지 않는 것이 좋습니다.
         </p>
 
         <p>
-          보호자가 어린이가 입력한 정보와 관련해 문의할 사항이 있는 경우
-          Google Play 스토어에 표시된 개발자 연락 정보를 통해
-          개발자에게 문의할 수 있습니다.
+          보호자가 아동이 입력한
+          정보와 관련하여
+          문의할 사항이 있는 경우
+          Google Play 스토어에
+          표시된 개발자 연락처를
+          통해 문의할 수 있습니다.
+        </p>
+
+        <p>
+          아동이나 특정 연령의
+          이용자에게 추가 보호 조치가
+          필요한 경우 관련 법령,
+          Google Play 정책 및
+          광고 제공업체의 요건이
+          적용됩니다.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          8. 사용자 선택 및 동의
-        </h2>
+        <h2>8. 사용자 선택 및 동의</h2>
 
         <p>
           일부 국가 또는 지역에서는
-          광고 개인화, 광고 저장 또는 관련 데이터 처리에 대해
-          사용자의 동의가 요구될 수 있습니다.
+          광고 개인화, 광고 식별자
+          이용 및 광고 관련
+          데이터 처리에 대해
+          이용자의 동의가
+          요구될 수 있습니다.
         </p>
 
         <p>
-          해당되는 경우 Google 및 관련 광고 플랫폼이 제공하는
-          동의 관리 기능이 적용될 수 있으며,
-          사용자는 제공되는 동의 화면을 통해 선택할 수 있습니다.
-        </p>
-
-      </section>
-
-
-      <section>
-
-        <h2>
-          9. 외부 링크
-        </h2>
-
-        <p>
-          본 앱에는 Google Play의 다른 앱 페이지 등
-          외부 웹사이트 또는 서비스로 연결되는 링크가 포함될 수 있습니다.
+          해당되는 경우 적용 가능한
+          광고 개인정보 보호
+          동의 또는 선택 기능이
+          제공될 수 있습니다.
         </p>
 
         <p>
-          외부 서비스의 콘텐츠, 개인정보 처리 또는 보안 정책은
-          해당 서비스 제공자가 관리하며,
-          개발자는 해당 외부 서비스의 정책을 통제하지 않습니다.
-        </p>
-
-      </section>
-
-
-      <section>
-
-        <h2>
-          10. 지식재산권
-        </h2>
-
-        <p>
-          본 앱의 자체 제작된 디자인, 프로그램 코드,
-          텍스트 및 기타 콘텐츠에 대한 권리는
-          관련 법률에 따라 개발자 또는 정당한 권리자에게 귀속됩니다.
+          이용자는 Android 기기의
+          개인정보 보호 설정에서
+          지원되는 광고 ID 관리
+          또는 삭제 기능을
+          사용할 수 있습니다.
         </p>
 
         <p>
-          Google, Google Play, AdMob 및 기타 제3자의
-          상표, 로고, 서비스명 및 관련 권리는
-          각각 해당 권리자에게 귀속됩니다.
+          Unity 광고 서비스가
+          개인정보 보호 선택 기능을
+          제공하는 경우 해당 기능을
+          이용할 수 있습니다.
         </p>
 
         <p>
-          본 앱은 별도의 명시가 없는 한
-          제3자의 상표권자 또는 서비스 제공자와
-          공식적인 제휴, 보증 또는 후원 관계가 있음을 의미하지 않습니다.
+          광고 개인화 설정을
+          제한하더라도 모든 광고가
+          중단되는 것은 아닙니다.
+        </p>
+
+        <p>
+          개인화되지 않은 광고는
+          계속 표시될 수 있습니다.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          11. 면책 및 서비스 이용
-        </h2>
+        <h2>9. 외부 링크</h2>
 
         <p>
-          랜덤 짝 및 그룹 생성 결과는
-          무작위 기능에 의해 생성되는 참고용 결과입니다.
+          앱에 표시되는 광고를
+          선택하면 외부 웹사이트,
+          Google Play 스토어의
+          앱 페이지 또는
+          기타 제3자 서비스로
+          이동할 수 있습니다.
         </p>
 
         <p>
-          사용자는 생성된 결과를 자신의 상황과 목적에 맞게 판단하여
-          사용할 책임이 있습니다.
+          외부 서비스의 콘텐츠,
+          개인정보 처리 및
+          보안 정책은 해당 서비스
+          제공자가 관리합니다.
         </p>
 
         <p>
-          개발자는 법률상 허용되는 범위 내에서
-          사용자의 앱 이용 방식 또는 랜덤 결과의 활용으로 인해 발생한
-          간접적 손실에 대해 책임을 제한할 수 있습니다.
+          개발자는 제3자 웹사이트의
+          독립적인 개인정보
+          처리 방식을 직접
+          통제하지 않습니다.
+        </p>
+
+        <p>
+          단, 관련 법령에 따라
+          개발자가 부담해야 하는
+          책임은 제외되지 않습니다.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          12. 개인정보처리방침의 변경
-        </h2>
+        <h2>10. 지식재산권</h2>
 
         <p>
-          앱 기능, 관련 법률, Google Play 정책 또는
-          제3자 서비스의 변경에 따라
-          본 개인정보처리방침이 수정될 수 있습니다.
+          본 앱의 자체 제작된
+          디자인, 프로그램 코드,
+          텍스트, 그래픽 및
+          기타 콘텐츠에 대한 권리는
+          관련 법률에 따라
+          개발자 또는 정당한
+          권리자에게 귀속됩니다.
         </p>
 
         <p>
-          중요한 변경이 있는 경우
-          본 페이지의 내용을 갱신하는 방식으로 안내합니다.
+          Unity, Unity LevelPlay,
+          Unity Ads, Google Play 및
+          기타 제3자의 상표,
+          로고, 서비스명과 관련 권리는
+          각각 해당 권리자에게
+          귀속됩니다.
+        </p>
+
+        <p>
+          본 앱에서 제3자의
+          명칭이 사용되더라도
+          별도의 명시가 없는 한
+          공식적인 제휴, 보증 또는
+          후원 관계를 의미하지 않습니다.
         </p>
 
       </section>
 
+      <section>
+
+        <h2>11. 면책 및 서비스 이용</h2>
+
+        <p>
+          랜덤 짝 및 그룹 생성
+          결과는 무작위 기능에
+          의해 생성되는
+          참고용 결과입니다.
+        </p>
+
+        <p>
+          이용자는 생성된 결과를
+          자신의 상황과 목적에 맞게
+          판단하여 사용할 책임이 있습니다.
+        </p>
+
+        <p>
+          개발자는 앱의 안정성과
+          정상적인 기능 제공을 위해
+          노력하지만 모든 환경에서
+          오류 없는 작동을
+          보장하지는 않습니다.
+        </p>
+
+        <p>
+          관련 법령에서 허용하는
+          범위 내에서 개발자는
+          앱 이용 방식 또는
+          무작위 결과 활용으로
+          발생한 간접적인 손실에
+          대한 책임을 제한합니다.
+        </p>
+
+        <p>
+          다만 법령상 제한하거나
+          면제할 수 없는 책임은
+          제외됩니다.
+        </p>
+
+      </section>
 
       <section>
 
-        <h2>
-          13. 개발자 정보 및 문의
-        </h2>
+        <h2>12. 개인정보처리방침의 변경</h2>
 
         <p>
-          개발자명:
+          앱 기능, 관련 법령,
+          Google Play 정책,
+          광고 SDK 또는 제3자
+          서비스가 변경되는 경우
+          본 개인정보처리방침이
+          수정될 수 있습니다.
+        </p>
+
+        <p>
+          변경 사항은 본 페이지의
+          내용을 갱신하는 방식으로
+          안내할 수 있습니다.
+        </p>
+
+        <p>
+          관련 법령에서 요구하는 경우
+          중요한 변경에 대해
+          추가 안내 또는
+          동의 절차를 진행합니다.
+        </p>
+
+      </section>
+
+      <section>
+
+        <h2>13. 개발자 정보 및 문의</h2>
+
+        <p>
+          개발자:
           <strong>JCraft Studio</strong>
         </p>
 
         <p>
           개발자의 최신 연락처,
           이메일 및 기타 공개 정보는
-          본 앱의 Google Play 스토어 등록정보에 표시된
-          개발자 정보를 참고해 주세요.
+          짝꿍 만들기 앱의
+          Google Play 스토어
+          등록정보에 표시된
+          개발자 연락처를
+          참고하시기 바랍니다.
         </p>
 
         <p>
-          개인정보 관련 문의 역시
-          Google Play 스토어의 개발자 연락처를 통해
-          접수할 수 있습니다.
+          개인정보 관련 문의,
+          데이터 삭제 요청 및
+          본 개인정보처리방침에 관한
+          문의 역시 해당 연락처를
+          통해 제출할 수 있습니다.
+        </p>
+
+        <p>
+          Unity 광고 관련 개인정보
+          문의는 Unity 공식
+          개인정보처리방침의
+          안내를 참고할 수 있습니다.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          14. 시행일
-        </h2>
+        <h2>14. 시행일</h2>
 
         <p>
           본 개인정보처리방침은
-          2026년 8월 11일부터 적용됩니다.
+          <strong>2026년 11월 4일</strong>부터
+          적용됩니다.
+        </p>
+
+        <p class="small">
+          최종 수정일: 2026-11-04
         </p>
 
       </section>
 
     </div>
 
+    <!-- ================================= -->
+    <!-- ENGLISH PRIVACY POLICY            -->
+    <!-- ================================= -->
 
-    <!-- ======================================================
-         ENGLISH
-         ====================================================== -->
-
-    <div
-      id="lang-en"
-      class="lang"
-    >
+    <div id="lang-en" class="lang">
 
       <section>
 
-        <h2>
-          Privacy Policy
-        </h2>
+        <h2>Privacy Policy</h2>
 
         <p>
-          JCraft Studio ("Developer", "we", "us", or "our")
-          respects the privacy of users of the
-          Pair Maker application ("App").
+          <strong>JCraft Studio</strong>
+          ("Developer", "we", "us", or "our")
+          respects the privacy of users
+          of the <strong>Pair Maker</strong>
+          application ("App").
         </p>
 
         <p>
-          This Privacy Policy explains what information may be processed
-          through the App and how such information is used.
+          This Privacy Policy explains
+          what information may be
+          processed through the App
+          and how that information
+          is used, stored, and shared.
+        </p>
+
+        <p>
+          We aim to protect user privacy
+          and handle information
+          transparently in accordance
+          with applicable laws
+          and Google Play policies.
         </p>
 
         <div class="notice">
-          The App does not require account registration.
-          Participant names, random group results, and App preferences
-          are generally stored locally on the user's device.
+          The App does not require
+          account registration.
+
+          Participant names, random
+          pair and group results,
+          and App preferences are
+          generally processed locally
+          on the user's device.
         </div>
 
       </section>
 
-
       <section>
 
-        <h2>
-          1. Information Processed by the App
-        </h2>
+        <h2>1. Information Processed by the App</h2>
 
-        <h3>
-          1.1 Information Entered by Users
-        </h3>
+        <h3>1.1 Information Entered by Users</h3>
 
         <p>
-          Users may enter participant names or nicknames
-          in order to create random pairs or groups.
+          Users may enter participant
+          names or nicknames to create
+          random pairs or groups.
         </p>
 
         <p>
-          This information is used only to provide the requested App functionality.
-          The App itself does not upload this information to a server operated
-          by the Developer or separately collect it for the Developer.
+          This information is used
+          to provide the requested
+          pairing and grouping
+          functionality.
         </p>
 
-        <h3>
-          1.2 App Settings and History
-        </h3>
+        <p>
+          Participant information
+          entered by users is
+          generally processed
+          locally on the device.
+        </p>
 
         <p>
-          The App may store the following information locally on the device:
+          The Developer does not
+          transmit this information
+          to a separate
+          Developer-operated server
+          or store it in a
+          user-specific database.
+        </p>
+
+        <p>
+          Users are encouraged
+          to avoid entering
+          unnecessary personal
+          or sensitive information
+          about other individuals.
+        </p>
+
+        <h3>1.2 App Settings and History</h3>
+
+        <p>
+          The App may store
+          the following information
+          locally on the device:
         </p>
 
         <ul>
           <li>
-            Recent random pair or group results
+            Recent random pair
+            and group results
+          </li>
+
+          <li>
+            Participant names
+            and related settings
           </li>
 
           <li>
@@ -814,323 +1200,698 @@
           </li>
 
           <li>
-            Dark mode preference
+            Dark mode preferences
           </li>
 
           <li>
-            Animation preference
+            Animation preferences
           </li>
 
           <li>
-            Local counters or settings required for App functionality
+            Local counters used
+            for App functionality
+          </li>
+
+          <li>
+            Other preferences
+            necessary to provide
+            App features
           </li>
         </ul>
 
         <p>
-          These items are processed locally in order to provide App features
-          and preserve user preferences.
+          This information is
+          processed locally to
+          provide App functionality,
+          preserve preferences,
+          and allow users to
+          access previous results.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          2. Advertising and Third-Party Services
-        </h2>
+        <h2>2. Advertising and Third-Party Services</h2>
 
         <p>
-          The App may use Google Mobile Ads SDK (AdMob)
-          to display advertising.
+          The App uses
+          <strong>Unity LevelPlay</strong>
+          for advertising mediation
+          and <strong>Unity Ads</strong>
+          for advertisement delivery.
         </p>
 
         <p>
-          In connection with advertising services,
-          Google or related advertising service providers may process
-          device identifiers, advertising identifiers, IP addresses,
-          ad interaction information, approximate location information,
-          or other technical information in accordance with applicable law
-          and their own policies.
+          Unity LevelPlay is an
+          advertising mediation
+          platform used to manage
+          ad requests, connected
+          advertising networks,
+          and monetization.
         </p>
 
         <p>
-          Such processing may occur through the systems of third-party
-          service providers rather than through servers operated by the Developer.
+          Unity Ads provides
+          advertisements within
+          the App.
         </p>
 
         <p>
-          The handling of information by third-party services is governed
-          by the privacy policies and terms of those service providers.
+          Advertising providers
+          may automatically process
+          certain information
+          for advertisement delivery,
+          performance measurement,
+          security, fraud prevention,
+          and related service operations.
         </p>
 
-      </section>
-
-
-      <section>
-
-        <h2>
-          3. Purposes of Processing
-        </h2>
+        <h3>2.1 Advertising-Related Information</h3>
 
         <p>
-          Information may be processed only as reasonably necessary
-          for purposes including:
+          Depending on the device,
+          SDK configuration,
+          geographical region,
+          user privacy choices,
+          and applicable laws,
+          processed information
+          may include:
         </p>
 
         <ul>
           <li>
-            Creating random pairs and groups
+            IP addresses and approximate
+            location inferred from them
           </li>
 
           <li>
-            Maintaining recent group history for the user
+            Android Advertising ID
           </li>
 
           <li>
-            Preserving language, display, and animation preferences
+            Other permitted device
+            and application identifiers
+          </li>
+
+          <li>
+            Device manufacturer,
+            model, operating system,
+            and version information
+          </li>
+
+          <li>
+            App launches and
+            advertising interactions
+          </li>
+
+          <li>
+            Advertisement impressions,
+            clicks, and measurement data
+          </li>
+
+          <li>
+            Crash, diagnostic,
+            and performance information
+          </li>
+
+          <li>
+            Technical information
+            used for security
+            and fraud prevention
+          </li>
+        </ul>
+
+        <p>
+          Actual data processing
+          depends on the advertising
+          SDK version, configuration,
+          operating system,
+          and applicable regional
+          privacy requirements.
+        </p>
+
+        <h3>2.2 Unity LevelPlay</h3>
+
+        <p>
+          Unity LevelPlay may
+          process technical information
+          to manage advertising
+          requests, mediation,
+          performance reporting,
+          service reliability,
+          and fraud prevention.
+        </p>
+
+        <h3>2.3 Unity Ads</h3>
+
+        <p>
+          Unity Ads may process
+          advertising identifiers,
+          device information,
+          IP addresses, and
+          advertisement interaction
+          information according
+          to its privacy practices.
+        </p>
+
+        <p>
+          This information may
+          support advertisement
+          delivery, performance
+          measurement, security,
+          fraud prevention, and
+          personalized advertising
+          where permitted.
+        </p>
+
+        <h3>2.4 Third-Party Privacy Policies</h3>
+
+        <p>
+          Advertising-related
+          information may be
+          processed or shared
+          by Unity and relevant
+          advertising technology
+          partners.
+        </p>
+
+        <p>
+          For further information,
+          please review the following
+          official Unity resources:
+        </p>
+
+        <ul>
+          <li>
+            <a
+              href="https://unity.com/legal/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer">
+              Unity Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+              target="_blank"
+              rel="noopener noreferrer">
+              Unity Game Player and App User Privacy FAQ
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          If additional advertising
+          networks are integrated
+          or processing practices
+          change, this Privacy Policy
+          will be reviewed
+          and updated as necessary.
+        </p>
+
+      </section>
+
+      <section>
+
+        <h2>3. Purposes of Processing</h2>
+
+        <p>
+          Information may be
+          processed as reasonably
+          necessary for the
+          following purposes:
+        </p>
+
+        <ul>
+          <li>
+            Creating random
+            pairs and groups
+          </li>
+
+          <li>
+            Saving generated
+            pairing and group results
+          </li>
+
+          <li>
+            Maintaining recent
+            group history
+          </li>
+
+          <li>
+            Preserving language,
+            display, and animation
+            preferences
           </li>
 
           <li>
             Providing advertisements
+            and measuring performance
           </li>
 
           <li>
-            Maintaining reliable App functionality
+            Maintaining reliable
+            App functionality
+          </li>
+
+          <li>
+            Security and
+            fraud prevention
+          </li>
+
+          <li>
+            Compliance with
+            applicable legal obligations
           </li>
         </ul>
 
       </section>
 
-
       <section>
 
-        <h2>
-          4. Sharing and Sale of Information
-        </h2>
+        <h2>4. Sharing and Sale of Information</h2>
 
         <p>
-          The Developer does not sell participant names
-          or random group results entered or generated through the App.
+          The Developer does
+          not sell participant
+          names, nicknames,
+          or randomly generated
+          group results.
         </p>
 
         <p>
-          The Developer does not upload such information
-          to a Developer-operated server for disclosure to third parties.
+          Such information is
+          not uploaded to a
+          Developer-operated
+          server for disclosure
+          to third parties.
         </p>
 
         <p>
-          However, third-party SDKs included for functions such as advertising
-          may process certain information under their own policies
-          and applicable legal requirements.
+          However, Unity and
+          related advertising
+          technology partners
+          may process or share
+          advertising-related
+          information.
+        </p>
+
+        <p>
+          This information
+          may include advertising
+          identifiers, IP addresses,
+          device information,
+          advertisement impressions,
+          and click information.
+        </p>
+
+        <p>
+          Information may also
+          be processed when
+          necessary to comply
+          with applicable laws
+          or valid legal requests.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          5. Data Retention and Deletion
-        </h2>
+        <h2>5. Data Retention and Deletion</h2>
+
+        <h3>5.1 Local Data</h3>
 
         <p>
-          Participant-related information, group history,
-          and preferences are stored locally on the user's device.
+          Participant names,
+          group history,
+          language preferences,
+          and App settings
+          may be stored locally
+          on the user's device.
         </p>
 
         <p>
-          Users may delete stored group history
-          through the history deletion feature available in the App.
+          Users may delete
+          saved pairing or
+          group records using
+          the history deletion
+          feature available
+          in the App.
         </p>
 
         <p>
-          Removing the App may also remove locally stored App data
-          in accordance with the normal behavior of the device operating system.
+          Clearing the App's
+          storage through
+          Android settings
+          or uninstalling
+          the App generally
+          removes local data.
         </p>
 
         <p>
-          Because the App does not provide user accounts
-          or maintain a user-specific online database,
-          there is no separate online account deletion process.
+          However, Android
+          backup and restoration
+          functionality may
+          restore certain data.
+        </p>
+
+        <p>
+          The App does not
+          maintain user-specific
+          online accounts or
+          account databases,
+          so no separate online
+          account deletion
+          procedure is provided.
+        </p>
+
+        <h3>5.2 Advertising Data</h3>
+
+        <p>
+          Information independently
+          processed by Unity
+          and advertising partners
+          is subject to their
+          respective data retention
+          and deletion policies.
+        </p>
+
+        <p>
+          Privacy requests
+          concerning advertising
+          data may be submitted
+          through the relevant
+          provider's official
+          privacy procedures.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          6. Data Security
-        </h2>
+        <h2>6. Data Security</h2>
 
         <p>
-          The Developer seeks to limit information processing
-          to what is reasonably necessary for App functionality.
+          The Developer seeks
+          to minimize unnecessary
+          data collection and
+          process information
+          only as reasonably
+          necessary to provide
+          App functionality.
         </p>
 
         <p>
-          Information entered directly into the App
-          is generally processed locally on the user's device.
+          Participant information
+          and group records
+          entered directly
+          into the App are
+          generally processed
+          on the user's device.
         </p>
 
         <p>
-          Advertising-related information that may be processed online
-          may be subject to the security practices and safeguards
-          of the applicable third-party service provider.
+          Advertising-related
+          information processed
+          through internet
+          services is subject
+          to the security practices
+          and safeguards of the
+          relevant service providers.
+        </p>
+
+        <p>
+          No electronic storage,
+          communication, or
+          information processing
+          method can guarantee
+          absolute security.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          7. Children's Privacy
-        </h2>
+        <h2>7. Children's Privacy</h2>
 
         <p>
-          The App is not designed for the purpose of directly collecting
-          personal information from users.
+          The App is a
+          general-purpose random
+          pairing and grouping
+          utility and is not
+          specifically designed
+          to directly collect
+          children's personal
+          information.
         </p>
 
         <p>
-          Users are encouraged not to enter unnecessary personal,
-          sensitive, or directly identifying information
-          when entering participant names.
+          Users are encouraged
+          not to enter unnecessary
+          personal, sensitive,
+          or directly identifying
+          information when
+          entering participant names.
         </p>
 
         <p>
-          A parent or guardian with questions regarding information
-          entered by a child may contact the Developer using
-          the contact information shown on the App's Google Play listing.
+          A parent or guardian
+          with questions regarding
+          information entered by
+          a child may contact
+          the Developer through
+          the contact information
+          on the App's Google
+          Play listing.
+        </p>
+
+        <p>
+          Where additional
+          protections are required
+          for children or
+          age-restricted users,
+          applicable laws,
+          Google Play policies,
+          and advertising
+          requirements apply.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          8. User Choice and Consent
-        </h2>
+        <h2>8. User Choice and Consent</h2>
 
         <p>
-          In certain countries or regions,
-          user consent may be required for advertising personalization,
-          advertising storage, or related data processing.
+          In certain countries
+          or regions, consent
+          may be required for
+          personalized advertising,
+          advertising identifiers,
+          and related data processing.
         </p>
 
         <p>
-          Where applicable, consent management features provided by
-          Google or the relevant advertising platform may be presented,
-          allowing users to make available privacy choices.
+          Where applicable,
+          advertising privacy
+          consent or choice
+          mechanisms may be
+          made available.
+        </p>
+
+        <p>
+          Users may use
+          supported Android
+          privacy settings
+          to manage or delete
+          their Advertising ID.
+        </p>
+
+        <p>
+          Users may also
+          use privacy controls
+          provided by Unity
+          advertising services,
+          where available.
+        </p>
+
+        <p>
+          Limiting personalized
+          advertising does
+          not necessarily
+          disable advertising.
+        </p>
+
+        <p>
+          Non-personalized
+          advertisements may
+          still appear.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          9. External Links
-        </h2>
+        <h2>9. External Links</h2>
 
         <p>
-          The App may include links to external websites or services,
-          including Google Play pages for other applications.
+          Selecting advertisements
+          displayed within the
+          App may open external
+          websites, Google Play
+          application listings,
+          or other third-party
+          services.
         </p>
 
         <p>
-          External services are responsible for their own content,
-          privacy practices, and security policies.
-          The Developer does not control the privacy practices
-          of third-party services.
+          External service
+          providers are responsible
+          for their own content,
+          privacy practices,
+          and security policies.
+        </p>
+
+        <p>
+          The Developer does
+          not directly control
+          the independent privacy
+          practices of third-party
+          websites.
+        </p>
+
+        <p>
+          This does not exclude
+          responsibilities imposed
+          by applicable law.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          10. Intellectual Property
-        </h2>
+        <h2>10. Intellectual Property</h2>
 
         <p>
-          Rights in the original design, software code,
-          text, and other content created for the App
-          belong to the Developer or the applicable lawful rights holder,
+          Rights in the original
+          design, software code,
+          text, graphics,
+          and other content
+          created for the App
+          belong to the Developer
+          or the applicable
+          lawful rights holder,
           subject to applicable law.
         </p>
 
         <p>
-          Google, Google Play, AdMob,
-          and other third-party trademarks, logos, service names,
-          and related rights belong to their respective owners.
+          Unity, Unity LevelPlay,
+          Unity Ads, Google Play,
+          and other third-party
+          trademarks, logos,
+          service names, and
+          related rights belong
+          to their respective owners.
         </p>
 
         <p>
-          Unless expressly stated otherwise,
-          use of third-party services does not imply
-          endorsement, sponsorship, or official affiliation
-          with the relevant trademark or service owner.
+          Unless expressly
+          stated otherwise,
+          references to
+          third-party services
+          do not imply official
+          affiliation, sponsorship,
+          or endorsement.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          11. Disclaimer and Use of the App
-        </h2>
+        <h2>11. Disclaimer and Use of the App</h2>
 
         <p>
-          Pair and group results are generated randomly
-          and are provided as a convenience feature.
+          Random pair and
+          group results are
+          generated as a
+          convenience feature.
         </p>
 
         <p>
-          Users are responsible for deciding whether
-          and how generated results are used in their own activities.
+          Users are responsible
+          for deciding whether
+          and how generated
+          results are used
+          in their own activities.
         </p>
 
         <p>
-          To the extent permitted by applicable law,
-          the Developer may limit liability for indirect losses
-          arising from a user's use of the App
-          or reliance on randomly generated results.
+          The Developer seeks
+          to maintain reliable
+          App functionality
+          but cannot guarantee
+          error-free operation
+          in every environment.
+        </p>
+
+        <p>
+          To the extent
+          permitted by applicable
+          law, the Developer
+          limits liability
+          for indirect losses
+          arising from use
+          of the App or
+          reliance on randomly
+          generated results.
+        </p>
+
+        <p>
+          Nothing in this
+          Privacy Policy excludes
+          liability that cannot
+          lawfully be excluded
+          or limited.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          12. Changes to This Privacy Policy
-        </h2>
+        <h2>12. Changes to This Privacy Policy</h2>
 
         <p>
-          This Privacy Policy may be updated
-          when App functionality, applicable law,
-          Google Play policies, or third-party services change.
+          This Privacy Policy
+          may be updated when
+          App functionality,
+          applicable laws,
+          Google Play policies,
+          advertising SDKs,
+          or third-party
+          services change.
         </p>
 
         <p>
-          Material changes will be reflected
-          by updating this page.
+          Changes may be
+          communicated by
+          updating this page.
+        </p>
+
+        <p>
+          Where required by
+          applicable law,
+          material changes
+          may involve additional
+          notice or consent.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          13. Developer Information and Contact
-        </h2>
+        <h2>13. Developer Information and Contact</h2>
 
         <p>
           Developer:
@@ -1138,49 +1899,66 @@
         </p>
 
         <p>
-          For the Developer's current contact information,
-          email address, and other public details,
-          please refer to the developer information displayed
-          on this App's Google Play store listing.
+          For current contact
+          information, email
+          address, and other
+          public developer details,
+          please refer to
+          the developer contact
+          information displayed
+          on this App's
+          Google Play listing.
         </p>
 
         <p>
-          Privacy-related inquiries may also be submitted
-          through the Developer contact information
-          provided on Google Play.
+          Privacy-related inquiries,
+          data deletion requests,
+          and questions concerning
+          this Privacy Policy
+          may also be submitted
+          through that contact.
+        </p>
+
+        <p>
+          For advertising-related
+          privacy inquiries,
+          users may also refer
+          to Unity's official
+          privacy resources.
         </p>
 
       </section>
 
-
       <section>
 
-        <h2>
-          14. Effective Date
-        </h2>
+        <h2>14. Effective Date</h2>
 
         <p>
-          This Privacy Policy is effective as of
-          August 11, 2026.
+          This Privacy Policy
+          is effective as of
+          <strong>November 4, 2026.</strong>
+        </p>
+
+        <p class="small">
+          Last updated: November 4, 2026
         </p>
 
       </section>
 
     </div>
 
-  </div>
+  </main>
 
-
-  <div class="footer">
-    © 2026 JCraft Studio
-  </div>
+  <footer class="footer">
+    © 2026 JCraft Studio. All rights reserved.
+  </footer>
 
 </div>
 
-
 <script>
-
   function changeLanguage(language) {
+    const selected =
+      language === 'en' ? 'en' : 'ko';
 
     const korean =
       document.getElementById('lang-ko');
@@ -1194,32 +1972,98 @@
     const englishButton =
       document.getElementById('btn-en');
 
+    const pageTitle =
+      document.getElementById('page-title');
 
-    korean.classList.remove('active');
-    english.classList.remove('active');
+    korean.classList.toggle(
+      'active',
+      selected === 'ko'
+    );
 
-    koreanButton.classList.remove('active');
-    englishButton.classList.remove('active');
+    english.classList.toggle(
+      'active',
+      selected === 'en'
+    );
 
+    koreanButton.classList.toggle(
+      'active',
+      selected === 'ko'
+    );
 
-    if (language === 'en') {
+    englishButton.classList.toggle(
+      'active',
+      selected === 'en'
+    );
 
-      english.classList.add('active');
-      englishButton.classList.add('active');
+    koreanButton.setAttribute(
+      'aria-pressed',
+      String(selected === 'ko')
+    );
 
-      document.documentElement.lang = 'en';
+    englishButton.setAttribute(
+      'aria-pressed',
+      String(selected === 'en')
+    );
 
+    document.documentElement.lang = selected;
+
+    if (selected === 'ko') {
+      pageTitle.textContent =
+        '개인정보처리방침';
+
+      document.title =
+        '개인정보처리방침 | 짝꿍 만들기';
     } else {
+      pageTitle.textContent =
+        'Privacy Policy';
 
-      korean.classList.add('active');
-      koreanButton.classList.add('active');
-
-      document.documentElement.lang = 'ko';
-
+      document.title =
+        'Privacy Policy | Pair Maker';
     }
 
+    try {
+      localStorage.setItem(
+        'pairMakerPrivacyLanguage',
+        selected
+      );
+    } catch (error) {
+      // Language switching remains available.
+    }
   }
 
+  document.addEventListener(
+    'DOMContentLoaded',
+    function() {
+      let savedLanguage = null;
+
+      try {
+        savedLanguage =
+          localStorage.getItem(
+            'pairMakerPrivacyLanguage'
+          );
+      } catch (error) {
+        savedLanguage = null;
+      }
+
+      if (
+        savedLanguage === 'ko' ||
+        savedLanguage === 'en'
+      ) {
+        changeLanguage(savedLanguage);
+        return;
+      }
+
+      const browserLanguage =
+        (navigator.language || 'en')
+          .toLowerCase();
+
+      changeLanguage(
+        browserLanguage.startsWith('ko')
+          ? 'ko'
+          : 'en'
+      );
+    }
+  );
 </script>
 
 </body>
