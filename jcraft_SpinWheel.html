@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Privacy Policy for Spin Wheel - Random Picker by JCraft Studio."
+  >
+
+  <meta name="robots" content="index, follow">
+
   <title>Privacy Policy | Spin Wheel - Random Picker</title>
+
   <style>
     :root {
+      color-scheme: dark;
       --bg: #0f1220;
       --card: #171b2e;
       --text: #f3f5ff;
@@ -19,10 +29,29 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0f1220, #171b2e, #21183d);
+      min-height: 100vh;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        "Noto Sans KR",
+        sans-serif;
+
+      background:
+        linear-gradient(
+          135deg,
+          #0f1220,
+          #171b2e,
+          #21183d
+        );
+
       color: var(--text);
       line-height: 1.7;
     }
@@ -34,7 +63,13 @@
     }
 
     .hero {
-      background: linear-gradient(135deg, rgba(139,124,255,0.22), rgba(255,111,168,0.18));
+      background:
+        linear-gradient(
+          135deg,
+          rgba(139,124,255,0.22),
+          rgba(255,111,168,0.18)
+        );
+
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 20px;
       padding: 24px;
@@ -53,6 +88,12 @@
       font-size: 15px;
     }
 
+    .date {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 10px 0 0;
+    }
+
     .lang-switch {
       display: flex;
       gap: 10px;
@@ -61,21 +102,38 @@
     }
 
     .lang-switch button {
-      border: 0;
+      border: 1px solid var(--line);
       border-radius: 999px;
       padding: 10px 16px;
       cursor: pointer;
       font-weight: 700;
+      font-size: 14px;
       background: #26304f;
       color: #fff;
+      transition:
+        background .2s ease,
+        border-color .2s ease;
     }
 
     .lang-switch button.active {
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      background:
+        linear-gradient(
+          135deg,
+          var(--accent),
+          var(--accent2)
+        );
+
+      border-color: transparent;
+    }
+
+    .lang-switch button:focus-visible,
+    a:focus-visible {
+      outline: 2px solid #e6d8ff;
+      outline-offset: 3px;
     }
 
     .card {
-      background: rgba(23, 27, 46, 0.94);
+      background: rgba(23,27,46,0.94);
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 18px;
       padding: 22px;
@@ -83,18 +141,31 @@
     }
 
     h2 {
-      margin-top: 0;
+      margin: 0 0 14px;
       font-size: 22px;
+      line-height: 1.35;
     }
 
     h3 {
-      margin-top: 0;
+      margin: 0 0 12px;
       font-size: 17px;
+      line-height: 1.4;
     }
 
-    p, li {
+    h4 {
+      margin: 20px 0 8px;
+      font-size: 15px;
+      color: #ddd5ff;
+    }
+
+    p,
+    li {
       color: var(--text);
       font-size: 15px;
+    }
+
+    p {
+      margin: 0 0 12px;
     }
 
     .muted {
@@ -102,20 +173,35 @@
     }
 
     ul {
-      margin: 10px 0 0 20px;
+      margin: 10px 0 14px 20px;
       padding: 0;
     }
 
+    li {
+      margin-bottom: 8px;
+    }
+
     a {
-      color: #b8c8ff;
-      word-break: break-word;
+      color: #c2d1ff;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     .footer {
       color: var(--muted);
       font-size: 13px;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 20px;
+    }
+
+    .footer p {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 6px 0;
     }
 
     .lang {
@@ -137,305 +223,1984 @@
       margin-bottom: 12px;
     }
 
+    .notice {
+      background: rgba(139,124,255,0.12);
+      border: 1px solid rgba(139,124,255,0.32);
+      border-radius: 14px;
+      padding: 15px 16px;
+      margin: 16px 0;
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    .data-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+
+    .data-table {
+      width: 100%;
+      min-width: 460px;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .data-table th,
+    .data-table td {
+      border: 1px solid var(--line);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .data-table th {
+      background: #252a46;
+      color: #f3f5ff;
+    }
+
+    .data-table td {
+      color: #d5dbec;
+    }
+
     @media (max-width: 640px) {
       h1 {
         font-size: 25px;
+      }
+
+      h2 {
+        font-size: 20px;
       }
 
       .card,
       .hero {
         padding: 18px;
       }
+
+      .wrap {
+        padding: 16px 12px 36px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .lang-switch button {
+        transition: none;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="hero">
-      <h1>Privacy Policy</h1>
-      <p class="sub">Spin Wheel - Random Picker</p>
-      <div class="lang-switch">
-        <button id="btn-en" class="active" onclick="showLang('en')">English</button>
-        <button id="btn-ko" onclick="showLang('ko')">한국어</button>
-      </div>
-    </div>
+<div class="wrap">
 
-    <!-- ENGLISH -->
-    <div id="lang-en" class="lang active">
-      <div class="card">
-        <div class="badge">English</div>
-        <h2>Privacy Policy</h2>
-        <p>
-          This Privacy Policy explains how <strong>Spin Wheel - Random Picker</strong> (“the App”)
-          handles information when you use the App.
-        </p>
-        <p>
-          The App is designed as a general random selection and decision tool. This policy is intended
-          to help users understand what information may be processed, how it may be used, and what choices users may have.
-        </p>
-      </div>
+  <header class="hero">
+    <h1 id="page-title">Privacy Policy</h1>
 
-      <div class="card">
-        <h3>1. Information We Collect</h3>
-        <p>
-          The App itself is designed to minimize data collection. Depending on the features you use,
-          the following categories of information may be processed:
-        </p>
-        <ul>
-          <li><strong>User-entered content:</strong> items or options you type into the wheel.</li>
-          <li><strong>Locally stored app data:</strong> saved wheel items, recent results, app preferences, and language settings stored on your device.</li>
-          <li><strong>Advertising-related data:</strong> if ads are shown, advertising providers may collect limited device or usage information in accordance with their own policies.</li>
-          <li><strong>Analytics or crash information:</strong> if such tools are enabled in the published version, technical information may be collected to improve app stability and performance.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>2. How Information Is Used</h3>
-        <p>Information may be used for the following purposes:</p>
-        <ul>
-          <li>To provide the wheel, random picker, saved items, and result history features.</li>
-          <li>To remember your app settings and improve convenience.</li>
-          <li>To display ads, if advertising is included in the App.</li>
-          <li>To improve app quality, security, stability, and performance.</li>
-          <li>To comply with legal obligations when required.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>3. Local Storage on Your Device</h3>
-        <p>
-          Some data may be stored locally on your device so the App can remember your wheel options,
-          recent results, or settings. This local storage is used to support the App’s core functionality.
-        </p>
-        <p>
-          Local app data may be removed by clearing the App’s data or uninstalling the App, subject to your device settings.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>4. Advertising</h3>
-        <p>
-          The App may display advertisements. If advertising services such as Google AdMob are used,
-          those services may process certain information such as device identifiers, approximate diagnostics,
-          ad interaction data, and similar technical information in accordance with their own privacy policies.
-        </p>
-        <p>
-          Please refer to the applicable third-party provider’s privacy documentation for more information about how they handle data.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>5. Third-Party Services</h3>
-        <p>
-          The App may rely on third-party services for functions such as advertising, analytics, crash reporting,
-          or platform distribution. Those third parties may process information under their own terms and privacy policies.
-        </p>
-        <p>
-          Examples may include Google Play services, Google AdMob, device OS services, or similar infrastructure providers used in the published version of the App.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>6. Data Sharing</h3>
-        <p>
-          The developer does not sell your personal information through the App itself.
-          Information may be shared only in limited situations, such as:
-        </p>
-        <ul>
-          <li>With service providers that support app operation, advertising, analytics, or platform delivery.</li>
-          <li>When required by law, regulation, legal process, or government request.</li>
-          <li>To protect rights, safety, security, users, or the public where legally permitted.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>7. Children’s Privacy</h3>
-        <p>
-          The App is a general utility tool and is not intentionally directed to children as a dedicated children’s service.
-          If you are a parent or guardian and believe that a child has provided personal information through the App in a way that requires review,
-          please use the developer contact information shown on the Google Play Store listing.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>8. Security</h3>
-        <p>
-          Reasonable efforts may be used to protect information and maintain the security of the App.
-          However, no method of electronic storage or transmission is guaranteed to be completely secure.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>9. Your Choices</h3>
-        <ul>
-          <li>You may stop using the App at any time.</li>
-          <li>You may clear locally stored app data through your device settings where available.</li>
-          <li>You may review permissions and advertising preferences through your device or account settings when supported.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>10. Changes to This Privacy Policy</h3>
-        <p>
-          This Privacy Policy may be updated from time to time to reflect changes in the App, legal requirements,
-          or operational practices. The latest version posted for the App should be considered the current version.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>11. Contact</h3>
-        <p>
-          For developer contact details, please refer to the developer information provided on the official Google Play Store listing for the App.
-        </p>
-      </div>
-    </div>
-
-    <!-- KOREAN -->
-    <div id="lang-ko" class="lang">
-      <div class="card">
-        <div class="badge">한국어</div>
-        <h2>개인정보처리방침</h2>
-        <p>
-          본 개인정보처리방침은 <strong>Spin Wheel - Random Picker</strong>(이하 “앱”) 이용 시
-          정보가 어떻게 처리될 수 있는지 설명합니다.
-        </p>
-        <p>
-          본 앱은 일반적인 랜덤 선택 및 결정 보조 도구로 설계되었으며,
-          사용자가 어떤 정보가 처리될 수 있는지, 그 정보가 어떻게 사용될 수 있는지 이해할 수 있도록 본 방침을 제공합니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>1. 수집 또는 처리될 수 있는 정보</h3>
-        <p>
-          본 앱은 정보 수집을 최소화하도록 설계되었습니다. 다만 사용 기능에 따라 다음 범주의 정보가 처리될 수 있습니다.
-        </p>
-        <ul>
-          <li><strong>사용자 입력 정보:</strong> 룰렛 항목으로 직접 입력한 텍스트</li>
-          <li><strong>기기 내 로컬 저장 정보:</strong> 저장된 항목, 최근 결과, 앱 설정, 언어 설정 등 기기 내부 저장 정보</li>
-          <li><strong>광고 관련 정보:</strong> 광고가 제공되는 경우 광고 제공업체가 자체 정책에 따라 제한적인 기기 또는 이용 정보를 처리할 수 있음</li>
-          <li><strong>분석 또는 오류 정보:</strong> 공개 버전에서 분석 또는 오류 수집 도구가 활성화된 경우 앱 안정성 개선을 위한 기술 정보가 처리될 수 있음</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>2. 정보의 이용 목적</h3>
-        <p>처리되는 정보는 다음 목적 범위에서 사용될 수 있습니다.</p>
-        <ul>
-          <li>룰렛, 랜덤 선택, 저장 항목, 결과 기록 등의 기능 제공</li>
-          <li>앱 설정 저장 및 사용자 편의 제공</li>
-          <li>앱에 광고가 포함된 경우 광고 제공</li>
-          <li>앱 품질, 보안, 안정성, 성능 개선</li>
-          <li>관련 법령 또는 법적 의무 준수</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>3. 기기 내 로컬 저장</h3>
-        <p>
-          본 앱은 룰렛 항목, 최근 결과, 설정 등을 기억하기 위해 일부 정보를 사용자 기기 내에 로컬로 저장할 수 있습니다.
-          이러한 저장은 앱의 기본 기능 제공을 위한 목적입니다.
-        </p>
-        <p>
-          로컬 저장 데이터는 기기 설정에서 앱 데이터를 삭제하거나 앱을 제거할 경우 함께 삭제될 수 있습니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>4. 광고</h3>
-        <p>
-          본 앱은 광고를 표시할 수 있습니다. Google AdMob 등 광고 서비스가 사용되는 경우,
-          해당 서비스 제공자는 자체 개인정보처리방침에 따라 광고 식별자, 기기 정보, 광고 반응 정보,
-          진단 정보 등 일부 기술 정보를 처리할 수 있습니다.
-        </p>
-        <p>
-          광고 관련 정보 처리 방식은 해당 제3자 서비스 제공자의 정책을 참고해 주시기 바랍니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>5. 제3자 서비스</h3>
-        <p>
-          본 앱은 광고, 분석, 오류 보고, 플랫폼 배포 등을 위해 제3자 서비스를 사용할 수 있습니다.
-          이러한 제3자 서비스는 각자의 약관 및 개인정보처리방침에 따라 정보를 처리할 수 있습니다.
-        </p>
-        <p>
-          예시로는 Google Play 서비스, Google AdMob, 기기 운영체제 서비스 또는 앱 공개 버전에서 사용하는 유사 인프라 제공업체가 포함될 수 있습니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>6. 정보 제공 또는 공유</h3>
-        <p>
-          개발자는 앱 자체를 통해 사용자의 개인정보를 판매하지 않습니다.
-          다만 다음과 같은 제한적인 경우 정보가 제공되거나 공유될 수 있습니다.
-        </p>
-        <ul>
-          <li>앱 운영, 광고, 분석, 플랫폼 제공을 지원하는 서비스 제공업체와의 처리</li>
-          <li>법령, 규제, 수사, 재판 절차, 정부기관의 적법한 요청이 있는 경우</li>
-          <li>권리 보호, 안전 확보, 보안 대응 또는 공공 보호를 위해 법적으로 허용되는 경우</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>7. 아동의 개인정보</h3>
-        <p>
-          본 앱은 일반 유틸리티 도구이며 아동 전용 서비스로 특별히 설계된 앱은 아닙니다.
-          부모 또는 법정대리인이 아동 관련 정보 제공에 대해 검토가 필요하다고 판단하는 경우,
-          Google Play 스토어 앱 페이지에 표시된 개발자 연락처를 통해 문의해 주시기 바랍니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>8. 보안</h3>
-        <p>
-          정보 보호와 앱 보안 유지를 위해 합리적인 수준의 조치를 적용할 수 있습니다.
-          다만 전자적 저장 또는 전송 방식이 절대적으로 완전한 보안을 보장하지는 않습니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>9. 사용자의 선택</h3>
-        <ul>
-          <li>사용자는 언제든지 앱 사용을 중단할 수 있습니다.</li>
-          <li>지원되는 경우 기기 설정을 통해 앱의 로컬 데이터를 삭제할 수 있습니다.</li>
-          <li>지원되는 경우 기기 또는 계정 설정에서 권한 및 광고 관련 설정을 검토할 수 있습니다.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>10. 개인정보처리방침의 변경</h3>
-        <p>
-          본 개인정보처리방침은 앱 기능 변경, 법적 요구사항, 운영 방식 변경 등에 따라 수정될 수 있습니다.
-          앱에 게시된 최신 버전을 현재 유효한 버전으로 봅니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>11. 개발자 연락처</h3>
-        <p>
-          개발자 연락처 정보는 해당 앱의 공식 Google Play 스토어 등록 페이지에 기재된 개발자 정보를 참고해 주시기 바랍니다.
-        </p>
-      </div>
-    </div>
-
-    <p class="footer">
-      © Spin Wheel - Random Picker
+    <p class="sub">
+      Spin Wheel - Random Picker
     </p>
-  </div>
 
-  <script>
-    function showLang(lang) {
-      document.getElementById('lang-en').classList.remove('active');
-      document.getElementById('lang-ko').classList.remove('active');
-      document.getElementById('btn-en').classList.remove('active');
-      document.getElementById('btn-ko').classList.remove('active');
+    <p class="date">
+      JCraft Studio · 2026-11-04
+    </p>
 
-      document.getElementById('lang-' + lang).classList.add('active');
-      document.getElementById('btn-' + lang).classList.add('active');
+    <nav
+      class="lang-switch"
+      aria-label="Language selection"
+    >
+      <button
+        id="btn-en"
+        class="active"
+        type="button"
+        aria-pressed="true"
+        onclick="showLang('en')">
+        English
+      </button>
 
-      document.documentElement.lang = lang;
+      <button
+        id="btn-ko"
+        type="button"
+        aria-pressed="false"
+        onclick="showLang('ko')">
+        한국어
+      </button>
+    </nav>
+  </header>
+
+  <!-- ==================================== -->
+  <!-- ENGLISH PRIVACY POLICY               -->
+  <!-- ==================================== -->
+
+  <main id="lang-en" class="lang active">
+
+    <section class="card">
+      <div class="badge">English</div>
+      <h2>Privacy Policy</h2>
+
+      <p>
+        This Privacy Policy describes how
+        <strong>Spin Wheel - Random Picker</strong>
+        (the "App"), provided by JCraft Studio,
+        handles information when users access
+        its features and related services.
+      </p>
+
+      <p>
+        The App is a random selection and
+        decision-making utility that allows
+        users to enter options, spin a wheel,
+        obtain random results, and use
+        supported saving or history features.
+      </p>
+
+      <p>
+        This policy describes the types of
+        information that may be processed,
+        the purposes of processing,
+        local storage practices, advertising
+        services, and available privacy rights.
+      </p>
+
+      <div class="notice">
+        <p><strong>Important Privacy Notice</strong></p>
+
+        <p>
+          Wheel options, saved items,
+          recent results, and application
+          settings may be stored locally
+          on the user's device.
+        </p>
+
+        <p>
+          Advertising services such as
+          Unity LevelPlay and Unity Ads may
+          independently process device,
+          network, advertising, and
+          diagnostic information.
+        </p>
+      </div>
+
+      <p class="muted">
+        Last updated: November 4, 2026
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>1. Information We Collect or Process</h3>
+
+      <p>
+        The App is designed to minimize
+        unnecessary data collection.
+        Account registration is not required
+        for its basic random selection features.
+      </p>
+
+      <p>
+        The Developer does not require users
+        to provide names, email addresses,
+        phone numbers, government-issued
+        identification numbers, or payment
+        details to use the core wheel feature.
+      </p>
+
+      <h4>1.1 User-Entered Information</h4>
+
+      <ul>
+        <li>
+          Wheel options or items entered by users.
+        </li>
+        <li>
+          Saved lists or wheel configurations,
+          where supported.
+        </li>
+        <li>
+          Recently generated random results.
+        </li>
+        <li>
+          User preferences and language settings.
+        </li>
+      </ul>
+
+      <p>
+        Such information may be processed
+        locally to provide random selection,
+        saved-item management, and
+        result-history features.
+      </p>
+
+      <h4>1.2 Advertising-Related Information</h4>
+
+      <p>
+        Third-party advertising services
+        may process the following categories
+        of technical information:
+      </p>
+
+      <ul>
+        <li>
+          Android Advertising ID or other
+          permitted advertising identifiers.
+        </li>
+        <li>
+          IP address and approximate
+          IP-derived location information.
+        </li>
+        <li>
+          Device manufacturer, model,
+          operating system, and version.
+        </li>
+        <li>
+          Device language and relevant
+          technical configuration.
+        </li>
+        <li>
+          Advertising impressions, clicks,
+          views, and related interactions.
+        </li>
+        <li>
+          Diagnostic information, technical
+          events, or SDK error reports.
+        </li>
+        <li>
+          Information relevant to advertising
+          security and fraud prevention.
+        </li>
+      </ul>
+
+      <p>
+        The information actually processed
+        depends on SDK versions, connected
+        advertising networks, device settings,
+        applicable laws, and user privacy choices.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>2. How Information Is Used</h3>
+
+      <p>
+        Information may be processed for
+        the following purposes:
+      </p>
+
+      <ul>
+        <li>
+          Providing wheel spinning
+          and random selection features.
+        </li>
+        <li>
+          Managing saved wheel items
+          and recent selection results.
+        </li>
+        <li>
+          Remembering preferences,
+          including language settings.
+        </li>
+        <li>
+          Maintaining App functionality,
+          performance, and stability.
+        </li>
+        <li>
+          Delivering advertisements
+          and measuring ad performance.
+        </li>
+        <li>
+          Managing advertising frequency
+          and related technical settings.
+        </li>
+        <li>
+          Preventing abuse, maintaining
+          security, and detecting fraud.
+        </li>
+        <li>
+          Complying with applicable
+          legal obligations.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>3. Local Storage on Your Device</h3>
+
+      <p>
+        The App may store wheel items,
+        saved lists, recent results,
+        and preferences locally on
+        the user's device.
+      </p>
+
+      <p>
+        Local storage is used to support
+        the App's functions and remember
+        information between sessions.
+      </p>
+
+      <h4>3.1 Local Data</h4>
+
+      <ul>
+        <li>
+          Entered wheel options and
+          saved configurations.
+        </li>
+        <li>
+          Recent random selection records.
+        </li>
+        <li>
+          App and language preferences.
+        </li>
+        <li>
+          Local values used to manage
+          advertising frequency.
+        </li>
+      </ul>
+
+      <p>
+        These categories of App data
+        are intended to remain on the
+        user's device rather than being
+        uploaded to a separate server
+        operated by the Developer.
+      </p>
+
+      <h4>3.2 Data Deletion</h4>
+
+      <p>
+        Where the App provides
+        deletion functions, users may
+        remove saved items or result
+        records through those functions.
+      </p>
+
+      <p>
+        Users may also clear App data
+        through Android settings or
+        uninstall the App.
+      </p>
+
+      <p>
+        These actions generally remove
+        locally stored application data.
+        However, some information may
+        be restored through device
+        backup and restoration features.
+      </p>
+
+      <h4>3.3 Data Retention</h4>
+
+      <p>
+        Locally saved information may
+        remain on the device until it
+        is deleted by the user,
+        removed through App settings,
+        or affected by device storage
+        management.
+      </p>
+
+      <p>
+        Advertising-related information
+        independently processed by
+        third parties is subject to
+        their respective retention
+        and deletion policies.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>4. Advertising Services</h3>
+
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>
+        for advertising mediation
+        and <strong>Unity Ads</strong>
+        for advertisement delivery.
+      </p>
+
+      <h4>4.1 Unity LevelPlay</h4>
+
+      <p>
+        Unity LevelPlay is an
+        advertising mediation platform
+        used to manage ad requests,
+        advertising networks, ad formats,
+        and monetization reporting.
+      </p>
+
+      <p>
+        Technical information may be
+        processed to operate the
+        mediation service and
+        measure advertising performance.
+      </p>
+
+      <h4>4.2 Unity Ads</h4>
+
+      <p>
+        Unity Ads is an advertising
+        network used to provide
+        advertisements within the App.
+      </p>
+
+      <p>
+        Unity Ads and related advertising
+        technology partners may process
+        data for advertisement delivery,
+        performance measurement,
+        security, and fraud prevention.
+      </p>
+
+      <h4>4.3 Advertising Data Categories</h4>
+
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Examples</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Identifiers</td>
+              <td>
+                Android Advertising ID and
+                other permitted identifiers
+              </td>
+              <td>
+                Advertising delivery,
+                measurement, and frequency
+                management
+              </td>
+            </tr>
+
+            <tr>
+              <td>Network information</td>
+              <td>
+                IP address and approximate
+                inferred location
+              </td>
+              <td>
+                Regional advertising,
+                security, and ad delivery
+              </td>
+            </tr>
+
+            <tr>
+              <td>Device information</td>
+              <td>
+                Device model, operating
+                system, and settings
+              </td>
+              <td>
+                Compatibility and
+                advertisement delivery
+              </td>
+            </tr>
+
+            <tr>
+              <td>Advertising events</td>
+              <td>
+                Impressions, clicks,
+                views, and interactions
+              </td>
+              <td>
+                Advertising performance
+                measurement
+              </td>
+            </tr>
+
+            <tr>
+              <td>Diagnostics</td>
+              <td>
+                SDK errors, crashes,
+                and technical data
+              </td>
+              <td>
+                Stability and
+                troubleshooting
+              </td>
+            </tr>
+
+            <tr>
+              <td>Security data</td>
+              <td>
+                Technical signals relating
+                to suspicious ad activity
+              </td>
+              <td>
+                Fraud prevention
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>4.4 Advertising Personalization</h4>
+
+      <p>
+        Advertisements may be
+        personalized or non-personalized
+        depending on user region,
+        device settings, applicable laws,
+        and privacy choices.
+      </p>
+
+      <p>
+        In certain jurisdictions,
+        consent or additional privacy
+        choices may be required before
+        particular advertising-related
+        processing occurs.
+      </p>
+
+      <p>
+        Where required by applicable law,
+        appropriate consent and privacy
+        controls must be implemented
+        by the App operator.
+      </p>
+
+      <p>
+        Restricting ad personalization
+        does not necessarily disable
+        all advertisements.
+      </p>
+
+      <h4>4.5 Official Unity Privacy Resources</h4>
+
+      <p>
+        For more details about Unity's
+        information processing,
+        please refer to:
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and
+            App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        If additional advertising
+        networks are connected in
+        the future, this policy
+        may be updated to reflect
+        the actual services used.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>5. Third-Party Services</h3>
+
+      <p>
+        The App uses Unity LevelPlay
+        and Unity Ads for advertising.
+      </p>
+
+      <p>
+        Platform services provided by
+        Android and Google Play may
+        also be involved in App
+        distribution, installation,
+        updates, or device operation.
+      </p>
+
+      <p>
+        If separately integrated
+        analytics or crash reporting
+        tools are enabled in the
+        published version, the relevant
+        providers may process technical
+        information according to their
+        own privacy policies.
+      </p>
+
+      <p>
+        The App's local wheel options
+        and result history are distinct
+        from technical data processed
+        by advertising services.
+      </p>
+
+      <p>
+        The Developer does not design
+        the App to upload wheel lists
+        or random selection results
+        to a separate developer-operated
+        server for advertising purposes.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>6. Data Sharing</h3>
+
+      <p>
+        The Developer does not sell
+        user-entered wheel options
+        or locally stored random
+        selection histories.
+      </p>
+
+      <p>
+        However, Unity and related
+        advertising technology partners
+        may process or share advertising
+        identifiers, device information,
+        network data, ad interactions,
+        and technical diagnostics.
+      </p>
+
+      <p>
+        Such processing may occur
+        for advertising delivery,
+        performance measurement,
+        security, and fraud prevention.
+      </p>
+
+      <p>
+        Information may also be
+        processed when required
+        by applicable laws,
+        lawful requests, or
+        legal obligations.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>7. Children's Privacy</h3>
+
+      <p>
+        The App is a general-purpose
+        random selection utility and
+        is not specifically designed
+        as a dedicated children's service.
+      </p>
+
+      <p>
+        The Developer does not require
+        children to provide names,
+        contact information, or
+        other directly identifying
+        information for the core features.
+      </p>
+
+      <p>
+        Parents and legal guardians
+        should encourage children
+        not to enter unnecessary
+        personal or sensitive
+        information into wheel options.
+      </p>
+
+      <p>
+        Additional protections may
+        apply under applicable laws,
+        Google Play policies,
+        and advertising network
+        requirements concerning
+        children or underage users.
+      </p>
+
+      <p>
+        For privacy-related questions,
+        parents or guardians may
+        contact the Developer using
+        the contact information
+        available on Google Play.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>8. Security</h3>
+
+      <p>
+        The Developer seeks to
+        apply reasonable measures
+        to maintain App stability
+        and protect information
+        processed by the App.
+      </p>
+
+      <p>
+        Wheel options, saved lists,
+        and application settings
+        are generally handled using
+        local device storage.
+      </p>
+
+      <p>
+        Advertising-related
+        information is processed
+        under the security practices
+        of the relevant third-party
+        service providers.
+      </p>
+
+      <p>
+        However, no mobile device,
+        storage system, network,
+        or electronic transmission
+        method can guarantee
+        absolute security.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>9. Your Rights and Choices</h3>
+
+      <p>
+        Depending on applicable
+        privacy laws, users may
+        have rights relating to
+        access, correction, deletion,
+        restriction of processing,
+        and other privacy choices.
+      </p>
+
+      <ul>
+        <li>
+          Delete saved wheel items
+          or result histories through
+          available App features.
+        </li>
+
+        <li>
+          Clear locally stored App
+          data through Android settings.
+        </li>
+
+        <li>
+          Uninstall the App to
+          generally remove its
+          local application data.
+        </li>
+
+        <li>
+          Manage or delete the
+          Android Advertising ID
+          where supported.
+        </li>
+
+        <li>
+          Review Unity's available
+          privacy choices and
+          information request procedures.
+        </li>
+
+        <li>
+          Contact the Developer
+          through the Google Play
+          Store listing.
+        </li>
+      </ul>
+
+      <p>
+        Privacy requests concerning
+        information independently
+        processed by an advertising
+        provider may need to be
+        directed to that provider.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>10. Copyright and Legal Notice</h3>
+
+      <p>
+        The App provides a tool
+        for randomly selecting
+        from user-entered options.
+      </p>
+
+      <p>
+        Rights to original App code,
+        interface designs, graphics,
+        and other original materials
+        belong to JCraft Studio
+        or their respective
+        lawful owners.
+      </p>
+
+      <p>
+        Rights to content entered
+        by users remain with the
+        relevant rights holders.
+      </p>
+
+      <p>
+        Users should not enter
+        or distribute content that
+        unlawfully infringes
+        copyrights, trademarks,
+        privacy rights, or other
+        legal rights.
+      </p>
+
+      <p>
+        Unity, Unity LevelPlay,
+        Unity Ads, Google Play,
+        and other third-party
+        service names belong to
+        their respective owners.
+      </p>
+
+      <p>
+        References to these services
+        do not imply official
+        affiliation, sponsorship,
+        or endorsement.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>11. Random Selection Disclaimer</h3>
+
+      <p>
+        The App generates random
+        selection results for
+        general convenience,
+        entertainment, and
+        decision-support purposes.
+      </p>
+
+      <p>
+        The Developer does not
+        guarantee that random
+        selection results will
+        be suitable for every
+        purpose or outcome.
+      </p>
+
+      <p>
+        Users are responsible
+        for determining whether
+        a random selection method
+        is appropriate for
+        their intended use.
+      </p>
+
+      <p>
+        The App should not be
+        treated as a certified
+        randomness source
+        for regulated gaming,
+        security-sensitive
+        applications, or other
+        contexts requiring
+        independently validated
+        random number generation.
+      </p>
+
+      <p>
+        To the extent permitted
+        by applicable law,
+        the Developer's liability
+        may be limited.
+      </p>
+
+      <p>
+        Nothing in this policy
+        excludes or limits
+        liability that cannot
+        legally be excluded.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>12. Changes to This Privacy Policy</h3>
+
+      <p>
+        This Privacy Policy may
+        be updated to reflect
+        changes in App features,
+        advertising SDKs,
+        privacy practices,
+        applicable laws,
+        or Google Play policies.
+      </p>
+
+      <p>
+        The latest version
+        will be published
+        on this page.
+      </p>
+
+      <p>
+        Where legally required,
+        material changes may
+        involve additional
+        notice or consent.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>13. Contact</h3>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        For App-related questions,
+        privacy inquiries,
+        or questions about
+        deleting locally stored
+        information, please refer
+        to the Developer contact
+        information provided
+        on the App's Google Play
+        Store listing.
+      </p>
+
+      <p>
+        For advertising-related
+        privacy questions,
+        users may also consult
+        Unity's official
+        privacy resources.
+      </p>
+
+      <p class="muted">
+        Last Updated:
+        November 4, 2026
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ==================================== -->
+  <!-- KOREAN PRIVACY POLICY                -->
+  <!-- ==================================== -->
+
+  <main id="lang-ko" class="lang">
+
+    <section class="card">
+      <div class="badge">한국어</div>
+      <h2>개인정보처리방침</h2>
+
+      <p>
+        본 개인정보처리방침은
+        JCraft Studio에서 제공하는
+        <strong>Spin Wheel - Random Picker</strong>
+        (이하 "앱")의 이용 과정에서
+        정보가 어떻게 처리되는지
+        설명합니다.
+      </p>
+
+      <p>
+        본 앱은 사용자가 직접 입력한
+        항목을 룰렛에 표시하고,
+        무작위 선택 결과를 확인하는
+        랜덤 선택 및 결정 보조용
+        유틸리티 앱입니다.
+      </p>
+
+      <p>
+        본 방침은 앱 기능,
+        로컬 데이터 저장,
+        제3자 광고 서비스,
+        개인정보 보호 선택권
+        등에 관한 내용을 제공합니다.
+      </p>
+
+      <div class="notice">
+        <p><strong>중요 안내</strong></p>
+
+        <p>
+          사용자가 입력한 룰렛 항목,
+          저장 목록, 최근 추첨 결과,
+          앱 설정 등은 기기 내부에
+          저장될 수 있습니다.
+        </p>
+
+        <p>
+          다만 광고 서비스인
+          Unity LevelPlay 및
+          Unity Ads는 광고 제공과
+          성과 측정을 위해
+          별도의 기기 및 광고 관련
+          정보를 처리할 수 있습니다.
+        </p>
+      </div>
+
+      <p class="muted">
+        최종 수정일:
+        2026년 11월 4일
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>1. 수집 또는 처리될 수 있는 정보</h3>
+
+      <p>
+        본 앱은 불필요한 정보 수집을
+        최소화하도록 설계되었습니다.
+        기본적인 룰렛 및 랜덤 선택 기능을
+        이용하기 위해 별도의
+        회원가입은 필요하지 않습니다.
+      </p>
+
+      <p>
+        개발자는 기본 기능 제공을 위해
+        이름, 이메일 주소, 전화번호,
+        주민등록번호, 결제정보 등
+        직접 식별 가능한 개인정보를
+        별도로 요구하지 않습니다.
+      </p>
+
+      <h4>1.1 사용자 입력 정보</h4>
+
+      <ul>
+        <li>
+          룰렛에 사용자가 입력한
+          선택 항목 및 텍스트
+        </li>
+
+        <li>
+          지원되는 경우 저장된
+          룰렛 항목과 구성 정보
+        </li>
+
+        <li>
+          최근 랜덤 선택 결과
+        </li>
+
+        <li>
+          앱 설정과 언어 설정
+        </li>
+      </ul>
+
+      <p>
+        이러한 정보는 룰렛 실행,
+        무작위 항목 선택,
+        저장 목록 관리,
+        결과 기록 등의 기능을
+        제공하기 위해 기기 내부에서
+        처리될 수 있습니다.
+      </p>
+
+      <h4>1.2 광고 관련 기술 정보</h4>
+
+      <p>
+        제3자 광고 서비스는
+        광고 제공 및 운영을 위해
+        다음과 같은 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 광고 ID 및
+          기타 허용된 광고 식별자
+        </li>
+
+        <li>
+          IP 주소와 IP 기반
+          대략적인 위치 정보
+        </li>
+
+        <li>
+          기기 제조사, 모델,
+          운영체제 및 버전
+        </li>
+
+        <li>
+          기기 언어와
+          기술적 환경 설정
+        </li>
+
+        <li>
+          광고 노출, 클릭,
+          광고 시청 및 관련 이벤트
+        </li>
+
+        <li>
+          SDK 오류, 충돌 및
+          기술적 진단 정보
+        </li>
+
+        <li>
+          광고 보안 및
+          부정행위 방지 관련 정보
+        </li>
+      </ul>
+
+      <p>
+        실제 처리되는 정보의 범위는
+        SDK 버전, 연결된 광고 네트워크,
+        기기 설정, 이용자 지역,
+        관련 법령 및
+        개인정보 보호 선택에 따라
+        달라질 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>2. 정보의 이용 목적</h3>
+
+      <p>
+        앱과 관련 서비스는
+        필요한 범위에서
+        다음 목적을 위해
+        정보를 처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          룰렛 및 랜덤 항목
+          선택 기능 제공
+        </li>
+
+        <li>
+          저장된 룰렛 항목과
+          최근 추첨 결과 관리
+        </li>
+
+        <li>
+          앱 설정 및
+          언어 설정 유지
+        </li>
+
+        <li>
+          앱 기능의 안정적인
+          작동과 성능 개선
+        </li>
+
+        <li>
+          광고 제공 및
+          광고 성과 측정
+        </li>
+
+        <li>
+          광고 표시 주기
+          및 기술적 설정 관리
+        </li>
+
+        <li>
+          보안 유지 및
+          부정행위 방지
+        </li>
+
+        <li>
+          관련 법령 및
+          법적 의무 준수
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>3. 기기 내 로컬 저장</h3>
+
+      <p>
+        본 앱은 룰렛 항목,
+        저장된 목록,
+        최근 결과 및
+        사용자 설정을 유지하기 위해
+        기기 내부 저장 기능을
+        사용할 수 있습니다.
+      </p>
+
+      <h4>3.1 로컬 저장 정보</h4>
+
+      <ul>
+        <li>
+          사용자가 입력한 룰렛 항목
+        </li>
+
+        <li>
+          저장된 선택 항목과 설정
+        </li>
+
+        <li>
+          최근 랜덤 선택 결과
+        </li>
+
+        <li>
+          앱 및 언어 설정
+        </li>
+
+        <li>
+          광고 표시 주기 관련
+          로컬 설정값
+        </li>
+      </ul>
+
+      <p>
+        이러한 정보는 앱 기능 제공과
+        사용자 편의를 위한 것으로,
+        별도의 개발자 운영 서버에
+        업로드하지 않도록
+        설계되었습니다.
+      </p>
+
+      <h4>3.2 로컬 데이터 삭제</h4>
+
+      <p>
+        앱에 기록이나 항목 삭제
+        기능이 제공되는 경우
+        해당 기능을 통해
+        저장 정보를 삭제할 수 있습니다.
+      </p>
+
+      <p>
+        Android 설정에서
+        앱 데이터를 삭제하거나
+        앱을 제거하면 일반적으로
+        앱 내부에 저장된
+        로컬 데이터가 삭제됩니다.
+      </p>
+
+      <p>
+        다만 기기 백업 및
+        복원 기능에 따라
+        일부 데이터가 다시
+        복원될 수 있습니다.
+      </p>
+
+      <h4>3.3 데이터 보관 기간</h4>
+
+      <p>
+        로컬 저장 정보는
+        사용자가 삭제하거나
+        앱의 데이터가 제거되기
+        전까지 기기 내부에
+        유지될 수 있습니다.
+      </p>
+
+      <p>
+        광고 SDK가 독립적으로
+        처리하는 정보는
+        해당 서비스 제공업체의
+        보관 및 삭제 정책에 따릅니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>4. 광고 서비스</h3>
+
+      <p>
+        본 앱은 광고 미디에이션을 위해
+        <strong>Unity LevelPlay</strong>를
+        사용하며, 광고 제공을 위해
+        <strong>Unity Ads</strong>를
+        사용합니다.
+      </p>
+
+      <h4>4.1 Unity LevelPlay</h4>
+
+      <p>
+        Unity LevelPlay는
+        광고 요청과 연결된
+        광고 네트워크,
+        광고 형식, 광고 성과 및
+        수익화 운영을 관리하는
+        미디에이션 플랫폼입니다.
+      </p>
+
+      <p>
+        광고 요청 처리 및
+        성과 측정 과정에서
+        일부 기술적 정보가
+        처리될 수 있습니다.
+      </p>
+
+      <h4>4.2 Unity Ads</h4>
+
+      <p>
+        Unity Ads는 앱 내부에
+        광고를 제공하는
+        광고 네트워크입니다.
+      </p>
+
+      <p>
+        Unity Ads 및 관련
+        광고 기술 협력사는
+        광고 제공, 성과 측정,
+        보안 및 부정행위 방지를 위해
+        관련 정보를 처리할 수 있습니다.
+      </p>
+
+      <h4>4.3 광고 데이터 유형</h4>
+
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>정보 유형</th>
+              <th>처리될 수 있는 정보</th>
+              <th>이용 목적</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>광고 식별자</td>
+              <td>
+                Android 광고 ID 및
+                기타 허용된 식별자
+              </td>
+              <td>
+                광고 제공,
+                측정 및 빈도 관리
+              </td>
+            </tr>
+
+            <tr>
+              <td>네트워크 정보</td>
+              <td>
+                IP 주소 및
+                대략적인 위치 정보
+              </td>
+              <td>
+                광고 제공,
+                지역 설정 및 보안
+              </td>
+            </tr>
+
+            <tr>
+              <td>기기 정보</td>
+              <td>
+                기기 모델,
+                운영체제 및 설정
+              </td>
+              <td>
+                광고 호환성
+                및 제공
+              </td>
+            </tr>
+
+            <tr>
+              <td>광고 이벤트</td>
+              <td>
+                노출, 클릭,
+                시청 및 관련 반응
+              </td>
+              <td>
+                광고 성과 측정
+              </td>
+            </tr>
+
+            <tr>
+              <td>진단 정보</td>
+              <td>
+                SDK 오류,
+                충돌 및 기술 정보
+              </td>
+              <td>
+                안정성 및 오류 확인
+              </td>
+            </tr>
+
+            <tr>
+              <td>보안 정보</td>
+              <td>
+                비정상 광고 활동
+                탐지 관련 기술 정보
+              </td>
+              <td>
+                부정행위 방지
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>4.4 광고 개인화</h4>
+
+      <p>
+        광고는 이용자의 지역,
+        기기 설정, 개인정보 보호
+        선택 및 관련 법령에 따라
+        개인화 또는 비개인화
+        방식으로 제공될 수 있습니다.
+      </p>
+
+      <p>
+        일부 국가 또는 지역에서는
+        광고 관련 개인정보 처리에
+        이용자의 동의 또는
+        추가적인 선택 절차가
+        필요할 수 있습니다.
+      </p>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        앱 운영자는 적절한
+        동의 처리 및 개인정보
+        보호 선택 기능을
+        제공해야 합니다.
+      </p>
+
+      <p>
+        개인화 광고를 제한하더라도
+        모든 광고가
+        중단되는 것은 아닙니다.
+      </p>
+
+      <h4>4.5 Unity 공식 개인정보처리방침</h4>
+
+      <p>
+        Unity의 정보 처리 방식은
+        다음 공식 자료를
+        참고하시기 바랍니다.
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and
+            App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        향후 추가 광고 네트워크가
+        연결되는 경우
+        실제 서비스 구성을 검토하고
+        필요한 내용을
+        본 방침에 반영할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>5. 제3자 서비스</h3>
+
+      <p>
+        본 앱은 광고 제공을 위해
+        Unity LevelPlay 및
+        Unity Ads를 사용합니다.
+      </p>
+
+      <p>
+        Android 및 Google Play의
+        플랫폼 서비스는
+        앱 배포, 설치, 업데이트,
+        기기 동작 등에
+        사용될 수 있습니다.
+      </p>
+
+      <p>
+        공개 버전에서 별도의
+        분석 도구나 오류 보고
+        서비스가 활성화된 경우
+        해당 서비스 제공업체는
+        자체 정책에 따라
+        기술적 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <p>
+        사용자가 입력한
+        룰렛 항목 및 결과 기록은
+        광고 SDK가 처리하는
+        기술 정보와 구분됩니다.
+      </p>
+
+      <p>
+        개발자는 룰렛 목록이나
+        추첨 결과를 광고 목적으로
+        자체 운영 서버에
+        업로드하도록
+        설계하지 않았습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>6. 정보 제공 및 공유</h3>
+
+      <p>
+        개발자는 사용자가 직접
+        입력한 룰렛 항목이나
+        로컬 추첨 기록을
+        판매하지 않습니다.
+      </p>
+
+      <p>
+        다만 Unity 및
+        관련 광고 기술 협력사는
+        광고 식별자, 기기 정보,
+        네트워크 정보, 광고 반응,
+        기술적 진단 정보 등을
+        처리하거나 공유할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 처리는 광고 제공,
+        성과 측정, 서비스 보안,
+        부정행위 방지 등을
+        목적으로 이루어질 수 있습니다.
+      </p>
+
+      <p>
+        법률 또는 적법한 요청에 따라
+        필요한 범위에서 정보가
+        처리될 수도 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>7. 아동의 개인정보</h3>
+
+      <p>
+        본 앱은 일반적인
+        무작위 선택 유틸리티이며,
+        아동 전용 서비스로
+        특별히 설계된 앱은 아닙니다.
+      </p>
+
+      <p>
+        개발자는 앱의 기본 기능 제공을 위해
+        아동의 이름, 연락처,
+        기타 직접 식별 가능한
+        개인정보를 요구하지 않습니다.
+      </p>
+
+      <p>
+        보호자 또는 법정대리인은
+        아동이 룰렛 항목에
+        불필요한 개인정보나
+        민감한 정보를
+        입력하지 않도록
+        안내할 수 있습니다.
+      </p>
+
+      <p>
+        아동 및 연령 제한
+        대상 이용자의 정보 처리는
+        관련 법령, Google Play 정책,
+        광고 서비스의 추가 요건을
+        따릅니다.
+      </p>
+
+      <p>
+        아동 개인정보 관련 문의는
+        Google Play 스토어에
+        표시된 개발자 연락처를
+        통해 제출할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>8. 보안</h3>
+
+      <p>
+        개발자는 앱의 안정성과
+        정보 보호를 위해
+        합리적인 노력을 기울입니다.
+      </p>
+
+      <p>
+        룰렛 항목,
+        저장 목록 및
+        앱 설정은 일반적으로
+        기기 내부에서 처리됩니다.
+      </p>
+
+      <p>
+        광고 관련 정보는
+        해당 제3자 서비스의
+        보안 정책 및 보호조치에
+        따라 관리될 수 있습니다.
+      </p>
+
+      <p>
+        다만 모바일 기기,
+        저장소, 네트워크 및
+        전자적 정보 전송 방식의
+        특성상 절대적인
+        보안을 보장할 수는 없습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>9. 이용자의 권리와 선택</h3>
+
+      <p>
+        이용자는 관련 법령이
+        허용하는 범위에서
+        개인정보의 열람, 정정,
+        삭제, 처리 제한 및
+        기타 개인정보 보호
+        권리를 행사할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          앱에 제공된 기능을 통한
+          저장 항목 및 결과 기록 삭제
+        </li>
+
+        <li>
+          Android 설정에서
+          앱 데이터 삭제
+        </li>
+
+        <li>
+          앱 제거를 통한
+          로컬 데이터 삭제
+        </li>
+
+        <li>
+          지원되는 Android
+          광고 ID 관리 또는 삭제
+        </li>
+
+        <li>
+          Unity의 개인정보 보호
+          선택 및 정보 요청 절차 확인
+        </li>
+
+        <li>
+          Google Play 개발자
+          연락처를 통한 문의
+        </li>
+      </ul>
+
+      <p>
+        제3자 광고 서비스가
+        독립적으로 처리하는
+        데이터의 개인정보 관련
+        요청은 해당 제공업체를
+        통해 처리해야 할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>10. 저작권 및 법적 안내</h3>
+
+      <p>
+        본 앱은 사용자가 입력한
+        항목 가운데 무작위로
+        결과를 선택하는 도구입니다.
+      </p>
+
+      <p>
+        앱의 독창적인 코드,
+        디자인, 그래픽 및
+        자체 제작 콘텐츠에 관한
+        권리는 JCraft Studio 또는
+        정당한 권리자에게
+        귀속됩니다.
+      </p>
+
+      <p>
+        사용자가 입력한
+        콘텐츠의 권리는
+        해당 권리자에게 있습니다.
+      </p>
+
+      <p>
+        이용자는 타인의 저작권,
+        상표권, 개인정보 및
+        기타 권리를 침해하는
+        내용을 부적법하게
+        입력하거나 배포해서는
+        안 됩니다.
+      </p>
+
+      <p>
+        Unity, Unity LevelPlay,
+        Unity Ads, Google Play 등
+        제3자 상표 및 서비스명의
+        권리는 각 권리자에게
+        귀속됩니다.
+      </p>
+
+      <p>
+        해당 명칭의 사용은
+        기술 또는 정보 출처를
+        설명하기 위한 것이며
+        공식적인 제휴나
+        후원을 의미하지 않습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>11. 랜덤 선택 결과 관련 안내</h3>
+
+      <p>
+        본 앱은 일반적인
+        편의, 오락 및 의사결정
+        보조 목적으로 무작위
+        선택 결과를 제공합니다.
+      </p>
+
+      <p>
+        개발자는 모든 사용 목적에서
+        무작위 결과가 특정한
+        정확성 또는 결과를
+        보장한다고 주장하지 않습니다.
+      </p>
+
+      <p>
+        이용자는 본 앱의 랜덤
+        선택 방식이 자신의
+        이용 목적에 적합한지
+        직접 판단해야 합니다.
+      </p>
+
+      <p>
+        본 앱은 별도로 검증된
+        보안용 난수 생성기나
+        규제 대상 추첨 시스템으로
+        제공되는 서비스가 아닙니다.
+      </p>
+
+      <p>
+        관련 법령에서 허용하는
+        범위 내에서 개발자의
+        책임이 제한될 수 있습니다.
+      </p>
+
+      <p>
+        다만 법령상 면제하거나
+        제한할 수 없는 책임은
+        제외됩니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>12. 개인정보처리방침 변경</h3>
+
+      <p>
+        본 개인정보처리방침은
+        앱 기능, 광고 SDK,
+        개인정보 처리 방식,
+        관련 법령 또는
+        Google Play 정책의
+        변경에 따라
+        수정될 수 있습니다.
+      </p>
+
+      <p>
+        변경된 내용은
+        본 페이지를 통해
+        게시됩니다.
+      </p>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        중요한 변경 사항에 대한
+        추가 안내 또는 동의
+        절차가 이루어질 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>13. 개발자 연락처</h3>
+
+      <p>
+        <strong>개발자:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        앱 이용, 개인정보 처리,
+        로컬 데이터 삭제와
+        관련된 문의는
+        해당 앱의 Google Play
+        스토어 등록정보에 표시된
+        개발자 연락처를
+        참고하시기 바랍니다.
+      </p>
+
+      <p>
+        Unity 광고 관련
+        개인정보 문의는
+        Unity 공식 개인정보
+        보호 자료를 통해
+        관련 절차를
+        확인할 수 있습니다.
+      </p>
+
+      <p class="muted">
+        최종 수정일:
+        2026년 11월 4일
+      </p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <p>
+      <strong>JCraft Studio</strong>
+    </p>
+
+    <p>
+      Spin Wheel - Random Picker
+    </p>
+
+    <p>
+      Last Updated / 최종 수정일:
+      2026-11-04
+    </p>
+
+    <p>
+      © 2026 JCraft Studio.
+      All rights reserved.
+    </p>
+  </footer>
+
+</div>
+
+<!-- LANGUAGE CONTROL -->
+
+<script>
+  (function () {
+    "use strict";
+
+    const storageKey =
+      "spin-wheel-privacy-language";
+
+    function setLanguage(lang, savePreference) {
+      const selected =
+        lang === "ko" ? "ko" : "en";
+
+      const english =
+        document.getElementById("lang-en");
+
+      const korean =
+        document.getElementById("lang-ko");
+
+      const englishButton =
+        document.getElementById("btn-en");
+
+      const koreanButton =
+        document.getElementById("btn-ko");
+
+      english.classList.toggle(
+        "active",
+        selected === "en"
+      );
+
+      korean.classList.toggle(
+        "active",
+        selected === "ko"
+      );
+
+      englishButton.classList.toggle(
+        "active",
+        selected === "en"
+      );
+
+      koreanButton.classList.toggle(
+        "active",
+        selected === "ko"
+      );
+
+      englishButton.setAttribute(
+        "aria-pressed",
+        String(selected === "en")
+      );
+
+      koreanButton.setAttribute(
+        "aria-pressed",
+        String(selected === "ko")
+      );
+
+      document.documentElement.lang =
+        selected;
+
+      document.getElementById(
+        "page-title"
+      ).textContent =
+        selected === "ko"
+          ? "개인정보처리방침"
+          : "Privacy Policy";
+
+      document.title =
+        selected === "ko"
+          ? "개인정보처리방침 | Spin Wheel - Random Picker"
+          : "Privacy Policy | Spin Wheel - Random Picker";
+
+      if (savePreference) {
+        try {
+          localStorage.setItem(
+            storageKey,
+            selected
+          );
+        } catch (error) {
+          // Language switching remains available
+          // when local storage is disabled.
+        }
+      }
     }
-  </script>
+
+    function getInitialLanguage() {
+      try {
+        const savedLanguage =
+          localStorage.getItem(storageKey);
+
+        if (
+          savedLanguage === "ko" ||
+          savedLanguage === "en"
+        ) {
+          return savedLanguage;
+        }
+      } catch (error) {
+        // Fall back to browser language.
+      }
+
+      const browserLanguage =
+        (
+          navigator.language ||
+          "en"
+        ).toLowerCase();
+
+      return browserLanguage.startsWith("ko")
+        ? "ko"
+        : "en";
+    }
+
+    window.showLang = function (lang) {
+      setLanguage(lang, true);
+    };
+
+    setLanguage(
+      getInitialLanguage(),
+      false
+    );
+  })();
+</script>
+
 </body>
 </html>
