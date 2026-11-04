@@ -1,371 +1,1816 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy | Tournament Bracket Generator</title>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+  <meta
+    name="description"
+    content="Privacy Policy for Tournament Bracket Generator by JCraft Studio."
+  >
 
-<style>
-body{
-    margin:0;
-    padding:0;
-    background:#f5f7fb;
-    color:#222;
-    font-family:Arial,sans-serif;
-    line-height:1.7;
-}
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:24px;
-}
-.card{
-    background:#fff;
-    border-radius:16px;
-    padding:24px;
-    margin-bottom:20px;
-    box-shadow:0 2px 10px rgba(0,0,0,.06);
-}
-h1{
-    margin-top:0;
-}
-.lang{
-    display:flex;
-    gap:10px;
-    margin-bottom:20px;
-}
-button{
-    border:none;
-    border-radius:8px;
-    padding:10px 14px;
-    cursor:pointer;
-}
-.active{
-    background:#4f46e5;
-    color:#fff;
-}
-.hidden{
-    display:none;
-}
-</style>
+  <title>
+    Privacy Policy | Tournament Bracket Generator
+  </title>
 
-<script>
-function showLang(lang){
-    document.getElementById('ko').classList.add('hidden');
-    document.getElementById('en').classList.add('hidden');
-
-    document.getElementById(lang).classList.remove('hidden');
-
-    document.getElementById('btnKo').classList.remove('active');
-    document.getElementById('btnEn').classList.remove('active');
-
-    if(lang==='ko'){
-        document.getElementById('btnKo').classList.add('active');
-    }else{
-        document.getElementById('btnEn').classList.add('active');
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f5f7fb;
+      --surface: #ffffff;
+      --text: #222222;
+      --muted: #64748b;
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --border: #e2e8f0;
+      --notice: #f1f0ff;
     }
-}
-</script>
 
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Noto Sans KR",
+        Arial,
+        sans-serif;
+      line-height: 1.75;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    .header {
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 27px;
+      line-height: 1.4;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: var(--primary-dark);
+      font-size: 20px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 9px;
+      font-size: 17px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    a {
+      color: var(--primary);
+      overflow-wrap: anywhere;
+    }
+
+    .lang {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      background: white;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #eef2ff;
+    }
+
+    button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .notice {
+      background: var(--notice);
+      border-left: 4px solid var(--primary);
+      padding: 15px 17px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 24px;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 14px;
+      }
+
+      .card {
+        padding: 19px;
+        border-radius: 13px;
+      }
+
+      h1 {
+        font-size: 23px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+    }
+  </style>
+
+  <script>
+    function showLang(lang) {
+      const selected = lang === 'en' ? 'en' : 'ko';
+
+      const korean =
+        document.getElementById('ko');
+
+      const english =
+        document.getElementById('en');
+
+      const btnKo =
+        document.getElementById('btnKo');
+
+      const btnEn =
+        document.getElementById('btnEn');
+
+      korean.classList.toggle(
+        'hidden',
+        selected !== 'ko'
+      );
+
+      english.classList.toggle(
+        'hidden',
+        selected !== 'en'
+      );
+
+      btnKo.classList.toggle(
+        'active',
+        selected === 'ko'
+      );
+
+      btnEn.classList.toggle(
+        'active',
+        selected === 'en'
+      );
+
+      btnKo.setAttribute(
+        'aria-pressed',
+        String(selected === 'ko')
+      );
+
+      btnEn.setAttribute(
+        'aria-pressed',
+        String(selected === 'en')
+      );
+
+      document.documentElement.lang = selected;
+
+      document.title = selected === 'ko'
+        ? '개인정보처리방침 | Tournament Bracket Generator'
+        : 'Privacy Policy | Tournament Bracket Generator';
+
+      try {
+        localStorage.setItem(
+          'tournamentPrivacyLanguage',
+          selected
+        );
+      } catch (error) {
+        // Language switching remains available.
+      }
+    }
+
+    document.addEventListener(
+      'DOMContentLoaded',
+      function() {
+        let savedLanguage = null;
+
+        try {
+          savedLanguage = localStorage.getItem(
+            'tournamentPrivacyLanguage'
+          );
+        } catch (error) {
+          savedLanguage = null;
+        }
+
+        if (
+          savedLanguage === 'ko' ||
+          savedLanguage === 'en'
+        ) {
+          showLang(savedLanguage);
+          return;
+        }
+
+        const browserLanguage =
+          (navigator.language || 'en')
+            .toLowerCase();
+
+        showLang(
+          browserLanguage.startsWith('ko')
+            ? 'ko'
+            : 'en'
+        );
+      }
+    );
+  </script>
 </head>
+
 <body>
 
 <div class="container">
 
-<div class="lang">
-<button id="btnKo" class="active" onclick="showLang('ko')">한국어</button>
-<button id="btnEn" onclick="showLang('en')">English</button>
-</div>
-
-<div id="ko">
-
-<div class="card">
-<h1>개인정보처리방침</h1>
-
-<p>
-Tournament Bracket Generator(이하 "앱")는 사용자의 개인정보 보호를 중요하게 생각합니다.
-본 개인정보처리방침은 앱 사용 시 처리되는 정보에 대해 설명합니다.
-</p>
-
-<p>
-최종 업데이트: 2026-06-04
-</p>
-</div>
-
-<div class="card">
-<h2>1. 수집하는 정보</h2>
-
-<p>
-앱은 회원가입 기능을 제공하지 않습니다.
-</p>
-
-<p>
-사용자가 입력한 참가자 이름, 토너먼트 기록, 앱 설정 정보는 사용자의 기기 내부 저장소에 저장될 수 있습니다.
-</p>
-
-<p>
-개발자는 해당 데이터를 직접 수집하거나 서버로 전송하지 않습니다.
-</p>
-</div>
-
-<div class="card">
-<h2>2. 광고</h2>
-
-<p>
-앱은 Google AdMob 광고 서비스를 사용할 수 있습니다.
-</p>
-
-<p>
-Google은 광고 제공 과정에서 광고 식별자, 기기 정보, 사용 정보 등을 처리할 수 있습니다.
-</p>
-
-<p>
-Google의 개인정보 처리 방식은 아래 정책을 참고하십시오.
-</p>
-
-<p>
-https://policies.google.com/privacy
-</p>
-</div>
-
-<div class="card">
-<h2>3. 데이터 저장</h2>
-
-<p>
-토너먼트 참가자 정보와 기록은 사용자의 기기에 저장될 수 있습니다.
-</p>
-
-<p>
-개발자는 해당 데이터에 접근하지 않습니다.
-</p>
-
-<p>
-앱 삭제 시 저장 데이터가 제거될 수 있습니다.
-</p>
-</div>
-
-<div class="card">
-<h2>4. 개인정보 판매</h2>
-
-<p>
-개발자는 사용자의 개인정보를 판매하지 않습니다.
-</p>
-
-<p>
-사용자의 개인정보를 제3자에게 판매, 임대 또는 거래하지 않습니다.
-</p>
-</div>
-
-<div class="card">
-<h2>5. 저작권 및 상표</h2>
-
-<p>
-사용자가 입력한 참가자 이름, 팀명, 대회명 등에 대한 권리는 해당 권리자에게 있습니다.
-</p>
-
-<p>
-앱은 사용자가 입력한 데이터를 표시하는 도구일 뿐이며 어떠한 상표권, 저작권 또는 지식재산권도 주장하지 않습니다.
-</p>
-
-<p>
-앱은 특정 스포츠 단체, 게임사, 대회 운영사 또는 공식 이벤트와 관련되어 있지 않습니다.
-</p>
-</div>
-
-<div class="card">
-<h2>6. 면책조항</h2>
-
-<p>
-앱은 토너먼트 진행을 지원하는 유틸리티 도구입니다.
-</p>
-
-<p>
-생성된 대진표, 경기 결과, 참가자 정보의 정확성은 사용자의 입력에 따라 달라질 수 있습니다.
-</p>
-
-<p>
-개발자는 사용자가 입력한 정보 또는 생성된 결과에 대해 법적 책임을 지지 않습니다.
-</p>
-</div>
-
-<div class="card">
-<h2>7. 아동 개인정보</h2>
-
-<p>
-앱은 의도적으로 아동의 개인정보를 수집하지 않습니다.
-</p>
-
-<p>
-개발자가 아동 개인정보가 수집되었음을 인지하는 경우 적절한 조치를 취할 수 있습니다.
-</p>
-</div>
-
-<div class="card">
-<h2>8. 정책 변경</h2>
-
-<p>
-본 개인정보처리방침은 필요에 따라 변경될 수 있습니다.
-</p>
-
-<p>
-변경 시 본 페이지를 통해 공지됩니다.
-</p>
-</div>
-
-<div class="card">
-<h2>9. 개발자 정보 및 문의</h2>
-
-<p>
-개발자 정보, 앱 제공자 정보, 연락처 및 추가 문의 방법은 Google Play 스토어에 표시된 개발자 정보를 참고해 주십시오.
-</p>
-</div>
-
-</div>
-
-<div id="en" class="hidden">
-
-<div class="card">
-<h1>Privacy Policy</h1>
-
-<p>
-Tournament Bracket Generator ("the App") respects your privacy.
-This Privacy Policy explains how information may be handled when using the App.
-</p>
-
-<p>
-Last Updated: June 4, 2026
-</p>
-</div>
-
-<div class="card">
-<h2>1. Information We Collect</h2>
-
-<p>
-The App does not require account registration.
-</p>
-
-<p>
-Participant names, tournament records, and application settings entered by users may be stored locally on the user's device.
-</p>
-
-<p>
-The developer does not directly collect or transmit this information to external servers.
-</p>
-</div>
-
-<div class="card">
-<h2>2. Advertising</h2>
-
-<p>
-The App may use Google AdMob advertising services.
-</p>
-
-<p>
-Google may process advertising identifiers, device information, and usage data in accordance with its own policies.
-</p>
-
-<p>
-For more information, please visit:
-</p>
-
-<p>
-https://policies.google.com/privacy
-</p>
-</div>
-
-<div class="card">
-<h2>3. Data Storage</h2>
-
-<p>
-Tournament participants and bracket records may be stored locally on the user's device.
-</p>
-
-<p>
-The developer does not have access to such locally stored information.
-</p>
-
-<p>
-Deleting the App may remove locally stored data.
-</p>
-</div>
-
-<div class="card">
-<h2>4. Sale of Personal Information</h2>
-
-<p>
-The developer does not sell personal information.
-</p>
-
-<p>
-Personal information is not sold, rented, or traded to third parties.
-</p>
-</div>
-
-<div class="card">
-<h2>5. Copyright and Trademarks</h2>
-
-<p>
-Names, teams, tournaments, and other content entered by users remain the property of their respective owners.
-</p>
-
-<p>
-The App merely displays information entered by users and does not claim ownership of any intellectual property.
-</p>
-
-<p>
-The App is not affiliated with any sports organization, game company, tournament operator, or official event.
-</p>
-</div>
-
-<div class="card">
-<h2>6. Disclaimer</h2>
-
-<p>
-The App is provided as a tournament management utility tool.
-</p>
-
-<p>
-Bracket generation, match results, and participant information depend on user input.
-</p>
-
-<p>
-The developer is not responsible for any loss, damage, dispute, or consequence arising from the use of the App.
-</p>
-</div>
-
-<div class="card">
-<h2>7. Children's Privacy</h2>
-
-<p>
-The App does not knowingly collect personal information from children.
-</p>
-
-<p>
-If the developer becomes aware of such collection, appropriate actions may be taken.
-</p>
-</div>
-
-<div class="card">
-<h2>8. Changes to This Policy</h2>
-
-<p>
-This Privacy Policy may be updated from time to time.
-</p>
-
-<p>
-Updates will be posted on this page.
-</p>
-</div>
-
-<div class="card">
-<h2>9. Developer Information and Contact</h2>
-
-<p>
-For developer information, app provider details, contact information, and additional inquiry methods, please refer to the developer information displayed on the Google Play Store listing.
-</p>
-</div>
-
-</div>
+  <nav class="lang" aria-label="Language selection">
+    <button
+      type="button"
+      id="btnKo"
+      class="active"
+      onclick="showLang('ko')">
+      한국어
+    </button>
+
+    <button
+      type="button"
+      id="btnEn"
+      onclick="showLang('en')">
+      English
+    </button>
+  </nav>
+
+  <!-- ====================================== -->
+  <!-- KOREAN PRIVACY POLICY                  -->
+  <!-- ====================================== -->
+
+  <main id="ko">
+
+    <section class="card header">
+      <h1>개인정보처리방침</h1>
+
+      <p>
+        <strong>Tournament Bracket Generator</strong>
+        (이하 "앱")는 JCraft Studio가 제공하는
+        토너먼트 대진표 생성 및 관리 도구입니다.
+      </p>
+
+      <p>
+        본 개인정보처리방침은 앱 이용 과정에서
+        처리될 수 있는 정보와
+        이용자의 개인정보 보호 권리를
+        설명합니다.
+      </p>
+
+      <p>
+        <strong>개발자:</strong> JCraft Studio
+      </p>
+
+      <p class="muted">
+        최종 수정일: 2026년 11월 4일
+      </p>
+
+      <div class="notice">
+        본 앱은 회원가입이나 사용자 계정 생성을
+        요구하지 않습니다.
+
+        참가자 정보, 경기 결과 및 토너먼트
+        기록은 기본적으로 이용자의 기기에서
+        처리됩니다.
+
+        다만 제3자 광고 SDK는 광고 제공을 위해
+        별도의 정보를 처리할 수 있습니다.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1. 수집 및 처리하는 정보</h2>
+
+      <h3>1.1 사용자가 입력하는 정보</h3>
+
+      <p>
+        앱은 토너먼트 대진표 생성 및
+        관리 기능을 제공하기 위해
+        다음 정보를 처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>참가자 이름 또는 별칭</li>
+        <li>팀 이름</li>
+        <li>토너먼트 및 대회 명칭</li>
+        <li>대진표 구성 정보</li>
+        <li>경기 결과 및 진행 상태</li>
+        <li>사용자가 저장한 토너먼트 기록</li>
+      </ul>
+
+      <p>
+        이러한 정보는 앱 기능 제공을 위해
+        이용자의 기기 내부에서
+        처리되거나 저장될 수 있습니다.
+      </p>
+
+      <p>
+        개발자는 해당 정보를
+        별도의 개발자 운영 서버에
+        직접 수집하거나 저장하지 않습니다.
+      </p>
+
+      <h3>1.2 앱 설정 정보</h3>
+
+      <p>
+        앱은 기능 제공 및 설정 유지를 위해
+        다음 정보를 기기 내에 저장할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>언어 및 화면 설정</li>
+        <li>사용자가 선택한 앱 환경설정</li>
+        <li>토너먼트 진행 정보</li>
+        <li>저장된 대진표 및 기록</li>
+        <li>앱 기능에 필요한 일부 로컬 설정값</li>
+      </ul>
+
+      <p>
+        해당 정보는 앱 기능 제공을 위해
+        이용되며 개발자가 별도로 운영하는
+        계정 데이터베이스에 저장되지 않습니다.
+      </p>
+
+      <h3>1.3 직접 요구하지 않는 정보</h3>
+
+      <p>
+        앱의 기본 기능을 이용하기 위해
+        별도의 회원가입은 필요하지 않습니다.
+      </p>
+
+      <p>
+        개발자는 계정 생성 목적으로
+        실제 이름, 전화번호, 이메일 주소,
+        비밀번호 등의 개인정보를
+        필수적으로 요구하지 않습니다.
+      </p>
+
+      <p>
+        이용자는 참가자 이름이나
+        대회 정보에 타인의 불필요한
+        개인정보 또는 민감한 정보를
+        입력하지 않는 것이 좋습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. 광고 및 제3자 서비스</h2>
+
+      <p>
+        본 앱은 광고 미디에이션을 위해
+        <strong>Unity LevelPlay</strong>를
+        사용하며, 광고 제공을 위해
+        <strong>Unity Ads</strong>를 사용합니다.
+      </p>
+
+      <p>
+        Unity LevelPlay는 광고 요청,
+        광고 네트워크 연결 및
+        광고 수익화 관리를 위한
+        미디에이션 플랫폼입니다.
+      </p>
+
+      <p>
+        Unity Ads는 앱 내 광고를
+        제공하는 서비스입니다.
+      </p>
+
+      <p>
+        광고 제공업체는 광고 송출,
+        광고 성과 측정, 보안,
+        부정행위 방지 및
+        관련 서비스 운영을 위해
+        일부 정보를 자동으로 처리할 수 있습니다.
+      </p>
+
+      <h3>2.1 광고 관련 처리 정보</h3>
+
+      <p>
+        SDK 구성, 기기 설정,
+        운영체제, 지역 및
+        개인정보 보호 선택에 따라
+        다음 정보가 처리될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 광고 식별자
+          (Advertising ID)
+        </li>
+
+        <li>
+          기타 허용된 기기 및 앱 식별자
+        </li>
+
+        <li>
+          IP 주소 및 IP 주소를 통해
+          추정되는 대략적인 위치 정보
+        </li>
+
+        <li>
+          기기 제조사, 모델,
+          운영체제 및 버전 정보
+        </li>
+
+        <li>
+          앱 식별 정보와 기술적 앱 정보
+        </li>
+
+        <li>
+          광고 노출, 클릭 및
+          광고 상호작용 정보
+        </li>
+
+        <li>
+          광고 성과 측정 및 분석 정보
+        </li>
+
+        <li>
+          오류, 충돌, 진단 및
+          성능 관련 정보
+        </li>
+
+        <li>
+          광고 보안 및 부정행위
+          방지를 위한 기술적 정보
+        </li>
+      </ul>
+
+      <p>
+        실제 처리되는 정보의 종류와 범위는
+        SDK 버전, 광고 서비스 설정,
+        관련 법령 및 이용자의
+        개인정보 보호 선택에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h3>2.2 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay는 광고 요청,
+        미디에이션, 광고 성과 보고 및
+        광고 서비스 관리를 위해
+        기술적인 정보를 처리할 수 있습니다.
+      </p>
+
+      <h3>2.3 Unity Ads</h3>
+
+      <p>
+        Unity Ads는 앱에 광고를 제공하며
+        광고 식별자, 기기 정보,
+        IP 주소 및 광고 관련
+        상호작용 정보를 처리할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 정보는 광고 제공,
+        성과 측정, 보안,
+        부정행위 방지 및
+        관련 법령에서 허용하는
+        개인화 광고 등에 이용될 수 있습니다.
+      </p>
+
+      <h3>2.4 공식 개인정보처리방침</h3>
+
+      <p>
+        Unity 및 관련 광고 기술 협력사의
+        데이터 처리에 관한 자세한 내용은
+        다음 공식 개인정보 보호 문서를
+        참고하시기 바랍니다.
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        향후 추가 광고 네트워크가
+        연결되거나 개인정보 처리 방식이
+        변경되는 경우 관련 내용을
+        본 방침에 반영합니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>3. 데이터 저장, 보관 및 삭제</h2>
+
+      <h3>3.1 로컬 데이터 저장</h3>
+
+      <p>
+        토너먼트 참가자 정보,
+        대진표 및 경기 결과는
+        이용자의 기기에
+        저장될 수 있습니다.
+      </p>
+
+      <p>
+        개발자는 이러한 로컬 데이터를
+        별도의 개발자 운영 서버에
+        저장하지 않습니다.
+      </p>
+
+      <h3>3.2 데이터 삭제</h3>
+
+      <p>
+        앱에서 기록 삭제 또는
+        초기화 기능이 제공되는 경우
+        이를 통해 관련 정보를
+        삭제할 수 있습니다.
+      </p>
+
+      <p>
+        Android 기기 설정에서
+        앱 데이터를 삭제하거나
+        앱을 제거하면 일반적으로
+        로컬 데이터가 삭제됩니다.
+      </p>
+
+      <p>
+        다만 운영체제의 백업 및
+        복원 기능에 따라 일부 정보가
+        다시 복원될 수 있습니다.
+      </p>
+
+      <h3>3.3 제3자 광고 데이터</h3>
+
+      <p>
+        Unity 및 관련 광고 기술 협력사가
+        독립적으로 수집하거나
+        처리하는 정보의 보관 및
+        삭제는 해당 업체의 정책과
+        관련 법령에 따릅니다.
+      </p>
+
+      <p>
+        광고 데이터의 열람,
+        삭제 및 개인정보 관련 요청은
+        해당 서비스 제공업체의
+        공식 개인정보 보호 절차를
+        통해 진행할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>4. 개인정보의 공유 및 판매</h2>
+
+      <p>
+        개발자는 이용자가 직접 입력한
+        참가자 이름, 팀명 또는
+        토너먼트 기록을 판매하지 않습니다.
+      </p>
+
+      <p>
+        또한 해당 정보를
+        개발자가 운영하는 별도의 서버에
+        업로드하여 판매하거나
+        제3자에게 제공하지 않습니다.
+      </p>
+
+      <p>
+        다만 광고 서비스를 위해
+        Unity 및 관련 광고 기술 협력사가
+        광고 식별자, IP 주소,
+        기기 정보 및 광고
+        상호작용 정보 등을 처리하거나
+        공유할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 데이터 처리에는
+        해당 업체의 개인정보처리방침 및
+        관련 법령이 적용됩니다.
+      </p>
+
+      <p>
+        적법한 법률상 의무 또는
+        유효한 법적 요청에 대응하기 위해
+        필요한 경우 관련 법령에 따른
+        정보 처리가 이루어질 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. 개인정보 보호 선택권</h2>
+
+      <p>
+        이용자는 다음 방법으로
+        개인정보 관련 선택권을
+        행사할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 개인정보 보호 설정에서
+          지원되는 광고 ID 관리 또는
+          삭제 기능을 이용할 수 있습니다.
+        </li>
+
+        <li>
+          Unity 광고에 개인정보 보호
+          선택 기능이 제공되는 경우
+          해당 기능을 이용할 수 있습니다.
+        </li>
+
+        <li>
+          앱에서 제공되는 기록 삭제 및
+          초기화 기능을 이용할 수 있습니다.
+        </li>
+
+        <li>
+          Android 설정에서 앱 데이터를
+          삭제할 수 있습니다.
+        </li>
+
+        <li>
+          앱 제거를 통해 로컬 데이터를
+          삭제할 수 있습니다.
+        </li>
+
+        <li>
+          개인정보 처리와 관련된 문의는
+          Google Play 개발자 연락처를
+          통해 제출할 수 있습니다.
+        </li>
+      </ul>
+
+      <p>
+        일부 국가 또는 지역에서는
+        개인화 광고 및 관련 데이터
+        처리에 대해 이용자의 동의가
+        요구될 수 있습니다.
+      </p>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        적용 가능한 광고 개인정보
+        보호 선택 절차가 제공될 수 있습니다.
+      </p>
+
+      <p>
+        광고 개인화 설정을 제한하더라도
+        모든 광고가 중단되는 것은 아닙니다.
+        개인화되지 않은 광고가
+        계속 표시될 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>6. 저작권 및 상표</h2>
+
+      <p>
+        이용자가 입력한 참가자 이름,
+        팀명, 대회명 및 기타 콘텐츠에
+        관한 권리는 해당 권리자에게
+        귀속됩니다.
+      </p>
+
+      <p>
+        본 앱은 이용자가 입력한
+        데이터를 사용하여 대진표를
+        생성하고 표시하는 도구입니다.
+      </p>
+
+      <p>
+        개발자는 이용자가 입력한
+        제3자 소유의 상표, 저작물 또는
+        기타 지식재산권에 대한
+        소유권을 주장하지 않습니다.
+      </p>
+
+      <p>
+        앱의 독창적인 프로그램 코드,
+        UI 디자인, 그래픽,
+        문구 및 기타 자체 제작물에
+        관한 권리는 관련 법령에 따라
+        개발자 또는 정당한
+        권리자에게 귀속됩니다.
+      </p>
+
+      <p>
+        Unity, Unity LevelPlay,
+        Unity Ads, Google Play 및
+        기타 제3자의 상표와
+        서비스명은 각각의
+        권리자에게 귀속됩니다.
+      </p>
+
+      <p>
+        본 앱은 별도의 명시가 없는 한
+        특정 스포츠 단체, 게임사,
+        대회 운영사 또는 공식 이벤트와
+        제휴, 승인 또는 후원 관계에
+        있지 않습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>7. 면책 및 책임 제한</h2>
+
+      <p>
+        본 앱은 토너먼트 대진표
+        생성 및 관리를 지원하는
+        일반적인 유틸리티 도구입니다.
+      </p>
+
+      <p>
+        생성된 대진표,
+        참가자 정보, 경기 결과 및
+        토너먼트 진행 상태는
+        이용자의 입력과
+        앱의 계산 및 처리 방식에
+        따라 달라질 수 있습니다.
+      </p>
+
+      <p>
+        개발자는 앱의 안정적인
+        기능 제공을 위해 노력하지만
+        모든 상황에서 오류가 없거나
+        중단 없이 작동한다고
+        보장하지 않습니다.
+      </p>
+
+      <p>
+        이용자는 대진표 및
+        경기 결과를 실제 대회나
+        중요한 활동에 활용하기 전에
+        해당 정보의 정확성과
+        적용 가능한 규칙을
+        직접 확인해야 합니다.
+      </p>
+
+      <p>
+        관련 법령에서 허용하는 범위 내에서
+        개발자는 잘못된 사용자 입력,
+        기술적 오류 또는
+        앱 결과 활용으로 인해
+        발생한 손해에 대한
+        책임을 제한합니다.
+      </p>
+
+      <p>
+        다만 관련 법령에 따라
+        제한하거나 배제할 수 없는
+        책임은 제외됩니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>8. 아동의 개인정보</h2>
+
+      <p>
+        본 앱은 일반적인 토너먼트
+        대진표 생성 도구이며
+        아동의 개인정보를 직접
+        수집하기 위한 목적으로
+        설계되지 않았습니다.
+      </p>
+
+      <p>
+        개발자는 아동의
+        개인정보를 고의적으로
+        직접 수집하지 않습니다.
+      </p>
+
+      <p>
+        이용자는 참가자 이름이나
+        대회 정보에 아동의
+        불필요한 개인정보 또는
+        민감한 정보를 입력하지
+        않는 것이 좋습니다.
+      </p>
+
+      <p>
+        아동의 개인정보와 관련된
+        문제가 확인되는 경우
+        관련 법령 및 적용 가능한
+        절차에 따라 필요한
+        조치를 검토합니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9. 데이터 보안</h2>
+
+      <p>
+        개발자는 앱에서 처리되는
+        정보를 보호하기 위해
+        필요한 범위에서
+        합리적인 보호 조치를
+        적용하도록 노력합니다.
+      </p>
+
+      <p>
+        이용자가 입력한
+        토너먼트 정보 및 기록은
+        기본적으로 기기 내부에서
+        처리됩니다.
+      </p>
+
+      <p>
+        제3자 광고 서비스에서
+        처리하는 정보에는
+        해당 서비스 제공업체의
+        보안 정책 및 기술적
+        보호 조치가 적용됩니다.
+      </p>
+
+      <p>
+        다만 어떠한 전자적 저장,
+        데이터 전송 및
+        통신 방식도 절대적인
+        보안을 보장할 수 없습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>10. 외부 링크 및 국제적 데이터 처리</h2>
+
+      <p>
+        앱에 표시되는 광고를
+        선택하면 외부 웹사이트,
+        Google Play 스토어 또는
+        기타 제3자 서비스로
+        이동할 수 있습니다.
+      </p>
+
+      <p>
+        해당 외부 서비스에는
+        각 서비스 제공업체의
+        개인정보처리방침과
+        이용약관이 적용됩니다.
+      </p>
+
+      <p>
+        Unity 및 광고 관련
+        기술 협력사는 이용자의
+        거주 국가 외의 지역에서
+        광고 관련 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 처리에는
+        관련 서비스 제공업체의
+        개인정보 보호 정책 및
+        적용 가능한 법적
+        보호 조치가 적용됩니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>11. 개인정보처리방침 변경</h2>
+
+      <p>
+        본 개인정보처리방침은
+        앱 기능, 광고 SDK,
+        데이터 처리 방식,
+        관련 법령 또는
+        Google Play 정책의
+        변경에 따라 수정될 수 있습니다.
+      </p>
+
+      <p>
+        변경 사항은 본 페이지에
+        최신 수정일과 함께 게시됩니다.
+      </p>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        중요한 변경 사항에 대해
+        추가 안내 또는 동의
+        절차를 진행할 수 있습니다.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>12. 개발자 정보 및 문의</h2>
+
+      <p>
+        <strong>개발자:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        최신 개발자 정보,
+        연락처 및 문의 방법은
+        Tournament Bracket Generator의
+        Google Play 스토어
+        등록정보에 표시된
+        개발자 연락처를
+        참고하시기 바랍니다.
+      </p>
+
+      <p>
+        개인정보 처리,
+        데이터 삭제 및
+        본 개인정보처리방침 관련
+        문의 역시 해당 연락처를
+        통해 제출할 수 있습니다.
+      </p>
+
+      <p>
+        Unity 광고 관련
+        개인정보 문의는
+        Unity 공식 개인정보
+        보호 문서도 참고할 수 있습니다.
+      </p>
+
+      <p class="muted">
+        최종 수정일: 2026년 11월 4일
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ====================================== -->
+  <!-- ENGLISH PRIVACY POLICY                 -->
+  <!-- ====================================== -->
+
+  <main id="en" class="hidden">
+
+    <section class="card header">
+      <h1>Privacy Policy</h1>
+
+      <p>
+        <strong>Tournament Bracket Generator</strong>
+        ("the App") is a tournament bracket
+        creation and management utility
+        provided by JCraft Studio.
+      </p>
+
+      <p>
+        This Privacy Policy explains
+        how information may be processed
+        when using the App and describes
+        available privacy rights and choices.
+      </p>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p class="muted">
+        Last updated: November 4, 2026
+      </p>
+
+      <div class="notice">
+        The App does not require
+        account registration.
+
+        Participant information,
+        match results, and tournament
+        records are generally processed
+        locally on the user's device.
+
+        Third-party advertising SDKs
+        may process additional information
+        for advertising purposes.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1. Information Collected and Processed</h2>
+
+      <h3>1.1 Information Entered by Users</h3>
+
+      <p>
+        To provide tournament
+        bracket generation and
+        management features,
+        the App may process:
+      </p>
+
+      <ul>
+        <li>Participant names or nicknames</li>
+        <li>Team names</li>
+        <li>Tournament and event titles</li>
+        <li>Bracket configuration information</li>
+        <li>Match results and progress</li>
+        <li>Saved tournament records</li>
+      </ul>
+
+      <p>
+        This information may be
+        processed or stored locally
+        on the user's device
+        to provide App functionality.
+      </p>
+
+      <p>
+        The Developer does not
+        directly collect or store
+        this information on a
+        separate developer-operated server.
+      </p>
+
+      <h3>1.2 Application Settings</h3>
+
+      <p>
+        The App may store certain
+        information locally to
+        provide functionality
+        and preserve settings.
+      </p>
+
+      <ul>
+        <li>Language and display preferences</li>
+        <li>User-selected App settings</li>
+        <li>Tournament progress information</li>
+        <li>Saved brackets and records</li>
+        <li>Local settings required for App functions</li>
+      </ul>
+
+      <p>
+        Such information is used
+        to provide App features
+        and is not stored in
+        a separate developer-operated
+        account database.
+      </p>
+
+      <h3>1.3 Information Not Directly Required</h3>
+
+      <p>
+        Account registration
+        is not required to use
+        the App's core functionality.
+      </p>
+
+      <p>
+        The Developer does not
+        require a real name,
+        telephone number,
+        email address, or password
+        for account registration.
+      </p>
+
+      <p>
+        Users are encouraged
+        not to enter unnecessary
+        personal or sensitive
+        information about others
+        into participant or
+        tournament fields.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Advertising and Third-Party Services</h2>
+
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>
+        for advertising mediation
+        and <strong>Unity Ads</strong>
+        for advertisement delivery.
+      </p>
+
+      <p>
+        Unity LevelPlay is an
+        advertising mediation
+        platform used to manage
+        advertising requests,
+        connected advertising networks,
+        and monetization.
+      </p>
+
+      <p>
+        Unity Ads provides
+        advertising content
+        within the App.
+      </p>
+
+      <p>
+        Advertising providers
+        may automatically process
+        certain information for
+        advertising delivery,
+        performance measurement,
+        security, fraud prevention,
+        and related service operations.
+      </p>
+
+      <h3>2.1 Advertising-Related Data</h3>
+
+      <p>
+        Depending on the SDK
+        configuration, device settings,
+        operating system, region,
+        and user privacy choices,
+        processed information may include:
+      </p>
+
+      <ul>
+        <li>
+          Android Advertising ID
+        </li>
+
+        <li>
+          Other permitted device
+          and application identifiers
+        </li>
+
+        <li>
+          IP address and approximate
+          location inferred from it
+        </li>
+
+        <li>
+          Device manufacturer,
+          model, operating system,
+          and version information
+        </li>
+
+        <li>
+          Application identification
+          and technical App information
+        </li>
+
+        <li>
+          Advertisement impressions,
+          clicks, and interactions
+        </li>
+
+        <li>
+          Advertising performance
+          and measurement information
+        </li>
+
+        <li>
+          Crash, diagnostic,
+          and performance information
+        </li>
+
+        <li>
+          Technical information
+          relevant to advertising
+          security and fraud prevention
+        </li>
+      </ul>
+
+      <p>
+        Actual data processing
+        depends on SDK versions,
+        advertising configuration,
+        applicable laws, and
+        user privacy preferences.
+      </p>
+
+      <h3>2.2 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay may process
+        technical information to
+        manage advertising requests,
+        mediation, reporting,
+        and advertising services.
+      </p>
+
+      <h3>2.3 Unity Ads</h3>
+
+      <p>
+        Unity Ads may process
+        advertising identifiers,
+        device information,
+        IP addresses, and
+        advertising interaction data.
+      </p>
+
+      <p>
+        Such information may be
+        used for advertisement
+        delivery, measurement,
+        security, fraud prevention,
+        and personalized advertising
+        where permitted.
+      </p>
+
+      <h3>2.4 Official Privacy Policies</h3>
+
+      <p>
+        For further information
+        about the privacy practices
+        of Unity and its advertising
+        technology partners,
+        please review:
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        If additional advertising
+        networks are integrated
+        or processing practices change,
+        this policy will be
+        updated as necessary.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>3. Data Storage, Retention, and Deletion</h2>
+
+      <h3>3.1 Local Data Storage</h3>
+
+      <p>
+        Tournament participants,
+        brackets, and match results
+        may be stored locally
+        on the user's device.
+      </p>
+
+      <p>
+        The Developer does not
+        store this local information
+        on a separate
+        developer-operated server.
+      </p>
+
+      <h3>3.2 Data Deletion</h3>
+
+      <p>
+        Where the App provides
+        history deletion or reset
+        functions, users may
+        remove relevant information
+        through those features.
+      </p>
+
+      <p>
+        Clearing application
+        storage through Android
+        settings or uninstalling
+        the App generally removes
+        locally stored data.
+      </p>
+
+      <p>
+        However, operating system
+        backup and restoration
+        functionality may restore
+        certain information.
+      </p>
+
+      <h3>3.3 Third-Party Advertising Data</h3>
+
+      <p>
+        Information independently
+        collected or processed
+        by Unity and related
+        advertising partners
+        is subject to their
+        respective retention
+        and deletion practices.
+      </p>
+
+      <p>
+        Users may refer to the
+        relevant service provider's
+        official privacy procedures
+        for access, deletion,
+        and other privacy requests.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>4. Sharing and Sale of Information</h2>
+
+      <p>
+        The Developer does not
+        sell participant names,
+        team names, or tournament
+        records entered by users.
+      </p>
+
+      <p>
+        Such information is not
+        uploaded to a separate
+        developer-operated server
+        for sale or disclosure
+        to third parties.
+      </p>
+
+      <p>
+        However, Unity and
+        related advertising
+        technology partners
+        may process or share
+        advertising identifiers,
+        IP addresses, device
+        information, and
+        advertisement interaction data.
+      </p>
+
+      <p>
+        Such processing is
+        subject to applicable
+        privacy policies and
+        legal requirements.
+      </p>
+
+      <p>
+        Information may also
+        be processed as required
+        to comply with valid
+        legal obligations
+        or lawful requests.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. Privacy Choices and Rights</h2>
+
+      <p>
+        Users may exercise
+        certain privacy choices
+        through the following methods:
+      </p>
+
+      <ul>
+        <li>
+          Use supported Android
+          privacy settings to
+          manage or delete
+          the Advertising ID.
+        </li>
+
+        <li>
+          Use privacy controls
+          made available through
+          Unity advertising services,
+          where supported.
+        </li>
+
+        <li>
+          Use available
+          App history deletion
+          or reset functions.
+        </li>
+
+        <li>
+          Clear application data
+          through Android settings.
+        </li>
+
+        <li>
+          Uninstall the App
+          to remove local data.
+        </li>
+
+        <li>
+          Contact the Developer
+          through the Google Play
+          developer contact information.
+        </li>
+      </ul>
+
+      <p>
+        In certain countries
+        or regions, consent may
+        be required for personalized
+        advertising and related
+        data processing.
+      </p>
+
+      <p>
+        Applicable advertising
+        privacy choices may be
+        made available where
+        required by law.
+      </p>
+
+      <p>
+        Limiting personalized
+        advertising does not
+        necessarily disable
+        all advertising.
+      </p>
+
+      <p>
+        Non-personalized
+        advertisements may
+        still appear.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>6. Copyright and Trademarks</h2>
+
+      <p>
+        Rights to participant
+        names, team names,
+        tournament titles,
+        and other content
+        entered by users
+        remain with their
+        respective owners.
+      </p>
+
+      <p>
+        The App is a utility
+        that generates and
+        displays tournament
+        brackets based on
+        user-provided information.
+      </p>
+
+      <p>
+        The Developer does not
+        claim ownership of
+        third-party trademarks,
+        copyrighted materials,
+        or other intellectual
+        property entered by users.
+      </p>
+
+      <p>
+        Rights to original
+        software code,
+        interface design,
+        graphics, text,
+        and other original
+        materials created
+        for the App belong
+        to the Developer
+        or the applicable
+        lawful rights holder,
+        subject to applicable law.
+      </p>
+
+      <p>
+        Unity, Unity LevelPlay,
+        Unity Ads, Google Play,
+        and other third-party
+        trademarks and service
+        names remain the property
+        of their respective owners.
+      </p>
+
+      <p>
+        Unless expressly stated,
+        the App is not affiliated
+        with, endorsed by,
+        sponsored by, or
+        officially connected
+        to any sports organization,
+        game company, tournament
+        operator, or official event.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>7. Disclaimer and Limitation of Liability</h2>
+
+      <p>
+        The App is provided
+        as a general-purpose
+        tournament bracket
+        generation and
+        management utility.
+      </p>
+
+      <p>
+        Generated brackets,
+        participant information,
+        match results, and
+        tournament progress
+        may vary according
+        to user input
+        and the App's
+        processing methods.
+      </p>
+
+      <p>
+        The Developer seeks
+        to maintain reliable
+        App functionality but
+        cannot guarantee
+        uninterrupted or
+        error-free operation
+        in every environment.
+      </p>
+
+      <p>
+        Users are responsible
+        for verifying brackets,
+        match results, and
+        applicable rules
+        before using them
+        in real tournaments
+        or important activities.
+      </p>
+
+      <p>
+        To the extent permitted
+        by applicable law,
+        the Developer limits
+        liability for damages
+        arising from incorrect
+        user input, technical
+        errors, or reliance
+        on generated results.
+      </p>
+
+      <p>
+        Nothing in this policy
+        excludes or limits
+        liability that cannot
+        lawfully be excluded
+        or limited.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>8. Children's Privacy</h2>
+
+      <p>
+        The App is a general
+        tournament management
+        utility and is not
+        specifically designed
+        to collect children's
+        personal information.
+      </p>
+
+      <p>
+        The Developer does not
+        knowingly collect
+        children's personal
+        information directly.
+      </p>
+
+      <p>
+        Users should avoid
+        entering unnecessary
+        personal or sensitive
+        information about
+        children into tournament
+        or participant fields.
+      </p>
+
+      <p>
+        If a concern involving
+        children's personal
+        information is identified,
+        appropriate measures
+        will be considered
+        in accordance with
+        applicable laws
+        and available procedures.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9. Data Security</h2>
+
+      <p>
+        The Developer seeks
+        to apply reasonable
+        measures to protect
+        information processed
+        through the App.
+      </p>
+
+      <p>
+        User-entered tournament
+        information and records
+        are generally processed
+        locally on the device.
+      </p>
+
+      <p>
+        Information processed
+        by third-party advertising
+        services is subject
+        to the relevant providers'
+        security practices
+        and technical safeguards.
+      </p>
+
+      <p>
+        However, no electronic
+        storage, transmission,
+        or communication method
+        can guarantee
+        absolute security.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>10. External Links and International Processing</h2>
+
+      <p>
+        Selecting advertisements
+        displayed within the App
+        may open external websites,
+        Google Play listings,
+        or other third-party services.
+      </p>
+
+      <p>
+        These external services
+        operate under their own
+        privacy policies and
+        terms of service.
+      </p>
+
+      <p>
+        Unity and related
+        advertising technology
+        partners may process
+        certain advertising-related
+        information outside the
+        user's country of residence.
+      </p>
+
+      <p>
+        Such processing is
+        subject to the
+        providers' applicable
+        privacy policies
+        and legal safeguards.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>11. Changes to This Privacy Policy</h2>
+
+      <p>
+        This Privacy Policy
+        may be updated when
+        App functionality,
+        advertising SDKs,
+        data processing practices,
+        applicable laws, or
+        Google Play policies change.
+      </p>
+
+      <p>
+        Updated versions will
+        be published on this page
+        with the applicable
+        revision date.
+      </p>
+
+      <p>
+        Where required by law,
+        material changes may
+        involve additional
+        notice or consent.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>12. Developer Information and Contact</h2>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        For current developer
+        information, contact details,
+        and inquiry methods,
+        please refer to the
+        Developer contact information
+        on the Google Play listing
+        for Tournament Bracket Generator.
+      </p>
+
+      <p>
+        Privacy inquiries,
+        data deletion requests,
+        and questions regarding
+        this Privacy Policy
+        may be submitted through
+        the developer contact
+        information provided there.
+      </p>
+
+      <p>
+        For privacy questions
+        concerning advertising
+        data processed by Unity,
+        please also refer to
+        Unity's official
+        privacy resources.
+      </p>
+
+      <p class="muted">
+        Last updated: November 4, 2026
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © 2026 JCraft Studio. All rights reserved.
+    <p>Tournament Bracket Generator</p>
+  </footer>
 
 </div>
 
