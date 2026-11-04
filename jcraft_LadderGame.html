@@ -1,350 +1,1656 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Privacy Policy - Ladder Game Random Picker</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="index, follow">
+
+  <meta
+    name="description"
+    content="Privacy Policy for Ladder Game Random Picker by JCraft Studio."
+  >
+
+  <title>
+    Privacy Policy - Ladder Game Random Picker
+  </title>
+
   <style>
+    :root {
+      --background: #f8fafc;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --heading: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --notice: #f3f4f6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-      color: #1f2937;
-      background: #f8fafc;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        Arial,
+        Helvetica,
+        "Noto Sans KR",
+        sans-serif;
+
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--background);
     }
+
     .container {
       max-width: 920px;
       margin: 0 auto;
       padding: 32px 18px 56px;
     }
+
     .card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
+      background: var(--surface);
+      border: 1px solid var(--border);
       border-radius: 18px;
       padding: 28px;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+      box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
     }
-    h1, h2, h3 {
-      color: #111827;
+
+    h1,
+    h2,
+    h3 {
+      color: var(--heading);
       line-height: 1.35;
     }
+
     h1 {
       font-size: 28px;
       margin: 0 0 8px;
     }
+
     h2 {
       font-size: 22px;
       margin-top: 34px;
       padding-top: 18px;
-      border-top: 1px solid #e5e7eb;
+      border-top: 1px solid var(--border);
     }
+
     h3 {
       font-size: 18px;
       margin-top: 24px;
     }
-    p, li {
+
+    p,
+    li {
       font-size: 15px;
     }
+
+    p {
+      margin: 10px 0;
+    }
+
     ul {
       padding-left: 22px;
     }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      overflow-wrap: anywhere;
+    }
+
     .muted {
-      color: #6b7280;
+      color: var(--muted);
       font-size: 14px;
     }
+
     .notice {
-      background: #f3f4f6;
+      background: var(--notice);
       border-left: 4px solid #6366f1;
       padding: 14px 16px;
       border-radius: 12px;
       margin: 18px 0;
     }
+
     .lang-links {
       margin: 18px 0 28px;
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
     }
-    .lang-links a {
+
+    .lang-button {
+      appearance: none;
       display: inline-block;
-      padding: 8px 12px;
+
+      border: 1px solid #c7d2fe;
       border-radius: 999px;
+
       background: #eef2ff;
-      color: #3730a3;
-      text-decoration: none;
+      color: var(--primary-dark);
+
+      padding: 9px 16px;
+
+      font-size: 14px;
       font-weight: 700;
+      cursor: pointer;
+    }
+
+    .lang-button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+    }
+
+    .lang-button:hover {
+      opacity: 0.9;
+    }
+
+    .language-panel[hidden] {
+      display: none !important;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
       font-size: 14px;
     }
-    a {
-      color: #4f46e5;
+
+    .data-table th,
+    .data-table td {
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+      border: 1px solid var(--border);
+    }
+
+    .data-table th {
+      background: #f8fafc;
+      color: var(--heading);
+    }
+
+    .footer {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 18px 12px 36px;
+      }
+
+      .card {
+        padding: 21px 17px;
+        border-radius: 14px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .data-table {
+        display: block;
+        overflow-x: auto;
+      }
     }
   </style>
 </head>
-<body>
-  <main class="container">
-    <section class="card">
-      <h1>Privacy Policy</h1>
-      <p class="muted">App: Ladder Game Random Picker</p>
-      <p class="muted">Last updated: May 27, 2026</p>
 
-      <div class="lang-links">
-        <a href="#en">English</a>
-        <a href="#ko">한국어</a>
+<body>
+
+<main class="container">
+
+  <div class="card">
+
+    <header>
+      <h1 id="page-title">
+        Privacy Policy
+      </h1>
+
+      <p class="muted">
+        App: Ladder Game Random Picker
+      </p>
+
+      <p class="muted">
+        Developer: JCraft Studio
+      </p>
+
+      <p class="muted">
+        Last updated: November 4, 2026
+      </p>
+
+      <nav
+        class="lang-links"
+        aria-label="Language selection">
+
+        <button
+          type="button"
+          class="lang-button"
+          id="btn-en"
+          onclick="showLanguage('en')">
+          English
+        </button>
+
+        <button
+          type="button"
+          class="lang-button"
+          id="btn-ko"
+          onclick="showLanguage('ko')">
+          한국어
+        </button>
+
+      </nav>
+    </header>
+
+    <!-- ===================================== -->
+    <!-- ENGLISH PRIVACY POLICY                -->
+    <!-- ===================================== -->
+
+    <div id="en" class="language-panel">
+
+      <div class="notice">
+        <p>
+          This Privacy Policy explains how
+          <strong>Ladder Game Random Picker</strong>,
+          provided by JCraft Studio,
+          handles information when users
+          access and use the App.
+        </p>
+
+        <p>
+          The App processes ladder game
+          information locally.
+          Third-party advertising services
+          may separately process certain
+          device and advertising information.
+        </p>
       </div>
 
-      <section id="en">
-        <h2>English</h2>
+      <h3>1. App Overview</h3>
 
-        <div class="notice">
-          <p>
-            This Privacy Policy explains how Ladder Game Random Picker handles information.
-            By using the app, you agree to this Privacy Policy.
-          </p>
-        </div>
+      <p>
+        Ladder Game Random Picker is a
+        general-purpose utility for
+        generating random ladder game results.
+      </p>
 
-        <h3>1. App Overview</h3>
+      <p>
+        Users may enter participant names
+        and result labels, generate a
+        random ladder, view the results,
+        and check recent result history.
+      </p>
+
+      <p>
+        The App is not a gambling,
+        betting, casino, lottery, or
+        real-money reward application.
+      </p>
+
+      <p>
+        It is intended for casual
+        random selection and general
+        entertainment or utility purposes.
+      </p>
+
+      <h3>2. Information Not Directly Collected</h3>
+
+      <p>
+        The App does not require
+        account registration or
+        user authentication.
+      </p>
+
+      <p>
+        JCraft Studio does not require
+        users to provide their real name,
+        email address, phone number,
+        postal address, government ID,
+        password, or payment information
+        to use the core App features.
+      </p>
+
+      <p>
+        Participant names and result
+        labels entered for ladder games
+        are processed locally
+        on the user's device.
+      </p>
+
+      <p>
+        The Developer does not
+        intentionally transmit
+        this information to a
+        developer-operated server.
+      </p>
+
+      <p>
+        Users should avoid entering
+        unnecessary personal or
+        sensitive information about
+        themselves or other individuals.
+      </p>
+
+      <h3>3. Local Data Stored on the Device</h3>
+
+      <p>
+        The App may store the following
+        information locally to provide
+        its functionality:
+      </p>
+
+      <ul>
+        <li>
+          Recent ladder game
+          results and history
+        </li>
+
+        <li>
+          Participant names and
+          result labels when saved
+          as part of App records
+        </li>
+
+        <li>
+          Selected language settings
+        </li>
+
+        <li>
+          Display theme preferences
+        </li>
+
+        <li>
+          Advertising display counters
+          and App usage-related settings
+        </li>
+
+        <li>
+          Other local preferences
+          required for App functions
+        </li>
+      </ul>
+
+      <p>
+        This information is generally
+        stored locally on the device.
+      </p>
+
+      <p>
+        It may be removed by clearing
+        application storage through
+        Android settings or by
+        uninstalling the App.
+      </p>
+
+      <p>
+        Android backup and restoration
+        functions may affect whether
+        certain local data is restored.
+      </p>
+
+      <h3>4. Advertising</h3>
+
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>
+        for advertising mediation and
+        <strong>Unity Ads</strong>
+        for advertisement delivery.
+      </p>
+
+      <p>
+        Unity LevelPlay is an
+        advertising mediation
+        platform that manages
+        advertising requests and
+        mediation operations.
+      </p>
+
+      <p>
+        Unity Ads is an advertising
+        service that provides
+        advertisements within the App.
+      </p>
+
+      <p>
+        These services may process
+        certain information for
+        advertisement delivery,
+        performance measurement,
+        fraud prevention,
+        security, and related
+        advertising operations.
+      </p>
+
+      <h3>4.1 Advertising-Related Information</h3>
+
+      <p>
+        Depending on the SDK version,
+        device settings, region,
+        user privacy choices,
+        and applicable laws,
+        information processed may include:
+      </p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Examples</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Advertising identifiers</td>
+            <td>
+              Android Advertising ID
+              and other permitted identifiers
+            </td>
+          </tr>
+          <tr>
+            <td>Network information</td>
+            <td>
+              IP address and approximate
+              IP-based location
+            </td>
+          </tr>
+          <tr>
+            <td>Device information</td>
+            <td>
+              Device model,
+              operating system,
+              and technical information
+            </td>
+          </tr>
+          <tr>
+            <td>Advertisement interactions</td>
+            <td>
+              Impressions, clicks,
+              and advertising events
+            </td>
+          </tr>
+          <tr>
+            <td>Diagnostic information</td>
+            <td>
+              Crashes, performance,
+              and SDK diagnostics
+            </td>
+          </tr>
+          <tr>
+            <td>Security-related information</td>
+            <td>
+              Technical information
+              used for fraud prevention
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Actual information processed
+        may vary depending on the
+        advertising SDK configuration
+        and applicable privacy requirements.
+      </p>
+
+      <h3>4.2 Unity Privacy Resources</h3>
+
+      <p>
+        For more information about
+        Unity's privacy practices,
+        please review:
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        If additional advertising
+        networks are integrated
+        in the future, this
+        Privacy Policy will be
+        reviewed and updated
+        as necessary.
+      </p>
+
+      <h3>5. Third-Party Services</h3>
+
+      <p>
+        The App may use the
+        following third-party
+        technologies and services
+        where applicable:
+      </p>
+
+      <ul>
+        <li>
+          Unity LevelPlay
+          for advertising mediation
+        </li>
+
+        <li>
+          Unity Ads for
+          advertisement delivery
+        </li>
+
+        <li>
+          Android platform services
+          and Google Play-related
+          services required for
+          supported App functionality
+        </li>
+      </ul>
+
+      <p>
+        These third-party providers
+        may process relevant technical
+        or advertising-related
+        information according to
+        their respective privacy
+        policies and terms.
+      </p>
+
+      <h3>6. External Links</h3>
+
+      <p>
+        Advertisements displayed
+        within the App may contain
+        links to external websites,
+        Google Play application
+        listings, or other
+        third-party services.
+      </p>
+
+      <p>
+        If users open an external link,
+        the privacy policies and
+        terms of that external
+        service will apply.
+      </p>
+
+      <p>
+        The Developer does not
+        directly control the
+        privacy practices or
+        content of independent
+        third-party websites.
+      </p>
+
+      <p>
+        This does not exclude any
+        obligations imposed on
+        the Developer by
+        applicable law.
+      </p>
+
+      <h3>7. Children's Privacy</h3>
+
+      <p>
+        The App is not
+        specifically designed
+        for children under
+        the age of 13.
+      </p>
+
+      <p>
+        It does not intentionally
+        request children to submit
+        directly identifying
+        personal information.
+      </p>
+
+      <p>
+        Users are encouraged
+        not to enter unnecessary
+        personal or sensitive
+        information about children
+        or other individuals.
+      </p>
+
+      <p>
+        If a parent or guardian
+        has concerns regarding
+        information entered by
+        a child, they may contact
+        the Developer through the
+        contact information displayed
+        on Google Play.
+      </p>
+
+      <p>
+        Advertising data processing
+        is subject to applicable
+        privacy laws, Google Play
+        policies, and advertising
+        service configurations.
+      </p>
+
+      <h3>8. Data Sharing</h3>
+
+      <p>
+        JCraft Studio does not
+        sell participant names,
+        result labels, or ladder
+        game records entered or
+        generated within the App.
+      </p>
+
+      <p>
+        Such locally processed
+        data is not intentionally
+        transmitted to a separate
+        developer-operated server.
+      </p>
+
+      <p>
+        However, Unity and its
+        relevant advertising
+        technology partners
+        may process or share
+        advertising-related
+        information.
+      </p>
+
+      <p>
+        Such information may
+        include advertising
+        identifiers, IP addresses,
+        device information,
+        advertising interactions,
+        and diagnostic information.
+      </p>
+
+      <p>
+        Data may also be disclosed
+        where required by
+        applicable legal obligations
+        or lawful requests.
+      </p>
+
+      <h3>9. Data Security</h3>
+
+      <p>
+        The App is designed
+        to minimize unnecessary
+        collection of directly
+        identifying information.
+      </p>
+
+      <p>
+        User-entered ladder
+        game data is generally
+        processed locally.
+      </p>
+
+      <p>
+        Advertising-related data
+        processed through
+        third-party services
+        is subject to their
+        technical security
+        practices and safeguards.
+      </p>
+
+      <p>
+        No electronic device,
+        software, storage,
+        network, or transmission
+        method can guarantee
+        absolute security.
+      </p>
+
+      <h3>10. User Control and Deletion</h3>
+
+      <p>
+        Users may manage
+        certain information
+        and privacy preferences
+        through the following methods:
+      </p>
+
+      <ul>
+        <li>
+          Delete ladder game
+          result history using
+          available App functions.
+        </li>
+
+        <li>
+          Clear App storage
+          through Android settings.
+        </li>
+
+        <li>
+          Uninstall the App
+          to remove local data.
+        </li>
+
+        <li>
+          Use supported Android
+          settings to manage or
+          delete the Advertising ID.
+        </li>
+
+        <li>
+          Use Unity advertising
+          privacy controls
+          where available.
+        </li>
+
+        <li>
+          Contact the Developer
+          through the Google Play
+          developer contact information.
+        </li>
+      </ul>
+
+      <p>
+        Where required by law,
+        consent or privacy choice
+        mechanisms may be provided
+        for advertising-related
+        data processing.
+      </p>
+
+      <p>
+        Restricting personalized
+        advertising does not
+        necessarily prevent all
+        advertisements from
+        being displayed.
+      </p>
+
+      <p>
+        Data independently
+        processed by Unity
+        and advertising partners
+        is subject to their
+        respective retention
+        and deletion policies.
+      </p>
+
+      <h3>11. Disclaimer</h3>
+
+      <p>
+        Random ladder results
+        generated by the App
+        are intended for general
+        utility and entertainment
+        purposes.
+      </p>
+
+      <p>
+        The App does not provide
+        certified, regulated,
+        legally supervised,
+        or cryptographically
+        verifiable random selection.
+      </p>
+
+      <p>
+        The Developer does not
+        guarantee that every
+        randomly generated result
+        is suitable for every
+        particular activity.
+      </p>
+
+      <p>
+        Users are responsible
+        for independently verifying
+        results and applicable
+        requirements before
+        using them for important
+        decisions or activities.
+      </p>
+
+      <p>
+        To the extent permitted
+        by applicable law,
+        the Developer limits
+        liability for losses
+        arising from technical
+        errors or reliance on
+        randomly generated results.
+      </p>
+
+      <p>
+        Nothing in this policy
+        excludes liability
+        that cannot lawfully
+        be excluded or limited.
+      </p>
+
+      <h3>12. Changes to This Privacy Policy</h3>
+
+      <p>
+        This Privacy Policy
+        may be updated when
+        App functionality,
+        advertising SDKs,
+        data processing practices,
+        applicable laws,
+        or Google Play policies change.
+      </p>
+
+      <p>
+        Updates will be
+        published on this
+        page with the
+        applicable revision date.
+      </p>
+
+      <p>
+        Where required by law,
+        material changes may
+        involve additional
+        notice or consent.
+      </p>
+
+      <h3>13. Developer Information and Contact</h3>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        For the current
+        developer information,
+        support contact details,
+        and privacy-related
+        inquiries, please refer
+        to the developer
+        information displayed
+        on the App's official
+        Google Play Store listing.
+      </p>
+
+      <p>
+        Questions concerning
+        data deletion or
+        advertising-related
+        privacy may also be
+        submitted through
+        the available developer
+        contact information.
+      </p>
+
+    </div>
+
+    <!-- ===================================== -->
+    <!-- KOREAN PRIVACY POLICY                 -->
+    <!-- ===================================== -->
+
+    <div id="ko" class="language-panel" hidden>
+
+      <div class="notice">
         <p>
-          Ladder Game Random Picker is a simple utility app for creating random ladder game results.
-          Users can enter names and results, generate a ladder, view the result, and check recent result history.
-        </p>
-        <p>
-          This app is not a gambling, betting, casino, lottery, or real-money reward app.
-          It is intended only for casual random selection and entertainment utility purposes.
+          본 개인정보처리방침은
+          <strong>Ladder Game Random Picker</strong>
+          (사다리타기) 앱의 개인정보
+          처리 방식을 설명합니다.
         </p>
 
-        <h3>2. Information We Do Not Collect Directly</h3>
         <p>
-          The app does not require account registration and does not ask users to enter directly identifying personal information such as name, email address, phone number, address, government ID, or payment information.
+          사다리타기 관련 정보는
+          기본적으로 사용자 기기에서
+          처리되며, 광고 서비스는
+          별도의 광고 및 기기 정보를
+          처리할 수 있습니다.
         </p>
-        <p>
-          The names or result labels entered by users for the ladder game are used only for app functionality.
-          They are processed on the device and are not intentionally transmitted to the developer's server.
-        </p>
+      </div>
 
-        <h3>3. Local Data Stored on Device</h3>
-        <p>
-          The app may store the following data locally on the user's device to provide app features:
-        </p>
-        <ul>
-          <li>Recent ladder game result history</li>
-          <li>Language setting</li>
-          <li>Theme setting</li>
-          <li>Ad display count or app usage-related preferences</li>
-        </ul>
-        <p>
-          This data is stored locally on the device and may be deleted when the app is uninstalled or when the user clears app data from the device settings.
-        </p>
+      <h3>1. 앱 개요</h3>
 
-        <h3>4. Advertising</h3>
-        <p>
-          This app may display advertisements through Google AdMob.
-          Google and its partners may collect and use certain information, such as device identifiers, advertising identifiers, approximate location, app activity, crash data, or diagnostic data, in accordance with their own policies.
-        </p>
-        <p>
-          The developer does not directly control the data collection practices of third-party advertising networks.
-          Please refer to Google's policies for more information about how Google uses data:
-        </p>
-        <ul>
-          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
-          <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Policy</a></li>
-        </ul>
+      <p>
+        Ladder Game Random Picker는
+        이름과 결과를 입력하여
+        무작위 사다리타기 결과를
+        생성하는 유틸리티 앱입니다.
+      </p>
 
-        <h3>5. Third-Party Services</h3>
-        <p>
-          The app may use third-party services or SDKs, including but not limited to:
-        </p>
-        <ul>
-          <li>Google AdMob for advertising</li>
-          <li>Google Play services or related Android platform services</li>
-        </ul>
-        <p>
-          These third-party services may collect information according to their own privacy policies and terms.
-        </p>
+      <p>
+        사용자는 참가자 이름,
+        결과 항목을 입력하고
+        사다리를 생성하여
+        결과를 확인할 수 있습니다.
+      </p>
 
-        <h3>6. External Links</h3>
-        <p>
-          The app may include links to other apps, Google Play Store pages, or external websites.
-          If users open an external link, they are subject to the privacy policy and terms of that external service.
-          The developer is not responsible for the content, policies, or practices of third-party websites or services.
-        </p>
+      <p>
+        앱에서 제공되는 경우
+        최근 사다리타기 결과
+        기록을 확인할 수 있습니다.
+      </p>
 
-        <h3>7. Children's Privacy</h3>
-        <p>
-          This app is not specifically directed to children.
-          The app does not knowingly collect personal information from children.
-          If you believe that a child has provided personal information through this app, please contact the developer using the contact information available on the Google Play Store listing.
-        </p>
+      <p>
+        본 앱은 도박, 베팅,
+        카지노, 복권 또는
+        현금성 보상 기능을
+        제공하지 않습니다.
+      </p>
 
-        <h3>8. Data Sharing</h3>
-        <p>
-          The developer does not sell users' personal information.
-          However, third-party services such as Google AdMob may process data for advertising, analytics, fraud prevention, security, and service improvement purposes under their own policies.
-        </p>
+      <p>
+        일상적인 랜덤 선택 및
+        편의 기능을 제공하는 앱입니다.
+      </p>
 
-        <h3>9. Data Security</h3>
-        <p>
-          The app is designed to minimize the collection of personal information.
-          Locally stored app data remains on the user's device unless handled by the operating system, backup settings, or third-party services.
-          No method of electronic storage or transmission is completely secure, and the developer cannot guarantee absolute security.
-        </p>
+      <h3>2. 개발자가 직접 수집하지 않는 정보</h3>
 
-        <h3>10. User Control</h3>
-        <p>
-          Users may control or delete app-related data by:
-        </p>
-        <ul>
-          <li>Deleting result history inside the app, if available</li>
-          <li>Clearing app data in Android settings</li>
-          <li>Uninstalling the app</li>
-          <li>Managing advertising ID and ad personalization settings in Google settings</li>
-        </ul>
+      <p>
+        본 앱은 회원가입이나
+        사용자 계정 생성을
+        요구하지 않습니다.
+      </p>
 
-        <h3>11. Disclaimer</h3>
-        <p>
-          The random results generated by this app are for casual utility and entertainment purposes only.
-          The developer is not responsible for decisions, disputes, losses, or damages resulting from the use of randomly generated results.
-        </p>
+      <p>
+        앱의 기본 기능을
+        이용하기 위해
+        실제 이름, 이메일 주소,
+        전화번호, 주소,
+        신분증 정보, 비밀번호
+        또는 결제 정보를
+        제공할 필요가 없습니다.
+      </p>
 
-        <h3>12. Changes to This Privacy Policy</h3>
-        <p>
-          This Privacy Policy may be updated from time to time.
-          Any changes will be posted on this page with an updated "Last updated" date.
-          Users are encouraged to review this Privacy Policy periodically.
-        </p>
+      <p>
+        사다리타기 기능에
+        입력한 참가자 이름과
+        결과 문구는 사용자
+        기기 내에서 처리됩니다.
+      </p>
 
-        <h3>13. Developer Information and Contact</h3>
-        <p>
-          For developer information, contact details, and support inquiries, please refer to the developer information provided on the app's Google Play Store listing.
-        </p>
-      </section>
+      <p>
+        개발자는 해당 정보를
+        별도의 개발자 운영
+        서버로 의도적으로
+        전송하지 않습니다.
+      </p>
 
-      <section id="ko">
-        <h2>한국어</h2>
+      <p>
+        사용자 본인 또는
+        다른 사람의 불필요한
+        개인정보나 민감한
+        정보를 입력하지
+        않는 것이 좋습니다.
+      </p>
 
-        <div class="notice">
-          <p>
-            본 개인정보처리방침은 Ladder Game Random Picker 앱이 정보를 처리하는 방식을 설명합니다.
-            앱을 사용하는 경우 본 개인정보처리방침에 동의한 것으로 간주됩니다.
-          </p>
-        </div>
+      <h3>3. 기기에 저장되는 로컬 데이터</h3>
 
-        <h3>1. 앱 개요</h3>
-        <p>
-          Ladder Game Random Picker는 이름과 결과를 입력하여 무작위 사다리타기 결과를 생성하는 생활 유틸리티 앱입니다.
-          사용자는 이름과 결과를 입력하고, 사다리를 생성하고, 결과를 확인하며, 최근 결과 기록을 볼 수 있습니다.
-        </p>
-        <p>
-          본 앱은 도박, 베팅, 카지노, 복권, 현금성 보상 기능을 제공하지 않습니다.
-          단순한 랜덤 선택 및 생활 유틸리티 목적의 앱입니다.
-        </p>
+      <p>
+        앱 기능 제공을 위해
+        다음 데이터가 사용자
+        기기에 저장될 수 있습니다.
+      </p>
 
-        <h3>2. 개발자가 직접 수집하지 않는 정보</h3>
-        <p>
-          본 앱은 회원가입을 요구하지 않으며, 사용자에게 이름, 이메일 주소, 전화번호, 주소, 신분증 정보, 결제 정보와 같은 직접 식별 가능한 개인정보 입력을 요구하지 않습니다.
-        </p>
-        <p>
-          사용자가 사다리타기를 위해 입력하는 이름 또는 결과 문구는 앱 기능 제공을 위해 사용됩니다.
-          해당 정보는 기기 내에서 처리되며, 개발자 서버로 의도적으로 전송되지 않습니다.
-        </p>
+      <ul>
+        <li>
+          최근 사다리타기
+          결과 및 기록
+        </li>
 
-        <h3>3. 기기에 저장되는 로컬 데이터</h3>
-        <p>
-          앱 기능 제공을 위해 다음과 같은 데이터가 사용자의 기기에 로컬로 저장될 수 있습니다.
-        </p>
-        <ul>
-          <li>최근 사다리타기 결과 기록</li>
-          <li>언어 설정</li>
-          <li>테마 설정</li>
-          <li>광고 표시 횟수 또는 앱 사용 관련 설정값</li>
-        </ul>
-        <p>
-          이러한 데이터는 사용자의 기기에 저장되며, 앱을 삭제하거나 기기 설정에서 앱 데이터를 삭제하면 함께 삭제될 수 있습니다.
-        </p>
+        <li>
+          저장된 기록에 포함된
+          참가자 이름 및
+          결과 항목
+        </li>
 
-        <h3>4. 광고</h3>
-        <p>
-          본 앱은 Google AdMob을 통해 광고를 표시할 수 있습니다.
-          Google 및 그 파트너는 자체 정책에 따라 기기 식별자, 광고 ID, 대략적인 위치, 앱 활동, 오류 정보, 진단 정보 등을 수집하거나 사용할 수 있습니다.
-        </p>
-        <p>
-          개발자는 제3자 광고 네트워크의 데이터 수집 및 처리 방식을 직접 통제하지 않습니다.
-          Google의 데이터 사용 방식에 대한 자세한 내용은 아래 문서를 참고하시기 바랍니다.
-        </p>
-        <ul>
-          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a></li>
-          <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google 광고 관련 정책</a></li>
-        </ul>
+        <li>
+          언어 설정
+        </li>
 
-        <h3>5. 제3자 서비스</h3>
-        <p>
-          본 앱은 다음을 포함하되 이에 한정되지 않는 제3자 서비스 또는 SDK를 사용할 수 있습니다.
-        </p>
-        <ul>
-          <li>광고 제공을 위한 Google AdMob</li>
-          <li>Google Play 서비스 또는 Android 플랫폼 관련 서비스</li>
-        </ul>
-        <p>
-          이러한 제3자 서비스는 각자의 개인정보처리방침 및 약관에 따라 정보를 수집하거나 처리할 수 있습니다.
-        </p>
+        <li>
+          화면 테마 설정
+        </li>
 
-        <h3>6. 외부 링크</h3>
-        <p>
-          본 앱에는 다른 앱, Google Play 스토어 페이지 또는 외부 웹사이트로 연결되는 링크가 포함될 수 있습니다.
-          사용자가 외부 링크를 여는 경우 해당 외부 서비스의 개인정보처리방침 및 약관이 적용됩니다.
-          개발자는 제3자 웹사이트 또는 서비스의 콘텐츠, 정책, 운영 방식에 대해 책임을 지지 않습니다.
-        </p>
+        <li>
+          광고 표시 횟수 및
+          앱 사용 관련 설정값
+        </li>
 
-        <h3>7. 아동의 개인정보</h3>
-        <p>
-          본 앱은 아동을 주요 대상으로 하지 않습니다.
-          본 앱은 아동의 개인정보를 고의로 수집하지 않습니다.
-          아동이 본 앱을 통해 개인정보를 제공했다고 판단되는 경우, Google Play 스토어 등록정보에 표시된 개발자 연락처를 통해 문의해 주시기 바랍니다.
-        </p>
+        <li>
+          기타 앱 기능에
+          필요한 로컬 설정값
+        </li>
+      </ul>
 
-        <h3>8. 데이터 공유</h3>
-        <p>
-          개발자는 사용자의 개인정보를 판매하지 않습니다.
-          다만 Google AdMob과 같은 제3자 서비스는 자체 정책에 따라 광고 제공, 분석, 부정 사용 방지, 보안, 서비스 개선 등의 목적으로 데이터를 처리할 수 있습니다.
-        </p>
+      <p>
+        이러한 데이터는
+        기본적으로 사용자의
+        기기에 저장됩니다.
+      </p>
 
-        <h3>9. 데이터 보안</h3>
-        <p>
-          본 앱은 개인정보 수집을 최소화하도록 설계되어 있습니다.
-          로컬로 저장되는 앱 데이터는 운영체제, 백업 설정 또는 제3자 서비스에 의해 처리되는 경우를 제외하고 사용자의 기기에 보관됩니다.
-          전자적 저장 또는 전송 방식은 완전한 보안을 보장할 수 없으므로, 개발자는 절대적인 보안을 보장하지 않습니다.
-        </p>
+      <p>
+        Android 기기 설정에서
+        앱 데이터를 삭제하거나
+        앱을 제거하면 일반적으로
+        로컬 데이터가 삭제됩니다.
+      </p>
 
-        <h3>10. 사용자 제어</h3>
-        <p>
-          사용자는 다음 방법으로 앱 관련 데이터를 제어하거나 삭제할 수 있습니다.
-        </p>
-        <ul>
-          <li>앱 내에서 제공되는 경우 결과 기록 삭제</li>
-          <li>Android 설정에서 앱 데이터 삭제</li>
-          <li>앱 삭제</li>
-          <li>Google 설정에서 광고 ID 및 맞춤 광고 설정 관리</li>
-        </ul>
+      <p>
+        다만 Android의
+        백업 및 복원 기능에
+        따라 일부 데이터가
+        복원될 가능성이 있습니다.
+      </p>
 
-        <h3>11. 면책 조항</h3>
-        <p>
-          본 앱에서 생성되는 무작위 결과는 생활 유틸리티 및 오락 목적의 참고용 결과입니다.
-          무작위 결과의 사용으로 인해 발생하는 결정, 분쟁, 손실 또는 손해에 대해 개발자는 책임을 지지 않습니다.
-        </p>
+      <h3>4. 광고</h3>
 
-        <h3>12. 개인정보처리방침 변경</h3>
-        <p>
-          본 개인정보처리방침은 필요에 따라 변경될 수 있습니다.
-          변경 사항은 본 페이지에 게시되며, "최종 업데이트" 날짜가 함께 갱신됩니다.
-          사용자는 본 개인정보처리방침을 주기적으로 확인하는 것이 좋습니다.
-        </p>
+      <p>
+        본 앱은 광고 미디에이션을 위해
+        <strong>Unity LevelPlay</strong>를
+        사용하며 광고 제공을 위해
+        <strong>Unity Ads</strong>를 사용합니다.
+      </p>
 
-        <h3>13. 개발자 정보 및 문의</h3>
-        <p>
-          개발자 정보, 연락처 및 지원 문의는 앱의 Google Play 스토어 등록정보에 표시된 개발자 정보를 참고하시기 바랍니다.
-        </p>
-      </section>
-    </section>
-  </main>
+      <p>
+        Unity LevelPlay는
+        광고 요청과 광고 네트워크
+        연결을 관리하며,
+        Unity Ads는 앱 내부에
+        광고를 제공합니다.
+      </p>
+
+      <p>
+        이러한 서비스는
+        광고 제공, 성과 측정,
+        보안, 부정행위 방지 및
+        관련 서비스 운영을 위해
+        특정 정보를 처리할 수 있습니다.
+      </p>
+
+      <h3>4.1 광고 관련 처리 정보</h3>
+
+      <p>
+        SDK 버전, 기기 설정,
+        지역, 개인정보 보호 선택 및
+        관련 법령에 따라
+        다음 정보가 처리될 수 있습니다.
+      </p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>정보 유형</th>
+            <th>예시</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>광고 식별자</td>
+            <td>
+              Android 광고 ID 및
+              기타 허용된 식별자
+            </td>
+          </tr>
+          <tr>
+            <td>네트워크 정보</td>
+            <td>
+              IP 주소 및 IP 기반
+              대략적 위치 정보
+            </td>
+          </tr>
+          <tr>
+            <td>기기 정보</td>
+            <td>
+              기기 모델,
+              운영체제 및
+              기술적 정보
+            </td>
+          </tr>
+          <tr>
+            <td>광고 상호작용</td>
+            <td>
+              광고 노출, 클릭 및
+              광고 관련 이벤트
+            </td>
+          </tr>
+          <tr>
+            <td>진단 정보</td>
+            <td>
+              충돌, 성능 및
+              SDK 진단 정보
+            </td>
+          </tr>
+          <tr>
+            <td>보안 관련 정보</td>
+            <td>
+              부정행위 방지를 위한
+              기술적 정보
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        실제 처리되는 정보는
+        광고 SDK 설정 및
+        적용되는 개인정보 보호
+        요건에 따라 달라질 수 있습니다.
+      </p>
+
+      <h3>4.2 Unity 개인정보처리방침</h3>
+
+      <p>
+        자세한 내용은
+        Unity 공식 개인정보 보호
+        문서를 참고하시기 바랍니다.
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity 개인정보처리방침
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity 게임 및 앱 이용자 개인정보 FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        향후 추가 광고 네트워크가
+        연결되는 경우 해당 서비스의
+        개인정보 처리 내용을
+        본 방침에 반영합니다.
+      </p>
+
+      <h3>5. 제3자 서비스</h3>
+
+      <p>
+        본 앱은 해당되는 경우
+        다음과 같은 제3자 기술
+        및 서비스를 사용할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          광고 미디에이션을 위한
+          Unity LevelPlay
+        </li>
+
+        <li>
+          광고 제공을 위한
+          Unity Ads
+        </li>
+
+        <li>
+          앱 기능 제공에 필요한
+          Android 플랫폼 서비스 및
+          Google Play 관련 서비스
+        </li>
+      </ul>
+
+      <p>
+        이러한 제3자 서비스 제공자는
+        자체 개인정보처리방침과
+        이용약관에 따라 필요한
+        기술적 정보 및 광고 관련
+        정보를 처리할 수 있습니다.
+      </p>
+
+      <h3>6. 외부 링크</h3>
+
+      <p>
+        앱에서 표시되는 광고에는
+        외부 웹사이트,
+        Google Play 앱 페이지 및
+        기타 제3자 서비스로
+        이동하는 링크가
+        포함될 수 있습니다.
+      </p>
+
+      <p>
+        사용자가 외부 링크를
+        선택하는 경우 해당 서비스의
+        개인정보처리방침과
+        이용약관이 적용됩니다.
+      </p>
+
+      <p>
+        개발자는 독립적인
+        제3자 웹사이트의
+        개인정보 처리 방식이나
+        콘텐츠를 직접 통제하지 않습니다.
+      </p>
+
+      <p>
+        단, 관련 법령에 따른
+        개발자의 책임은
+        제외되지 않습니다.
+      </p>
+
+      <h3>7. 아동의 개인정보</h3>
+
+      <p>
+        본 앱은 만 13세 미만
+        아동을 특별히 대상으로
+        설계된 서비스가 아닙니다.
+      </p>
+
+      <p>
+        앱은 아동의 직접적인
+        개인정보를 의도적으로
+        요구하지 않습니다.
+      </p>
+
+      <p>
+        사용자는 아동 또는
+        다른 사람의 불필요한
+        개인정보나 민감한
+        정보를 입력하지
+        않는 것이 좋습니다.
+      </p>
+
+      <p>
+        아동이 앱을 통해
+        개인정보를 제공했다고
+        판단되는 경우
+        Google Play 스토어에
+        표시된 개발자 연락처를
+        통해 문의할 수 있습니다.
+      </p>
+
+      <p>
+        광고 관련 데이터 처리는
+        관련 개인정보 보호 법령,
+        Google Play 정책 및
+        광고 서비스 설정에
+        따라 적용됩니다.
+      </p>
+
+      <h3>8. 데이터 공유</h3>
+
+      <p>
+        JCraft Studio는
+        사용자가 입력하거나
+        생성한 참가자 이름,
+        결과 항목 및
+        사다리타기 기록을
+        판매하지 않습니다.
+      </p>
+
+      <p>
+        해당 로컬 데이터는
+        별도의 개발자 운영
+        서버로 의도적으로
+        전송하지 않습니다.
+      </p>
+
+      <p>
+        다만 Unity 및
+        관련 광고 기술 협력사는
+        광고 관련 정보를
+        처리하거나 공유할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 정보에는
+        광고 식별자, IP 주소,
+        기기 정보, 광고 상호작용 및
+        진단 정보 등이
+        포함될 수 있습니다.
+      </p>
+
+      <p>
+        법적 의무 또는
+        적법한 요청에 따라
+        정보가 제공되어야 하는 경우
+        관련 법령에 따라
+        처리될 수 있습니다.
+      </p>
+
+      <h3>9. 데이터 보안</h3>
+
+      <p>
+        본 앱은 불필요한
+        개인정보 수집을
+        최소화하도록 설계됩니다.
+      </p>
+
+      <p>
+        사용자 입력 정보는
+        기본적으로 기기 내부에서
+        처리됩니다.
+      </p>
+
+      <p>
+        제3자 광고 서비스에서
+        처리하는 정보에는
+        해당 업체의 보안 정책과
+        기술적 보호조치가
+        적용됩니다.
+      </p>
+
+      <p>
+        어떠한 전자 기기,
+        저장소, 네트워크 및
+        전송 방식도 완전한
+        보안을 보장할 수는
+        없습니다.
+      </p>
+
+      <h3>10. 사용자 제어 및 데이터 삭제</h3>
+
+      <p>
+        사용자는 다음 방법으로
+        앱 관련 데이터와
+        개인정보 보호 설정을
+        관리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          앱에서 제공되는
+          사다리타기 결과
+          기록 삭제 기능 사용
+        </li>
+
+        <li>
+          Android 설정에서
+          앱 데이터 삭제
+        </li>
+
+        <li>
+          앱 삭제를 통한
+          로컬 데이터 삭제
+        </li>
+
+        <li>
+          Android에서 지원되는
+          광고 ID 관리 또는
+          삭제 기능 이용
+        </li>
+
+        <li>
+          Unity 광고 서비스가
+          제공하는 개인정보
+          보호 선택 기능 이용
+        </li>
+
+        <li>
+          Google Play 스토어에
+          표시된 개발자 연락처를
+          통한 개인정보 문의
+        </li>
+      </ul>
+
+      <p>
+        지역별 법령에 따라
+        광고 관련 데이터 처리에
+        이용자의 동의가 필요한 경우
+        적용 가능한 동의 또는
+        선택 절차가 제공될 수 있습니다.
+      </p>
+
+      <p>
+        광고 개인화 설정을
+        제한하더라도 광고 표시가
+        완전히 중단되지는
+        않을 수 있습니다.
+      </p>
+
+      <p>
+        Unity 및 관련 광고
+        제공업체에서 독립적으로
+        처리하는 정보의
+        보관 및 삭제는
+        해당 업체의 정책에
+        따릅니다.
+      </p>
+
+      <h3>11. 면책 조항</h3>
+
+      <p>
+        본 앱에서 생성되는
+        사다리타기 결과는
+        일반적인 생활 편의 및
+        오락 목적의 참고용 결과입니다.
+      </p>
+
+      <p>
+        본 앱은 법적 감독이
+        필요한 공인 추첨이나
+        암호학적으로 검증되는
+        무작위 선정 서비스를
+        제공하지 않습니다.
+      </p>
+
+      <p>
+        개발자는 무작위 결과가
+        모든 사용 목적에 적합하다고
+        보장하지 않습니다.
+      </p>
+
+      <p>
+        사용자는 중요한 결정이나
+        활동에 결과를 적용하기 전에
+        관련 정보와 적용 요건을
+        직접 확인해야 합니다.
+      </p>
+
+      <p>
+        개발자는 관련 법령에서
+        허용하는 범위 내에서
+        기술적 오류 또는
+        무작위 결과 활용으로
+        발생한 손해에 대한
+        책임을 제한합니다.
+      </p>
+
+      <p>
+        다만 법령상 제한하거나
+        면제할 수 없는 책임은
+        제외됩니다.
+      </p>
+
+      <h3>12. 개인정보처리방침 변경</h3>
+
+      <p>
+        본 개인정보처리방침은
+        앱 기능, 광고 SDK,
+        데이터 처리 방식,
+        관련 법령 또는
+        Google Play 정책이
+        변경되는 경우
+        수정될 수 있습니다.
+      </p>
+
+      <p>
+        변경 내용은 본 페이지에
+        최신 수정일과 함께
+        게시됩니다.
+      </p>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        중요한 변경 사항에 대해
+        추가 안내 또는
+        동의 절차를 진행할 수 있습니다.
+      </p>
+
+      <h3>13. 개발자 정보 및 문의</h3>
+
+      <p>
+        <strong>개발자:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        개발자의 최신 정보,
+        연락처 및 지원 문의 방법은
+        Ladder Game Random Picker의
+        Google Play 스토어 등록정보를
+        참고하시기 바랍니다.
+      </p>
+
+      <p>
+        개인정보 처리,
+        데이터 삭제 및
+        광고 관련 문의 역시
+        해당 개발자 연락처를
+        통해 제출할 수 있습니다.
+      </p>
+
+    </div>
+
+    <footer class="footer">
+      © 2026 JCraft Studio.
+      All rights reserved.
+      <p>
+        Ladder Game Random Picker
+      </p>
+      <p>
+        Last updated / 최종 수정일:
+        2026-11-04
+      </p>
+    </footer>
+
+  </div>
+</main>
+
+<script>
+  function showLanguage(language) {
+    const selected =
+      language === 'ko' ? 'ko' : 'en';
+
+    const english =
+      document.getElementById('en');
+
+    const korean =
+      document.getElementById('ko');
+
+    const englishButton =
+      document.getElementById('btn-en');
+
+    const koreanButton =
+      document.getElementById('btn-ko');
+
+    english.hidden = selected !== 'en';
+    korean.hidden = selected !== 'ko';
+
+    englishButton.classList.toggle(
+      'active',
+      selected === 'en'
+    );
+
+    koreanButton.classList.toggle(
+      'active',
+      selected === 'ko'
+    );
+
+    englishButton.setAttribute(
+      'aria-pressed',
+      String(selected === 'en')
+    );
+
+    koreanButton.setAttribute(
+      'aria-pressed',
+      String(selected === 'ko')
+    );
+
+    document.documentElement.lang = selected;
+
+    document.getElementById('page-title')
+      .textContent = selected === 'ko'
+        ? '개인정보처리방침'
+        : 'Privacy Policy';
+
+    document.title = selected === 'ko'
+      ? '개인정보처리방침 - Ladder Game Random Picker'
+      : 'Privacy Policy - Ladder Game Random Picker';
+
+    try {
+      localStorage.setItem(
+        'ladderPrivacyLanguage',
+        selected
+      );
+    } catch (error) {
+      // Language switching still works
+      // if browser storage is unavailable.
+    }
+  }
+
+  document.addEventListener(
+    'DOMContentLoaded',
+    function() {
+      let savedLanguage = null;
+
+      try {
+        savedLanguage = localStorage.getItem(
+          'ladderPrivacyLanguage'
+        );
+      } catch (error) {
+        savedLanguage = null;
+      }
+
+      if (
+        savedLanguage === 'ko' ||
+        savedLanguage === 'en'
+      ) {
+        showLanguage(savedLanguage);
+        return;
+      }
+
+      const browserLanguage =
+        (navigator.language || 'en')
+          .toLowerCase();
+
+      showLanguage(
+        browserLanguage.startsWith('ko')
+          ? 'ko'
+          : 'en'
+      );
+    }
+  );
+</script>
+
 </body>
 </html>
