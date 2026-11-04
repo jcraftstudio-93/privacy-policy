@@ -1,17 +1,50 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="Privacy Policy for Simple Zip Maker by JCraft Studio.">
+
   <title>Privacy Policy - Simple Zip Maker</title>
 
   <style>
+    :root {
+      --bg: #eef7fb;
+      --card: #ffffff;
+      --text: #233846;
+      --muted: #6b8592;
+      --primary: #356d89;
+      --primary-dark: #244e65;
+      --primary-soft: #dff1f8;
+      --line: #d8eaf3;
+      --shadow: 0 4px 18px rgba(0,0,0,0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background: #eef7fb;
-      font-family: Arial, sans-serif;
-      color: #233846;
+      background: var(--bg);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        "Apple SD Gothic Neo",
+        "Noto Sans KR",
+        sans-serif;
+      color: var(--text);
       line-height: 1.7;
     }
 
@@ -22,69 +55,188 @@
     }
 
     .card {
-      background: #ffffff;
+      background: var(--card);
       border-radius: 22px;
       padding: 28px;
       margin-bottom: 24px;
-      border: 1px solid #d8eaf3;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
     }
 
     h1 {
-      margin-top: 0;
+      margin: 0 0 16px;
       font-size: 32px;
-      color: #356d89;
+      color: var(--primary);
+      line-height: 1.3;
     }
 
     h2 {
-      margin-top: 0;
-      font-size: 24px;
-      color: #356d89;
+      margin: 30px 0 12px;
+      font-size: 22px;
+      color: var(--primary);
+      line-height: 1.4;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 17px;
+      color: var(--primary-dark);
     }
 
     p {
       margin: 10px 0;
+      font-size: 15px;
     }
 
     ul {
       padding-left: 20px;
+      margin: 10px 0 16px;
     }
 
     li {
       margin-bottom: 8px;
+      font-size: 15px;
     }
 
     .lang-label {
       display: inline-block;
       padding: 6px 12px;
       border-radius: 999px;
-      background: #dff1f8;
-      color: #356d89;
+      background: var(--primary-soft);
+      color: var(--primary);
       font-size: 13px;
       font-weight: bold;
       margin-bottom: 14px;
     }
 
+    .lang-switch {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0 0;
+    }
+
+    .lang-btn {
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--primary);
+      border-radius: 999px;
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s, color .2s;
+    }
+
+    .lang-btn:hover {
+      border-color: var(--primary);
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .lang-btn:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    .lang-content {
+      display: none;
+    }
+
+    .lang-content.active {
+      display: block;
+    }
+
+    .notice {
+      background: #e8f6fc;
+      border: 1px solid #b9dfee;
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin: 18px 0;
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section {
+      border-top: 1px solid var(--line);
+      margin-top: 24px;
+      padding-top: 4px;
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+
+    table {
+      width: 100%;
+      min-width: 460px;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+    }
+
+    td {
+      color: var(--text);
+    }
+
+    .updated {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
     .footer {
       text-align: center;
       font-size: 13px;
-      color: #6b8592;
+      color: var(--muted);
       margin-top: 30px;
       line-height: 1.6;
     }
 
+    .footer p {
+      font-size: 13px;
+      margin: 5px 0;
+    }
+
     a {
-      color: #356d89;
+      color: var(--primary);
       text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 700px) {
       .container {
+        margin: 12px auto;
         padding: 14px;
       }
 
       .card {
         padding: 20px;
+        border-radius: 18px;
       }
 
       h1 {
@@ -92,90 +244,74 @@
       }
 
       h2 {
-        font-size: 21px;
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .lang-btn {
+        transition: none;
       }
     }
   </style>
 </head>
 
 <body>
+<div class="container">
 
-  <div class="container">
+  <!-- HEADER -->
 
-    <div class="card">
-      <div class="lang-label">English</div>
-
-      <h1>Privacy Policy</h1>
-
-      <p>
-        Simple Zip Maker is designed to create ZIP files directly on the user's device.
-      </p>
-
-      <p>
-        This application does not require user account registration and does not intentionally collect personal information.
-      </p>
-
-      <h2>Information Handling</h2>
-
-      <ul>
-        <li>Selected files are processed locally on the device.</li>
-        <li>ZIP files are created locally on the device storage.</li>
-        <li>The developer does not upload user files to external servers.</li>
-        <li>The developer does not sell personal information.</li>
-      </ul>
-
-      <h2>Advertising</h2>
-
-      <p>
-        This app may use third-party advertising services such as Google AdMob.
-        Advertising providers may collect limited device-related information for ad delivery, fraud prevention, and service improvement.
-      </p>
-
-      <p>
-        Please refer to the privacy policies of the advertising providers for more information.
-      </p>
-
-      <h2>File Access</h2>
-
-      <p>
-        File access permissions are used only for selecting files and creating ZIP files requested by the user.
-      </p>
-
-      <p>
-        The app does not intentionally access unrelated files or personal content outside the actions initiated by the user.
-      </p>
-
-      <h2>Data Storage</h2>
-
-      <p>
-        ZIP history and app settings may be stored locally on the device to improve user experience.
-      </p>
-
-      <p>
-        Local data can be removed by uninstalling the app or clearing the app data from device settings.
-      </p>
-
-      <h2>Children's Privacy</h2>
-
-      <p>
-        This application is not specifically directed toward children under the applicable digital consent age.
-      </p>
-
-      <h2>Policy Changes</h2>
-
-      <p>
-        This Privacy Policy may be updated in the future.
-        Updated versions will be reflected on this page.
-      </p>
-
-      <h2>Developer Information</h2>
-
-      <p>
-        Developer contact information can be found on the Google Play Store developer page.
-      </p>
+  <header class="card">
+    <div class="lang-label">
+      Simple Zip Maker
     </div>
 
+    <h1 id="page-title">
+      개인정보처리방침
+    </h1>
 
+    <p>
+      JCraft Studio
+    </p>
+
+    <p class="updated">
+      Last Updated / 최종 수정일:
+      2026-11-04
+    </p>
+
+    <nav class="lang-switch"
+         aria-label="Language selection">
+      <button id="btn-ko"
+              class="lang-btn active"
+              type="button"
+              aria-pressed="true">
+        한국어
+      </button>
+
+      <button id="btn-en"
+              class="lang-btn"
+              type="button"
+              aria-pressed="false">
+        English
+      </button>
+    </nav>
+  </header>
+
+  <!-- ================================= -->
+  <!-- KOREAN PRIVACY POLICY             -->
+  <!-- ================================= -->
+
+  <main id="lang-ko"
+        class="lang-content active"
+        lang="ko">
 
     <div class="card">
       <div class="lang-label">한국어</div>
@@ -183,79 +319,1689 @@
       <h1>개인정보처리방침</h1>
 
       <p>
-        Simple Zip Maker는 사용자의 기기 내에서 ZIP 파일을 생성하는 앱입니다.
+        본 개인정보처리방침은
+        JCraft Studio가 제공하는
+        <strong>Simple Zip Maker</strong>
+        (이하 "앱")에 적용됩니다.
       </p>
 
       <p>
-        본 앱은 회원가입 기능을 제공하지 않으며, 사용자의 개인정보를 의도적으로 수집하지 않습니다.
+        본 앱은 사용자가 선택한
+        파일을 ZIP 압축 파일로
+        생성하기 위한
+        유틸리티 애플리케이션입니다.
       </p>
 
-      <h2>정보 처리 방식</h2>
+      <p>
+        앱은 사용자의 기기 내부에서
+        파일을 처리하고
+        ZIP 파일을 생성하도록
+        설계되었습니다.
+      </p>
+
+      <div class="notice">
+        <p><strong>중요 안내</strong></p>
+        <p>
+          사용자가 선택한 파일과
+          ZIP 생성 결과는
+          앱의 핵심 기능을 위해
+          기기 내부에서 처리됩니다.
+        </p>
+        <p>
+          광고 제공에 사용되는
+          Unity LevelPlay와 Unity Ads는
+          파일 내용과 별도로
+          일부 기기 및 광고 관련
+          기술 정보를 처리할 수 있습니다.
+        </p>
+      </div>
+
+      <p class="updated">
+        최종 수정일: 2026년 11월 4일
+      </p>
+    </div>
+
+    <div class="card">
+
+      <h2>1. 수집 및 처리하는 정보</h2>
+
+      <p>
+        본 앱은 회원가입이나
+        별도의 사용자 계정을
+        요구하지 않습니다.
+      </p>
+
+      <p>
+        개발자는 ZIP 파일 생성 기능을
+        제공하기 위해 사용자의 이름,
+        이메일 주소, 전화번호,
+        주민등록번호, 결제정보 등
+        직접 식별 가능한 개인정보를
+        별도로 요구하지 않습니다.
+      </p>
+
+      <p>
+        다만 앱 기능과 광고 제공 과정에서
+        다음과 같은 정보가 처리될 수 있습니다.
+      </p>
+
+      <h3>1.1 파일 관련 정보</h3>
 
       <ul>
-        <li>사용자가 선택한 파일은 기기 내부에서 처리됩니다.</li>
-        <li>ZIP 파일은 기기 저장소 내부에서 생성됩니다.</li>
-        <li>개발자는 사용자의 파일을 외부 서버로 업로드하지 않습니다.</li>
-        <li>개발자는 개인정보를 판매하지 않습니다.</li>
+        <li>사용자가 선택한 파일</li>
+        <li>파일명 및 파일 형식</li>
+        <li>파일 크기와 접근에 필요한 정보</li>
+        <li>사용자가 지정한 ZIP 생성 설정</li>
+        <li>생성된 ZIP 파일 정보</li>
+        <li>ZIP 생성 기록 및 관련 로컬 데이터</li>
       </ul>
 
-      <h2>광고</h2>
+      <h3>1.2 앱 설정 정보</h3>
+
+      <ul>
+        <li>앱의 언어 설정</li>
+        <li>사용자가 저장한 앱 설정</li>
+        <li>ZIP 생성 기능 관련 로컬 상태값</li>
+        <li>광고 표시 주기 관련 로컬 설정값</li>
+      </ul>
+
+      <h3>1.3 광고 관련 정보</h3>
 
       <p>
-        본 앱은 Google AdMob 등의 제3자 광고 서비스를 사용할 수 있습니다.
-        광고 제공업체는 광고 제공, 부정 사용 방지, 서비스 개선 등을 위해 제한적인 기기 정보를 수집할 수 있습니다.
+        광고 SDK는 광고 제공,
+        광고 성과 측정,
+        서비스 보안 및
+        부정행위 방지를 위해
+        일부 정보를 처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>Android 광고 ID 등 광고 식별자</li>
+        <li>기기 모델 및 운영체제 정보</li>
+        <li>IP 주소 및 대략적인 위치 정보</li>
+        <li>광고 노출·클릭·시청 정보</li>
+        <li>SDK 오류 및 진단 정보</li>
+        <li>광고 부정행위 탐지 관련 정보</li>
+      </ul>
+
+      <p>
+        실제 처리되는 항목은
+        SDK 버전, 연결된 광고 네트워크,
+        기기 설정, 지역 및
+        관련 법령에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h2>2. 정보 이용 목적</h2>
+
+      <ul>
+        <li>사용자가 선택한 파일의 ZIP 압축</li>
+        <li>ZIP 파일 생성 및 저장</li>
+        <li>ZIP 생성 기록 관리</li>
+        <li>앱 설정 및 언어 설정 유지</li>
+        <li>파일 처리 오류 확인</li>
+        <li>앱 안정성 및 성능 개선</li>
+        <li>광고 제공 및 성과 측정</li>
+        <li>광고 표시 빈도 관리</li>
+        <li>서비스 보안 및 부정행위 방지</li>
+        <li>관련 법적 의무 준수</li>
+      </ul>
+
+      <h2>3. 파일 처리 방식</h2>
+
+      <p>
+        본 앱은 사용자가 선택한
+        파일을 ZIP 형식으로
+        압축하기 위해
+        해당 파일에 접근합니다.
       </p>
 
       <p>
-        자세한 내용은 각 광고 제공업체의 개인정보처리방침을 참고해 주세요.
-      </p>
-
-      <h2>파일 접근 권한</h2>
-
-      <p>
-        파일 접근 권한은 사용자가 요청한 파일 선택 및 ZIP 생성 기능 제공을 위해서만 사용됩니다.
+        사용자가 선택한 파일의
+        내용은 ZIP 생성 기능을
+        수행하기 위한 범위에서
+        기기 내부에서 처리됩니다.
       </p>
 
       <p>
-        앱은 사용자의 동작과 관계없는 파일이나 개인정보에 의도적으로 접근하지 않습니다.
+        개발자는 정상적인
+        ZIP 생성 과정에서
+        사용자 파일의 내용을
+        별도의 개발자 운영 서버에
+        업로드하지 않습니다.
       </p>
 
-      <h2>데이터 저장</h2>
+      <h3>3.1 ZIP 생성 과정</h3>
+
+      <ul>
+        <li>사용자가 압축할 파일 선택</li>
+        <li>선택한 파일의 접근 및 읽기</li>
+        <li>파일 데이터의 ZIP 압축 처리</li>
+        <li>압축 결과 ZIP 파일 생성</li>
+        <li>기기 저장소에 결과 파일 저장</li>
+        <li>지원되는 경우 최근 작업 기록 저장</li>
+      </ul>
+
+      <h3>3.2 원본 파일</h3>
 
       <p>
-        ZIP 생성 기록 및 앱 설정 정보는 사용자 편의를 위해 기기 내부에 저장될 수 있습니다.
+        앱은 원본 파일의
+        내용을 읽어 ZIP 파일을
+        생성하도록 설계되었으며,
+        정상적인 ZIP 생성 과정에서
+        원본 파일을 임의로
+        삭제하거나 변경하지
+        않는 것을 기본으로 합니다.
       </p>
 
       <p>
-        저장된 데이터는 앱 삭제 또는 기기 설정의 앱 데이터 삭제 기능을 통해 제거할 수 있습니다.
+        다만 기기 상태,
+        파일 접근 권한 또는
+        저장소 오류 등에 따라
+        파일 처리에 문제가
+        발생할 수 있습니다.
       </p>
 
-      <h2>아동 개인정보</h2>
+      <h3>3.3 임시 데이터</h3>
 
       <p>
-        본 앱은 관련 법령상 디지털 동의 연령 미만 아동을 주요 대상으로 하지 않습니다.
+        ZIP 생성 과정에서
+        작업용 임시 파일이나
+        캐시 데이터가
+        기기 내부에 생성될 수 있습니다.
       </p>
 
-      <h2>정책 변경</h2>
-
       <p>
-        본 개인정보처리방침은 향후 변경될 수 있으며, 변경 내용은 본 페이지를 통해 반영됩니다.
+        해당 데이터의 보관 및
+        삭제 시점은
+        앱의 실제 구현과
+        운영체제의 저장소
+        관리 방식에 따라
+        달라질 수 있습니다.
       </p>
 
-      <h2>개발자 정보</h2>
+      <h2>4. 파일 접근 권한</h2>
 
       <p>
-        개발자 연락처 및 정보는 Google Play 스토어의 개발자 페이지에서 확인할 수 있습니다.
+        파일 접근 권한은
+        사용자가 직접 요청한
+        파일 선택 및 ZIP 생성 기능을
+        제공하기 위한 목적으로
+        사용됩니다.
+      </p>
+
+      <p>
+        앱은 사용자의 동작과
+        관련 없는 파일에
+        의도적으로 접근하거나
+        불필요한 파일 내용을
+        수집하도록 설계되지 않았습니다.
+      </p>
+
+      <p>
+        Android의 파일 선택기,
+        저장소 접근 기능 또는
+        관련 권한은
+        운영체제 버전과
+        앱 구현에 따라
+        다르게 적용될 수 있습니다.
+      </p>
+
+      <p>
+        사용자가 외부 저장소나
+        클라우드 파일 제공업체에서
+        파일을 선택하는 경우
+        해당 제공업체의
+        개인정보처리방침이
+        별도로 적용될 수 있습니다.
+      </p>
+
+      <h2>5. 데이터 저장 및 삭제</h2>
+
+      <h3>5.1 로컬 저장</h3>
+
+      <p>
+        앱은 ZIP 생성 기록,
+        파일 관련 정보,
+        앱 설정 등을
+        사용자 편의를 위해
+        기기 내부에 저장할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 데이터는
+        앱 기능을 제공하고
+        사용자의 설정을 유지하기 위해
+        사용됩니다.
+      </p>
+
+      <h3>5.2 생성된 ZIP 파일</h3>
+
+      <p>
+        생성된 ZIP 파일은
+        앱 내부 저장소 또는
+        사용자가 선택한
+        기기 저장 위치에
+        저장될 수 있습니다.
+      </p>
+
+      <p>
+        ZIP 파일의 실제 저장 위치에 따라
+        앱을 삭제하더라도
+        결과 파일이 계속
+        남아 있을 수 있습니다.
+      </p>
+
+      <h3>5.3 데이터 삭제</h3>
+
+      <p>
+        앱에서 ZIP 생성 기록
+        삭제 기능을 제공하는 경우,
+        해당 기능으로 일부 기록을
+        삭제할 수 있습니다.
+      </p>
+
+      <p>
+        Android 설정에서
+        앱 데이터를 삭제하거나
+        앱을 제거하면 일반적으로
+        앱 내부에 저장된
+        로컬 데이터가 삭제됩니다.
+      </p>
+
+      <p>
+        다만 외부 저장소에 저장한
+        ZIP 파일이나 다른 앱으로
+        복사·공유한 파일은
+        사용자가 별도로
+        삭제해야 할 수 있습니다.
+      </p>
+
+      <p>
+        기기의 백업 및 복원 기능에 따라
+        일부 로컬 데이터가
+        복원될 수도 있습니다.
+      </p>
+
+      <h2>6. 광고 및 제3자 서비스</h2>
+
+      <p>
+        본 앱은 광고 미디에이션을 위해
+        <strong>Unity LevelPlay</strong>를
+        사용하며, 광고 제공을 위해
+        <strong>Unity Ads</strong>를
+        사용합니다.
+      </p>
+
+      <h3>6.1 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay는
+        광고 요청, 광고 형식,
+        연결된 광고 네트워크,
+        광고 성과 및 수익화 운영을
+        관리하는 미디에이션 플랫폼입니다.
+      </p>
+
+      <h3>6.2 Unity Ads</h3>
+
+      <p>
+        Unity Ads는 앱 내부에
+        광고를 표시하는 광고 서비스입니다.
+      </p>
+
+      <p>
+        Unity Ads 및 관련 광고 기술
+        협력사는 광고 제공,
+        성과 측정, 서비스 보안,
+        부정행위 방지를 위해
+        기술적 정보를 처리할 수 있습니다.
+      </p>
+
+      <h3>6.3 광고 데이터 유형</h3>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>정보 유형</th>
+              <th>처리 가능한 정보</th>
+              <th>이용 목적</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>광고 식별자</td>
+              <td>Android 광고 ID 등 허용된 식별자</td>
+              <td>광고 제공·측정</td>
+            </tr>
+            <tr>
+              <td>기기 정보</td>
+              <td>모델, 제조사, 운영체제</td>
+              <td>호환성·광고 제공</td>
+            </tr>
+            <tr>
+              <td>네트워크 정보</td>
+              <td>IP 주소, 대략적인 위치</td>
+              <td>광고 제공·보안</td>
+            </tr>
+            <tr>
+              <td>광고 이벤트</td>
+              <td>노출, 클릭, 시청 정보</td>
+              <td>광고 성과 측정</td>
+            </tr>
+            <tr>
+              <td>진단 정보</td>
+              <td>SDK 오류, 충돌 및 기술 정보</td>
+              <td>안정성·문제 해결</td>
+            </tr>
+            <tr>
+              <td>보안 정보</td>
+              <td>부정행위 탐지 관련 정보</td>
+              <td>광고 보안</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>6.4 광고 개인화</h3>
+
+      <p>
+        이용자의 지역,
+        기기 설정,
+        개인정보 보호 선택 및
+        관련 법령에 따라
+        개인화 또는 비개인화
+        광고가 제공될 수 있습니다.
+      </p>
+
+      <p>
+        일부 국가 또는 지역에서는
+        광고 관련 개인정보 처리에
+        이용자의 동의가
+        필요할 수 있습니다.
+      </p>
+
+      <p>
+        법령상 필요한 경우
+        적절한 동의 절차 및
+        개인정보 보호 선택 기능을
+        적용해야 합니다.
+      </p>
+
+      <p>
+        개인화 광고를 제한하더라도
+        모든 광고 표시가
+        중단되는 것은 아닙니다.
+      </p>
+
+      <h3>6.5 Unity 공식 개인정보처리방침</h3>
+
+      <ul>
+        <li>
+          <a href="https://unity.com/legal/privacy-policy"
+             target="_blank"
+             rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+             target="_blank"
+             rel="noopener noreferrer">
+            Unity Game Player and App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        광고 서비스의 데이터 처리 범위는
+        실제 SDK 구성과
+        연결된 광고 네트워크에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h2>7. 개인정보의 제3자 처리 및 공유</h2>
+
+      <p>
+        개발자는 사용자가 선택한
+        파일 내용이나 생성된
+        ZIP 파일을 판매하지 않습니다.
+      </p>
+
+      <p>
+        앱의 일반적인 ZIP 생성 과정에서
+        파일 내용을 개발자의
+        자체 서버에 업로드하여
+        임의로 제3자에게
+        제공하지 않습니다.
+      </p>
+
+      <p>
+        다만 Unity LevelPlay,
+        Unity Ads 및 관련 광고
+        기술 협력사는 광고 제공,
+        성과 측정, 보안 및
+        부정행위 방지를 위해
+        관련 정보를
+        처리하거나 공유할 수 있습니다.
+      </p>
+
+      <p>
+        이용자가 ZIP 파일을
+        외부 앱이나 클라우드 저장소에
+        직접 공유하는 경우
+        해당 서비스가 파일을
+        처리할 수 있습니다.
+      </p>
+
+      <p>
+        관련 법령에 따른
+        적법한 요청이나
+        법적 의무가 있는 경우
+        필요한 범위에서
+        정보가 처리될 수 있습니다.
+      </p>
+
+      <h2>8. 아동의 개인정보</h2>
+
+      <p>
+        본 앱은 일반적인 ZIP
+        파일 생성 도구로,
+        아동을 주요 대상으로
+        설계한 서비스가 아닙니다.
+      </p>
+
+      <p>
+        앱의 기본 기능을
+        제공하기 위해
+        아동의 이름, 연락처,
+        기타 직접 식별 가능한
+        개인정보를 요구하지 않습니다.
+      </p>
+
+      <p>
+        보호자는 아동이
+        파일 선택이나 공유 기능을
+        사용할 때 개인정보가
+        포함된 파일을
+        부적절하게 공유하지 않도록
+        주의할 수 있습니다.
+      </p>
+
+      <p>
+        아동 및 연령 제한
+        대상 이용자에게는
+        관련 법령과 Google Play 정책,
+        광고 네트워크의 추가
+        보호 요건이 적용될 수 있습니다.
+      </p>
+
+      <h2>9. 정보 보안</h2>
+
+      <p>
+        개발자는 파일 처리와
+        앱 운영의 안정성을 위해
+        합리적인 보안 조치를
+        고려합니다.
+      </p>
+
+      <p>
+        다만 기기의 보안 상태,
+        운영체제 제한,
+        저장소 오류,
+        악성코드, 외부 앱의 동작 등
+        모든 환경에서 완전한
+        보안을 보장할 수는 없습니다.
+      </p>
+
+      <p>
+        ZIP 파일은 압축 형식이며,
+        압축 자체가 파일 내용을
+        암호화하거나 기밀성을
+        보장하는 것은 아닙니다.
+      </p>
+
+      <p>
+        비밀번호 보호나 암호화가
+        별도로 적용되지 않은 ZIP 파일은
+        다른 사람이 접근할 경우
+        내부 내용을 확인할 수 있습니다.
+      </p>
+
+      <p>
+        민감한 파일을 저장하거나
+        공유하는 경우에는
+        접근 권한과 공유 대상을
+        주의해서 확인해야 합니다.
+      </p>
+
+      <h2>10. 저작권 및 파일 이용 권한</h2>
+
+      <p>
+        본 앱은 사용자가
+        선택한 파일을 ZIP으로
+        압축하는 유틸리티 도구입니다.
+      </p>
+
+      <p>
+        압축 대상 파일의
+        저작권과 기타 권리는
+        해당 파일의 정당한
+        권리자에게 귀속됩니다.
+      </p>
+
+      <p>
+        사용자는 적법한 접근 및
+        이용 권한을 가진
+        파일만 압축해야 합니다.
+      </p>
+
+      <p>
+        타인의 저작권,
+        개인정보, 영업비밀 및
+        기타 권리를 침해할
+        목적으로 앱을
+        이용해서는 안 됩니다.
+      </p>
+
+      <p>
+        앱 자체의 독창적인
+        소프트웨어 코드,
+        디자인 및 제작 콘텐츠는
+        JCraft Studio 또는
+        정당한 권리자의
+        권리에 속합니다.
+      </p>
+
+      <p>
+        Unity, Unity LevelPlay,
+        Unity Ads, Google Play 등
+        제3자의 상표는
+        각 권리자에게 귀속됩니다.
+      </p>
+
+      <h2>11. 책임 및 면책 안내</h2>
+
+      <p>
+        본 앱은 일반적인
+        ZIP 파일 생성용
+        유틸리티로 제공됩니다.
+      </p>
+
+      <p>
+        파일 형식, 파일 손상,
+        접근 권한, 저장공간 부족,
+        운영체제의 제한 등에 따라
+        ZIP 생성이 실패할 수 있습니다.
+      </p>
+
+      <p>
+        중요한 파일은 ZIP 생성 전에
+        원본을 별도로
+        백업하는 것이 좋습니다.
+      </p>
+
+      <p>
+        ZIP 생성 완료 후에는
+        결과 파일이 정상적으로 열리고
+        필요한 파일이 모두 포함되었는지
+        직접 확인하는 것이 좋습니다.
+      </p>
+
+      <p>
+        관련 법령에서 허용하는
+        범위 내에서 개발자의 책임은
+        제한될 수 있습니다.
+      </p>
+
+      <p>
+        다만 법령상 면제하거나
+        제한할 수 없는 책임은
+        해당 제한의 적용을
+        받지 않습니다.
+      </p>
+
+      <h2>12. 이용자의 개인정보 보호 권리</h2>
+
+      <p>
+        이용자는 관련 법령에 따라
+        개인정보의 열람, 정정,
+        삭제, 처리 제한 및
+        기타 개인정보 보호
+        권리를 행사할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>앱에서 제공하는 ZIP 기록 삭제 기능 이용</li>
+        <li>Android 설정에서 앱 데이터 삭제</li>
+        <li>앱 제거를 통한 로컬 데이터 삭제</li>
+        <li>생성된 ZIP 파일 직접 삭제</li>
+        <li>Android 광고 ID 관리 또는 삭제</li>
+        <li>Unity 개인정보 보호 요청 절차 확인</li>
+        <li>Google Play 개발자 연락처를 통한 문의</li>
+      </ul>
+
+      <p>
+        제3자 광고 서비스가
+        독립적으로 처리하는 정보는
+        해당 제공업체의
+        개인정보 보호 절차에 따라
+        요청해야 할 수 있습니다.
+      </p>
+
+      <h2>13. 개인정보처리방침 변경</h2>
+
+      <p>
+        본 개인정보처리방침은
+        앱 기능, 광고 SDK,
+        데이터 처리 방식,
+        관련 법령 또는
+        플랫폼 정책 변경에 따라
+        수정될 수 있습니다.
+      </p>
+
+      <p>
+        수정된 내용은
+        본 페이지에 게시되며
+        최종 수정일을 갱신합니다.
+      </p>
+
+      <p>
+        관련 법령상 필요한 경우
+        중요한 변경 사항에 대해
+        추가 안내 또는
+        동의 절차가 적용될 수 있습니다.
+      </p>
+
+      <h2>14. 개발자 정보 및 문의</h2>
+
+      <p>
+        <strong>개발자:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        앱 기능, 파일 처리,
+        개인정보 및 데이터 삭제
+        관련 문의는 Google Play
+        스토어에 게시된 개발자
+        연락처를 참고하시기 바랍니다.
+      </p>
+
+      <p>
+        Unity 광고 관련
+        개인정보 문의는
+        Unity 공식 개인정보
+        보호 자료를 참고할 수 있습니다.
+      </p>
+
+      <p class="updated">
+        최종 수정일: 2026년 11월 4일
+      </p>
+
+    </div>
+  </main>
+
+  <!-- ================================= -->
+  <!-- ENGLISH PRIVACY POLICY            -->
+  <!-- ================================= -->
+
+  <main id="lang-en"
+        class="lang-content"
+        lang="en">
+
+    <div class="card">
+      <div class="lang-label">English</div>
+
+      <h1>Privacy Policy</h1>
+
+      <p>
+        This Privacy Policy applies
+        to <strong>Simple Zip Maker</strong>
+        (the "App"), provided by
+        JCraft Studio.
+      </p>
+
+      <p>
+        The App is a utility designed
+        to create ZIP archives from
+        files selected by users.
+      </p>
+
+      <p>
+        Files are designed to be
+        processed locally on the
+        user's device when creating
+        ZIP archives.
+      </p>
+
+      <div class="notice">
+        <p><strong>Important Notice</strong></p>
+        <p>
+          Files selected by users
+          and generated ZIP archives
+          are processed locally
+          for the App's core functionality.
+        </p>
+        <p>
+          Unity LevelPlay and Unity Ads
+          may independently process
+          technical information related
+          to devices and advertising.
+        </p>
+      </div>
+
+      <p class="updated">
+        Last updated: November 4, 2026
       </p>
     </div>
 
+    <div class="card">
 
-    <div class="footer">
-      © 2026 JCraft Studio<br />
-      Simple Zip Maker Privacy Policy
+      <h2>1. Information We Collect or Process</h2>
+
+      <p>
+        The App does not require
+        account registration or
+        the creation of
+        a separate user account.
+      </p>
+
+      <p>
+        The Developer does not require
+        names, email addresses,
+        phone numbers, government
+        identification numbers,
+        or payment details
+        for ZIP creation.
+      </p>
+
+      <p>
+        Certain information may
+        nevertheless be processed
+        during App operation
+        and advertisement delivery.
+      </p>
+
+      <h3>1.1 File Information</h3>
+
+      <ul>
+        <li>Files selected by users.</li>
+        <li>File names and file types.</li>
+        <li>File sizes and access information.</li>
+        <li>User-selected ZIP settings.</li>
+        <li>Generated ZIP archive information.</li>
+        <li>Local ZIP creation history, where supported.</li>
+      </ul>
+
+      <h3>1.2 Application Settings</h3>
+
+      <ul>
+        <li>Application language preferences.</li>
+        <li>Saved application settings.</li>
+        <li>Local values used for ZIP operations.</li>
+        <li>Local values for advertising intervals.</li>
+      </ul>
+
+      <h3>1.3 Advertising Information</h3>
+
+      <p>
+        Advertising SDKs may process
+        information for ad delivery,
+        performance measurement,
+        security, and fraud prevention.
+      </p>
+
+      <ul>
+        <li>
+          Android Advertising ID
+          and permitted identifiers.
+        </li>
+        <li>
+          Device model and
+          operating system information.
+        </li>
+        <li>
+          IP address and approximate
+          inferred location.
+        </li>
+        <li>
+          Advertising impressions,
+          clicks, and views.
+        </li>
+        <li>
+          SDK errors and diagnostics.
+        </li>
+        <li>
+          Advertising fraud
+          detection information.
+        </li>
+      </ul>
+
+      <p>
+        The exact data processed
+        depends on SDK versions,
+        connected networks,
+        device settings,
+        user region,
+        and applicable laws.
+      </p>
+
+      <h2>2. Purpose of Information Use</h2>
+
+      <ul>
+        <li>Creating ZIP archives from selected files.</li>
+        <li>Generating and saving ZIP files.</li>
+        <li>Managing ZIP creation history.</li>
+        <li>Preserving application preferences.</li>
+        <li>Diagnosing file processing errors.</li>
+        <li>Improving stability and performance.</li>
+        <li>Delivering and measuring advertisements.</li>
+        <li>Managing advertising frequency.</li>
+        <li>Security and fraud prevention.</li>
+        <li>Compliance with legal obligations.</li>
+      </ul>
+
+      <h2>3. File Processing</h2>
+
+      <p>
+        The App accesses files
+        selected by users in
+        order to create
+        ZIP archives.
+      </p>
+
+      <p>
+        File contents are processed
+        on the user's device
+        as needed for
+        ZIP creation.
+      </p>
+
+      <p>
+        The Developer does not
+        upload file contents
+        to a separate
+        developer-operated server
+        during normal ZIP creation.
+      </p>
+
+      <h3>3.1 ZIP Creation Process</h3>
+
+      <ul>
+        <li>Selecting files for compression.</li>
+        <li>Reading selected file data.</li>
+        <li>Compressing file data into ZIP format.</li>
+        <li>Generating a ZIP archive.</li>
+        <li>Saving the ZIP archive on the device.</li>
+        <li>Saving recent history, where supported.</li>
+      </ul>
+
+      <h3>3.2 Original Files</h3>
+
+      <p>
+        The App is designed
+        to read selected
+        original files to
+        create ZIP archives,
+        without intentionally
+        modifying or deleting
+        those originals
+        during normal operation.
+      </p>
+
+      <p>
+        File processing errors
+        may still occur due to
+        device conditions,
+        permissions,
+        or storage issues.
+      </p>
+
+      <h3>3.3 Temporary Data</h3>
+
+      <p>
+        Temporary files or cache
+        data may be generated
+        locally during
+        ZIP creation.
+      </p>
+
+      <p>
+        Handling and deletion
+        of temporary data
+        depend on App implementation
+        and operating system
+        storage management.
+      </p>
+
+      <h2>4. File Access Permissions</h2>
+
+      <p>
+        File access permissions
+        are used to select
+        and read files
+        requested by users
+        for ZIP creation.
+      </p>
+
+      <p>
+        The App is not designed
+        to intentionally access
+        unrelated files or
+        collect unnecessary
+        file contents.
+      </p>
+
+      <p>
+        File picker behavior
+        and storage access
+        permissions may vary
+        depending on Android
+        versions and
+        App implementation.
+      </p>
+
+      <p>
+        Files selected from
+        external or cloud
+        storage providers
+        may be subject to
+        those providers'
+        privacy policies.
+      </p>
+
+      <h2>5. Data Storage and Deletion</h2>
+
+      <h3>5.1 Local Storage</h3>
+
+      <p>
+        The App may store
+        ZIP creation history,
+        file information,
+        and application settings
+        locally on the device.
+      </p>
+
+      <p>
+        Such data is used
+        to provide App features
+        and preserve preferences.
+      </p>
+
+      <h3>5.2 Generated ZIP Archives</h3>
+
+      <p>
+        Generated ZIP files
+        may be stored in
+        private App storage
+        or a device location
+        selected by the user.
+      </p>
+
+      <p>
+        ZIP files saved outside
+        the App's private storage
+        may remain available
+        after the App
+        is uninstalled.
+      </p>
+
+      <h3>5.3 Data Deletion</h3>
+
+      <p>
+        Where an in-App
+        history deletion feature
+        is available, users may
+        remove certain saved records.
+      </p>
+
+      <p>
+        Clearing App data
+        through Android settings
+        or uninstalling the App
+        generally removes
+        private App data.
+      </p>
+
+      <p>
+        ZIP files saved in
+        external storage or
+        copied to other apps
+        may require
+        separate deletion.
+      </p>
+
+      <p>
+        Some local data may
+        be restored through
+        device backup
+        and restoration.
+      </p>
+
+      <h2>6. Advertising and Third-Party Services</h2>
+
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>
+        for advertising mediation
+        and <strong>Unity Ads</strong>
+        for advertisement delivery.
+      </p>
+
+      <h3>6.1 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay is an
+        advertising mediation platform
+        used to manage ad requests,
+        advertising formats,
+        connected networks,
+        performance reporting,
+        and monetization operations.
+      </p>
+
+      <h3>6.2 Unity Ads</h3>
+
+      <p>
+        Unity Ads provides
+        advertisements within
+        the App.
+      </p>
+
+      <p>
+        Unity Ads and related
+        advertising partners
+        may process information
+        for ad delivery,
+        measurement, security,
+        and fraud prevention.
+      </p>
+
+      <h3>6.3 Advertising Data Categories</h3>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Examples</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Identifiers</td>
+              <td>
+                Android Advertising ID
+                and permitted identifiers
+              </td>
+              <td>Ad delivery and measurement</td>
+            </tr>
+            <tr>
+              <td>Device information</td>
+              <td>
+                Device model,
+                manufacturer, and OS
+              </td>
+              <td>Compatibility and delivery</td>
+            </tr>
+            <tr>
+              <td>Network information</td>
+              <td>
+                IP address and
+                approximate location
+              </td>
+              <td>Advertising and security</td>
+            </tr>
+            <tr>
+              <td>Advertising events</td>
+              <td>
+                Impressions,
+                clicks, and views
+              </td>
+              <td>Performance measurement</td>
+            </tr>
+            <tr>
+              <td>Diagnostics</td>
+              <td>
+                SDK errors,
+                crashes, technical data
+              </td>
+              <td>Stability and troubleshooting</td>
+            </tr>
+            <tr>
+              <td>Security information</td>
+              <td>
+                Fraud detection signals
+              </td>
+              <td>Fraud prevention</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>6.4 Advertising Personalization</h3>
+
+      <p>
+        Advertisements may be
+        personalized or
+        non-personalized depending
+        on device settings,
+        user region,
+        privacy choices,
+        and applicable laws.
+      </p>
+
+      <p>
+        Some jurisdictions may
+        require user consent
+        for advertising-related
+        personal data processing.
+      </p>
+
+      <p>
+        Where legally required,
+        the App operator must
+        implement appropriate
+        consent and
+        privacy choice procedures.
+      </p>
+
+      <p>
+        Restricting ad personalization
+        does not necessarily
+        disable all advertising.
+      </p>
+
+      <h3>6.5 Unity Privacy Resources</h3>
+
+      <ul>
+        <li>
+          <a href="https://unity.com/legal/privacy-policy"
+             target="_blank"
+             rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+             target="_blank"
+             rel="noopener noreferrer">
+            Unity Game Player and
+            App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        Advertising data processing
+        may vary depending on
+        the actual SDK configuration
+        and connected networks.
+      </p>
+
+      <h2>7. Third-Party Processing and Sharing</h2>
+
+      <p>
+        The Developer does not
+        sell selected file contents
+        or generated ZIP archives.
+      </p>
+
+      <p>
+        The App does not upload
+        selected file contents
+        to a separate
+        developer-operated server
+        for arbitrary sharing
+        during normal ZIP creation.
+      </p>
+
+      <p>
+        However, Unity LevelPlay,
+        Unity Ads, and related
+        advertising partners may
+        process or share
+        advertising-related information.
+      </p>
+
+      <p>
+        Files intentionally shared
+        with external apps or
+        cloud storage services
+        may be processed
+        by those services.
+      </p>
+
+      <p>
+        Information may also
+        be processed where
+        required by applicable
+        law or lawful requests.
+      </p>
+
+      <h2>8. Children's Privacy</h2>
+
+      <p>
+        The App is a general-purpose
+        ZIP creation utility
+        and is not designed
+        primarily for children.
+      </p>
+
+      <p>
+        The App does not require
+        children's names,
+        contact details,
+        or directly identifying
+        information for
+        its basic functions.
+      </p>
+
+      <p>
+        Parents or guardians
+        may supervise children's
+        use of file selection
+        and sharing features
+        to prevent inappropriate
+        disclosure of personal data.
+      </p>
+
+      <p>
+        Applicable laws,
+        Google Play policies,
+        and advertising requirements
+        may impose additional
+        protections for children
+        and underage users.
+      </p>
+
+      <h2>9. Information Security</h2>
+
+      <p>
+        The Developer seeks
+        to consider reasonable
+        security practices
+        for file processing
+        and App operation.
+      </p>
+
+      <p>
+        However, no device,
+        storage system,
+        or network can guarantee
+        absolute security.
+      </p>
+
+      <p>
+        ZIP compression alone
+        does not encrypt
+        file contents
+        or guarantee confidentiality.
+      </p>
+
+      <p>
+        Unless separate
+        encryption or password
+        protection is applied,
+        ZIP archive contents
+        may be accessible
+        to anyone who can
+        open the archive.
+      </p>
+
+      <p>
+        Users should review
+        file access permissions
+        and sharing destinations
+        when handling
+        sensitive information.
+      </p>
+
+      <h2>10. Copyright and File Authorization</h2>
+
+      <p>
+        The App is a utility
+        for creating ZIP archives
+        from selected files.
+      </p>
+
+      <p>
+        Copyrights and other
+        rights to file contents
+        remain with their
+        respective owners.
+      </p>
+
+      <p>
+        Users should process
+        only files they are
+        legally authorized
+        to access and use.
+      </p>
+
+      <p>
+        The App must not
+        be used to unlawfully
+        infringe copyrights,
+        privacy rights,
+        trade secrets,
+        or other rights.
+      </p>
+
+      <p>
+        Rights to the App's
+        original software code,
+        design, and other
+        created materials
+        belong to JCraft Studio
+        or their lawful owners.
+      </p>
+
+      <p>
+        Unity, Unity LevelPlay,
+        Unity Ads, Google Play,
+        and other trademarks
+        belong to their
+        respective owners.
+      </p>
+
+      <h2>11. Disclaimer and Liability</h2>
+
+      <p>
+        The App is provided
+        as a general-purpose
+        ZIP creation utility.
+      </p>
+
+      <p>
+        ZIP creation may fail
+        due to file formats,
+        corruption, permissions,
+        insufficient storage,
+        operating system
+        restrictions, or
+        other technical factors.
+      </p>
+
+      <p>
+        Users are encouraged
+        to preserve original
+        files before creating
+        ZIP archives.
+      </p>
+
+      <p>
+        Users should verify
+        that generated archives
+        can be opened and
+        contain the intended files.
+      </p>
+
+      <p>
+        To the extent
+        permitted by law,
+        the Developer's
+        liability may be limited.
+      </p>
+
+      <p>
+        Nothing in this policy
+        excludes or limits
+        liability that cannot
+        legally be excluded.
+      </p>
+
+      <h2>12. User Privacy Rights</h2>
+
+      <p>
+        Depending on applicable
+        privacy laws, users
+        may have rights
+        relating to access,
+        correction, deletion,
+        restriction of processing,
+        and other privacy choices.
+      </p>
+
+      <ul>
+        <li>
+          Use available ZIP
+          history deletion features.
+        </li>
+        <li>
+          Clear application data
+          through Android settings.
+        </li>
+        <li>
+          Uninstall the App
+          to remove local data.
+        </li>
+        <li>
+          Delete generated ZIP
+          archives separately.
+        </li>
+        <li>
+          Manage or delete
+          the Android Advertising ID.
+        </li>
+        <li>
+          Review available Unity
+          privacy request procedures.
+        </li>
+        <li>
+          Contact the Developer
+          through Google Play.
+        </li>
+      </ul>
+
+      <p>
+        Information independently
+        processed by advertising
+        services may be subject
+        to those providers'
+        privacy procedures.
+      </p>
+
+      <h2>13. Changes to This Privacy Policy</h2>
+
+      <p>
+        This Privacy Policy
+        may be updated due to
+        changes in App features,
+        advertising SDKs,
+        data processing practices,
+        applicable laws,
+        or platform policies.
+      </p>
+
+      <p>
+        Updates will be
+        published on this page
+        with a revised date.
+      </p>
+
+      <p>
+        Where legally required,
+        material changes may
+        involve additional
+        notice or consent.
+      </p>
+
+      <h2>14. Developer Information and Contact</h2>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        For questions about
+        App functions,
+        file processing,
+        privacy, or data deletion,
+        please refer to
+        the Developer contact
+        information on Google Play.
+      </p>
+
+      <p>
+        For advertising-related
+        privacy requests,
+        users may also
+        consult Unity's
+        official privacy resources.
+      </p>
+
+      <p class="updated">
+        Last updated: November 4, 2026
+      </p>
+
     </div>
+  </main>
 
-  </div>
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <p><strong>JCraft Studio</strong></p>
+    <p>Simple Zip Maker Privacy Policy</p>
+    <p>
+      Last Updated / 최종 수정일:
+      2026-11-04
+    </p>
+    <p>
+      © 2026 JCraft Studio.
+      All rights reserved.
+    </p>
+  </footer>
+
+</div>
+
+<!-- LANGUAGE SWITCHING -->
+
+<script>
+  (function () {
+    "use strict";
+
+    const STORAGE_KEY =
+      "simple-zip-maker-privacy-language";
+
+    const korean =
+      document.getElementById("lang-ko");
+
+    const english =
+      document.getElementById("lang-en");
+
+    const koButton =
+      document.getElementById("btn-ko");
+
+    const enButton =
+      document.getElementById("btn-en");
+
+    const pageTitle =
+      document.getElementById("page-title");
+
+    function setLanguage(language, save) {
+      const lang =
+        language === "ko" ? "ko" : "en";
+
+      korean.classList.toggle(
+        "active",
+        lang === "ko"
+      );
+
+      english.classList.toggle(
+        "active",
+        lang === "en"
+      );
+
+      koButton.classList.toggle(
+        "active",
+        lang === "ko"
+      );
+
+      enButton.classList.toggle(
+        "active",
+        lang === "en"
+      );
+
+      koButton.setAttribute(
+        "aria-pressed",
+        String(lang === "ko")
+      );
+
+      enButton.setAttribute(
+        "aria-pressed",
+        String(lang === "en")
+      );
+
+      document.documentElement.lang = lang;
+
+      pageTitle.textContent =
+        lang === "ko"
+          ? "개인정보처리방침"
+          : "Privacy Policy";
+
+      document.title =
+        lang === "ko"
+          ? "개인정보처리방침 - Simple Zip Maker"
+          : "Privacy Policy - Simple Zip Maker";
+
+      if (save) {
+        try {
+          localStorage.setItem(
+            STORAGE_KEY,
+            lang
+          );
+        } catch (error) {
+          // Language switching remains available.
+        }
+      }
+    }
+
+    function getInitialLanguage() {
+      try {
+        const saved =
+          localStorage.getItem(STORAGE_KEY);
+
+        if (saved === "ko" || saved === "en") {
+          return saved;
+        }
+      } catch (error) {
+        // Use browser language.
+      }
+
+      const browserLanguage =
+        (navigator.language || "en")
+          .toLowerCase();
+
+      return browserLanguage.startsWith("ko")
+        ? "ko"
+        : "en";
+    }
+
+    koButton.addEventListener(
+      "click",
+      function () {
+        setLanguage("ko", true);
+      }
+    );
+
+    enButton.addEventListener(
+      "click",
+      function () {
+        setLanguage("en", true);
+      }
+    );
+
+    setLanguage(
+      getInitialLanguage(),
+      false
+    );
+  })();
+</script>
 
 </body>
 </html>
