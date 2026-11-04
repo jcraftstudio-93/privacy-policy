@@ -1,17 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="description"
+        content="Privacy Policy for Double Elimination Bracket by JCraft Studio.">
 
   <title>Privacy Policy | Double Elimination Bracket</title>
 
-  <meta
-    name="description"
-    content="Privacy Policy for Double Elimination Bracket by JCraft Studio."
-  >
-
   <style>
+    :root {
+      color-scheme: light;
+      --primary: #6557ff;
+      --primary-dark: #29245c;
+      --background: #f5f6fa;
+      --surface: #ffffff;
+      --text: #202124;
+      --muted: #70757a;
+      --border: #d9dce5;
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -27,9 +40,9 @@
         "Noto Sans KR",
         Arial,
         sans-serif;
-      background: #f5f6fa;
-      color: #202124;
-      line-height: 1.7;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.75;
     }
 
     .container {
@@ -39,7 +52,11 @@
     }
 
     .header {
-      background: linear-gradient(135deg, #151936, #5b4bff);
+      background: linear-gradient(
+        135deg,
+        #151936,
+        #5b4bff
+      );
       color: white;
       border-radius: 24px;
       padding: 32px;
@@ -64,29 +81,30 @@
     }
 
     .language-buttons button {
-      border: 1px solid #d9dce5;
+      border: 1px solid var(--border);
       background: white;
-      color: #202124;
+      color: var(--text);
       padding: 10px 18px;
       border-radius: 999px;
       font-size: 15px;
       font-weight: 700;
       cursor: pointer;
+      transition: background 0.2s;
     }
 
     .language-buttons button:hover {
       background: #f0efff;
-      border-color: #6557ff;
+      border-color: var(--primary);
     }
 
     .language-buttons button.active {
-      background: #6557ff;
-      border-color: #6557ff;
+      background: var(--primary);
+      border-color: var(--primary);
       color: white;
     }
 
     .card {
-      background: white;
+      background: var(--surface);
       border-radius: 20px;
       padding: 28px;
       margin-bottom: 18px;
@@ -95,40 +113,53 @@
 
     h2 {
       margin-top: 0;
-      color: #29245c;
+      color: var(--primary-dark);
       font-size: 22px;
     }
 
     h3 {
-      margin-top: 28px;
+      margin-top: 24px;
       font-size: 18px;
+    }
+
+    p {
+      margin: 12px 0;
     }
 
     ul {
       padding-left: 22px;
     }
 
+    li {
+      margin-bottom: 9px;
+    }
+
     a {
       color: #5547e8;
-      word-break: break-all;
+      overflow-wrap: anywhere;
     }
 
     .notice {
       padding: 16px 18px;
       background: #f3f1ff;
-      border-left: 4px solid #6557ff;
+      border-left: 4px solid var(--primary);
       border-radius: 10px;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
     }
 
     .footer {
       text-align: center;
-      color: #70757a;
+      color: var(--muted);
       font-size: 14px;
       padding-top: 20px;
     }
 
-    [data-lang="ko"] {
-      display: none;
+    [hidden] {
+      display: none !important;
     }
 
     @media (max-width: 600px) {
@@ -149,6 +180,10 @@
         padding: 22px 18px;
         border-radius: 16px;
       }
+
+      h2 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
@@ -160,662 +195,1569 @@
   <header class="header">
     <h1>Privacy Policy</h1>
     <p>Double Elimination Bracket · JCraft Studio</p>
+    <p>Last updated: November 4, 2026</p>
   </header>
 
-  <div class="language-buttons">
-    <button id="btn-en" class="active" onclick="setLanguage('en')">
+  <nav class="language-buttons"
+       aria-label="Language selection">
+
+    <button
+      type="button"
+      id="btn-en"
+      class="active"
+      onclick="setLanguage('en')">
       English
     </button>
 
-    <button id="btn-ko" onclick="setLanguage('ko')">
+    <button
+      type="button"
+      id="btn-ko"
+      onclick="setLanguage('ko')">
       한국어
     </button>
-  </div>
 
+  </nav>
 
-  <!-- =====================================================
-       ENGLISH
-       ===================================================== -->
+  <!-- ====================================== -->
+  <!-- ENGLISH PRIVACY POLICY                 -->
+  <!-- ====================================== -->
 
   <main data-lang="en">
 
     <section class="card">
+
       <h2>Privacy Policy</h2>
 
       <p>
         This Privacy Policy explains how
         <strong>Double Elimination Bracket</strong>
         ("the App"), provided by
-        <strong>JCraft Studio</strong>,
-        handles information when you use the App.
+        <strong>JCraft Studio</strong>
+        ("the Developer"), handles information
+        when users access and use the App.
       </p>
 
       <p>
-        JCraft Studio respects user privacy and aims to handle
-        information transparently and appropriately.
+        JCraft Studio respects user privacy
+        and aims to handle information
+        transparently, responsibly, and
+        in accordance with applicable laws.
       </p>
 
       <p>
-        <strong>Last updated:</strong> September 17, 2026
+        <strong>Last updated:</strong>
+        November 4, 2026
       </p>
+
     </section>
 
-
     <section class="card">
-      <h2>1. Information You Enter in the App</h2>
+
+      <h2>1. Information Entered by Users</h2>
 
       <p>
-        The App allows users to enter information required to
-        create and manage tournament brackets, such as tournament
-        titles, participant names, match results, and tournament
-        progress.
+        The App provides functionality
+        for creating and managing
+        double-elimination tournament brackets.
       </p>
 
       <p>
-        This information is used only to provide the relevant
-        features of the App.
+        Users may enter or generate
+        the following information:
+      </p>
+
+      <ul>
+        <li>Tournament titles and names</li>
+        <li>Participant or team names</li>
+        <li>Match results and scores</li>
+        <li>Tournament progress and standings</li>
+        <li>Saved tournament records</li>
+        <li>App preferences and settings</li>
+      </ul>
+
+      <p>
+        This information is used to provide
+        the tournament management features
+        requested by the user.
       </p>
 
       <p>
-        JCraft Studio does not require users to create an account
-        or provide their real name, email address, phone number,
-        or other directly identifying information in order to use
-        the core tournament features.
+        The App does not require account
+        registration, and users are not required
+        to provide their real names, email
+        addresses, phone numbers, or other
+        direct personal identifiers to use
+        its core features.
       </p>
 
       <p>
-        Users should avoid entering unnecessary personal or
-        sensitive information as participant names or tournament
-        information.
+        Users are encouraged not to enter
+        unnecessary personal or sensitive
+        information about themselves
+        or other individuals.
       </p>
+
     </section>
 
-
     <section class="card">
+
       <h2>2. Advertising and Third-Party Services</h2>
 
       <p>
-        The App may use Google AdMob and the Google Mobile Ads SDK
-        to display advertisements.
+        The App uses
+        <strong>Unity LevelPlay</strong>
+        as its advertising mediation platform
+        and <strong>Unity Ads</strong>
+        for advertising delivery.
       </p>
 
       <p>
-        Google and its advertising technologies may automatically
-        process certain information for purposes such as delivering
-        and measuring advertisements, analytics, security, and
-        fraud prevention.
+        These services are provided by Unity
+        and may process certain information
+        to deliver advertisements, measure
+        advertising performance, prevent
+        fraudulent activity, and maintain
+        advertising services.
       </p>
 
+      <h3>2.1 Advertising-Related Data</h3>
+
       <p>
-        Depending on the SDK version, device settings, region,
-        consent choices, and advertising configuration, this
-        information may include:
+        Depending on the SDK configuration,
+        Android version, device settings,
+        geographical region, and applicable
+        privacy choices, the information
+        processed may include:
       </p>
 
       <ul>
-        <li>IP address and approximate location derived from it</li>
-        <li>Device or advertising identifiers</li>
-        <li>App and advertisement interactions</li>
-        <li>Diagnostic and performance information</li>
-        <li>Advertising-related information</li>
+        <li>
+          IP addresses and approximate
+          geographical location inferred
+          from IP addresses
+        </li>
+
+        <li>
+          Android Advertising ID
+          and other permitted device identifiers
+        </li>
+
+        <li>
+          Device manufacturer, model,
+          and operating system information
+        </li>
+
+        <li>
+          Application identification
+          and technical application information
+        </li>
+
+        <li>
+          Advertisement impressions,
+          clicks, and interaction events
+        </li>
+
+        <li>
+          Advertising performance,
+          diagnostic, and error information
+        </li>
+
+        <li>
+          Technical information relevant
+          to security and fraud prevention
+        </li>
       </ul>
 
       <p>
-        Such information may be processed by Google in accordance
-        with Google's own privacy policies and applicable laws.
+        Actual data collection and processing
+        may vary depending on the configuration
+        of the advertising SDKs and applicable
+        privacy requirements.
+      </p>
+
+      <h3>2.2 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay is an advertising
+        mediation service used to manage
+        advertising requests, delivery,
+        and monetization performance.
       </p>
 
       <p>
-        For more information, please review Google's privacy
-        information:
+        It may process technical information
+        necessary for advertising mediation,
+        performance measurement,
+        and service reliability.
+      </p>
+
+      <h3>2.3 Unity Ads</h3>
+
+      <p>
+        Unity Ads provides advertisements
+        within the App.
       </p>
 
       <p>
-        <a
-          href="https://policies.google.com/privacy"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google Privacy Policy
-        </a>
+        Unity Ads may process device
+        identifiers, IP addresses,
+        advertisement interaction data,
+        and related technical information.
       </p>
-    </section>
-
-
-    <section class="card">
-      <h2>3. Purpose of Data Processing</h2>
 
       <p>
-        Information processed through the App or third-party
-        services may be used for purposes including:
+        These activities may include
+        advertising measurement,
+        fraud prevention, and
+        personalized advertising
+        where permitted.
+      </p>
+
+      <h3>2.4 Third-Party Privacy Policies</h3>
+
+      <p>
+        Advertising-related information
+        may be processed or shared by Unity
+        and its advertising technology
+        partners under their applicable policies.
+      </p>
+
+      <p>
+        For more information,
+        please review the following
+        official Unity privacy resources:
       </p>
 
       <ul>
-        <li>Providing and maintaining App functionality</li>
-        <li>Creating and managing tournament brackets</li>
-        <li>Remembering relevant App preferences and state</li>
-        <li>Displaying and measuring advertisements</li>
-        <li>Improving service reliability and performance</li>
-        <li>Detecting fraud, abuse, and security issues</li>
-        <li>Complying with applicable legal obligations</li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://activation.unity3d.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and App User Privacy Policy
+          </a>
+        </li>
+
       </ul>
+
+      <p>
+        If additional advertising networks
+        are integrated in the future,
+        the applicable privacy disclosures
+        will be updated accordingly.
+      </p>
+
     </section>
 
+    <section class="card">
+
+      <h2>3. Purposes of Data Processing</h2>
+
+      <p>
+        Information processed through
+        the App and related services
+        may be used for the following purposes:
+      </p>
+
+      <ul>
+        <li>
+          Providing and maintaining
+          App functionality
+        </li>
+
+        <li>
+          Creating and managing
+          double-elimination tournament brackets
+        </li>
+
+        <li>
+          Saving tournament records
+          and progress
+        </li>
+
+        <li>
+          Maintaining user preferences
+          and application settings
+        </li>
+
+        <li>
+          Displaying and measuring advertisements
+        </li>
+
+        <li>
+          Maintaining advertising service
+          reliability and performance
+        </li>
+
+        <li>
+          Detecting fraudulent activities,
+          abuse, and security issues
+        </li>
+
+        <li>
+          Complying with applicable
+          legal obligations
+        </li>
+      </ul>
+
+    </section>
 
     <section class="card">
+
       <h2>4. Data Sharing</h2>
 
       <p>
-        JCraft Studio does not sell personal information provided
-        directly by users.
+        JCraft Studio does not sell
+        tournament information or
+        directly submitted personal information
+        for its own commercial purposes.
       </p>
 
       <p>
-        Information may be processed or shared with service
-        providers when necessary to provide App functionality,
-        advertising, analytics, security, fraud prevention, or
-        where required by applicable law.
+        Tournament information and
+        application preferences are
+        primarily processed and stored
+        locally on the user's device.
       </p>
 
       <p>
-        In particular, advertising-related information may be
-        processed by Google through Google AdMob and the Google
-        Mobile Ads SDK.
+        Advertising-related information
+        may be collected, processed,
+        or shared by Unity and its
+        relevant advertising partners.
       </p>
+
+      <p>
+        Such processing may include
+        advertising identifiers,
+        IP addresses, device information,
+        and advertising interaction data.
+      </p>
+
+      <p>
+        Data may also be disclosed
+        when legally required,
+        including in response to
+        valid legal obligations
+        or lawful requests.
+      </p>
+
     </section>
 
-
     <section class="card">
+
       <h2>5. Data Storage, Retention, and Deletion</h2>
 
+      <h3>5.1 Local Tournament Data</h3>
+
       <p>
-        Tournament information and App preferences may be stored
-        locally on the user's device where required for App
-        functionality.
+        Tournament titles, participant names,
+        match results, tournament progress,
+        and App settings may be stored
+        locally on the user's device.
       </p>
 
       <p>
-        Locally stored information may be removed by using
-        available deletion or reset functions in the App, clearing
-        the App's storage, or uninstalling the App, depending on
-        the type of information and device behavior.
+        This information is retained
+        to support the App's features
+        and allow users to access
+        previously saved tournament records.
       </p>
 
       <p>
-        Information processed independently by third-party
-        services is subject to the retention and deletion practices
+        Users may delete locally stored
+        information using available
+        in-app deletion or reset features,
+        or by clearing the App's storage
+        through Android settings.
+      </p>
+
+      <p>
+        Uninstalling the App generally removes
+        its locally stored information.
+        However, operating system backup
+        and restoration features may affect
+        data removal or restoration.
+      </p>
+
+      <h3>5.2 Advertising Data</h3>
+
+      <p>
+        Information collected or processed
+        independently by Unity and
+        advertising technology partners
+        is subject to their respective
+        privacy policies and retention
+        practices.
+      </p>
+
+      <p>
+        Users may refer to Unity's official
+        privacy resources for information
+        about applicable access,
+        deletion, and privacy rights.
+      </p>
+
+    </section>
+
+    <section class="card">
+
+      <h2>6. User Privacy Choices and Rights</h2>
+
+      <p>
+        Users may manage certain privacy
+        preferences through supported
+        device settings and
+        advertising privacy controls.
+      </p>
+
+      <ul>
+        <li>
+          Use Android privacy settings
+          to manage or delete the
+          Advertising ID where supported.
+        </li>
+
+        <li>
+          Use privacy controls provided
+          within Unity advertisements
+          to manage personalized advertising
+          choices where available.
+        </li>
+
+        <li>
+          Delete local tournament records
+          using available App functions.
+        </li>
+
+        <li>
+          Clear App storage or
+          uninstall the App.
+        </li>
+
+        <li>
+          Contact JCraft Studio through
+          the developer contact information
+          listed on Google Play.
+        </li>
+      </ul>
+
+      <p>
+        Restricting personalized advertising
+        does not necessarily prevent
+        advertisements from appearing.
+      </p>
+
+      <p>
+        Non-personalized advertisements
+        may still be displayed.
+      </p>
+
+      <p>
+        Certain privacy rights may differ
+        according to applicable laws
+        and geographical location.
+      </p>
+
+    </section>
+
+    <section class="card">
+
+      <h2>7. Data Security</h2>
+
+      <p>
+        JCraft Studio takes reasonable
+        measures to protect information
+        handled through the App.
+      </p>
+
+      <p>
+        The App is designed to minimize
+        unnecessary collection of
+        directly identifying information.
+      </p>
+
+      <p>
+        Data processed by third-party
+        advertising services is subject
+        to the security practices
         of those service providers.
       </p>
+
+      <p>
+        However, no electronic storage,
+        network transmission,
+        or security system can guarantee
+        complete protection against
+        every possible security risk.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>6. Data Security</h2>
+
+      <h2>8. Children's Privacy</h2>
 
       <p>
-        JCraft Studio takes reasonable measures to protect
-        information handled through the App.
+        The App is a general-purpose
+        tournament bracket management utility
+        and is not specifically designed
+        for children under the age of 13.
       </p>
 
       <p>
-        However, no electronic storage, device, network, or
-        transmission method can be guaranteed to be completely
-        secure.
+        The Developer does not intentionally
+        request children to provide
+        directly identifying personal
+        information.
       </p>
+
+      <p>
+        Users should avoid entering
+        unnecessary personal or sensitive
+        information about children
+        or other individuals into
+        tournament fields.
+      </p>
+
+      <p>
+        Advertising and related data
+        processing are subject to
+        applicable laws, Google Play policies,
+        and the Developer's advertising
+        configuration.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>7. Children's Privacy</h2>
+
+      <h2>9. App Permissions</h2>
 
       <p>
-        The App is a general-purpose tournament management utility
-        and is not designed to intentionally request children to
-        submit personal information.
+        The App intends to use only
+        the permissions reasonably
+        necessary for its implemented
+        functionality and advertising services.
       </p>
 
       <p>
-        Users should not enter unnecessary personal or sensitive
-        information about children or other individuals into
-        tournament participant fields.
+        Internet access may be used
+        for advertising requests,
+        advertising delivery,
+        and related service operations.
       </p>
 
       <p>
-        Where applicable, advertising and data handling practices
-        are subject to Google Play requirements, applicable law,
-        and the configuration selected by the developer.
+        Advertising SDKs may use
+        permitted device identifiers
+        and related technical information.
       </p>
+
+      <p>
+        If App functionality, permissions,
+        or data processing practices
+        materially change, this Privacy Policy
+        and applicable Google Play Data safety
+        disclosures will be reviewed
+        and updated as necessary.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>8. Permissions</h2>
+
+      <h2>10. External Links</h2>
 
       <p>
-        The App only intends to request permissions that are
-        reasonably necessary for its implemented functionality.
+        The App may display links
+        or content supplied by
+        third-party advertising services.
       </p>
 
       <p>
-        Permissions and SDK behavior may change when App features
-        are updated. Any material changes affecting user data will
-        be reflected in this Privacy Policy and, where required,
-        the Google Play Data safety disclosures.
+        Interacting with advertisements
+        may open external websites
+        or application store pages.
       </p>
+
+      <p>
+        Such external services operate
+        under their own terms of service
+        and privacy policies.
+      </p>
+
+      <p>
+        JCraft Studio does not control
+        the independent privacy practices
+        of third-party websites
+        or advertising destinations.
+      </p>
+
+      <p>
+        This does not limit any responsibility
+        imposed on the Developer
+        by applicable law.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>9. External Links</h2>
+
+      <h2>11. Intellectual Property</h2>
 
       <p>
-        The App may provide links to external services, including
-        Google Play pages for other applications and JCraft Studio
-        web tools.
+        The App's original design,
+        source code, text, graphics,
+        and other original materials
+        may be protected by applicable
+        intellectual property laws.
       </p>
 
       <p>
-        External websites and applications operate under their own
-        terms and privacy policies. JCraft Studio is not responsible
-        for the privacy practices or content of third-party
-        services.
+        Third-party trademarks,
+        product names, service names,
+        and logos remain the property
+        of their respective owners.
       </p>
+
+      <p>
+        References to third-party services
+        do not imply endorsement,
+        sponsorship, or affiliation
+        unless expressly stated.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>10. Intellectual Property</h2>
+
+      <h2>12. Limitation of Liability</h2>
 
       <p>
-        The App's original design, code, text, graphics, and other
-        original materials are protected by applicable intellectual
-        property laws.
+        The App is provided as
+        a tournament management utility.
       </p>
 
       <p>
-        Third-party trademarks, product names, service names, and
-        logos belong to their respective owners. References to
-        third-party services do not imply sponsorship or
-        endorsement unless explicitly stated.
+        The Developer seeks to maintain
+        the availability and reliability
+        of the App's features.
       </p>
+
+      <p>
+        However, uninterrupted operation,
+        compatibility with every device,
+        and freedom from all technical
+        errors cannot be guaranteed.
+      </p>
+
+      <p>
+        To the extent permitted
+        by applicable law,
+        the Developer limits liability
+        for losses arising from
+        service interruptions,
+        technical errors,
+        or loss of locally stored data.
+      </p>
+
+      <p>
+        Nothing in this section excludes
+        or limits liability that cannot
+        lawfully be excluded or limited.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>11. Changes to This Privacy Policy</h2>
+
+      <h2>13. Changes to This Privacy Policy</h2>
 
       <p>
-        This Privacy Policy may be updated when App functionality,
-        third-party services, legal requirements, or data practices
-        change.
+        This Privacy Policy may be updated
+        to reflect changes in App functionality,
+        advertising technologies,
+        applicable laws, Google Play policies,
+        or data processing practices.
       </p>
 
       <p>
-        The latest version will be published on this page with an
-        updated revision date where appropriate.
+        Updated versions will be published
+        on this page with the applicable
+        revision date.
       </p>
+
+      <p>
+        Where required by applicable law,
+        material changes may require
+        additional notice or consent.
+      </p>
+
+      <p>
+        <strong>Last updated:</strong>
+        November 4, 2026
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>12. Developer and Contact Information</h2>
+
+      <h2>14. Developer and Contact Information</h2>
 
       <div class="notice">
+
         <p>
-          <strong>Developer: JCraft Studio</strong>
+          <strong>Developer:</strong>
+          JCraft Studio
         </p>
 
         <p>
-          For current developer contact information and inquiries
-          regarding this Privacy Policy, please refer to the
-          developer contact information displayed on the official
-          Google Play Store listing for this App.
+          For inquiries concerning
+          this Privacy Policy,
+          personal information,
+          or data deletion,
+          please refer to the official
+          developer contact information
+          displayed on this App's
+          Google Play Store listing.
         </p>
+
+        <p>
+          For advertising-related
+          privacy questions,
+          please also refer to Unity's
+          official privacy resources.
+        </p>
+
       </div>
+
     </section>
 
   </main>
 
+  <!-- ====================================== -->
+  <!-- KOREAN PRIVACY POLICY                  -->
+  <!-- ====================================== -->
 
-  <!-- =====================================================
-       KOREAN
-       ===================================================== -->
-
-  <main data-lang="ko">
+  <main data-lang="ko" hidden>
 
     <section class="card">
+
       <h2>개인정보처리방침</h2>
 
       <p>
         본 개인정보처리방침은
         <strong>JCraft Studio</strong>가 제공하는
         <strong>더블 엘리미네이션 대진표</strong>
-        (이하 "앱")를 이용할 때 정보가 어떻게 처리되는지
-        설명합니다.
+        (Double Elimination Bracket,
+        이하 "앱")의 개인정보 처리 방식과
+        이용자의 권리를 설명합니다.
       </p>
 
       <p>
-        JCraft Studio는 사용자의 개인정보를 중요하게 생각하며
-        관련 정보를 투명하고 적절하게 처리하기 위해 노력합니다.
+        JCraft Studio(이하 "개발자")는
+        이용자의 개인정보를 존중하며,
+        관련 법령과 Google Play 정책에 따라
+        개인정보를 투명하고 적절하게
+        처리하기 위해 노력합니다.
       </p>
 
       <p>
-        <strong>최종 업데이트:</strong> 2026년 9월 17일
+        <strong>최종 수정일:</strong>
+        2026년 11월 4일
       </p>
+
     </section>
 
-
     <section class="card">
+
       <h2>1. 사용자가 앱에 입력하는 정보</h2>
 
       <p>
-        사용자는 토너먼트 대진표를 생성하고 관리하기 위해
-        토너먼트 제목, 참가자 이름, 경기 결과 및 진행 정보 등을
-        앱에 입력할 수 있습니다.
+        본 앱은 더블 엘리미네이션 방식의
+        토너먼트 대진표를 생성하고
+        관리하는 기능을 제공합니다.
       </p>
 
       <p>
-        이러한 정보는 앱의 관련 기능을 제공하기 위한 목적으로
-        사용됩니다.
+        이용자는 다음 정보를
+        입력하거나 생성할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>토너먼트 제목 및 명칭</li>
+        <li>참가자 또는 팀 이름</li>
+        <li>경기 결과 및 점수</li>
+        <li>토너먼트 진행 현황 및 순위</li>
+        <li>저장된 토너먼트 기록</li>
+        <li>앱 설정 및 사용자 환경설정</li>
+      </ul>
+
+      <p>
+        해당 정보는 이용자가 요청한
+        대진표 생성 및 관리 기능을
+        제공하기 위해 사용됩니다.
       </p>
 
       <p>
-        JCraft Studio는 기본적인 토너먼트 기능을 이용하기 위해
-        사용자의 실제 이름, 이메일 주소, 전화번호 또는 기타 직접적인
-        개인 식별 정보를 계정 형태로 제공하도록 요구하지 않습니다.
+        앱의 기본 기능을 이용하기 위해
+        별도의 회원가입은 필요하지 않습니다.
       </p>
 
       <p>
-        참가자 이름이나 토너먼트 정보에는 불필요한 개인정보 또는
-        민감한 정보를 입력하지 않는 것을 권장합니다.
+        개발자는 이용자의 실제 이름,
+        이메일 주소, 전화번호 등
+        직접적인 개인 식별 정보를
+        필수적으로 요구하지 않습니다.
       </p>
+
+      <p>
+        이용자는 참가자 이름 또는
+        토너먼트 정보에 본인이나
+        타인의 불필요한 개인정보,
+        민감한 정보를 입력하지 않는
+        것이 좋습니다.
+      </p>
+
     </section>
 
-
     <section class="card">
+
       <h2>2. 광고 및 제3자 서비스</h2>
 
       <p>
-        본 앱은 광고 제공을 위해 Google AdMob 및
-        Google Mobile Ads SDK를 사용할 수 있습니다.
+        본 앱은 광고 미디에이션 플랫폼으로
+        <strong>Unity LevelPlay</strong>를 사용하며,
+        광고 제공을 위해
+        <strong>Unity Ads</strong>를 사용합니다.
       </p>
 
       <p>
-        Google 및 관련 광고 기술은 광고 제공 및 측정, 분석,
-        보안, 사기 방지 등의 목적으로 특정 정보를 자동으로
+        해당 서비스는 Unity에서 제공하며,
+        광고 송출, 성과 측정,
+        부정행위 방지 및
+        광고 서비스 운영을 위해
+        특정 정보를 처리할 수 있습니다.
+      </p>
+
+      <h3>2.1 광고 관련 처리 정보</h3>
+
+      <p>
+        SDK 구성, Android 버전,
+        기기 설정, 지역,
+        개인정보 보호 선택 및
+        관련 법령에 따라 다음 정보가
+        처리될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          IP 주소 및 이를 통해 추정되는
+          대략적인 위치 정보
+        </li>
+
+        <li>
+          Android 광고 식별자
+          (Advertising ID) 및
+          허용된 기기 식별자
+        </li>
+
+        <li>
+          기기 제조사, 모델명,
+          운영체제 및 버전 정보
+        </li>
+
+        <li>
+          앱 식별 정보 및
+          기술적인 애플리케이션 정보
+        </li>
+
+        <li>
+          광고 노출, 클릭 및
+          광고 상호작용 정보
+        </li>
+
+        <li>
+          광고 성과, 진단 및
+          오류 관련 정보
+        </li>
+
+        <li>
+          보안 및 부정행위 방지를 위한
+          기술적 정보
+        </li>
+      </ul>
+
+      <p>
+        실제 수집 및 처리 항목은
+        광고 SDK 설정과 적용되는
+        개인정보 보호 규정에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h3>2.2 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay는 광고 요청,
+        광고 제공 및 수익화 관리를 위한
+        광고 미디에이션 서비스입니다.
+      </p>
+
+      <p>
+        광고 제공과 관리,
+        성과 측정 및 서비스 안정성
+        유지를 위해 필요한
+        기술적 정보를 처리할 수 있습니다.
+      </p>
+
+      <h3>2.3 Unity Ads</h3>
+
+      <p>
+        Unity Ads는 앱 내부에
+        광고를 제공하는 서비스입니다.
+      </p>
+
+      <p>
+        Unity Ads는 기기 식별자,
+        IP 주소, 광고 상호작용 정보
+        및 관련 기술적 정보를
         처리할 수 있습니다.
       </p>
 
       <p>
-        SDK 버전, 기기 설정, 지역, 사용자의 동의 선택 및 광고
-        설정 등에 따라 다음과 같은 정보가 포함될 수 있습니다.
+        이러한 정보는 광고 성과 측정,
+        부정행위 방지 및
+        관련 법령에서 허용하는
+        개인화 광고 제공 등에
+        사용될 수 있습니다.
       </p>
 
-      <ul>
-        <li>IP 주소 및 이를 통해 추정되는 대략적인 위치</li>
-        <li>기기 식별자 또는 광고 식별자</li>
-        <li>앱 및 광고 상호작용 정보</li>
-        <li>진단 및 성능 정보</li>
-        <li>광고 관련 정보</li>
-      </ul>
+      <h3>2.4 제3자 개인정보처리방침</h3>
 
       <p>
-        이러한 정보는 Google의 개인정보처리방침 및 관련 법률에
-        따라 Google에서 처리될 수 있습니다.
-      </p>
-
-      <p>
-        자세한 내용은 Google 개인정보처리방침을 확인하시기
-        바랍니다.
-      </p>
-
-      <p>
-        <a
-          href="https://policies.google.com/privacy?hl=ko"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google 개인정보처리방침
-        </a>
-      </p>
-    </section>
-
-
-    <section class="card">
-      <h2>3. 정보 처리 목적</h2>
-
-      <p>
-        앱 또는 제3자 서비스를 통해 처리되는 정보는 다음과 같은
-        목적으로 사용될 수 있습니다.
-      </p>
-
-      <ul>
-        <li>앱 기능 제공 및 유지</li>
-        <li>토너먼트 대진표 생성 및 관리</li>
-        <li>앱 설정 및 필요한 상태 유지</li>
-        <li>광고 제공 및 광고 성과 측정</li>
-        <li>서비스 안정성 및 성능 개선</li>
-        <li>사기, 악용 및 보안 문제 방지</li>
-        <li>관련 법적 의무 준수</li>
-      </ul>
-    </section>
-
-
-    <section class="card">
-      <h2>4. 정보 공유</h2>
-
-      <p>
-        JCraft Studio는 사용자가 직접 제공한 개인정보를 판매하지
-        않습니다.
-      </p>
-
-      <p>
-        앱 기능 제공, 광고, 분석, 보안, 사기 방지 또는 관련
-        법률 준수를 위해 필요한 경우 서비스 제공업체에서 정보가
+        광고 관련 정보는 Unity 및
+        관련 광고 기술 협력사를 통해
         처리되거나 공유될 수 있습니다.
       </p>
 
       <p>
-        특히 광고 관련 정보는 Google AdMob 및 Google Mobile Ads
-        SDK를 통해 Google에서 처리될 수 있습니다.
+        자세한 내용은 아래 Unity의
+        공식 개인정보 보호 문서를
+        참고하시기 바랍니다.
       </p>
+
+      <ul>
+
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity 개인정보처리방침
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://activation.unity3d.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity 게임 및 앱 이용자 개인정보처리방침
+          </a>
+        </li>
+
+      </ul>
+
+      <p>
+        향후 추가 광고 네트워크가
+        연동되는 경우 관련 개인정보
+        처리 내용을 본 방침에
+        반영할 수 있습니다.
+      </p>
+
     </section>
 
+    <section class="card">
+
+      <h2>3. 정보 처리 목적</h2>
+
+      <p>
+        앱 또는 관련 서비스를 통해
+        처리되는 정보는 다음 목적에
+        사용될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>앱 기능 제공 및 유지</li>
+
+        <li>
+          더블 엘리미네이션
+          대진표 생성 및 관리
+        </li>
+
+        <li>
+          토너먼트 기록 및
+          진행 상태 저장
+        </li>
+
+        <li>
+          앱 설정 및
+          사용자 환경설정 유지
+        </li>
+
+        <li>
+          광고 제공 및
+          광고 성과 측정
+        </li>
+
+        <li>
+          광고 서비스의
+          안정성 및 성능 유지
+        </li>
+
+        <li>
+          비정상적인 활동,
+          악용 및 보안 문제 방지
+        </li>
+
+        <li>
+          관련 법적 의무 준수
+        </li>
+      </ul>
+
+    </section>
 
     <section class="card">
+
+      <h2>4. 정보 공유</h2>
+
+      <p>
+        JCraft Studio는 토너먼트 정보나
+        이용자가 직접 입력한 개인정보를
+        자체적인 상업적 판매 목적으로
+        판매하지 않습니다.
+      </p>
+
+      <p>
+        토너먼트 기록 및 앱 설정은
+        기본적으로 이용자의 기기
+        내부에서 처리되고 저장됩니다.
+      </p>
+
+      <p>
+        다만 광고 제공과 관련하여
+        Unity 및 관련 광고 협력사가
+        정보를 수집, 처리하거나
+        공유할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 정보에는 광고 식별자,
+        IP 주소, 기기 정보,
+        광고 상호작용 정보 등이
+        포함될 수 있습니다.
+      </p>
+
+      <p>
+        적법한 법적 의무 이행이나
+        유효한 법적 요청에 대응해야
+        하는 경우 관련 법령에 따라
+        정보가 제공될 수 있습니다.
+      </p>
+
+    </section>
+
+    <section class="card">
+
       <h2>5. 정보 저장, 보관 및 삭제</h2>
 
+      <h3>5.1 로컬 토너먼트 데이터</h3>
+
       <p>
-        토너먼트 정보 및 앱 설정은 앱 기능 제공에 필요한 경우
-        사용자의 기기에 로컬로 저장될 수 있습니다.
+        토너먼트 제목, 참가자 이름,
+        경기 결과, 진행 상태 및
+        앱 설정은 이용자의
+        기기에 저장될 수 있습니다.
       </p>
 
       <p>
-        로컬에 저장된 정보는 정보 유형과 기기의 동작 방식에 따라
-        앱에서 제공하는 삭제 또는 초기화 기능을 사용하거나,
-        앱의 저장공간을 삭제하거나, 앱을 제거하는 방법으로
-        삭제할 수 있습니다.
+        해당 정보는 이전 대진표 기록을
+        확인하거나 앱 기능을
+        지속적으로 이용할 수 있도록
+        보관됩니다.
       </p>
 
       <p>
-        제3자 서비스에서 독립적으로 처리하는 정보의 보관 및 삭제는
-        해당 서비스 제공업체의 정책을 따릅니다.
+        이용자는 앱에서 제공하는
+        기록 삭제 또는 초기화 기능을
+        사용하거나 Android 설정에서
+        앱 데이터를 삭제할 수 있습니다.
       </p>
+
+      <p>
+        앱을 삭제하면 일반적으로
+        기기에 저장된 앱 데이터도
+        함께 삭제됩니다.
+      </p>
+
+      <p>
+        다만 운영체제의 데이터 백업 및
+        복원 기능에 따라 일부 정보가
+        복원될 가능성이 있습니다.
+      </p>
+
+      <h3>5.2 광고 관련 데이터</h3>
+
+      <p>
+        Unity 및 광고 기술 협력사가
+        독립적으로 처리하는 정보는
+        해당 업체의 개인정보처리방침,
+        보관 정책 및 관련 법령에 따라
+        관리됩니다.
+      </p>
+
+      <p>
+        관련 정보의 열람, 삭제 및
+        개인정보 보호 요청은
+        Unity 공식 개인정보 보호
+        문서를 통해 확인할 수 있습니다.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>6. 정보 보안</h2>
+
+      <h2>6. 이용자 권리 및 선택권</h2>
 
       <p>
-        JCraft Studio는 앱에서 처리되는 정보를 보호하기 위해
-        합리적인 수준의 보호 조치를 적용하기 위해 노력합니다.
+        이용자는 기기의 개인정보
+        보호 설정 및 광고 관련
+        선택 기능을 통해 일부
+        개인정보 처리 방식을
+        관리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 개인정보 보호 설정에서
+          지원되는 광고 ID 관리 또는
+          삭제 기능을 사용할 수 있습니다.
+        </li>
+
+        <li>
+          Unity 광고에 개인정보
+          보호 선택 기능이 제공되는 경우
+          해당 기능을 이용할 수 있습니다.
+        </li>
+
+        <li>
+          앱에서 제공하는 기록 삭제 기능을
+          통해 로컬 토너먼트 기록을
+          삭제할 수 있습니다.
+        </li>
+
+        <li>
+          Android 앱 저장공간 삭제 또는
+          앱 제거 기능을 사용할 수 있습니다.
+        </li>
+
+        <li>
+          Google Play 스토어에 표시된
+          개발자 연락처를 통해
+          개인정보 관련 문의를
+          제출할 수 있습니다.
+        </li>
+      </ul>
+
+      <p>
+        광고 개인화 제한이
+        모든 광고의 표시 중단을
+        의미하는 것은 아닙니다.
       </p>
 
       <p>
-        다만 어떠한 전자적 저장, 기기, 네트워크 또는 전송 방식도
-        완전한 보안을 보장할 수는 없습니다.
+        개인화되지 않은 광고는
+        계속 표시될 수 있습니다.
       </p>
+
+      <p>
+        이용자의 구체적인 개인정보
+        보호 권리는 거주 지역과
+        관련 법령에 따라 달라질 수 있습니다.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>7. 아동의 개인정보</h2>
+
+      <h2>7. 정보 보안</h2>
 
       <p>
-        본 앱은 일반적인 토너먼트 관리 도구이며 아동에게
-        개인정보 제공을 의도적으로 요구하도록 설계되지 않았습니다.
+        JCraft Studio는 앱에서 처리하는
+        정보를 보호하기 위해
+        합리적인 수준의 보호 조치를
+        적용하도록 노력합니다.
       </p>
 
       <p>
-        사용자는 참가자 입력란에 아동 또는 다른 사람의 불필요한
-        개인정보나 민감한 정보를 입력하지 않아야 합니다.
+        앱은 직접적인 개인 식별 정보의
+        불필요한 수집을 최소화하는
+        방향으로 설계되었습니다.
       </p>
 
       <p>
-        필요한 경우 광고 및 데이터 처리는 Google Play 정책,
-        관련 법률 및 개발자가 설정한 광고 구성에 따라 처리됩니다.
+        제3자 광고 서비스에서 처리되는
+        데이터에는 해당 서비스
+        제공업체의 보안 정책이 적용됩니다.
       </p>
+
+      <p>
+        다만 어떠한 전자적 저장,
+        네트워크 통신 또는 보안 시스템도
+        모든 보안 위험으로부터
+        완전한 보호를 보장할 수는 없습니다.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>8. 앱 권한</h2>
+
+      <h2>8. 아동의 개인정보</h2>
 
       <p>
-        본 앱은 구현된 기능 제공에 합리적으로 필요한 권한만을
-        요청하는 것을 원칙으로 합니다.
+        본 앱은 일반적인 토너먼트
+        대진표 관리 도구이며
+        만 13세 미만 아동을
+        특별히 대상으로 설계된
+        서비스가 아닙니다.
       </p>
 
       <p>
-        향후 앱 기능 추가에 따라 권한 또는 SDK의 동작이 변경될 수
-        있으며 사용자 데이터 처리에 중요한 변경이 발생하는 경우
-        본 개인정보처리방침 및 필요한 경우 Google Play 데이터
-        보안 정보를 업데이트합니다.
+        개발자는 아동의 직접적인
+        개인정보를 의도적으로
+        요구하지 않습니다.
       </p>
+
+      <p>
+        이용자는 참가자 입력란에
+        아동 또는 다른 사람의
+        불필요한 개인정보나 민감한
+        정보를 입력하지 않는 것이 좋습니다.
+      </p>
+
+      <p>
+        광고 및 관련 데이터 처리는
+        Google Play 정책,
+        관련 법령 및 개발자의
+        광고 SDK 설정에 따라
+        적용됩니다.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>9. 외부 링크</h2>
+
+      <h2>9. 앱 권한</h2>
 
       <p>
-        본 앱은 다른 앱의 Google Play 페이지 또는 JCraft Studio
-        웹 도구 등 외부 서비스로 연결되는 링크를 제공할 수 있습니다.
+        본 앱은 구현된 기능과
+        광고 서비스 운영에
+        합리적으로 필요한 권한만
+        사용하도록 설계됩니다.
       </p>
 
       <p>
-        외부 웹사이트와 앱에는 각각 해당 서비스의 이용약관 및
-        개인정보처리방침이 적용됩니다. JCraft Studio는 제3자
-        서비스의 개인정보 처리 방식이나 콘텐츠에 대해 책임을
-        부담하지 않습니다.
+        광고 요청 및 송출 등
+        광고 서비스 운영을 위해
+        인터넷 연결이 사용될 수 있습니다.
       </p>
+
+      <p>
+        광고 SDK는 허용된
+        기기 식별자 및 관련
+        기술적 정보를 이용할 수 있습니다.
+      </p>
+
+      <p>
+        향후 앱 기능, 권한 또는
+        개인정보 처리 방식에 중요한
+        변경이 발생하는 경우,
+        본 개인정보처리방침과
+        Google Play 데이터 보안
+        공개 내용을 검토하고
+        필요한 사항을 수정합니다.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>10. 지식재산권</h2>
+
+      <h2>10. 외부 링크</h2>
 
       <p>
-        본 앱의 독창적인 디자인, 코드, 텍스트, 그래픽 및 기타
-        제작물은 관련 지식재산권 법률의 보호를 받을 수 있습니다.
+        앱에서는 제3자 광고 서비스를
+        통해 제공되는 링크 또는
+        콘텐츠가 표시될 수 있습니다.
       </p>
 
       <p>
-        제3자의 상표, 제품명, 서비스명 및 로고에 대한 권리는
-        각각의 권리자에게 있습니다. 제3자 서비스에 대한 언급이
-        별도의 명시가 없는 한 해당 업체의 후원이나 보증을
-        의미하지 않습니다.
+        광고를 선택하면 외부 웹사이트
+        또는 앱 스토어 페이지가
+        열릴 수 있습니다.
       </p>
+
+      <p>
+        해당 외부 서비스에는
+        각각의 이용약관 및
+        개인정보처리방침이 적용됩니다.
+      </p>
+
+      <p>
+        JCraft Studio는 제3자 웹사이트
+        또는 광고 연결 대상의
+        독립적인 개인정보 처리 방식을
+        직접 통제하지 않습니다.
+      </p>
+
+      <p>
+        단, 관련 법령에 따라
+        개발자가 부담해야 하는
+        책임은 제외되지 않습니다.
+      </p>
+
     </section>
 
-
     <section class="card">
-      <h2>11. 개인정보처리방침 변경</h2>
+
+      <h2>11. 지식재산권</h2>
 
       <p>
-        앱 기능, 제3자 서비스, 관련 법률 또는 데이터 처리 방식이
-        변경되는 경우 본 개인정보처리방침이 변경될 수 있습니다.
+        본 앱의 독창적인 디자인,
+        소스코드, 텍스트, 그래픽 및
+        기타 창작물은 관련 지식재산권
+        법률의 보호를 받을 수 있습니다.
       </p>
 
       <p>
-        변경된 개인정보처리방침은 필요한 경우 최종 수정일과 함께
-        이 페이지에 게시됩니다.
+        제3자의 상표, 제품명,
+        서비스명 및 로고에 대한
+        권리는 각각의 권리자에게 있습니다.
       </p>
+
+      <p>
+        별도의 명시가 없는 한
+        제3자 서비스에 대한 언급이
+        해당 업체의 후원, 승인 또는
+        제휴 관계를 의미하지 않습니다.
+      </p>
+
     </section>
 
+    <section class="card">
+
+      <h2>12. 책임 제한</h2>
+
+      <p>
+        본 앱은 토너먼트 대진표
+        생성 및 관리를 위한
+        유틸리티 서비스입니다.
+      </p>
+
+      <p>
+        개발자는 앱 기능의
+        안정성과 이용 가능성을
+        유지하기 위해 노력합니다.
+      </p>
+
+      <p>
+        다만 모든 기기와의 호환성,
+        중단 없는 서비스 운영 및
+        모든 기술적 오류의 부재를
+        보장하지는 않습니다.
+      </p>
+
+      <p>
+        개발자는 관련 법령에서
+        허용하는 범위 내에서
+        서비스 중단, 기술적 오류 또는
+        로컬 저장 데이터 손실로
+        발생하는 손해에 대한
+        책임을 제한합니다.
+      </p>
+
+      <p>
+        이 조항은 관련 법령에 따라
+        제한하거나 면제할 수 없는
+        책임에는 적용되지 않습니다.
+      </p>
+
+    </section>
 
     <section class="card">
-      <h2>12. 개발자 및 문의 정보</h2>
+
+      <h2>13. 개인정보처리방침 변경</h2>
+
+      <p>
+        앱 기능, 광고 기술,
+        관련 법령, Google Play 정책 또는
+        데이터 처리 방식이 변경되면
+        본 개인정보처리방침이
+        수정될 수 있습니다.
+      </p>
+
+      <p>
+        변경된 내용은 해당 수정일과
+        함께 본 페이지에 게시됩니다.
+      </p>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        중요한 변경 사항에 대해
+        추가 안내 또는 동의 절차를
+        진행할 수 있습니다.
+      </p>
+
+      <p>
+        <strong>최종 수정일:</strong>
+        2026년 11월 4일
+      </p>
+
+    </section>
+
+    <section class="card">
+
+      <h2>14. 개발자 및 문의 정보</h2>
 
       <div class="notice">
+
         <p>
-          <strong>개발자: JCraft Studio</strong>
+          <strong>개발자:</strong>
+          JCraft Studio
         </p>
 
         <p>
-          최신 개발자 연락처 및 본 개인정보처리방침과 관련된
-          문의 방법은 본 앱의 공식 Google Play 스토어 등록정보에
-          표시된 개발자 연락처를 참고해 주세요.
+          본 개인정보처리방침,
+          개인정보 처리 또는
+          데이터 삭제와 관련된
+          문의 사항은 본 앱의
+          Google Play 스토어 등록정보에
+          표시된 개발자 연락처를
+          통해 제출할 수 있습니다.
         </p>
+
+        <p>
+          광고 관련 개인정보 처리에 대한
+          문의는 Unity 공식 개인정보
+          보호 안내도 참고하시기 바랍니다.
+        </p>
+
       </div>
+
     </section>
 
   </main>
 
-
   <footer class="footer">
     © 2026 JCraft Studio. All rights reserved.
+    <p>Double Elimination Bracket</p>
   </footer>
 
 </div>
 
-
 <script>
   function setLanguage(language) {
-    const english = document.querySelector('[data-lang="en"]');
-    const korean = document.querySelector('[data-lang="ko"]');
+    const selected =
+      language === 'ko' ? 'ko' : 'en';
 
-    const englishButton = document.getElementById('btn-en');
-    const koreanButton = document.getElementById('btn-ko');
+    const english =
+      document.querySelector('[data-lang="en"]');
 
-    if (language === 'ko') {
-      english.style.display = 'none';
-      korean.style.display = 'block';
+    const korean =
+      document.querySelector('[data-lang="ko"]');
 
-      englishButton.classList.remove('active');
-      koreanButton.classList.add('active');
+    const englishButton =
+      document.getElementById('btn-en');
 
-      document.documentElement.lang = 'ko';
-    } else {
-      english.style.display = 'block';
-      korean.style.display = 'none';
+    const koreanButton =
+      document.getElementById('btn-ko');
 
-      koreanButton.classList.remove('active');
-      englishButton.classList.add('active');
+    english.hidden = selected !== 'en';
+    korean.hidden = selected !== 'ko';
 
-      document.documentElement.lang = 'en';
+    englishButton.classList.toggle(
+      'active',
+      selected === 'en'
+    );
+
+    koreanButton.classList.toggle(
+      'active',
+      selected === 'ko'
+    );
+
+    englishButton.setAttribute(
+      'aria-pressed',
+      String(selected === 'en')
+    );
+
+    koreanButton.setAttribute(
+      'aria-pressed',
+      String(selected === 'ko')
+    );
+
+    document.documentElement.lang = selected;
+
+    try {
+      localStorage.setItem(
+        'privacy-language',
+        selected
+      );
+    } catch (error) {
+      // Continue without persistent language storage.
     }
-
-    localStorage.setItem('privacy-language', language);
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const savedLanguage =
-      localStorage.getItem('privacy-language');
+  document.addEventListener(
+    'DOMContentLoaded',
+    function() {
+      let savedLanguage = null;
 
-    if (savedLanguage === 'ko' || savedLanguage === 'en') {
-      setLanguage(savedLanguage);
-      return;
+      try {
+        savedLanguage =
+          localStorage.getItem('privacy-language');
+      } catch (error) {
+        savedLanguage = null;
+      }
+
+      if (
+        savedLanguage === 'ko' ||
+        savedLanguage === 'en'
+      ) {
+        setLanguage(savedLanguage);
+        return;
+      }
+
+      const browserLanguage =
+        (navigator.language || '')
+          .toLowerCase();
+
+      setLanguage(
+        browserLanguage.startsWith('ko')
+          ? 'ko'
+          : 'en'
+      );
     }
-
-    const browserLanguage =
-      (navigator.language || '').toLowerCase();
-
-    setLanguage(
-      browserLanguage.startsWith('ko') ? 'ko' : 'en'
-    );
-  });
+  );
 </script>
 
 </body>
