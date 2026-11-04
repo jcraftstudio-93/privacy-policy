@@ -1,1051 +1,1873 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <title>Privacy Policy | Random Draw - JCraft Studio</title>
+  <meta name="robots" content="index, follow">
 
-    <meta
-        name="description"
-        content="Privacy Policy for Random Draw, provided by JCraft Studio."
-    >
+  <meta
+    name="description"
+    content="Privacy Policy for Random Draw, provided by JCraft Studio."
+  >
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <title>Privacy Policy | Random Draw - JCraft Studio</title>
 
-        html {
-            scroll-behavior: smooth;
-        }
+  <style>
+    :root {
+      --background: #f5f6f8;
+      --surface: #ffffff;
+      --text: #202124;
+      --muted: #5f6368;
+      --border: #e5e7eb;
+      --primary: #202124;
+      --link: #1769e0;
+      --notice: #f7f8fa;
+    }
 
-        body {
-            margin: 0;
-            padding: 0;
-            background: #f5f6f8;
-            color: #202124;
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                "Noto Sans KR",
-                Arial,
-                sans-serif;
-            line-height: 1.75;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        .container {
-            width: min(920px, calc(100% - 32px));
-            margin: 40px auto;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        .card {
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 18px;
-            padding: 40px;
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
-        }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Noto Sans KR",
+        Arial,
+        sans-serif;
+      line-height: 1.75;
+    }
 
-        .header {
-            border-bottom: 1px solid #eceff1;
-            padding-bottom: 28px;
-            margin-bottom: 32px;
-        }
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: 40px auto;
+    }
 
-        .header-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 24px;
-        }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 40px;
+      box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.04);
+    }
 
-        h1 {
-            margin: 0 0 10px 0;
-            font-size: 32px;
-            line-height: 1.3;
-            letter-spacing: -0.5px;
-        }
+    .header {
+      border-bottom: 1px solid #eceff1;
+      padding-bottom: 28px;
+      margin-bottom: 32px;
+    }
 
-        .subtitle {
-            margin: 0;
-            color: #5f6368;
-            font-size: 15px;
-        }
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+    }
 
-        .language-switcher {
-            display: flex;
-            gap: 8px;
-            flex-shrink: 0;
-        }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      line-height: 1.3;
+      letter-spacing: -0.5px;
+    }
 
-        .language-button {
-            appearance: none;
-            border: 1px solid #d8dce1;
-            background: #ffffff;
-            color: #3c4043;
-            border-radius: 10px;
-            padding: 9px 14px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.15s ease, border-color 0.15s ease;
-        }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
 
-        .language-button:hover {
-            background: #f5f6f8;
-        }
+    .language-switcher {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
 
-        .language-button.active {
-            background: #202124;
-            border-color: #202124;
-            color: #ffffff;
-        }
+    .language-button {
+      appearance: none;
+      border: 1px solid #d8dce1;
+      background: #ffffff;
+      color: #3c4043;
+      border-radius: 10px;
+      padding: 9px 14px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
+    }
 
-        h2 {
-            margin-top: 36px;
-            margin-bottom: 12px;
-            font-size: 21px;
-            line-height: 1.4;
-        }
+    .language-button:hover {
+      background: #f5f6f8;
+    }
 
-        p {
-            margin: 10px 0;
-        }
+    .language-button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+    }
 
-        ul {
-            padding-left: 24px;
-            margin: 12px 0;
-        }
+    h2 {
+      margin-top: 36px;
+      margin-bottom: 12px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
 
-        li {
-            margin: 7px 0;
-        }
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
 
-        a {
-            color: #1769e0;
-            word-break: break-word;
-        }
+    p {
+      margin: 10px 0;
+    }
 
-        .notice {
-            margin: 20px 0;
-            padding: 16px 18px;
-            background: #f7f8fa;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-        }
+    ul {
+      padding-left: 24px;
+      margin: 12px 0;
+    }
 
-        .date {
-            color: #5f6368;
-            font-size: 14px;
-            margin-top: 8px;
-        }
+    li {
+      margin: 7px 0;
+    }
 
-        .footer {
-            margin-top: 40px;
-            padding-top: 24px;
-            border-top: 1px solid #eceff1;
-            color: #70757a;
-            font-size: 13px;
-            text-align: center;
-        }
+    a {
+      color: var(--link);
+      overflow-wrap: anywhere;
+    }
 
-        [data-lang="ko"] {
-            display: none;
-        }
+    .notice {
+      margin: 20px 0;
+      padding: 16px 18px;
+      background: var(--notice);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
 
-        @media (max-width: 680px) {
-            .container {
-                width: min(100% - 20px, 920px);
-                margin: 18px auto;
-            }
+    .date {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 8px;
+    }
 
-            .card {
-                padding: 24px 20px;
-                border-radius: 14px;
-            }
+    .footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #eceff1;
+      color: #70757a;
+      font-size: 13px;
+      text-align: center;
+    }
 
-            .header-row {
-                flex-direction: column;
-                gap: 18px;
-            }
+    [data-lang][hidden] {
+      display: none !important;
+    }
 
-            h1 {
-                font-size: 27px;
-            }
+    @media (max-width: 680px) {
+      .container {
+        width: calc(100% - 20px);
+        margin: 18px auto;
+      }
 
-            h2 {
-                font-size: 20px;
-            }
-        }
-    </style>
+      .card {
+        padding: 24px 20px;
+        border-radius: 14px;
+      }
+
+      .header-row {
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <div class="container">
-    <main class="card">
-
-        <header class="header">
-            <div class="header-row">
-                <div>
-                    <h1 id="page-title">Privacy Policy</h1>
-                    <p class="subtitle" id="page-subtitle">
-                        Random Draw · JCraft Studio
-                    </p>
-                </div>
-
-                <div class="language-switcher">
-                    <button
-                        type="button"
-                        class="language-button"
-                        id="ko-button"
-                        onclick="setLanguage('ko')"
-                    >
-                        한국어
-                    </button>
-
-                    <button
-                        type="button"
-                        class="language-button active"
-                        id="en-button"
-                        onclick="setLanguage('en')"
-                    >
-                        English
-                    </button>
-                </div>
-            </div>
-        </header>
-
-
-        <!-- =========================================================
-             ENGLISH
-        ========================================================== -->
-
-        <section data-lang="en">
-
-            <p>
-                JCraft Studio ("Developer", "we", "us", or "our") provides
-                the <strong>Random Draw</strong> application ("App").
-            </p>
-
-            <p>
-                This Privacy Policy explains how information is handled when
-                you use the App. We are committed to handling user information
-                transparently and in accordance with applicable laws and
-                Google Play policies.
-            </p>
-
-            <p class="date">
-                Effective date: September 8, 2026<br>
-                Last updated: September 8, 2026
-            </p>
-
-
-            <h2>1. Information Entered by Users</h2>
-
-            <p>
-                The App allows users to enter names or participant information
-                for the purpose of performing random selections.
-            </p>
-
-            <p>
-                Information entered into the drawing function is processed
-                locally on the user's device for the operation of the App.
-                JCraft Studio does not operate a server for receiving or storing
-                the participant names entered into this feature.
-            </p>
-
-            <p>
-                Users are responsible for ensuring that they have the
-                appropriate authority or permission to enter information
-                relating to other individuals.
-            </p>
-
-
-            <h2>2. Information We Do Not Directly Collect</h2>
-
-            <p>
-                JCraft Studio does not require users to create an account,
-                register, provide a name, phone number, postal address,
-                password, or other account information to use the App.
-            </p>
-
-            <p>
-                The Developer does not directly request sensitive personal
-                information through the App.
-            </p>
-
-
-            <h2>3. Advertising and Third-Party Services</h2>
-
-            <p>
-                The App may display advertisements provided by
-                <strong>Google AdMob</strong> and the Google Mobile Ads SDK.
-            </p>
-
-            <p>
-                Google and its advertising technologies may automatically
-                process certain information as necessary to provide,
-                measure, secure, prevent fraud in, and personalize advertising,
-                subject to applicable law and the user's consent choices.
-            </p>
-
-            <p>This information may include, depending on the device, region, settings, and service:</p>
-
-            <ul>
-                <li>IP address;</li>
-                <li>device and advertising identifiers;</li>
-                <li>general device information;</li>
-                <li>advertising interactions;</li>
-                <li>app interactions;</li>
-                <li>diagnostic, crash, and performance information; and</li>
-                <li>other information processed by Google's advertising services.</li>
-            </ul>
-
-            <p>
-                Such information is processed by the applicable third-party
-                provider under its own terms and privacy policies. The
-                Developer does not independently control the data-processing
-                practices of third-party advertising providers.
-            </p>
-
-            <p>
-                For more information about Google's privacy practices, please visit:
-            </p>
-
-            <p>
-                <a
-                    href="https://policies.google.com/privacy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    https://policies.google.com/privacy
-                </a>
-            </p>
-
-            <p>
-                Information about Google's advertising services is also available at:
-            </p>
-
-            <p>
-                <a
-                    href="https://policies.google.com/technologies/ads"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    https://policies.google.com/technologies/ads
-                </a>
-            </p>
-
-
-            <h2>4. Advertising Consent and Privacy Choices</h2>
-
-            <p>
-                Where required by applicable law, advertising providers may
-                request consent or provide privacy choices relating to
-                personalized advertising, advertising storage, advertising
-                identifiers, or similar technologies.
-            </p>
-
-            <p>
-                Available privacy controls may vary depending on the user's
-                country, device settings, Google account settings, and
-                applicable legal requirements.
-            </p>
-
-
-            <h2>5. Data Sharing</h2>
-
-            <p>
-                JCraft Studio does not sell personal information entered by
-                users into the App.
-            </p>
-
-            <p>
-                Third-party services integrated into the App, including
-                advertising services, may process information as described in
-                Section 3 for purposes such as providing advertisements,
-                measuring performance, security, fraud prevention, and
-                complying with legal obligations.
-            </p>
-
-
-            <h2>6. Data Storage, Retention, and Deletion</h2>
-
-            <p>
-                Information entered into the App's random drawing feature is
-                intended to be processed locally on the user's device rather
-                than stored on servers operated by JCraft Studio.
-            </p>
-
-            <p>
-                Local App information can generally be removed by clearing the
-                App's data or uninstalling the App, subject to the operating
-                system's functionality.
-            </p>
-
-            <p>
-                Data processed independently by third-party services is subject
-                to the retention and deletion practices of those third parties.
-                Users should refer to the relevant third-party privacy policy
-                for additional information.
-            </p>
-
-
-            <h2>7. Data Security</h2>
-
-            <p>
-                The Developer takes reasonable measures appropriate to the
-                nature and operation of the App to reduce unauthorized access,
-                misuse, or disclosure of information.
-            </p>
-
-            <p>
-                However, no electronic device, software, network, or method of
-                electronic transmission or storage can be guaranteed to be
-                completely secure. Accordingly, absolute security cannot be
-                guaranteed.
-            </p>
-
-
-            <h2>8. Children's Privacy</h2>
-
-            <p>
-                The App is a general-purpose utility and is not designed to
-                intentionally request children to provide personal information
-                directly to JCraft Studio.
-            </p>
-
-            <p>
-                Users should not enter sensitive personal information about a
-                child or another person unless they have the legal authority
-                and an appropriate reason to do so.
-            </p>
-
-            <p>
-                Where laws applicable to children or age-restricted users
-                require additional protections, applicable app-store,
-                advertising, and consent requirements must be followed.
-            </p>
-
-
-            <h2>9. External Links and Recommended Apps</h2>
-
-            <p>
-                The App may contain links to websites, Google Play pages, or
-                other applications, including links to other services provided
-                by JCraft Studio.
-            </p>
-
-            <p>
-                When you leave the App and access another application,
-                website, marketplace, or third-party service, the privacy
-                policy and terms of that external service apply.
-            </p>
-
-            <p>
-                JCraft Studio is not responsible for the content, availability,
-                security, privacy practices, or operation of independent
-                third-party websites or services.
-            </p>
-
-
-            <h2>10. Random Draw Results</h2>
-
-            <p>
-                The App is intended solely as a general random-selection
-                utility. Results generated by the App are provided for
-                convenience and entertainment or general utility purposes.
-            </p>
-
-            <p>
-                The App is not intended to provide certified, regulated,
-                legally supervised, cryptographically verifiable, gambling,
-                lottery, financial, medical, legal, or professional selection
-                services.
-            </p>
-
-            <p>
-                Users are responsible for determining whether use of the App
-                is appropriate for their particular activity and whether
-                additional legal, regulatory, contractual, organizational, or
-                procedural requirements apply.
-            </p>
-
-
-            <h2>11. Intellectual Property and Copyright</h2>
-
-            <p>
-                Unless otherwise indicated, the App's original software,
-                design, text, graphics, structure, and other original content
-                created by JCraft Studio are protected by applicable
-                intellectual-property laws.
-            </p>
-
-            <p>
-                Third-party trademarks, service names, libraries, software,
-                platforms, and other intellectual property remain the property
-                of their respective owners.
-            </p>
-
-            <p>
-                References to third-party services do not imply ownership,
-                sponsorship, endorsement, or affiliation unless expressly
-                stated.
-            </p>
-
-            <p>
-                Users are responsible for ensuring that names, text, or other
-                content they enter into the App do not unlawfully infringe the
-                rights of another person or entity.
-            </p>
-
-
-            <h2>12. Disclaimer and Limitation of Responsibility</h2>
-
-            <p>
-                The App is provided as a general-purpose utility on an
-                "as available" basis to the extent permitted by applicable
-                law.
-            </p>
-
-            <p>
-                The Developer does not guarantee that the App will be
-                uninterrupted, error-free, compatible with every device, or
-                suitable for every specific purpose.
-            </p>
-
-            <p>
-                Users are responsible for reviewing and verifying results
-                before relying on them for decisions or activities with legal,
-                financial, contractual, safety-related, or other significant
-                consequences.
-            </p>
-
-            <p>
-                Nothing in this Privacy Policy excludes or limits any right or
-                liability that cannot lawfully be excluded or limited under
-                applicable law.
-            </p>
-
-
-            <h2>13. Legal Requirements</h2>
-
-            <p>
-                Information may be processed or disclosed when reasonably
-                necessary to comply with applicable laws, regulations, valid
-                legal processes, governmental requests, protect users, protect
-                rights or property, investigate abuse, or maintain the
-                security and integrity of the App and related services.
-            </p>
-
-
-            <h2>14. International Users</h2>
-
-            <p>
-                Third-party service providers such as Google may process data
-                in countries other than the user's country of residence in
-                accordance with their own privacy policies and applicable
-                legal safeguards.
-            </p>
-
-
-            <h2>15. Changes to This Privacy Policy</h2>
-
-            <p>
-                This Privacy Policy may be revised when the App's functionality,
-                data practices, third-party services, legal requirements, or
-                Google Play policies change.
-            </p>
-
-            <p>
-                Material updates will be reflected by changing the
-                "Last updated" date on this page or by providing another
-                appropriate notice when required.
-            </p>
-
-
-            <h2>16. Developer and Privacy Inquiries</h2>
-
-            <div class="notice">
-                <p>
-                    <strong>Developer:</strong> JCraft Studio
-                </p>
-
-                <p>
-                    For current developer contact information and privacy
-                    inquiries, please refer to the
-                    <strong>Developer contact</strong> information displayed on
-                    the official Google Play Store listing for this App.
-                </p>
-
-                <p>
-                    The Google Play Store developer information should be
-                    considered the current official contact information for
-                    JCraft Studio.
-                </p>
-            </div>
-
-        </section>
-
-
-        <!-- =========================================================
-             KOREAN
-        ========================================================== -->
-
-        <section data-lang="ko">
-
-            <p>
-                JCraft Studio(이하 "개발자")는
-                <strong>랜덤 추첨</strong> 애플리케이션(이하 "앱")을
-                제공합니다.
-            </p>
-
-            <p>
-                본 개인정보처리방침은 사용자가 앱을 이용하는 과정에서
-                정보가 어떻게 처리되는지 설명합니다. 개발자는 관련 법령과
-                Google Play 정책에 따라 사용자 정보를 투명하게 처리하기
-                위해 노력합니다.
-            </p>
-
-            <p class="date">
-                시행일: 2026년 9월 8일<br>
-                최종 수정일: 2026년 9월 8일
-            </p>
-
-
-            <h2>1. 사용자가 입력하는 정보</h2>
-
-            <p>
-                앱은 무작위 추첨을 위해 사용자가 이름 또는 참가자 정보를
-                직접 입력할 수 있는 기능을 제공합니다.
-            </p>
-
-            <p>
-                추첨 기능에 입력한 정보는 앱 기능 수행을 위해 사용자
-                기기에서 로컬로 처리됩니다. JCraft Studio는 해당 기능에
-                입력된 참가자 이름을 수신하거나 저장하기 위한 별도의
-                서버를 운영하지 않습니다.
-            </p>
-
-            <p>
-                다른 사람과 관련된 정보를 입력하는 경우, 해당 정보를
-                사용할 적절한 권한이나 동의를 확보할 책임은 사용자에게
-                있습니다.
-            </p>
-
-
-            <h2>2. 개발자가 직접 수집하지 않는 정보</h2>
-
-            <p>
-                앱 사용을 위해 회원가입이나 계정 생성이 필요하지 않으며,
-                개발자는 앱 사용 과정에서 이름, 전화번호, 주소, 비밀번호
-                등의 계정 정보를 직접 요구하지 않습니다.
-            </p>
-
-            <p>
-                개발자는 앱을 통해 민감한 개인정보를 직접 입력하도록
-                요구하지 않습니다.
-            </p>
-
-
-            <h2>3. 광고 및 제3자 서비스</h2>
-
-            <p>
-                앱에는 <strong>Google AdMob</strong> 및
-                Google Mobile Ads SDK를 통해 제공되는 광고가 포함될 수
-                있습니다.
-            </p>
-
-            <p>
-                Google 및 해당 광고 기술은 광고 제공, 측정, 보안,
-                부정행위 방지 및 관련 법령과 사용자의 동의 설정에 따른
-                광고 맞춤화를 위해 일정한 정보를 자동으로 처리할 수
-                있습니다.
-            </p>
-
-            <p>
-                기기, 지역, 사용자 설정 및 서비스 구성에 따라 처리될 수
-                있는 정보에는 다음이 포함될 수 있습니다.
-            </p>
-
-            <ul>
-                <li>IP 주소</li>
-                <li>기기 식별자 및 광고 식별자</li>
-                <li>일반적인 기기 정보</li>
-                <li>광고 상호작용 정보</li>
-                <li>앱 상호작용 정보</li>
-                <li>진단, 오류 및 성능 관련 정보</li>
-                <li>Google 광고 서비스가 처리하는 기타 정보</li>
-            </ul>
-
-            <p>
-                이러한 정보는 해당 제3자 서비스 제공자의 이용약관 및
-                개인정보처리방침에 따라 처리됩니다. 개발자는 독립적인
-                제3자 광고 서비스 제공자의 데이터 처리 방식을 직접
-                통제하지 않습니다.
-            </p>
-
-            <p>
-                Google의 개인정보 처리에 대한 자세한 내용은 아래에서
-                확인할 수 있습니다.
-            </p>
-
-            <p>
-                <a
-                    href="https://policies.google.com/privacy?hl=ko"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    https://policies.google.com/privacy
-                </a>
-            </p>
-
-            <p>
-                Google 광고 기술에 관한 자세한 내용:
-            </p>
-
-            <p>
-                <a
-                    href="https://policies.google.com/technologies/ads?hl=ko"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    https://policies.google.com/technologies/ads
-                </a>
-            </p>
-
-
-            <h2>4. 광고 동의 및 개인정보 보호 선택</h2>
-
-            <p>
-                관련 법령에서 요구하는 경우 광고 서비스 제공자는
-                맞춤형 광고, 광고 저장, 광고 식별자 및 이와 유사한
-                기술과 관련하여 사용자의 동의를 요청하거나 개인정보
-                보호 선택 기능을 제공할 수 있습니다.
-            </p>
-
-            <p>
-                제공되는 개인정보 보호 설정은 사용자의 국가, 기기 설정,
-                Google 계정 설정 및 적용되는 법적 요구사항에 따라 달라질
-                수 있습니다.
-            </p>
-
-
-            <h2>5. 정보 공유</h2>
-
-            <p>
-                JCraft Studio는 사용자가 앱에 입력한 개인정보를 판매하지
-                않습니다.
-            </p>
-
-            <p>
-                광고 서비스를 포함하여 앱에 통합된 제3자 서비스는
-                광고 제공, 광고 성과 측정, 보안, 부정행위 방지 및 법적
-                의무 준수 등의 목적으로 제3항에서 설명한 정보를 처리할
-                수 있습니다.
-            </p>
-
-
-            <h2>6. 데이터 저장, 보관 및 삭제</h2>
-
-            <p>
-                앱의 랜덤 추첨 기능에 사용자가 입력한 정보는
-                JCraft Studio 서버에 저장되는 방식이 아니라 사용자의
-                기기에서 로컬 처리되는 것을 기본으로 합니다.
-            </p>
-
-            <p>
-                운영체제에서 제공하는 기능에 따라 앱 데이터 삭제 또는
-                앱 삭제를 통해 기기에 저장된 앱 관련 정보를 제거할 수
-                있습니다.
-            </p>
-
-            <p>
-                제3자 서비스가 독립적으로 처리하는 데이터의 보관 및
-                삭제 기준은 해당 제3자 서비스의 정책을 따릅니다.
-                자세한 내용은 해당 서비스의 개인정보처리방침을
-                확인하시기 바랍니다.
-            </p>
-
-
-            <h2>7. 정보 보호</h2>
-
-            <p>
-                개발자는 앱의 특성과 운영 방식에 적합한 합리적인
-                보호조치를 통해 정보의 무단 접근, 오용 또는 공개 위험을
-                줄이기 위해 노력합니다.
-            </p>
-
-            <p>
-                다만 어떠한 전자 기기, 소프트웨어, 네트워크 또는
-                전자적 저장·전송 방식도 완벽한 보안을 보장할 수 없으므로
-                절대적인 보안을 보장할 수는 없습니다.
-            </p>
-
-
-            <h2>8. 아동의 개인정보</h2>
-
-            <p>
-                본 앱은 일반적인 무작위 추첨 도구이며, 아동에게
-                JCraft Studio에 개인정보를 직접 제공하도록 의도적으로
-                요구하는 서비스가 아닙니다.
-            </p>
-
-            <p>
-                사용자는 법적 권한과 적절한 사유 없이 아동 또는 다른
-                사람의 민감한 개인정보를 앱에 입력해서는 안 됩니다.
-            </p>
-
-            <p>
-                아동 또는 특정 연령 사용자를 대상으로 관련 법령상
-                추가적인 보호조치가 필요한 경우 적용되는 앱스토어 정책,
-                광고 정책 및 동의 요건을 따라야 합니다.
-            </p>
-
-
-            <h2>9. 외부 링크 및 추천 앱</h2>
-
-            <p>
-                앱에는 JCraft Studio가 제공하는 다른 서비스를 포함하여
-                웹사이트, Google Play 페이지 또는 다른 앱으로 연결되는
-                링크가 포함될 수 있습니다.
-            </p>
-
-            <p>
-                사용자가 앱을 벗어나 다른 앱, 웹사이트, 앱 마켓 또는
-                제3자 서비스에 접속하는 경우 해당 외부 서비스의
-                개인정보처리방침과 이용조건이 적용됩니다.
-            </p>
-
-            <p>
-                개발자는 독립적인 제3자 웹사이트 또는 서비스의 콘텐츠,
-                이용 가능 여부, 보안, 개인정보 처리 방식 또는 운영에
-                대해 책임지지 않습니다.
-            </p>
-
-
-            <h2>10. 랜덤 추첨 결과</h2>
-
-            <p>
-                본 앱은 일반적인 무작위 선택을 지원하기 위한 편의 도구로
-                제공됩니다. 앱에서 생성되는 결과는 일반적인 편의 또는
-                오락 목적의 무작위 선택을 위한 것입니다.
-            </p>
-
-            <p>
-                본 앱은 공인 추첨, 법적 감독이 필요한 추첨,
-                암호학적으로 검증되는 추첨, 도박, 복권, 금융, 의료,
-                법률 또는 기타 전문적인 선정 서비스를 제공하기 위한
-                목적으로 설계되지 않았습니다.
-            </p>
-
-            <p>
-                사용자는 본 앱을 특정 활동에 사용하는 것이 적절한지,
-                별도의 법령, 규정, 계약, 조직 내부 규정 또는 절차가
-                적용되는지를 스스로 확인해야 합니다.
-            </p>
-
-
-            <h2>11. 지식재산권 및 저작권</h2>
-
-            <p>
-                별도로 표시되지 않은 경우 JCraft Studio가 직접 제작한
-                앱의 소프트웨어, 디자인, 문구, 그래픽, 구조 및 기타
-                독창적인 콘텐츠는 관련 지식재산권 법령의 보호를 받을 수
-                있습니다.
-            </p>
-
-            <p>
-                제3자의 상표, 서비스명, 라이브러리, 소프트웨어, 플랫폼
-                및 기타 지식재산권은 각각의 권리자에게 귀속됩니다.
-            </p>
-
-            <p>
-                앱에서 제3자 서비스가 언급된다는 사실만으로 해당
-                서비스와 JCraft Studio 사이에 소유, 후원, 보증 또는
-                제휴관계가 있음을 의미하지 않습니다.
-            </p>
-
-            <p>
-                사용자는 앱에 입력하는 이름, 문구 또는 기타 정보가
-                제3자의 권리를 위법하게 침해하지 않도록 할 책임이
-                있습니다.
-            </p>
-
-
-            <h2>12. 면책 및 책임 제한</h2>
-
-            <p>
-                본 앱은 관련 법령에서 허용하는 범위 내에서 일반적인
-                편의 도구로 제공됩니다.
-            </p>
-
-            <p>
-                개발자는 앱이 항상 중단 없이 작동하거나 오류가 전혀
-                없거나 모든 기기와 완벽히 호환되거나 사용자의 모든
-                특정 목적에 적합하다는 것을 보증하지 않습니다.
-            </p>
-
-            <p>
-                법률, 금전, 계약, 안전 또는 기타 중요한 결과가 발생할 수
-                있는 의사결정이나 활동에 앱의 결과를 사용하려는 경우
-                사용자는 결과와 적용 요건을 직접 확인할 책임이 있습니다.
-            </p>
-
-            <p>
-                본 개인정보처리방침의 어떠한 내용도 관련 법률에 따라
-                제한하거나 배제할 수 없는 사용자의 권리 또는 개발자의
-                책임을 제한하거나 배제하기 위한 것으로 해석되지 않습니다.
-            </p>
-
-
-            <h2>13. 법적 요구사항</h2>
-
-            <p>
-                관련 법령, 적법한 법적 절차 또는 정부기관의 요청을
-                준수하거나, 이용자와 권리를 보호하거나, 부정 이용을
-                조사하거나, 앱 및 관련 서비스의 보안과 무결성을
-                유지하기 위해 합리적으로 필요한 경우 정보가 처리 또는
-                제공될 수 있습니다.
-            </p>
-
-
-            <h2>14. 해외 사용자 및 국제적 데이터 처리</h2>
-
-            <p>
-                Google 등 제3자 서비스 제공자는 자체 개인정보처리방침과
-                관련 법적 보호조치에 따라 사용자의 거주 국가 이외의
-                국가에서 데이터를 처리할 수 있습니다.
-            </p>
-
-
-            <h2>15. 개인정보처리방침의 변경</h2>
-
-            <p>
-                앱 기능, 데이터 처리 방식, 제3자 서비스, 관련 법령 또는
-                Google Play 정책이 변경되는 경우 본 개인정보처리방침도
-                변경될 수 있습니다.
-            </p>
-
-            <p>
-                중요한 변경사항이 있는 경우 본 페이지의 최종 수정일을
-                변경하거나, 필요한 경우 적절한 방법을 통해 변경사항을
-                안내할 수 있습니다.
-            </p>
-
-
-            <h2>16. 개발자 정보 및 개인정보 문의</h2>
-
-            <div class="notice">
-                <p>
-                    <strong>개발자:</strong> JCraft Studio
-                </p>
-
-                <p>
-                    최신 개발자 연락처 및 개인정보 관련 문의 방법은
-                    본 앱의 공식
-                    <strong>Google Play 스토어 등록정보의
-                    '개발자 연락처'</strong>
-                    항목을 확인해 주시기 바랍니다.
-                </p>
-
-                <p>
-                    Google Play 스토어에 표시된 JCraft Studio의 개발자
-                    정보 및 연락처를 현재 공식 연락정보로 합니다.
-                </p>
-            </div>
-
-        </section>
-
-
-        <footer class="footer">
-            © 2026 JCraft Studio. All rights reserved.
-        </footer>
-
-    </main>
+  <main class="card">
+
+    <header class="header">
+      <div class="header-row">
+
+        <div>
+          <h1 id="page-title">
+            Privacy Policy
+          </h1>
+
+          <p class="subtitle" id="page-subtitle">
+            Random Draw · JCraft Studio
+          </p>
+        </div>
+
+        <nav class="language-switcher"
+             aria-label="Language selection">
+
+          <button
+            type="button"
+            class="language-button"
+            id="ko-button"
+            onclick="setLanguage('ko')">
+            한국어
+          </button>
+
+          <button
+            type="button"
+            class="language-button active"
+            id="en-button"
+            onclick="setLanguage('en')">
+            English
+          </button>
+
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================================= -->
+    <!-- ENGLISH PRIVACY POLICY            -->
+    <!-- ================================= -->
+
+    <section data-lang="en">
+
+      <p>
+        <strong>JCraft Studio</strong>
+        ("Developer", "we", "us", or "our")
+        provides the
+        <strong>Random Draw</strong>
+        application ("App").
+      </p>
+
+      <p>
+        This Privacy Policy explains
+        how information is processed
+        when you use the App.
+      </p>
+
+      <p>
+        We aim to handle user information
+        transparently and in accordance
+        with applicable laws and
+        Google Play policies.
+      </p>
+
+      <p class="date">
+        Effective date: November 4, 2026
+      </p>
+
+      <h2>1. Information Entered by Users</h2>
+
+      <p>
+        The App allows users to enter
+        names or participant information
+        for random selection and drawing.
+      </p>
+
+      <p>
+        Information entered into the
+        random drawing feature is
+        processed locally on the
+        user's device.
+      </p>
+
+      <p>
+        JCraft Studio does not operate
+        a separate server to receive
+        or store participant names
+        entered into the drawing feature.
+      </p>
+
+      <p>
+        Depending on the implemented
+        features, the App may store
+        drawing records, participant
+        lists, and application settings
+        locally on the device.
+      </p>
+
+      <p>
+        Users are responsible for
+        ensuring they have appropriate
+        authority or permission to
+        enter information concerning
+        other individuals.
+      </p>
+
+      <h2>2. Information We Do Not Directly Collect</h2>
+
+      <p>
+        JCraft Studio does not require
+        users to create an account,
+        register, or provide a real
+        name, phone number, postal
+        address, or password to use
+        the App's core functionality.
+      </p>
+
+      <p>
+        The Developer does not
+        intentionally request sensitive
+        personal information through
+        the App's drawing features.
+      </p>
+
+      <p>
+        This does not mean that
+        third-party advertising SDKs
+        process no personal information.
+      </p>
+
+      <p>
+        Advertising-related information
+        may be processed as described
+        in the following sections.
+      </p>
+
+      <h2>3. Advertising and Third-Party Services</h2>
+
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>
+        for advertising mediation
+        and <strong>Unity Ads</strong>
+        to deliver advertisements.
+      </p>
+
+      <p>
+        Unity LevelPlay manages
+        advertising requests and
+        mediation, while Unity Ads
+        provides advertising content
+        within the App.
+      </p>
+
+      <p>
+        These services may automatically
+        process certain information
+        for advertising delivery,
+        performance measurement,
+        fraud prevention, security,
+        and related service operations.
+      </p>
+
+      <h3>3.1 Advertising-Related Information</h3>
+
+      <p>
+        Depending on the device,
+        operating system, geographical
+        region, advertising settings,
+        SDK configuration, and user
+        privacy choices, processed
+        information may include:
+      </p>
+
+      <ul>
+        <li>
+          IP address and approximate
+          location derived from it
+        </li>
+
+        <li>
+          Android Advertising ID
+          and other permitted identifiers
+        </li>
+
+        <li>
+          Device manufacturer, model,
+          and operating system information
+        </li>
+
+        <li>
+          Application identifiers
+          and technical app information
+        </li>
+
+        <li>
+          Advertisement impressions,
+          clicks, and interactions
+        </li>
+
+        <li>
+          App interaction information
+          relevant to advertising
+        </li>
+
+        <li>
+          Diagnostic, crash,
+          and performance information
+        </li>
+
+        <li>
+          Technical information used
+          for security and fraud prevention
+        </li>
+      </ul>
+
+      <p>
+        Actual information collected
+        or processed depends on the
+        advertising SDK configuration
+        and applicable privacy requirements.
+      </p>
+
+      <h3>3.2 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay is an advertising
+        mediation platform used to manage
+        advertisement requests, delivery,
+        and monetization performance.
+      </p>
+
+      <p>
+        It may process relevant
+        technical information to support
+        mediation, reporting,
+        service reliability,
+        and fraud prevention.
+      </p>
+
+      <h3>3.3 Unity Ads</h3>
+
+      <p>
+        Unity Ads provides advertisements
+        displayed within the App.
+      </p>
+
+      <p>
+        Unity Ads may process
+        advertising identifiers,
+        device information, IP addresses,
+        and advertising interaction
+        information according to its
+        privacy practices.
+      </p>
+
+      <p>
+        Such processing may support
+        advertisement delivery,
+        performance measurement,
+        security, fraud prevention,
+        and personalized advertising
+        where permitted.
+      </p>
+
+      <h3>3.4 Unity Privacy Resources</h3>
+
+      <p>
+        Information may be processed
+        by Unity and relevant advertising
+        technology partners under
+        their applicable privacy policies.
+      </p>
+
+      <p>
+        For further information,
+        please review the official
+        Unity privacy resources:
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and App User Privacy FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        If additional advertising
+        networks are integrated
+        or data practices change,
+        this Privacy Policy will
+        be reviewed and updated
+        as necessary.
+      </p>
+
+      <h2>4. Advertising Consent and Privacy Choices</h2>
+
+      <p>
+        Where required by applicable
+        laws, advertising services
+        may request consent or provide
+        privacy choices related to
+        personalized advertising,
+        device identifiers, and
+        advertising technologies.
+      </p>
+
+      <p>
+        Available controls may vary
+        depending on the user's
+        country, device, operating
+        system, SDK configuration,
+        and applicable requirements.
+      </p>
+
+      <p>
+        Users may use supported
+        Android privacy settings
+        to manage or delete
+        their Advertising ID.
+      </p>
+
+      <p>
+        Users may also use
+        privacy controls made
+        available through Unity
+        advertising services,
+        where supported.
+      </p>
+
+      <p>
+        Restricting personalized
+        advertising does not
+        necessarily disable
+        advertisements.
+      </p>
+
+      <p>
+        Non-personalized advertisements
+        may still appear.
+      </p>
+
+      <h2>5. Data Sharing</h2>
+
+      <p>
+        JCraft Studio does not sell
+        personal information entered
+        by users into the random
+        drawing feature.
+      </p>
+
+      <p>
+        Participant names and
+        random drawing data are
+        processed locally and
+        are not intentionally
+        transmitted to a separate
+        developer-operated server.
+      </p>
+
+      <p>
+        However, advertising-related
+        information may be processed
+        or shared by Unity and
+        relevant advertising partners.
+      </p>
+
+      <p>
+        Such information may include
+        advertising identifiers,
+        device information, IP addresses,
+        advertisement interactions,
+        and diagnostic information.
+      </p>
+
+      <p>
+        Information may also be
+        processed or disclosed
+        where required by
+        applicable law.
+      </p>
+
+      <h2>6. Data Storage, Retention, and Deletion</h2>
+
+      <h3>6.1 Locally Stored Information</h3>
+
+      <p>
+        Information entered into
+        the App's random drawing
+        feature is processed locally
+        on the user's device.
+      </p>
+
+      <p>
+        Where supported by the App,
+        saved participant information,
+        drawing history, and preferences
+        may remain on the device
+        until deleted or reset.
+      </p>
+
+      <p>
+        Users may delete saved
+        records through available
+        App functions.
+      </p>
+
+      <p>
+        Clearing the App's storage
+        through Android settings
+        or uninstalling the App
+        generally removes locally
+        stored data.
+      </p>
+
+      <p>
+        However, operating system
+        backup and restoration
+        features may affect
+        data removal or restoration.
+      </p>
+
+      <h3>6.2 Advertising Data</h3>
+
+      <p>
+        Data independently processed
+        by Unity and related advertising
+        technology partners is subject
+        to their respective retention
+        and deletion practices.
+      </p>
+
+      <p>
+        Users may consult Unity's
+        official privacy resources
+        regarding applicable access,
+        deletion, and privacy requests.
+      </p>
+
+      <h2>7. Data Security</h2>
+
+      <p>
+        The Developer seeks to
+        apply reasonable measures
+        appropriate to the nature
+        and operation of the App
+        to reduce unauthorized
+        access, misuse, or disclosure
+        of information.
+      </p>
+
+      <p>
+        Information processed by
+        third-party advertising
+        services is subject to
+        those providers' security
+        practices and safeguards.
+      </p>
+
+      <p>
+        However, no electronic
+        storage, software, device,
+        network, or transmission
+        method can guarantee
+        absolute security.
+      </p>
+
+      <h2>8. Children's Privacy</h2>
+
+      <p>
+        The App is a general-purpose
+        random selection utility
+        and is not specifically
+        designed for children
+        under the age of 13.
+      </p>
+
+      <p>
+        The Developer does not
+        intentionally request
+        children to submit
+        directly identifying
+        personal information.
+      </p>
+
+      <p>
+        Users should avoid entering
+        unnecessary personal or
+        sensitive information about
+        children or other individuals.
+      </p>
+
+      <p>
+        Where laws or advertising
+        policies require additional
+        protections for children
+        or age-restricted users,
+        applicable privacy,
+        consent, and advertising
+        requirements must be followed.
+      </p>
+
+      <h2>9. External Links and Advertising</h2>
+
+      <p>
+        The App may display
+        advertising content
+        provided by third-party
+        advertising services.
+      </p>
+
+      <p>
+        Interacting with advertisements
+        may open external websites,
+        Google Play application pages,
+        or other third-party services.
+      </p>
+
+      <p>
+        Once users access an
+        external website, marketplace,
+        or third-party service,
+        that service's privacy policy
+        and terms of use apply.
+      </p>
+
+      <p>
+        JCraft Studio does not
+        directly control the
+        independent privacy practices,
+        availability, or operation
+        of third-party websites
+        and advertising destinations.
+      </p>
+
+      <p>
+        Nothing in this section
+        excludes responsibilities
+        imposed by applicable law.
+      </p>
+
+      <h2>10. Random Draw Results</h2>
+
+      <p>
+        The App is intended solely
+        as a general-purpose
+        random selection utility.
+      </p>
+
+      <p>
+        Results generated by the
+        App are provided for
+        convenience, entertainment,
+        and general utility purposes.
+      </p>
+
+      <p>
+        The App is not designed
+        or certified to provide
+        legally supervised,
+        cryptographically verifiable,
+        regulated, gambling,
+        lottery, financial, medical,
+        legal, or professional
+        selection services.
+      </p>
+
+      <p>
+        Users are responsible
+        for determining whether
+        the App is appropriate
+        for a particular activity.
+      </p>
+
+      <p>
+        Users must independently
+        verify whether applicable
+        legal, regulatory,
+        contractual, organizational,
+        or procedural requirements
+        apply to their use.
+      </p>
+
+      <h2>11. Intellectual Property and Copyright</h2>
+
+      <p>
+        Unless otherwise indicated,
+        original software, design,
+        text, graphics, structure,
+        and other original content
+        created by JCraft Studio
+        may be protected by
+        applicable intellectual
+        property laws.
+      </p>
+
+      <p>
+        Third-party trademarks,
+        service names, software,
+        libraries, advertising
+        platforms, and other
+        intellectual property
+        remain the property
+        of their respective owners.
+      </p>
+
+      <p>
+        References to Unity,
+        Unity LevelPlay, Unity Ads,
+        Google Play, or other
+        third-party services
+        do not imply ownership,
+        sponsorship, endorsement,
+        or affiliation unless
+        expressly stated.
+      </p>
+
+      <p>
+        Users are responsible
+        for ensuring that names,
+        text, and other content
+        entered into the App
+        do not unlawfully infringe
+        the rights of third parties.
+      </p>
+
+      <h2>12. Disclaimer and Limitation of Responsibility</h2>
+
+      <p>
+        The App is provided
+        as a general-purpose utility
+        on an "as available" basis
+        to the extent permitted
+        by applicable law.
+      </p>
+
+      <p>
+        The Developer does not
+        guarantee uninterrupted
+        operation, freedom from
+        technical errors, compatibility
+        with every device, or suitability
+        for every particular purpose.
+      </p>
+
+      <p>
+        Users are responsible
+        for reviewing and verifying
+        results before using them
+        for activities involving
+        legal, financial, contractual,
+        safety-related, or other
+        significant consequences.
+      </p>
+
+      <p>
+        To the extent permitted
+        by applicable law,
+        the Developer limits
+        liability for losses
+        arising from service
+        interruptions, technical
+        errors, or reliance
+        on random results.
+      </p>
+
+      <p>
+        Nothing in this Privacy Policy
+        excludes or limits any
+        right or liability that
+        cannot lawfully be
+        excluded or limited.
+      </p>
+
+      <h2>13. Legal Requirements</h2>
+
+      <p>
+        Information may be processed
+        or disclosed where reasonably
+        necessary to comply with
+        applicable laws, regulations,
+        valid legal processes,
+        or lawful government requests.
+      </p>
+
+      <p>
+        Such processing may also
+        be necessary to protect users,
+        protect legal rights or property,
+        investigate abusive activity,
+        or maintain the security
+        and integrity of the App
+        and related services.
+      </p>
+
+      <h2>14. International Users</h2>
+
+      <p>
+        Unity and relevant advertising
+        technology partners may process
+        certain information in countries
+        other than the user's
+        country of residence.
+      </p>
+
+      <p>
+        Such processing is subject
+        to the applicable provider's
+        privacy policies, relevant
+        legal requirements, and
+        available data protection
+        safeguards.
+      </p>
+
+      <h2>15. Changes to This Privacy Policy</h2>
+
+      <p>
+        This Privacy Policy may
+        be revised when App functionality,
+        advertising technologies,
+        data processing practices,
+        applicable laws, or
+        Google Play policies change.
+      </p>
+
+      <p>
+        Updates will be published
+        on this page with the
+        applicable revision date.
+      </p>
+
+      <p>
+        Where required by law,
+        material changes may
+        involve additional notice
+        or consent procedures.
+      </p>
+
+      <p class="date">
+        Last updated: November 4, 2026
+      </p>
+
+      <h2>16. Developer and Privacy Inquiries</h2>
+
+      <div class="notice">
+
+        <p>
+          <strong>Developer:</strong>
+          JCraft Studio
+        </p>
+
+        <p>
+          For the current developer
+          contact information and
+          privacy-related inquiries,
+          please refer to the
+          <strong>Developer contact</strong>
+          section on the official
+          Google Play Store listing
+          for Random Draw.
+        </p>
+
+        <p>
+          Privacy inquiries,
+          data deletion requests,
+          and questions regarding
+          this Privacy Policy
+          may be submitted through
+          the developer contact
+          information provided there.
+        </p>
+
+        <p>
+          For privacy questions
+          concerning advertising
+          data processed by Unity,
+          please also refer to
+          Unity's official
+          privacy resources.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ================================= -->
+    <!-- KOREAN PRIVACY POLICY             -->
+    <!-- ================================= -->
+
+    <section data-lang="ko" hidden>
+
+      <p>
+        <strong>JCraft Studio</strong>
+        (이하 "개발자")는
+        <strong>랜덤 추첨</strong>
+        (Random Draw, 이하 "앱")
+        애플리케이션을 제공합니다.
+      </p>
+
+      <p>
+        본 개인정보처리방침은
+        이용자가 앱을 사용하는 과정에서
+        정보가 어떻게 처리되는지,
+        이용자가 어떤 개인정보 보호
+        권리를 행사할 수 있는지 설명합니다.
+      </p>
+
+      <p>
+        개발자는 관련 법령과
+        Google Play 정책에 따라
+        이용자 정보를 투명하고
+        적절하게 처리하기 위해
+        노력합니다.
+      </p>
+
+      <p class="date">
+        시행일: 2026년 11월 4일
+      </p>
+
+      <h2>1. 사용자가 입력하는 정보</h2>
+
+      <p>
+        본 앱은 무작위 추첨을 위해
+        이용자가 이름 또는 참가자 정보를
+        직접 입력하는 기능을 제공합니다.
+      </p>
+
+      <p>
+        추첨 기능에 입력한 정보는
+        앱 기능 수행을 위해
+        이용자의 기기에서
+        로컬로 처리됩니다.
+      </p>
+
+      <p>
+        JCraft Studio는 이용자가
+        입력한 참가자 이름을
+        수신하거나 저장하기 위한
+        별도의 서버를 운영하지 않습니다.
+      </p>
+
+      <p>
+        앱에 구현된 기능에 따라
+        추첨 기록, 참가자 목록,
+        앱 설정 등의 정보가
+        기기 내 로컬 저장소에
+        저장될 수 있습니다.
+      </p>
+
+      <p>
+        다른 사람과 관련된
+        정보를 입력하는 경우
+        해당 정보를 사용할 적절한
+        권한이나 동의를 확보할 책임은
+        이용자에게 있습니다.
+      </p>
+
+      <h2>2. 개발자가 직접 수집하지 않는 정보</h2>
+
+      <p>
+        앱의 기본 기능을 이용하기 위해
+        회원가입이나 계정 생성은
+        필요하지 않습니다.
+      </p>
+
+      <p>
+        개발자는 실제 이름,
+        전화번호, 주소, 비밀번호 등의
+        계정 정보를 필수적으로
+        요구하지 않습니다.
+      </p>
+
+      <p>
+        또한 앱의 추첨 기능을 통해
+        민감한 개인정보를 직접
+        입력하도록 의도적으로
+        요구하지 않습니다.
+      </p>
+
+      <p>
+        다만 이는 제3자 광고 SDK가
+        개인정보를 전혀 처리하지
+        않는다는 의미는 아닙니다.
+      </p>
+
+      <p>
+        광고와 관련된 정보 처리는
+        아래 조항에서 안내합니다.
+      </p>
+
+      <h2>3. 광고 및 제3자 서비스</h2>
+
+      <p>
+        본 앱은 광고 미디에이션을 위해
+        <strong>Unity LevelPlay</strong>를
+        사용하며 광고 제공을 위해
+        <strong>Unity Ads</strong>를
+        사용합니다.
+      </p>
+
+      <p>
+        Unity LevelPlay는
+        광고 요청과 미디에이션을
+        관리하며 Unity Ads는
+        앱 내 광고를 제공합니다.
+      </p>
+
+      <p>
+        이러한 서비스는 광고 제공,
+        성과 측정, 부정행위 방지,
+        보안 및 관련 서비스 운영을
+        위해 일부 정보를 자동으로
+        처리할 수 있습니다.
+      </p>
+
+      <h3>3.1 광고 관련 처리 정보</h3>
+
+      <p>
+        기기, 운영체제, 지역,
+        광고 설정, SDK 구성,
+        이용자의 개인정보 보호
+        선택에 따라 다음 정보가
+        처리될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          IP 주소 및 이를 통해
+          추정되는 대략적인 위치 정보
+        </li>
+
+        <li>
+          Android 광고 식별자
+          (Advertising ID)
+          및 기타 허용된 식별자
+        </li>
+
+        <li>
+          기기 제조사, 모델,
+          운영체제 및 버전 정보
+        </li>
+
+        <li>
+          앱 식별 정보 및
+          기술적인 앱 관련 정보
+        </li>
+
+        <li>
+          광고 노출, 클릭 및
+          광고 상호작용 정보
+        </li>
+
+        <li>
+          광고 제공과 관련된
+          앱 상호작용 정보
+        </li>
+
+        <li>
+          진단, 오류, 충돌 및
+          성능 관련 정보
+        </li>
+
+        <li>
+          보안 및 부정행위
+          방지를 위한 기술 정보
+        </li>
+      </ul>
+
+      <p>
+        실제 수집 및 처리되는 정보는
+        광고 SDK의 설정과
+        적용되는 개인정보 보호
+        요건에 따라 달라질 수 있습니다.
+      </p>
+
+      <h3>3.2 Unity LevelPlay</h3>
+
+      <p>
+        Unity LevelPlay는
+        광고 요청과 광고 송출,
+        광고 수익화 관리를 위한
+        미디에이션 플랫폼입니다.
+      </p>
+
+      <p>
+        광고 요청 관리,
+        광고 성과 보고,
+        서비스 안정성 및
+        부정행위 방지를 위해
+        기술적 정보를 처리할 수 있습니다.
+      </p>
+
+      <h3>3.3 Unity Ads</h3>
+
+      <p>
+        Unity Ads는 앱 내부에서
+        광고를 제공하는 서비스입니다.
+      </p>
+
+      <p>
+        Unity Ads는 광고 식별자,
+        기기 정보, IP 주소,
+        광고 상호작용 정보 등을
+        해당 업체의 개인정보
+        처리 기준에 따라
+        처리할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 정보는 광고 제공,
+        광고 성과 측정, 보안,
+        부정행위 방지 및
+        관련 법령에서 허용하는
+        맞춤형 광고 제공 등에
+        이용될 수 있습니다.
+      </p>
+
+      <h3>3.4 Unity 개인정보 보호 관련 문서</h3>
+
+      <p>
+        광고 관련 정보는 Unity 및
+        관련 광고 기술 협력사의
+        정책에 따라 처리되거나
+        공유될 수 있습니다.
+      </p>
+
+      <p>
+        자세한 내용은 다음
+        Unity 공식 개인정보 보호
+        문서를 참고하시기 바랍니다.
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity 개인정보처리방침
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity 게임 및 앱 이용자 개인정보 FAQ
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        향후 다른 광고 네트워크가
+        추가되거나 데이터 처리
+        방식이 변경되는 경우
+        개인정보처리방침을 검토하여
+        필요한 내용을 반영합니다.
+      </p>
+
+      <h2>4. 광고 동의 및 개인정보 보호 선택</h2>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        광고 서비스 제공자는
+        맞춤형 광고, 기기 식별자,
+        광고 기술 사용 등에 대해
+        이용자의 동의를 요청하거나
+        개인정보 보호 선택 기능을
+        제공할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 기능의 제공 여부는
+        이용자의 국가, 기기,
+        운영체제, 광고 SDK 구성,
+        관련 법령에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <p>
+        이용자는 Android 개인정보
+        보호 설정에서 지원되는
+        광고 ID 관리 또는
+        삭제 기능을 사용할 수 있습니다.
+      </p>
+
+      <p>
+        Unity 광고에 개인정보
+        보호 선택 기능이
+        제공되는 경우 해당 기능을
+        이용할 수 있습니다.
+      </p>
+
+      <p>
+        광고 개인화 설정을
+        제한하더라도 모든 광고가
+        중단되는 것은 아닙니다.
+      </p>
+
+      <p>
+        개인화되지 않은 광고는
+        계속 표시될 수 있습니다.
+      </p>
+
+      <h2>5. 정보 공유</h2>
+
+      <p>
+        JCraft Studio는
+        이용자가 추첨 기능에
+        직접 입력한 개인정보를
+        판매하지 않습니다.
+      </p>
+
+      <p>
+        참가자 이름과 추첨 정보는
+        기기에서 로컬로 처리되며,
+        개발자가 운영하는
+        별도 서버로 의도적으로
+        전송하지 않습니다.
+      </p>
+
+      <p>
+        다만 광고 관련 정보는
+        Unity 및 관련 광고 기술
+        협력사를 통해 처리되거나
+        공유될 수 있습니다.
+      </p>
+
+      <p>
+        이러한 정보에는
+        광고 식별자, 기기 정보,
+        IP 주소, 광고 상호작용 정보,
+        진단 정보 등이
+        포함될 수 있습니다.
+      </p>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        적법한 절차에 따라
+        정보가 처리되거나
+        제공될 수 있습니다.
+      </p>
+
+      <h2>6. 데이터 저장, 보관 및 삭제</h2>
+
+      <h3>6.1 로컬 저장 정보</h3>
+
+      <p>
+        앱의 랜덤 추첨 기능에
+        입력한 정보는 이용자의
+        기기에서 로컬로 처리됩니다.
+      </p>
+
+      <p>
+        앱에서 지원하는 경우
+        참가자 정보, 추첨 기록,
+        앱 설정 등의 데이터가
+        삭제 또는 초기화 전까지
+        기기에 저장될 수 있습니다.
+      </p>
+
+      <p>
+        이용자는 앱에서 제공하는
+        기록 삭제 기능으로
+        저장된 기록을 삭제할 수 있습니다.
+      </p>
+
+      <p>
+        Android 설정에서
+        앱 저장공간을 삭제하거나
+        앱을 제거하면 일반적으로
+        로컬 데이터도 삭제됩니다.
+      </p>
+
+      <p>
+        다만 운영체제의 백업 및
+        복원 기능에 따라 일부 정보가
+        다시 복원될 가능성이 있습니다.
+      </p>
+
+      <h3>6.2 광고 서비스 데이터</h3>
+
+      <p>
+        Unity 및 관련 광고 제공업체가
+        독립적으로 수집하거나
+        처리하는 정보는 해당 업체의
+        보관 및 삭제 정책에 따라
+        관리됩니다.
+      </p>
+
+      <p>
+        관련 정보의 열람,
+        삭제 및 개인정보 보호
+        요청에 관한 내용은
+        Unity 공식 개인정보
+        보호 안내를 참고할 수 있습니다.
+      </p>
+
+      <h2>7. 정보 보호</h2>
+
+      <p>
+        개발자는 앱의 특성과
+        운영 방식에 적합한
+        합리적인 보호 조치를 통해
+        정보의 무단 접근,
+        오용 또는 공개 위험을
+        줄이기 위해 노력합니다.
+      </p>
+
+      <p>
+        제3자 광고 서비스에서
+        처리하는 정보에는
+        해당 서비스 제공업체의
+        보안 정책과 보호 조치가
+        적용됩니다.
+      </p>
+
+      <p>
+        다만 어떠한 전자 기기,
+        소프트웨어, 네트워크 또는
+        전자적 저장·전송 방식도
+        완벽한 보안을 보장할
+        수는 없습니다.
+      </p>
+
+      <h2>8. 아동의 개인정보</h2>
+
+      <p>
+        본 앱은 일반적인 무작위
+        추첨을 위한 유틸리티이며
+        만 13세 미만 아동을
+        특별히 대상으로 설계된
+        서비스가 아닙니다.
+      </p>
+
+      <p>
+        개발자는 아동의 직접적인
+        개인정보 제공을 의도적으로
+        요구하지 않습니다.
+      </p>
+
+      <p>
+        이용자는 아동 또는
+        다른 사람의 불필요한
+        개인정보나 민감한 정보를
+        입력하지 않는 것이 좋습니다.
+      </p>
+
+      <p>
+        아동 또는 특정 연령의
+        이용자에게 추가 보호조치가
+        필요한 경우 관련 법령,
+        앱스토어 정책 및 광고
+        동의 요건이 적용됩니다.
+      </p>
+
+      <h2>9. 외부 링크 및 광고</h2>
+
+      <p>
+        앱에는 제3자 광고 서비스에서
+        제공하는 광고 콘텐츠가
+        표시될 수 있습니다.
+      </p>
+
+      <p>
+        광고를 선택하면 외부 웹사이트,
+        Google Play 앱 페이지 또는
+        기타 제3자 서비스로
+        이동할 수 있습니다.
+      </p>
+
+      <p>
+        이용자가 외부 웹사이트,
+        앱 마켓 또는 제3자
+        서비스에 접속하는 경우
+        해당 서비스의 개인정보
+        처리방침 및 이용약관이
+        적용됩니다.
+      </p>
+
+      <p>
+        JCraft Studio는 독립적인
+        제3자 웹사이트 및 광고
+        연결 대상의 개인정보
+        처리 방식이나 운영을
+        직접 통제하지 않습니다.
+      </p>
+
+      <p>
+        단, 관련 법령에 따라
+        개발자가 부담해야 하는
+        책임은 제외되지 않습니다.
+      </p>
+
+      <h2>10. 랜덤 추첨 결과</h2>
+
+      <p>
+        본 앱은 일반적인
+        무작위 선택을 지원하기 위한
+        편의 도구로 제공됩니다.
+      </p>
+
+      <p>
+        앱에서 생성되는 결과는
+        일반적인 편의, 오락 및
+        무작위 선택을 위한 것입니다.
+      </p>
+
+      <p>
+        본 앱은 공인 추첨,
+        법적 감독이 필요한 추첨,
+        암호학적으로 검증되는 추첨,
+        도박, 복권, 금융, 의료,
+        법률 또는 기타 전문적인
+        선정 서비스를 제공하기
+        위한 목적으로 설계되지
+        않았습니다.
+      </p>
+
+      <p>
+        이용자는 앱을 특정 활동에
+        사용하는 것이 적절한지
+        직접 판단해야 합니다.
+      </p>
+
+      <p>
+        해당 활동에 별도의
+        법령, 규정, 계약,
+        조직 내부 규정 또는
+        절차가 적용되는지도
+        직접 확인해야 합니다.
+      </p>
+
+      <h2>11. 지식재산권 및 저작권</h2>
+
+      <p>
+        별도로 표시되지 않은 경우
+        JCraft Studio가 직접 제작한
+        앱의 소프트웨어, 디자인,
+        문구, 그래픽, 구조 및
+        기타 독창적인 콘텐츠는
+        관련 지식재산권 법령의
+        보호를 받을 수 있습니다.
+      </p>
+
+      <p>
+        제3자의 상표, 서비스명,
+        소프트웨어, 라이브러리,
+        광고 플랫폼 및
+        기타 지식재산권은
+        각각의 권리자에게
+        귀속됩니다.
+      </p>
+
+      <p>
+        Unity, Unity LevelPlay,
+        Unity Ads, Google Play 등
+        제3자 서비스에 대한 언급은
+        별도 명시가 없는 한
+        소유, 후원, 보증 또는
+        제휴관계를 의미하지 않습니다.
+      </p>
+
+      <p>
+        이용자는 앱에 입력하는
+        이름, 문구 또는 기타 정보가
+        제3자의 권리를 위법하게
+        침해하지 않도록 해야 합니다.
+      </p>
+
+      <h2>12. 면책 및 책임 제한</h2>
+
+      <p>
+        본 앱은 관련 법령에서
+        허용하는 범위 내에서
+        일반적인 편의 도구로
+        제공됩니다.
+      </p>
+
+      <p>
+        개발자는 앱이 항상
+        중단 없이 작동하거나,
+        오류가 전혀 없거나,
+        모든 기기와 완벽하게
+        호환되거나, 특정 목적에
+        적합하다는 것을
+        보증하지 않습니다.
+      </p>
+
+      <p>
+        법률, 금전, 계약, 안전 또는
+        기타 중요한 결과가
+        발생할 수 있는 활동에
+        앱의 추첨 결과를 이용하는 경우
+        이용자는 해당 결과와
+        적용 요건을 직접
+        확인해야 합니다.
+      </p>
+
+      <p>
+        관련 법령에서 허용하는 범위 내에서
+        개발자는 서비스 중단,
+        기술적 오류 또는 추첨 결과에
+        대한 의존으로 발생한
+        손해에 대한 책임을 제한합니다.
+      </p>
+
+      <p>
+        본 방침의 어떠한 내용도
+        법령상 제한하거나
+        배제할 수 없는 이용자의
+        권리 또는 개발자의 책임을
+        제한하거나 배제하기 위한
+        것으로 해석되지 않습니다.
+      </p>
+
+      <h2>13. 법적 요구사항</h2>
+
+      <p>
+        관련 법령, 적법한 법적 절차
+        또는 정부기관의 적법한
+        요청을 준수하기 위해
+        필요한 경우 정보가
+        처리 또는 제공될 수 있습니다.
+      </p>
+
+      <p>
+        이용자와 법적 권리를
+        보호하거나, 부정 이용을
+        조사하거나, 앱 및 관련
+        서비스의 보안과 무결성을
+        유지하기 위해 합리적으로
+        필요한 범위에서도
+        정보가 처리될 수 있습니다.
+      </p>
+
+      <h2>14. 해외 사용자 및 국제적 데이터 처리</h2>
+
+      <p>
+        Unity 및 관련 광고 기술
+        협력사는 이용자의 거주
+        국가 이외의 국가에서
+        특정 정보를 처리할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 정보 처리는
+        해당 업체의 개인정보
+        처리방침, 관련 법령 및
+        적용 가능한 데이터 보호
+        조치에 따라 이루어집니다.
+      </p>
+
+      <h2>15. 개인정보처리방침의 변경</h2>
+
+      <p>
+        앱 기능, 광고 기술,
+        데이터 처리 방식,
+        관련 법령 또는
+        Google Play 정책이
+        변경되는 경우
+        본 개인정보처리방침도
+        수정될 수 있습니다.
+      </p>
+
+      <p>
+        변경된 내용은
+        해당 수정일과 함께
+        본 페이지에 게시됩니다.
+      </p>
+
+      <p>
+        관련 법령에서 요구하는 경우
+        중요한 변경 사항에 대해
+        추가 안내 또는 동의 절차를
+        진행할 수 있습니다.
+      </p>
+
+      <p class="date">
+        최종 수정일: 2026년 11월 4일
+      </p>
+
+      <h2>16. 개발자 정보 및 개인정보 문의</h2>
+
+      <div class="notice">
+
+        <p>
+          <strong>개발자:</strong>
+          JCraft Studio
+        </p>
+
+        <p>
+          최신 개발자 연락처 및
+          개인정보 관련 문의 방법은
+          랜덤 추첨 앱의 공식
+          <strong>
+            Google Play 스토어 등록정보의
+            개발자 연락처
+          </strong>
+          항목을 참고하시기 바랍니다.
+        </p>
+
+        <p>
+          개인정보 처리,
+          데이터 삭제 및
+          본 개인정보처리방침 관련
+          문의는 해당 연락처를
+          통해 제출할 수 있습니다.
+        </p>
+
+        <p>
+          Unity 광고 서비스에서
+          처리되는 정보에 대한
+          개인정보 관련 요청은
+          Unity의 공식 개인정보
+          보호 안내도 참고할 수 있습니다.
+        </p>
+
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      © 2026 JCraft Studio. All rights reserved.
+    </footer>
+
+  </main>
 </div>
 
-
 <script>
-    function setLanguage(language) {
-        const englishSections =
-            document.querySelectorAll('[data-lang="en"]');
+  function setLanguage(language) {
+    const selected =
+      language === 'ko' ? 'ko' : 'en';
 
-        const koreanSections =
-            document.querySelectorAll('[data-lang="ko"]');
+    const englishSections =
+      document.querySelectorAll('[data-lang="en"]');
 
-        const enButton =
-            document.getElementById('en-button');
+    const koreanSections =
+      document.querySelectorAll('[data-lang="ko"]');
 
-        const koButton =
-            document.getElementById('ko-button');
+    const enButton =
+      document.getElementById('en-button');
 
-        const pageTitle =
-            document.getElementById('page-title');
+    const koButton =
+      document.getElementById('ko-button');
 
-        const pageSubtitle =
-            document.getElementById('page-subtitle');
+    const pageTitle =
+      document.getElementById('page-title');
 
-        if (language === 'ko') {
-            englishSections.forEach(function (element) {
-                element.style.display = 'none';
-            });
+    const pageSubtitle =
+      document.getElementById('page-subtitle');
 
-            koreanSections.forEach(function (element) {
-                element.style.display = 'block';
-            });
+    englishSections.forEach(function(element) {
+      element.hidden = selected !== 'en';
+    });
 
-            koButton.classList.add('active');
-            enButton.classList.remove('active');
+    koreanSections.forEach(function(element) {
+      element.hidden = selected !== 'ko';
+    });
 
-            pageTitle.textContent = '개인정보처리방침';
-            pageSubtitle.textContent = '랜덤 추첨 · JCraft Studio';
+    enButton.classList.toggle(
+      'active',
+      selected === 'en'
+    );
 
-            document.documentElement.lang = 'ko';
-        } else {
-            koreanSections.forEach(function (element) {
-                element.style.display = 'none';
-            });
+    koButton.classList.toggle(
+      'active',
+      selected === 'ko'
+    );
 
-            englishSections.forEach(function (element) {
-                element.style.display = 'block';
-            });
+    enButton.setAttribute(
+      'aria-pressed',
+      String(selected === 'en')
+    );
 
-            enButton.classList.add('active');
-            koButton.classList.remove('active');
+    koButton.setAttribute(
+      'aria-pressed',
+      String(selected === 'ko')
+    );
 
-            pageTitle.textContent = 'Privacy Policy';
-            pageSubtitle.textContent = 'Random Draw · JCraft Studio';
+    if (selected === 'ko') {
+      pageTitle.textContent = '개인정보처리방침';
 
-            document.documentElement.lang = 'en';
-        }
+      pageSubtitle.textContent =
+        '랜덤 추첨 · JCraft Studio';
 
-        localStorage.setItem('privacyPolicyLanguage', language);
+      document.title =
+        '개인정보처리방침 | 랜덤 추첨';
+
+    } else {
+      pageTitle.textContent = 'Privacy Policy';
+
+      pageSubtitle.textContent =
+        'Random Draw · JCraft Studio';
+
+      document.title =
+        'Privacy Policy | Random Draw - JCraft Studio';
     }
 
+    document.documentElement.lang = selected;
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const savedLanguage =
-            localStorage.getItem('privacyPolicyLanguage');
+    try {
+      localStorage.setItem(
+        'privacyPolicyLanguage',
+        selected
+      );
+    } catch (error) {
+      // Language switching remains available
+      // even when localStorage is blocked.
+    }
+  }
 
-        if (savedLanguage === 'ko' || savedLanguage === 'en') {
-            setLanguage(savedLanguage);
-            return;
-        }
+  document.addEventListener(
+    'DOMContentLoaded',
+    function() {
+      let savedLanguage = null;
 
-        const browserLanguage =
-            (navigator.language || '').toLowerCase();
+      try {
+        savedLanguage =
+          localStorage.getItem('privacyPolicyLanguage');
+      } catch (error) {
+        savedLanguage = null;
+      }
 
-        if (browserLanguage.startsWith('ko')) {
-            setLanguage('ko');
-        } else {
-            setLanguage('en');
-        }
-    });
+      if (
+        savedLanguage === 'ko' ||
+        savedLanguage === 'en'
+      ) {
+        setLanguage(savedLanguage);
+        return;
+      }
+
+      const browserLanguage =
+        (navigator.language || '').toLowerCase();
+
+      setLanguage(
+        browserLanguage.startsWith('ko')
+          ? 'ko'
+          : 'en'
+      );
+    }
+  );
 </script>
 
 </body>
