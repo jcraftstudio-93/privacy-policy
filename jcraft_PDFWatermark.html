@@ -1,275 +1,2077 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy / 개인정보처리방침</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="Privacy Policy for PDF Watermark by JCraft Studio.">
+
+  <title>Privacy Policy | PDF Watermark</title>
+
   <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --primary: #2563eb;
+      --primary-dark: #1e40af;
+      --primary-soft: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        "Apple SD Gothic Neo",
+        "Malgun Gothic",
+        sans-serif;
+
       line-height: 1.7;
-      color: #1f2937;
-      background: #f8fafc;
+      color: var(--text);
+      background: var(--bg);
     }
+
     .container {
       max-width: 920px;
       margin: 0 auto;
       padding: 32px 20px 56px;
-      background: #ffffff;
+      background: var(--card);
+      min-height: 100vh;
     }
+
     h1 {
       font-size: 30px;
       margin: 0 0 8px;
       color: #111827;
+      line-height: 1.3;
     }
+
     h2 {
       font-size: 22px;
       margin-top: 36px;
       padding-bottom: 8px;
-      border-bottom: 1px solid #e5e7eb;
+      border-bottom: 1px solid var(--line);
       color: #111827;
+      line-height: 1.4;
     }
+
     h3 {
       font-size: 18px;
       margin-top: 26px;
-      color: #111827;
+      color: var(--primary-dark);
     }
+
     p, li {
       font-size: 15px;
     }
+
+    p {
+      margin: 12px 0;
+    }
+
     ul {
       padding-left: 22px;
+      margin: 12px 0;
     }
+
+    li {
+      margin-bottom: 8px;
+    }
+
     .meta {
-      color: #6b7280;
+      color: var(--muted);
       font-size: 14px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
+
     .notice {
-      background: #eff6ff;
+      background: var(--primary-soft);
       border: 1px solid #bfdbfe;
       border-radius: 12px;
       padding: 16px;
       margin: 20px 0;
-      color: #1e3a8a;
+      color: var(--primary-dark);
     }
-    .section {
-      margin-top: 40px;
+
+    .notice p {
+      color: var(--primary-dark);
+      margin: 8px 0;
     }
-    .divider {
-      height: 1px;
-      background: #e5e7eb;
-      margin: 48px 0;
+
+    .lang-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 26px;
     }
+
+    .lang-btn {
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      color: var(--text);
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition:
+        background 0.2s,
+        border-color 0.2s;
+    }
+
+    .lang-btn:hover {
+      border-color: var(--primary);
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .lang-btn:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    .lang-section {
+      display: none;
+    }
+
+    .lang-section.active {
+      display: block;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      width: 100%;
+      margin: 18px 0;
+    }
+
+    table {
+      width: 100%;
+      min-width: 460px;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+    }
+
+    td {
+      color: #475569;
+    }
+
     a {
-      color: #2563eb;
+      color: var(--primary);
       text-decoration: none;
+      overflow-wrap: anywhere;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     strong {
       color: #111827;
     }
+
+    .notice strong {
+      color: var(--primary-dark);
+    }
+
+    .footer {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .footer p {
+      font-size: 13px;
+      margin: 5px 0;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 22px 16px 42px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 17px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .lang-btn {
+        transition: none;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <main class="container">
-    <section class="section" lang="en">
-      <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: April 28, 2026</p>
 
-      <div class="notice">
-        This Privacy Policy explains how this app handles information. This app is designed as a PDF watermark utility and does not require account registration.
-      </div>
+<div class="container">
 
-      <h2>1. App Purpose</h2>
-      <p>
-        This app allows users to add text watermarks to PDF files. The app is provided as a utility tool for personal, business, or general document management purposes.
-      </p>
+  <nav class="lang-bar"
+       aria-label="Language selection">
 
-      <h2>2. Information We Collect</h2>
-      <p>
-        We do not require users to create an account, log in, or directly provide personal identity information to use the core features of the app.
-      </p>
-      <p>
-        The app may process files selected by the user only for the purpose of applying a watermark and saving the result on the user's device.
-      </p>
+    <button id="btn-ko"
+            class="lang-btn active"
+            type="button"
+            aria-pressed="true">
+      한국어
+    </button>
 
-      <h2>3. PDF Files and Local Processing</h2>
-      <p>
-        PDF files selected by the user are used only to perform the requested watermark operation. The app does not claim ownership of any PDF file, document, text, image, logo, trademark, or other content selected or created by the user.
-      </p>
-      <p>
-        Users are responsible for ensuring that they have the necessary rights or permission to modify, watermark, save, export, or share any PDF file or document content used in the app.
-      </p>
+    <button id="btn-en"
+            class="lang-btn"
+            type="button"
+            aria-pressed="false">
+      English
+    </button>
 
-      <h2>4. Copyright and User Responsibility</h2>
-      <p>
-        This app is a neutral document utility. The developer does not provide copyrighted documents, templates, logos, images, trademarks, or third-party content through the app.
-      </p>
-      <p>
-        Users must not use the app to infringe copyright, trademarks, privacy rights, contractual rights, or any other rights of third parties. Users are solely responsible for the files they select, edit, save, export, or share.
-      </p>
+  </nav>
 
-      <h2>5. No Government or Official Affiliation</h2>
-      <p>
-        This app is not affiliated with, endorsed by, sponsored by, or officially connected to any government agency, public institution, document authority, company, or PDF standard organization.
-      </p>
+  <!-- ============================= -->
+  <!-- KOREAN PRIVACY POLICY         -->
+  <!-- ============================= -->
 
-      <h2>6. Advertising</h2>
+  <main id="lang-ko"
+        class="lang-section active"
+        lang="ko">
+
+    <h1>개인정보처리방침</h1>
+
+    <p class="meta">
+      PDF Watermark |
+      JCraft Studio<br>
+      최종 수정일: 2026년 11월 4일
+    </p>
+
+    <div class="notice">
+      <p><strong>개인정보 보호 안내</strong></p>
+
       <p>
-        This app may display advertisements. Third-party advertising services, such as Google AdMob, may collect device information, advertising identifiers, approximate location, app interaction data, and other data as described in their own privacy policies.
-      </p>
-      <p>
-        Google’s privacy policy is available at:
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
+        본 앱은 PDF 파일에
+        텍스트 워터마크를 추가하는
+        문서 유틸리티입니다.
       </p>
 
-      <h2>7. App Permissions</h2>
       <p>
-        The app may request access to files, storage, or document-related features only when needed for the user to select, create, save, or share PDF files.
-      </p>
-      <p>
-        Permission behavior may vary depending on the user's device, Android version, and system settings.
+        앱의 핵심 PDF 처리 기능은
+        기기 내부에서 수행되도록
+        설계되어 있습니다.
       </p>
 
-      <h2>8. Data Sharing</h2>
       <p>
-        We do not sell personal information. We do not intentionally share user-selected PDF files with the developer.
+        다만 광고 제공을 위해
+        사용하는 Unity Ads는
+        광고 식별자와 기기 정보 등
+        일부 기술적 정보를
+        별도로 처리할 수 있습니다.
       </p>
-      <p>
-        However, third-party services used for advertising, analytics, crash reporting, app distribution, or platform operation may process limited technical data according to their own policies.
-      </p>
+    </div>
 
-      <h2>9. Data Security</h2>
-      <p>
-        We use reasonable efforts to keep the app safe and reliable. However, no software, storage method, or transmission method can be guaranteed to be completely secure.
-      </p>
+    <h2>1. 앱의 목적</h2>
 
-      <h2>10. Children’s Privacy</h2>
-      <p>
-        This app is not specifically directed to children. If a parent or guardian believes that a child has provided personal information through the app, they may contact the developer through the information available on the Google Play Store listing.
-      </p>
+    <p>
+      본 앱은 사용자가 PDF 파일에
+      텍스트 워터마크를 추가하고
+      결과 문서를 저장할 수 있도록
+      도와주는 유틸리티 앱입니다.
+    </p>
 
-      <h2>11. Disclaimer</h2>
-      <p>
-        This app is provided as a general utility tool. The developer is not responsible for loss of files, incorrect use, document damage, copyright infringement, unauthorized sharing, or any legal issue caused by user-selected content or user actions.
-      </p>
-      <p>
-        Users should keep backups of important documents before editing or exporting PDF files.
-      </p>
+    <p>
+      개인, 업무 및 일반적인
+      문서 관리 목적으로
+      사용할 수 있습니다.
+    </p>
 
-      <h2>12. Changes to This Policy</h2>
-      <p>
-        This Privacy Policy may be updated from time to time. Any changes will be posted on this page with an updated date.
-      </p>
+    <p>
+      본 앱은 사용자가 직접 선택한
+      파일과 입력한 텍스트를
+      이용하여 워터마크를 생성합니다.
+    </p>
 
-      <h2>13. Developer Information</h2>
-      <p>
-        For developer information, app publisher details, and contact options, please refer to the app’s official Google Play Store listing.
-      </p>
-    </section>
+    <p>
+      앱의 기본 기능을 사용하기 위해
+      회원가입이나 로그인은
+      필요하지 않습니다.
+    </p>
 
-    <div class="divider"></div>
+    <h2>2. 수집 및 처리하는 정보</h2>
 
-    <section class="section" lang="ko">
-      <h1>개인정보처리방침</h1>
-      <p class="meta">최종 업데이트: 2026년 4월 28일</p>
+    <p>
+      개발자는 앱의 핵심 기능을 위해
+      이용자의 이름, 이메일 주소,
+      전화번호, 주민등록번호 또는
+      결제정보 등을 별도로
+      입력하도록 요구하지 않습니다.
+    </p>
 
-      <div class="notice">
-        본 개인정보처리방침은 이 앱이 정보를 처리하는 방식을 설명합니다. 본 앱은 PDF 워터마크 유틸리티 앱이며, 기본 기능 사용을 위해 회원가입이나 로그인을 요구하지 않습니다.
-      </div>
+    <p>
+      다만 앱 기능과 광고 서비스의
+      운영 과정에서 다음 정보가
+      처리될 수 있습니다.
+    </p>
 
-      <h2>1. 앱의 목적</h2>
-      <p>
-        본 앱은 사용자가 PDF 파일에 텍스트 워터마크를 추가할 수 있도록 도와주는 문서 유틸리티 앱입니다. 개인, 업무, 일반 문서 관리 목적으로 사용할 수 있습니다.
-      </p>
+    <h3>2.1 사용자 파일 정보</h3>
 
-      <h2>2. 수집하는 정보</h2>
-      <p>
-        본 앱은 핵심 기능 사용을 위해 사용자의 계정 생성, 로그인 또는 직접적인 개인 식별정보 입력을 요구하지 않습니다.
-      </p>
-      <p>
-        사용자가 선택한 파일은 워터마크 적용 및 결과 파일 저장을 위한 목적으로만 처리될 수 있습니다.
-      </p>
+    <ul>
+      <li>사용자가 직접 선택한 PDF 파일</li>
+      <li>파일명, 파일 크기 및 파일 형식</li>
+      <li>파일 접근에 필요한 경로 또는 식별 정보</li>
+      <li>워터마크 작업을 위한 문서 페이지 정보</li>
+      <li>사용자가 입력한 워터마크 텍스트</li>
+      <li>워터마크가 적용된 결과 PDF 파일</li>
+    </ul>
 
-      <h2>3. PDF 파일 및 로컬 처리</h2>
-      <p>
-        사용자가 선택한 PDF 파일은 사용자가 요청한 워터마크 작업을 수행하기 위해 사용됩니다. 본 앱과 개발자는 사용자가 선택하거나 생성한 PDF 파일, 문서, 텍스트, 이미지, 로고, 상표 또는 기타 콘텐츠에 대한 소유권을 주장하지 않습니다.
-      </p>
-      <p>
-        사용자는 앱에서 사용하는 PDF 파일 또는 문서 콘텐츠를 수정, 워터마크 추가, 저장, 내보내기 또는 공유할 권한이 있는지 직접 확인해야 합니다.
-      </p>
+    <h3>2.2 앱 설정 정보</h3>
 
-      <h2>4. 저작권 및 사용자 책임</h2>
-      <p>
-        본 앱은 중립적인 문서 유틸리티입니다. 개발자는 앱을 통해 저작권이 있는 문서, 템플릿, 로고, 이미지, 상표 또는 제3자 콘텐츠를 제공하지 않습니다.
-      </p>
-      <p>
-        사용자는 본 앱을 저작권, 상표권, 개인정보권, 계약상 권리 또는 제3자의 기타 권리를 침해하는 방식으로 사용해서는 안 됩니다. 사용자가 선택, 편집, 저장, 내보내기 또는 공유하는 파일에 대한 책임은 사용자 본인에게 있습니다.
-      </p>
+    <ul>
+      <li>앱 언어 설정</li>
+      <li>워터마크 관련 사용자 설정</li>
+      <li>앱 기능 사용을 위한 로컬 상태값</li>
+      <li>광고 표시 빈도 관리를 위한 로컬 설정값</li>
+    </ul>
 
-      <h2>5. 정부기관 또는 공식기관과의 관계 없음</h2>
-      <p>
-        본 앱은 어떠한 정부기관, 공공기관, 문서 발급기관, 회사 또는 PDF 표준 관련 단체와도 제휴, 후원, 승인 또는 공식적인 관련이 없습니다.
-      </p>
+    <h3>2.3 광고 관련 기술 정보</h3>
 
-      <h2>6. 광고</h2>
-      <p>
-        본 앱은 광고를 표시할 수 있습니다. Google AdMob과 같은 제3자 광고 서비스는 자체 개인정보처리방침에 따라 기기 정보, 광고 식별자, 대략적인 위치, 앱 상호작용 정보 및 기타 데이터를 처리할 수 있습니다.
-      </p>
-      <p>
-        Google 개인정보처리방침:
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
-      </p>
+    <p>
+      Unity Ads는 광고 제공과
+      성과 측정, 보안 및
+      부정행위 방지를 위해
+      다음과 같은 정보를
+      처리할 수 있습니다.
+    </p>
 
-      <h2>7. 앱 권한</h2>
-      <p>
-        본 앱은 사용자가 PDF 파일을 선택, 생성, 저장 또는 공유하는 데 필요한 경우에만 파일, 저장소 또는 문서 관련 권한을 요청할 수 있습니다.
-      </p>
-      <p>
-        권한 동작은 사용자의 기기, Android 버전 및 시스템 설정에 따라 달라질 수 있습니다.
-      </p>
+    <ul>
+      <li>Android 광고 ID 및 기타 허용된 식별자</li>
+      <li>IP 주소 및 IP 기반 대략적인 위치</li>
+      <li>기기 모델 및 운영체제 정보</li>
+      <li>앱 및 광고 관련 기술적 이벤트</li>
+      <li>광고 노출, 클릭 및 시청 정보</li>
+      <li>SDK 오류 및 진단 정보</li>
+      <li>광고 보안 및 부정행위 탐지 정보</li>
+    </ul>
 
-      <h2>8. 데이터 공유</h2>
-      <p>
-        개발자는 개인정보를 판매하지 않습니다. 또한 사용자가 선택한 PDF 파일을 개발자에게 의도적으로 전송하거나 공유하지 않습니다.
-      </p>
-      <p>
-        다만 광고, 분석, 오류 보고, 앱 배포 또는 플랫폼 운영을 위해 사용되는 제3자 서비스는 각자의 정책에 따라 제한적인 기술 데이터를 처리할 수 있습니다.
-      </p>
+    <p>
+      실제 처리되는 정보는
+      SDK 버전, 광고 설정,
+      기기 환경, 사용자 지역 및
+      관련 법령에 따라
+      달라질 수 있습니다.
+    </p>
 
-      <h2>9. 데이터 보안</h2>
-      <p>
-        개발자는 앱이 안전하고 안정적으로 동작하도록 합리적인 노력을 기울입니다. 그러나 어떠한 소프트웨어, 저장 방식 또는 전송 방식도 완전한 보안을 보장할 수는 없습니다.
-      </p>
+    <h2>3. PDF 파일 및 로컬 처리</h2>
 
-      <h2>10. 아동의 개인정보</h2>
-      <p>
-        본 앱은 아동을 직접 대상으로 하지 않습니다. 보호자가 아동이 앱을 통해 개인정보를 제공했다고 판단하는 경우, Google Play 스토어 등록정보에 표시된 개발자 정보를 통해 문의할 수 있습니다.
-      </p>
+    <p>
+      사용자가 선택한 PDF 파일은
+      워터마크 적용 작업을 수행하기 위해
+      기기 내부에서 처리되도록
+      설계되었습니다.
+    </p>
 
-      <h2>11. 면책 고지</h2>
-      <p>
-        본 앱은 일반적인 유틸리티 도구로 제공됩니다. 개발자는 사용자가 선택한 콘텐츠 또는 사용자 행위로 인해 발생하는 파일 손실, 잘못된 사용, 문서 손상, 저작권 침해, 무단 공유 또는 기타 법적 문제에 대해 책임을 지지 않습니다.
-      </p>
-      <p>
-        사용자는 중요한 문서를 편집하거나 내보내기 전에 반드시 별도의 백업을 보관하는 것이 좋습니다.
-      </p>
+    <p>
+      일반적인 워터마크 작업에서
+      문서 내용이나 사용자가 입력한
+      워터마크 텍스트를 개발자가
+      운영하는 서버로 전송하도록
+      설계하지 않았습니다.
+    </p>
 
-      <h2>12. 개인정보처리방침 변경</h2>
-      <p>
-        본 개인정보처리방침은 필요에 따라 변경될 수 있습니다. 변경 사항은 이 페이지에 업데이트 날짜와 함께 게시됩니다.
-      </p>
+    <h3>3.1 파일 처리 과정</h3>
 
-      <h2>13. 개발자 정보</h2>
-      <p>
-        개발자 정보, 앱 게시자 정보 및 문의 방법은 앱의 공식 Google Play 스토어 등록정보를 참고해 주세요.
-      </p>
-    </section>
+    <ul>
+      <li>사용자가 PDF 파일 선택</li>
+      <li>선택한 PDF 파일 읽기</li>
+      <li>워터마크 텍스트 입력</li>
+      <li>선택한 문서에 워터마크 적용</li>
+      <li>새로운 결과 PDF 파일 생성</li>
+      <li>기기 저장소에 결과 저장</li>
+    </ul>
+
+    <h3>3.2 원본 파일</h3>
+
+    <p>
+      앱은 워터마크 작업을 위해
+      선택한 문서를 읽고
+      결과 파일을 생성합니다.
+    </p>
+
+    <p>
+      정상적인 작업 과정에서
+      원본 문서를 임의로 변경하거나
+      삭제하지 않는 것을
+      기본 원칙으로 합니다.
+    </p>
+
+    <p>
+      다만 실제 결과는
+      사용자가 선택한 저장 위치,
+      운영체제 및 파일 처리 방식에
+      따라 달라질 수 있습니다.
+    </p>
+
+    <h3>3.3 임시 데이터</h3>
+
+    <p>
+      워터마크 작업 중
+      임시 파일이나 캐시 데이터가
+      기기 내부에 생성될 수 있습니다.
+    </p>
+
+    <p>
+      해당 정보의 삭제 시점은
+      앱의 구현 방식과 운영체제의
+      저장소 관리 정책에
+      따라 달라질 수 있습니다.
+    </p>
+
+    <h2>4. 저작권 및 사용자 책임</h2>
+
+    <p>
+      본 앱은 사용자가 선택한
+      PDF 문서에 텍스트 워터마크를
+      추가하는 도구입니다.
+    </p>
+
+    <p>
+      개발자는 사용자가 선택하거나
+      생성한 PDF 문서, 텍스트,
+      이미지, 로고, 상표 또는
+      기타 콘텐츠에 관한
+      소유권을 주장하지 않습니다.
+    </p>
+
+    <p>
+      사용자는 문서를 수정하거나
+      워터마크를 적용할 수 있는
+      적법한 권한을
+      가지고 있어야 합니다.
+    </p>
+
+    <p>
+      사용자는 다음과 같은
+      행위를 해서는 안 됩니다.
+    </p>
+
+    <ul>
+      <li>타인의 저작권을 침해하는 문서 수정</li>
+      <li>상표권 또는 기타 지식재산권 침해</li>
+      <li>타인의 개인정보를 부적절하게 공개</li>
+      <li>계약상 권한을 위반하는 문서 사용</li>
+      <li>문서의 출처 또는 소유권을 허위로 표시</li>
+      <li>관련 법령을 위반하는 파일 배포</li>
+    </ul>
+
+    <p>
+      앱 자체의 독창적인 코드,
+      디자인 및 제작 콘텐츠에 관한
+      권리는 JCraft Studio 또는
+      정당한 권리자에게 있습니다.
+    </p>
+
+    <h2>5. 정부기관 또는 공식기관과의 관계</h2>
+
+    <p>
+      본 앱은 어떠한 정부기관,
+      공공기관, 문서 발급기관,
+      회사 또는 PDF 표준 관련 단체와도
+      공식적인 제휴 관계가 없습니다.
+    </p>
+
+    <p>
+      특정 기관이나 문서 형식이
+      언급되더라도 공식적인 승인,
+      후원 또는 인증을
+      의미하지 않습니다.
+    </p>
+
+    <p>
+      본 앱으로 생성한 워터마크는
+      문서의 진위, 소유권,
+      법적 효력 또는
+      공식 인증을 보장하지 않습니다.
+    </p>
+
+    <h2>6. 광고 및 Unity Ads</h2>
+
+    <p>
+      본 앱은 광고 제공을 위해
+      <strong>Unity Ads</strong>를
+      사용합니다.
+    </p>
+
+    <h3>6.1 Unity Ads의 역할</h3>
+
+    <p>
+      Unity Ads는 앱 안에
+      광고를 표시하기 위한
+      제3자 광고 서비스입니다.
+    </p>
+
+    <p>
+      Unity Ads 및 관련 광고 기술
+      협력사는 광고 제공,
+      성과 측정, 서비스 운영,
+      보안 및 부정행위 방지를 위해
+      일부 정보를 처리할 수 있습니다.
+    </p>
+
+    <h3>6.2 광고 데이터 유형</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>정보 유형</th>
+            <th>처리 가능한 정보</th>
+            <th>이용 목적</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>광고 식별자</td>
+            <td>Android 광고 ID 및 허용된 식별자</td>
+            <td>광고 제공 및 측정</td>
+          </tr>
+
+          <tr>
+            <td>네트워크 정보</td>
+            <td>IP 주소, 대략적인 위치</td>
+            <td>지역별 광고 및 보안</td>
+          </tr>
+
+          <tr>
+            <td>기기 정보</td>
+            <td>기기 모델, 운영체제 및 설정</td>
+            <td>호환성 및 광고 제공</td>
+          </tr>
+
+          <tr>
+            <td>광고 이벤트</td>
+            <td>노출, 클릭 및 광고 시청</td>
+            <td>광고 성과 측정</td>
+          </tr>
+
+          <tr>
+            <td>진단 정보</td>
+            <td>SDK 오류, 충돌 및 기술 정보</td>
+            <td>안정성 및 문제 해결</td>
+          </tr>
+
+          <tr>
+            <td>보안 관련 정보</td>
+            <td>부정행위 탐지 관련 기술 신호</td>
+            <td>광고 보안</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>6.3 광고 개인화</h3>
+
+    <p>
+      광고는 사용자의 지역,
+      기기 설정, 개인정보 보호 선택 및
+      관련 법령에 따라
+      개인화 또는 비개인화된
+      방식으로 제공될 수 있습니다.
+    </p>
+
+    <p>
+      일부 국가 또는 지역에서는
+      광고와 관련된 개인정보 처리에
+      사용자의 동의가
+      필요할 수 있습니다.
+    </p>
+
+    <p>
+      이러한 경우 앱 운영자는
+      관련 법령과 광고 서비스 요구사항에
+      적합한 동의 및 개인정보 보호
+      선택 절차를 구현해야 합니다.
+    </p>
+
+    <p>
+      개인화 광고를 제한하더라도
+      모든 광고 표시가
+      중단되는 것은 아닙니다.
+    </p>
+
+    <h3>6.4 Unity 공식 개인정보처리방침</h3>
+
+    <p>
+      Unity 광고 서비스의
+      개인정보 처리 방식은
+      다음 공식 문서를 통해
+      확인할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://unity.com/legal/privacy-policy"
+           target="_blank"
+           rel="noopener noreferrer">
+          Unity Privacy Policy
+        </a>
+      </li>
+
+      <li>
+        <a href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+           target="_blank"
+           rel="noopener noreferrer">
+          Unity Game Player and App User Privacy FAQ
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      Unity 광고 서비스가 처리하는
+      정보의 범위는 SDK 버전,
+      설정 및 서비스 운영 방식에
+      따라 달라질 수 있습니다.
+    </p>
+
+    <h2>7. 앱 권한</h2>
+
+    <p>
+      본 앱은 사용자가 PDF 파일을
+      선택하거나 결과 문서를
+      생성·저장·공유하기 위해
+      필요한 파일 관련 접근 기능을
+      사용할 수 있습니다.
+    </p>
+
+    <p>
+      파일 접근 권한과
+      운영체제의 파일 선택기는
+      Android 버전 및 기기 환경에
+      따라 다르게 동작할 수 있습니다.
+    </p>
+
+    <p>
+      앱은 사용자가 요청하지 않은
+      무관한 파일에 의도적으로
+      접근하도록 설계되지 않았습니다.
+    </p>
+
+    <p>
+      이용자가 외부 클라우드 저장소에서
+      문서를 선택하거나 외부 앱으로
+      결과 파일을 공유하는 경우
+      해당 제공업체의 정책이
+      별도로 적용될 수 있습니다.
+    </p>
+
+    <h2>8. 데이터 공유 및 제3자 처리</h2>
+
+    <p>
+      개발자는 사용자가 선택한
+      PDF 문서나 입력한 워터마크 텍스트를
+      판매하지 않습니다.
+    </p>
+
+    <p>
+      일반적인 워터마크 작업에서
+      문서 내용을 개발자 자체 서버에
+      업로드하지 않도록
+      설계되었습니다.
+    </p>
+
+    <p>
+      다만 Unity Ads 및 관련
+      광고 기술 협력사는
+      광고 제공, 성과 측정,
+      보안 및 부정행위 방지를 위해
+      광고 식별자, 기기 및
+      네트워크 정보 등을
+      처리하거나 공유할 수 있습니다.
+    </p>
+
+    <p>
+      사용자가 파일 공유 기능을
+      직접 실행하는 경우에는
+      선택한 외부 앱이나 서비스에
+      결과 파일이 전달될 수 있습니다.
+    </p>
+
+    <p>
+      관련 법령에 따른
+      적법한 요청이나 법적 의무가
+      있는 경우 정보가
+      필요한 범위에서 처리될 수 있습니다.
+    </p>
+
+    <h2>9. 데이터 보안</h2>
+
+    <p>
+      개발자는 앱의 안정적인 운영과
+      파일 처리 보안을 위해
+      합리적인 노력을 기울입니다.
+    </p>
+
+    <p>
+      PDF 문서 처리는 가능한 범위에서
+      사용자의 기기 내부에서
+      이루어지도록 설계되었습니다.
+    </p>
+
+    <p>
+      다만 모바일 기기,
+      저장소, 운영체제,
+      네트워크 및 외부 앱의
+      특성상 절대적인
+      보안을 보장할 수는 없습니다.
+    </p>
+
+    <p>
+      개인정보 또는 민감한 내용이
+      포함된 PDF 문서를 처리하는 경우
+      결과 파일의 저장 위치와
+      공유 대상을 신중하게
+      확인해야 합니다.
+    </p>
+
+    <h2>10. 아동의 개인정보</h2>
+
+    <p>
+      본 앱은 일반적인
+      PDF 워터마크 유틸리티이며
+      아동을 주요 대상으로
+      설계된 서비스가 아닙니다.
+    </p>
+
+    <p>
+      기본 기능 제공을 위해
+      아동의 이름, 연락처 또는
+      직접 식별 가능한 정보를
+      요구하지 않습니다.
+    </p>
+
+    <p>
+      보호자는 아동이 파일이나
+      워터마크 문구에
+      불필요한 개인정보를
+      입력하거나 외부에 공유하지
+      않도록 안내할 수 있습니다.
+    </p>
+
+    <p>
+      아동 및 연령 제한 대상 이용자에게는
+      관련 법령, Google Play 정책 및
+      광고 서비스의 추가 보호
+      요건이 적용될 수 있습니다.
+    </p>
+
+    <h2>11. 책임 및 면책 안내</h2>
+
+    <p>
+      본 앱은 일반적인
+      PDF 문서 처리 유틸리티로
+      제공됩니다.
+    </p>
+
+    <p>
+      파일 손상, 암호화된 문서,
+      지원되지 않는 파일 구조,
+      저장공간 부족, 운영체제 제한 등으로
+      워터마크 작업이 실패할 수 있습니다.
+    </p>
+
+    <p>
+      이용자는 중요한 원본 문서를
+      작업 전에 별도로
+      백업하는 것이 좋습니다.
+    </p>
+
+    <p>
+      작업 완료 후에는
+      워터마크 적용 여부와
+      PDF 파일의 정상적인
+      열람 가능 여부를
+      직접 확인하는 것이 좋습니다.
+    </p>
+
+    <p>
+      사용자가 선택한 콘텐츠의
+      부적법한 이용, 무단 공유,
+      저작권 침해 및 관련 행위에 대한
+      책임은 관련 법령에 따라
+      판단됩니다.
+    </p>
+
+    <p>
+      개발자의 책임은
+      관련 법령에서 허용하는
+      범위 내에서 제한될 수 있습니다.
+    </p>
+
+    <p>
+      법령상 면제하거나
+      제한할 수 없는 책임은
+      해당 제한의 적용을
+      받지 않습니다.
+    </p>
+
+    <h2>12. 데이터 보관 및 삭제</h2>
+
+    <p>
+      워터마크 작업으로 생성된
+      PDF 파일은 사용자의
+      기기 저장소 또는
+      선택한 저장 위치에
+      보관될 수 있습니다.
+    </p>
+
+    <p>
+      앱 기능을 위해
+      생성된 임시 데이터나
+      일부 설정 정보는
+      기기 내부에 저장될 수 있습니다.
+    </p>
+
+    <p>
+      Android 설정에서
+      앱 데이터를 삭제하거나
+      앱을 제거하면 일반적으로
+      앱 전용 저장소의
+      데이터가 삭제됩니다.
+    </p>
+
+    <p>
+      그러나 공유 저장소나
+      외부 저장소에 저장한
+      결과 PDF 파일은
+      앱 삭제 후에도
+      남아 있을 수 있습니다.
+    </p>
+
+    <p>
+      이러한 파일은
+      파일 관리자 등을 이용하여
+      별도로 삭제해야 할 수 있습니다.
+    </p>
+
+    <p>
+      운영체제의 백업 및
+      복원 기능에 따라
+      일부 데이터가 다시
+      복원될 수도 있습니다.
+    </p>
+
+    <p>
+      Unity Ads가 독립적으로
+      처리하는 정보의 보관 기간은
+      해당 서비스의
+      정책을 따릅니다.
+    </p>
+
+    <h2>13. 이용자의 개인정보 보호 권리</h2>
+
+    <p>
+      이용자는 관련 법령이
+      허용하는 범위에서
+      개인정보 열람, 정정,
+      삭제, 처리 제한 및
+      기타 개인정보 보호
+      권리를 행사할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>Android 설정에서 앱 데이터 삭제</li>
+      <li>앱 제거를 통한 로컬 데이터 삭제</li>
+      <li>생성한 PDF 결과 파일 직접 삭제</li>
+      <li>Android 광고 ID 관리 또는 삭제</li>
+      <li>Unity 개인정보 보호 요청 절차 이용</li>
+      <li>Google Play 개발자 연락처를 통한 문의</li>
+    </ul>
+
+    <p>
+      광고 서비스가 독립적으로
+      처리하는 정보에 관한
+      요청은 해당 제공업체의
+      개인정보 보호 절차에
+      따라 처리될 수 있습니다.
+    </p>
+
+    <h2>14. 외부 서비스 및 상표 안내</h2>
+
+    <p>
+      앱에서 제공되는 광고나
+      외부 링크를 선택하는 경우
+      다른 웹사이트 또는
+      앱 스토어 페이지로
+      이동할 수 있습니다.
+    </p>
+
+    <p>
+      해당 외부 서비스에는
+      각각의 개인정보처리방침과
+      이용약관이 적용됩니다.
+    </p>
+
+    <p>
+      Unity, Unity Ads,
+      Google Play 및
+      기타 제3자의 상표와
+      서비스명은 각 권리자에게
+      귀속됩니다.
+    </p>
+
+    <p>
+      이러한 명칭의 사용은
+      앱에서 이용하는 기술을
+      설명하기 위한 것으로
+      공식적인 제휴나 후원을
+      의미하지 않습니다.
+    </p>
+
+    <h2>15. 개인정보처리방침 변경</h2>
+
+    <p>
+      본 개인정보처리방침은
+      앱 기능, 광고 SDK,
+      정보 처리 방식,
+      관련 법령 또는
+      Google Play 정책의
+      변경에 따라 수정될 수 있습니다.
+    </p>
+
+    <p>
+      수정된 내용은
+      본 페이지에 게시되며
+      최종 수정일을 갱신합니다.
+    </p>
+
+    <p>
+      법령상 필요한 경우
+      중요한 변경사항에 대해
+      추가 안내 또는 동의 절차를
+      제공해야 합니다.
+    </p>
+
+    <h2>16. 개발자 정보 및 문의</h2>
+
+    <p>
+      <strong>개발자:</strong>
+      JCraft Studio
+    </p>
+
+    <p>
+      앱 기능, 개인정보 처리,
+      데이터 삭제 및 기타 문의는
+      Google Play 스토어의
+      해당 앱 등록정보에 표시된
+      개발자 연락처를
+      참고하시기 바랍니다.
+    </p>
+
+    <p>
+      Unity 광고 관련
+      개인정보 문의는
+      Unity의 공식 개인정보
+      보호 자료를
+      참고할 수 있습니다.
+    </p>
+
+    <p class="meta">
+      최종 수정일: 2026년 11월 4일
+    </p>
+
   </main>
+
+  <!-- ============================= -->
+  <!-- ENGLISH PRIVACY POLICY        -->
+  <!-- ============================= -->
+
+  <main id="lang-en"
+        class="lang-section"
+        lang="en">
+
+    <h1>Privacy Policy</h1>
+
+    <p class="meta">
+      PDF Watermark |
+      JCraft Studio<br>
+      Last updated: November 4, 2026
+    </p>
+
+    <div class="notice">
+      <p><strong>Privacy Notice</strong></p>
+
+      <p>
+        This App is a document utility
+        that allows users to add
+        text watermarks to PDF files.
+      </p>
+
+      <p>
+        Core PDF processing is designed
+        to take place locally
+        on the user's device.
+      </p>
+
+      <p>
+        However, Unity Ads may
+        independently process certain
+        device and advertising-related
+        technical information.
+      </p>
+    </div>
+
+    <h2>1. App Purpose</h2>
+
+    <p>
+      The App allows users
+      to add text watermarks
+      to PDF documents and
+      save the resulting files.
+    </p>
+
+    <p>
+      It is provided as a utility
+      for personal, business,
+      and general document
+      management purposes.
+    </p>
+
+    <p>
+      The App uses PDF files
+      selected by users and
+      text entered by users
+      to create watermarks.
+    </p>
+
+    <p>
+      Account registration
+      or login is not required
+      for the core features.
+    </p>
+
+    <h2>2. Information We Collect or Process</h2>
+
+    <p>
+      The Developer does not
+      require users to enter
+      names, email addresses,
+      phone numbers, government
+      identification numbers,
+      or payment information
+      to use the core features.
+    </p>
+
+    <p>
+      However, certain information
+      may be processed during
+      App operation and
+      advertisement delivery.
+    </p>
+
+    <h3>2.1 User File Information</h3>
+
+    <ul>
+      <li>PDF files selected by users</li>
+      <li>File names, sizes, and formats</li>
+      <li>Paths or identifiers necessary for file access</li>
+      <li>Document page information used for watermarking</li>
+      <li>Watermark text entered by users</li>
+      <li>Generated watermarked PDF files</li>
+    </ul>
+
+    <h3>2.2 App Settings</h3>
+
+    <ul>
+      <li>Application language settings</li>
+      <li>User-selected watermark settings</li>
+      <li>Local configuration values for App operation</li>
+      <li>Local values for managing ad display frequency</li>
+    </ul>
+
+    <h3>2.3 Advertising Data</h3>
+
+    <p>
+      Unity Ads may process
+      certain information
+      for advertisement delivery,
+      performance measurement,
+      security, and fraud prevention.
+    </p>
+
+    <ul>
+      <li>
+        Android Advertising ID
+        and other permitted identifiers
+      </li>
+      <li>
+        IP address and approximate
+        IP-based location
+      </li>
+      <li>
+        Device model and
+        operating system information
+      </li>
+      <li>
+        Technical App and
+        advertising events
+      </li>
+      <li>
+        Advertising impressions,
+        clicks, and views
+      </li>
+      <li>
+        SDK errors and
+        diagnostic information
+      </li>
+      <li>
+        Advertising fraud
+        detection information
+      </li>
+    </ul>
+
+    <p>
+      The actual information processed
+      depends on SDK versions,
+      advertising settings,
+      devices, user regions,
+      and applicable laws.
+    </p>
+
+    <h2>3. PDF Files and Local Processing</h2>
+
+    <p>
+      PDF files selected by users
+      are designed to be processed
+      locally on their devices
+      for watermark operations.
+    </p>
+
+    <p>
+      The App is not designed
+      to upload document contents
+      or user-entered watermark
+      text to a developer-operated
+      server during normal use.
+    </p>
+
+    <h3>3.1 File Processing</h3>
+
+    <ul>
+      <li>Selecting a PDF document</li>
+      <li>Reading the selected PDF file</li>
+      <li>Entering watermark text</li>
+      <li>Applying watermarks to the document</li>
+      <li>Generating the resulting PDF file</li>
+      <li>Saving the output on the device</li>
+    </ul>
+
+    <h3>3.2 Original Documents</h3>
+
+    <p>
+      The App reads selected
+      documents and generates
+      output files as part of
+      the watermark operation.
+    </p>
+
+    <p>
+      It is designed not to
+      intentionally alter or
+      remove original files
+      during normal processing.
+    </p>
+
+    <p>
+      Actual file handling
+      may depend on the
+      storage destination,
+      operating system,
+      and processing method.
+    </p>
+
+    <h3>3.3 Temporary Data</h3>
+
+    <p>
+      Temporary files or
+      cache data may be
+      generated locally
+      while processing PDFs.
+    </p>
+
+    <p>
+      Their retention and deletion
+      depend on the App's
+      implementation and
+      operating system
+      storage management.
+    </p>
+
+    <h2>4. Copyright and User Responsibility</h2>
+
+    <p>
+      The App is a utility
+      that applies text watermarks
+      to documents selected
+      by users.
+    </p>
+
+    <p>
+      The Developer does not
+      claim ownership of
+      user-selected or generated
+      PDF documents, text,
+      images, logos, trademarks,
+      or other content.
+    </p>
+
+    <p>
+      Users must have
+      appropriate permission
+      or legal authorization
+      to edit and watermark
+      their documents.
+    </p>
+
+    <p>
+      Users must not:
+    </p>
+
+    <ul>
+      <li>
+        Modify documents in ways
+        that infringe copyrights.
+      </li>
+      <li>
+        Violate trademarks or
+        intellectual property rights.
+      </li>
+      <li>
+        Improperly disclose
+        personal information.
+      </li>
+      <li>
+        Violate contractual
+        restrictions on documents.
+      </li>
+      <li>
+        Falsely represent
+        document origin or ownership.
+      </li>
+      <li>
+        Distribute files in
+        violation of applicable laws.
+      </li>
+    </ul>
+
+    <p>
+      Rights to original
+      App software code,
+      design, and created materials
+      belong to JCraft Studio
+      or their lawful owners.
+    </p>
+
+    <h2>5. No Government or Official Affiliation</h2>
+
+    <p>
+      The App is not affiliated with,
+      endorsed by, sponsored by,
+      or officially connected to
+      any government agency,
+      public institution,
+      document authority,
+      company, or PDF
+      standards organization.
+    </p>
+
+    <p>
+      References to organizations
+      or document formats
+      do not imply approval,
+      endorsement, or certification.
+    </p>
+
+    <p>
+      Watermarks generated by
+      the App do not guarantee
+      document authenticity,
+      legal validity,
+      ownership, or
+      official certification.
+    </p>
+
+    <h2>6. Advertising and Unity Ads</h2>
+
+    <p>
+      The App uses
+      <strong>Unity Ads</strong>
+      to display advertisements.
+    </p>
+
+    <h3>6.1 Unity Ads</h3>
+
+    <p>
+      Unity Ads is a
+      third-party advertising
+      service used to provide
+      advertisements within
+      the App.
+    </p>
+
+    <p>
+      Unity Ads and relevant
+      advertising technology
+      partners may process
+      data for ad delivery,
+      measurement,
+      service operation,
+      security, and
+      fraud prevention.
+    </p>
+
+    <h3>6.2 Advertising Data Categories</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Examples</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Identifiers</td>
+            <td>
+              Android Advertising ID
+              and permitted identifiers
+            </td>
+            <td>
+              Ad delivery and measurement
+            </td>
+          </tr>
+
+          <tr>
+            <td>Network data</td>
+            <td>
+              IP address and
+              approximate location
+            </td>
+            <td>
+              Regional advertising
+              and security
+            </td>
+          </tr>
+
+          <tr>
+            <td>Device data</td>
+            <td>
+              Device model,
+              OS and settings
+            </td>
+            <td>
+              Compatibility and
+              advertising delivery
+            </td>
+          </tr>
+
+          <tr>
+            <td>Ad events</td>
+            <td>
+              Impressions,
+              clicks, and views
+            </td>
+            <td>
+              Ad performance measurement
+            </td>
+          </tr>
+
+          <tr>
+            <td>Diagnostics</td>
+            <td>
+              SDK errors,
+              crashes, technical data
+            </td>
+            <td>
+              Stability and troubleshooting
+            </td>
+          </tr>
+
+          <tr>
+            <td>Security data</td>
+            <td>
+              Fraud detection
+              signals
+            </td>
+            <td>
+              Fraud prevention
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>6.3 Advertising Personalization</h3>
+
+    <p>
+      Advertisements may be
+      personalized or
+      non-personalized depending
+      on device settings,
+      user region,
+      privacy choices,
+      and applicable laws.
+    </p>
+
+    <p>
+      Some jurisdictions may
+      require user consent
+      for advertising-related
+      personal data processing.
+    </p>
+
+    <p>
+      Where legally required,
+      the App operator must
+      provide appropriate
+      consent and privacy
+      choice procedures.
+    </p>
+
+    <p>
+      Restricting personalized
+      advertising does not
+      necessarily disable
+      all advertisements.
+    </p>
+
+    <h3>6.4 Official Unity Privacy Resources</h3>
+
+    <p>
+      Further information
+      about Unity's privacy
+      practices is available
+      at the following links.
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://unity.com/legal/privacy-policy"
+           target="_blank"
+           rel="noopener noreferrer">
+          Unity Privacy Policy
+        </a>
+      </li>
+
+      <li>
+        <a href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+           target="_blank"
+           rel="noopener noreferrer">
+          Unity Game Player and
+          App User Privacy FAQ
+        </a>
+      </li>
+    </ul>
+
+    <p>
+      Advertising data processing
+      may vary depending on
+      SDK versions, settings,
+      and service operation.
+    </p>
+
+    <h2>7. App Permissions</h2>
+
+    <p>
+      The App may use
+      file-related access
+      features when necessary
+      for users to select,
+      create, save, or
+      share PDF documents.
+    </p>
+
+    <p>
+      File access permissions
+      and system file pickers
+      may operate differently
+      depending on Android versions
+      and device settings.
+    </p>
+
+    <p>
+      The App is not designed
+      to intentionally access
+      unrelated files
+      without user action.
+    </p>
+
+    <p>
+      If users select files
+      from cloud storage
+      or share output files
+      with external apps,
+      those providers may apply
+      their own privacy policies.
+    </p>
+
+    <h2>8. Data Sharing and Third-Party Processing</h2>
+
+    <p>
+      The Developer does not
+      sell user-selected
+      PDF files or watermark text.
+    </p>
+
+    <p>
+      The App is designed
+      not to upload document
+      contents to a separate
+      developer-operated server
+      for normal watermark operations.
+    </p>
+
+    <p>
+      However, Unity Ads and
+      relevant advertising
+      technology partners
+      may process or share
+      identifiers, device data,
+      network information,
+      and advertising interactions.
+    </p>
+
+    <p>
+      If users intentionally
+      share output files,
+      selected external apps
+      or services may
+      receive those files.
+    </p>
+
+    <p>
+      Information may also
+      be processed when
+      required by applicable
+      laws or lawful requests.
+    </p>
+
+    <h2>9. Data Security</h2>
+
+    <p>
+      The Developer seeks to
+      take reasonable steps
+      to maintain reliable
+      App operation and
+      information security.
+    </p>
+
+    <p>
+      PDF processing is
+      designed to take place
+      locally on the device
+      where possible.
+    </p>
+
+    <p>
+      However, no device,
+      storage method,
+      operating system,
+      network, or external
+      service can guarantee
+      absolute security.
+    </p>
+
+    <p>
+      Users should carefully
+      review storage destinations
+      and sharing recipients
+      when working with
+      sensitive PDF documents.
+    </p>
+
+    <h2>10. Children's Privacy</h2>
+
+    <p>
+      The App is a general
+      PDF watermark utility
+      and is not designed
+      primarily for children.
+    </p>
+
+    <p>
+      The App does not require
+      children's names,
+      contact information,
+      or other directly
+      identifying information
+      for core functionality.
+    </p>
+
+    <p>
+      Parents or guardians
+      may encourage children
+      not to enter or
+      share unnecessary
+      personal information.
+    </p>
+
+    <p>
+      Additional rules may
+      apply under privacy laws,
+      Google Play policies,
+      and advertising service
+      requirements for children
+      or underage users.
+    </p>
+
+    <h2>11. Disclaimer and Liability</h2>
+
+    <p>
+      The App is provided
+      as a general-purpose
+      PDF document utility.
+    </p>
+
+    <p>
+      Watermark operations
+      may fail because of
+      corrupted documents,
+      encrypted files,
+      unsupported structures,
+      insufficient storage,
+      or operating system
+      restrictions.
+    </p>
+
+    <p>
+      Users should preserve
+      backups of important
+      original documents
+      before processing.
+    </p>
+
+    <p>
+      Users should verify
+      watermark placement
+      and output file readability
+      after processing.
+    </p>
+
+    <p>
+      Responsibility for
+      unlawful use of content,
+      unauthorized sharing,
+      copyright infringement,
+      or related actions
+      is determined under
+      applicable law.
+    </p>
+
+    <p>
+      To the extent permitted
+      by applicable law,
+      the Developer's
+      liability may be limited.
+    </p>
+
+    <p>
+      Nothing in this policy
+      excludes or limits
+      liability that cannot
+      lawfully be excluded.
+    </p>
+
+    <h2>12. Data Retention and Deletion</h2>
+
+    <p>
+      Generated watermarked
+      PDF files may be stored
+      locally on the device
+      or in a location
+      selected by the user.
+    </p>
+
+    <p>
+      Temporary data and
+      certain application
+      settings may also
+      be stored locally.
+    </p>
+
+    <p>
+      Clearing App data
+      or uninstalling the App
+      generally removes
+      private application
+      storage data.
+    </p>
+
+    <p>
+      However, output PDFs
+      saved in shared or
+      external storage locations
+      may remain after
+      the App is uninstalled.
+    </p>
+
+    <p>
+      Such files may require
+      separate deletion
+      using a file manager
+      or another supported tool.
+    </p>
+
+    <p>
+      Some information may
+      be restored through
+      device backup and
+      restoration features.
+    </p>
+
+    <p>
+      Information independently
+      processed by Unity Ads
+      is subject to its
+      own retention policy.
+    </p>
+
+    <h2>13. User Privacy Rights</h2>
+
+    <p>
+      Depending on applicable
+      privacy laws, users
+      may have rights relating
+      to access, correction,
+      deletion, restriction
+      of processing, and
+      other privacy choices.
+    </p>
+
+    <ul>
+      <li>
+        Clear App data
+        through Android settings.
+      </li>
+      <li>
+        Uninstall the App
+        to remove local data.
+      </li>
+      <li>
+        Delete generated PDF
+        output files separately.
+      </li>
+      <li>
+        Manage or delete
+        the Android Advertising ID.
+      </li>
+      <li>
+        Review Unity's privacy
+        request procedures.
+      </li>
+      <li>
+        Contact the Developer
+        through Google Play.
+      </li>
+    </ul>
+
+    <p>
+      Privacy requests concerning
+      data independently processed
+      by advertising services
+      may be subject to
+      those providers'
+      privacy procedures.
+    </p>
+
+    <h2>14. External Services and Trademarks</h2>
+
+    <p>
+      Selecting advertisements
+      or external links
+      may open third-party
+      websites or app
+      store pages.
+    </p>
+
+    <p>
+      Those services operate
+      under their own
+      privacy policies and
+      terms of use.
+    </p>
+
+    <p>
+      Unity, Unity Ads,
+      Google Play, and other
+      third-party trademarks
+      remain the property
+      of their respective owners.
+    </p>
+
+    <p>
+      References to such
+      services are intended
+      for technical identification
+      and do not imply
+      affiliation or sponsorship.
+    </p>
+
+    <h2>15. Changes to This Policy</h2>
+
+    <p>
+      This Privacy Policy
+      may be updated due
+      to changes in App features,
+      advertising SDKs,
+      data processing practices,
+      applicable laws,
+      or Google Play policies.
+    </p>
+
+    <p>
+      The updated policy
+      will be published
+      on this page with
+      a revised update date.
+    </p>
+
+    <p>
+      Where legally required,
+      material changes may
+      involve additional
+      notice or consent.
+    </p>
+
+    <h2>16. Developer Information and Contact</h2>
+
+    <p>
+      <strong>Developer:</strong>
+      JCraft Studio
+    </p>
+
+    <p>
+      For App support,
+      privacy inquiries,
+      or questions about
+      data deletion,
+      please refer to
+      the Developer contact
+      information on the
+      official Google Play
+      Store listing.
+    </p>
+
+    <p>
+      For advertising-related
+      privacy requests,
+      users may also review
+      Unity's official
+      privacy resources.
+    </p>
+
+    <p class="meta">
+      Last updated:
+      November 4, 2026
+    </p>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <p>
+      <strong>JCraft Studio</strong>
+    </p>
+
+    <p>
+      PDF Watermark Privacy Policy
+    </p>
+
+    <p>
+      Last Updated / 최종 수정일:
+      2026-11-04
+    </p>
+
+    <p>
+      © 2026 JCraft Studio.
+      All rights reserved.
+    </p>
+  </footer>
+
+</div>
+
+<!-- LANGUAGE SWITCHING -->
+
+<script>
+(function () {
+  "use strict";
+
+  const STORAGE_KEY =
+    "pdf-watermark-privacy-language";
+
+  const koSection =
+    document.getElementById("lang-ko");
+
+  const enSection =
+    document.getElementById("lang-en");
+
+  const koButton =
+    document.getElementById("btn-ko");
+
+  const enButton =
+    document.getElementById("btn-en");
+
+  function setLanguage(language, save) {
+    const selected =
+      language === "ko" ? "ko" : "en";
+
+    koSection.classList.toggle(
+      "active",
+      selected === "ko"
+    );
+
+    enSection.classList.toggle(
+      "active",
+      selected === "en"
+    );
+
+    koButton.classList.toggle(
+      "active",
+      selected === "ko"
+    );
+
+    enButton.classList.toggle(
+      "active",
+      selected === "en"
+    );
+
+    koButton.setAttribute(
+      "aria-pressed",
+      String(selected === "ko")
+    );
+
+    enButton.setAttribute(
+      "aria-pressed",
+      String(selected === "en")
+    );
+
+    document.documentElement.lang =
+      selected;
+
+    document.title =
+      selected === "ko"
+        ? "개인정보처리방침 | PDF Watermark"
+        : "Privacy Policy | PDF Watermark";
+
+    if (save) {
+      try {
+        localStorage.setItem(
+          STORAGE_KEY,
+          selected
+        );
+      } catch (error) {
+        // Language switching remains available.
+      }
+    }
+  }
+
+  function getInitialLanguage() {
+    try {
+      const saved =
+        localStorage.getItem(
+          STORAGE_KEY
+        );
+
+      if (
+        saved === "ko" ||
+        saved === "en"
+      ) {
+        return saved;
+      }
+    } catch (error) {
+      // Fall back to browser language.
+    }
+
+    const browserLanguage =
+      (
+        navigator.language ||
+        "en"
+      ).toLowerCase();
+
+    return browserLanguage.startsWith("ko")
+      ? "ko"
+      : "en";
+  }
+
+  koButton.addEventListener(
+    "click",
+    function () {
+      setLanguage("ko", true);
+    }
+  );
+
+  enButton.addEventListener(
+    "click",
+    function () {
+      setLanguage("en", true);
+    }
+  );
+
+  setLanguage(
+    getInitialLanguage(),
+    false
+  );
+})();
+</script>
+
 </body>
 </html>
