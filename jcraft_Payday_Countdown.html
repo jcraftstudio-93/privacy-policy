@@ -2,14 +2,21 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Privacy Policy for Payday Countdown by JCraft Studio">
+  <meta name="description"
+        content="Privacy Policy for Payday Countdown by JCraft Studio">
+
   <title>Privacy Policy | Payday Countdown</title>
 
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -26,6 +33,7 @@
         Arial,
         sans-serif;
       line-height: 1.75;
+      overflow-wrap: break-word;
     }
 
     .container {
@@ -57,6 +65,13 @@
       color: #173b34;
       font-size: 21px;
       line-height: 1.4;
+    }
+
+    h3 {
+      margin-top: 22px;
+      margin-bottom: 10px;
+      color: #173b34;
+      font-size: 17px;
     }
 
     p {
@@ -100,6 +115,11 @@
       color: #ffffff;
     }
 
+    .language-switch button:focus-visible {
+      outline: 2px solid #126b58;
+      outline-offset: 3px;
+    }
+
     .notice {
       margin-top: 20px;
       padding: 16px 18px;
@@ -108,12 +128,25 @@
       border-left: 4px solid #173b34;
     }
 
+    .service-box {
+      margin: 18px 0;
+      padding: 18px;
+      border-radius: 12px;
+      background: #f5f8f6;
+      border: 1px solid #d8e5dc;
+    }
+
+    .service-box p {
+      margin: 10px 0;
+    }
+
     .footer {
       margin-top: 45px;
       padding-top: 24px;
       border-top: 1px solid #e5e7e5;
       color: #666666;
       font-size: 14px;
+      text-align: center;
     }
 
     .lang {
@@ -126,7 +159,7 @@
 
     a {
       color: #126b58;
-      word-break: break-word;
+      overflow-wrap: anywhere;
     }
 
     @media (max-width: 600px) {
@@ -146,6 +179,10 @@
       h2 {
         font-size: 19px;
       }
+
+      h3 {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
@@ -154,55 +191,86 @@
 
 <div class="container">
 
-  <div class="header">
+  <header class="header">
+
     <h1>Privacy Policy</h1>
 
     <div class="updated">
-      Effective date: September 11, 2026
+      Developer: JCraft Studio<br>
+      App: Payday Countdown<br>
+      Effective date: November 9, 2026<br>
+      Last updated: November 9, 2026
     </div>
 
-    <div class="language-switch">
-      <button id="btn-ko" type="button" onclick="setLanguage('ko')">
+    <nav class="language-switch"
+         aria-label="Language selection">
+
+      <button
+        id="btn-ko"
+        type="button"
+        aria-pressed="true"
+        onclick="setLanguage('ko')">
         한국어
       </button>
 
-      <button id="btn-en" type="button" onclick="setLanguage('en')">
+      <button
+        id="btn-en"
+        type="button"
+        aria-pressed="false"
+        onclick="setLanguage('en')">
         English
       </button>
-    </div>
-  </div>
 
+    </nav>
 
-  <!-- ===================================================== -->
-  <!-- Korean -->
-  <!-- ===================================================== -->
+  </header>
 
-  <main id="ko" class="lang">
+  <!-- ======================================= -->
+  <!-- KOREAN -->
+  <!-- ======================================= -->
+
+  <main id="ko" class="lang" lang="ko">
 
     <h1>개인정보처리방침</h1>
 
     <p>
-      JCraft Studio(이하 "개발자")는 Payday Countdown
-      (이하 "앱") 이용자의 개인정보와 데이터 보호를 중요하게 생각합니다.
-      본 개인정보처리방침은 앱 이용 과정에서 정보가 어떻게 저장되거나
-      처리될 수 있는지를 설명합니다.
+      JCraft Studio(이하 "개발자")는
+      Payday Countdown(이하 "앱")
+      이용자의 개인정보 및
+      데이터 보호를 중요하게 생각합니다.
     </p>
 
     <p>
-      본 개인정보처리방침은 앱 자체의 데이터 처리뿐만 아니라
-      앱에 포함된 제3자 서비스 및 SDK를 통해 처리될 수 있는
-      정보에 대해서도 설명합니다.
+      본 개인정보처리방침은
+      앱 이용 과정에서 정보가
+      어떻게 저장되거나 처리될 수 있는지,
+      해당 정보의 이용 목적,
+      제3자 광고 서비스,
+      데이터 삭제 및 사용자 권리에 관한
+      사항을 설명합니다.
     </p>
 
+    <p>
+      본 방침은 앱 자체의
+      로컬 데이터 처리뿐 아니라
+      앱에 포함된 제3자 SDK에서
+      처리할 수 있는 정보도 다룹니다.
+    </p>
+
+    <!-- 1 -->
 
     <h2>1. 사용자가 입력하는 정보</h2>
 
     <p>
-      앱은 핵심 기능을 제공하기 위해 사용자가 직접 입력한 일부 정보를
-      사용자의 기기에 저장할 수 있습니다.
+      본 앱은 핵심 기능 제공을 위해
+      사용자가 직접 입력한 정보를
+      기기에 저장할 수 있습니다.
     </p>
 
-    <p>저장될 수 있는 정보는 다음과 같습니다.</p>
+    <p>
+      저장될 수 있는 정보에는
+      다음과 같은 항목이 포함됩니다.
+    </p>
 
     <ul>
       <li>수입 일정 이름</li>
@@ -210,79 +278,283 @@
       <li>사용자가 입력한 수입 금액</li>
       <li>알림 날짜 및 시간 설정</li>
       <li>언어 설정 및 기타 앱 설정</li>
+      <li>광고 표시 규칙 관련 로컬 상태 정보</li>
     </ul>
 
     <p>
-      해당 정보는 수입 일정 관리, 카운트다운, 계산 기능,
-      알림 기능 및 홈 화면 위젯 기능을 제공하기 위해 사용됩니다.
+      해당 정보는 수입 일정 관리,
+      카운트다운, 금액 계산,
+      알림 및 홈 화면 위젯 기능을
+      제공하기 위해 사용됩니다.
     </p>
 
     <p>
-      개발자는 사용자가 직접 입력한 위 정보를
-      JCraft Studio가 운영하는 별도의 원격 서버로 전송하거나
-      서버에 저장하도록 앱을 설계하지 않았습니다.
-      해당 정보는 원칙적으로 사용자의 기기에 로컬로 저장됩니다.
+      사용자가 직접 입력한 수입 일정과
+      금액 정보는 원칙적으로
+      사용자 기기에 로컬로 저장됩니다.
     </p>
 
+    <p>
+      본 앱은 해당 정보를
+      JCraft Studio가 운영하는
+      별도의 원격 서버로
+      전송하거나 저장하도록
+      설계되지 않았습니다.
+    </p>
+
+    <!-- 2 -->
 
     <h2>2. 계정 및 회원가입</h2>
 
     <p>
-      앱은 별도의 회원가입이나 사용자 계정 생성을 요구하지 않습니다.
+      본 앱은 회원가입이나
+      별도의 사용자 계정 생성을
+      요구하지 않습니다.
     </p>
 
     <p>
-      개발자는 앱 사용을 위해 사용자의 이름, 이메일 주소,
-      전화번호 또는 비밀번호를 직접 요구하지 않습니다.
+      개발자는 기본 앱 기능을 이용하기 위해
+      사용자의 이름, 이메일 주소,
+      전화번호, 비밀번호 또는
+      금융 계좌 정보를
+      직접 요구하지 않습니다.
     </p>
 
+    <p>
+      다만 사용자가 직접 입력한
+      수입 일정과 금액은
+      앱 기능 제공을 위해
+      기기 내부에서 처리될 수 있습니다.
+    </p>
+
+    <!-- 3 -->
 
     <h2>3. 광고 및 제3자 서비스</h2>
 
     <p>
-      앱은 서비스 운영을 위해 Google Mobile Ads(AdMob)와 같은
-      제3자 광고 서비스를 사용할 수 있습니다.
+      본 앱은 무료 서비스 운영 및
+      유지 관리를 위해
+      <strong>Unity LevelPlay</strong>
+      광고 미디에이션 플랫폼과
+      <strong>Unity Ads</strong>
+      광고 서비스를 사용합니다.
+    </p>
+
+    <h3>3.1 Unity LevelPlay</h3>
+
+    <p>
+      Unity LevelPlay는 앱에서
+      광고 요청, 광고 표시 및
+      광고 미디에이션을
+      관리하는 플랫폼입니다.
     </p>
 
     <p>
-      이러한 제3자 서비스 및 SDK는 광고 제공, 광고 성과 측정,
-      보안, 부정 사용 방지, 서비스 개선 및 관련 기능 제공을 위해
-      기기 또는 앱과 관련된 일부 정보를 자동으로 처리할 수 있습니다.
+      광고 제공 과정에서
+      일부 기기 및 광고 관련 정보가
+      처리될 수 있습니다.
+    </p>
+
+    <h3>3.2 Unity Ads</h3>
+
+    <p>
+      Unity Ads는 앱 내 광고 표시,
+      광고 성과 측정 및
+      부정행위 방지 등의
+      기능을 지원하는 광고 서비스입니다.
     </p>
 
     <p>
-      제3자 서비스가 처리하는 데이터의 유형, 처리 목적,
-      보유 기간 및 처리 방법은 해당 서비스 제공자의 정책,
-      사용자의 기기 설정, 개인정보 보호 설정 및 적용되는 법률에 따라
+      Unity Ads 및 관련 광고 제공업체는
+      자체 개인정보처리방침과
+      관련 법률에 따라
+      광고 데이터를 처리할 수 있습니다.
+    </p>
+
+    <h3>3.3 광고 유형</h3>
+
+    <p>
+      앱의 배포 버전과 광고 설정에 따라
+      다음과 같은 광고 유형이
+      제공될 수 있습니다.
+    </p>
+
+    <ul>
+      <li>배너 광고</li>
+      <li>전면 광고</li>
+      <li>
+        사용자가 자발적으로 선택하는
+        보상형 광고(제공되는 경우)
+      </li>
+    </ul>
+
+    <p>
+      보상형 광고 기능이 제공되는 경우,
+      사용자가 광고 시청을 완료하고
+      보상을 지급받으면
+      앱에서 정한 일정 시간 동안
+      전면 광고 면제 등의
+      혜택을 제공받을 수 있습니다.
+    </p>
+
+    <h3>3.4 광고 SDK가 처리할 수 있는 정보</h3>
+
+    <p>
+      Unity 및 관련 광고 파트너는
+      광고 제공, 성과 측정,
+      광고 노출 빈도 관리,
+      부정 트래픽 방지 및
+      서비스 안정성 유지를 위해
+      다음 정보를 처리할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        Android 광고 ID 등 광고 식별자
+      </li>
+
+      <li>
+        기기 모델 및 운영체제 정보
+      </li>
+
+      <li>
+        IP 주소 및 네트워크 연결 정보
+      </li>
+
+      <li>
+        IP 주소 등을 통해 추정되는
+        대략적인 지역 정보
+      </li>
+
+      <li>
+        앱 식별 정보 및 앱 버전
+      </li>
+
+      <li>
+        광고 요청, 노출, 클릭 및
+        광고 시청 정보
+      </li>
+
+      <li>
+        광고 상호작용 및 관련 이벤트 정보
+      </li>
+
+      <li>
+        광고 오류, 성능 및 진단 정보
+      </li>
+
+      <li>
+        광고 부정행위 방지에 필요한
+        기술적 정보
+      </li>
+    </ul>
+
+    <p>
+      실제 처리되는 데이터 항목은
+      SDK 버전 및 설정,
+      사용자의 기기 환경,
+      이용 지역, 개인정보 보호 선택,
+      관련 법률 및
+      광고 서비스 제공업체의 정책에 따라
       달라질 수 있습니다.
     </p>
 
     <p>
-      Google의 데이터 처리 방식에 대한 자세한 내용은
-      아래 정책을 확인하시기 바랍니다.
+      개발자는 사용자가 입력한
+      수입 일정 이름,
+      수입 예정 날짜 및 금액 정보를
+      광고 타겟팅 목적으로
+      광고 SDK에 의도적으로
+      전달하지 않습니다.
+    </p>
+
+    <h3>3.5 광고 개인화 및 개인정보 보호 선택</h3>
+
+    <p>
+      사용자는 Android 기기의
+      개인정보 보호 및 광고 관련 설정을 통해
+      광고 ID에 관한 선택 사항을
+      관리할 수 있습니다.
     </p>
 
     <p>
-      <a href="https://policies.google.com/privacy"
-         target="_blank"
-         rel="noopener noreferrer">
-        Google 개인정보처리방침
-      </a>
+      Android 버전에 따라
+      광고 ID를 재설정하거나
+      삭제할 수 있습니다.
     </p>
 
     <p>
-      <a href="https://policies.google.com/technologies/ads"
-         target="_blank"
-         rel="noopener noreferrer">
-        Google 광고 관련 정책 및 기술
-      </a>
+      Unity 광고에서 개인정보 관련
+      선택 기능이 제공되는 경우
+      해당 기능을 통해
+      관련 설정을 변경할 수 있습니다.
     </p>
 
+    <p>
+      맞춤형 광고를 제한하더라도
+      맞춤형이 아닌 광고가
+      계속 표시될 수 있습니다.
+    </p>
+
+    <h3>3.6 제3자 서비스 및 개인정보처리방침</h3>
+
+    <div class="service-box">
+
+      <p>
+        <strong>Unity LevelPlay</strong><br>
+        광고 미디에이션 및 광고 관리
+      </p>
+
+      <p>
+        <strong>Unity Ads</strong><br>
+        광고 제공 및 성과 측정
+      </p>
+
+      <p>
+        <strong>Unity 공식 개인정보처리방침</strong>
+      </p>
+
+      <p>
+        <a
+          href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer">
+          Unity Game Player and App User Privacy Policy
+        </a>
+      </p>
+
+      <p>
+        <strong>Google Play</strong><br>
+        앱 배포 및 플랫폼 서비스
+      </p>
+
+      <p>
+        <strong>Google 개인정보처리방침</strong>
+      </p>
+
+      <p>
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer">
+          Google Privacy Policy
+        </a>
+      </p>
+
+    </div>
+
+    <p>
+      각 제3자 서비스는 자체 개인정보처리방침과
+      관련 법률에 따라 정보를 처리할 수 있습니다.
+    </p>
+
+    <!-- 4 -->
 
     <h2>4. 정보 이용 목적</h2>
 
     <p>
-      앱에서 처리되는 정보는 해당되는 경우 다음 목적을 위해
+      본 앱 및 관련 제3자 서비스에서
+      처리되는 정보는 다음 목적에
       사용될 수 있습니다.
     </p>
 
@@ -291,674 +563,1264 @@
       <li>다음 수입일까지의 카운트다운 계산</li>
       <li>사용자가 요청한 알림 제공</li>
       <li>홈 화면 위젯 기능 제공</li>
-      <li>사용자가 입력한 값을 기반으로 한 단순 계산 제공</li>
-      <li>앱 설정 및 언어 설정 유지</li>
+      <li>사용자가 입력한 값을 기반으로 한 계산</li>
+      <li>언어 및 앱 환경설정 유지</li>
       <li>광고 제공 및 광고 성과 측정</li>
-      <li>보안 및 부정 사용 방지</li>
-      <li>서비스 안정성 유지</li>
+      <li>광고 노출 규칙 및 보상 혜택 관리</li>
+      <li>광고 부정행위 방지 및 보안 유지</li>
+      <li>서비스 오류 대응 및 안정성 개선</li>
     </ul>
 
+    <!-- 5 -->
 
     <h2>5. 정보 공유</h2>
 
     <p>
-      개발자는 사용자가 앱에 직접 입력한 수입 일정이나
-      수입 금액 정보를 판매하지 않습니다.
+      개발자는 사용자가 직접 입력한
+      수입 일정 및 수입 금액을
+      판매하지 않습니다.
     </p>
 
     <p>
-      다만 광고 SDK와 같은 제3자 서비스는 해당 기능을 제공하는 과정에서
-      자체 정책에 따라 일부 정보를 처리하거나 서비스 제공자에게
-      전송할 수 있습니다.
+      또한 사용자가 입력한 수입 관련 정보를
+      광고 타겟팅 목적으로
+      광고 서비스에 의도적으로
+      제공하지 않습니다.
     </p>
 
     <p>
-      또한 적용되는 법률을 준수하거나 적법한 법적 요청에 대응하기 위해
-      필요한 경우 관련 법률이 허용하거나 요구하는 범위에서
+      다만 Unity LevelPlay,
+      Unity Ads 및 관련 광고 파트너는
+      광고 제공 및 성과 측정에 필요한
+      기기와 광고 관련 정보를
+      처리하거나 공유할 수 있습니다.
+    </p>
+
+    <p>
+      제3자 광고 서비스의 정보 처리에는
+      해당 제공업체의 개인정보처리방침 및
+      관련 법률이 적용됩니다.
+    </p>
+
+    <p>
+      적용 법률을 준수하거나
+      적법한 요청에 대응해야 하는 경우
+      법률에서 허용하거나 요구하는 범위에서
       정보가 처리될 수 있습니다.
     </p>
 
+    <!-- 6 -->
 
     <h2>6. 정보 저장 및 보유</h2>
 
     <p>
-      사용자가 입력한 수입 일정, 금액 및 앱 설정 등은
-      앱 기능을 제공하기 위해 사용자의 기기에 저장될 수 있습니다.
+      사용자가 입력한 수입 일정,
+      예정 금액, 알림 설정 및
+      기타 앱 설정은
+      앱 기능 제공을 위해
+      사용자 기기에 저장될 수 있습니다.
     </p>
 
     <p>
-      해당 정보는 사용자가 앱 내부의 삭제 기능을 이용하거나,
-      기기의 앱 데이터 삭제 기능을 이용하거나,
-      앱을 제거하는 등의 방법으로 삭제할 수 있습니다.
+      해당 정보는 앱의 저장 기능에서
+      사용자가 삭제하거나
+      앱 데이터가 초기화되는 등의
+      사유가 발생하기 전까지
+      기기에 남아 있을 수 있습니다.
     </p>
 
     <p>
-      제3자 서비스 제공자가 독립적으로 처리하는 정보의 보유 기간은
-      해당 서비스 제공자의 개인정보처리방침 및 데이터 보유 정책에
-      따라 결정됩니다.
+      Android 백업 및 복원 설정에 따라
+      일부 데이터가 다른 기기에서
+      복원될 수도 있습니다.
     </p>
 
+    <p>
+      Unity 및 관련 광고 서비스가
+      독립적으로 처리하는 정보의
+      보유 기간은 각 제공업체의
+      정책에 따릅니다.
+    </p>
+
+    <!-- 7 -->
 
     <h2>7. 데이터 삭제</h2>
 
     <p>
-      앱은 자체 사용자 계정 시스템을 제공하지 않으므로
-      별도의 계정 삭제 절차는 제공하지 않습니다.
+      본 앱은 자체 사용자 계정 시스템을
+      제공하지 않으므로
+      별도의 계정 삭제 절차는 없습니다.
     </p>
 
     <p>
-      앱 내부에서 삭제할 수 있는 일정 및 관련 정보는
-      앱의 삭제 기능을 통해 삭제할 수 있습니다.
+      사용자는 앱에서 제공하는
+      일정 삭제 기능을 통해
+      등록한 일정과 관련 정보를
+      삭제할 수 있습니다.
     </p>
 
     <p>
-      앱에 저장된 전체 로컬 데이터를 삭제하려는 경우
-      사용자는 기기의 운영체제 설정에서 앱 데이터를 삭제하거나
-      앱을 제거할 수 있습니다.
+      앱의 전체 로컬 데이터를
+      제거하려는 경우
+      Android 설정에서 앱 데이터를
+      삭제하거나 앱을 제거할 수 있습니다.
     </p>
 
     <p>
-      앱 제거 시 앱의 로컬 저장 공간에 저장된 데이터는
-      일반적으로 운영체제의 처리 방식에 따라 함께 삭제됩니다.
+      앱 제거 시 일반적으로
+      앱 전용 저장 공간의 데이터가
+      삭제됩니다.
     </p>
 
+    <p>
+      단, 기기 백업과 복원 기능에 따라
+      실제 데이터 보관 및
+      복원 상태가 달라질 수 있습니다.
+    </p>
+
+    <p>
+      광고 SDK에서 처리하는 데이터의
+      삭제 및 권리 행사 절차는
+      해당 광고 제공업체의
+      개인정보처리방침을 참고해 주세요.
+    </p>
+
+    <!-- 8 -->
 
     <h2>8. 데이터 보안</h2>
 
     <p>
-      개발자는 앱에서 처리되는 정보를 보호하기 위해
-      합리적인 기술적 및 관리적 조치를 적용하도록 노력합니다.
+      개발자는 앱에서 처리되는 정보를
+      보호하기 위해 합리적인 수준의
+      기술적 및 관리적 보호 조치를
+      유지하도록 노력합니다.
     </p>
 
     <p>
-      다만 어떠한 전자적 저장 방식이나 데이터 전송 방식도
-      절대적인 보안을 보장할 수 없으므로,
-      관련 법률이 요구하는 범위를 넘어 완전한 보안을 보증하지 않습니다.
+      다만 어떠한 전자적 저장 방식이나
+      데이터 전송 방식도
+      절대적인 보안을 보장할 수는 없습니다.
     </p>
 
+    <p>
+      기기 분실, 악성 앱,
+      운영체제 취약점, 사용자 실수 및
+      저장소 오류 등으로
+      데이터 손실이나 노출 위험이
+      발생할 수 있습니다.
+    </p>
+
+    <!-- 9 -->
 
     <h2>9. 알림 권한</h2>
 
     <p>
-      앱은 사용자가 설정한 수입 일정 알림을 제공하기 위해
-      운영체제의 알림 권한을 요청할 수 있습니다.
+      본 앱은 사용자가 설정한
+      수입 일정 알림을 제공하기 위해
+      운영체제의 알림 권한을
+      요청할 수 있습니다.
     </p>
 
     <p>
-      사용자는 기기의 시스템 설정에서 언제든지
-      앱의 알림 권한을 허용, 제한 또는 해제할 수 있습니다.
+      알림은 사용자가 설정한
+      날짜와 시간에 맞추어
+      관련 일정 정보를 안내하기 위한
+      목적으로 사용됩니다.
     </p>
 
+    <p>
+      사용자는 Android 시스템 설정에서
+      알림 권한을 허용, 제한 또는
+      해제할 수 있습니다.
+    </p>
+
+    <p>
+      알림 권한이 거부된 경우
+      일부 알림 기능이
+      정상적으로 동작하지 않을 수 있습니다.
+    </p>
+
+    <!-- 10 -->
 
     <h2>10. 홈 화면 위젯</h2>
 
     <p>
-      앱은 사용자가 등록한 수입 일정과 카운트다운 정보를
-      홈 화면 위젯에 표시할 수 있습니다.
+      본 앱은 사용자가 등록한
+      수입 일정과 카운트다운 정보를
+      홈 화면 위젯에
+      표시할 수 있습니다.
     </p>
 
     <p>
-      위젯 표시를 위해 필요한 정보는 사용자의 기기 내에서
-      처리될 수 있으며, 위젯 자체를 위해 사용자가 입력한
-      수입 일정 정보를 개발자의 원격 서버로 전송하도록
-      설계되어 있지 않습니다.
-    </p>
-
-
-    <h2>11. 금융 관련 안내 및 면책</h2>
-
-    <p>
-      앱에서 제공하는 금액 및 기간 계산 기능은
-      사용자가 입력한 값을 기반으로 하는 단순 계산 도구입니다.
+      위젯 기능에 필요한 정보는
+      기본적으로 사용자 기기 내에서
+      처리되도록 설계되었습니다.
     </p>
 
     <p>
-      앱에서 표시되는 정보 및 계산 결과는 금융, 투자,
-      세무, 회계, 법률 또는 기타 전문적인 자문을 제공하기 위한
-      것이 아닙니다.
-    </p>
-
-    <p>
-      계산 결과에는 실제 세금, 이자, 수수료,
-      투자 수익률, 급여 조건, 고용계약 또는 기타 개별 조건이
-      반영되지 않을 수 있습니다.
-    </p>
-
-    <p>
-      실제 지급일, 지급 금액 및 관련 조건은 사용자의 계약,
-      고용 관계 또는 기타 상황에 따라 달라질 수 있습니다.
-    </p>
-
-    <p>
-      중요한 재정적 또는 법적 결정을 내리는 경우에는
-      관련 계약, 기관의 공식 정보 또는 적절한 전문가를 통해
-      별도로 확인하시기 바랍니다.
-    </p>
-
-
-    <h2>12. 외부 링크</h2>
-
-    <p>
-      앱 또는 관련 페이지에는 Google Play 또는 기타
-      외부 서비스로 연결되는 링크가 포함될 수 있습니다.
-    </p>
-
-    <p>
-      외부 웹사이트 또는 서비스의 콘텐츠,
-      서비스 제공 방식 및 개인정보 처리 방식은
-      해당 외부 서비스 제공자가 관리합니다.
-    </p>
-
-    <p>
-      외부 서비스 이용에는 각 서비스 제공자의 이용약관 및
-      개인정보처리방침이 적용됩니다.
-    </p>
-
-
-    <h2>13. 아동의 개인정보</h2>
-
-    <p>
-      앱은 아동으로부터 개인정보를 의도적으로 직접 수집하도록
+      위젯 표시만을 위해
+      사용자가 입력한 수입 일정 정보를
+      개발자 원격 서버로 전송하도록
       설계되지 않았습니다.
     </p>
 
     <p>
-      앱의 대상 사용자 및 광고 설정은 Google Play 정책,
-      관련 광고 정책 및 적용되는 법률에 따라 관리됩니다.
+      홈 화면에 표시되는 일정 이름,
+      날짜 또는 금액은
+      기기를 사용하는 다른 사람에게
+      보일 수 있으므로
+      사용자가 표시 내용을
+      확인하는 것이 좋습니다.
     </p>
 
+    <!-- 11 -->
+
+    <h2>11. 금융 관련 안내 및 면책</h2>
+
+    <p>
+      본 앱에서 제공하는
+      금액 및 기간 계산 기능은
+      사용자가 입력한 값을 기반으로 하는
+      일반적인 계산 도구입니다.
+    </p>
+
+    <p>
+      앱에서 표시되는 정보와 계산 결과는
+      금융, 투자, 세무, 회계, 법률 또는
+      기타 전문적인 자문을 제공하기 위한
+      것이 아닙니다.
+    </p>
+
+    <p>
+      계산 결과에는 실제 세금,
+      이자, 수수료, 투자 수익률,
+      급여 조건, 고용계약 및
+      기타 개별 조건이
+      반영되지 않을 수 있습니다.
+    </p>
+
+    <p>
+      실제 지급일과 지급 금액은
+      사용자의 계약, 고용 관계 및
+      기타 사정에 따라 달라질 수 있습니다.
+    </p>
+
+    <p>
+      중요한 재정적 또는 법적 결정을
+      내리기 전에는 관련 계약,
+      공식 기관 정보 또는
+      적절한 전문가를 통해
+      내용을 별도로 확인하시기 바랍니다.
+    </p>
+
+    <p>
+      본 안내는 관련 법령에 따라
+      배제하거나 제한할 수 없는
+      사용자 권리 또는 개발자 책임을
+      면제하는 의미가 아닙니다.
+    </p>
+
+    <!-- 12 -->
+
+    <h2>12. 외부 링크</h2>
+
+    <p>
+      앱 또는 관련 웹페이지에는
+      Google Play, 개인정보처리방침 및
+      기타 외부 서비스로 연결되는
+      링크가 포함될 수 있습니다.
+    </p>
+
+    <p>
+      외부 사이트의 콘텐츠,
+      서비스 제공 방식 및
+      개인정보 처리 방식은
+      해당 서비스 제공업체가 관리합니다.
+    </p>
+
+    <p>
+      외부 서비스 이용에는
+      각 업체의 이용약관 및
+      개인정보처리방침이 적용됩니다.
+    </p>
+
+    <!-- 13 -->
+
+    <h2>13. 아동의 개인정보</h2>
+
+    <p>
+      본 앱은 일반 사용자를 위한
+      수입 일정 관리 유틸리티이며,
+      아동을 주요 대상으로
+      설계된 서비스가 아닙니다.
+    </p>
+
+    <p>
+      개발자는 기본 앱 기능을 통해
+      아동의 직접적인 개인 식별 정보를
+      의도적으로 요구하지 않습니다.
+    </p>
+
+    <p>
+      광고 및 플랫폼 서비스에서
+      처리하는 데이터에는
+      관련 법률과 제공업체의
+      개인정보 보호 정책이 적용됩니다.
+    </p>
+
+    <!-- 14 -->
 
     <h2>14. 법률 및 플랫폼 정책</h2>
 
     <p>
-      개발자는 앱 운영과 관련하여 적용되는 개인정보 보호 법률,
-      Google Play 개발자 프로그램 정책 및 관련 요구사항을
-      준수하기 위해 합리적인 노력을 기울입니다.
+      개발자는 앱 운영과 관련하여
+      적용되는 개인정보 보호 법률,
+      Google Play 개발자 프로그램 정책 및
+      관련 요구사항을 준수하기 위해
+      노력합니다.
     </p>
 
     <p>
-      관련 법률, 플랫폼 정책, 앱 기능 또는 제3자 서비스가
-      변경되는 경우 본 개인정보처리방침도 이에 맞게
-      수정될 수 있습니다.
+      관련 법률, 플랫폼 정책,
+      앱 기능 또는 제3자 서비스가
+      변경되는 경우 개인정보처리방침을
+      이에 맞게 수정할 수 있습니다.
     </p>
 
+    <!-- 15 -->
 
     <h2>15. 개인정보처리방침 변경</h2>
 
     <p>
-      앱 기능, 데이터 처리 방식, 관련 법률,
-      플랫폼 정책 또는 제3자 서비스에 변경이 있는 경우
-      본 개인정보처리방침을 수정할 수 있습니다.
+      앱 기능, 데이터 처리 방식,
+      관련 법률, 플랫폼 정책 또는
+      제3자 서비스에 변경이 있는 경우
+      본 개인정보처리방침을
+      수정할 수 있습니다.
     </p>
 
     <p>
-      변경된 개인정보처리방침은 이 페이지에 게시되며,
-      필요한 경우 시행일을 변경하여 반영합니다.
+      중요한 변경사항은 본 페이지에
+      반영하고 필요한 경우
+      최종 수정일을 변경합니다.
     </p>
 
+    <p>
+      이번 개정에서는 광고 플랫폼 전환에 따라
+      Unity LevelPlay 및 Unity Ads 관련
+      개인정보 처리 내용을 반영했습니다.
+    </p>
+
+    <!-- 16 -->
 
     <h2>16. 개발자 정보 및 문의</h2>
 
     <p>
-      개발자: JCraft Studio
+      <strong>개발자: JCraft Studio</strong>
     </p>
 
     <p>
-      개발자의 최신 연락처, 이메일 주소 및 기타 공식 정보는
-      본 앱의 Google Play 스토어 등록정보에 표시된
-      개발자 정보를 참고하시기 바랍니다.
+      <strong>앱: Payday Countdown</strong>
     </p>
 
     <p>
-      개인정보 관련 문의 또는 앱 관련 문의는
-      Google Play 스토어 등록정보에 제공된
-      개발자 연락처를 이용해 주시기 바랍니다.
+      개인정보 처리, 사용자 권리 행사 및
+      앱 기능에 관한 문의는
+      Google Play 스토어에 표시된
+      개발자 연락처를 이용해 주세요.
     </p>
 
+    <p>
+      개발자의 최신 이메일 주소 및
+      기타 공식 연락처는
+      본 앱의 Google Play 등록정보에서
+      확인할 수 있습니다.
+    </p>
 
     <div class="notice">
-      <strong>안내:</strong><br>
-      본 개인정보처리방침은 Payday Countdown 앱에 적용됩니다.
-      앱의 실제 기능, 광고 SDK 또는 데이터 처리 방식이 변경되는 경우
-      본 개인정보처리방침 및 Google Play 데이터 보안 신고 내용도
-      실제 앱 동작에 맞게 변경될 수 있습니다.
+      <strong>안내</strong>
+
+      <p>
+        본 개인정보처리방침은
+        Payday Countdown 앱에 적용됩니다.
+      </p>
+
+      <p>
+        앱의 실제 기능, 광고 SDK 또는
+        정보 처리 방식이 변경되는 경우
+        본 개인정보처리방침과
+        Google Play 데이터 보안 신고도
+        실제 앱의 동작에 맞게
+        검토해야 합니다.
+      </p>
     </div>
 
   </main>
 
+  <!-- ======================================= -->
+  <!-- ENGLISH -->
+  <!-- ======================================= -->
 
-  <!-- ===================================================== -->
-  <!-- English -->
-  <!-- ===================================================== -->
-
-  <main id="en" class="lang">
+  <main id="en" class="lang" lang="en">
 
     <h1>Privacy Policy</h1>
 
     <p>
-      JCraft Studio ("Developer", "we", "us", or "our")
-      respects the privacy of users of Payday Countdown
-      ("App").
+      JCraft Studio ("Developer", "we",
+      "us", or "our") respects the privacy
+      of users of Payday Countdown ("App").
     </p>
 
     <p>
-      This Privacy Policy explains how information may be stored
-      or processed when users access and use the App.
+      This Privacy Policy explains how
+      information may be stored or processed
+      when using the App, including
+      the purposes of processing,
+      third-party advertising services,
+      data retention, deletion,
+      and user privacy rights.
     </p>
 
     <p>
-      This Policy covers data processing performed directly by the App
-      as well as certain processing that may be performed by
-      third-party services and software development kits (SDKs)
-      integrated into the App.
+      This Policy covers local processing
+      by the App as well as certain
+      processing performed by
+      third-party SDKs integrated
+      into the App.
     </p>
 
+    <!-- 1 -->
 
     <h2>1. Information Entered by Users</h2>
 
     <p>
-      The App may store certain information entered directly by users
-      on their devices in order to provide its core functionality.
+      The App may store certain information
+      entered directly by users on their
+      devices to provide its core features.
     </p>
 
-    <p>Such information may include:</p>
+    <p>
+      Such information may include:
+    </p>
 
     <ul>
       <li>Names assigned to income schedules</li>
       <li>Scheduled income dates</li>
       <li>Income amounts entered by users</li>
       <li>Reminder dates and notification times</li>
-      <li>Language preferences and other App settings</li>
+      <li>Language preferences and App settings</li>
+      <li>Local advertising state information</li>
     </ul>
 
     <p>
-      This information is used to provide features such as
-      income schedule management, countdowns, calculations,
-      notifications, and home screen widgets.
+      This information is used to provide
+      income schedule management,
+      countdowns, calculations,
+      notifications, and
+      home screen widgets.
     </p>
 
     <p>
-      The App is not designed to transmit or store this
-      user-entered income schedule information on a separate
-      remote server operated by JCraft Studio.
-      Such information is generally stored locally on the user's device.
+      User-entered income schedule
+      and amount information is generally
+      stored locally on the device.
     </p>
 
+    <p>
+      The App is not designed to transmit
+      such information to a separate
+      remote server operated by JCraft Studio.
+    </p>
+
+    <!-- 2 -->
 
     <h2>2. Accounts and Registration</h2>
 
     <p>
-      The App does not require users to create an App-specific account
-      or complete a membership registration process.
+      The App does not require
+      membership registration
+      or the creation of an
+      App-specific user account.
     </p>
 
     <p>
-      The Developer does not directly require a user's name,
-      email address, telephone number, or password in order
-      to use the App.
+      The Developer does not directly
+      require names, email addresses,
+      phone numbers, passwords,
+      or bank account details
+      to use the core features.
     </p>
 
+    <p>
+      However, income schedules and
+      amounts entered by users
+      may be processed locally
+      to provide App functionality.
+    </p>
+
+    <!-- 3 -->
 
     <h2>3. Advertising and Third-Party Services</h2>
 
     <p>
-      The App may use third-party advertising services such as
-      Google Mobile Ads (AdMob) to support operation of the App.
+      The App uses
+      <strong>Unity LevelPlay</strong>,
+      an advertising mediation platform,
+      and <strong>Unity Ads</strong>
+      to support free operation
+      and ongoing maintenance.
+    </p>
+
+    <h3>3.1 Unity LevelPlay</h3>
+
+    <p>
+      Unity LevelPlay provides
+      advertising mediation and
+      management functionality.
     </p>
 
     <p>
-      Third-party services and SDKs may automatically process
-      certain device- or App-related information for purposes such as
-      advertising delivery, measurement, security, fraud prevention,
-      service improvement, and related functionality.
+      Certain device and advertising-related
+      information may be processed
+      during ad requests and delivery.
+    </p>
+
+    <h3>3.2 Unity Ads</h3>
+
+    <p>
+      Unity Ads supports
+      in-app advertisement delivery,
+      performance measurement,
+      and fraud prevention.
     </p>
 
     <p>
-      The specific types of information processed,
-      purposes of processing, retention periods, and processing methods
-      may vary depending on the third-party service provider,
-      device settings, privacy settings, applicable laws,
-      and the provider's own policies.
+      Unity Ads and related providers
+      may process data under
+      their respective privacy policies
+      and applicable laws.
+    </p>
+
+    <h3>3.3 Advertising Formats</h3>
+
+    <p>
+      Depending on the App version
+      and advertising configuration,
+      the following ad formats
+      may be available:
+    </p>
+
+    <ul>
+      <li>Banner advertisements</li>
+      <li>Interstitial advertisements</li>
+      <li>
+        Optional rewarded advertisements,
+        where supported
+      </li>
+    </ul>
+
+    <p>
+      Where rewarded ads are available,
+      users may receive a temporary benefit,
+      such as a period without
+      interstitial advertisements,
+      after completing an ad
+      and receiving the reward.
+    </p>
+
+    <h3>3.4 Advertising Data Processing</h3>
+
+    <p>
+      Unity and related advertising partners
+      may process information for ad delivery,
+      measurement, frequency management,
+      fraud prevention, and
+      service stability.
+    </p>
+
+    <ul>
+      <li>
+        Android Advertising ID
+        and similar advertising identifiers
+      </li>
+
+      <li>
+        Device model and operating system
+      </li>
+
+      <li>
+        IP address and network information
+      </li>
+
+      <li>
+        Approximate location inferred
+        from IP address or related data
+      </li>
+
+      <li>
+        App identifiers and App version
+      </li>
+
+      <li>
+        Ad requests, impressions,
+        clicks, and views
+      </li>
+
+      <li>
+        Advertising interactions
+        and related event information
+      </li>
+
+      <li>
+        Technical errors,
+        performance, and diagnostics
+      </li>
+
+      <li>
+        Information used to detect
+        invalid advertising activity
+      </li>
+    </ul>
+
+    <p>
+      Actual data processing may vary
+      depending on SDK configuration,
+      device environment,
+      geographic region,
+      privacy choices,
+      applicable laws,
+      and provider policies.
     </p>
 
     <p>
-      For more information regarding Google's data practices,
-      please review the following policies.
+      The Developer does not intentionally
+      transmit user-entered income
+      schedule names, dates, or
+      amounts to advertising SDKs
+      for targeting purposes.
+    </p>
+
+    <h3>3.5 Advertising Privacy Choices</h3>
+
+    <p>
+      Users may manage available
+      advertising and privacy
+      preferences through their
+      Android device settings.
     </p>
 
     <p>
-      <a href="https://policies.google.com/privacy"
-         target="_blank"
-         rel="noopener noreferrer">
-        Google Privacy Policy
-      </a>
+      Depending on the Android version,
+      users may be able to
+      reset or delete
+      their advertising ID.
     </p>
 
     <p>
-      <a href="https://policies.google.com/technologies/ads"
-         target="_blank"
-         rel="noopener noreferrer">
-        Google Advertising Policies and Technologies
-      </a>
+      Where Unity advertisements
+      provide privacy controls,
+      users may review or modify
+      applicable choices.
     </p>
 
+    <p>
+      Restricting personalised advertising
+      does not necessarily prevent
+      non-personalised advertisements
+      from being displayed.
+    </p>
+
+    <h3>3.6 Third-Party Services and Policies</h3>
+
+    <div class="service-box">
+
+      <p>
+        <strong>Unity LevelPlay</strong><br>
+        Advertising mediation
+        and management
+      </p>
+
+      <p>
+        <strong>Unity Ads</strong><br>
+        Advertising delivery
+        and measurement
+      </p>
+
+      <p>
+        <strong>Unity Privacy Policy</strong>
+      </p>
+
+      <p>
+        <a
+          href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer">
+          Unity Game Player and App User Privacy Policy
+        </a>
+      </p>
+
+      <p>
+        <strong>Google Play</strong><br>
+        App distribution
+        and related platform services
+      </p>
+
+      <p>
+        <strong>Google Privacy Policy</strong>
+      </p>
+
+      <p>
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer">
+          Google Privacy Policy
+        </a>
+      </p>
+
+    </div>
+
+    <p>
+      Third-party services may process
+      information in accordance with
+      their privacy policies
+      and applicable laws.
+    </p>
+
+    <!-- 4 -->
 
     <h2>4. Purposes of Processing</h2>
 
     <p>
-      Where applicable, information may be processed for purposes including:
+      Information processed by the App
+      and related services may be used
+      for the following purposes:
     </p>
 
     <ul>
-      <li>Managing income schedules created by users</li>
-      <li>Calculating countdowns to upcoming income dates</li>
-      <li>Providing notifications requested by users</li>
-      <li>Providing home screen widget functionality</li>
-      <li>Performing calculations based on user-entered values</li>
-      <li>Maintaining language and App preferences</li>
-      <li>Providing and measuring advertisements</li>
-      <li>Security and fraud prevention</li>
-      <li>Maintaining service reliability</li>
+      <li>Managing user-created income schedules</li>
+      <li>Calculating countdowns to income dates</li>
+      <li>Providing user-requested notifications</li>
+      <li>Supporting home screen widgets</li>
+      <li>Performing user-requested calculations</li>
+      <li>Maintaining App and language preferences</li>
+      <li>Delivering and measuring advertisements</li>
+      <li>Managing advertising states and rewards</li>
+      <li>Advertising security and fraud prevention</li>
+      <li>Diagnosing errors and improving stability</li>
     </ul>
 
+    <!-- 5 -->
 
     <h2>5. Sharing of Information</h2>
 
     <p>
-      JCraft Studio does not sell income schedules or
-      income amounts directly entered by users into the App.
+      The Developer does not sell
+      income schedules or amounts
+      entered directly by users.
     </p>
 
     <p>
-      Third-party services such as advertising SDKs may,
-      however, process or transmit certain information
-      in accordance with their own policies in order to
-      provide their services.
+      The Developer does not
+      intentionally provide
+      such income-related information
+      to advertising providers
+      for targeted advertising.
     </p>
 
     <p>
-      Information may also be processed where reasonably necessary
-      to comply with applicable laws, legal obligations,
-      or valid requests from competent authorities.
+      However, Unity LevelPlay,
+      Unity Ads, and related
+      advertising partners may
+      process or share device
+      and advertising-related
+      information to provide
+      advertising services.
     </p>
 
+    <p>
+      Such data processing
+      is subject to applicable laws
+      and the providers'
+      privacy policies.
+    </p>
+
+    <p>
+      Information may also be processed
+      where necessary to comply
+      with applicable laws
+      and lawful requests
+      from competent authorities.
+    </p>
+
+    <!-- 6 -->
 
     <h2>6. Data Storage and Retention</h2>
 
     <p>
-      Income schedules, amounts, and App settings entered by users
-      may be stored locally on the user's device for as long as
-      necessary to provide the applicable functionality.
+      Income schedules,
+      expected amounts,
+      notification preferences,
+      and other App settings
+      may be stored locally
+      on the user's device.
     </p>
 
     <p>
-      Users may remove applicable information by using available
-      deletion features, clearing the App's local data through
-      their operating system, or uninstalling the App.
+      Such data may remain on
+      the device until deleted
+      by the user, App data
+      is cleared, or the App
+      is uninstalled.
     </p>
 
     <p>
-      Information processed independently by third-party services
-      may be retained in accordance with the privacy and data
-      retention policies of those providers.
+      Depending on Android backup
+      and restore settings,
+      some information may be
+      restored on another device.
     </p>
 
+    <p>
+      Data processed independently
+      by Unity and related advertising
+      providers is retained
+      according to their policies.
+    </p>
+
+    <!-- 7 -->
 
     <h2>7. Data Deletion</h2>
 
     <p>
-      Because the App does not provide an App-specific
-      user account system, there is no separate account deletion process.
+      The App does not provide
+      an App-specific user account,
+      so there is no separate
+      account deletion procedure.
     </p>
 
     <p>
-      Schedules and related information that can be deleted within
-      the App may be removed by using the applicable deletion features.
+      Users may remove income schedules
+      and related information using
+      available in-App deletion features.
     </p>
 
     <p>
-      To remove all locally stored App data, users may clear the
-      App's data through their device settings or uninstall the App.
+      To remove all App-specific
+      local information, users may
+      clear App data through
+      Android settings or
+      uninstall the App.
     </p>
 
     <p>
-      Uninstalling the App will generally remove information stored
-      in the App's local storage, subject to the behavior and settings
-      of the user's operating system and device.
+      Uninstalling generally
+      removes information stored
+      in the App's private
+      local storage.
     </p>
 
+    <p>
+      Actual retention and restoration
+      may vary depending on device
+      backup and restore behaviour.
+    </p>
+
+    <p>
+      For deletion requests and
+      privacy rights relating to
+      advertising data, please
+      consult the relevant
+      provider's privacy policy.
+    </p>
+
+    <!-- 8 -->
 
     <h2>8. Data Security</h2>
 
     <p>
-      The Developer endeavors to use reasonable technical and
-      organizational safeguards appropriate to the nature of
-      information processed by the App.
+      The Developer endeavours
+      to maintain reasonable
+      technical and organisational
+      safeguards appropriate
+      to information processed
+      by the App.
     </p>
 
     <p>
-      However, no electronic storage or transmission method
-      can guarantee absolute security.
+      However, no electronic
+      storage or transmission
+      method can guarantee
+      absolute security.
     </p>
 
     <p>
-      Accordingly, the Developer does not guarantee complete
-      security beyond the extent required by applicable law.
+      Data loss or exposure may
+      result from lost devices,
+      malicious software,
+      operating system vulnerabilities,
+      user errors, or storage failures.
     </p>
 
+    <!-- 9 -->
 
     <h2>9. Notification Permission</h2>
 
     <p>
-      The App may request operating system notification permission
-      in order to provide reminders configured by users.
+      The App may request
+      operating system notification
+      permission to provide
+      reminders configured by users.
     </p>
 
     <p>
-      Users may allow, restrict, or disable notification permissions
-      at any time through their device settings.
+      Notifications are intended
+      to inform users about
+      scheduled income dates
+      and related events.
     </p>
 
+    <p>
+      Users may allow,
+      restrict, or disable
+      notification permissions
+      through Android settings.
+    </p>
+
+    <p>
+      If permission is denied,
+      some reminder features
+      may not function.
+    </p>
+
+    <!-- 10 -->
 
     <h2>10. Home Screen Widget</h2>
 
     <p>
-      The App may display income schedule and countdown information
-      selected by the user through a home screen widget.
+      The App may display
+      income schedules and
+      countdown information
+      selected by users
+      through a home screen widget.
     </p>
 
     <p>
-      Information necessary for widget functionality may be processed
-      locally on the user's device.
+      Information required
+      for widget functionality
+      is designed to be
+      processed locally.
     </p>
 
     <p>
-      The App is not designed to transmit user-entered income schedules
-      to a remote server operated by JCraft Studio solely for the
-      purpose of providing the widget.
+      The App is not designed
+      to send income schedules
+      to a remote server
+      operated by JCraft Studio
+      solely to display the widget.
     </p>
 
+    <p>
+      Income schedule names,
+      dates, or amounts shown
+      on a home screen widget
+      may be visible to other
+      people who can see
+      the device screen.
+    </p>
+
+    <!-- 11 -->
 
     <h2>11. Financial Disclaimer</h2>
 
     <p>
-      The App's amount and period calculation features are
-      simple calculation tools based on values entered by users.
+      The App's amount and
+      period calculation features
+      are general-purpose tools
+      based on values entered
+      by users.
     </p>
 
     <p>
-      Information and calculation results provided by the App
-      are not intended to constitute financial, investment,
-      tax, accounting, legal, or other professional advice.
+      Information and calculations
+      are not intended to constitute
+      financial, investment,
+      tax, accounting, legal,
+      or other professional advice.
     </p>
 
     <p>
-      Results may not reflect actual taxes, interest,
-      fees, investment returns, salary conditions,
-      employment agreements, or other individual circumstances.
+      Results may not reflect
+      actual taxes, interest,
+      fees, investment returns,
+      salary conditions,
+      employment agreements,
+      or individual circumstances.
     </p>
 
     <p>
-      Actual payment dates, payment amounts, and related conditions
-      may vary depending on contracts, employment relationships,
-      and other individual circumstances.
+      Actual payment dates,
+      payment amounts, and
+      related conditions may vary
+      depending on contracts,
+      employment relationships,
+      and other circumstances.
     </p>
 
     <p>
-      Users should verify relevant agreements,
-      official information, or appropriate professional advice
-      before making decisions that may have financial or legal consequences.
+      Users should verify
+      relevant agreements,
+      official information,
+      or appropriate professional
+      advice before making
+      important financial or
+      legal decisions.
     </p>
 
+    <p>
+      Nothing in this notice
+      excludes legal rights
+      or liabilities that
+      cannot lawfully be excluded.
+    </p>
+
+    <!-- 12 -->
 
     <h2>12. External Links</h2>
 
     <p>
-      The App or related pages may contain links to Google Play
-      or other third-party websites and services.
+      The App or related pages
+      may contain links to
+      Google Play, privacy policies,
+      or other third-party
+      websites and services.
     </p>
 
     <p>
-      The content, operation, and privacy practices of
-      third-party websites and services are controlled by
-      their respective providers.
+      External providers control
+      their own content,
+      services, and
+      privacy practices.
     </p>
 
     <p>
-      Use of those services is subject to the terms and
-      privacy policies of the respective service providers.
+      Their terms and
+      privacy policies
+      apply when users
+      access those services.
     </p>
 
+    <!-- 13 -->
 
     <h2>13. Children's Privacy</h2>
 
     <p>
-      The App is not designed to intentionally collect
-      personal information directly from children.
+      The App is a general
+      income schedule utility
+      and is not primarily
+      directed to children.
     </p>
 
     <p>
-      The App's target audience and advertising configuration
-      are managed in accordance with applicable Google Play policies,
-      advertising policies, and applicable laws.
+      The Developer does not
+      intentionally require
+      children's direct personal
+      identifiers for core features.
     </p>
 
+    <p>
+      Advertising and platform
+      providers may process data
+      in accordance with
+      applicable laws and
+      their privacy policies.
+    </p>
+
+    <!-- 14 -->
 
     <h2>14. Compliance with Laws and Platform Policies</h2>
 
     <p>
-      The Developer endeavors to comply with applicable privacy
-      and data protection laws, Google Play Developer Program Policies,
-      and other relevant requirements in connection with operation
-      of the App.
+      The Developer endeavours
+      to comply with applicable
+      privacy and data protection
+      laws, Google Play Developer
+      Program Policies, and
+      other relevant requirements.
     </p>
 
     <p>
-      This Privacy Policy may be updated if applicable laws,
-      platform policies, App functionality, or third-party services change.
+      This Privacy Policy may
+      be revised when laws,
+      platform policies,
+      App functionality,
+      or third-party services change.
     </p>
 
+    <!-- 15 -->
 
     <h2>15. Changes to This Privacy Policy</h2>
 
     <p>
-      We may revise this Privacy Policy when App functionality,
-      data handling practices, applicable laws, platform policies,
-      or third-party services change.
+      We may update this Privacy Policy
+      due to changes in App functionality,
+      data handling, applicable laws,
+      platform policies,
+      or third-party services.
     </p>
 
     <p>
-      Updated versions will be published on this page and
-      the effective date may be updated where appropriate.
+      Material changes will be
+      reflected on this page,
+      and the effective or
+      last updated date may
+      be revised accordingly.
     </p>
 
+    <p>
+      This revision updates
+      advertising disclosures
+      to reflect the use of
+      Unity LevelPlay and Unity Ads.
+    </p>
+
+    <!-- 16 -->
 
     <h2>16. Developer Information and Contact</h2>
 
     <p>
-      Developer: JCraft Studio
+      <strong>Developer: JCraft Studio</strong>
     </p>
 
     <p>
-      For the Developer's current contact information,
-      email address, and other official developer details,
-      please refer to the developer information displayed
-      on this App's Google Play Store listing.
+      <strong>App: Payday Countdown</strong>
     </p>
 
     <p>
-      For privacy-related or App-related inquiries,
-      please use the Developer contact information provided
-      on the Google Play Store listing.
+      For privacy inquiries,
+      user rights requests,
+      and App-related questions,
+      please use the developer
+      contact information displayed
+      on the App's Google Play listing.
     </p>
 
+    <p>
+      Current official contact
+      details and email addresses
+      are available on Google Play.
+    </p>
 
     <div class="notice">
-      <strong>Notice:</strong><br>
-      This Privacy Policy applies to the Payday Countdown App.
-      If the App's functionality, advertising SDKs,
-      or actual data handling practices change,
-      this Privacy Policy and the Google Play Data safety declarations
-      may also be updated to reflect the actual operation of the App.
+
+      <strong>Notice</strong>
+
+      <p>
+        This Privacy Policy applies
+        to the Payday Countdown App.
+      </p>
+
+      <p>
+        If the App's functionality,
+        advertising SDKs, or
+        data processing practices change,
+        this Policy and Google Play
+        Data safety declarations
+        should be reviewed to
+        reflect actual behaviour.
+      </p>
+
     </div>
 
   </main>
 
+  <footer class="footer">
 
-  <div class="footer">
     <strong>Payday Countdown</strong><br>
     Developer: JCraft Studio<br>
-    Privacy Policy · 개인정보처리방침
-  </div>
+    Privacy Policy · 개인정보처리방침<br>
+    Last updated: November 9, 2026
+
+  </footer>
 
 </div>
 
-
 <script>
   function setLanguage(language) {
-    const korean = document.getElementById('ko');
-    const english = document.getElementById('en');
+    const ko = document.getElementById("ko");
+    const en = document.getElementById("en");
 
-    const koreanButton = document.getElementById('btn-ko');
-    const englishButton = document.getElementById('btn-en');
+    const btnKo = document.getElementById("btn-ko");
+    const btnEn = document.getElementById("btn-en");
 
-    korean.classList.remove('active');
-    english.classList.remove('active');
+    const showKorean = language !== "en";
 
-    koreanButton.classList.remove('active');
-    englishButton.classList.remove('active');
+    ko.classList.toggle("active", showKorean);
+    en.classList.toggle("active", !showKorean);
 
-    if (language === 'en') {
-      english.classList.add('active');
-      englishButton.classList.add('active');
+    btnKo.classList.toggle("active", showKorean);
+    btnEn.classList.toggle("active", !showKorean);
 
-      document.documentElement.lang = 'en';
+    btnKo.setAttribute(
+      "aria-pressed",
+      String(showKorean)
+    );
 
-      localStorage.setItem('privacy-language', 'en');
-    } else {
-      korean.classList.add('active');
-      koreanButton.classList.add('active');
+    btnEn.setAttribute(
+      "aria-pressed",
+      String(!showKorean)
+    );
 
-      document.documentElement.lang = 'ko';
+    document.documentElement.lang =
+      showKorean ? "ko" : "en";
 
-      localStorage.setItem('privacy-language', 'ko');
+    try {
+      localStorage.setItem(
+        "privacy-language",
+        showKorean ? "ko" : "en"
+      );
+    } catch (error) {
+      // Language selection works
+      // even when storage is unavailable.
     }
   }
 
   function getInitialLanguage() {
-    const savedLanguage = localStorage.getItem('privacy-language');
+    let savedLanguage = null;
 
-    if (savedLanguage === 'ko' || savedLanguage === 'en') {
+    try {
+      savedLanguage = localStorage.getItem(
+        "privacy-language"
+      );
+    } catch (error) {
+      savedLanguage = null;
+    }
+
+    if (
+      savedLanguage === "ko" ||
+      savedLanguage === "en"
+    ) {
       return savedLanguage;
     }
 
     const browserLanguage =
-      (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      (
+        navigator.language ||
+        navigator.userLanguage ||
+        "en"
+      ).toLowerCase();
 
-    return browserLanguage.startsWith('ko') ? 'ko' : 'en';
+    return browserLanguage.startsWith("ko")
+      ? "ko"
+      : "en";
   }
 
-  setLanguage(getInitialLanguage());
+  document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+      setLanguage(getInitialLanguage());
+    }
+  );
 </script>
 
 </body>
