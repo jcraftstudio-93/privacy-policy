@@ -1,639 +1,1466 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="robots" content="index,follow" />
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description"
+        content="Privacy Policy for Korean Age Calculator by JCraft Studio">
   <title>Privacy Policy | Korean Age Calculator</title>
+
   <style>
-    :root{
-      --bg:#f6f1e8;
-      --card:#ffffff;
-      --ink:#1f1f1f;
-      --muted:#666;
-      --border:rgba(0,0,0,.08);
-      --accent:#6b5b4a;
+    :root {
+      --bg: #f6f1e8;
+      --card: #ffffff;
+      --ink: #1f1f1f;
+      --muted: #666666;
+      --border: rgba(0,0,0,.08);
+      --accent: #6b5b4a;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-      background:var(--bg);
-      color:var(--ink);
-      line-height:1.55;
+
+    * {
+      box-sizing: border-box;
     }
-    header{
-      position:sticky; top:0;
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system,
+        "Segoe UI", Roboto, Arial,
+        "Noto Sans", "Apple SD Gothic Neo",
+        "Malgun Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      overflow-wrap: break-word;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
       backdrop-filter: blur(8px);
-      background: rgba(246,241,232,.85);
-      border-bottom:1px solid var(--border);
-      z-index:10;
+      background: rgba(246,241,232,.92);
+      border-bottom: 1px solid var(--border);
     }
-    .wrap{max-width:960px; margin:0 auto; padding:18px 16px;}
-    .top{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      flex-wrap:wrap;
+
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 18px 16px;
     }
-    h1{font-size:18px; margin:0; font-weight:900}
-    .sub{margin:6px 0 0; color:var(--muted); font-size:12px}
-    .lang{
-      display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
     }
-    .btn{
-      appearance:none;
-      border:1px solid var(--border);
-      background:#fff;
-      border-radius:999px;
-      padding:8px 12px;
-      cursor:pointer;
-      font-weight:800;
+
+    h1 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: 900;
     }
-    .btn[aria-pressed="true"]{
-      border-color: rgba(107,91,74,.35);
-      background: rgba(107,91,74,.10);
-      color: var(--accent);
-    }
-    main{padding:16px 0 40px;}
-    .card{
-      background:rgba(255,255,255,.85);
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:16px;
-      margin:12px 0;
-    }
-    h2{font-size:16px; margin:0 0 10px; font-weight:900}
-    h3{font-size:14px; margin:16px 0 8px; font-weight:900}
-    ul{margin:8px 0 0 20px}
-    code, .mono{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+    .sub {
+      margin: 6px 0 0;
+      color: var(--muted);
       font-size: 12px;
     }
-    .note{
-      color:var(--muted);
-      font-size:12px;
-      margin-top:8px;
+
+    .lang {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
     }
-    footer{
-      border-top:1px solid var(--border);
-      color:var(--muted);
-      font-size:12px;
-      padding:18px 0 28px;
+
+    .btn {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 999px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--ink);
     }
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .pill{
-      display:inline-block;
-      padding:2px 8px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background:#fff;
-      font-size:12px;
-      color:var(--muted);
-      margin-left:8px;
+
+    .btn[aria-pressed="true"] {
+      border-color: rgba(107,91,74,.35);
+      background: rgba(107,91,74,.12);
+      color: var(--accent);
+    }
+
+    .btn:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    main {
+      padding: 16px 0 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,.9);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 12px 0;
+    }
+
+    h2 {
+      font-size: 17px;
+      margin: 0 0 12px;
+      font-weight: 900;
+    }
+
+    h3 {
+      font-size: 14px;
+      margin: 18px 0 8px;
+      font-weight: 900;
+    }
+
+    p, li {
+      font-size: 14px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 8px 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .service-box {
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #f9f7f3;
+    }
+
+    .service-box p {
+      margin: 6px 0;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-size: 12px;
+      color: var(--muted);
+      margin-left: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      overflow-wrap: anywhere;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      padding: 18px 0 28px;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular,
+        Menlo, Consolas, monospace;
+      font-size: 12px;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        padding: 14px;
+      }
+
+      .card {
+        padding: 16px;
+        border-radius: 14px;
+      }
+
+      .btn {
+        padding: 8px 10px;
+        font-size: 12px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="wrap">
-      <div class="top">
-        <div>
-          <h1>Privacy Policy <span class="pill" id="appNamePill">Korean Age Calculator</span></h1>
-          <div class="sub" id="lastUpdated">Last updated: 2026-02-09</div>
+
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>
+          Privacy Policy
+          <span class="pill">Korean Age Calculator</span>
+        </h1>
+        <div class="sub">
+          JCraft Studio · Last updated: 2026-11-09
         </div>
-        <div class="lang" aria-label="Language switch">
-          <button class="btn" id="btnKo" type="button" aria-pressed="false">한국어</button>
-          <button class="btn" id="btnEn" type="button" aria-pressed="true">English</button>
-          <button class="btn" id="btnEs" type="button" aria-pressed="false">Español</button>
-          <button class="btn" id="btnPt" type="button" aria-pressed="false">Português</button>
-          <button class="btn" id="btnId" type="button" aria-pressed="false">Bahasa</button>
-          <button class="btn" id="btnEnIn" type="button" aria-pressed="false">English (IN)</button>
-        </div>
+      </div>
+
+      <nav class="lang" aria-label="Language switch">
+        <button class="btn" id="btnKo"
+                type="button" aria-pressed="false">
+          한국어
+        </button>
+        <button class="btn" id="btnEn"
+                type="button" aria-pressed="true">
+          English
+        </button>
+        <button class="btn" id="btnEs"
+                type="button" aria-pressed="false">
+          Español
+        </button>
+        <button class="btn" id="btnPt"
+                type="button" aria-pressed="false">
+          Português
+        </button>
+        <button class="btn" id="btnId"
+                type="button" aria-pressed="false">
+          Bahasa
+        </button>
+        <button class="btn" id="btnEnIn"
+                type="button" aria-pressed="false">
+          English (IN)
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- =================================== -->
+  <!-- KOREAN -->
+  <!-- =================================== -->
+
+  <section id="ko" lang="ko" hidden>
+
+    <div class="card">
+      <h2>개요</h2>
+      <p>
+        본 개인정보처리방침은 JCraft Studio가
+        제공하는 Korean Age Calculator
+        (이하 "앱")의 정보 처리 방식을 설명합니다.
+      </p>
+      <p>
+        본 앱은 입력한 생년월일을 바탕으로
+        만나이, 연나이 및 관련 정보를
+        계산하는 유틸리티 앱입니다.
+      </p>
+      <p class="note">
+        개발자 연락처는 Google Play 스토어의
+        해당 앱 등록정보를 참고해 주세요.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>1. 수집 및 처리하는 정보</h2>
+      <p>
+        본 앱은 회원가입이나 로그인을
+        요구하지 않습니다.
+      </p>
+
+      <h3>1.1 사용자 입력 정보</h3>
+      <p>
+        저장 및 즐겨찾기 기능을 사용하는 경우
+        다음 정보가 기기에 저장될 수 있습니다.
+      </p>
+      <ul>
+        <li>이름 또는 별칭</li>
+        <li>생년월일(양력 기준)</li>
+        <li>즐겨찾기 및 정렬 설정</li>
+        <li>앱 언어 및 환경설정</li>
+      </ul>
+      <p>
+        해당 정보는 앱 기능 제공을 위해
+        사용자 기기 내부에 저장되며,
+        개발자 운영 서버로 전송하지 않습니다.
+      </p>
+
+      <h3>1.2 광고 관련 정보</h3>
+      <p>
+        본 앱은 Unity LevelPlay 광고
+        미디에이션 플랫폼과 Unity Ads를
+        통해 배너 및 전면 광고를
+        제공할 수 있습니다.
+      </p>
+      <p>
+        Unity 및 관련 광고 제공업체는
+        다음 정보를 처리할 수 있습니다.
+      </p>
+      <ul>
+        <li>Android 광고 ID 등 광고 식별자</li>
+        <li>IP 주소 및 네트워크 관련 정보</li>
+        <li>기기 모델 및 운영체제 정보</li>
+        <li>앱 식별 정보 및 앱 버전</li>
+        <li>광고 요청, 노출, 클릭 및 상호작용 정보</li>
+        <li>광고 성과 측정 및 부정행위 방지 정보</li>
+        <li>기술적 오류 및 진단 정보</li>
+      </ul>
+      <p>
+        IP 주소는 대략적인 지역을
+        추정하는 데 사용될 수 있습니다.
+        실제 처리 항목은 SDK 구성,
+        기기 설정, 이용 지역 및
+        개인정보 보호 선택에 따라 달라질 수 있습니다.
+      </p>
+
+      <h3>1.3 진단 정보</h3>
+      <p>
+        앱의 안정성 및 오류 분석을 위해
+        Android 또는 앱 배포 플랫폼의
+        진단 기능이 사용될 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. 정보 이용 목적</h2>
+      <ul>
+        <li>생년월일 기반 만나이 및 연나이 계산</li>
+        <li>저장된 인물 목록 및 즐겨찾기 제공</li>
+        <li>앱 설정 유지</li>
+        <li>광고 제공 및 성과 측정</li>
+        <li>광고 부정행위 방지 및 보안 유지</li>
+        <li>오류 분석 및 서비스 안정성 개선</li>
+      </ul>
+      <p class="note">
+        띠(12지)는 출생 연도를 기준으로
+        계산하며 음력 설 날짜를 기준으로 하지 않습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. 제3자 제공 및 공유</h2>
+      <p>
+        개발자는 사용자가 저장한 이름,
+        생년월일 및 즐겨찾기 정보를
+        광고 제공업체에 의도적으로
+        전달하거나 판매하지 않습니다.
+      </p>
+      <p>
+        다만 Unity LevelPlay와 Unity Ads 및
+        관련 광고 파트너는 광고 제공,
+        성과 측정 및 부정행위 방지를 위해
+        광고 식별자와 기기 관련 정보를
+        처리하거나 공유할 수 있습니다.
+      </p>
+      <p>
+        제3자 데이터 처리는 해당 제공업체의
+        개인정보처리방침 및 적용 법률을 따릅니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. 로컬 저장 및 삭제</h2>
+      <p>
+        이름, 생년월일, 즐겨찾기 및 앱 설정은
+        기기 내부에 저장됩니다.
+      </p>
+      <p>
+        사용자는 앱에서 제공하는 삭제 기능을
+        통해 저장된 항목을 삭제할 수 있습니다.
+        앱 데이터를 초기화하거나 앱을 삭제하면
+        일반적으로 앱 전용 데이터가 제거됩니다.
+      </p>
+      <p>
+        단, Android 백업 및 복원 설정에 따라
+        일부 데이터가 복원될 수 있습니다.
+      </p>
+      <p>
+        광고 서비스에서 처리하는 데이터의
+        보관 및 삭제는 해당 업체의 정책에 따릅니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. 아동의 개인정보</h2>
+      <p>
+        본 앱은 아동을 주요 대상으로
+        설계된 서비스가 아닙니다.
+        기본 기능을 이용하기 위해
+        회원가입이나 개인정보 제출을
+        요구하지 않습니다.
+      </p>
+      <p>
+        광고 관련 데이터는 관련 법률과
+        광고 제공업체의 정책에 따라
+        처리될 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. 사용자 선택권</h2>
+      <ul>
+        <li>앱 내 저장 기록 및 즐겨찾기 삭제</li>
+        <li>앱 데이터 초기화 또는 앱 제거</li>
+        <li>기기 광고 ID 설정 및 개인정보 설정 관리</li>
+        <li>관련 법률에 따른 개인정보 권리 행사</li>
+      </ul>
+      <p>
+        사용자는 Android 버전에 따라
+        광고 ID를 재설정하거나 삭제할 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. 제3자 서비스</h2>
+      <ul>
+        <li>
+          <strong>Unity LevelPlay:</strong>
+          광고 미디에이션 및 관리
+        </li>
+        <li>
+          <strong>Unity Ads:</strong>
+          광고 제공 및 성과 측정
+        </li>
+        <li>
+          <strong>Google Play:</strong>
+          앱 배포 및 관련 플랫폼 서비스
+        </li>
+      </ul>
+
+      <div class="service-box">
+        <p><strong>Unity 개인정보처리방침</strong></p>
+        <p>
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+             target="_blank" rel="noopener noreferrer">
+            Unity Game Player and App User Privacy Policy
+          </a>
+        </p>
+        <p><strong>Google 개인정보처리방침</strong></p>
+        <p>
+          <a href="https://policies.google.com/privacy"
+             target="_blank" rel="noopener noreferrer">
+            Google Privacy Policy
+          </a>
+        </p>
       </div>
     </div>
-  </header>
 
-  <main class="wrap">
-    <!-- EN -->
-    <section id="en" lang="en">
-      <div class="card">
-        <h2>Overview</h2>
+    <div class="card">
+      <h2>8. 개인정보처리방침 변경</h2>
+      <p>
+        본 방침은 법률, 앱 기능, 광고 서비스 또는
+        Google Play 정책 변경에 따라
+        수정될 수 있습니다.
+        변경사항은 본 페이지에 게시됩니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. 개발자 및 문의</h2>
+      <p><strong>개발자: JCraft Studio</strong></p>
+      <p>
+        개인정보 관련 문의는
+        Google Play 스토어에 표시된
+        개발자 연락처를 이용해 주세요.
+      </p>
+      <p class="note">
+        시행일: 2026-11-09<br>
+        최종 수정일: 2026-11-09
+      </p>
+    </div>
+
+  </section>
+
+  <!-- =================================== -->
+  <!-- ENGLISH -->
+  <!-- =================================== -->
+
+  <section id="en" lang="en" hidden>
+
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This Privacy Policy explains how
+        <strong>Korean Age Calculator</strong>
+        ("the App"), provided by JCraft Studio,
+        handles information.
+      </p>
+      <p>
+        The App calculates international age,
+        Korean year-age, and related information
+        based on the date of birth entered.
+      </p>
+      <p class="note">
+        Developer contact information is available
+        on the App's Google Play Store listing.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>1. Information We Process</h2>
+      <p>No account sign-in is required.</p>
+
+      <h3>1.1 User-entered information</h3>
+      <ul>
+        <li>Names or nicknames</li>
+        <li>Dates of birth (Gregorian calendar)</li>
+        <li>Favorites and sorting preferences</li>
+        <li>Language and App settings</li>
+      </ul>
+      <p>
+        Saved information is stored locally
+        on the user's device and is not
+        transmitted to a developer-operated server.
+      </p>
+
+      <h3>1.2 Advertising information</h3>
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>
+        advertising mediation and
+        <strong>Unity Ads</strong>
+        for banner and interstitial advertising.
+      </p>
+      <p>
+        Unity and related advertising providers
+        may process:
+      </p>
+      <ul>
+        <li>Android Advertising ID or similar identifiers</li>
+        <li>IP address and network information</li>
+        <li>Device model and operating system</li>
+        <li>App identifier and version</li>
+        <li>Ad requests, impressions, clicks and interactions</li>
+        <li>Ad measurement and fraud-prevention information</li>
+        <li>Technical diagnostics and errors</li>
+      </ul>
+      <p>
+        IP addresses may be used to estimate
+        approximate location. Actual processing
+        depends on SDK configuration,
+        device settings, privacy choices,
+        location, and applicable laws.
+      </p>
+
+      <h3>1.3 Diagnostics</h3>
+      <p>
+        Basic diagnostic features provided
+        by Android or the distribution platform
+        may be used to improve App stability.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. How Information Is Used</h2>
+      <ul>
+        <li>Calculate international and Korean year-age</li>
+        <li>Display saved people and favorites</li>
+        <li>Maintain App preferences</li>
+        <li>Display and measure advertisements</li>
+        <li>Prevent advertising fraud</li>
+        <li>Improve reliability and diagnose errors</li>
+      </ul>
+      <p class="note">
+        Zodiac animals are calculated by birth year,
+        not lunar new year cutoffs.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. Sharing of Information</h2>
+      <p>
+        The Developer does not intentionally
+        transmit or sell users' locally
+        stored names, birth dates,
+        or favorites to advertising providers.
+      </p>
+      <p>
+        However, Unity LevelPlay,
+        Unity Ads, and related advertising
+        partners may process or share
+        device identifiers and
+        advertising-related information.
+      </p>
+      <p>
+        Such processing is governed by
+        their privacy policies and applicable laws.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. Local Storage and Deletion</h2>
+      <p>
+        Saved names, birth dates,
+        favorites, and settings are
+        stored locally on the device.
+      </p>
+      <p>
+        Users may delete records
+        using available in-App features.
+        Clearing App data or uninstalling
+        generally removes App-specific data.
+      </p>
+      <p>
+        Some data may be restored through
+        Android backup and restore features.
+        Advertising-related information
+        is retained under provider policies.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Children's Privacy</h2>
+      <p>
+        The App is not primarily directed
+        to children and does not require
+        account registration or submission
+        of personal information
+        for its core features.
+      </p>
+      <p>
+        Advertising-related processing is
+        subject to applicable laws
+        and provider privacy policies.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Your Choices</h2>
+      <ul>
+        <li>Delete saved entries and favorites</li>
+        <li>Clear App data or uninstall the App</li>
+        <li>Manage advertising ID and privacy settings</li>
+        <li>Exercise applicable privacy rights</li>
+      </ul>
+      <p>
+        Advertising IDs may be reset
+        or deleted depending on Android version.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Third-Party Services</h2>
+      <ul>
+        <li>Unity LevelPlay — Advertising mediation</li>
+        <li>Unity Ads — Ad delivery and measurement</li>
+        <li>Google Play — App distribution</li>
+      </ul>
+      <div class="service-box">
         <p>
-          This Privacy Policy explains how the app
-          <strong>Korean Age Calculator</strong> ("the App") handles information.
+          <strong>Unity Privacy Policy</strong><br>
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+             target="_blank" rel="noopener noreferrer">
+            Unity Game Player and App User Privacy Policy
+          </a>
         </p>
-        <p class="note">
-          Developer information (name, address, email) is provided on the Google Play Store listing.
-          Please refer to the store page for official contact details.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Information We Collect</h2>
-        <p><strong>The App does not require account sign-in.</strong></p>
-
-        <h3>1) User-provided data (stored on your device)</h3>
-        <p>If you choose to use the App’s save/history/favorites features, you may enter:</p>
-        <ul>
-          <li>Name (e.g., family/friend nickname)</li>
-          <li>Birth date (solar/Gregorian input)</li>
-          <li>Favorites and sorting preferences</li>
-        </ul>
-        <p>This data is stored locally on your device to provide the App’s core functions.</p>
-
-        <h3>2) Advertising data (AdMob)</h3>
         <p>
-          The App may show ads (banner/interstitial) via Google AdMob.
-          Google and its partners may collect certain identifiers and usage data to serve and measure ads.
-        </p>
-        <p class="note">
-          The exact data collected depends on your device settings, region, consent choices, and Google’s policies.
-        </p>
-
-        <h3>3) Diagnostics (optional)</h3>
-        <p>
-          The App may use basic performance diagnostics (e.g., crash reports) to improve stability.
-          Where used, these services are provided by Google and follow their privacy terms.
+          <strong>Google Privacy Policy</strong><br>
+          <a href="https://policies.google.com/privacy"
+             target="_blank" rel="noopener noreferrer">
+            Google Privacy Policy
+          </a>
         </p>
       </div>
+    </div>
 
-      <div class="card">
-        <h2>How We Use Information</h2>
-        <ul>
-          <li>To calculate international age and Korean year-age based on the date you enter</li>
-          <li>To show your saved list, favorites, and quick access</li>
-          <li>To show ads and measure ad performance (via AdMob)</li>
-          <li>To improve app reliability (e.g., crash diagnostics)</li>
-        </ul>
-        <p class="note">
-          Zodiac (12-year animal) is calculated based on birth year (not lunar new year cutoffs).
-        </p>
+    <div class="card">
+      <h2>8. Changes to This Policy</h2>
+      <p>
+        This policy may change due to updates
+        in App functionality, advertising,
+        applicable laws, or platform policies.
+        Material changes will be posted here.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. Contact</h2>
+      <p><strong>Developer: JCraft Studio</strong></p>
+      <p>
+        For privacy inquiries, refer to
+        the developer contact details
+        on the Google Play listing.
+      </p>
+      <p class="note">
+        Effective Date: 2026-11-09<br>
+        Last Updated: 2026-11-09
+      </p>
+    </div>
+
+  </section>
+
+  <!-- =================================== -->
+  <!-- ENGLISH (INDIA) -->
+  <!-- =================================== -->
+
+  <section id="en-in" lang="en-IN" hidden>
+
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        This Privacy Policy explains how
+        <strong>Korean Age Calculator</strong>
+        ("the App") by JCraft Studio
+        processes information.
+      </p>
+      <p>
+        No account sign-in is required.
+        Developer contact details are
+        available on the Google Play listing.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>1. Information We Process</h2>
+      <h3>1.1 Information saved on your device</h3>
+      <ul>
+        <li>Names or nicknames (optional)</li>
+        <li>Dates of birth (Gregorian calendar)</li>
+        <li>Favourites and sorting preferences</li>
+        <li>Language and App settings</li>
+      </ul>
+      <p>
+        Saved information remains on the device
+        and is not sent to the Developer's server.
+      </p>
+
+      <h3>1.2 Advertising information</h3>
+      <p>
+        The App uses Unity LevelPlay
+        and Unity Ads for banner and
+        interstitial advertisements.
+      </p>
+      <p>
+        Advertising providers may process
+        the Android Advertising ID,
+        IP address, device and OS information,
+        App identifiers, ad impressions,
+        clicks, interactions, and diagnostic
+        data for advertising measurement
+        and fraud prevention.
+      </p>
+      <p>
+        IP addresses may indicate an
+        approximate location.
+        Processing varies by SDK settings,
+        region, privacy choices,
+        and applicable laws.
+      </p>
+
+      <h3>1.3 Diagnostics</h3>
+      <p>
+        Android or platform diagnostic
+        information may be used
+        to improve App reliability.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. How Information Is Used</h2>
+      <ul>
+        <li>Calculate international age and Korean year-age</li>
+        <li>Display saved people and favourites</li>
+        <li>Maintain App preferences</li>
+        <li>Deliver and measure advertisements</li>
+        <li>Prevent invalid advertising activity</li>
+        <li>Diagnose technical issues</li>
+      </ul>
+      <p class="note">
+        Zodiac is calculated by birth year,
+        not lunar new year cutoffs.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. Sharing and Storage</h2>
+      <p>
+        The Developer does not sell or
+        intentionally share locally saved
+        names and birth dates with advertisers.
+        These records are stored on the device.
+      </p>
+      <p>
+        Unity and related advertising partners
+        may process and share advertising
+        identifiers and device information
+        under their privacy policies.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. Retention and Deletion</h2>
+      <p>
+        Users can remove saved items
+        inside the App. Uninstalling or
+        clearing App data generally removes
+        local records, subject to
+        device backup and restoration.
+      </p>
+      <p>
+        Advertising information is retained
+        and deleted under providers' policies.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Children and Your Choices</h2>
+      <p>
+        The App is not primarily directed
+        to children. You may manage
+        Android advertising privacy settings
+        and exercise applicable legal rights.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Third-Party Services</h2>
+      <p>
+        Unity LevelPlay, Unity Ads,
+        and Google Play services may
+        process information under
+        their respective policies.
+      </p>
+      <p>
+        Unity:
+        <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+           target="_blank" rel="noopener noreferrer">
+          Unity Privacy Policy
+        </a>
+      </p>
+      <p>
+        Google:
+        <a href="https://policies.google.com/privacy"
+           target="_blank" rel="noopener noreferrer">
+          Google Privacy Policy
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Changes and Contact</h2>
+      <p>
+        Updates will be published on this page.
+        For developer contact information,
+        refer to the App's Google Play listing.
+      </p>
+      <p class="note">
+        Effective Date: 2026-11-09
+      </p>
+    </div>
+
+  </section>
+
+  <!-- =================================== -->
+  <!-- ESPAÑOL -->
+  <!-- =================================== -->
+
+  <section id="es" lang="es" hidden>
+
+    <div class="card">
+      <h2>Resumen</h2>
+      <p>
+        Esta Política de Privacidad explica
+        cómo <strong>Korean Age Calculator</strong>,
+        de JCraft Studio, trata la información.
+        No se requiere crear una cuenta.
+      </p>
+      <p class="note">
+        Los datos de contacto del desarrollador
+        están disponibles en Google Play.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>1. Información tratada</h2>
+      <h3>1.1 Datos guardados en el dispositivo</h3>
+      <ul>
+        <li>Nombre o apodo (opcional)</li>
+        <li>Fecha de nacimiento (calendario gregoriano)</li>
+        <li>Favoritos y preferencias de ordenación</li>
+        <li>Idioma y configuración de la aplicación</li>
+      </ul>
+      <p>
+        Los datos se almacenan localmente
+        y no se envían a un servidor
+        operado por el desarrollador.
+      </p>
+
+      <h3>1.2 Datos publicitarios</h3>
+      <p>
+        La aplicación utiliza Unity LevelPlay
+        y Unity Ads para mostrar anuncios
+        de banner e intersticiales.
+      </p>
+      <p>
+        Los proveedores publicitarios
+        pueden tratar identificadores
+        publicitarios de Android,
+        direcciones IP, información
+        del dispositivo y del sistema operativo,
+        identificadores de la aplicación,
+        impresiones, clics, interacciones
+        y datos de diagnóstico.
+      </p>
+      <p>
+        Estos datos pueden utilizarse
+        para mostrar y medir anuncios,
+        prevenir fraudes y mantener
+        la seguridad del servicio.
+        La dirección IP puede permitir
+        estimar una ubicación aproximada.
+      </p>
+      <p>
+        El tratamiento depende de la
+        configuración del SDK, la región,
+        las opciones de privacidad
+        y la legislación aplicable.
+      </p>
+
+      <h3>1.3 Diagnósticos</h3>
+      <p>
+        Se pueden utilizar diagnósticos
+        básicos de Android o de la plataforma
+        para mejorar la estabilidad.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Finalidades del tratamiento</h2>
+      <ul>
+        <li>Calcular la edad internacional y coreana</li>
+        <li>Mostrar personas guardadas y favoritos</li>
+        <li>Mantener la configuración</li>
+        <li>Mostrar y medir anuncios</li>
+        <li>Prevenir el fraude publicitario</li>
+        <li>Mejorar la estabilidad</li>
+      </ul>
+      <p class="note">
+        El signo del zodiaco chino se calcula
+        por el año de nacimiento,
+        no por el año nuevo lunar.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. Compartición de información</h2>
+      <p>
+        El desarrollador no vende ni
+        transmite intencionadamente
+        los nombres y fechas de nacimiento
+        guardados a proveedores publicitarios.
+      </p>
+      <p>
+        Unity y sus socios pueden tratar
+        o compartir datos publicitarios
+        y del dispositivo conforme a
+        sus políticas de privacidad.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. Conservación y eliminación</h2>
+      <p>
+        Puedes borrar los registros desde
+        la aplicación. Al borrar los datos
+        de la aplicación o desinstalarla,
+        normalmente se eliminan
+        los datos locales.
+      </p>
+      <p>
+        Algunas copias pueden restaurarse
+        mediante las funciones de respaldo
+        del dispositivo. Los datos
+        publicitarios se conservan según
+        las políticas de los proveedores.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Privacidad infantil y opciones</h2>
+      <p>
+        La aplicación no está dirigida
+        principalmente a menores.
+        Puedes gestionar los ajustes
+        de privacidad publicitaria
+        de Android y ejercer los derechos
+        previstos por la legislación aplicable.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Servicios de terceros</h2>
+      <p>
+        Unity LevelPlay, Unity Ads y
+        Google Play pueden tratar datos
+        conforme a sus políticas.
+      </p>
+      <p>
+        Unity:
+        <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+           target="_blank" rel="noopener noreferrer">
+          Política de privacidad de Unity
+        </a>
+      </p>
+      <p>
+        Google:
+        <a href="https://policies.google.com/privacy"
+           target="_blank" rel="noopener noreferrer">
+          Política de privacidad de Google
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Cambios y contacto</h2>
+      <p>
+        Los cambios se publicarán en esta página.
+        Para contactar con el desarrollador,
+        consulta la ficha de Google Play.
+      </p>
+      <p class="note">
+        Fecha de entrada en vigor: 2026-11-09
+      </p>
+    </div>
+
+  </section>
+
+  <!-- =================================== -->
+  <!-- PORTUGUÊS (BRASIL) -->
+  <!-- =================================== -->
+
+  <section id="pt" lang="pt-BR" hidden>
+
+    <div class="card">
+      <h2>Visão geral</h2>
+      <p>
+        Esta Política de Privacidade explica
+        como o <strong>Korean Age Calculator</strong>,
+        da JCraft Studio, trata informações.
+        Não é necessário criar uma conta.
+      </p>
+      <p class="note">
+        Os contatos do desenvolvedor
+        estão disponíveis na Google Play.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>1. Informações tratadas</h2>
+      <h3>1.1 Dados armazenados no dispositivo</h3>
+      <ul>
+        <li>Nome ou apelido (opcional)</li>
+        <li>Data de nascimento (calendário gregoriano)</li>
+        <li>Favoritos e preferências de ordenação</li>
+        <li>Idioma e configurações do aplicativo</li>
+      </ul>
+      <p>
+        Os dados são armazenados localmente
+        no dispositivo e não são enviados
+        a um servidor do desenvolvedor.
+      </p>
+
+      <h3>1.2 Dados de publicidade</h3>
+      <p>
+        O aplicativo utiliza Unity LevelPlay
+        e Unity Ads para exibir anúncios
+        de banner e intersticiais.
+      </p>
+      <p>
+        Os provedores de anúncios podem
+        tratar identificadores de publicidade
+        do Android, endereços IP,
+        informações do dispositivo
+        e do sistema operacional,
+        identificadores do aplicativo,
+        impressões, cliques, interações
+        e dados de diagnóstico.
+      </p>
+      <p>
+        Essas informações podem ser usadas
+        para veiculação e medição de anúncios,
+        prevenção de fraudes e segurança.
+        O endereço IP pode indicar
+        uma localização aproximada.
+      </p>
+      <p>
+        O tratamento pode variar conforme
+        a configuração do SDK, a região,
+        as escolhas de privacidade
+        e a legislação aplicável.
+      </p>
+
+      <h3>1.3 Diagnósticos</h3>
+      <p>
+        Recursos básicos de diagnóstico
+        do Android ou da plataforma
+        podem ser utilizados para
+        melhorar a estabilidade.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Finalidades</h2>
+      <ul>
+        <li>Calcular a idade internacional e coreana</li>
+        <li>Mostrar pessoas salvas e favoritos</li>
+        <li>Manter as preferências do aplicativo</li>
+        <li>Exibir anúncios e medir o desempenho</li>
+        <li>Prevenir fraudes publicitárias</li>
+        <li>Melhorar a estabilidade</li>
+      </ul>
+      <p class="note">
+        O zodíaco chinês é calculado pelo
+        ano de nascimento, não pela
+        data do ano novo lunar.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. Compartilhamento de informações</h2>
+      <p>
+        O desenvolvedor não vende nem
+        transmite intencionalmente nomes
+        e datas de nascimento salvos
+        a provedores de publicidade.
+      </p>
+      <p>
+        Unity e seus parceiros podem tratar
+        ou compartilhar dados publicitários
+        e do dispositivo conforme
+        suas políticas de privacidade.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. Armazenamento e exclusão</h2>
+      <p>
+        Você pode excluir registros no aplicativo.
+        Limpar os dados ou desinstalar o aplicativo
+        geralmente remove os dados locais.
+      </p>
+      <p>
+        Alguns dados podem ser restaurados
+        por mecanismos de backup do dispositivo.
+        Dados de publicidade são mantidos
+        conforme as políticas dos provedores.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Privacidade infantil e escolhas</h2>
+      <p>
+        O aplicativo não é direcionado
+        principalmente a crianças.
+        Você pode gerenciar as configurações
+        de privacidade publicitária do Android
+        e exercer seus direitos legais.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Serviços de terceiros</h2>
+      <p>
+        Unity LevelPlay, Unity Ads e
+        Google Play podem tratar informações
+        conforme suas respectivas políticas.
+      </p>
+      <p>
+        Unity:
+        <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+           target="_blank" rel="noopener noreferrer">
+          Política de Privacidade da Unity
+        </a>
+      </p>
+      <p>
+        Google:
+        <a href="https://policies.google.com/privacy"
+           target="_blank" rel="noopener noreferrer">
+          Política de Privacidade do Google
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Alterações e contato</h2>
+      <p>
+        As alterações serão publicadas aqui.
+        Para entrar em contato com o
+        desenvolvedor, consulte a página
+        do aplicativo na Google Play.
+      </p>
+      <p class="note">
+        Data de vigência: 2026-11-09
+      </p>
+    </div>
+
+  </section>
+
+  <!-- =================================== -->
+  <!-- BAHASA INDONESIA -->
+  <!-- =================================== -->
+
+  <section id="id" lang="id" hidden>
+
+    <div class="card">
+      <h2>Ringkasan</h2>
+      <p>
+        Kebijakan Privasi ini menjelaskan
+        bagaimana <strong>Korean Age Calculator</strong>
+        dari JCraft Studio memproses informasi.
+        Aplikasi tidak memerlukan akun.
+      </p>
+      <p class="note">
+        Kontak pengembang tersedia
+        di halaman Google Play.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>1. Informasi yang diproses</h2>
+      <h3>1.1 Data yang disimpan di perangkat</h3>
+      <ul>
+        <li>Nama atau nama panggilan (opsional)</li>
+        <li>Tanggal lahir (kalender Gregorian)</li>
+        <li>Favorit dan preferensi pengurutan</li>
+        <li>Bahasa dan pengaturan aplikasi</li>
+      </ul>
+      <p>
+        Data disimpan secara lokal
+        di perangkat dan tidak dikirim
+        ke server milik pengembang.
+      </p>
+
+      <h3>1.2 Informasi periklanan</h3>
+      <p>
+        Aplikasi menggunakan Unity LevelPlay
+        dan Unity Ads untuk menampilkan
+        iklan banner dan interstisial.
+      </p>
+      <p>
+        Penyedia iklan dapat memproses
+        ID iklan Android, alamat IP,
+        informasi perangkat dan sistem operasi,
+        pengenal aplikasi, tayangan iklan,
+        klik, interaksi, serta
+        data diagnostik.
+      </p>
+      <p>
+        Informasi tersebut dapat digunakan
+        untuk penayangan dan pengukuran iklan,
+        pencegahan penipuan, dan keamanan.
+        Alamat IP dapat digunakan
+        untuk memperkirakan lokasi umum.
+      </p>
+      <p>
+        Pemrosesan bergantung pada
+        konfigurasi SDK, wilayah,
+        pilihan privasi, dan hukum
+        yang berlaku.
+      </p>
+
+      <h3>1.3 Diagnostik</h3>
+      <p>
+        Informasi diagnostik dasar
+        dari Android atau platform
+        dapat digunakan untuk
+        meningkatkan stabilitas.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>2. Tujuan penggunaan</h2>
+      <ul>
+        <li>Menghitung usia internasional dan usia Korea</li>
+        <li>Menampilkan daftar tersimpan dan favorit</li>
+        <li>Mempertahankan pengaturan aplikasi</li>
+        <li>Menampilkan dan mengukur iklan</li>
+        <li>Mencegah penipuan iklan</li>
+        <li>Meningkatkan stabilitas aplikasi</li>
+      </ul>
+      <p class="note">
+        Shio dihitung berdasarkan tahun lahir,
+        bukan pergantian tahun baru lunar.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. Pembagian informasi</h2>
+      <p>
+        Pengembang tidak menjual atau
+        secara sengaja mengirimkan nama
+        dan tanggal lahir yang disimpan
+        kepada penyedia iklan.
+      </p>
+      <p>
+        Unity dan mitra iklannya dapat
+        memproses atau membagikan data
+        terkait iklan dan perangkat
+        sesuai kebijakan privasi mereka.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>4. Penyimpanan dan penghapusan</h2>
+      <p>
+        Anda dapat menghapus catatan
+        melalui aplikasi. Menghapus data
+        aplikasi atau mencopot pemasangan
+        biasanya menghapus data lokal.
+      </p>
+      <p>
+        Sebagian data dapat dipulihkan
+        melalui fitur pencadangan perangkat.
+        Data iklan disimpan sesuai
+        kebijakan penyedia layanan.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Privasi anak dan pilihan pengguna</h2>
+      <p>
+        Aplikasi tidak secara khusus
+        ditujukan kepada anak-anak.
+        Anda dapat mengelola pengaturan
+        privasi iklan Android dan
+        menggunakan hak privasi yang
+        diberikan oleh hukum.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Layanan pihak ketiga</h2>
+      <p>
+        Unity LevelPlay, Unity Ads,
+        dan Google Play dapat memproses
+        informasi menurut kebijakan mereka.
+      </p>
+      <p>
+        Unity:
+        <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+           target="_blank" rel="noopener noreferrer">
+          Kebijakan Privasi Unity
+        </a>
+      </p>
+      <p>
+        Google:
+        <a href="https://policies.google.com/privacy"
+           target="_blank" rel="noopener noreferrer">
+          Kebijakan Privasi Google
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>7. Perubahan dan kontak</h2>
+      <p>
+        Perubahan kebijakan akan diumumkan
+        di halaman ini. Untuk menghubungi
+        pengembang, lihat informasi
+        kontak pada halaman Google Play.
+      </p>
+      <p class="note">
+        Tanggal berlaku: 2026-11-09
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="wrap" style="padding:0">
+      <div class="mono">
+        Document: privacy-policy.html
       </div>
-
-      <div class="card">
-        <h2>Data Sharing</h2>
-        <p>We do not sell your personal data.</p>
-        <p>The App may share limited data with third parties only in these cases:</p>
-        <ul>
-          <li><strong>Advertising providers</strong> (Google AdMob) for ad serving/measurement</li>
-          <li><strong>Platform services</strong> for crash/performance diagnostics (if enabled)</li>
-          <li><strong>Legal compliance</strong> if required by law</li>
-        </ul>
+      <div>
+        © 2026 JCraft Studio ·
+        Effective Date: 2026-11-09
       </div>
+    </div>
+  </footer>
 
-      <div class="card">
-        <h2>Local Storage</h2>
-        <p>
-          Saved entries (names, birth dates, favorites) are stored locally on your device.
-          You can delete entries inside the App. Uninstalling the App removes locally stored data.
-        </p>
-      </div>
+</main>
 
-      <div class="card">
-        <h2>Children’s Privacy</h2>
-        <p>
-          The App is not intended for children under the age required by applicable laws for consent.
-          If you believe a child has provided information through the App, please contact the developer
-          via the Google Play Store listing so we can address it.
-        </p>
-      </div>
+<script>
+(function() {
+  const get = (id) => document.getElementById(id);
 
-      <div class="card">
-        <h2>Your Choices</h2>
-        <ul>
-          <li><strong>Delete data:</strong> remove saved items inside the App or uninstall the App</li>
-          <li><strong>Ad preferences:</strong> you may control ad personalization in your Google settings</li>
-          <li><strong>Permissions:</strong> the App does not require sensitive permissions for core features</li>
-        </ul>
-      </div>
+  const langs = [
+    { key: "ko", sec: get("ko"), btn: get("btnKo"), htmlLang: "ko" },
+    { key: "en", sec: get("en"), btn: get("btnEn"), htmlLang: "en" },
+    { key: "es", sec: get("es"), btn: get("btnEs"), htmlLang: "es" },
+    { key: "pt", sec: get("pt"), btn: get("btnPt"), htmlLang: "pt-BR" },
+    { key: "id", sec: get("id"), btn: get("btnId"), htmlLang: "id" },
+    { key: "en-in", sec: get("en-in"), btn: get("btnEnIn"), htmlLang: "en-IN" }
+  ];
 
-      <div class="card">
-        <h2>Third-Party Services</h2>
-        <p>Ads are served by Google. Please review Google’s policies for more details:</p>
-        <ul>
-          <li>Google Privacy Policy</li>
-          <li>Google AdMob policies and disclosures</li>
-        </ul>
-        <p class="note">
-          (Links are intentionally not embedded here. Search the official Google pages by name.)
-        </p>
-      </div>
+  function setLang(key) {
+    const selected = langs.some(item => item.key === key)
+      ? key
+      : "en";
 
-      <div class="card">
-        <h2>Changes to This Policy</h2>
-        <p>
-          We may update this Privacy Policy from time to time. The “Last updated” date at the top will be revised
-          when changes are made.
-        </p>
-      </div>
+    for (const item of langs) {
+      const active = item.key === selected;
+      item.sec.hidden = !active;
+      item.btn.setAttribute(
+        "aria-pressed",
+        String(active)
+      );
 
-      <div class="card">
-        <h2>Contact</h2>
-        <p>For developer contact details, please refer to the Google Play Store listing for this App.</p>
-      </div>
-    </section>
-
-    <!-- EN-IN -->
-    <section id="en-in" lang="en-IN" style="display:none">
-      <div class="card">
-        <h2>Overview</h2>
-        <p>
-          This Privacy Policy explains how <strong>Korean Age Calculator</strong> ("the App") handles information.
-        </p>
-        <p class="note">
-          Developer contact details are provided on the Google Play Store listing.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Information We Collect</h2>
-        <p><strong>No sign-in is required.</strong></p>
-
-        <h3>1) Data you enter (stored on your device)</h3>
-        <ul>
-          <li>Name (optional)</li>
-          <li>Birth date (solar/Gregorian input)</li>
-          <li>Favourites and sorting preferences</li>
-        </ul>
-        <p>This data stays on your device and is used to provide app features.</p>
-
-        <h3>2) Advertising (AdMob)</h3>
-        <p>
-          The App may show ads via Google AdMob. Google and its partners may collect identifiers and usage data
-          to serve and measure ads, depending on your settings, region, and consent choices.
-        </p>
-
-        <h3>3) Diagnostics (optional)</h3>
-        <p>We may use basic crash/performance diagnostics to improve stability.</p>
-      </div>
-
-      <div class="card">
-        <h2>How We Use Information</h2>
-        <ul>
-          <li>To calculate international age and Korean year-age</li>
-          <li>To show saved people and favourites</li>
-          <li>To show ads and measure ad performance</li>
-          <li>To improve reliability (diagnostics)</li>
-        </ul>
-        <p class="note">
-          Zodiac is calculated by birth year (not lunar new year cutoffs).
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Local Storage & Deletion</h2>
-        <p>
-          Saved data is stored locally on your device. You can delete items in the App or uninstall the App to remove data.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Third-Party Services</h2>
-        <p>Ads are served by Google (AdMob). Please review Google Privacy Policy and AdMob disclosures.</p>
-        <p class="note">(Links are not embedded; search official Google pages by name.)</p>
-      </div>
-
-      <div class="card">
-        <h2>Contact</h2>
-        <p>Developer contact details are available on the Google Play Store listing.</p>
-      </div>
-    </section>
-
-    <!-- ES -->
-    <section id="es" lang="es" style="display:none">
-      <div class="card">
-        <h2>Resumen</h2>
-        <p>
-          Esta Política de Privacidad explica cómo la app <strong>Korean Age Calculator</strong> (la “App”)
-          maneja la información.
-        </p>
-        <p class="note">
-          Los datos de contacto del desarrollador aparecen en la ficha de Google Play.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Información que recopilamos</h2>
-        <p><strong>No se requiere iniciar sesión.</strong></p>
-
-        <h3>1) Datos ingresados (guardados en tu dispositivo)</h3>
-        <ul>
-          <li>Nombre (opcional)</li>
-          <li>Fecha de nacimiento (calendario solar/Gregoriano)</li>
-          <li>Favoritos y preferencias de orden</li>
-        </ul>
-
-        <h3>2) Publicidad (AdMob)</h3>
-        <p>
-          La App puede mostrar anuncios mediante Google AdMob. Google y sus socios pueden recopilar identificadores
-          y datos de uso para mostrar y medir anuncios, según configuración, región y consentimiento.
-        </p>
-
-        <h3>3) Diagnóstico (opcional)</h3>
-        <p>Podemos usar diagnósticos básicos (p. ej., fallos) para mejorar estabilidad.</p>
-      </div>
-
-      <div class="card">
-        <h2>Uso de la información</h2>
-        <ul>
-          <li>Calcular edad internacional y edad coreana (por año)</li>
-          <li>Mostrar lista guardada y favoritos</li>
-          <li>Mostrar anuncios y medir rendimiento</li>
-          <li>Mejorar estabilidad (diagnósticos)</li>
-        </ul>
-        <p class="note">El zodiaco se calcula por año de nacimiento (sin corte de año lunar).</p>
-      </div>
-
-      <div class="card">
-        <h2>Almacenamiento local</h2>
-        <p>
-          Los datos guardados se almacenan localmente en tu dispositivo. Puedes borrar elementos en la App o desinstalarla.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Contacto</h2>
-        <p>Consulta la ficha de Google Play para los datos de contacto del desarrollador.</p>
-      </div>
-    </section>
-
-    <!-- PT -->
-    <section id="pt" lang="pt-BR" style="display:none">
-      <div class="card">
-        <h2>Visão geral</h2>
-        <p>
-          Esta Política de Privacidade explica como o app <strong>Korean Age Calculator</strong> (o “App”)
-          lida com informações.
-        </p>
-        <p class="note">
-          Os dados de contato do desenvolvedor estão na página do app na Google Play.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Informações que coletamos</h2>
-        <p><strong>Não é necessário login.</strong></p>
-
-        <h3>1) Dados inseridos (salvos no seu dispositivo)</h3>
-        <ul>
-          <li>Nome (opcional)</li>
-          <li>Data de nascimento (solar/Gregoriano)</li>
-          <li>Favoritos e preferências de ordenação</li>
-        </ul>
-
-        <h3>2) Publicidade (AdMob)</h3>
-        <p>
-          O App pode exibir anúncios via Google AdMob. Google e parceiros podem coletar identificadores e dados de uso
-          para veiculação e medição, dependendo de configurações, região e consentimento.
-        </p>
-
-        <h3>3) Diagnósticos (opcional)</h3>
-        <p>Podemos usar diagnósticos básicos (ex.: falhas) para melhorar a estabilidade.</p>
-      </div>
-
-      <div class="card">
-        <h2>Como usamos as informações</h2>
-        <ul>
-          <li>Calcular idade internacional e idade coreana (por ano)</li>
-          <li>Mostrar pessoas salvas e favoritos</li>
-          <li>Exibir anúncios e medir desempenho</li>
-          <li>Melhorar a estabilidade (diagnósticos)</li>
-        </ul>
-        <p class="note">O zodíaco é calculado pelo ano de nascimento (sem corte do ano lunar).</p>
-      </div>
-
-      <div class="card">
-        <h2>Armazenamento local</h2>
-        <p>
-          Os dados salvos ficam no seu dispositivo. Você pode apagar itens no App ou desinstalar para remover os dados.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Contato</h2>
-        <p>Veja a página do app na Google Play para os dados de contato do desenvolvedor.</p>
-      </div>
-    </section>
-
-    <!-- ID -->
-    <section id="id" lang="id" style="display:none">
-      <div class="card">
-        <h2>Ringkasan</h2>
-        <p>
-          Kebijakan Privasi ini menjelaskan bagaimana <strong>Korean Age Calculator</strong> (“Aplikasi”)
-          menangani informasi.
-        </p>
-        <p class="note">
-          Detail kontak pengembang tersedia di halaman Google Play.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Informasi yang dikumpulkan</h2>
-        <p><strong>Tidak perlu login.</strong></p>
-
-        <h3>1) Data yang Anda masukkan (disimpan di perangkat)</h3>
-        <ul>
-          <li>Nama (opsional)</li>
-          <li>Tanggal lahir (kalender solar/Gregorian)</li>
-          <li>Favorit dan preferensi urut</li>
-        </ul>
-
-        <h3>2) Iklan (AdMob)</h3>
-        <p>
-          Aplikasi dapat menampilkan iklan melalui Google AdMob. Google dan mitra dapat mengumpulkan pengenal dan data penggunaan
-          untuk menayangkan serta mengukur iklan, tergantung setelan, wilayah, dan persetujuan.
-        </p>
-
-        <h3>3) Diagnostik (opsional)</h3>
-        <p>Kami dapat menggunakan diagnostik dasar (mis. crash) untuk meningkatkan stabilitas.</p>
-      </div>
-
-      <div class="card">
-        <h2>Penggunaan informasi</h2>
-        <ul>
-          <li>Menghitung usia internasional dan usia Korea (berdasarkan tahun)</li>
-          <li>Menampilkan daftar tersimpan dan favorit</li>
-          <li>Menampilkan iklan dan mengukur performa</li>
-          <li>Meningkatkan stabilitas (diagnostik)</li>
-        </ul>
-        <p class="note">Zodiak dihitung berdasarkan tahun lahir (tanpa batas tahun baru lunar).</p>
-      </div>
-
-      <div class="card">
-        <h2>Penyimpanan lokal</h2>
-        <p>
-          Data tersimpan disimpan di perangkat Anda. Anda bisa menghapus item di aplikasi atau uninstall untuk menghapus data.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Kontak</h2>
-        <p>Silakan lihat halaman Google Play untuk detail kontak pengembang.</p>
-      </div>
-    </section>
-
-    <!-- KO -->
-    <section id="ko" lang="ko" style="display:none">
-      <div class="card">
-        <h2>개요</h2>
-        <p>
-          본 개인정보처리방침은 <strong>Korean Age Calculator</strong> (이하 “앱”)이 정보를 어떻게 처리하는지 설명합니다.
-        </p>
-        <p class="note">
-          개발자 정보(이름/주소/이메일)는 Google Play 스토어의 앱 상세 페이지에 기재되어 있습니다.
-          공식 연락처는 스토어 정보를 참고해 주세요.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>수집하는 정보</h2>
-        <p><strong>본 앱은 계정 로그인 없이 사용 가능합니다.</strong></p>
-
-        <h3>1) 사용자가 입력한 정보(기기 내 저장)</h3>
-        <p>저장/즐겨찾기 기능을 사용할 경우, 다음 정보를 입력할 수 있습니다.</p>
-        <ul>
-          <li>이름(예: 가족/지인 별칭)</li>
-          <li>생년월일(양력 입력)</li>
-          <li>즐겨찾기 및 정렬 설정</li>
-        </ul>
-        <p>위 데이터는 앱의 기능 제공을 위해 사용자 기기(로컬)에 저장됩니다.</p>
-
-        <h3>2) 광고 관련 정보(AdMob)</h3>
-        <p>
-          본 앱은 Google AdMob을 통해 배너/전면 광고를 표시할 수 있습니다.
-          광고 제공 및 성과 측정을 위해 Google 및 파트너사가 일부 식별자/사용 정보 등을 수집할 수 있습니다.
-        </p>
-        <p class="note">
-          실제 수집 항목은 기기 설정, 지역, 동의(Consent) 선택, Google 정책에 따라 달라질 수 있습니다.
-        </p>
-
-        <h3>3) 앱 안정성/진단 정보(선택)</h3>
-        <p>
-          앱의 안정성 개선을 위해 플랫폼에서 제공하는 기본 진단(예: 오류/비정상 종료 정보)을 사용할 수 있습니다.
-          해당 서비스는 Google 등 플랫폼 제공자의 정책을 따릅니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>이용 목적</h2>
-        <ul>
-          <li>입력한 생년월일 기반 만나이/연나이 계산 및 표시</li>
-          <li>저장된 목록/즐겨찾기 제공</li>
-          <li>광고 제공 및 성과 측정(AdMob)</li>
-          <li>앱 안정성 향상(오류 진단 등)</li>
-        </ul>
-        <p class="note">
-          ※ 띠(12지)는 출생 “연도” 기준으로 계산됩니다(음력 설 기준 아님).
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>제3자 제공(공유)</h2>
-        <p>개발자는 사용자의 개인정보를 판매하지 않습니다.</p>
-        <p>다만 아래의 경우에 한해 제한적으로 제3자에게 정보가 제공/공유될 수 있습니다.</p>
-        <ul>
-          <li><strong>광고 제공업체</strong>(Google AdMob): 광고 제공/측정 목적</li>
-          <li><strong>플랫폼 서비스</strong>: 오류/성능 진단(사용 시)</li>
-          <li><strong>법적 의무</strong>: 관계 법령에 따른 요청이 있는 경우</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>로컬 저장 및 삭제</h2>
-        <p>
-          이름/생년월일/즐겨찾기 등 저장 데이터는 기기 내 로컬에 보관됩니다.
-          앱에서 개별 항목을 삭제할 수 있으며, 앱을 삭제(언인스톨)하면 로컬 데이터는 함께 제거됩니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>아동(어린이) 개인정보 보호</h2>
-        <p>
-          본 앱은 관련 법령상 동의가 필요한 연령 미만의 아동을 대상으로 설계되지 않았습니다.
-          아동이 정보를 제공했다고 판단되는 경우, Google Play 스토어의 개발자 연락처로 문의해 주세요.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>사용자의 선택권</h2>
-        <ul>
-          <li><strong>데이터 삭제:</strong> 앱 내에서 기록 삭제 또는 앱 삭제</li>
-          <li><strong>광고 설정:</strong> Google 설정에서 맞춤광고 설정 변경 가능</li>
-          <li><strong>권한:</strong> 핵심 기능은 민감 권한 없이 동작하도록 설계됩니다</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>외부 서비스</h2>
-        <p>
-          광고는 Google을 통해 제공됩니다. 자세한 내용은 Google 공식 개인정보처리방침 및 AdMob 안내를 참고해 주세요.
-        </p>
-        <p class="note">
-          (본 문서에는 링크를 직접 삽입하지 않았습니다. “Google Privacy Policy”, “Google AdMob”로 공식 페이지를 검색해 주세요.)
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>정책 변경</h2>
-        <p>
-          본 개인정보처리방침은 필요 시 변경될 수 있으며, 변경 시 상단의 “Last updated” 날짜가 갱신됩니다.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>문의</h2>
-        <p>
-          개발자 문의처는 Google Play 스토어 앱 상세 페이지에 기재된 정보를 참고해 주세요.
-        </p>
-      </div>
-    </section>
-
-    <footer>
-      <div class="wrap" style="padding:0">
-        <div class="mono">Document: privacy-policy.html</div>
-        <div>© <span id="year"></span> — Refer to the Google Play Store listing for developer/contact details.</div>
-      </div>
-    </footer>
-  </main>
-
-  <script>
-    (function(){
-      const $ = (id)=>document.getElementById(id);
-
-      const langs = [
-        { key: "ko",    sec: $("ko"),    btn: $("btnKo"),   htmlLang: "ko" },
-        { key: "en",    sec: $("en"),    btn: $("btnEn"),   htmlLang: "en" },
-        { key: "es",    sec: $("es"),    btn: $("btnEs"),   htmlLang: "es" },
-        { key: "pt",    sec: $("pt"),    btn: $("btnPt"),   htmlLang: "pt-BR" },
-        { key: "id",    sec: $("id"),    btn: $("btnId"),   htmlLang: "id" },
-        { key: "en-in", sec: $("en-in"), btn: $("btnEnIn"), htmlLang: "en-IN" },
-      ];
-
-      function setLang(key){
-        for (const L of langs){
-          const on = L.key === key;
-          L.sec.style.display = on ? "" : "none";
-          L.btn.setAttribute("aria-pressed", on ? "true" : "false");
-          if (on) document.documentElement.lang = L.htmlLang;
-        }
+      if (active) {
+        document.documentElement.lang = item.htmlLang;
       }
+    }
+  }
 
-      for (const L of langs){
-        L.btn.addEventListener("click", ()=>setLang(L.key));
-      }
+  for (const item of langs) {
+    item.btn.addEventListener("click", function() {
+      setLang(item.key);
+    });
+  }
 
-      // Auto-detect (simple mapping)
-      const nav = (navigator.language || "en").toLowerCase();
-      if (nav.startsWith("ko")) setLang("ko");
-      else if (nav.startsWith("es")) setLang("es");
-      else if (nav.startsWith("pt")) setLang("pt");
-      else if (nav.startsWith("id")) setLang("id");
-      else if (nav === "en-in" || nav.startsWith("en-in")) setLang("en-in");
-      else setLang("en");
+  const browserLanguage =
+    (navigator.language || "en").toLowerCase();
 
-      $("year").textContent = new Date().getFullYear();
-    })();
-  </script>
+  if (browserLanguage.startsWith("ko")) {
+    setLang("ko");
+  } else if (browserLanguage.startsWith("es")) {
+    setLang("es");
+  } else if (browserLanguage.startsWith("pt")) {
+    setLang("pt");
+  } else if (browserLanguage.startsWith("id")) {
+    setLang("id");
+  } else if (browserLanguage.startsWith("en-in")) {
+    setLang("en-in");
+  } else {
+    setLang("en");
+  }
+})();
+</script>
+
 </body>
 </html>
