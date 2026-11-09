@@ -2,272 +2,1421 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy | 로또QR도우미</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index,follow" />
+  <meta name="description"
+        content="Privacy Policy for Lotto QR Helper by JCraft Studio" />
+
+  <title>Privacy Policy | 로또QR도우미</title>
+
   <style>
-    :root { color-scheme: light dark; }
+    :root {
+      color-scheme: light dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Arial, sans-serif;
+      font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Noto Sans KR",
+        Arial,
+        sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
+      overflow-wrap: break-word;
     }
+
     main {
       max-width: 860px;
       margin: 0 auto;
       padding: 20px;
     }
+
     h1, h2, h3 {
       line-height: 1.25;
     }
+
+    h1 {
+      margin-top: 24px;
+    }
+
+    h2 {
+      margin-top: 24px;
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
     .meta {
       opacity: .8;
       font-size: .95rem;
     }
+
     .card {
       border: 1px solid rgba(127,127,127,.25);
       border-radius: 14px;
       padding: 14px 16px;
       margin: 14px 0;
     }
+
+    .notice {
+      border-left: 4px solid #64748b;
+      background: rgba(127,127,127,.08);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+
+    .language-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .language-nav a {
+      display: inline-block;
+      border: 1px solid rgba(127,127,127,.3);
+      border-radius: 20px;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
     code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Consolas,
+        "Liberation Mono",
+        monospace;
       font-size: .95em;
     }
+
     a {
       word-break: break-word;
     }
+
     ul {
       margin-top: 8px;
+      padding-left: 24px;
     }
+
     hr {
       border: 0;
       border-top: 1px solid rgba(127,127,127,.25);
-      margin: 22px 0;
+      margin: 36px 0;
+    }
+
+    .updated {
+      margin-top: 30px;
+      font-size: .9rem;
+      opacity: .8;
+    }
+
+    footer {
+      text-align: center;
+      font-size: .85rem;
+      opacity: .75;
+      margin: 36px 0 16px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      .card {
+        padding: 14px;
+      }
     }
   </style>
 </head>
+
 <body>
+
 <main>
-  <h1>개인정보처리방침 (Privacy Policy)</h1>
-  <p class="meta">
-    앱: <strong>로또QR도우미</strong> (이하 “본 앱”)<br/>
-    최종 업데이트: <strong>2026-02-10</strong><br/>
-    개발자(사업자/연락처/주소 등) 정보는 <strong>Google Play 스토어의 “개발자 연락처(Developer Contact)”</strong>에 기재된 정보를 참고해 주세요.
-  </p>
 
-  <div class="card">
-    <h2>1. 요약</h2>
-    <ul>
-      <li>본 앱은 <strong>QR 스캔 결과 URL을 검증(공식 도메인만 허용)</strong>하고, 사용자가 저장한 번호/기록을 <strong>기기 내 로컬 저장소</strong>에 보관하는 도구입니다.</li>
-      <li>본 앱은 <strong>회원가입</strong>을 요구하지 않으며, <strong>사용자의 이름/전화번호/이메일</strong> 등 직접 식별 정보를 입력받지 않습니다.</li>
-      <li>광고(예: Google AdMob)를 사용하는 경우, 광고 SDK가 <strong>광고 식별자 및 기기 정보</strong> 등을 자동 수집할 수 있습니다(아래 “제3자 서비스” 참조).</li>
-    </ul>
-  </div>
+  <!-- ====================================== -->
+  <!-- Korean Privacy Policy -->
+  <!-- ====================================== -->
 
-  <h2>2. 수집하는 정보</h2>
-  <div class="card">
-    <h3>2-1) 사용자가 앱 안에서 생성/저장하는 정보(기기 내 저장)</h3>
-    <ul>
-      <li><strong>번호 세트</strong>: 이름, 번호(6개), 메모, 즐겨찾기 여부</li>
-      <li><strong>스캔 기록</strong>: 스캔 성공 시 저장되는 URL, 생성 시각, 메모, 핀 여부</li>
-    </ul>
-    <p class="meta">
-      위 정보는 기본적으로 <strong>사용자 기기 내부 저장소</strong>에 저장되며, 개발자가 운영하는 서버로 전송하지 않습니다.
-    </p>
+  <div id="ko" lang="ko">
 
-    <h3>2-2) 기기 권한 관련</h3>
-    <ul>
-      <li><strong>카메라 권한</strong>: QR 코드 스캔 기능 제공을 위해 사용됩니다.</li>
-    </ul>
-    <p class="meta">
-      카메라 영상은 QR 인식 목적에만 사용되며, 개발자가 서버로 업로드/저장하지 않습니다.
-    </p>
-
-    <h3>2-3) 자동 수집될 수 있는 정보(광고 SDK 등)</h3>
-    <p>
-      광고 또는 통계 SDK를 사용하는 경우, 해당 제3자 SDK가 다음과 같은 정보를 자동 수집할 수 있습니다.
-    </p>
-    <ul>
-      <li>광고 식별자(예: AAID) 또는 유사 식별자</li>
-      <li>IP 주소(대략적 위치 추정에 사용될 수 있음), 기기 모델/OS 버전/언어/앱 사용 이벤트</li>
-      <li>광고 노출/클릭/진단 정보</li>
-    </ul>
-  </div>
-
-  <h2>3. 정보 이용 목적</h2>
-  <div class="card">
-    <ul>
-      <li>QR 스캔 기능 제공 및 공식 도메인 검증</li>
-      <li>번호 세트/기록/메모 등 사용자가 저장한 데이터의 로컬 보관</li>
-      <li>(광고 사용 시) 광고 제공, 빈도 제한, 부정 클릭 방지, 통계/진단</li>
-    </ul>
-  </div>
-
-  <h2>4. 제3자 서비스(Third-Party Services)</h2>
-  <div class="card">
-    <p>
-      본 앱은 다음과 같은 제3자 서비스를 사용할 수 있습니다(사용 여부는 앱 빌드/배포 설정에 따라 달라질 수 있음).
-      제3자 서비스는 각자의 개인정보처리방침에 따라 데이터를 처리합니다.
-    </p>
-
-    <ul>
-      <li><strong>Google AdMob (Google Mobile Ads SDK)</strong> – 광고 제공/측정/진단</li>
-      <li><strong>Google Play 서비스</strong> – 배포/인앱 환경 제공</li>
-    </ul>
+    <h1>개인정보처리방침 (Privacy Policy)</h1>
 
     <p class="meta">
-      Google의 광고 관련 안내/설정 및 개인정보 관련 내용은 Google 정책에 따라 변경될 수 있습니다.
-      (예: 광고 개인화 설정, 광고 식별자 리셋 등은 Android 설정에서 관리 가능)
+      앱: <strong>로또QR도우미</strong>
+      (이하 "본 앱")<br>
+      개발자: <strong>JCraft Studio</strong><br>
+      시행일: <strong>2026-11-09</strong><br>
+      최종 업데이트: <strong>2026-11-09</strong>
     </p>
-  </div>
 
-  <h2>5. 외부 링크 및 “비공식/비제휴” 고지</h2>
-  <div class="card">
-    <ul>
-      <li>본 앱은 <strong>공식 서비스(동행복권/복권 관련 기관 등)의 앱이 아니며</strong>, 특정 기관/브랜드와 제휴하지 않습니다.</li>
-      <li>QR 스캔 결과는 사용자 편의를 위해 외부 브라우저로 열 수 있으며, 외부 사이트 이용 시 해당 사이트의 정책이 적용됩니다.</li>
-      <li>당첨 결과/정보의 최종 기준은 <strong>공식 웹사이트</strong>이며, 본 앱의 정보는 참고용입니다.</li>
-    </ul>
-  </div>
+    <nav class="language-nav"
+         aria-label="언어 선택">
+      <a href="#ko">한국어</a>
+      <a href="#en">English</a>
+    </nav>
 
-  <h2>6. 데이터 보관 및 삭제</h2>
-  <div class="card">
-    <ul>
-      <li>번호 세트/스캔 기록은 사용자가 앱을 삭제하거나, 앱 내 삭제 기능을 통해 제거할 수 있습니다.</li>
-      <li>개발자는 사용자 데이터를 서버에 저장하지 않으므로, 별도의 “서버 삭제 요청” 절차가 필요하지 않습니다.</li>
-    </ul>
-  </div>
-
-  <h2>7. 아동의 개인정보</h2>
-  <div class="card">
-    <p>
-      본 앱은 일반 유틸리티 앱으로, 아동을 대상으로 한 서비스로 설계되지 않았습니다.
-      또한 본 앱은 사용자의 직접 식별 정보를 의도적으로 수집하지 않습니다.
+    <p class="meta">
+      개발자 연락처 및 기타 최신 운영 정보는
+      Google Play 스토어의
+      "개발자 연락처(Developer Contact)"
+      항목을 참고해 주세요.
     </p>
-  </div>
 
-  <h2>8. 보안</h2>
-  <div class="card">
-    <p>
-      개발자는 합리적인 범위에서 데이터 보호를 위해 노력합니다.
-      다만, 인터넷/모바일 환경의 특성상 완전한 보안을 보장할 수는 없습니다.
+    <div class="card">
+
+      <h2>1. 요약</h2>
+
+      <ul>
+        <li>
+          본 앱은 QR 코드를 스캔하고,
+          스캔 결과 URL이 허용된 공식 도메인에
+          해당하는지 검증하는 기능을 제공합니다.
+        </li>
+
+        <li>
+          사용자가 저장한 번호 세트,
+          메모 및 스캔 기록은
+          기기 내부 로컬 저장소에 보관됩니다.
+        </li>
+
+        <li>
+          본 앱은 회원가입을 요구하지 않으며,
+          이름, 전화번호, 이메일 주소 등의
+          직접적인 개인 식별 정보를
+          기본 기능 이용 조건으로 요구하지 않습니다.
+        </li>
+
+        <li>
+          본 앱은 광고 제공을 위해
+          <strong>Unity LevelPlay 및 Unity Ads</strong>
+          서비스를 사용합니다.
+        </li>
+
+        <li>
+          광고 SDK는 광고 제공,
+          성과 측정 및 부정행위 방지 등을 위해
+          기기 정보와 광고 관련 데이터를
+          처리할 수 있습니다.
+        </li>
+      </ul>
+
+    </div>
+
+    <h2>2. 수집 및 처리하는 정보</h2>
+
+    <div class="card">
+
+      <h3>2-1. 사용자가 앱에서 생성하거나 저장하는 정보</h3>
+
+      <p>
+        본 앱은 다음과 같은 정보를
+        사용자 기기에 저장할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          <strong>번호 세트:</strong>
+          사용자가 지정한 이름 또는 제목,
+          로또 번호 6개, 메모,
+          즐겨찾기 여부
+        </li>
+
+        <li>
+          <strong>스캔 기록:</strong>
+          QR 스캔 성공 시 저장되는 URL,
+          생성 시각, 메모, 고정 여부
+        </li>
+
+        <li>
+          <strong>앱 설정:</strong>
+          언어, 화면 및 기타 앱 환경설정
+        </li>
+
+        <li>
+          <strong>광고 관련 설정:</strong>
+          보상형 광고 혜택이 제공되는 경우
+          해당 혜택의 유지에 필요한 상태 정보
+        </li>
+      </ul>
+
+      <p>
+        이러한 정보는 기본적으로 사용자
+        기기 내부 저장소에 저장되며,
+        개발자가 운영하는 서버로
+        전송하지 않습니다.
+      </p>
+
+      <h3>2-2. 카메라 권한</h3>
+
+      <p>
+        본 앱은 QR 코드 스캔 기능을
+        제공하기 위해 카메라 접근 권한을
+        요청할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          카메라는 QR 코드 인식 목적으로 사용됩니다.
+        </li>
+
+        <li>
+          카메라 영상은 개발자가 운영하는
+          서버에 업로드하거나 별도로 저장하지 않습니다.
+        </li>
+
+        <li>
+          사용자는 Android 기기 설정에서
+          카메라 권한을 관리할 수 있습니다.
+        </li>
+      </ul>
+
+      <h3>2-3. 광고 서비스에서 처리할 수 있는 정보</h3>
+
+      <p>
+        Unity LevelPlay 및 Unity Ads를 통한
+        광고 제공 과정에서 다음 정보가
+        처리될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 광고 ID(AAID) 등
+          광고 관련 식별자
+        </li>
+
+        <li>
+          기기 모델, 운영체제 버전,
+          언어 등 기기 관련 정보
+        </li>
+
+        <li>
+          IP 주소 및 네트워크 관련 정보
+        </li>
+
+        <li>
+          광고 요청, 광고 노출,
+          클릭 및 상호작용 정보
+        </li>
+
+        <li>
+          광고 성과 측정 및 부정행위
+          방지에 필요한 기술 정보
+        </li>
+
+        <li>
+          광고 서비스 안정성 및 보안
+          유지에 필요한 진단 정보
+        </li>
+      </ul>
+
+      <p>
+        IP 주소 등 일부 정보는
+        대략적인 위치를 추정하는 데
+        사용될 수 있습니다.
+      </p>
+
+      <p>
+        실제 데이터 처리 범위는
+        SDK 구성, 기기 환경,
+        개인정보 보호 설정,
+        적용 법률 및 광고 서비스
+        제공업체의 정책에 따라
+        달라질 수 있습니다.
+      </p>
+
+    </div>
+
+    <h2>3. 정보 이용 목적</h2>
+
+    <div class="card">
+
+      <p>
+        본 앱과 관련 제3자 서비스에서
+        처리되는 정보는 다음 목적에
+        사용될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          QR 코드 스캔 및 공식 도메인 검증
+        </li>
+
+        <li>
+          번호 세트, 메모, 즐겨찾기 및
+          스캔 기록의 로컬 저장
+        </li>
+
+        <li>
+          사용자 설정 및 앱 기능 유지
+        </li>
+
+        <li>
+          광고 제공 및 광고 성과 측정
+        </li>
+
+        <li>
+          광고 표시 빈도 제한 및
+          부정 클릭 방지
+        </li>
+
+        <li>
+          광고 서비스의 보안 유지 및
+          안정성 개선
+        </li>
+      </ul>
+
+    </div>
+
+    <h2>4. 광고 및 제3자 서비스</h2>
+
+    <div class="card">
+
+      <h3>4-1. 광고 플랫폼</h3>
+
+      <p>
+        본 앱은 무료 서비스 운영 및
+        유지 관리를 위해
+        <strong>Unity LevelPlay</strong>
+        광고 미디에이션 플랫폼과
+        <strong>Unity Ads</strong>
+        광고 서비스를 사용합니다.
+      </p>
+
+      <p>
+        Unity LevelPlay는 광고 관리 및
+        미디에이션 기능을 제공하며,
+        Unity Ads는 앱 내 광고
+        제공을 지원합니다.
+      </p>
+
+      <h3>4-2. 광고 유형</h3>
+
+      <p>
+        앱 설정 및 배포 버전에 따라
+        다음 광고 유형이 제공될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>배너 광고</li>
+        <li>전면 광고</li>
+        <li>
+          사용자가 선택하여 시청하는 보상형 광고
+        </li>
+      </ul>
+
+      <p>
+        보상형 광고가 제공되는 경우,
+        사용자가 광고를 정상적으로
+        시청하고 보상을 지급받으면
+        앱에서 정한 일정 시간 동안
+        전면 광고가 면제될 수 있습니다.
+      </p>
+
+      <p>
+        해당 보상 및 광고 관련 상태 정보는
+        앱 기능 유지에 필요한 범위에서
+        기기에 저장될 수 있습니다.
+      </p>
+
+      <h3>4-3. 광고 데이터 처리</h3>
+
+      <p>
+        광고 제공업체는 광고 제공,
+        성과 측정, 부정행위 방지 및
+        서비스 운영을 위해 필요한
+        광고 관련 데이터를 처리할 수 있습니다.
+      </p>
+
+      <p>
+        이러한 정보는 광고 제공업체의
+        정책과 적용 법률에 따라
+        관련 광고 파트너와 공유될 수 있습니다.
+      </p>
+
+      <p>
+        개발자는 앱의 기본 QR 스캔 및
+        번호 관리 기능을 제공하기 위해
+        사용자가 저장한 번호 세트나
+        메모 내용을 광고 SDK에
+        의도적으로 전달하지 않습니다.
+      </p>
+
+      <h3>4-4. 제3자 서비스 목록</h3>
+
+      <ul>
+        <li>
+          <strong>Unity LevelPlay</strong>
+          — 광고 미디에이션 및 광고 관리
+        </li>
+
+        <li>
+          <strong>Unity Ads</strong>
+          — 앱 내 광고 제공 및 성과 측정
+        </li>
+
+        <li>
+          <strong>Google Play 및 관련 서비스</strong>
+          — 앱 배포 및 플랫폼 기능
+        </li>
+      </ul>
+
+      <div class="notice">
+
+        <p>
+          <strong>Unity 공식 개인정보처리방침</strong>
+        </p>
+
+        <p>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://unity.com/legal/game-player-and-app-user-privacy-policy
+          </a>
+        </p>
+
+        <p>
+          <strong>Google 개인정보처리방침</strong>
+        </p>
+
+        <p>
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://policies.google.com/privacy
+          </a>
+        </p>
+
+      </div>
+
+      <p>
+        제3자 서비스에서 처리되는 정보는
+        각 서비스 제공업체의
+        개인정보처리방침 및 관련 법률의
+        적용을 받습니다.
+      </p>
+
+    </div>
+
+    <h2>5. 외부 링크 및 비공식 앱 고지</h2>
+
+    <div class="card">
+
+      <ul>
+        <li>
+          본 앱은 동행복권 또는 기타
+          공식 복권 운영기관의 앱이 아니며,
+          해당 기관과 제휴하거나
+          공식적으로 승인받은 서비스가 아닙니다.
+        </li>
+
+        <li>
+          본 앱은 QR 스캔 결과 URL을 검증하고
+          허용된 공식 도메인의 링크만
+          열 수 있도록 하는 기능을 제공합니다.
+        </li>
+
+        <li>
+          사용자가 QR 스캔 결과를 통해
+          외부 웹사이트로 이동하는 경우,
+          해당 외부 사이트의
+          개인정보처리방침이 적용됩니다.
+        </li>
+
+        <li>
+          로또 당첨 여부, 당첨금,
+          회차별 결과 등 최종 정보는
+          공식 복권 운영기관의
+          웹사이트를 기준으로 확인해야 합니다.
+        </li>
+      </ul>
+
+      <p>
+        본 앱이 제공하는 정보는
+        사용자 편의를 위한 참고용이며,
+        공식 당첨 확인이나 당첨금
+        지급을 보장하지 않습니다.
+      </p>
+
+    </div>
+
+    <h2>6. 로컬 데이터 보관 및 삭제</h2>
+
+    <div class="card">
+
+      <p>
+        사용자가 저장한 번호 세트,
+        메모, 즐겨찾기 및 스캔 기록은
+        앱 기능 제공을 위해
+        사용자 기기에 로컬로 저장됩니다.
+      </p>
+
+      <p>
+        사용자는 앱 내에서 제공하는
+        삭제 기능을 이용하여
+        저장된 번호 또는 스캔 기록을
+        삭제할 수 있습니다.
+      </p>
+
+      <p>
+        Android 기기의 앱 데이터 삭제
+        기능을 사용하거나 앱을 제거하면
+        일반적으로 앱 전용 로컬 데이터가
+        삭제됩니다.
+      </p>
+
+      <p>
+        단, 기기의 백업 및 복원 설정에 따라
+        일부 로컬 데이터가 복원될 수 있습니다.
+      </p>
+
+      <p>
+        개발자는 해당 번호 및 스캔 기록을
+        자체 서버에 저장하지 않으므로,
+        별도의 개발자 서버 삭제 요청이
+        필요하지 않습니다.
+      </p>
+
+      <p>
+        다만 Unity 및 관련 광고 제공업체에서
+        처리하는 광고 관련 정보의
+        보관 및 삭제는 해당 업체의
+        정책에 따릅니다.
+      </p>
+
+    </div>
+
+    <h2>7. 광고 식별자 및 개인정보 보호 선택</h2>
+
+    <div class="card">
+
+      <p>
+        앱에 포함된 광고 SDK는
+        광고 제공 및 성과 측정 등을 위해
+        Android 광고 ID와 같은
+        광고 식별자를 사용할 수 있습니다.
+      </p>
+
+      <p>
+        사용자는 기기의 개인정보 보호 및
+        광고 관련 설정에서 광고 ID를
+        재설정하거나 삭제하는 등
+        이용 가능한 설정을 관리할 수 있습니다.
+      </p>
+
+      <p>
+        Unity Ads 광고에서 개인정보
+        보호 선택 기능이 제공되는 경우,
+        사용자는 해당 기능을 통해
+        관련 설정을 확인하거나
+        변경할 수 있습니다.
+      </p>
+
+      <p>
+        개인정보 보호 선택권의 제공 범위는
+        사용자의 국가, 기기 환경 및
+        적용 법률에 따라 달라질 수 있습니다.
+      </p>
+
+    </div>
+
+    <h2>8. 아동의 개인정보</h2>
+
+    <div class="card">
+
+      <p>
+        본 앱은 일반적인 QR 스캔 및
+        로또 번호 관리 유틸리티이며,
+        아동을 대상으로 한 서비스로
+        설계되지 않았습니다.
+      </p>
+
+      <p>
+        본 앱은 사용자의 직접적인
+        개인 식별 정보를 핵심 기능
+        이용 조건으로 요구하지 않습니다.
+      </p>
+
+      <p>
+        다만 광고 서비스 또는
+        앱 배포 플랫폼에서 제한적인
+        기기 정보가 처리될 수 있습니다.
+      </p>
+
+      <p>
+        이러한 정보의 처리는
+        관련 법률 및 각 서비스
+        제공업체의 정책에 따릅니다.
+      </p>
+
+    </div>
+
+    <h2>9. 데이터 보안</h2>
+
+    <div class="card">
+
+      <p>
+        개발자는 앱에서 처리되는 정보를
+        보호하기 위해 합리적인 범위에서
+        기술적 및 관리적 보호 조치를
+        유지하도록 노력합니다.
+      </p>
+
+      <p>
+        번호 세트, 스캔 기록 및 메모는
+        앱의 로컬 저장 기능을 통해
+        관리됩니다.
+      </p>
+
+      <p>
+        다만 인터넷 통신, 모바일 기기 및
+        전자적 데이터 저장 방식의 특성상
+        절대적인 보안을 보장할 수는 없습니다.
+      </p>
+
+    </div>
+
+    <h2>10. 개인정보처리방침 변경</h2>
+
+    <div class="card">
+
+      <p>
+        본 개인정보처리방침은
+        관련 법령, Google Play 정책,
+        앱 기능 또는 광고 서비스의
+        변경 등에 따라 수정될 수 있습니다.
+      </p>
+
+      <p>
+        중요한 변경사항이 발생하는 경우
+        본 페이지를 업데이트하여
+        변경된 내용을 안내합니다.
+      </p>
+
+      <p>
+        이번 개정에서는 광고 플랫폼
+        전환에 따라 Unity LevelPlay 및
+        Unity Ads 관련 개인정보 처리
+        내용을 반영했습니다.
+      </p>
+
+    </div>
+
+    <h2>11. 개발자 정보 및 문의</h2>
+
+    <div class="card">
+
+      <p>
+        <strong>개발자: JCraft Studio</strong>
+      </p>
+
+      <p>
+        개인정보처리방침, 앱 기능 또는
+        데이터 처리에 관한 문의는
+        Google Play 스토어에 게시된
+        본 앱의 개발자 연락처를 통해
+        문의할 수 있습니다.
+      </p>
+
+      <p>
+        최신 개발자 이메일,
+        연락처 및 게시자 정보는
+        Google Play 등록정보를
+        참고하시기 바랍니다.
+      </p>
+
+    </div>
+
+    <p class="updated">
+      <strong>시행일: 2026년 11월 9일</strong><br>
+      최종 수정일: 2026년 11월 9일
     </p>
+
   </div>
 
-  <h2>9. 정책 변경</h2>
-  <div class="card">
-    <p>
-      본 개인정보처리방침은 법령/정책/서비스 변경에 따라 업데이트될 수 있습니다.
-      변경 사항은 이 문서의 “최종 업데이트” 일자를 통해 공지합니다.
+  <hr />
+
+  <!-- ====================================== -->
+  <!-- English Privacy Policy -->
+  <!-- ====================================== -->
+
+  <div id="en" lang="en">
+
+    <h1>Privacy Policy (English)</h1>
+
+    <p class="meta">
+      App: <strong>Lotto QR Helper</strong><br>
+      Developer: <strong>JCraft Studio</strong><br>
+      Effective date: <strong>2026-11-09</strong><br>
+      Last updated: <strong>2026-11-09</strong>
     </p>
-  </div>
 
-  <h2>10. 문의</h2>
-  <div class="card">
-    <p>
-      개인정보 관련 문의는 Google Play 스토어의 <strong>개발자 연락처</strong> 정보를 통해 연락해 주세요.
-      (개발자 이메일/주소/전화번호 등은 스토어 표기 정보를 우선합니다.)
+    <nav class="language-nav"
+         aria-label="Language selection">
+      <a href="#ko">한국어</a>
+      <a href="#en">English</a>
+    </nav>
+
+    <p class="meta">
+      For current developer contact details,
+      please refer to the Developer Contact
+      section on the App's Google Play listing.
     </p>
+
+    <div class="card">
+
+      <h2>1. Overview</h2>
+
+      <ul>
+        <li>
+          The App scans QR codes and
+          validates scanned URLs against
+          an allowlist of official domains.
+        </li>
+
+        <li>
+          Number sets, memos, and
+          scan records created by users
+          are stored locally on their devices.
+        </li>
+
+        <li>
+          The App does not require registration
+          and does not require direct
+          personal identifiers such as names,
+          phone numbers, or email addresses
+          for its core functionality.
+        </li>
+
+        <li>
+          The App uses
+          <strong>Unity LevelPlay and Unity Ads</strong>
+          to provide advertisements.
+        </li>
+
+        <li>
+          Advertising SDKs may process
+          certain device and advertising
+          information for ad delivery,
+          measurement, and fraud prevention.
+        </li>
+      </ul>
+
+    </div>
+
+    <h2>2. Information We Handle</h2>
+
+    <div class="card">
+
+      <h3>2.1 Information stored locally</h3>
+
+      <p>
+        The App may store the following
+        information on the user's device:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Saved number sets:</strong>
+          User-defined titles or labels,
+          six lottery numbers,
+          memos, and favorite status
+        </li>
+
+        <li>
+          <strong>Scan records:</strong>
+          Successfully scanned URLs,
+          timestamps, memos,
+          and pinned status
+        </li>
+
+        <li>
+          <strong>App preferences:</strong>
+          Language, display, and
+          other App settings
+        </li>
+
+        <li>
+          <strong>Advertising-related settings:</strong>
+          Status information required
+          to maintain rewarded ad benefits
+          where supported
+        </li>
+      </ul>
+
+      <p>
+        This information is generally
+        stored locally on the user's device
+        and is not transmitted to a
+        server operated by the developer.
+      </p>
+
+      <h3>2.2 Camera permission</h3>
+
+      <p>
+        The App may request access to
+        the device camera to provide
+        QR code scanning functionality.
+      </p>
+
+      <ul>
+        <li>
+          Camera access is used
+          for recognizing QR codes.
+        </li>
+
+        <li>
+          Camera images are not uploaded
+          to or separately stored
+          on the developer's server.
+        </li>
+
+        <li>
+          Users may manage camera permissions
+          through Android device settings.
+        </li>
+      </ul>
+
+      <h3>2.3 Advertising-related information</h3>
+
+      <p>
+        When advertising services are
+        provided through Unity LevelPlay
+        and Unity Ads, the following
+        information may be processed:
+      </p>
+
+      <ul>
+        <li>
+          Android Advertising ID (AAID)
+          and similar advertising identifiers
+        </li>
+
+        <li>
+          Device model, operating system,
+          language, and related information
+        </li>
+
+        <li>
+          IP address and network information
+        </li>
+
+        <li>
+          Ad requests, impressions,
+          clicks, and interactions
+        </li>
+
+        <li>
+          Technical information required
+          for advertising measurement
+          and fraud prevention
+        </li>
+
+        <li>
+          Diagnostic data related to
+          advertising service stability
+          and security
+        </li>
+      </ul>
+
+      <p>
+        Some information, including
+        IP addresses, may be used
+        to estimate approximate location.
+      </p>
+
+      <p>
+        Actual processing may vary depending
+        on SDK configuration, device settings,
+        privacy choices, applicable laws,
+        and provider policies.
+      </p>
+
+    </div>
+
+    <h2>3. Purpose of Use</h2>
+
+    <div class="card">
+
+      <p>
+        Information handled by the App
+        and relevant third-party services
+        may be used to:
+      </p>
+
+      <ul>
+        <li>
+          Provide QR scanning and
+          official-domain validation
+        </li>
+
+        <li>
+          Save number sets, memos,
+          favorites, and scan history locally
+        </li>
+
+        <li>
+          Maintain user preferences
+          and App functionality
+        </li>
+
+        <li>
+          Deliver and measure advertisements
+        </li>
+
+        <li>
+          Manage ad frequency and
+          prevent invalid advertising activity
+        </li>
+
+        <li>
+          Maintain advertising service
+          stability and security
+        </li>
+      </ul>
+
+    </div>
+
+    <h2>4. Advertising and Third-Party Services</h2>
+
+    <div class="card">
+
+      <h3>4.1 Advertising platforms</h3>
+
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>,
+        an advertising mediation platform,
+        and <strong>Unity Ads</strong>
+        to support its free operation.
+      </p>
+
+      <p>
+        Unity LevelPlay provides advertising
+        management and mediation,
+        while Unity Ads supports
+        in-app advertisement delivery.
+      </p>
+
+      <h3>4.2 Advertising formats</h3>
+
+      <p>
+        Depending on the App version
+        and configuration,
+        the following advertising
+        formats may be displayed:
+      </p>
+
+      <ul>
+        <li>Banner advertisements</li>
+        <li>Interstitial advertisements</li>
+        <li>
+          Optional rewarded advertisements
+          initiated by users
+        </li>
+      </ul>
+
+      <p>
+        Where rewarded advertisements
+        are available, successfully
+        completing an advertisement
+        and receiving a reward may
+        provide a temporary period
+        without interstitial ads.
+      </p>
+
+      <p>
+        The corresponding reward status
+        may be stored locally to
+        maintain App functionality.
+      </p>
+
+      <h3>4.3 Advertising data processing</h3>
+
+      <p>
+        Advertising providers may process
+        device and advertising-related
+        information for ad delivery,
+        performance measurement,
+        fraud prevention,
+        and service operations.
+      </p>
+
+      <p>
+        Such information may be shared
+        with advertising partners according
+        to provider policies and
+        applicable laws.
+      </p>
+
+      <p>
+        The developer does not intentionally
+        transmit saved number sets or
+        memo content to advertising SDKs
+        for the App's core functionality.
+      </p>
+
+      <h3>4.4 Third-party services</h3>
+
+      <ul>
+        <li>
+          <strong>Unity LevelPlay</strong>
+          — Advertising mediation
+          and management
+        </li>
+
+        <li>
+          <strong>Unity Ads</strong>
+          — Advertising delivery
+          and measurement
+        </li>
+
+        <li>
+          <strong>Google Play and related services</strong>
+          — Application distribution
+          and platform functionality
+        </li>
+      </ul>
+
+      <div class="notice">
+
+        <p>
+          <strong>Unity Privacy Policy</strong>
+        </p>
+
+        <p>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://unity.com/legal/game-player-and-app-user-privacy-policy
+          </a>
+        </p>
+
+        <p>
+          <strong>Google Privacy Policy</strong>
+        </p>
+
+        <p>
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer">
+            https://policies.google.com/privacy
+          </a>
+        </p>
+
+      </div>
+
+      <p>
+        Information processed by third-party
+        services is subject to their
+        respective privacy policies
+        and applicable laws.
+      </p>
+
+    </div>
+
+    <h2>5. External Links and Non-affiliation</h2>
+
+    <div class="card">
+
+      <ul>
+        <li>
+          The App is an unofficial utility
+          and is not affiliated with,
+          endorsed by, or operated by
+          Donghaeng Lottery or any
+          official lottery operator.
+        </li>
+
+        <li>
+          The App validates scanned URLs
+          and supports opening links
+          from allowed official domains.
+        </li>
+
+        <li>
+          When users visit external websites,
+          the privacy policies of
+          those websites apply.
+        </li>
+
+        <li>
+          Official lottery websites
+          should be used as the
+          authoritative source for
+          winning numbers, results,
+          and prize information.
+        </li>
+      </ul>
+
+      <p>
+        Information provided by the App
+        is for convenience and
+        reference purposes only.
+      </p>
+
+      <p>
+        The App does not guarantee
+        official prize verification
+        or prize payment.
+      </p>
+
+    </div>
+
+    <h2>6. Local Data Retention and Deletion</h2>
+
+    <div class="card">
+
+      <p>
+        Saved number sets, memos,
+        favorites, and scan records
+        are stored locally on
+        the user's device.
+      </p>
+
+      <p>
+        Users may delete saved
+        numbers or scan records
+        through available
+        in-app deletion features.
+      </p>
+
+      <p>
+        Clearing App data or uninstalling
+        the App generally removes
+        App-specific local data.
+      </p>
+
+      <p>
+        However, some information
+        may be restored depending
+        on device backup
+        and restoration settings.
+      </p>
+
+      <p>
+        Because the developer does not
+        store these records on its
+        own server, a separate
+        server deletion request
+        is not required.
+      </p>
+
+      <p>
+        Advertising-related information
+        processed by Unity and related
+        providers is retained or deleted
+        according to their
+        respective policies.
+      </p>
+
+    </div>
+
+    <h2>7. Advertising ID and Privacy Choices</h2>
+
+    <div class="card">
+
+      <p>
+        Advertising SDKs may use
+        identifiers such as the
+        Android Advertising ID
+        for ad delivery and measurement.
+      </p>
+
+      <p>
+        Depending on the Android version,
+        users may manage, reset,
+        or delete their advertising ID
+        through device privacy settings.
+      </p>
+
+      <p>
+        Where Unity Ads privacy
+        controls are available,
+        users may review or modify
+        applicable privacy choices.
+      </p>
+
+      <p>
+        The availability of such controls
+        may depend on location,
+        device configuration,
+        and applicable laws.
+      </p>
+
+    </div>
+
+    <h2>8. Children's Privacy</h2>
+
+    <div class="card">
+
+      <p>
+        The App is a general-purpose
+        lottery QR scanning and
+        number management utility.
+      </p>
+
+      <p>
+        It is not designed
+        specifically for children.
+      </p>
+
+      <p>
+        The App does not require
+        direct personal identifiers
+        for its core functionality.
+      </p>
+
+      <p>
+        However, limited device-related
+        information may be processed
+        by advertising or platform services,
+        subject to applicable laws
+        and provider policies.
+      </p>
+
+    </div>
+
+    <h2>9. Data Security</h2>
+
+    <div class="card">
+
+      <p>
+        The developer makes reasonable
+        efforts to maintain appropriate
+        technical and administrative
+        safeguards for information
+        handled by the App.
+      </p>
+
+      <p>
+        Number sets, scan history,
+        and memos are managed through
+        local storage functionality.
+      </p>
+
+      <p>
+        However, no method of
+        electronic storage,
+        mobile communication,
+        or internet transmission
+        can guarantee absolute security.
+      </p>
+
+    </div>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+
+    <div class="card">
+
+      <p>
+        This Privacy Policy may
+        be updated to reflect
+        changes in applicable laws,
+        Google Play policies,
+        App functionality,
+        or advertising services.
+      </p>
+
+      <p>
+        Material changes will be
+        reflected by publishing
+        an updated version
+        of this document.
+      </p>
+
+      <p>
+        This revision updates
+        the advertising-related
+        disclosures to reflect
+        the use of Unity LevelPlay
+        and Unity Ads.
+      </p>
+
+    </div>
+
+    <h2>11. Developer Information and Contact</h2>
+
+    <div class="card">
+
+      <p>
+        <strong>Developer: JCraft Studio</strong>
+      </p>
+
+      <p>
+        For inquiries regarding
+        this Privacy Policy,
+        App functionality,
+        or data processing,
+        please use the
+        developer contact information
+        displayed on the App's
+        Google Play listing.
+      </p>
+
+      <p>
+        The Google Play listing
+        provides the most current
+        developer contact
+        and publisher information.
+      </p>
+
+    </div>
+
+    <p class="updated">
+      <strong>Effective Date: November 9, 2026</strong><br>
+      Last Updated: November 9, 2026
+    </p>
+
   </div>
 
-  <hr/>
+  <hr />
 
-  <h1>Privacy Policy (English)</h1>
-  <p class="meta">
-    App: <strong>Lotto QR Helper</strong> (“the App”)<br/>
-    Last updated: <strong>2026-02-10</strong><br/>
-    Developer contact details: Please refer to the <strong>Developer Contact</strong> section on the app’s Google Play listing.
-  </p>
+  <footer>
+    © 2026 JCraft Studio. All rights reserved.
+    This document is provided for privacy transparency.
+  </footer>
 
-  <div class="card">
-    <h2>1. Overview</h2>
-    <ul>
-      <li>The App scans QR codes and <strong>allows only official domains</strong> (URL validation) before opening links.</li>
-      <li>The App does not require sign-up and does not intentionally collect direct identifiers (name, email, phone number).</li>
-      <li>If ads are enabled, third-party ad SDKs (e.g., AdMob) may collect certain device/advertising data (see below).</li>
-    </ul>
-  </div>
-
-  <h2>2. Information We Handle</h2>
-  <div class="card">
-    <h3>2.1 Data stored locally on your device</h3>
-    <ul>
-      <li>Saved number sets (title, numbers, memo, starred state)</li>
-      <li>Scan logs (URL, timestamp, memo, pinned state)</li>
-    </ul>
-    <p class="meta">This data is stored locally on your device and is not sent to the developer’s server.</p>
-
-    <h3>2.2 Permissions</h3>
-    <ul>
-      <li><strong>Camera</strong>: used only for scanning QR codes.</li>
-    </ul>
-
-    <h3>2.3 Automatically collected data by third-party services</h3>
-    <p>If advertising/analytics SDKs are used, they may automatically collect:</p>
-    <ul>
-      <li>Advertising ID (e.g., AAID) or similar identifiers</li>
-      <li>IP address (may be used for coarse location), device/OS info, language, app events</li>
-      <li>Ad impressions/clicks and diagnostic data</li>
-    </ul>
-  </div>
-
-  <h2>3. Purpose of Use</h2>
-  <div class="card">
-    <ul>
-      <li>Provide QR scanning and official-domain validation</li>
-      <li>Store user-created data locally (favorites/logs/memos)</li>
-      <li>(If ads enabled) Serve and measure ads, limit frequency, prevent invalid activity, diagnostics</li>
-    </ul>
-  </div>
-
-  <h2>4. Third-Party Services</h2>
-  <div class="card">
-    <p>The App may use third-party services such as:</p>
-    <ul>
-      <li><strong>Google AdMob (Google Mobile Ads SDK)</strong></li>
-      <li><strong>Google Play Services</strong></li>
-    </ul>
-    <p class="meta">These services process data under their own privacy policies.</p>
-  </div>
-
-  <h2>5. External Links & Non-affiliation</h2>
-  <div class="card">
-    <ul>
-      <li>The App is an <strong>unofficial utility</strong> and is not affiliated with any official lottery operator.</li>
-      <li>When opening external links, the external site’s policies apply.</li>
-      <li>Any results/information are for reference; the official website is the source of truth.</li>
-    </ul>
-  </div>
-
-  <h2>6. Data Retention & Deletion</h2>
-  <div class="card">
-    <p>You can delete saved sets/logs within the App. Uninstalling the App removes locally stored data.</p>
-  </div>
-
-  <h2>7. Children’s Privacy</h2>
-  <div class="card">
-    <p>The App is not designed specifically for children and does not intentionally collect direct personal identifiers.</p>
-  </div>
-
-  <h2>8. Security</h2>
-  <div class="card">
-    <p>We take reasonable measures to protect data, but cannot guarantee absolute security in all environments.</p>
-  </div>
-
-  <h2>9. Changes</h2>
-  <div class="card">
-    <p>We may update this policy from time to time. The “Last updated” date reflects the latest revision.</p>
-  </div>
-
-  <h2>10. Contact</h2>
-  <div class="card">
-    <p>Please use the Developer Contact details shown on the Google Play listing.</p>
-  </div>
-
-  <hr/>
-  <p class="meta">© JCraft Studio. This document is provided for compliance and user transparency.</p>
 </main>
+
 </body>
 </html>
