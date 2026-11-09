@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
 
   <title>Privacy Policy | 청소구역 랜덤 배정</title>
@@ -10,6 +12,10 @@
   <style>
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -25,6 +31,7 @@
         Arial,
         sans-serif;
       line-height: 1.7;
+      overflow-wrap: break-word;
     }
 
     .container {
@@ -34,7 +41,8 @@
       border: 1px solid #e3eae7;
       border-radius: 20px;
       padding: 40px;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+      box-shadow:
+        0 6px 24px rgba(0, 0, 0, 0.04);
     }
 
     h1 {
@@ -64,6 +72,11 @@
       margin: 7px 0;
     }
 
+    a {
+      color: #236453;
+      overflow-wrap: anywhere;
+    }
+
     .app-name {
       margin-top: 0;
       color: #66736f;
@@ -72,6 +85,7 @@
 
     .language-nav {
       display: flex;
+      flex-wrap: wrap;
       gap: 8px;
       margin: 24px 0 30px;
     }
@@ -87,11 +101,23 @@
       font-weight: 600;
     }
 
+    .language-nav a:hover {
+      background: #d5eae2;
+    }
+
     .notice {
       margin: 20px 0;
       padding: 16px 18px;
       background: #f0f6f4;
       border-radius: 14px;
+    }
+
+    .notice p:first-child {
+      margin-top: 0;
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
     }
 
     .divider {
@@ -112,6 +138,7 @@
       border-top: 1px solid #e3eae7;
       color: #7b8783;
       font-size: 13px;
+      text-align: center;
     }
 
     @media (max-width: 600px) {
@@ -127,6 +154,10 @@
       h1 {
         font-size: 26px;
       }
+
+      h2 {
+        font-size: 19px;
+      }
     }
   </style>
 </head>
@@ -135,380 +166,891 @@
 
 <main class="container">
 
-  <!-- ===================================================== -->
-  <!-- Korean -->
-  <!-- ===================================================== -->
+  <!-- ========================================== -->
+  <!-- Korean Privacy Policy -->
+  <!-- ========================================== -->
 
-  <section id="ko">
+  <section id="ko" lang="ko">
+
     <h1>개인정보처리방침</h1>
-    <p class="app-name">청소구역 랜덤 배정</p>
 
-    <div class="language-nav">
+    <p class="app-name">
+      청소구역 랜덤 배정
+    </p>
+
+    <nav class="language-nav"
+         aria-label="Language selection">
       <a href="#ko">한국어</a>
       <a href="#en">English</a>
-    </div>
+    </nav>
 
     <p>
-      본 개인정보처리방침은 「청소구역 랜덤 배정」 앱
-      (이하 "앱")에서 사용자 정보가 어떻게 처리되는지 설명합니다.
+      본 개인정보처리방침은 JCraft Studio가
+      제공하는 「청소구역 랜덤 배정」
+      애플리케이션(이하 "앱")에서
+      사용자 정보가 어떻게 처리되는지
+      설명합니다.
     </p>
 
     <p>
-      앱은 청소 담당자와 청소구역을 입력하고 무작위로 배정할 수 있는
-      기능을 제공하며, 사용자 개인정보 보호를 중요하게 생각합니다.
+      앱은 청소 담당자와 청소구역을 입력하고
+      무작위로 배정할 수 있는 기능을 제공하며,
+      사용자의 개인정보 보호를 중요하게 생각합니다.
     </p>
 
     <h2>1. 사용자가 입력하는 정보</h2>
 
     <p>
-      사용자는 앱의 기능을 이용하기 위해 담당자 이름, 청소구역 이름,
-      구역별 배정 인원 등의 정보를 직접 입력할 수 있습니다.
-    </p>
-
-    <p>
-      이러한 정보는 앱의 랜덤 배정 기능 및 관련 기능을 제공하기 위한
-      목적으로 사용됩니다.
-    </p>
-
-    <p>
-      사용자는 이름 입력란에 실제 이름 대신 별명, 닉네임 또는 기타
-      식별하기 어려운 표현을 사용할 수 있습니다.
-    </p>
-
-    <h2>2. 계정</h2>
-
-    <p>
-      앱은 별도의 회원가입이나 사용자 계정 생성을 요구하지 않습니다.
-    </p>
-
-    <h2>3. 광고</h2>
-
-    <p>
-      앱은 서비스 운영을 위해 Google Mobile Ads SDK를 이용하여
-      광고를 제공할 수 있습니다.
-    </p>
-
-    <p>
-      광고 제공 과정에서 Google 및 관련 광고 서비스 제공업체는
-      광고 제공, 광고 성과 측정, 부정 사용 방지 및 서비스 개선 등을
-      위해 기기 또는 광고 관련 정보를 처리할 수 있습니다.
-    </p>
-
-    <p>
-      이러한 제3자 서비스의 데이터 처리는 해당 서비스 제공업체의
-      정책 및 사용자의 기기·계정 설정 등에 따라 달라질 수 있습니다.
-    </p>
-
-    <h2>4. 앱 내 데이터 저장</h2>
-
-    <p>
-      앱은 기능 제공을 위해 일부 설정 정보를 사용자의 기기에
-      저장할 수 있습니다.
-    </p>
-
-    <p>
-      예를 들어 보상형 광고 시청 후 제공되는 전면광고 면제 상태와
-      같은 앱 설정 정보가 기기에 저장될 수 있습니다.
-    </p>
-
-    <p>
-      이러한 로컬 데이터는 앱의 기능과 사용자 설정을 유지하기 위한
-      목적으로 사용됩니다.
-    </p>
-
-    <h2>5. 데이터 공유</h2>
-
-    <p>
-      개발자는 사용자가 앱에 직접 입력한 청소 담당자 또는 청소구역
-      정보를 판매하지 않습니다.
-    </p>
-
-    <p>
-      다만 앱에 포함된 광고 SDK 등 제3자 서비스는 해당 서비스 제공에
-      필요한 범위에서 데이터를 처리할 수 있습니다.
-    </p>
-
-    <h2>6. 데이터 보관 및 삭제</h2>
-
-    <p>
-      앱에서 로컬로 저장되는 데이터는 앱의 기능 제공 및 설정 유지를
-      위해 필요한 기간 동안 사용자의 기기에 보관될 수 있습니다.
-    </p>
-
-    <p>
-      앱에서 제공하는 삭제 기능을 사용하거나 앱의 데이터를 삭제 또는
-      앱을 제거하면 기기에 저장된 관련 로컬 데이터가 삭제될 수 있습니다.
-    </p>
-
-    <p>
-      제3자 서비스 제공업체가 처리하는 데이터의 보관 및 삭제는
-      해당 제공업체의 정책에 따라 처리됩니다.
-    </p>
-
-    <h2>7. 데이터 보안</h2>
-
-    <p>
-      개발자는 앱에서 처리되는 정보를 보호하기 위해 합리적인 범위에서
-      적절한 기술적 및 관리적 조치를 유지하도록 노력합니다.
-    </p>
-
-    <p>
-      다만 인터넷 또는 전자적 저장 방식의 특성상 어떠한 방법도
-      절대적인 보안을 보장할 수는 없습니다.
-    </p>
-
-    <h2>8. 제3자 서비스</h2>
-
-    <p>
-      앱은 기능 제공을 위해 다음과 같은 제3자 서비스를 사용할 수 있습니다.
+      사용자는 앱의 기능을 이용하기 위해
+      다음과 같은 정보를 직접 입력할 수 있습니다.
     </p>
 
     <ul>
-      <li>Google Mobile Ads</li>
-      <li>Google Play 및 관련 Google 서비스</li>
+      <li>청소 담당자 이름 또는 별명</li>
+      <li>청소구역 이름</li>
+      <li>구역별 배정 인원</li>
+      <li>랜덤 배정에 필요한 기타 입력 정보</li>
     </ul>
 
     <p>
-      제3자 서비스의 개인정보 처리 방식은 각 서비스 제공업체의
-      개인정보처리방침 및 관련 정책의 적용을 받습니다.
-    </p>
-
-    <h2>9. 외부 링크</h2>
-
-    <p>
-      앱은 Google Play의 다른 앱 또는 외부 페이지로 연결되는 링크를
-      제공할 수 있습니다.
+      이러한 정보는 랜덤 배정 및 관련 기능을
+      제공하기 위한 목적으로 사용됩니다.
     </p>
 
     <p>
-      외부 사이트 또는 서비스의 콘텐츠와 개인정보 처리 방식은
-      해당 서비스 제공자의 정책에 따릅니다.
-    </p>
-
-    <h2>10. 개인정보처리방침 변경</h2>
-
-    <p>
-      앱 기능, 사용되는 서비스 또는 관련 정책의 변경 등에 따라
-      본 개인정보처리방침이 변경될 수 있습니다.
+      사용자는 실제 이름 대신 별명이나
+      식별하기 어려운 표현을 사용할 수 있습니다.
     </p>
 
     <p>
-      중요한 변경사항이 있는 경우 본 페이지를 업데이트하여
+      개발자는 앱의 기본 기능을 제공하기 위해
+      별도의 사용자 계정이나 자체 서버에
+      해당 입력 정보를 제출하도록 요구하지 않습니다.
+    </p>
+
+    <h2>2. 사용자 계정</h2>
+
+    <p>
+      앱은 별도의 회원가입이나 사용자 계정
+      생성을 요구하지 않습니다.
+    </p>
+
+    <p>
+      사용자는 계정을 생성하거나 로그인하지 않고
+      앱의 주요 기능을 이용할 수 있습니다.
+    </p>
+
+    <h2>3. 광고 서비스</h2>
+
+    <p>
+      앱은 무료 서비스 운영 및 유지 관리를 위해
+      Unity LevelPlay 광고 미디에이션 플랫폼과
+      Unity Ads 광고 서비스를 사용합니다.
+    </p>
+
+    <p>
+      앱에는 다음과 같은 광고 형식이
+      제공될 수 있습니다.
+    </p>
+
+    <ul>
+      <li>배너 광고</li>
+      <li>전면 광고</li>
+      <li>사용자가 선택하여 시청하는 보상형 광고</li>
+    </ul>
+
+    <p>
+      광고 제공 과정에서 Unity 및 관련 광고
+      서비스 제공업체는 광고 제공,
+      광고 성과 측정, 부정행위 방지 및
+      서비스 운영을 위해 필요한 정보를
+      처리할 수 있습니다.
+    </p>
+
+    <p>
+      광고 관련 데이터 처리는 사용자의
+      기기 설정, 개인정보 보호 선택,
+      적용되는 법률 및 광고 서비스 제공업체의
+      정책에 따라 달라질 수 있습니다.
+    </p>
+
+    <h2>4. 광고 관련 데이터 처리</h2>
+
+    <p>
+      Unity LevelPlay 및 Unity Ads를 통한
+      광고 제공 과정에서는 다음과 같은
+      정보가 처리될 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        기기 정보 및 운영체제 관련 정보
+      </li>
+      <li>
+        광고 식별자(Android 광고 ID 등)
+      </li>
+      <li>
+        IP 주소 및 네트워크 연결 관련 정보
+      </li>
+      <li>
+        광고 요청 및 광고 노출 정보
+      </li>
+      <li>
+        광고 클릭 및 상호작용 정보
+      </li>
+      <li>
+        광고 성과 측정 및 부정행위 방지에
+        필요한 정보
+      </li>
+    </ul>
+
+    <p>
+      이러한 정보는 광고 제공 및 측정,
+      서비스 보안, 부정 사용 방지,
+      광고 서비스 개선 등의 목적으로
+      처리될 수 있습니다.
+    </p>
+
+    <p>
+      개발자는 앱의 랜덤 청소구역 배정 기능을
+      제공하기 위한 목적으로 사용자의
+      광고 식별자를 직접 수집하여
+      자체 사용자 프로필을 생성하지 않습니다.
+    </p>
+
+    <p>
+      광고 서비스 제공업체의 데이터 처리에 관한
+      자세한 사항은 아래 Unity의 공식
+      개인정보처리방침에서 확인할 수 있습니다.
+    </p>
+
+    <p>
+      <a
+        href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+        target="_blank"
+        rel="noopener noreferrer">
+        Unity 개인정보처리방침
+      </a>
+    </p>
+
+    <h2>5. 앱 내 데이터 저장</h2>
+
+    <p>
+      앱은 기능 제공 및 사용자 설정 유지를 위해
+      일부 정보를 사용자의 기기에
+      로컬로 저장할 수 있습니다.
+    </p>
+
+    <p>
+      저장되는 정보에는 앱 설정,
+      기능 사용에 필요한 데이터,
+      광고 관련 상태 정보 등이
+      포함될 수 있습니다.
+    </p>
+
+    <p>
+      예를 들어 보상형 광고 시청 완료 후
+      제공되는 일정 시간의 전면광고 면제
+      상태가 기기에 저장될 수 있습니다.
+    </p>
+
+    <p>
+      이러한 로컬 데이터는 앱의 기능과
+      사용자 설정을 유지하기 위한
+      목적으로 사용됩니다.
+    </p>
+
+    <h2>6. 데이터 공유</h2>
+
+    <p>
+      개발자는 사용자가 직접 입력한
+      청소 담당자 이름 또는 청소구역 정보를
+      판매하지 않습니다.
+    </p>
+
+    <p>
+      또한 앱의 기본 랜덤 배정 기능을
+      제공하기 위해 해당 입력 정보를
+      광고 서비스 제공업체에 의도적으로
+      전달하지 않습니다.
+    </p>
+
+    <p>
+      다만 앱에 포함된 Unity LevelPlay,
+      Unity Ads 및 관련 광고 서비스는
+      광고 제공에 필요한 기기 정보와
+      광고 관련 정보를 처리하거나
+      관련 업체와 공유할 수 있습니다.
+    </p>
+
+    <p>
+      이러한 제3자 데이터 처리는
+      해당 서비스 제공업체의 개인정보처리방침
+      및 적용 법률에 따릅니다.
+    </p>
+
+    <h2>7. 데이터 보관 및 삭제</h2>
+
+    <p>
+      앱에 로컬로 저장되는 정보는
+      앱의 기능 제공 및 설정 유지를 위해
+      필요한 기간 동안 사용자의 기기에
+      보관될 수 있습니다.
+    </p>
+
+    <p>
+      사용자는 앱에서 제공하는 삭제 기능을
+      이용하거나 기기의 앱 데이터 삭제 기능을
+      통해 관련 로컬 데이터를 삭제할 수 있습니다.
+    </p>
+
+    <p>
+      앱을 제거하면 일반적으로 기기에 저장된
+      앱 전용 로컬 데이터가 삭제됩니다.
+      단, 기기의 백업 및 복원 설정에 따라
+      일부 데이터가 복원될 수 있습니다.
+    </p>
+
+    <p>
+      Unity 및 기타 제3자 서비스 제공업체가
+      처리하는 데이터의 보관 및 삭제는
+      해당 업체의 정책에 따릅니다.
+    </p>
+
+    <h2>8. 개인정보 보호 및 광고 설정</h2>
+
+    <p>
+      사용자는 Android 기기에서 제공하는
+      개인정보 보호 및 광고 관련 설정을 통해
+      광고 식별자와 관련된 선택 사항을
+      관리할 수 있습니다.
+    </p>
+
+    <p>
+      기기 및 운영체제 버전에 따라
+      광고 ID를 재설정하거나 삭제하는
+      기능 등이 제공될 수 있습니다.
+    </p>
+
+    <p>
+      Unity Ads 광고에서 개인정보 관련
+      선택 기능이 제공되는 경우
+      해당 기능을 통해 개인정보 설정을
+      확인하거나 변경할 수 있습니다.
+    </p>
+
+    <p>
+      개인정보 관련 선택권의 제공 범위는
+      사용자의 국가, 기기 및 적용 법률에
+      따라 달라질 수 있습니다.
+    </p>
+
+    <h2>9. 데이터 보안</h2>
+
+    <p>
+      개발자는 앱에서 처리되는 정보를
+      보호하기 위해 합리적인 범위에서
+      적절한 기술적 및 관리적 조치를
+      유지하도록 노력합니다.
+    </p>
+
+    <p>
+      다만 인터넷 통신 또는 전자적 저장 방식의
+      특성상 어떠한 방법도 절대적인 보안을
+      보장할 수는 없습니다.
+    </p>
+
+    <h2>10. 제3자 서비스</h2>
+
+    <p>
+      앱은 서비스 운영 및 광고 제공을 위해
+      다음과 같은 제3자 서비스를
+      사용할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        Unity LevelPlay
+        (광고 미디에이션)
+      </li>
+      <li>
+        Unity Ads
+        (광고 제공)
+      </li>
+      <li>
+        Google Play 및 관련 Google 서비스
+        (앱 배포 및 플랫폼 서비스)
+      </li>
+    </ul>
+
+    <p>
+      제3자 서비스의 개인정보 처리 방식은
+      각 서비스 제공업체의 정책에 따릅니다.
+    </p>
+
+    <p>
+      <strong>Unity 공식 개인정보처리방침</strong>
+    </p>
+
+    <p>
+      <a
+        href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://unity.com/legal/game-player-and-app-user-privacy-policy
+      </a>
+    </p>
+
+    <p>
+      <strong>Google 개인정보처리방침</strong>
+    </p>
+
+    <p>
+      <a
+        href="https://policies.google.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://policies.google.com/privacy
+      </a>
+    </p>
+
+    <h2>11. 외부 링크</h2>
+
+    <p>
+      앱은 Google Play 또는 외부 페이지로
+      연결되는 링크를 제공할 수 있습니다.
+    </p>
+
+    <p>
+      외부 사이트나 서비스의 콘텐츠 및
+      개인정보 처리 방식은 해당 서비스
+      제공업체의 정책에 따릅니다.
+    </p>
+
+    <p>
+      사용자는 외부 서비스를 이용하기 전에
+      해당 서비스의 개인정보처리방침을
+      확인할 수 있습니다.
+    </p>
+
+    <h2>12. 아동의 개인정보 보호</h2>
+
+    <p>
+      앱은 일반 사용자를 위한
+      청소구역 랜덤 배정 도구이며,
+      아동의 개인정보를 의도적으로
+      수집하기 위한 서비스가 아닙니다.
+    </p>
+
+    <p>
+      사용자는 다른 사람의 실명이나
+      민감한 개인정보 대신 별명 등의
+      표현을 사용할 것을 권장합니다.
+    </p>
+
+    <h2>13. 개인정보처리방침 변경</h2>
+
+    <p>
+      앱 기능, 광고 서비스,
+      제3자 서비스 또는 관련 정책의
+      변경에 따라 본 개인정보처리방침이
+      변경될 수 있습니다.
+    </p>
+
+    <p>
+      중요한 변경사항이 발생하는 경우
+      본 페이지를 업데이트하여
       변경된 내용을 안내합니다.
     </p>
 
-    <h2>11. 개발자 정보 및 문의</h2>
+    <h2>14. 개발자 정보 및 문의</h2>
 
     <div class="notice">
+
       <p>
-        최신 개발자 정보 및 연락처는 Google Play 스토어에 게시된
-        본 앱의 등록정보에 있는 개발자 연락처를 참고해 주세요.
+        <strong>개발자: JCraft Studio</strong>
       </p>
 
       <p>
-        개인정보 및 앱 관련 문의 역시 Google Play 스토어 등록정보에
-        표시된 개발자 연락처를 통해 문의할 수 있습니다.
+        최신 개발자 정보 및 연락처는
+        Google Play 스토어에 게시된
+        본 앱의 등록정보에 있는
+        개발자 연락처를 참고해 주세요.
       </p>
+
+      <p>
+        개인정보 및 앱 관련 문의는
+        Google Play 스토어 등록정보에
+        표시된 개발자 연락처를 통해
+        문의할 수 있습니다.
+      </p>
+
     </div>
 
     <p class="updated">
-      시행일: 2026년 9월 29일
+      시행일: 2026년 11월 9일<br>
+      최종 수정일: 2026년 11월 9일
     </p>
-  </section>
 
+  </section>
 
   <div class="divider"></div>
 
+  <!-- ========================================== -->
+  <!-- English Privacy Policy -->
+  <!-- ========================================== -->
 
-  <!-- ===================================================== -->
-  <!-- English -->
-  <!-- ===================================================== -->
+  <section id="en" lang="en">
 
-  <section id="en">
     <h1>Privacy Policy</h1>
-    <p class="app-name">Random Cleaning Assignment</p>
 
-    <div class="language-nav">
+    <p class="app-name">
+      Random Cleaning Assignment
+    </p>
+
+    <nav class="language-nav"
+         aria-label="Language selection">
       <a href="#ko">한국어</a>
       <a href="#en">English</a>
-    </div>
+    </nav>
 
     <p>
-      This Privacy Policy explains how information is handled by
-      the Random Cleaning Assignment application ("the App").
+      This Privacy Policy explains how information
+      is handled by the Random Cleaning Assignment
+      application ("the App") provided by
+      JCraft Studio.
     </p>
 
     <p>
-      The App provides tools for entering people and cleaning areas
-      and assigning them randomly. We value the privacy of our users.
+      The App provides tools for entering people
+      and cleaning areas and assigning them randomly.
+      We value the privacy of our users.
     </p>
 
     <h2>1. Information Entered by Users</h2>
 
     <p>
-      Users may enter information such as names, cleaning area names,
-      and the number of people assigned to each area in order to use
-      the App's features.
+      Users may enter information such as:
+    </p>
+
+    <ul>
+      <li>Participant names or nicknames</li>
+      <li>Cleaning area names</li>
+      <li>Number of people assigned to each area</li>
+      <li>
+        Other information required for
+        random assignment
+      </li>
+    </ul>
+
+    <p>
+      This information is used to provide
+      random assignment and related functionality
+      within the App.
     </p>
 
     <p>
-      This information is used to provide random assignment and
-      related functionality within the App.
-    </p>
-
-    <p>
-      Users may use nicknames, aliases, or other non-identifying labels
+      Users may use nicknames, aliases,
+      or other non-identifying labels
       instead of real names.
+    </p>
+
+    <p>
+      The developer does not require users
+      to submit this information to a separate
+      user account or developer-operated server
+      to use the App's core functionality.
     </p>
 
     <h2>2. User Accounts</h2>
 
     <p>
-      The App does not require users to register or create an account.
-    </p>
-
-    <h2>3. Advertising</h2>
-
-    <p>
-      The App may use the Google Mobile Ads SDK to display advertising
-      in order to support operation of the service.
+      The App does not require users
+      to register or create an account.
     </p>
 
     <p>
-      In connection with advertising, Google and related advertising
-      service providers may process device or advertising-related
-      information for purposes such as delivering ads, measuring
-      advertising performance, preventing fraud or abuse, and improving
+      Users can access the App's core features
+      without creating an account or logging in.
+    </p>
+
+    <h2>3. Advertising Services</h2>
+
+    <p>
+      The App uses Unity LevelPlay,
+      an advertising mediation platform,
+      and Unity Ads to support the operation
+      and maintenance of the free service.
+    </p>
+
+    <p>
+      The App may display the following
+      advertising formats:
+    </p>
+
+    <ul>
+      <li>Banner advertisements</li>
+      <li>Interstitial advertisements</li>
+      <li>
+        Optional rewarded advertisements
+        initiated by the user
+      </li>
+    </ul>
+
+    <p>
+      Unity and related advertising service
+      providers may process information
+      necessary for delivering advertisements,
+      measuring advertising performance,
+      preventing fraud, and operating
+      advertising services.
+    </p>
+
+    <p>
+      Such processing may vary depending on
+      the user's device settings,
+      privacy choices, applicable laws,
+      and the policies of the relevant providers.
+    </p>
+
+    <h2>4. Advertising Data Processing</h2>
+
+    <p>
+      When advertisements are delivered through
+      Unity LevelPlay and Unity Ads,
+      the following information may be processed:
+    </p>
+
+    <ul>
+      <li>
+        Device and operating system information
+      </li>
+      <li>
+        Advertising identifiers,
+        including Android Advertising ID
+      </li>
+      <li>
+        IP addresses and network-related information
+      </li>
+      <li>
+        Advertising requests and impressions
+      </li>
+      <li>
+        Advertisement clicks and interactions
+      </li>
+      <li>
+        Information needed for advertising
+        measurement and fraud prevention
+      </li>
+    </ul>
+
+    <p>
+      This information may be used for
+      delivering and measuring advertisements,
+      maintaining service security,
+      preventing fraudulent activity,
+      and improving advertising services.
+    </p>
+
+    <p>
+      The developer does not directly collect
+      advertising identifiers to create
+      its own user profiles for the App's
+      core random cleaning assignment feature.
+    </p>
+
+    <p>
+      For further information about
+      advertising-related data processing,
+      please refer to Unity's official
+      privacy policy.
+    </p>
+
+    <p>
+      <a
+        href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+        target="_blank"
+        rel="noopener noreferrer">
+        Unity Game Player and App User Privacy Policy
+      </a>
+    </p>
+
+    <h2>5. Data Stored on the Device</h2>
+
+    <p>
+      The App may store certain information
+      locally on the user's device
+      to provide functionality and
+      maintain user settings.
+    </p>
+
+    <p>
+      Such information may include
+      App settings, data required for
+      certain features, and advertising-related
+      status information.
+    </p>
+
+    <p>
+      For example, the temporary
+      interstitial-ad-free period
+      granted after completing a rewarded
+      advertisement may be stored locally.
+    </p>
+
+    <p>
+      Local data is used to maintain
+      App functionality and user preferences.
+    </p>
+
+    <h2>6. Data Sharing</h2>
+
+    <p>
+      The developer does not sell
+      participant names or cleaning area
+      information directly entered
+      by users into the App.
+    </p>
+
+    <p>
+      The developer does not intentionally
+      transmit this input information
+      to advertising service providers
+      for the App's core random assignment
+      functionality.
+    </p>
+
+    <p>
+      However, Unity LevelPlay,
+      Unity Ads, and related advertising
+      services may process or share
+      device information and advertising-related
+      information necessary to provide
       their services.
     </p>
 
     <p>
-      Data processing by third-party services may vary depending on
-      their policies and the user's device, account, and privacy settings.
+      Such third-party data processing
+      is governed by the applicable privacy
+      policies and laws.
     </p>
 
-    <h2>4. Data Stored on the Device</h2>
+    <h2>7. Data Retention and Deletion</h2>
 
     <p>
-      The App may store certain settings locally on the user's device
-      where necessary to provide its functionality.
-    </p>
-
-    <p>
-      For example, settings related to the temporary interstitial-ad-free
-      period provided after completion of a rewarded advertisement may
-      be stored on the device.
+      Data stored locally by the App
+      may remain on the user's device
+      as long as necessary to provide
+      functionality and maintain settings.
     </p>
 
     <p>
-      Local data is used to maintain App functionality and user settings.
-    </p>
-
-    <h2>5. Data Sharing</h2>
-
-    <p>
-      The developer does not sell cleaning participant names or cleaning
-      area information directly entered by users into the App.
+      Users may delete relevant local data
+      through available in-app deletion
+      features or their device's
+      application data clearing options.
     </p>
 
     <p>
-      Third-party services included in the App, such as advertising SDKs,
-      may process information as necessary to provide their services.
-    </p>
-
-    <h2>6. Data Retention and Deletion</h2>
-
-    <p>
-      Data stored locally by the App may remain on the user's device
-      for as long as necessary to provide App functionality and maintain
-      user settings.
+      Uninstalling the App generally removes
+      App-specific local data from the device.
+      However, some data may be restored
+      depending on device backup and
+      restoration settings.
     </p>
 
     <p>
-      Relevant local data may be removed by using available deletion
-      features, clearing the App's data, or uninstalling the App.
+      Information processed by Unity
+      or other third-party service providers
+      is retained and deleted according
+      to their respective policies.
+    </p>
+
+    <h2>8. Privacy and Advertising Choices</h2>
+
+    <p>
+      Users may manage certain
+      advertising-related privacy choices
+      through the privacy and advertising
+      settings available on their
+      Android devices.
     </p>
 
     <p>
-      Data processed independently by third-party service providers is
-      retained and deleted according to their respective policies.
-    </p>
-
-    <h2>7. Data Security</h2>
-
-    <p>
-      The developer seeks to maintain reasonable technical and
-      administrative measures to protect information processed through
-      the App.
+      Depending on the device and operating
+      system version, users may be able
+      to reset or delete their
+      advertising identifier.
     </p>
 
     <p>
-      However, no method of electronic storage or transmission can
+      Where privacy controls are available
+      within Unity Ads advertisements,
+      users may review or modify
+      applicable privacy choices.
+    </p>
+
+    <p>
+      The availability of privacy controls
+      may depend on the user's location,
+      device, and applicable laws.
+    </p>
+
+    <h2>9. Data Security</h2>
+
+    <p>
+      The developer seeks to maintain
+      reasonable technical and administrative
+      measures to protect information
+      processed through the App.
+    </p>
+
+    <p>
+      However, no method of electronic
+      storage or transmission can
       guarantee absolute security.
     </p>
 
-    <h2>8. Third-Party Services</h2>
+    <h2>10. Third-Party Services</h2>
 
     <p>
-      The App may use third-party services, including:
+      The App may use the following
+      third-party services:
     </p>
 
     <ul>
-      <li>Google Mobile Ads</li>
-      <li>Google Play and related Google services</li>
+      <li>
+        Unity LevelPlay
+        (advertising mediation)
+      </li>
+      <li>
+        Unity Ads
+        (advertisement delivery)
+      </li>
+      <li>
+        Google Play and related Google services
+        (application distribution
+        and platform services)
+      </li>
     </ul>
 
     <p>
-      Information processed by third-party services is subject to
-      the privacy policies and terms of those service providers.
-    </p>
-
-    <h2>9. External Links</h2>
-
-    <p>
-      The App may provide links to other applications on Google Play
-      or to external pages.
+      Information processed by these
+      services is subject to their
+      respective privacy policies.
     </p>
 
     <p>
-      The developer is not responsible for the privacy practices of
-      independent external services. Users should review the applicable
-      privacy policies of those services.
-    </p>
-
-    <h2>10. Changes to This Privacy Policy</h2>
-
-    <p>
-      This Privacy Policy may be updated when App functionality,
-      third-party services, or applicable requirements change.
+      <strong>Unity Privacy Policy</strong>
     </p>
 
     <p>
-      Material updates will be reflected on this page by publishing
-      the revised policy.
+      <a
+        href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://unity.com/legal/game-player-and-app-user-privacy-policy
+      </a>
     </p>
 
-    <h2>11. Developer Information and Contact</h2>
+    <p>
+      <strong>Google Privacy Policy</strong>
+    </p>
+
+    <p>
+      <a
+        href="https://policies.google.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://policies.google.com/privacy
+      </a>
+    </p>
+
+    <h2>11. External Links</h2>
+
+    <p>
+      The App may provide links to
+      Google Play or external webpages.
+    </p>
+
+    <p>
+      External websites and services
+      are governed by the privacy policies
+      and practices of their
+      respective providers.
+    </p>
+
+    <p>
+      Users are encouraged to review
+      the applicable privacy policies
+      before using external services.
+    </p>
+
+    <h2>12. Children's Privacy</h2>
+
+    <p>
+      The App is a general-purpose
+      random cleaning assignment tool
+      and is not designed to intentionally
+      collect personal information
+      from children.
+    </p>
+
+    <p>
+      Users are encouraged to use
+      nicknames or other non-identifying
+      labels instead of real names
+      or sensitive personal information.
+    </p>
+
+    <h2>13. Changes to This Privacy Policy</h2>
+
+    <p>
+      This Privacy Policy may be updated
+      when App functionality,
+      advertising services,
+      third-party services,
+      or applicable requirements change.
+    </p>
+
+    <p>
+      Material changes will be reflected
+      on this page by publishing
+      an updated version of the policy.
+    </p>
+
+    <h2>14. Developer Information and Contact</h2>
 
     <div class="notice">
+
       <p>
-        For the most current developer information and contact details,
-        please refer to the Developer Contact section of this App's
-        listing on Google Play.
+        <strong>Developer: JCraft Studio</strong>
       </p>
 
       <p>
-        Privacy-related and App-related inquiries may also be submitted
-        using the developer contact information displayed on the
-        Google Play Store listing.
+        For the most current developer
+        information and contact details,
+        please refer to the Developer Contact
+        section of this App's listing
+        on Google Play.
       </p>
+
+      <p>
+        Privacy-related and App-related
+        inquiries may be submitted using
+        the developer contact information
+        displayed on the Google Play
+        Store listing.
+      </p>
+
     </div>
 
     <p class="updated">
-      Effective date: September 29, 2026
+      Effective date: November 9, 2026<br>
+      Last updated: November 9, 2026
     </p>
-  </section>
 
+  </section>
 
   <footer>
     © 2026 JCraft Studio. All rights reserved.
