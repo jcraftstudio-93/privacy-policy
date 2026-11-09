@@ -1,1057 +1,1769 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Tic Tac Toe privacy policy / 틱택토 개인정보처리방침">
+<title>Privacy Policy | Tic Tac Toe</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<style>
+:root {
+  color-scheme: light dark;
+  --background: #f5f7fb;
+  --surface: #ffffff;
+  --surface-soft: #f0f2f8;
+  --text: #171821;
+  --text-secondary: #626777;
+  --primary: #5254d8;
+  --primary-soft: #e8e9ff;
+  --border: #e2e5ed;
+  --shadow: 0 20px 50px rgba(38,42,70,.10);
+}
 
-  <meta name="color-scheme" content="light dark">
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f1117;
+    --surface: #191b23;
+    --surface-soft: #232631;
+    --text: #f3f4f8;
+    --text-secondary: #b2b6c4;
+    --primary: #b9b8ff;
+    --primary-soft: #30325c;
+    --border: #343744;
+    --shadow: none;
+  }
+}
 
-  <meta
-    name="description"
-    content="Tic Tac Toe privacy policy / 틱택토 개인정보처리방침"
-  >
+* {
+  box-sizing: border-box;
+}
 
-  <title>Privacy Policy | Tic Tac Toe</title>
+html {
+  scroll-behavior: smooth;
+}
 
-  <style>
-    :root {
-      --background: #f5f7fb;
-      --surface: #ffffff;
-      --surface-soft: #f0f2f8;
-      --text: #171821;
-      --text-secondary: #626777;
-      --primary: #5254d8;
-      --primary-soft: #e8e9ff;
-      --border: #e2e5ed;
-      --shadow: 0 20px 50px rgba(38, 42, 70, 0.10);
-    }
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(82,84,216,.12),
+      transparent 28rem
+    ),
+    var(--background);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Noto Sans KR",
+    Arial,
+    sans-serif;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --background: #0f1117;
-        --surface: #191b23;
-        --surface-soft: #232631;
-        --text: #f3f4f8;
-        --text-secondary: #b2b6c4;
-        --primary: #b9b8ff;
-        --primary-soft: #30325c;
-        --border: #343744;
-        --shadow: none;
-      }
-    }
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+.page {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0 64px;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+.hero {
+  padding: 34px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  background:
+    linear-gradient(
+      135deg,
+      var(--surface),
+      var(--surface-soft)
+    );
+  box-shadow: var(--shadow);
+}
 
-    body {
-      margin: 0;
-      color: var(--text);
-      background:
-        radial-gradient(
-          circle at top right,
-          rgba(82, 84, 216, 0.12),
-          transparent 28rem
-        ),
-        var(--background);
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
 
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        "Noto Sans KR",
-        Arial,
-        sans-serif;
+.logo {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 18px;
+  color: #ffffff;
+  background:
+    linear-gradient(
+      135deg,
+      #6d6feb,
+      #4749c6
+    );
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
 
-      line-height: 1.75;
-      word-break: keep-all;
-    }
+.brand-text strong {
+  display: block;
+  font-size: 18px;
+}
 
-    button,
-    a {
-      -webkit-tap-highlight-color: transparent;
-    }
+.brand-text span {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
 
-    .page {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 32px 0 64px;
-    }
+h1 {
+  margin: 0;
+  font-size: clamp(30px,5vw,46px);
+  line-height: 1.2;
+  letter-spacing: -1.4px;
+}
 
-    .hero {
-      padding: 34px;
-      border: 1px solid var(--border);
-      border-radius: 30px;
-      background:
-        linear-gradient(
-          135deg,
-          var(--surface),
-          var(--surface-soft)
-        );
-      box-shadow: var(--shadow);
-    }
+.lead {
+  max-width: 720px;
+  margin: 16px 0 0;
+  color: var(--text-secondary);
+  font-size: 16px;
+}
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 26px;
-    }
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
 
-    .logo {
-      display: grid;
-      width: 54px;
-      height: 54px;
-      place-items: center;
+.badge {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+}
 
-      border-radius: 18px;
-      color: #ffffff;
+.language-switcher {
+  display: inline-flex;
+  gap: 6px;
+  margin: 22px 0;
+  padding: 5px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
 
-      background:
-        linear-gradient(
-          135deg,
-          #6d6feb,
-          #4749c6
-        );
+.language-switcher button {
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 16px;
+  color: var(--text-secondary);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
 
-      font-size: 18px;
-      font-weight: 900;
-      letter-spacing: -1px;
-    }
+.language-switcher button.active {
+  color: #ffffff;
+  background: #5254d8;
+}
 
-    .brand-text strong {
-      display: block;
-      font-size: 18px;
-    }
+.language-switcher button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
 
-    .brand-text span {
-      color: var(--text-secondary);
-      font-size: 14px;
-    }
+.policy {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
 
-    h1 {
-      margin: 0;
-      font-size: clamp(30px, 5vw, 46px);
-      line-height: 1.2;
-      letter-spacing: -1.4px;
-    }
+.policy[hidden] {
+  display: none;
+}
 
-    .lead {
-      max-width: 720px;
-      margin: 16px 0 0;
-      color: var(--text-secondary);
-      font-size: 16px;
-    }
+.policy section + section {
+  margin-top: 34px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border);
+}
 
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 22px;
-    }
+h2 {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 22px;
+  line-height: 1.35;
+  letter-spacing: -.4px;
+}
 
-    .badge {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: var(--primary-soft);
-      color: var(--primary);
-      font-size: 13px;
-      font-weight: 800;
-    }
+h3 {
+  margin: 24px 0 10px;
+  font-size: 17px;
+}
 
-    .language-switcher {
-      display: inline-flex;
-      gap: 6px;
-      margin: 22px 0;
-      padding: 5px;
+p {
+  margin: 10px 0;
+}
 
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: var(--surface);
-    }
+ul {
+  margin: 12px 0;
+  padding-left: 22px;
+}
 
-    .language-switcher button {
-      border: 0;
-      border-radius: 12px;
-      padding: 10px 16px;
+li + li {
+  margin-top: 8px;
+}
 
-      color: var(--text-secondary);
-      background: transparent;
+.notice {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-left: 4px solid var(--primary);
+  border-radius: 0 16px 16px 0;
+  background: var(--primary-soft);
+}
 
-      cursor: pointer;
-      font: inherit;
-      font-weight: 800;
-    }
+.service-box {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface-soft);
+}
 
-    .language-switcher button.active {
-      color: #ffffff;
-      background: var(--primary);
-    }
+.contact-card {
+  margin-top: 14px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface-soft);
+}
 
-    .policy {
-      padding: 30px;
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      background: var(--surface);
-      box-shadow: var(--shadow);
-    }
+.contact-card strong {
+  display: block;
+  margin-bottom: 6px;
+}
 
-    .policy[hidden] {
-      display: none;
-    }
+a {
+  color: var(--primary);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
 
-    section + section {
-      margin-top: 34px;
-      padding-top: 30px;
-      border-top: 1px solid var(--border);
-    }
+footer {
+  padding: 26px 6px 0;
+  color: var(--text-secondary);
+  text-align: center;
+  font-size: 13px;
+}
 
-    h2 {
-      margin: 0 0 12px;
-      color: var(--text);
-      font-size: 22px;
-      line-height: 1.35;
-      letter-spacing: -0.4px;
-    }
+@media (max-width: 600px) {
+  .page {
+    width: calc(100% - 20px);
+    padding-top: 14px;
+  }
 
-    p {
-      margin: 10px 0;
-    }
+  .hero,
+  .policy {
+    padding: 22px;
+    border-radius: 22px;
+  }
 
-    ul {
-      margin: 12px 0;
-      padding-left: 22px;
-    }
+  .language-switcher {
+    width: 100%;
+  }
 
-    li + li {
-      margin-top: 8px;
-    }
+  .language-switcher button {
+    flex: 1;
+  }
 
-    .notice {
-      margin-top: 18px;
-      padding: 16px 18px;
-
-      border-left: 4px solid var(--primary);
-      border-radius: 0 16px 16px 0;
-
-      background: var(--primary-soft);
-    }
-
-    .contact-card {
-      margin-top: 14px;
-      padding: 18px;
-
-      border: 1px solid var(--border);
-      border-radius: 18px;
-
-      background: var(--surface-soft);
-    }
-
-    .contact-card strong {
-      display: block;
-      margin-bottom: 6px;
-    }
-
-    a {
-      color: var(--primary);
-      font-weight: 700;
-    }
-
-    footer {
-      padding: 26px 6px 0;
-      color: var(--text-secondary);
-      text-align: center;
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-      .page {
-        width: min(100% - 20px, 920px);
-        padding-top: 14px;
-      }
-
-      .hero,
-      .policy {
-        padding: 22px;
-        border-radius: 22px;
-      }
-
-      .language-switcher {
-        width: 100%;
-      }
-
-      .language-switcher button {
-        flex: 1;
-      }
-
-      body {
-        word-break: normal;
-      }
-    }
-  </style>
+  body {
+    word-break: normal;
+  }
+}
+</style>
 </head>
 
 <body>
-  <main class="page">
+<main class="page">
 
-    <header class="hero">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">
-          XO
-        </div>
+<header class="hero">
 
-        <div class="brand-text">
-          <strong>Tic Tac Toe</strong>
-          <span>JCraft Studio</span>
-        </div>
-      </div>
+  <div class="brand">
+    <div class="logo" aria-hidden="true">XO</div>
 
-      <h1>Privacy Policy</h1>
+    <div class="brand-text">
+      <strong>Tic Tac Toe</strong>
+      <span>JCraft Studio</span>
+    </div>
+  </div>
 
-      <p class="lead">
-        This page explains how the Tic Tac Toe app handles information.
-        한국어와 영어로 제공되는 틱택토 앱 개인정보처리방침입니다.
+  <h1>Privacy Policy</h1>
+
+  <p class="lead">
+    This page explains how the Tic Tac Toe
+    app handles information.
+    한국어와 영어로 제공되는
+    틱택토 개인정보처리방침입니다.
+  </p>
+
+  <div class="meta">
+    <span class="badge">
+      Effective: November 9, 2026
+    </span>
+
+    <span class="badge">
+      시행일: 2026년 11월 9일
+    </span>
+  </div>
+
+</header>
+
+<nav class="language-switcher"
+     aria-label="Language selection">
+
+  <button
+    type="button"
+    id="btn-ko"
+    class="active"
+    aria-pressed="true">
+    한국어
+  </button>
+
+  <button
+    type="button"
+    id="btn-en"
+    aria-pressed="false">
+    English
+  </button>
+
+</nav>
+
+<!-- ===================================== -->
+<!-- KOREAN PRIVACY POLICY -->
+<!-- ===================================== -->
+
+<article id="policy-ko"
+         class="policy"
+         lang="ko">
+
+  <section>
+    <h2>1. 개인정보처리방침 개요</h2>
+
+    <p>
+      JCraft Studio(이하 "개발자")는
+      Tic Tac Toe(틱택토, 이하 "앱")
+      이용자의 개인정보를 중요하게 생각합니다.
+    </p>
+
+    <p>
+      본 개인정보처리방침은
+      앱에서 어떠한 정보가 처리될 수 있는지,
+      정보의 이용 목적,
+      제3자 광고 서비스,
+      데이터 저장 및 삭제 방법,
+      이용자의 개인정보 보호 선택권을
+      설명합니다.
+    </p>
+
+    <p>
+      관련 법령 또는 앱 기능이 변경되는 경우
+      본 개인정보처리방침도
+      변경될 수 있습니다.
+    </p>
+
+    <p>
+      관련 법률상 별도의 동의가 필요한 경우
+      적절한 동의 절차가
+      제공될 수 있습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. 앱이 직접 처리하는 정보</h2>
+
+    <p>
+      본 앱은 기본적인 게임 기능을
+      이용하기 위해 회원가입이나
+      로그인을 요구하지 않습니다.
+    </p>
+
+    <p>
+      개발자는 앱의 기본 기능을 통해
+      이름, 이메일 주소, 전화번호,
+      주소 등의 직접적인 개인 식별 정보를
+      요구하거나 별도의 개발자 서버로
+      전송하도록 설계하지 않았습니다.
+    </p>
+
+    <p>
+      앱 기능 제공을 위해
+      다음과 같은 정보가 사용자의
+      기기 내부에 저장될 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        진행 중인 게임판 정보
+      </li>
+
+      <li>
+        착수 순서 및 현재 차례
+      </li>
+
+      <li>
+        경기 결과 및 경기 기록
+      </li>
+
+      <li>
+        선택한 언어 및 다크 모드 설정
+      </li>
+
+      <li>
+        광고 표시 주기를 계산하기 위한
+        완료 경기 수
+      </li>
+
+      <li>
+        광고 표시 규칙과 관련된
+        로컬 상태 정보
+      </li>
+    </ul>
+
+    <p>
+      해당 정보는 기본적으로
+      사용자 기기 내부에 저장되며,
+      개발자가 운영하는 별도의 서버로
+      전송하지 않습니다.
+    </p>
+
+    <p>
+      다만 제3자 광고 SDK는
+      광고 제공에 필요한 기기 및
+      광고 관련 정보를
+      별도로 처리할 수 있습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. 광고 서비스 및 제3자 처리</h2>
+
+    <p>
+      본 앱은 무료 서비스 운영 및
+      지속적인 유지 관리를 위해
+      <strong>Unity LevelPlay</strong>
+      광고 미디에이션 플랫폼과
+      <strong>Unity Ads</strong>
+      광고 서비스를 사용합니다.
+    </p>
+
+    <h3>3.1 Unity LevelPlay</h3>
+
+    <p>
+      Unity LevelPlay는 앱 내
+      광고 요청, 광고 표시 및
+      광고 미디에이션을 관리하는
+      플랫폼입니다.
+    </p>
+
+    <p>
+      광고 제공 과정에서
+      일부 기기 정보 및
+      광고 관련 데이터가
+      처리될 수 있습니다.
+    </p>
+
+    <h3>3.2 Unity Ads</h3>
+
+    <p>
+      Unity Ads는 앱 내 광고 제공,
+      광고 성과 측정 및
+      부정행위 방지 등을 지원하는
+      광고 서비스입니다.
+    </p>
+
+    <p>
+      광고 제공업체는 자체
+      개인정보처리방침과 관련 법률에 따라
+      데이터를 처리할 수 있습니다.
+    </p>
+
+    <h3>3.3 광고 유형</h3>
+
+    <p>
+      앱의 실제 배포 버전 및
+      광고 설정에 따라
+      배너 광고 또는 전면 광고 등이
+      제공될 수 있습니다.
+    </p>
+
+    <p>
+      광고 표시 주기는
+      앱 내부의 게임 완료 횟수 등
+      광고 표시 규칙에 따라
+      관리될 수 있습니다.
+    </p>
+
+    <p>
+      광고 표시 여부 및
+      광고 요청 결과는
+      네트워크 상태와 광고 제공업체의
+      광고 준비 상태에 따라
+      달라질 수 있습니다.
+    </p>
+
+    <h3>3.4 광고 관련 데이터 처리</h3>
+
+    <p>
+      Unity 및 관련 광고 서비스 제공업체는
+      광고 제공, 광고 성과 측정,
+      부정 트래픽 방지,
+      보안 및 서비스 안정성 유지를 위해
+      다음과 같은 정보를
+      처리할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        Android 광고 ID 등
+        광고 관련 식별자
+      </li>
+
+      <li>
+        기기 모델 및 운영체제 정보
+      </li>
+
+      <li>
+        IP 주소 및 네트워크 관련 정보
+      </li>
+
+      <li>
+        IP 주소 등을 통해 추정되는
+        대략적인 지역 정보
+      </li>
+
+      <li>
+        앱 식별 정보 및 앱 버전
+      </li>
+
+      <li>
+        광고 요청, 노출, 클릭 및
+        광고 상호작용 정보
+      </li>
+
+      <li>
+        광고 시청 및 광고 성과
+        측정 관련 정보
+      </li>
+
+      <li>
+        광고 오류 및 기술적 진단 정보
+      </li>
+
+      <li>
+        광고 사기 및 무효 트래픽
+        방지를 위한 정보
+      </li>
+    </ul>
+
+    <p>
+      실제 처리되는 정보는
+      광고 SDK 버전 및 설정,
+      연결된 광고 네트워크,
+      기기 환경, 이용 지역,
+      개인정보 보호 선택 및
+      적용 법률에 따라 달라질 수 있습니다.
+    </p>
+
+    <p>
+      개발자는 사용자의
+      게임판 정보, 경기 기록 및
+      언어·테마 설정을
+      광고 타겟팅 목적으로
+      광고 SDK에 의도적으로
+      전달하지 않습니다.
+    </p>
+
+    <h3>3.5 Unity 공식 개인정보처리방침</h3>
+
+    <div class="service-box">
+
+      <p>
+        <strong>Unity LevelPlay</strong>
       </p>
 
-      <div class="meta">
-        <span class="badge">
-          Effective: August 31, 2026
-        </span>
-
-        <span class="badge">
-          시행일: 2026년 8월 31일
-        </span>
-      </div>
-    </header>
-
-    <nav
-      class="language-switcher"
-      aria-label="Language selection"
-    >
-      <button
-        type="button"
-        id="btn-ko"
-        class="active"
-        aria-pressed="true"
-      >
-        한국어
-      </button>
-
-      <button
-        type="button"
-        id="btn-en"
-        aria-pressed="false"
-      >
-        English
-      </button>
-    </nav>
-
-    <!-- 한국어 개인정보처리방침 -->
-    <article
-      id="policy-ko"
-      class="policy"
-      lang="ko"
-    >
-      <section>
-        <h2>1. 개인정보처리방침 개요</h2>
-
-        <p>
-          JCraft Studio(이하 “개발자”)는 틱택토 앱
-          (이하 “앱”) 이용자의 개인정보를 중요하게 생각합니다.
-          본 개인정보처리방침은 앱이 정보를 처리하는 방식과
-          이용자가 선택할 수 있는 사항을 설명합니다.
-        </p>
-
-        <p>
-          앱을 설치하거나 이용하는 경우 본 개인정보처리방침의
-          내용을 확인한 것으로 봅니다. 관련 법령 또는 앱 기능이
-          변경되는 경우 본 방침도 변경될 수 있습니다.
-        </p>
-      </section>
-
-      <section>
-        <h2>2. 앱이 직접 처리하는 정보</h2>
-
-        <p>
-          앱은 회원가입이나 로그인을 요구하지 않으며,
-          이름, 이메일 주소, 전화번호, 주소와 같은 개인 식별 정보를
-          앱 기능을 통해 직접 입력받거나 개발자 서버로 전송하지 않습니다.
-        </p>
-
-        <p>
-          다음 정보는 앱 기능 제공을 위해 이용자의 기기 내부에
-          저장될 수 있습니다.
-        </p>
-
-        <ul>
-          <li>
-            진행 중인 게임판, 착수 순서 및 현재 차례
-          </li>
-
-          <li>
-            경기 결과와 경기 기록
-          </li>
-
-          <li>
-            선택한 언어와 다크 모드 설정
-          </li>
-
-          <li>
-            광고 표시 주기 계산을 위한 완료 경기 수
-          </li>
-        </ul>
-
-        <p>
-          위 정보는 원칙적으로 이용자의 기기 내부에만 저장되며
-          개발자가 운영하는 별도 서버로 전송되지 않습니다.
-        </p>
-      </section>
-
-      <section>
-        <h2>3. 광고 서비스 및 제3자 처리</h2>
-
-        <p>
-          앱은 광고 제공을 위해 Google AdMob 및
-          Google Mobile Ads SDK를 사용할 수 있습니다.
-        </p>
-
-        <p>
-          Google과 그 광고 파트너는 광고 제공, 광고 성과 측정,
-          부정 사용 방지, 보안 및 서비스 개선을 위해 다음과 같은
-          정보를 자동으로 처리할 수 있습니다.
-        </p>
-
-        <ul>
-          <li>기기 또는 기타 식별자</li>
-          <li>IP 주소</li>
-          <li>광고 조회 및 상호작용 정보</li>
-          <li>앱 및 기기 관련 진단 정보</li>
-          <li>광고 사기 및 무효 트래픽 방지를 위한 정보</li>
-        </ul>
-
-        <p>
-          처리되는 정보의 종류와 방식은 기기 설정, 이용 지역,
-          사용자의 동의 선택, Google 서비스 설정 및 적용 법률에
-          따라 달라질 수 있습니다.
-        </p>
-
-        <p>
-          Google의 정보 처리 방식은
-          <a
-            href="https://policies.google.com/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google 개인정보처리방침
-          </a>
-          및
-          <a
-            href="https://policies.google.com/technologies/ads"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google 광고 관련 안내
-          </a>
-          에서 확인할 수 있습니다.
-        </p>
-
-        <div class="notice">
-          앱의 Google Play 데이터 보안 섹션은 앱에 포함된
-          광고 SDK의 실제 동작과 일치하도록 별도로 작성하고
-          최신 상태로 유지합니다.
-        </div>
-      </section>
-
-      <section>
-        <h2>4. 정보 이용 목적</h2>
-
-        <p>
-          앱 또는 제3자 서비스에서 처리되는 정보는 다음 목적으로
-          사용될 수 있습니다.
-        </p>
-
-        <ul>
-          <li>
-            게임 진행, 이어하기, 경기 기록 및 환경설정 기능 제공
-          </li>
-
-          <li>
-            광고 표시 및 광고 성과 측정
-          </li>
-
-          <li>
-            광고 사기, 무효 트래픽 및 보안 위협 방지
-          </li>
-
-          <li>
-            앱의 안정성 유지와 오류 진단
-          </li>
-
-          <li>
-            관련 법적 의무 준수 및 이용자 권리 보호
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>5. 정보의 공유</h2>
-
-        <p>
-          개발자는 앱에 저장된 게임 기록이나 환경설정 정보를
-          판매하거나 개발자 서버를 통해 제3자에게 제공하지 않습니다.
-        </p>
-
-        <p>
-          다만 광고 제공을 위해 Google AdMob 및 관련 광고 파트너가
-          자체 정책과 이용자의 동의 설정에 따라 정보를 처리할 수 있습니다.
-        </p>
-
-        <p>
-          또한 법률상 의무가 있거나 이용자, 개발자 또는 다른 사람의
-          권리와 안전을 보호하기 위해 필요한 경우 관련 법령에 따라
-          정보가 제공될 수 있습니다.
-        </p>
-      </section>
-
-      <section>
-        <h2>6. 보관 및 삭제</h2>
-
-        <p>
-          앱이 기기 내부에 저장하는 게임 기록과 설정은 이용자가
-          앱 데이터를 삭제하거나 앱을 제거할 때 삭제될 수 있습니다.
-        </p>
-
-        <p>
-          앱에서 제공되는 경기 기록 삭제 기능을 이용하여
-          개별 기록 또는 전체 기록을 직접 삭제할 수도 있습니다.
-        </p>
-
-        <p>
-          광고 서비스 제공자가 처리하는 정보의 보관 및 삭제는
-          해당 제공자의 개인정보처리방침과 보관 정책에 따릅니다.
-        </p>
-
-        <p>
-          앱은 사용자 계정을 생성하지 않으므로 별도의 계정 삭제
-          절차를 제공하지 않습니다.
-        </p>
-      </section>
-
-      <section>
-        <h2>7. 정보 보안</h2>
-
-        <p>
-          개발자는 앱이 직접 관리하는 정보의 범위를 최소화하고,
-          운영체제가 제공하는 저장 방식과 보안 기능을 활용하도록
-          노력합니다.
-        </p>
-
-        <p>
-          다만 인터넷을 통한 전송이나 전자적 저장 방식에 대해
-          절대적인 보안을 보장할 수는 없습니다.
-        </p>
-      </section>
-
-      <section>
-        <h2>8. 아동의 개인정보</h2>
-
-        <p>
-          앱은 관련 법률에서 정한 최소 연령 미만의 아동으로부터
-          개인정보를 고의로 직접 수집하도록 설계되지 않았습니다.
-        </p>
-
-        <p>
-          보호자가 아동의 개인정보가 부적절하게 처리되었다고
-          판단하는 경우 아래 문의 방법을 통해 개발자에게
-          연락할 수 있습니다.
-        </p>
-      </section>
-
-      <section>
-        <h2>9. 이용자의 선택과 권리</h2>
-
-        <p>
-          이용자는 다음과 같은 방법으로 정보 처리 범위를
-          관리할 수 있습니다.
-        </p>
-
-        <ul>
-          <li>
-            앱 내 경기 기록 삭제 기능 사용
-          </li>
-
-          <li>
-            운영체제 설정에서 앱 저장 데이터 삭제
-          </li>
-
-          <li>
-            앱 제거
-          </li>
-
-          <li>
-            기기 또는 Google 계정의 광고 개인정보 보호 설정 관리
-          </li>
-
-          <li>
-            해당 지역에서 제공되는 광고 동의 또는 개인정보 보호
-            선택 변경
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>10. 외부 링크</h2>
-
-        <p>
-          앱은 Google Play 또는 다른 JCraft Studio 앱의
-          스토어 페이지와 같은 외부 서비스를 열 수 있습니다.
-        </p>
-
-        <p>
-          외부 서비스에서 이루어지는 정보 처리에는 해당 서비스가
-          제공하는 개인정보처리방침이 적용됩니다.
-        </p>
-      </section>
-
-      <section>
-        <h2>11. 개인정보처리방침 변경</h2>
-
-        <p>
-          앱 기능, 제3자 SDK, 관련 법령 또는 Google Play 정책이
-          변경되는 경우 본 개인정보처리방침이 수정될 수 있습니다.
-        </p>
-
-        <p>
-          중요한 변경 사항이 있는 경우 이 페이지의 시행일을
-          갱신하거나 필요한 경우 앱 또는 Google Play 등록정보를
-          통해 안내합니다.
-        </p>
-      </section>
-
-      <section>
-        <h2>12. 개발자 및 문의</h2>
-
-        <div class="contact-card">
-          <strong>개발자: JCraft Studio</strong>
-
-          <span>
-            개인정보 관련 문의 및 최신 개발자 연락처는
-            Google Play의 틱택토 앱 등록정보에 표시된
-            “개발자 연락처”를 이용해 주세요.
-          </span>
-        </div>
-      </section>
-    </article>
-
-    <!-- English Privacy Policy -->
-    <article
-      id="policy-en"
-      class="policy"
-      lang="en"
-      hidden
-    >
-      <section>
-        <h2>1. Overview</h2>
-
-        <p>
-          JCraft Studio (“Developer,” “we,” “us,” or “our”)
-          respects the privacy of users of the Tic Tac Toe application
-          (“App”).
-        </p>
-
-        <p>
-          This Privacy Policy explains how information is handled when
-          you install or use the App. This Policy may be updated when
-          applicable laws, third-party services, or App features change.
-        </p>
-      </section>
-
-      <section>
-        <h2>2. Information handled directly by the App</h2>
-
-        <p>
-          The App does not require account registration or sign-in.
-          It does not ask you to directly provide personal identifiers
-          such as your name, email address, telephone number, or postal
-          address.
-        </p>
-
-        <p>
-          The App does not send such information to a server operated
-          by the Developer.
-        </p>
-
-        <p>
-          The following information may be stored locally on your device
-          to provide App functionality:
-        </p>
-
-        <ul>
-          <li>
-            Current game board, move order, and active turn
-          </li>
-
-          <li>
-            Game results and match history
-          </li>
-
-          <li>
-            Language and dark mode preferences
-          </li>
-
-          <li>
-            Completed game count used to determine ad display frequency
-          </li>
-        </ul>
-
-        <p>
-          This information is generally stored only on your device and
-          is not transmitted to a separate server operated by the
-          Developer.
-        </p>
-      </section>
-
-      <section>
-        <h2>3. Advertising and third-party processing</h2>
-
-        <p>
-          The App may use Google AdMob and the Google Mobile Ads SDK
-          to provide advertising.
-        </p>
-
-        <p>
-          Google and its advertising partners may automatically process
-          information such as:
-        </p>
-
-        <ul>
-          <li>Device or other identifiers</li>
-          <li>IP address</li>
-          <li>Advertising views and interaction data</li>
-          <li>App and device diagnostic information</li>
-          <li>Information used to prevent fraud and invalid traffic</li>
-        </ul>
-
-        <p>
-          This information may be used for ad delivery, ad measurement,
-          fraud prevention, security, and service improvement.
-        </p>
-
-        <p>
-          The information processed may vary depending on your device
-          settings, region, consent choices, Google service
-          configuration, and applicable law.
-        </p>
-
-        <p>
-          More information is available in the
-          <a
-            href="https://policies.google.com/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Privacy Policy
-          </a>
-          and
-          <a
-            href="https://policies.google.com/technologies/ads"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google advertising information
-          </a>.
-        </p>
-
-        <div class="notice">
-          The Google Play Data safety section for the App is maintained
-          separately and should remain consistent with the actual
-          behavior of all SDKs included in the App.
-        </div>
-      </section>
-
-      <section>
-        <h2>4. Purposes of processing</h2>
-
-        <p>
-          Information handled by the App or third-party services may
-          be used to:
-        </p>
-
-        <ul>
-          <li>
-            Provide gameplay, continue-game, match history, and
-            preference features
-          </li>
-
-          <li>
-            Display and measure advertising
-          </li>
-
-          <li>
-            Prevent advertising fraud, invalid traffic, and security
-            threats
-          </li>
-
-          <li>
-            Maintain App stability and diagnose errors
-          </li>
-
-          <li>
-            Comply with legal obligations and protect user rights
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>5. Sharing of information</h2>
-
-        <p>
-          The Developer does not sell locally stored game history or
-          preference information and does not provide that information
-          to third parties through a server operated by the Developer.
-        </p>
-
-        <p>
-          Google AdMob and related advertising partners may process
-          information under their own policies and according to your
-          applicable consent settings.
-        </p>
-
-        <p>
-          Information may also be disclosed when required by law or
-          when reasonably necessary to protect the rights and safety
-          of users, the Developer, or others.
-        </p>
-      </section>
-
-      <section>
-        <h2>6. Retention and deletion</h2>
-
-        <p>
-          Locally stored game history and settings may be deleted when
-          you clear the App's storage or uninstall the App.
-        </p>
-
-        <p>
-          You may also delete individual or all game records using the
-          deletion features provided in the App.
-        </p>
-
-        <p>
-          Information processed by advertising service providers is
-          retained and deleted according to those providers' privacy
-          and retention policies.
-        </p>
-
-        <p>
-          The App does not create user accounts, so there is no separate
-          account deletion process.
-        </p>
-      </section>
-
-      <section>
-        <h2>7. Security</h2>
-
-        <p>
-          We seek to minimize the information directly managed by the
-          App and use storage and security features provided by the
-          platform.
-        </p>
-
-        <p>
-          However, no method of electronic storage or transmission can
-          be guaranteed to be completely secure.
-        </p>
-      </section>
-
-      <section>
-        <h2>8. Children's privacy</h2>
-
-        <p>
-          The App is not designed to knowingly collect personal
-          information directly from children below the minimum age
-          established by applicable law.
-        </p>
-
-        <p>
-          A parent or guardian who believes that a child's information
-          has been handled improperly may contact the Developer using
-          the method described below.
-        </p>
-      </section>
-
-      <section>
-        <h2>9. Your choices and rights</h2>
-
-        <p>
-          You may manage information handling by:
-        </p>
-
-        <ul>
-          <li>
-            Deleting match history within the App
-          </li>
-
-          <li>
-            Clearing the App's stored data through operating system
-            settings
-          </li>
-
-          <li>
-            Uninstalling the App
-          </li>
-
-          <li>
-            Managing advertising privacy settings on your device or
-            Google account
-          </li>
-
-          <li>
-            Changing advertising consent or privacy choices available
-            in your region
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>10. External links</h2>
-
-        <p>
-          The App may open external services, such as Google Play or
-          store pages for other JCraft Studio applications.
-        </p>
-
-        <p>
-          The privacy policies of those external services apply to
-          their handling of information.
-        </p>
-      </section>
-
-      <section>
-        <h2>11. Changes to this Privacy Policy</h2>
-
-        <p>
-          We may update this Policy when App functionality,
-          third-party SDKs, applicable laws, or relevant Google Play
-          policies change.
-        </p>
-
-        <p>
-          Material changes will be reflected by updating the effective
-          date on this page and, where appropriate, through the App or
-          its Google Play listing.
-        </p>
-      </section>
-
-      <section>
-        <h2>12. Developer and contact</h2>
-
-        <div class="contact-card">
-          <strong>Developer: JCraft Studio</strong>
-
-          <span>
-            For privacy inquiries and current developer contact
-            information, please use the “Developer contact” section
-            of the Tic Tac Toe listing on Google Play.
-          </span>
-        </div>
-      </section>
-    </article>
-
-    <footer>
-      © 2026 JCraft Studio. Privacy Policy for Tic Tac Toe.
-    </footer>
-
-  </main>
-
-  <script>
-    const koreanPolicy =
-      document.getElementById('policy-ko');
-
-    const englishPolicy =
-      document.getElementById('policy-en');
-
-    const koreanButton =
-      document.getElementById('btn-ko');
-
-    const englishButton =
-      document.getElementById('btn-en');
-
-    function setLanguage(language) {
-      const isKorean = language === 'ko';
-
-      koreanPolicy.hidden = !isKorean;
-      englishPolicy.hidden = isKorean;
-
-      koreanButton.classList.toggle(
-        'active',
-        isKorean
-      );
-
-      englishButton.classList.toggle(
-        'active',
-        !isKorean
-      );
-
-      koreanButton.setAttribute(
-        'aria-pressed',
-        String(isKorean)
-      );
-
-      englishButton.setAttribute(
-        'aria-pressed',
-        String(!isKorean)
-      );
-
-      document.documentElement.lang =
-        isKorean ? 'ko' : 'en';
-
+      <p>
+        광고 미디에이션 및 광고 관리
+      </p>
+
+      <p>
+        <strong>Unity Ads</strong>
+      </p>
+
+      <p>
+        광고 제공 및 성과 측정
+      </p>
+
+      <p>
+        <strong>Unity 공식 개인정보처리방침</strong>
+      </p>
+
+      <p>
+        <a
+          href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer">
+          Unity Game Player and App User Privacy Policy
+        </a>
+      </p>
+
+    </div>
+
+    <div class="notice">
+      Google Play의 데이터 보안 신고는
+      실제 앱에 포함된 광고 SDK 및
+      광고 네트워크에서 처리하는
+      데이터와 일치하도록
+      유지되어야 합니다.
+    </div>
+
+  </section>
+
+  <section>
+    <h2>4. 정보 이용 목적</h2>
+
+    <p>
+      앱 및 관련 제3자 서비스에서
+      처리되는 정보는
+      다음 목적으로 사용될 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        틱택토 게임 진행 및 이어하기 기능
+      </li>
+
+      <li>
+        경기 결과 및 경기 기록 제공
+      </li>
+
+      <li>
+        언어 및 다크 모드 설정 유지
+      </li>
+
+      <li>
+        광고 표시 주기 및 광고 상태 관리
+      </li>
+
+      <li>
+        광고 제공 및 광고 성과 측정
+      </li>
+
+      <li>
+        광고 사기 및 무효 트래픽 방지
+      </li>
+
+      <li>
+        앱 안정성 유지 및 기술적 오류 진단
+      </li>
+
+      <li>
+        관련 법적 의무 준수 및
+        사용자 권리 보호
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. 정보의 공유</h2>
+
+    <p>
+      개발자는 앱에 저장된
+      경기 기록이나 환경설정 정보를
+      판매하지 않습니다.
+    </p>
+
+    <p>
+      해당 로컬 정보를 개발자 서버를 통해
+      제3자에게 제공하도록
+      설계하지 않았습니다.
+    </p>
+
+    <p>
+      다만 Unity LevelPlay,
+      Unity Ads 및 관련 광고 파트너는
+      광고 제공, 성과 측정,
+      보안 및 부정행위 방지를 위해
+      기기 및 광고 관련 정보를
+      처리하거나 공유할 수 있습니다.
+    </p>
+
+    <p>
+      이러한 처리는
+      각 광고 서비스 제공업체의
+      개인정보처리방침 및
+      관련 법률에 따릅니다.
+    </p>
+
+    <p>
+      또한 적법한 법적 의무나
+      유효한 정부기관의 요청 등이
+      있는 경우에는 관련 법률이
+      요구하거나 허용하는 범위에서
+      정보를 처리할 수 있습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. 보관 및 삭제</h2>
+
+    <p>
+      앱에 저장된 경기 기록과 설정은
+      일반적으로 사용자 기기에
+      로컬로 보관됩니다.
+    </p>
+
+    <p>
+      사용자는 앱에서 제공하는
+      기록 삭제 기능을 통해
+      개별 경기 기록 또는
+      전체 기록을 삭제할 수 있습니다.
+    </p>
+
+    <p>
+      Android 설정에서
+      앱 데이터를 초기화하거나
+      앱을 제거하면 일반적으로
+      앱 전용 로컬 데이터도
+      삭제됩니다.
+    </p>
+
+    <p>
+      다만 Android 백업 및 복원
+      설정에 따라 일부 데이터가
+      복원될 수 있습니다.
+    </p>
+
+    <p>
+      Unity 및 관련 광고 서비스에서
+      처리하는 정보의 보유 기간과
+      삭제 방식은 해당 업체의
+      개인정보처리방침에 따릅니다.
+    </p>
+
+    <p>
+      본 앱은 별도의 사용자
+      계정을 생성하지 않으므로
+      독립적인 계정 삭제 절차를
+      제공하지 않습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. 정보 보안</h2>
+
+    <p>
+      개발자는 앱에서 직접 처리하는
+      정보의 범위를 최소화하고,
+      운영체제가 제공하는
+      데이터 저장 및 보호 기능을
+      활용하도록 노력합니다.
+    </p>
+
+    <p>
+      다만 어떠한 전자적 저장 방식이나
+      인터넷 전송 방식도
+      절대적인 보안을
+      보장할 수는 없습니다.
+    </p>
+
+    <p>
+      기기 분실, 악성 앱,
+      운영체제 취약점,
+      사용자 실수 및 저장소 오류 등으로
+      데이터 손실이나 정보 노출의
+      위험이 발생할 수 있습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. 아동의 개인정보</h2>
+
+    <p>
+      본 앱은 일반 사용자를 위한
+      틱택토 게임이며,
+      아동의 개인정보를
+      의도적으로 수집하기 위한
+      목적으로 설계되지 않았습니다.
+    </p>
+
+    <p>
+      앱의 광고 서비스는
+      관련 법령 및 플랫폼 정책에 따라
+      기기 관련 정보를
+      처리할 수 있습니다.
+    </p>
+
+    <p>
+      보호자가 아동의 개인정보가
+      부적절하게 처리되었다고 판단한 경우
+      Google Play 스토어에 표시된
+      개발자 연락처를 통해
+      문의할 수 있습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. 이용자의 선택과 권리</h2>
+
+    <p>
+      이용자는 다음과 같은 방법으로
+      데이터와 개인정보 관련
+      선택 사항을 관리할 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        앱에서 경기 기록 삭제
+      </li>
+
+      <li>
+        Android 설정에서 앱 데이터 삭제
+      </li>
+
+      <li>
+        앱 제거
+      </li>
+
+      <li>
+        Android 광고 ID 및
+        개인정보 보호 설정 관리
+      </li>
+
+      <li>
+        광고 서비스에서 제공하는
+        개인정보 보호 선택 기능 사용
+      </li>
+
+      <li>
+        관련 법률에 따른
+        개인정보 권리 행사
+      </li>
+
+      <li>
+        개발자에게 개인정보 관련 문의
+      </li>
+    </ul>
+
+    <p>
+      Android 버전에 따라
+      광고 ID를 재설정하거나
+      삭제할 수 있습니다.
+    </p>
+
+    <p>
+      맞춤형 광고를 제한하더라도
+      맞춤형이 아닌 광고가
+      표시될 수 있습니다.
+    </p>
+
+    <p>
+      Unity가 처리하는 광고 관련
+      개인정보의 권리 행사 방법은
+      Unity 공식 개인정보처리방침에서
+      확인할 수 있습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>10. 외부 링크 및 제3자 서비스</h2>
+
+    <p>
+      앱 또는 Google Play 스토어
+      등록정보에는 개인정보처리방침이나
+      외부 서비스로 연결되는
+      링크가 포함될 수 있습니다.
+    </p>
+
+    <p>
+      외부 서비스로 이동한 이후에는
+      해당 제공업체의 개인정보처리방침과
+      이용약관이 적용됩니다.
+    </p>
+
+    <p>
+      본 앱에서 이용할 수 있는
+      제3자 서비스에는
+      다음이 포함될 수 있습니다.
+    </p>
+
+    <ul>
+      <li>
+        Unity LevelPlay - 광고 미디에이션
+      </li>
+
+      <li>
+        Unity Ads - 광고 제공
+      </li>
+
+      <li>
+        Google Play - 앱 배포 및 플랫폼 서비스
+      </li>
+    </ul>
+
+    <p>
+      Google 개인정보처리방침:
+      <a
+        href="https://policies.google.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://policies.google.com/privacy
+      </a>
+    </p>
+  </section>
+
+  <section>
+    <h2>11. 개인정보처리방침 변경</h2>
+
+    <p>
+      앱 기능, 제3자 광고 SDK,
+      관련 법률 또는 Google Play 정책이
+      변경되는 경우
+      개인정보처리방침을 수정할 수 있습니다.
+    </p>
+
+    <p>
+      중요한 변경사항은
+      본 페이지의 시행일 또는
+      최종 수정일을 변경하여
+      안내할 수 있습니다.
+    </p>
+
+    <p>
+      이번 개정에서는
+      광고 플랫폼 변경에 따라
+      Unity LevelPlay 및 Unity Ads 관련
+      데이터 처리 내용을 반영했습니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>12. 개발자 및 문의</h2>
+
+    <div class="contact-card">
+
+      <strong>개발자: JCraft Studio</strong>
+
+      <p>
+        앱: Tic Tac Toe(틱택토)
+      </p>
+
+      <p>
+        개인정보 처리 및
+        앱 관련 문의는
+        Google Play 스토어의
+        틱택토 앱 등록정보에 표시된
+        개발자 연락처를 이용해 주세요.
+      </p>
+
+      <p>
+        시행일: 2026년 11월 9일<br>
+        최종 수정일: 2026년 11월 9일
+      </p>
+
+    </div>
+  </section>
+
+</article>
+
+<!-- ===================================== -->
+<!-- ENGLISH PRIVACY POLICY -->
+<!-- ===================================== -->
+
+<article id="policy-en"
+         class="policy"
+         lang="en"
+         hidden>
+
+  <section>
+    <h2>1. Overview</h2>
+
+    <p>
+      JCraft Studio ("Developer", "we",
+      "us", or "our") respects the privacy
+      of users of the Tic Tac Toe
+      application ("App").
+    </p>
+
+    <p>
+      This Privacy Policy explains
+      what information may be processed
+      when using the App,
+      how it is used,
+      third-party advertising services,
+      data storage and deletion,
+      and available privacy choices.
+    </p>
+
+    <p>
+      This Policy may be updated
+      when applicable laws,
+      App functionality,
+      or third-party services change.
+    </p>
+
+    <p>
+      Where separate consent is required
+      by applicable law, appropriate
+      consent procedures may be provided.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Information handled directly by the App</h2>
+
+    <p>
+      The App does not require
+      account registration or sign-in.
+    </p>
+
+    <p>
+      The Developer does not
+      intentionally request personal
+      identifiers such as names,
+      email addresses,
+      telephone numbers, or
+      postal addresses for core gameplay.
+    </p>
+
+    <p>
+      The App is not designed to
+      transmit such information
+      to a developer-operated server.
+    </p>
+
+    <p>
+      The following information
+      may be stored locally
+      on the user's device:
+    </p>
+
+    <ul>
+      <li>
+        Current game board and game state
+      </li>
+
+      <li>
+        Move order and active turn
+      </li>
+
+      <li>
+        Game results and match history
+      </li>
+
+      <li>
+        Language and dark mode preferences
+      </li>
+
+      <li>
+        Completed game count used
+        to manage advertising frequency
+      </li>
+
+      <li>
+        Local advertising state information
+      </li>
+    </ul>
+
+    <p>
+      These records are generally
+      stored locally on the device
+      and are not transmitted
+      to a separate server
+      operated by the Developer.
+    </p>
+
+    <p>
+      However, third-party advertising SDKs
+      may separately process
+      device and advertising-related
+      information.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. Advertising and third-party processing</h2>
+
+    <p>
+      The App uses
+      <strong>Unity LevelPlay</strong>
+      advertising mediation and
+      <strong>Unity Ads</strong>
+      to support free operation
+      and ongoing maintenance.
+    </p>
+
+    <h3>3.1 Unity LevelPlay</h3>
+
+    <p>
+      Unity LevelPlay provides
+      advertising management
+      and mediation services.
+    </p>
+
+    <p>
+      Certain device and
+      advertising-related information
+      may be processed during
+      ad requests and delivery.
+    </p>
+
+    <h3>3.2 Unity Ads</h3>
+
+    <p>
+      Unity Ads supports in-app
+      advertisement delivery,
+      performance measurement,
+      and fraud prevention.
+    </p>
+
+    <p>
+      Advertising providers may
+      process information according
+      to their privacy policies
+      and applicable laws.
+    </p>
+
+    <h3>3.3 Advertising formats</h3>
+
+    <p>
+      Depending on the actual
+      App version and configuration,
+      banner or interstitial
+      advertisements may be available.
+    </p>
+
+    <p>
+      Advertising frequency may
+      be managed using the
+      number of completed games
+      and other App-specific rules.
+    </p>
+
+    <p>
+      Advertisement availability
+      may depend on network status
+      and advertising inventory.
+    </p>
+
+    <h3>3.4 Advertising data processing</h3>
+
+    <p>
+      Unity and related advertising
+      service providers may process
+      information for advertisement
+      delivery, performance measurement,
+      security, and fraud prevention.
+    </p>
+
+    <p>
+      Such information may include:
+    </p>
+
+    <ul>
+      <li>
+        Android Advertising ID
+        and similar advertising identifiers
+      </li>
+
+      <li>
+        Device model and
+        operating system information
+      </li>
+
+      <li>
+        IP address and network information
+      </li>
+
+      <li>
+        Approximate location inferred
+        from IP address or related data
+      </li>
+
+      <li>
+        App identifier and App version
+      </li>
+
+      <li>
+        Advertising requests,
+        impressions, clicks,
+        and interactions
+      </li>
+
+      <li>
+        Advertising views and
+        performance measurement information
+      </li>
+
+      <li>
+        Technical errors and
+        diagnostic information
+      </li>
+
+      <li>
+        Information used to detect
+        advertising fraud
+        and invalid traffic
+      </li>
+    </ul>
+
+    <p>
+      Actual information processing
+      may vary depending on
+      SDK configuration,
+      connected advertising networks,
+      device settings,
+      geographic region,
+      privacy choices,
+      and applicable laws.
+    </p>
+
+    <p>
+      The Developer does not
+      intentionally transmit
+      locally saved game history,
+      board information,
+      or language and theme settings
+      to advertising SDKs
+      for targeted advertising.
+    </p>
+
+    <h3>3.5 Unity Privacy Policy</h3>
+
+    <div class="service-box">
+
+      <p>
+        <strong>Unity LevelPlay</strong>
+      </p>
+
+      <p>
+        Advertising mediation
+        and management
+      </p>
+
+      <p>
+        <strong>Unity Ads</strong>
+      </p>
+
+      <p>
+        In-app advertisement delivery
+        and measurement
+      </p>
+
+      <p>
+        <strong>Unity Privacy Policy</strong>
+      </p>
+
+      <p>
+        <a
+          href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+          target="_blank"
+          rel="noopener noreferrer">
+          Unity Game Player and App User Privacy Policy
+        </a>
+      </p>
+
+    </div>
+
+    <div class="notice">
+      The Google Play Data safety
+      declarations should remain
+      consistent with the actual
+      data processing performed
+      by advertising SDKs
+      included in the App.
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Purposes of processing</h2>
+
+    <p>
+      Information handled by
+      the App or third-party
+      services may be used to:
+    </p>
+
+    <ul>
+      <li>
+        Provide gameplay,
+        continue-game functionality,
+        match history,
+        and preferences
+      </li>
+
+      <li>
+        Manage advertising
+        frequency and state
+      </li>
+
+      <li>
+        Display and measure
+        advertising
+      </li>
+
+      <li>
+        Prevent advertising fraud,
+        invalid traffic,
+        and security threats
+      </li>
+
+      <li>
+        Maintain App stability
+        and diagnose technical errors
+      </li>
+
+      <li>
+        Comply with legal obligations
+        and protect user rights
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Sharing of information</h2>
+
+    <p>
+      The Developer does not sell
+      locally stored game history
+      or preference information.
+    </p>
+
+    <p>
+      The App is not designed
+      to provide such local data
+      to third parties through
+      a developer-operated server.
+    </p>
+
+    <p>
+      However, Unity LevelPlay,
+      Unity Ads, and related
+      advertising partners may
+      process or share device
+      and advertising-related information
+      for advertisement delivery,
+      measurement, security,
+      and fraud prevention.
+    </p>
+
+    <p>
+      Such processing is governed
+      by the privacy policies
+      of the respective providers
+      and applicable laws.
+    </p>
+
+    <p>
+      Information may also be processed
+      where required by law
+      or lawful requests from
+      competent authorities.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. Retention and deletion</h2>
+
+    <p>
+      Locally stored game history
+      and App settings generally
+      remain on the user's device.
+    </p>
+
+    <p>
+      Users may delete individual
+      or all game records using
+      the deletion functions
+      provided within the App.
+    </p>
+
+    <p>
+      Clearing App data through
+      Android settings or
+      uninstalling the App
+      generally removes
+      App-specific local data.
+    </p>
+
+    <p>
+      Some data may be restored
+      depending on Android
+      backup and restore settings.
+    </p>
+
+    <p>
+      Information processed by
+      Unity and related advertising
+      providers is retained
+      and deleted according
+      to their respective policies.
+    </p>
+
+    <p>
+      The App does not create
+      user accounts, so
+      no separate account
+      deletion procedure is provided.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Security</h2>
+
+    <p>
+      The Developer seeks to
+      minimize the information
+      directly managed by the App
+      and use security features
+      provided by Android.
+    </p>
+
+    <p>
+      However, no method
+      of electronic storage
+      or internet transmission
+      can guarantee absolute security.
+    </p>
+
+    <p>
+      Data loss or exposure may
+      result from device loss,
+      malicious software,
+      operating system vulnerabilities,
+      user errors, or storage failures.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Children's privacy</h2>
+
+    <p>
+      The App is a general-purpose
+      Tic Tac Toe game and is not
+      designed for the purpose
+      of intentionally collecting
+      personal information from children.
+    </p>
+
+    <p>
+      Advertising services may
+      process certain device
+      information subject to
+      applicable laws and
+      platform policies.
+    </p>
+
+    <p>
+      Parents or guardians
+      with privacy-related concerns
+      may contact the Developer
+      through the Google Play listing.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Your choices and rights</h2>
+
+    <p>
+      Users may manage
+      information processing through:
+    </p>
+
+    <ul>
+      <li>
+        Deleting game records
+        within the App
+      </li>
+
+      <li>
+        Clearing App data
+        through Android settings
+      </li>
+
+      <li>
+        Uninstalling the App
+      </li>
+
+      <li>
+        Managing Android Advertising ID
+        and privacy settings
+      </li>
+
+      <li>
+        Using privacy choices
+        provided by advertising services
+      </li>
+
+      <li>
+        Exercising applicable
+        legal privacy rights
+      </li>
+
+      <li>
+        Contacting the Developer
+        regarding privacy inquiries
+      </li>
+    </ul>
+
+    <p>
+      Depending on the Android version,
+      users may reset or delete
+      their Advertising ID.
+    </p>
+
+    <p>
+      Restricting personalized
+      advertisements does not
+      necessarily prevent
+      non-personalized advertisements.
+    </p>
+
+    <p>
+      Privacy rights relating
+      to information processed by Unity
+      may be exercised according
+      to Unity's official privacy policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>10. External links and third-party services</h2>
+
+    <p>
+      The App or its Google Play
+      listing may contain links
+      to privacy policies
+      or external services.
+    </p>
+
+    <p>
+      After visiting an external
+      service, the relevant
+      provider's privacy policy
+      and terms of service apply.
+    </p>
+
+    <p>
+      Third-party services
+      may include:
+    </p>
+
+    <ul>
+      <li>
+        Unity LevelPlay -
+        Advertising mediation
+      </li>
+
+      <li>
+        Unity Ads -
+        Advertising delivery
+      </li>
+
+      <li>
+        Google Play -
+        App distribution and
+        platform services
+      </li>
+    </ul>
+
+    <p>
+      Google Privacy Policy:
+      <a
+        href="https://policies.google.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://policies.google.com/privacy
+      </a>
+    </p>
+  </section>
+
+  <section>
+    <h2>11. Changes to this Privacy Policy</h2>
+
+    <p>
+      This Privacy Policy may
+      be updated when App
+      functionality, advertising SDKs,
+      applicable laws, or
+      Google Play policies change.
+    </p>
+
+    <p>
+      Material changes may
+      be announced by updating
+      the Effective Date
+      or Last Updated date.
+    </p>
+
+    <p>
+      This revision updates
+      advertising disclosures
+      to reflect the use
+      of Unity LevelPlay
+      and Unity Ads.
+    </p>
+  </section>
+
+  <section>
+    <h2>12. Developer and contact</h2>
+
+    <div class="contact-card">
+
+      <strong>
+        Developer: JCraft Studio
+      </strong>
+
+      <p>
+        App: Tic Tac Toe
+      </p>
+
+      <p>
+        For privacy-related inquiries
+        and current developer
+        contact information,
+        please refer to the
+        Developer contact section
+        of the App's official
+        Google Play listing.
+      </p>
+
+      <p>
+        Effective Date: November 9, 2026<br>
+        Last Updated: November 9, 2026
+      </p>
+
+    </div>
+  </section>
+
+</article>
+
+<footer>
+  © 2026 JCraft Studio.
+  Privacy Policy for Tic Tac Toe.
+  All rights reserved.
+</footer>
+
+</main>
+
+<script>
+(function () {
+  const koreanPolicy =
+    document.getElementById("policy-ko");
+
+  const englishPolicy =
+    document.getElementById("policy-en");
+
+  const koreanButton =
+    document.getElementById("btn-ko");
+
+  const englishButton =
+    document.getElementById("btn-en");
+
+  function setLanguage(language) {
+    const isKorean = language === "ko";
+
+    koreanPolicy.hidden = !isKorean;
+    englishPolicy.hidden = isKorean;
+
+    koreanButton.classList.toggle(
+      "active",
+      isKorean
+    );
+
+    englishButton.classList.toggle(
+      "active",
+      !isKorean
+    );
+
+    koreanButton.setAttribute(
+      "aria-pressed",
+      String(isKorean)
+    );
+
+    englishButton.setAttribute(
+      "aria-pressed",
+      String(!isKorean)
+    );
+
+    document.documentElement.lang =
+      isKorean ? "ko" : "en";
+
+    try {
       localStorage.setItem(
-        'privacy-policy-language',
-        language
+        "privacy-policy-language",
+        isKorean ? "ko" : "en"
       );
+    } catch (error) {
+      // Language switching remains available.
     }
+  }
 
-    koreanButton.addEventListener(
-      'click',
-      function () {
-        setLanguage('ko');
-      }
-    );
+  koreanButton.addEventListener(
+    "click",
+    function () {
+      setLanguage("ko");
+    }
+  );
 
-    englishButton.addEventListener(
-      'click',
-      function () {
-        setLanguage('en');
-      }
-    );
+  englishButton.addEventListener(
+    "click",
+    function () {
+      setLanguage("en");
+    }
+  );
 
-    const savedLanguage =
+  let savedLanguage = null;
+
+  try {
+    savedLanguage =
       localStorage.getItem(
-        'privacy-policy-language'
+        "privacy-policy-language"
       );
+  } catch (error) {
+    savedLanguage = null;
+  }
 
-    const browserLanguage =
-      navigator.language.toLowerCase();
+  const browserLanguage =
+    (navigator.language || "en").toLowerCase();
 
-    const initialLanguage =
-      savedLanguage === 'ko' ||
-      savedLanguage === 'en'
-        ? savedLanguage
-        : browserLanguage.startsWith('ko')
-          ? 'ko'
-          : 'en';
+  const initialLanguage =
+    savedLanguage === "ko" ||
+    savedLanguage === "en"
+      ? savedLanguage
+      : browserLanguage.startsWith("ko")
+        ? "ko"
+        : "en";
 
-    setLanguage(initialLanguage);
-  </script>
+  setLanguage(initialLanguage);
+})();
+</script>
+
 </body>
 </html>
