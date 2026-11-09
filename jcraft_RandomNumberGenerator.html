@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+        content="Privacy Policy for Random Number Generator 1-999 by JCraft Studio">
   <title>Privacy Policy | Random Number Generator 1-999</title>
-  <meta name="description" content="Privacy Policy for Random Number Generator 1-999" />
+
   <style>
     :root {
       --bg: #0b1020;
@@ -29,13 +33,20 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family:
+        -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Noto Sans KR",
+        Arial, Helvetica, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(72, 122, 255, 0.25), transparent 28%),
-        radial-gradient(circle at top right, rgba(255, 174, 0, 0.18), transparent 24%),
-        linear-gradient(135deg, #09101d 0%, #111935 45%, #161229 100%);
+        radial-gradient(circle at top left,
+          rgba(72,122,255,.25), transparent 28%),
+        radial-gradient(circle at top right,
+          rgba(255,174,0,.18), transparent 24%),
+        linear-gradient(135deg,
+          #09101d 0%, #111935 45%, #161229 100%);
       line-height: 1.7;
+      overflow-wrap: break-word;
     }
 
     .wrap {
@@ -52,8 +63,10 @@
       border-radius: 28px;
       padding: 28px 22px;
       background:
-        linear-gradient(135deg, rgba(124, 180, 255, 0.18), rgba(255, 211, 90, 0.12)),
-        rgba(255, 255, 255, 0.06);
+        linear-gradient(135deg,
+          rgba(124,180,255,.18),
+          rgba(255,211,90,.12)),
+        rgba(255,255,255,.06);
       box-shadow: var(--shadow);
       backdrop-filter: blur(10px);
     }
@@ -65,7 +78,10 @@
       top: -40px;
       width: 160px;
       height: 160px;
-      background: radial-gradient(circle, rgba(255, 211, 90, 0.28), transparent 70%);
+      background:
+        radial-gradient(circle,
+          rgba(255,211,90,.28),
+          transparent 70%);
       pointer-events: none;
     }
 
@@ -92,25 +108,32 @@
     .btn {
       appearance: none;
       border: 1px solid var(--card-border);
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255,255,255,.08);
       color: var(--text);
       border-radius: 999px;
       padding: 10px 14px;
       font-size: 14px;
       font-weight: 700;
       cursor: pointer;
-      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+      transition:
+        transform .15s ease,
+        background .15s ease,
+        border-color .15s ease;
+    }
+
+    .btn:hover,
+    .btn.active {
+      background: rgba(124,180,255,.2);
+      border-color: var(--accent);
     }
 
     .btn:hover {
       transform: translateY(-1px);
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.18);
     }
 
     .grid {
       display: grid;
-      grid-template-columns: 280px minmax(0, 1fr);
+      grid-template-columns: 280px minmax(0,1fr);
       gap: 18px;
       margin-top: 18px;
     }
@@ -144,23 +167,25 @@
       border-radius: 12px;
       font-size: 14px;
       margin-bottom: 6px;
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255,255,255,.03);
     }
 
     .side a:hover {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255,255,255,.08);
     }
 
     .content {
+      min-width: 0;
       padding: 22px;
     }
 
     section {
       margin-bottom: 16px;
       padding: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255,255,255,.08);
       border-radius: 18px;
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255,255,255,.04);
+      scroll-margin-top: 20px;
     }
 
     h2 {
@@ -188,6 +213,11 @@
       margin-bottom: 8px;
     }
 
+    a {
+      color: var(--accent);
+      overflow-wrap: anywhere;
+    }
+
     .meta {
       display: flex;
       flex-wrap: wrap;
@@ -198,10 +228,9 @@
     .pill {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
       border-radius: 999px;
       padding: 8px 12px;
-      background: rgba(124, 180, 255, 0.12);
+      background: rgba(124,180,255,.12);
       color: #ddebff;
       font-size: 13px;
       font-weight: 700;
@@ -219,9 +248,13 @@
       padding: 14px 16px;
       border-left: 4px solid var(--accent2);
       border-radius: 14px;
-      background: rgba(255, 211, 90, 0.10);
+      background: rgba(255,211,90,.10);
       color: #fff2bf;
       margin-top: 12px;
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
     }
 
     .footer {
@@ -229,15 +262,6 @@
       color: var(--muted);
       font-size: 13px;
       text-align: center;
-    }
-
-    code.inline {
-      padding: 2px 6px;
-      border-radius: 8px;
-      background: rgba(255,255,255,0.08);
-      color: #ffffff;
-      font-family: Consolas, monospace;
-      font-size: 0.95em;
     }
 
     @media (max-width: 860px) {
@@ -257,343 +281,1230 @@
         padding: 16px;
       }
     }
+
+    @media (max-width: 480px) {
+      .wrap {
+        padding: 12px 10px 36px;
+      }
+
+      .hero {
+        padding: 24px 18px;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="hero card">
-      <h1>Privacy Policy</h1>
-      <p class="sub">Random Number Generator 1-999</p>
-      <div class="toolbar">
-        <button class="btn" type="button" onclick="setLang('ko')">한국어</button>
-        <button class="btn" type="button" onclick="setLang('en')">English</button>
-      </div>
-      <div class="meta">
-        <span class="pill" id="effectiveDatePill">시행일: 2026-03-06</span>
-        <span class="pill">App: Random Number Generator 1-999</span>
-      </div>
+<div class="wrap">
+
+  <!-- Header -->
+  <header class="hero card">
+    <h1 id="pageHeading">개인정보처리방침</h1>
+    <p class="sub">Random Number Generator 1-999</p>
+
+    <div class="toolbar" aria-label="Language">
+      <button class="btn active"
+              type="button"
+              data-lang-button="ko"
+              aria-pressed="true"
+              onclick="setLang('ko')">
+        한국어
+      </button>
+      <button class="btn"
+              type="button"
+              data-lang-button="en"
+              aria-pressed="false"
+              onclick="setLang('en')">
+        English
+      </button>
     </div>
 
-    <div class="grid">
-      <nav class="side card">
-        <div class="lang-block active" data-lang="ko">
-          <h2>바로가기</h2>
-          <a href="#ko-overview">1. 개요</a>
-          <a href="#ko-collect">2. 수집하는 정보</a>
-          <a href="#ko-use">3. 정보 이용 목적</a>
-          <a href="#ko-ads">4. 광고 및 제3자 서비스</a>
-          <a href="#ko-storage">5. 보관 및 보안</a>
-          <a href="#ko-rights">6. 이용자 권리</a>
-          <a href="#ko-children">7. 아동의 개인정보</a>
-          <a href="#ko-changes">8. 정책 변경</a>
-          <a href="#ko-contact">9. 문의</a>
-        </div>
-
-        <div class="lang-block" data-lang="en">
-          <h2>Quick Links</h2>
-          <a href="#en-overview">1. Overview</a>
-          <a href="#en-collect">2. Information We Collect</a>
-          <a href="#en-use">3. How Information Is Used</a>
-          <a href="#en-ads">4. Ads and Third-Party Services</a>
-          <a href="#en-storage">5. Storage and Security</a>
-          <a href="#en-rights">6. Your Choices and Rights</a>
-          <a href="#en-children">7. Children's Privacy</a>
-          <a href="#en-changes">8. Changes to This Policy</a>
-          <a href="#en-contact">9. Contact</a>
-        </div>
-      </nav>
-
-      <main class="content card">
-        <!-- KO -->
-        <div class="lang-block active" data-lang="ko">
-          <section id="ko-overview">
-            <h2>1. 개요</h2>
-            <p>
-              본 개인정보처리방침은 <strong>Random Number Generator 1-999</strong> 앱에서 어떤 정보를 처리할 수 있는지,
-              그리고 그 정보가 어떤 목적으로 사용되는지를 설명합니다.
-            </p>
-            <p>
-              이 앱은 사용자가 설정한 범위 안에서 랜덤 숫자를 생성하고, 생성 결과를 기기 내 히스토리로 저장할 수 있는
-              간단한 유틸리티 앱입니다.
-            </p>
-            <div class="notice">
-              개발자 정보, 연락처, 게시자 정보 등 최신 운영 정보는 Google Play 스토어의 해당 앱 페이지에 표시된 개발자 정보를 참고해 주세요.
-            </div>
-          </section>
-
-          <section id="ko-collect">
-            <h2>2. 수집하는 정보</h2>
-            <h3>2-1. 사용자가 직접 입력하거나 기기 내에 저장되는 정보</h3>
-            <ul>
-              <li>최대 숫자, 추첨 개수, 중복 허용 여부 등 앱 기능 사용을 위한 설정값</li>
-              <li>사용자가 실행한 랜덤 추첨 결과 및 히스토리 정보</li>
-              <li>언어 설정 등 앱 화면 표시를 위한 기본 환경설정</li>
-            </ul>
-
-            <h3>2-2. 자동으로 처리될 수 있는 정보</h3>
-            <ul>
-              <li>광고 서비스 제공을 위한 광고 식별자 또는 기기 관련 정보</li>
-              <li>앱 안정성 및 성능 개선을 위한 기본적인 진단 정보</li>
-            </ul>
-
-            <p>
-              위 정보는 사용 중인 기능, 기기 환경, 광고 SDK 동작 방식에 따라 제한적으로 처리될 수 있습니다.
-            </p>
-
-            <h3>2-3. 수집하지 않는 정보</h3>
-            <ul>
-              <li>이 앱은 회원가입 기능을 제공하지 않습니다.</li>
-              <li>이 앱은 이름, 이메일 주소, 전화번호와 같은 직접적인 개인 식별 정보를 자체적으로 요구하지 않습니다.</li>
-              <li>이 앱은 결제 정보나 금융 정보를 자체적으로 저장하지 않습니다.</li>
-            </ul>
-          </section>
-
-          <section id="ko-use">
-            <h2>3. 정보 이용 목적</h2>
-            <ul>
-              <li>랜덤 번호 생성 기능 제공</li>
-              <li>히스토리 저장 및 사용자 편의 기능 제공</li>
-              <li>언어 설정 및 기본 앱 환경 유지</li>
-              <li>광고 제공 및 무료 서비스 운영</li>
-              <li>오류 확인, 안정성 개선, 서비스 품질 향상</li>
-            </ul>
-          </section>
-
-          <section id="ko-ads">
-            <h2>4. 광고 및 제3자 서비스</h2>
-            <p>
-              본 앱은 무료 서비스 운영을 위해 광고 SDK를 사용할 수 있습니다. 광고 제공 과정에서 제3자 서비스 제공자가
-              광고 성과 측정, 맞춤화 제한 범위 내 광고 제공, 사기 방지 등을 위해 기기 관련 정보를 처리할 수 있습니다.
-            </p>
-            <p>
-              대표적인 예로 Google AdMob과 같은 광고 서비스가 사용될 수 있으며, 이 경우 해당 서비스 제공자의 정책이 함께 적용될 수 있습니다.
-            </p>
-            <p>
-              제3자 서비스의 데이터 처리 방식은 각 서비스 제공자의 개인정보처리방침을 따릅니다.
-            </p>
-          </section>
-
-          <section id="ko-storage">
-            <h2>5. 보관 및 보안</h2>
-            <p>
-              앱 내 히스토리나 설정 정보는 일반적으로 사용자의 기기에 로컬 형태로 저장될 수 있습니다.
-            </p>
-            <p>
-              개발자는 합리적인 범위에서 정보 보호를 위해 노력하지만, 인터넷 전송 또는 전자 저장 방식의 보안이 100% 완전하다고 보장할 수는 없습니다.
-            </p>
-            <p>
-              사용자는 필요할 경우 앱 삭제 또는 앱 데이터 초기화를 통해 로컬 저장 정보를 제거할 수 있습니다.
-            </p>
-          </section>
-
-          <section id="ko-rights">
-            <h2>6. 이용자 권리</h2>
-            <ul>
-              <li>기기 내 저장된 히스토리 및 설정값은 앱 재설정 또는 삭제를 통해 제거할 수 있습니다.</li>
-              <li>광고 식별자 관련 설정은 사용 중인 운영체제의 개인정보 설정 메뉴에서 제한 또는 초기화할 수 있습니다.</li>
-              <li>앱 사용을 원하지 않는 경우 언제든지 앱을 삭제할 수 있습니다.</li>
-            </ul>
-          </section>
-
-          <section id="ko-children">
-            <h2>7. 아동의 개인정보</h2>
-            <p>
-              이 앱은 특정 연령 미만 아동을 대상으로 한 회원가입형 서비스가 아니며, 개발자가 아동의 직접적인 개인정보를 의도적으로 수집하도록 설계되어 있지 않습니다.
-            </p>
-            <p>
-              다만 광고 또는 앱 배포 플랫폼, 운영체제 수준에서 제한적인 기술 정보가 처리될 수 있습니다.
-            </p>
-          </section>
-
-          <section id="ko-changes">
-            <h2>8. 정책 변경</h2>
-            <p>
-              본 개인정보처리방침은 앱 기능 변경, 법령 변경, 운영 정책 변경 등에 따라 수정될 수 있습니다.
-            </p>
-            <p>
-              중요한 변경이 있는 경우 본 페이지의 내용을 업데이트하며, 상단의 시행일도 함께 수정될 수 있습니다.
-            </p>
-          </section>
-
-          <section id="ko-contact">
-            <h2>9. 문의</h2>
-            <p>
-              본 개인정보처리방침 또는 앱 운영에 관한 문의는 Google Play 스토어의 앱 페이지에 표시된 개발자 연락처 정보를 참고해 주세요.
-            </p>
-            <p>
-              최신 개발자 정보는 스토어 정보를 우선으로 합니다.
-            </p>
-          </section>
-        </div>
-
-        <!-- EN -->
-        <div class="lang-block" data-lang="en">
-          <section id="en-overview">
-            <h2>1. Overview</h2>
-            <p>
-              This Privacy Policy explains what information may be processed when you use
-              <strong>Random Number Generator 1-999</strong> and how that information may be used.
-            </p>
-            <p>
-              This app is a simple utility that allows users to generate random numbers within a chosen range
-              and save draw results as local history on the device.
-            </p>
-            <div class="notice">
-              For the most up-to-date developer details, contact information, and publisher information,
-              please refer to the developer information shown on the app's Google Play Store listing.
-            </div>
-          </section>
-
-          <section id="en-collect">
-            <h2>2. Information We Collect</h2>
-            <h3>2-1. Information entered by the user or stored on the device</h3>
-            <ul>
-              <li>Settings such as maximum number, draw count, and duplicate mode</li>
-              <li>Random draw results and saved history generated by the user</li>
-              <li>Language preferences and basic app configuration settings</li>
-            </ul>
-
-            <h3>2-2. Information that may be processed automatically</h3>
-            <ul>
-              <li>Advertising identifiers or device-related data for ad delivery</li>
-              <li>Basic diagnostic or technical data used to improve performance and stability</li>
-            </ul>
-
-            <p>
-              Such information may be processed in a limited manner depending on the features used,
-              device environment, and third-party SDK behavior.
-            </p>
-
-            <h3>2-3. Information we do not directly collect</h3>
-            <ul>
-              <li>This app does not provide account registration.</li>
-              <li>This app does not directly require personal identifiers such as name, email address, or phone number.</li>
-              <li>This app does not directly store payment or financial information.</li>
-            </ul>
-          </section>
-
-          <section id="en-use">
-            <h2>3. How Information Is Used</h2>
-            <ul>
-              <li>To provide the random number generation feature</li>
-              <li>To save history and support convenience features</li>
-              <li>To remember language and app preference settings</li>
-              <li>To support ads and operate the app as a free service</li>
-              <li>To identify errors and improve stability and overall service quality</li>
-            </ul>
-          </section>
-
-          <section id="en-ads">
-            <h2>4. Ads and Third-Party Services</h2>
-            <p>
-              This app may use advertising SDKs to support free operation. During this process,
-              third-party service providers may process certain device-related information for ad delivery,
-              limited ad personalization, fraud prevention, or performance measurement.
-            </p>
-            <p>
-              For example, services such as Google AdMob may be used, and the privacy practices of those
-              providers may also apply.
-            </p>
-            <p>
-              Data handled by third-party services is subject to the privacy policies of those providers.
-            </p>
-          </section>
-
-          <section id="en-storage">
-            <h2>5. Storage and Security</h2>
-            <p>
-              App history and settings may generally be stored locally on the user's device.
-            </p>
-            <p>
-              The developer takes reasonable steps to protect information, but no method of transmission over
-              the internet or method of electronic storage can be guaranteed to be completely secure.
-            </p>
-            <p>
-              Users may remove locally stored information by deleting the app or clearing app data where supported.
-            </p>
-          </section>
-
-          <section id="en-rights">
-            <h2>6. Your Choices and Rights</h2>
-            <ul>
-              <li>You may remove locally saved history and settings by resetting or deleting the app.</li>
-              <li>Advertising identifier controls may be available in your device or operating system privacy settings.</li>
-              <li>You may stop using the app and uninstall it at any time.</li>
-            </ul>
-          </section>
-
-          <section id="en-children">
-            <h2>7. Children's Privacy</h2>
-            <p>
-              This app is not designed as an account-based service for children and is not intended to knowingly
-              collect direct personal information from children.
-            </p>
-            <p>
-              However, limited technical information may be processed by advertising services, app distribution platforms,
-              or operating system services.
-            </p>
-          </section>
-
-          <section id="en-changes">
-            <h2>8. Changes to This Policy</h2>
-            <p>
-              This Privacy Policy may be updated from time to time due to changes in app features,
-              legal requirements, or operating practices.
-            </p>
-            <p>
-              When important changes are made, this page may be updated along with the effective date shown above.
-            </p>
-          </section>
-
-          <section id="en-contact">
-            <h2>9. Contact</h2>
-            <p>
-              If you have questions about this Privacy Policy or the app, please refer to the developer contact
-              information shown on the app's Google Play Store page.
-            </p>
-            <p>
-              The store listing should be treated as the primary source for current developer information.
-            </p>
-          </section>
-        </div>
-
-        <div class="footer">
-          <span id="footerText">© Random Number Generator 1-999</span>
-        </div>
-      </main>
+    <div class="meta">
+      <span class="pill" id="effectiveDatePill">
+        시행일: 2026-11-09
+      </span>
+      <span class="pill">
+        JCraft Studio
+      </span>
+      <span class="pill">
+        Unity LevelPlay + Unity Ads
+      </span>
     </div>
+  </header>
+
+  <div class="grid">
+
+    <!-- Side navigation -->
+    <nav class="side card" aria-label="Contents">
+
+      <div class="lang-block active" data-lang="ko">
+        <h2>바로가기</h2>
+        <a href="#ko-overview">1. 개요</a>
+        <a href="#ko-collect">2. 처리하는 정보</a>
+        <a href="#ko-use">3. 정보 이용 목적</a>
+        <a href="#ko-ads">4. 광고 및 제3자 서비스</a>
+        <a href="#ko-local">5. 로컬 데이터 저장</a>
+        <a href="#ko-sharing">6. 데이터 공유</a>
+        <a href="#ko-storage">7. 보관 및 보안</a>
+        <a href="#ko-rights">8. 이용자 권리</a>
+        <a href="#ko-children">9. 아동의 개인정보</a>
+        <a href="#ko-changes">10. 정책 변경</a>
+        <a href="#ko-contact">11. 문의</a>
+      </div>
+
+      <div class="lang-block" data-lang="en">
+        <h2>Quick Links</h2>
+        <a href="#en-overview">1. Overview</a>
+        <a href="#en-collect">2. Information Processed</a>
+        <a href="#en-use">3. How Information Is Used</a>
+        <a href="#en-ads">4. Ads and Third Parties</a>
+        <a href="#en-local">5. Local Data Storage</a>
+        <a href="#en-sharing">6. Data Sharing</a>
+        <a href="#en-storage">7. Retention and Security</a>
+        <a href="#en-rights">8. Your Rights</a>
+        <a href="#en-children">9. Children's Privacy</a>
+        <a href="#en-changes">10. Policy Changes</a>
+        <a href="#en-contact">11. Contact</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content card">
+
+      <!-- ===================================== -->
+      <!-- Korean -->
+      <!-- ===================================== -->
+
+      <div class="lang-block active"
+           data-lang="ko"
+           lang="ko">
+
+        <section id="ko-overview">
+          <h2>1. 개요</h2>
+
+          <p>
+            본 개인정보처리방침은 JCraft Studio가
+            제공하는 <strong>Random Number Generator
+            1-999</strong> 앱(이하 "앱")에서
+            사용자 정보가 어떻게 처리되는지 설명합니다.
+          </p>
+
+          <p>
+            앱은 사용자가 설정한 범위 안에서
+            무작위 숫자를 생성하고 추첨 결과를
+            기기에 저장할 수 있는 유틸리티 앱입니다.
+          </p>
+
+          <p>
+            개발자는 사용자 개인정보 보호를
+            중요하게 생각하며, 앱 기능 제공 및
+            광고 서비스 운영에 필요한 정보 처리
+            내용을 투명하게 안내하고자 합니다.
+          </p>
+
+          <div class="notice">
+            최신 개발자 정보 및 연락처는
+            Google Play 스토어의 본 앱 등록정보에
+            표시된 개발자 연락처를 참고해 주세요.
+          </div>
+        </section>
+
+        <section id="ko-collect">
+          <h2>2. 처리하는 정보</h2>
+
+          <h3>2-1. 사용자가 설정하거나 저장하는 정보</h3>
+
+          <ul>
+            <li>
+              최대 숫자, 추첨 개수,
+              중복 허용 여부 등의 설정
+            </li>
+            <li>
+              랜덤 숫자 생성 결과 및 히스토리
+            </li>
+            <li>
+              언어 및 기본 앱 환경설정
+            </li>
+            <li>
+              보상형 광고 혜택 유지에 필요한 상태 정보
+            </li>
+          </ul>
+
+          <p>
+            이러한 정보는 앱의 핵심 기능과
+            사용자 편의 기능을 제공하기 위해
+            사용자의 기기에 저장될 수 있습니다.
+          </p>
+
+          <h3>2-2. 광고 서비스에서 처리할 수 있는 정보</h3>
+
+          <p>
+            Unity LevelPlay 및 Unity Ads를 통한
+            광고 제공 과정에서 다음과 같은 정보가
+            처리될 수 있습니다.
+          </p>
+
+          <ul>
+            <li>
+              Android 광고 ID 등 광고 식별자
+            </li>
+            <li>
+              기기 모델, 운영체제 버전 등 기기 정보
+            </li>
+            <li>
+              IP 주소 및 네트워크 관련 정보
+            </li>
+            <li>
+              광고 요청, 노출, 클릭 및 상호작용 정보
+            </li>
+            <li>
+              광고 성과 측정 및 부정행위 방지에
+              필요한 기술 정보
+            </li>
+          </ul>
+
+          <p>
+            실제 처리 범위는 SDK 구성,
+            기기 환경, 사용자 개인정보 설정 및
+            적용되는 법률에 따라 달라질 수 있습니다.
+          </p>
+
+          <h3>2-3. 개발자가 직접 요구하지 않는 정보</h3>
+
+          <ul>
+            <li>
+              앱은 회원가입이나 별도 계정을 요구하지 않습니다.
+            </li>
+            <li>
+              이름, 이메일, 전화번호 등
+              직접적인 개인 식별 정보를
+              핵심 기능 이용 조건으로 요구하지 않습니다.
+            </li>
+            <li>
+              결제 정보나 금융 정보를
+              앱의 자체 기능으로 수집하지 않습니다.
+            </li>
+          </ul>
+        </section>
+
+        <section id="ko-use">
+          <h2>3. 정보 이용 목적</h2>
+
+          <p>
+            앱 및 관련 제3자 서비스에서
+            처리되는 정보는 다음 목적에
+            사용될 수 있습니다.
+          </p>
+
+          <ul>
+            <li>랜덤 숫자 생성 기능 제공</li>
+            <li>추첨 결과 및 히스토리 저장</li>
+            <li>언어 설정 및 앱 환경 유지</li>
+            <li>보상형 광고 혜택 상태 관리</li>
+            <li>광고 제공 및 성과 측정</li>
+            <li>광고 부정행위 방지</li>
+            <li>서비스 안정성 및 보안 유지</li>
+          </ul>
+        </section>
+
+        <section id="ko-ads">
+          <h2>4. 광고 및 제3자 서비스</h2>
+
+          <h3>4-1. 광고 플랫폼</h3>
+
+          <p>
+            앱은 무료 서비스 운영을 위해
+            <strong>Unity LevelPlay</strong> 광고
+            미디에이션 플랫폼과
+            <strong>Unity Ads</strong>를 사용합니다.
+          </p>
+
+          <p>
+            Unity LevelPlay는 광고 서비스의
+            운영과 관리를 지원하며,
+            Unity Ads는 앱 내 광고를 제공합니다.
+          </p>
+
+          <h3>4-2. 광고 유형</h3>
+
+          <p>
+            앱에는 다음 광고 유형이
+            제공될 수 있습니다.
+          </p>
+
+          <ul>
+            <li>배너 광고</li>
+            <li>전면 광고</li>
+            <li>사용자가 선택하여 시청하는 보상형 광고</li>
+          </ul>
+
+          <p>
+            보상형 광고를 정상적으로 시청하고
+            보상이 지급되면 앱에서 정한 일정 시간
+            동안 전면 광고가 면제될 수 있습니다.
+          </p>
+
+          <p>
+            현재 앱의 보상형 광고 혜택은
+            <strong>10분간 전면 광고 면제</strong>입니다.
+          </p>
+
+          <h3>4-3. 광고 관련 개인정보 처리</h3>
+
+          <p>
+            Unity 및 관련 광고 서비스 제공업체는
+            광고 제공, 광고 성과 측정,
+            부정행위 방지, 서비스 개선 등을 위해
+            기기 및 광고 관련 정보를 처리할 수 있습니다.
+          </p>
+
+          <p>
+            해당 정보는 제공업체의 정책과
+            적용 법률에 따라 관련 광고 파트너와
+            공유될 수 있습니다.
+          </p>
+
+          <p>
+            광고 관련 데이터 처리 방식은
+            사용자의 국가, 기기 설정,
+            개인정보 보호 선택 및 광고 SDK
+            동작 방식에 따라 달라질 수 있습니다.
+          </p>
+
+          <h3>4-4. 제3자 서비스 목록</h3>
+
+          <ul>
+            <li>
+              Unity LevelPlay — 광고 미디에이션
+            </li>
+            <li>
+              Unity Ads — 광고 제공 및 성과 측정
+            </li>
+            <li>
+              Google Play — 앱 배포 및 플랫폼 서비스
+            </li>
+          </ul>
+
+          <div class="notice">
+            <p>
+              <strong>Unity 공식 개인정보처리방침</strong>
+            </p>
+
+            <p>
+              <a
+                href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer">
+                Unity Game Player and App User Privacy Policy
+              </a>
+            </p>
+
+            <p>
+              <strong>Google 개인정보처리방침</strong>
+            </p>
+
+            <p>
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer">
+                Google Privacy Policy
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <section id="ko-local">
+          <h2>5. 로컬 데이터 저장</h2>
+
+          <p>
+            앱은 주요 기능을 제공하기 위해
+            일부 데이터를 사용자의 기기에
+            로컬로 저장할 수 있습니다.
+          </p>
+
+          <ul>
+            <li>
+              랜덤 숫자 생성 결과 및 히스토리
+            </li>
+            <li>
+              숫자 범위, 중복 허용 여부 등의 설정
+            </li>
+            <li>
+              언어 및 화면 관련 환경설정
+            </li>
+            <li>
+              보상형 광고 시청 후
+              전면 광고 면제 상태
+            </li>
+          </ul>
+
+          <p>
+            이러한 로컬 데이터는 앱 기능과
+            사용자 설정을 유지하기 위한
+            목적으로 사용됩니다.
+          </p>
+
+          <p>
+            개발자는 앱의 기본 랜덤 숫자 생성
+            기능을 제공하기 위해 해당 기록을
+            별도의 개발자 운영 서버로
+            전송하도록 요구하지 않습니다.
+          </p>
+        </section>
+
+        <section id="ko-sharing">
+          <h2>6. 데이터 공유</h2>
+
+          <p>
+            개발자는 사용자의 랜덤 숫자 생성
+            기록과 앱 설정 정보를 판매하지 않습니다.
+          </p>
+
+          <p>
+            또한 앱의 핵심 랜덤 숫자 생성
+            기능에 필요한 기록을 광고
+            제공업체에 의도적으로 전달하지 않습니다.
+          </p>
+
+          <p>
+            다만 Unity LevelPlay, Unity Ads 및
+            관련 광고 파트너는 광고 제공을 위해
+            기기 식별자, 광고 상호작용 정보 등
+            광고 관련 데이터를 처리하거나
+            공유할 수 있습니다.
+          </p>
+
+          <p>
+            이 경우 해당 제공업체의
+            개인정보처리방침과 관련 법률이
+            적용됩니다.
+          </p>
+        </section>
+
+        <section id="ko-storage">
+          <h2>7. 데이터 보관 및 보안</h2>
+
+          <h3>7-1. 데이터 보관</h3>
+
+          <p>
+            앱의 로컬 기록 및 설정 정보는
+            앱 기능 제공에 필요한 기간 동안
+            사용자의 기기에 보관될 수 있습니다.
+          </p>
+
+          <p>
+            사용자는 앱에서 제공하는 기록 삭제
+            기능을 통해 관련 히스토리를
+            삭제할 수 있습니다.
+          </p>
+
+          <p>
+            기기의 앱 데이터 삭제 기능을 사용하거나
+            앱을 제거하면 일반적으로 앱 전용
+            로컬 데이터가 삭제됩니다.
+          </p>
+
+          <p>
+            단, 기기의 백업 및 복원 설정에 따라
+            일부 로컬 데이터가 복원될 수 있습니다.
+          </p>
+
+          <h3>7-2. 제3자 데이터 보관</h3>
+
+          <p>
+            Unity 및 관련 광고 서비스에서
+            처리되는 데이터의 보관 기간과
+            삭제 방식은 해당 서비스
+            제공업체의 정책에 따릅니다.
+          </p>
+
+          <h3>7-3. 보안</h3>
+
+          <p>
+            개발자는 합리적인 범위에서
+            기술적 및 관리적 보호 조치를
+            유지하기 위해 노력합니다.
+          </p>
+
+          <p>
+            다만 인터넷 통신 또는 전자적
+            데이터 저장 방식의 특성상
+            절대적인 보안을 보장할 수는 없습니다.
+          </p>
+        </section>
+
+        <section id="ko-rights">
+          <h2>8. 이용자 권리</h2>
+
+          <p>
+            사용자는 다음과 같은 방법으로
+            개인정보 및 앱 관련 정보를
+            관리할 수 있습니다.
+          </p>
+
+          <ul>
+            <li>
+              앱 내 기록 삭제 기능을 사용하여
+              저장된 히스토리 삭제
+            </li>
+            <li>
+              Android 기기의 앱 데이터 삭제
+              기능을 통한 로컬 데이터 삭제
+            </li>
+            <li>
+              기기에서 제공하는 광고 ID 관련
+              개인정보 설정 관리
+            </li>
+            <li>
+              앱 제거를 통한 이용 중단
+            </li>
+          </ul>
+
+          <p>
+            Android 버전에 따라 광고 ID를
+            재설정하거나 삭제하는 등의
+            설정을 이용할 수 있습니다.
+          </p>
+
+          <p>
+            Unity 광고에서 개인정보 보호
+            선택 기능이 제공되는 경우
+            해당 기능을 통해 관련 설정을
+            확인하거나 변경할 수 있습니다.
+          </p>
+
+          <p>
+            Unity가 처리하는 데이터에 관한
+            권리 행사 방법은 Unity 공식
+            개인정보처리방침에서 확인할 수 있습니다.
+          </p>
+        </section>
+
+        <section id="ko-children">
+          <h2>9. 아동의 개인정보</h2>
+
+          <p>
+            앱은 일반 사용자를 위한
+            랜덤 숫자 생성 도구이며,
+            아동의 직접적인 개인정보를
+            의도적으로 수집하도록 설계된
+            서비스가 아닙니다.
+          </p>
+
+          <p>
+            앱은 회원가입, 이메일 등록,
+            사용자 프로필 생성 등을
+            요구하지 않습니다.
+          </p>
+
+          <p>
+            다만 광고 서비스 및 플랫폼을 통해
+            제한적인 기기 관련 정보가
+            처리될 수 있으며,
+            해당 데이터 처리에는 관련 법률과
+            제3자 서비스 정책이 적용됩니다.
+          </p>
+        </section>
+
+        <section id="ko-changes">
+          <h2>10. 개인정보처리방침 변경</h2>
+
+          <p>
+            본 개인정보처리방침은 앱 기능,
+            광고 플랫폼, 관련 법령 또는
+            운영 정책의 변경에 따라
+            수정될 수 있습니다.
+          </p>
+
+          <p>
+            중요한 변경사항이 발생하면
+            본 페이지를 업데이트하여
+            변경 내용을 안내합니다.
+          </p>
+
+          <p>
+            본 개정에서는 기존 광고 서비스
+            관련 설명을 Unity LevelPlay 및
+            Unity Ads 구성에 맞게 변경했습니다.
+          </p>
+        </section>
+
+        <section id="ko-contact">
+          <h2>11. 개발자 정보 및 문의</h2>
+
+          <div class="notice">
+            <p>
+              <strong>개발자: JCraft Studio</strong>
+            </p>
+
+            <p>
+              개인정보처리방침 및 앱 관련 문의는
+              Google Play 스토어의 본 앱 등록정보에
+              표시된 개발자 연락처를 통해
+              문의할 수 있습니다.
+            </p>
+
+            <p>
+              최신 개발자 연락처 및 게시자
+              정보는 Google Play 등록정보를
+              참고해 주세요.
+            </p>
+          </div>
+
+          <p>
+            시행일: 2026년 11월 9일
+          </p>
+          <p>
+            최종 수정일: 2026년 11월 9일
+          </p>
+        </section>
+      </div>
+
+      <!-- ===================================== -->
+      <!-- English -->
+      <!-- ===================================== -->
+
+      <div class="lang-block"
+           data-lang="en"
+           lang="en">
+
+        <section id="en-overview">
+          <h2>1. Overview</h2>
+
+          <p>
+            This Privacy Policy explains how
+            information is handled by
+            <strong>Random Number Generator 1-999</strong>
+            ("the App"), provided by JCraft Studio.
+          </p>
+
+          <p>
+            The App is a utility that allows users
+            to generate random numbers within
+            a selected range and save results
+            as local history on their devices.
+          </p>
+
+          <p>
+            The developer values user privacy
+            and aims to explain how information
+            may be processed for App functionality
+            and advertising services.
+          </p>
+
+          <div class="notice">
+            For current developer details
+            and contact information, please
+            refer to the App's listing
+            on Google Play.
+          </div>
+        </section>
+
+        <section id="en-collect">
+          <h2>2. Information Processed</h2>
+
+          <h3>2-1. User settings and locally stored data</h3>
+
+          <ul>
+            <li>
+              Maximum number, draw count,
+              and duplicate selection settings
+            </li>
+            <li>
+              Random number results and history
+            </li>
+            <li>
+              Language and App preferences
+            </li>
+            <li>
+              Rewarded advertising benefit status
+            </li>
+          </ul>
+
+          <p>
+            This information may be stored
+            locally on the user's device
+            to provide App functionality
+            and maintain preferences.
+          </p>
+
+          <h3>2-2. Advertising-related information</h3>
+
+          <p>
+            When advertisements are provided
+            through Unity LevelPlay and Unity Ads,
+            the following information may
+            be processed:
+          </p>
+
+          <ul>
+            <li>
+              Advertising identifiers,
+              including Android Advertising ID
+            </li>
+            <li>
+              Device model and operating
+              system information
+            </li>
+            <li>
+              IP address and network information
+            </li>
+            <li>
+              Ad requests, impressions,
+              clicks, and interactions
+            </li>
+            <li>
+              Technical data needed for
+              advertising measurement
+              and fraud prevention
+            </li>
+          </ul>
+
+          <p>
+            Actual processing may vary
+            depending on SDK configuration,
+            device settings, privacy choices,
+            and applicable laws.
+          </p>
+
+          <h3>2-3. Information not directly required</h3>
+
+          <ul>
+            <li>
+              The App does not require
+              account registration.
+            </li>
+            <li>
+              The App does not require
+              names, email addresses,
+              or phone numbers to use
+              its core features.
+            </li>
+            <li>
+              The App does not directly
+              collect payment or
+              financial information.
+            </li>
+          </ul>
+        </section>
+
+        <section id="en-use">
+          <h2>3. How Information Is Used</h2>
+
+          <p>
+            Information processed by the App
+            and relevant third-party services
+            may be used for the following purposes:
+          </p>
+
+          <ul>
+            <li>Providing random number generation</li>
+            <li>Saving draw results and history</li>
+            <li>Maintaining language preferences</li>
+            <li>Managing rewarded ad benefits</li>
+            <li>Delivering and measuring advertisements</li>
+            <li>Preventing advertising fraud</li>
+            <li>Maintaining stability and security</li>
+          </ul>
+        </section>
+
+        <section id="en-ads">
+          <h2>4. Advertising and Third-Party Services</h2>
+
+          <h3>4-1. Advertising platforms</h3>
+
+          <p>
+            The App uses
+            <strong>Unity LevelPlay</strong>,
+            an advertising mediation platform,
+            together with
+            <strong>Unity Ads</strong>
+            to support its free operation.
+          </p>
+
+          <p>
+            Unity LevelPlay supports
+            advertising management and mediation,
+            while Unity Ads provides
+            in-app advertisements.
+          </p>
+
+          <h3>4-2. Advertising formats</h3>
+
+          <p>
+            The App may display:
+          </p>
+
+          <ul>
+            <li>Banner advertisements</li>
+            <li>Interstitial advertisements</li>
+            <li>
+              Optional rewarded advertisements
+              initiated by users
+            </li>
+          </ul>
+
+          <p>
+            After successfully completing
+            a rewarded advertisement
+            and receiving the reward,
+            the user may receive a temporary
+            interstitial-ad-free period.
+          </p>
+
+          <p>
+            The current rewarded benefit is
+            <strong>10 minutes without
+            interstitial advertisements</strong>.
+          </p>
+
+          <h3>4-3. Advertising data processing</h3>
+
+          <p>
+            Unity and relevant advertising
+            providers may process device
+            and advertising-related information
+            for ad delivery, performance
+            measurement, fraud prevention,
+            and service improvements.
+          </p>
+
+          <p>
+            Such information may be shared
+            with advertising partners
+            according to applicable laws
+            and provider privacy policies.
+          </p>
+
+          <p>
+            Data processing may vary
+            depending on the user's location,
+            device settings, privacy choices,
+            and SDK behavior.
+          </p>
+
+          <h3>4-4. Third-party services</h3>
+
+          <ul>
+            <li>
+              Unity LevelPlay —
+              Advertising mediation
+            </li>
+            <li>
+              Unity Ads —
+              Advertising delivery
+              and measurement
+            </li>
+            <li>
+              Google Play —
+              Application distribution
+              and platform services
+            </li>
+          </ul>
+
+          <div class="notice">
+            <p>
+              <strong>Unity Privacy Policy</strong>
+            </p>
+
+            <p>
+              <a
+                href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer">
+                Unity Game Player and App User Privacy Policy
+              </a>
+            </p>
+
+            <p>
+              <strong>Google Privacy Policy</strong>
+            </p>
+
+            <p>
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer">
+                Google Privacy Policy
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <section id="en-local">
+          <h2>5. Local Data Storage</h2>
+
+          <p>
+            The App may store certain information
+            locally on the user's device
+            to provide its functionality.
+          </p>
+
+          <ul>
+            <li>
+              Random number results and history
+            </li>
+            <li>
+              Number range and duplicate settings
+            </li>
+            <li>
+              Language and display preferences
+            </li>
+            <li>
+              Temporary interstitial-ad-free status
+              after rewarded ad completion
+            </li>
+          </ul>
+
+          <p>
+            Local data is used to maintain
+            App functionality and
+            user preferences.
+          </p>
+
+          <p>
+            The developer does not require
+            users to transmit their random
+            number history to a separate
+            developer-operated server
+            to use the core functionality.
+          </p>
+        </section>
+
+        <section id="en-sharing">
+          <h2>6. Data Sharing</h2>
+
+          <p>
+            The developer does not sell
+            locally saved random number
+            history or App settings.
+          </p>
+
+          <p>
+            The developer does not intentionally
+            transmit random number history
+            to advertising providers
+            for the App's core functionality.
+          </p>
+
+          <p>
+            However, Unity LevelPlay,
+            Unity Ads, and related
+            advertising partners may process
+            or share advertising identifiers,
+            device information, and
+            advertising interaction data
+            when providing their services.
+          </p>
+
+          <p>
+            Such processing is subject
+            to applicable laws and
+            the relevant providers'
+            privacy policies.
+          </p>
+        </section>
+
+        <section id="en-storage">
+          <h2>7. Data Retention and Security</h2>
+
+          <h3>7-1. Local data retention</h3>
+
+          <p>
+            App history and settings may
+            remain stored locally for
+            as long as necessary to provide
+            App functionality.
+          </p>
+
+          <p>
+            Users may remove saved history
+            through the App's available
+            deletion features.
+          </p>
+
+          <p>
+            Clearing application data or
+            uninstalling the App generally
+            removes App-specific local data.
+          </p>
+
+          <p>
+            However, some data may be restored
+            depending on device backup
+            and restoration settings.
+          </p>
+
+          <h3>7-2. Third-party data retention</h3>
+
+          <p>
+            Data processed by Unity
+            or other advertising providers
+            is retained and deleted
+            according to their respective
+            privacy policies.
+          </p>
+
+          <h3>7-3. Data security</h3>
+
+          <p>
+            The developer seeks to maintain
+            reasonable technical and
+            administrative safeguards.
+          </p>
+
+          <p>
+            However, no method of
+            electronic storage or
+            internet transmission can
+            guarantee absolute security.
+          </p>
+        </section>
+
+        <section id="en-rights">
+          <h2>8. Your Choices and Rights</h2>
+
+          <p>
+            Users may manage relevant
+            information through the
+            following options:
+          </p>
+
+          <ul>
+            <li>
+              Delete saved history
+              through available App features
+            </li>
+            <li>
+              Clear local data using
+              Android application settings
+            </li>
+            <li>
+              Manage advertising identifier
+              settings through device
+              privacy controls
+            </li>
+            <li>
+              Uninstall the App at any time
+            </li>
+          </ul>
+
+          <p>
+            Depending on the Android version,
+            users may be able to reset
+            or delete their advertising ID.
+          </p>
+
+          <p>
+            Where Unity advertising privacy
+            controls are available,
+            users may review or modify
+            applicable privacy choices.
+          </p>
+
+          <p>
+            For information about exercising
+            rights regarding data processed
+            by Unity, please review
+            Unity's official privacy policy.
+          </p>
+        </section>
+
+        <section id="en-children">
+          <h2>9. Children's Privacy</h2>
+
+          <p>
+            The App is a general-purpose
+            random number generation utility
+            and is not designed to intentionally
+            collect children's direct
+            personal information.
+          </p>
+
+          <p>
+            The App does not require
+            account registration,
+            email registration,
+            or user profile creation.
+          </p>
+
+          <p>
+            Limited device-related
+            information may still be
+            processed by advertising
+            or platform services
+            subject to applicable laws
+            and third-party policies.
+          </p>
+        </section>
+
+        <section id="en-changes">
+          <h2>10. Changes to This Privacy Policy</h2>
+
+          <p>
+            This Privacy Policy may be
+            updated when App features,
+            advertising platforms,
+            legal requirements,
+            or operational practices change.
+          </p>
+
+          <p>
+            Material changes will be
+            reflected on this page
+            by publishing an updated policy.
+          </p>
+
+          <p>
+            This revision updates
+            the advertising-related disclosures
+            to reflect the use of
+            Unity LevelPlay and Unity Ads.
+          </p>
+        </section>
+
+        <section id="en-contact">
+          <h2>11. Developer Information and Contact</h2>
+
+          <div class="notice">
+            <p>
+              <strong>Developer: JCraft Studio</strong>
+            </p>
+
+            <p>
+              For privacy-related questions
+              or App inquiries, please refer
+              to the developer contact
+              information displayed on
+              the App's Google Play listing.
+            </p>
+
+            <p>
+              The Google Play listing
+              provides the most current
+              developer contact
+              and publisher information.
+            </p>
+          </div>
+
+          <p>
+            Effective date: November 9, 2026
+          </p>
+
+          <p>
+            Last updated: November 9, 2026
+          </p>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <span id="footerText">
+          © 2026 JCraft Studio. All rights reserved.
+        </span>
+      </div>
+
+    </main>
   </div>
+</div>
 
-  <script>
-    function setLang(lang) {
-      const blocks = document.querySelectorAll('.lang-block');
-      blocks.forEach(el => {
-        if (el.dataset.lang === lang) {
-          el.classList.add('active');
-        } else {
-          el.classList.remove('active');
-        }
-      });
-
-      document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
-
-      const title = lang === 'ko'
-        ? '개인정보처리방침 | Random Number Generator 1-999'
-        : 'Privacy Policy | Random Number Generator 1-999';
-
-      const effective = lang === 'ko'
-        ? '시행일: 2026-03-06'
-        : 'Effective Date: 2026-03-06';
-
-      const footer = lang === 'ko'
-        ? '© Random Number Generator 1-999'
-        : '© Random Number Generator 1-999';
-
-      document.title = title;
-      document.getElementById('effectiveDatePill').textContent = effective;
-      document.getElementById('footerText').textContent = footer;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+<script>
+  function setLang(lang) {
+    if (lang !== 'ko' && lang !== 'en') {
+      lang = 'ko';
     }
-  </script>
+
+    const blocks =
+      document.querySelectorAll('.lang-block');
+
+    blocks.forEach((el) => {
+      el.classList.toggle(
+        'active',
+        el.dataset.lang === lang
+      );
+    });
+
+    const buttons =
+      document.querySelectorAll('[data-lang-button]');
+
+    buttons.forEach((button) => {
+      const active =
+        button.dataset.langButton === lang;
+
+      button.classList.toggle('active', active);
+      button.setAttribute(
+        'aria-pressed',
+        String(active)
+      );
+    });
+
+    document.documentElement.lang = lang;
+
+    const isKorean = lang === 'ko';
+
+    document.title = isKorean
+      ? '개인정보처리방침 | Random Number Generator 1-999'
+      : 'Privacy Policy | Random Number Generator 1-999';
+
+    document.getElementById('pageHeading').textContent =
+      isKorean
+        ? '개인정보처리방침'
+        : 'Privacy Policy';
+
+    document.getElementById('effectiveDatePill').textContent =
+      isKorean
+        ? '시행일: 2026-11-09'
+        : 'Effective Date: 2026-11-09';
+
+    document.getElementById('footerText').textContent =
+      '© 2026 JCraft Studio. All rights reserved.';
+
+    try {
+      localStorage.setItem('privacyPolicyLang', lang);
+    } catch (e) {
+      // Language preference storage is optional.
+    }
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    let savedLang = 'ko';
+
+    try {
+      const preference =
+        localStorage.getItem('privacyPolicyLang');
+
+      if (preference === 'ko' || preference === 'en') {
+        savedLang = preference;
+      } else {
+        savedLang =
+          navigator.language.toLowerCase().startsWith('ko')
+            ? 'ko'
+            : 'en';
+      }
+    } catch (e) {
+      savedLang =
+        navigator.language.toLowerCase().startsWith('ko')
+          ? 'ko'
+          : 'en';
+    }
+
+    setLang(savedLang);
+  });
+</script>
+
 </body>
 </html>
