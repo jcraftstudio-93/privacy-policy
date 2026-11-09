@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <meta name="description"
+        content="Privacy Policy for Bill Splitter by JCraft Studio">
+
   <title>Privacy Policy | Bill Splitter</title>
+
   <style>
     :root {
       --bg: #f4f1e8;
@@ -19,12 +25,24 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        "Apple SD Gothic Neo",
+        "Noto Sans KR",
+        sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
+      overflow-wrap: break-word;
     }
 
     .wrap {
@@ -34,11 +52,16 @@
     }
 
     .top-card {
-      background: linear-gradient(135deg, #2f5d50 0%, #406f62 100%);
+      background: linear-gradient(
+        135deg,
+        #2f5d50 0%,
+        #406f62 100%
+      );
       color: #ffffff;
       border-radius: 22px;
       padding: 24px 20px;
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      box-shadow:
+        0 10px 24px rgba(0,0,0,.12);
     }
 
     .top-card h1 {
@@ -77,6 +100,11 @@
       border-color: var(--accent);
     }
 
+    .lang-switch button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
     .notice {
       background: var(--accent-soft);
       border: 1px solid #cfe0d8;
@@ -100,7 +128,8 @@
       border-radius: 20px;
       padding: 22px 18px;
       margin-bottom: 16px;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+      box-shadow:
+        0 8px 18px rgba(0,0,0,.05);
     }
 
     h2 {
@@ -117,17 +146,25 @@
       line-height: 1.35;
     }
 
+    h4 {
+      font-size: 15px;
+      margin: 20px 0 10px;
+      color: var(--accent);
+    }
+
     p {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
+      font-size: 15px;
     }
 
     ul {
-      margin: 8px 0 0 18px;
+      margin: 8px 0 12px 18px;
       padding: 0;
     }
 
     li {
       margin-bottom: 8px;
+      font-size: 15px;
     }
 
     .muted {
@@ -135,15 +172,35 @@
       font-size: 14px;
     }
 
+    .service-box {
+      background: #f5f8f5;
+      border: 1px solid #d4e3db;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 18px 0;
+    }
+
+    .service-box p {
+      margin: 10px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      overflow-wrap: anywhere;
+    }
+
     .footer {
-      margin-top: 18px;
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 13px;
       text-align: center;
     }
 
     .mono {
-      word-break: break-word;
+      overflow-wrap: anywhere;
       font-family: Consolas, monospace;
       font-size: 13px;
       background: #f6f6f6;
@@ -152,277 +209,1384 @@
     }
 
     @media (max-width: 640px) {
+      .top-card {
+        padding: 22px 18px;
+      }
+
       .top-card h1 {
         font-size: 25px;
       }
 
       .card {
         padding: 18px 15px;
+        border-radius: 16px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 16px;
       }
     }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="top-card">
-      <h1>Privacy Policy</h1>
-      <p>Bill Splitter / 더치페이 계산기 개인정보처리방침</p>
-    </div>
 
-    <div class="lang-switch">
-      <button id="btn-ko" class="active" type="button" onclick="showLang('ko')">한국어</button>
-      <button id="btn-en" type="button" onclick="showLang('en')">English</button>
-    </div>
+<div class="wrap">
 
-    <div class="notice">
-      <strong>Notice / 안내</strong><br />
-      Developer information, contact details, and publisher information for this app should be checked on the official Google Play store listing for the application.
-      <br />
-      본 앱의 개발자 정보, 연락처, 게시자 정보는 해당 앱의 공식 Google Play 스토어 등록정보를 참고해 주세요.
-    </div>
+  <header class="top-card">
+    <h1>Privacy Policy</h1>
+    <p>
+      Bill Splitter / 더치페이 계산기 개인정보처리방침
+    </p>
+  </header>
 
-    <section id="policy-ko" class="policy active">
-      <div class="card">
-        <h2>개인정보처리방침</h2>
-        <p>Bill Splitter(이하 “앱”)는 사용자의 개인정보를 중요하게 생각합니다. 본 개인정보처리방침은 앱이 어떤 정보를 수집·이용·보관하는지, 그리고 사용자에게 어떤 권리가 있는지 설명하기 위해 작성되었습니다.</p>
-        <p class="muted">최종 업데이트일: 2026-03-30</p>
-      </div>
+  <nav class="lang-switch"
+       aria-label="Language selection">
 
-      <div class="card">
-        <h3>1. 수집하는 정보</h3>
-        <p>본 앱은 기본적으로 사용자가 입력한 계산 정보(예: 총 금액, 인원 수, 팁, 세금, 선택한 통화, 최근 계산 기록)를 사용자의 기기 내 로컬 저장소에 저장할 수 있습니다.</p>
-        <ul>
-          <li>앱은 사용자의 이름, 주민등록번호, 금융정보 등 민감한 개인정보를 직접 수집하거나 요구하지 않습니다.</li>
-          <li>최근 계산 기록 및 언어 설정은 사용자 편의를 위해 기기 내부에 저장될 수 있습니다.</li>
-          <li>앱 기능 제공 과정에서 인터넷 연결이 필요한 제3자 서비스가 사용될 경우, 해당 서비스 제공자가 기술적 정보(예: 광고 식별자, 기기 정보, 앱 사용 정보)를 처리할 수 있습니다.</li>
-        </ul>
-      </div>
+    <button
+      id="btn-ko"
+      class="active"
+      type="button"
+      aria-pressed="true"
+      onclick="showLang('ko')">
+      한국어
+    </button>
 
-      <div class="card">
-        <h3>2. 정보의 이용 목적</h3>
-        <p>앱은 다음 목적 범위 내에서만 정보를 이용합니다.</p>
-        <ul>
-          <li>더치페이 계산 기능 제공</li>
-          <li>최근 계산 기록 저장 및 다시 보기 기능 제공</li>
-          <li>언어 설정 저장</li>
-          <li>광고 표시 및 서비스 운영 개선</li>
-          <li>오류 대응, 안정성 유지, 악용 방지</li>
-        </ul>
-      </div>
+    <button
+      id="btn-en"
+      type="button"
+      aria-pressed="false"
+      onclick="showLang('en')">
+      English
+    </button>
 
-      <div class="card">
-        <h3>3. 로컬 저장 정보</h3>
-        <p>앱은 사용자 편의를 위해 일부 정보를 사용자의 기기 내부에 저장할 수 있습니다. 여기에는 최근 계산 기록, 언어 설정, 일부 앱 동작 설정이 포함될 수 있습니다.</p>
-        <ul>
-          <li>이 정보는 원칙적으로 사용자의 기기 내부에 저장됩니다.</li>
-          <li>사용자가 앱 데이터를 삭제하거나 앱을 제거하면 저장된 정보가 함께 삭제될 수 있습니다.</li>
-          <li>기기 상태, 운영체제 정책, 사용자 조작, 백업/복원 환경 등에 따라 데이터가 유지되지 않을 수 있습니다.</li>
-        </ul>
-      </div>
+  </nav>
 
-      <div class="card">
-        <h3>4. 광고 및 제3자 서비스</h3>
-        <p>앱은 광고 제공 및 앱 운영을 위해 제3자 서비스를 사용할 수 있습니다. 이러한 서비스는 관련 법령 및 각 서비스 제공자의 정책에 따라 데이터를 처리할 수 있습니다.</p>
-        <ul>
-          <li>예: Google AdMob 또는 기타 광고 SDK</li>
-          <li>예: 앱 배포 및 통계 제공 플랫폼</li>
-        </ul>
-        <p>광고 제공 과정에서 광고 식별자, 기기 정보, 앱 사용 정보 등이 처리될 수 있으며, 이는 각 제3자 서비스 제공자의 정책에 따릅니다.</p>
-        <p>사용자는 기기 또는 플랫폼 설정을 통해 맞춤형 광고 설정을 변경할 수 있습니다.</p>
-      </div>
+  <div class="notice">
+    <strong>Notice / 안내</strong>
 
-      <div class="card">
-        <h3>5. 아동의 개인정보</h3>
-        <p>앱은 아동을 주요 대상으로 설계된 서비스가 아닙니다. 개발자가 아동으로부터 법령상 보호가 필요한 개인정보를 고의로 수집하기 위한 목적으로 운영하지 않습니다.</p>
-        <p>보호자께서 아동이 개인정보를 제공했다고 판단하는 경우, 스토어 등록정보에 표시된 개발자 연락처를 통해 문의해 주시기 바랍니다.</p>
-      </div>
+    <p>
+      Developer information, contact details,
+      and publisher information for this App
+      are available on the official
+      Google Play Store listing.
+    </p>
 
-      <div class="card">
-        <h3>6. 정보 보관 및 삭제</h3>
-        <ul>
-          <li>로컬에 저장된 계산 기록 및 설정은 사용자가 앱을 삭제하거나 앱 데이터를 지우면 함께 삭제될 수 있습니다.</li>
-          <li>일부 제3자 서비스가 처리하는 데이터는 해당 서비스의 보관 정책에 따를 수 있습니다.</li>
-          <li>법령상 보관의무가 있는 경우를 제외하고, 개발자는 필요한 범위를 넘어서 사용자의 개인정보를 별도로 장기 보관하는 것을 지향하지 않습니다.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>7. 사용자 권리</h3>
-        <p>사용자는 관련 법령이 허용하는 범위 내에서 다음과 같은 권리를 가질 수 있습니다.</p>
-        <ul>
-          <li>앱 데이터 삭제</li>
-          <li>광고 식별자 재설정 또는 맞춤형 광고 제한</li>
-          <li>제3자 서비스 정책 확인</li>
-          <li>개발자에게 문의</li>
-        </ul>
-        <p>개발자 정보 및 연락처는 Google Play 스토어의 해당 앱 등록정보를 참고해 주세요.</p>
-      </div>
-
-      <div class="card">
-        <h3>8. 보안</h3>
-        <p>개발자는 합리적인 범위에서 앱의 안정성과 정보 보호를 위해 노력합니다. 다만 인터넷 통신, 기기 분실, 악성코드, 운영체제 취약점, 사용자의 관리 소홀 등으로 인해 완전한 보안을 보장할 수는 없습니다.</p>
-      </div>
-
-      <div class="card">
-        <h3>9. 면책 및 책임 제한</h3>
-        <ul>
-          <li>앱의 계산 결과는 사용자의 입력값에 따라 달라질 수 있으므로, 실제 결제 전 사용자가 직접 확인해야 합니다.</li>
-          <li>계산 결과, 저장 기록, 광고 표시, 제3자 서비스 동작, 기기 환경 차이 등으로 발생하는 직·간접 손해에 대해 개발자는 법령상 허용되는 범위 내에서 책임이 제한될 수 있습니다.</li>
-          <li>앱 삭제, 기기 변경, 기기 오류, 데이터 초기화 등으로 저장 정보가 손실될 수 있습니다.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>10. 외부 링크 및 제3자 정책</h3>
-        <p>앱 또는 스토어 등록정보에는 제3자 웹사이트나 서비스에 대한 링크가 포함될 수 있습니다. 이러한 외부 서비스는 개발자가 통제하지 않으며, 각 서비스의 개인정보처리방침과 약관이 적용됩니다.</p>
-      </div>
-
-      <div class="card">
-        <h3>11. 개인정보처리방침의 변경</h3>
-        <p>본 개인정보처리방침은 앱 기능 변경, 법령 개정, 제3자 서비스 변경 등에 따라 수정될 수 있습니다. 중요한 변경이 있는 경우, 업데이트된 정책이 본 페이지에 반영됩니다.</p>
-      </div>
-
-      <div class="card">
-        <h3>12. 문의처</h3>
-        <p>앱 관련 문의, 개인정보 관련 요청, 권리 행사 문의는 Google Play 스토어에 표시된 해당 앱의 개발자 연락처를 통해 접수해 주세요.</p>
-        <p>개발자/게시자 정보 참고: <span class="mono">Google Play 스토어 앱 등록정보</span></p>
-      </div>
-    </section>
-
-    <section id="policy-en" class="policy">
-      <div class="card">
-        <h2>Privacy Policy</h2>
-        <p>This Privacy Policy explains how Bill Splitter (the “App”) may collect, use, store, and handle information when you use the App, and what rights users may have in relation to that information.</p>
-        <p class="muted">Last updated: 2026-03-30</p>
-      </div>
-
-      <div class="card">
-        <h3>1. Information We Collect</h3>
-        <p>The App may store calculation-related information entered by the user, such as total amount, number of people, tip, tax, selected currency, and recent calculation history, on the user’s device for convenience.</p>
-        <ul>
-          <li>The App does not intentionally request or directly collect highly sensitive personal information such as government ID numbers, bank account information, or similar personal financial credentials.</li>
-          <li>Recent calculation history and language preferences may be stored locally on the device.</li>
-          <li>If third-party services are used for advertising or app operations, those providers may process technical data such as advertising identifiers, device information, and app usage information.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>2. How Information Is Used</h3>
-        <p>Information may be used only for purposes reasonably related to operating the App, including:</p>
-        <ul>
-          <li>Providing bill-splitting calculation features</li>
-          <li>Saving and showing recent calculation history</li>
-          <li>Saving language preferences</li>
-          <li>Displaying ads and improving app operation</li>
-          <li>Responding to errors, maintaining stability, and preventing misuse</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>3. Local Storage</h3>
-        <p>The App may store limited information locally on your device, including recent calculation history, language settings, and certain app behavior settings.</p>
-        <ul>
-          <li>This information is generally stored on the user’s device.</li>
-          <li>If the user clears app data or uninstalls the App, stored information may be deleted.</li>
-          <li>Depending on device status, operating system policy, user actions, backup/restore conditions, or similar factors, stored data may not always remain available.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>4. Advertising and Third-Party Services</h3>
-        <p>The App may use third-party services for advertising, analytics, distribution, or operational support. These services may process data according to their own privacy policies and applicable laws.</p>
-        <ul>
-          <li>Example: Google AdMob or other advertising SDKs</li>
-          <li>Example: app distribution or statistics platforms</li>
-        </ul>
-        <p>During ad delivery or related operations, advertising identifiers, device information, and app usage information may be processed by those third parties.</p>
-        <p>Users may be able to manage certain ad personalization settings through their device or platform settings.</p>
-      </div>
-
-      <div class="card">
-        <h3>5. Children’s Privacy</h3>
-        <p>The App is not primarily designed for children, and the developer does not knowingly operate the App for the purpose of collecting personal information from children in violation of applicable law.</p>
-        <p>If a parent or guardian believes a child has provided personal information in a way that requires review, please use the developer contact information shown on the Google Play store listing.</p>
-      </div>
-
-      <div class="card">
-        <h3>6. Retention and Deletion</h3>
-        <ul>
-          <li>Locally stored calculation history and settings may be removed if the user deletes the App or clears app data.</li>
-          <li>Information processed by third-party services may be retained according to the policies of those providers.</li>
-          <li>Except where retention is required by law, the developer does not seek to retain user personal information longer than reasonably necessary for the App’s operation.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>7. User Rights</h3>
-        <p>Depending on applicable law, users may have rights such as:</p>
-        <ul>
-          <li>Deleting app data from their device</li>
-          <li>Resetting advertising identifiers or limiting personalized ads</li>
-          <li>Reviewing third-party privacy policies</li>
-          <li>Contacting the developer</li>
-        </ul>
-        <p>For developer identity and contact details, please refer to the official Google Play store listing for the App.</p>
-      </div>
-
-      <div class="card">
-        <h3>8. Security</h3>
-        <p>The developer makes reasonable efforts to support app stability and information protection. However, no method of transmission, storage, or device operation can be guaranteed to be completely secure, and risks may arise from device loss, malware, platform vulnerabilities, user negligence, or other factors outside the developer’s control.</p>
-      </div>
-
-      <div class="card">
-        <h3>9. Disclaimer and Limitation of Liability</h3>
-        <ul>
-          <li>The calculation results provided by the App depend on the values entered by the user. Users should verify results before making actual payments or financial decisions.</li>
-          <li>To the maximum extent permitted by law, the developer’s liability may be limited for direct or indirect damages arising from app calculations, saved records, advertising display, third-party service behavior, or differences in device environment.</li>
-          <li>Stored information may be lost due to app removal, device change, device error, system reset, or similar events.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>10. External Links and Third-Party Policies</h3>
-        <p>The App or its store listing may contain references or links to third-party services or websites. Those external services are not controlled by the developer, and their own privacy policies and terms may apply.</p>
-      </div>
-
-      <div class="card">
-        <h3>11. Changes to This Privacy Policy</h3>
-        <p>This Privacy Policy may be updated from time to time due to app feature changes, legal updates, or changes in third-party services. Any updated version will be reflected on this page.</p>
-      </div>
-
-      <div class="card">
-        <h3>12. Contact</h3>
-        <p>For questions about the App, privacy-related requests, or user rights inquiries, please use the developer contact details shown on the Google Play store listing for the App.</p>
-        <p>Developer / publisher information reference: <span class="mono">Google Play store listing</span></p>
-      </div>
-    </section>
-
-    <div class="footer">
-      © Bill Splitter. This page is provided for app privacy notice purposes.
-    </div>
+    <p>
+      본 앱의 개발자 정보, 연락처 및
+      게시자 정보는 해당 앱의
+      Google Play 스토어 등록정보를
+      참고해 주세요.
+    </p>
   </div>
 
-  <script>
-    function showLang(lang) {
-      var ko = document.getElementById('policy-ko');
-      var en = document.getElementById('policy-en');
-      var btnKo = document.getElementById('btn-ko');
-      var btnEn = document.getElementById('btn-en');
+  <!-- ==================================== -->
+  <!-- KOREAN PRIVACY POLICY -->
+  <!-- ==================================== -->
 
-      if (lang === 'ko') {
-        ko.classList.add('active');
-        en.classList.remove('active');
-        btnKo.classList.add('active');
-        btnEn.classList.remove('active');
-        document.documentElement.lang = 'ko';
-      } else {
-        en.classList.add('active');
-        ko.classList.remove('active');
-        btnEn.classList.add('active');
-        btnKo.classList.remove('active');
-        document.documentElement.lang = 'en';
-      }
+  <section
+    id="policy-ko"
+    class="policy active"
+    lang="ko">
+
+    <div class="card">
+
+      <h2>개인정보처리방침</h2>
+
+      <p>
+        Bill Splitter(더치페이 계산기,
+        이하 "앱")는 JCraft Studio가
+        제공하는 더치페이 및 비용 분할
+        계산 애플리케이션입니다.
+      </p>
+
+      <p>
+        본 앱은 사용자의 개인정보 보호를
+        중요하게 생각하며,
+        관련 법령 및 Google Play 정책을
+        준수하기 위해 노력합니다.
+      </p>
+
+      <p>
+        본 개인정보처리방침은 앱에서
+        처리될 수 있는 정보,
+        해당 정보의 이용 목적,
+        광고 서비스 및 사용자 권리를
+        설명하기 위해 작성되었습니다.
+      </p>
+
+      <p class="muted">
+        시행일: 2026년 11월 9일<br>
+        최종 수정일: 2026년 11월 9일
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>1. 수집 및 처리하는 정보</h3>
+
+      <p>
+        본 앱은 더치페이 계산 및
+        관련 편의 기능을 제공하기 위해
+        사용자가 입력한 일부 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <h4>1.1 사용자가 입력하는 계산 정보</h4>
+
+      <ul>
+        <li>계산할 총금액</li>
+        <li>비용을 분할할 인원 수</li>
+        <li>팁 및 세금 관련 입력값</li>
+        <li>사용자가 선택한 통화</li>
+        <li>최근 계산 기록</li>
+        <li>언어 및 앱 환경설정</li>
+      </ul>
+
+      <p>
+        이러한 정보는 앱의 계산 및
+        기록 관리 기능을 제공하기 위해
+        사용자 기기 내부에
+        저장될 수 있습니다.
+      </p>
+
+      <p>
+        본 앱은 기본 기능 이용을 위해
+        이름, 주민등록번호,
+        계좌번호, 결제 카드 정보 등의
+        개인정보를 의도적으로
+        요구하지 않습니다.
+      </p>
+
+      <p>
+        사용자가 저장한 계산 기록은
+        개발자 운영 서버로
+        전송하도록 설계되지 않았습니다.
+      </p>
+
+      <h4>1.2 광고 관련 정보</h4>
+
+      <p>
+        본 앱은 광고 제공을 위해
+        Unity LevelPlay 및 Unity Ads를
+        사용합니다.
+      </p>
+
+      <p>
+        제3자 광고 서비스는 광고 제공,
+        성과 측정, 부정행위 방지 등을 위해
+        일부 기기 정보와 광고 관련 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <p>
+        자세한 내용은 아래
+        광고 및 제3자 서비스 항목에서
+        확인할 수 있습니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>2. 정보의 이용 목적</h3>
+
+      <p>
+        본 앱과 관련 서비스에서
+        처리되는 정보는 다음 목적에
+        사용될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>더치페이 및 비용 분할 계산</li>
+        <li>팁과 세금을 포함한 금액 계산</li>
+        <li>최근 계산 기록 저장 및 다시 보기</li>
+        <li>언어 및 앱 설정 유지</li>
+        <li>광고 제공 및 광고 노출 관리</li>
+        <li>광고 성과 측정 및 부정행위 방지</li>
+        <li>오류 대응 및 서비스 안정성 유지</li>
+      </ul>
+
+    </div>
+
+    <div class="card">
+
+      <h3>3. 로컬 데이터 저장</h3>
+
+      <p>
+        앱은 사용자 편의를 위해
+        최근 계산 기록과 언어 설정 등
+        일부 정보를 사용자 기기 내부에
+        저장할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          계산 기록 및 설정 정보는
+          기본적으로 사용자 기기에
+          로컬로 저장됩니다.
+        </li>
+
+        <li>
+          광고 노출 규칙 및 보상형
+          광고 혜택 관련 상태 정보도
+          기기에 저장될 수 있습니다.
+        </li>
+
+        <li>
+          사용자가 앱 데이터를 삭제하거나
+          앱을 제거하면 일반적으로
+          앱 전용 저장 정보가 삭제됩니다.
+        </li>
+
+        <li>
+          기기 백업 및 복원 설정에 따라
+          일부 로컬 데이터가
+          복원될 수 있습니다.
+        </li>
+      </ul>
+
+      <p>
+        개발자는 사용자의 계산 기록이
+        영구적으로 보관되거나
+        자동 백업되는 것을
+        보장하지 않습니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>4. 광고 및 제3자 서비스</h3>
+
+      <p>
+        본 앱은 무료 서비스 운영 및
+        유지 관리를 위해
+        <strong>Unity LevelPlay</strong>
+        광고 미디에이션 플랫폼과
+        <strong>Unity Ads</strong>
+        광고 서비스를 사용합니다.
+      </p>
+
+      <h4>4.1 Unity LevelPlay</h4>
+
+      <p>
+        Unity LevelPlay는 앱 내 광고 요청과
+        광고 표시를 관리하는
+        광고 미디에이션 플랫폼입니다.
+      </p>
+
+      <p>
+        광고 제공 및 광고 성과 측정 과정에서
+        관련 데이터가 처리될 수 있습니다.
+      </p>
+
+      <h4>4.2 Unity Ads</h4>
+
+      <p>
+        Unity Ads는 앱 내 광고 제공,
+        광고 성과 측정 및 부정행위 방지 등을
+        지원하는 광고 서비스입니다.
+      </p>
+
+      <p>
+        Unity Ads 및 관련 광고 제공업체는
+        자체 개인정보처리방침과
+        적용 법률에 따라 데이터를
+        처리할 수 있습니다.
+      </p>
+
+      <h4>4.3 광고 유형 및 보상형 광고</h4>
+
+      <p>
+        본 앱에서는 다음과 같은 광고가
+        제공될 수 있습니다.
+      </p>
+
+      <ul>
+        <li>배너 광고</li>
+        <li>전면 광고</li>
+        <li>
+          사용자가 선택하여 시청하는
+          보상형 광고
+        </li>
+      </ul>
+
+      <p>
+        보상형 광고를 정상적으로 시청하고
+        보상을 지급받은 경우,
+        현재 앱의 보상 혜택 설정에 따라
+        <strong>10분간 전면 광고가
+        면제될 수 있습니다.</strong>
+      </p>
+
+      <p>
+        광고 로딩 상태 및 보상 혜택
+        관련 정보는 앱 기능 유지에
+        필요한 범위에서 저장될 수 있습니다.
+      </p>
+
+      <h4>4.4 광고 서비스에서 처리할 수 있는 정보</h4>
+
+      <p>
+        Unity 및 관련 광고 서비스 제공업체는
+        광고 제공, 성과 측정,
+        광고 노출 빈도 관리 및
+        부정행위 방지 등을 위해
+        다음 정보를 처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 광고 ID 등 광고 식별자
+        </li>
+
+        <li>
+          기기 모델 및 운영체제 정보
+        </li>
+
+        <li>
+          IP 주소 및 네트워크 관련 정보
+        </li>
+
+        <li>
+          앱 식별 정보 및 앱 버전
+        </li>
+
+        <li>
+          광고 요청, 노출, 클릭 및
+          광고 상호작용 정보
+        </li>
+
+        <li>
+          광고 시청 및 성과 측정 정보
+        </li>
+
+        <li>
+          광고 부정행위 방지 및
+          기술적 진단 정보
+        </li>
+      </ul>
+
+      <p>
+        IP 주소 등의 정보는
+        대략적인 지역을 추정하는 데
+        사용될 수 있습니다.
+      </p>
+
+      <p>
+        실제 데이터 처리 범위는
+        광고 SDK 버전 및 설정,
+        기기 환경, 사용 지역,
+        개인정보 보호 선택 및
+        적용 법률에 따라 달라질 수 있습니다.
+      </p>
+
+      <p>
+        개발자는 사용자가 입력한
+        계산 금액 및 계산 기록을
+        광고 타겟팅 목적으로
+        광고 SDK에 의도적으로
+        전달하지 않습니다.
+      </p>
+
+      <h4>4.5 개인정보 보호 및 광고 설정</h4>
+
+      <p>
+        사용자는 Android 기기의
+        개인정보 보호 및 광고 설정을 통해
+        광고 ID 관련 선택을
+        관리할 수 있습니다.
+      </p>
+
+      <p>
+        Android 버전에 따라 광고 ID의
+        재설정 또는 삭제가 가능할 수 있습니다.
+      </p>
+
+      <p>
+        Unity 광고 화면에서
+        개인정보 보호 선택 기능이
+        제공되는 경우 해당 기능을 통해
+        관련 설정을 변경할 수 있습니다.
+      </p>
+
+      <p>
+        맞춤형 광고를 제한하더라도
+        맞춤형이 아닌 광고가
+        계속 표시될 수 있습니다.
+      </p>
+
+      <h4>4.6 제3자 서비스 및 개인정보처리방침</h4>
+
+      <div class="service-box">
+
+        <p>
+          <strong>Unity LevelPlay</strong><br>
+          광고 미디에이션 및 광고 관리
+        </p>
+
+        <p>
+          <strong>Unity Ads</strong><br>
+          광고 제공 및 광고 성과 측정
+        </p>
+
+        <p>
+          <strong>Unity 공식 개인정보처리방침</strong>
+        </p>
+
+        <p>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and App User Privacy Policy
+          </a>
+        </p>
+
+        <p>
+          <strong>Google Play</strong><br>
+          앱 배포 및 관련 플랫폼 서비스
+        </p>
+
+        <p>
+          <strong>Google 개인정보처리방침</strong>
+        </p>
+
+        <p>
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Google Privacy Policy
+          </a>
+        </p>
+
+      </div>
+
+      <p>
+        제3자 서비스는 각자의
+        개인정보처리방침과
+        관련 법률에 따라 정보를
+        처리할 수 있습니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>5. 아동의 개인정보</h3>
+
+      <p>
+        본 앱은 일반 사용자를 위한
+        계산 유틸리티이며,
+        아동을 주요 대상으로
+        설계된 서비스가 아닙니다.
+      </p>
+
+      <p>
+        개발자는 앱의 핵심 기능 제공을 위해
+        아동의 직접적인 개인 식별 정보를
+        의도적으로 수집하지 않습니다.
+      </p>
+
+      <p>
+        다만 광고 및 플랫폼 서비스에서
+        관련 법률과 제공업체의 정책에 따라
+        기기 관련 정보가 처리될 수 있습니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>6. 정보 보관 및 삭제</h3>
+
+      <p>
+        앱에서 생성한 계산 기록,
+        언어 및 설정 정보는
+        앱 기능을 제공하는 동안
+        사용자 기기에 저장될 수 있습니다.
+      </p>
+
+      <p>
+        사용자는 앱에서 제공하는
+        기록 삭제 기능을 이용하거나
+        Android 설정에서 앱 데이터를
+        초기화할 수 있습니다.
+      </p>
+
+      <p>
+        앱을 제거하면 일반적으로
+        앱 전용 로컬 데이터가 삭제됩니다.
+      </p>
+
+      <p>
+        단, 기기 백업 및 복원 기능에 따라
+        일부 정보가 복원될 수 있습니다.
+      </p>
+
+      <p>
+        Unity 및 관련 광고 서비스에서
+        처리하는 데이터의 보관 및 삭제는
+        해당 제공업체의 정책에 따릅니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>7. 사용자 권리</h3>
+
+      <p>
+        사용자는 관련 법률에 따라
+        개인정보의 열람, 정정,
+        삭제, 처리 제한 등
+        관련 권리를 행사할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>앱 내 계산 기록 삭제</li>
+        <li>앱 데이터 초기화 및 앱 제거</li>
+        <li>기기 광고 ID 관련 설정 관리</li>
+        <li>제3자 개인정보처리방침 확인</li>
+        <li>개발자에게 개인정보 관련 문의</li>
+      </ul>
+
+      <p>
+        Unity 광고 관련 정보에 대한
+        개인정보 보호 선택 및
+        권리 행사 방법은 Unity의
+        공식 개인정보처리방침을
+        참고할 수 있습니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>8. 보안</h3>
+
+      <p>
+        개발자는 앱의 안정성과
+        사용자 정보 보호를 위해
+        합리적인 수준의 기술적 및
+        관리적 조치를 유지하도록
+        노력합니다.
+      </p>
+
+      <p>
+        다만 인터넷 통신,
+        기기 분실, 악성 앱,
+        운영체제 취약점,
+        사용자 관리 소홀 등으로 인해
+        완전한 보안을 보장할 수는 없습니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>9. 면책 및 책임 제한</h3>
+
+      <ul>
+        <li>
+          본 앱의 계산 결과는
+          사용자가 입력한 값에 따라
+          달라질 수 있으므로
+          실제 결제 전 직접 확인해야 합니다.
+        </li>
+
+        <li>
+          계산 결과, 저장 기록,
+          광고 표시, 외부 서비스 동작 및
+          기기 환경의 차이 등으로 발생하는
+          손해에 대한 개발자의 책임은
+          관련 법령에서 허용하는 범위 내에서
+          제한될 수 있습니다.
+        </li>
+
+        <li>
+          앱 삭제, 기기 변경,
+          저장소 오류, 데이터 초기화 등으로
+          저장 정보가 손실될 수 있습니다.
+        </li>
+      </ul>
+
+      <p>
+        본 조항은 법령상 배제할 수 없는
+        사용자 권리나 개발자의 책임을
+        면제하는 것으로 해석되지 않습니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>10. 외부 링크 및 제3자 정책</h3>
+
+      <p>
+        앱 또는 Google Play 등록정보에는
+        외부 웹사이트 및 제3자 서비스에 대한
+        링크가 포함될 수 있습니다.
+      </p>
+
+      <p>
+        이러한 외부 서비스에는
+        해당 제공업체의 개인정보처리방침 및
+        서비스 약관이 적용됩니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>11. 개인정보처리방침 변경</h3>
+
+      <p>
+        본 개인정보처리방침은 앱 기능,
+        관련 법률, Google Play 정책 및
+        광고 서비스 변경 등에 따라
+        수정될 수 있습니다.
+      </p>
+
+      <p>
+        중요한 변경사항이 있는 경우
+        본 페이지에 업데이트된
+        개인정보처리방침을 게시합니다.
+      </p>
+
+      <p>
+        이번 개정에서는 광고 플랫폼
+        전환에 따라 Unity LevelPlay 및
+        Unity Ads 관련 개인정보
+        처리 내용을 반영했습니다.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>12. 개발자 정보 및 문의</h3>
+
+      <p>
+        <strong>개발자: JCraft Studio</strong>
+      </p>
+
+      <p>
+        앱 이용, 개인정보 처리 및
+        사용자 권리 행사와 관련된 문의는
+        Google Play 스토어에 표시된
+        본 앱의 개발자 연락처를 통해
+        접수할 수 있습니다.
+      </p>
+
+      <p>
+        최신 개발자 연락처 및
+        게시자 정보는 Google Play
+        등록정보를 참고해 주세요.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ==================================== -->
+  <!-- ENGLISH PRIVACY POLICY -->
+  <!-- ==================================== -->
+
+  <section
+    id="policy-en"
+    class="policy"
+    lang="en">
+
+    <div class="card">
+
+      <h2>Privacy Policy</h2>
+
+      <p>
+        Bill Splitter ("the App") is
+        a bill-splitting and expense
+        calculation application
+        provided by JCraft Studio.
+      </p>
+
+      <p>
+        The Developer values user privacy
+        and aims to comply with applicable
+        laws and Google Play policies.
+      </p>
+
+      <p>
+        This Privacy Policy explains
+        the information that may be processed,
+        how it may be used,
+        advertising services, and
+        users' privacy rights.
+      </p>
+
+      <p class="muted">
+        Effective Date: November 9, 2026<br>
+        Last Updated: November 9, 2026
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>1. Information We Process</h3>
+
+      <p>
+        The App may process
+        calculation-related information
+        entered by users to provide
+        bill-splitting functionality.
+      </p>
+
+      <h4>1.1 User-Entered Calculation Data</h4>
+
+      <ul>
+        <li>Total bill amount</li>
+        <li>Number of people</li>
+        <li>Tip and tax values</li>
+        <li>Selected currency</li>
+        <li>Recent calculation history</li>
+        <li>Language and App preferences</li>
+      </ul>
+
+      <p>
+        This information may be
+        stored locally on the user's device
+        to provide calculation and
+        history management features.
+      </p>
+
+      <p>
+        The App does not intentionally
+        require names, government ID
+        numbers, bank account details,
+        or payment card information
+        for its core functions.
+      </p>
+
+      <p>
+        Saved calculation history
+        is not designed to be sent
+        to a developer-operated server.
+      </p>
+
+      <h4>1.2 Advertising-Related Information</h4>
+
+      <p>
+        The App uses Unity LevelPlay
+        and Unity Ads for advertisement
+        delivery and management.
+      </p>
+
+      <p>
+        Third-party advertising providers
+        may process certain device and
+        advertising-related information
+        for ad delivery, measurement,
+        and fraud prevention.
+      </p>
+
+      <p>
+        Additional information is provided
+        in the Advertising and
+        Third-Party Services section below.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>2. How Information Is Used</h3>
+
+      <p>
+        Information handled by the App
+        and related services may be used
+        for the following purposes:
+      </p>
+
+      <ul>
+        <li>Bill splitting and expense calculations</li>
+        <li>Calculations including tips and taxes</li>
+        <li>Saving and displaying calculation history</li>
+        <li>Maintaining language and App preferences</li>
+        <li>Advertising delivery and frequency management</li>
+        <li>Ad performance measurement and fraud prevention</li>
+        <li>Error handling and service stability</li>
+      </ul>
+
+    </div>
+
+    <div class="card">
+
+      <h3>3. Local Storage</h3>
+
+      <p>
+        The App may store certain information
+        locally on the user's device,
+        including recent calculation history
+        and language preferences.
+      </p>
+
+      <ul>
+        <li>
+          Calculation history and preferences
+          are generally stored locally
+          on the device.
+        </li>
+
+        <li>
+          Local advertising state and
+          rewarded advertising benefit
+          information may also be stored.
+        </li>
+
+        <li>
+          Clearing App data or
+          uninstalling the App generally
+          removes App-specific local data.
+        </li>
+
+        <li>
+          Some information may be restored
+          depending on device backup
+          and restoration settings.
+        </li>
+      </ul>
+
+      <p>
+        The Developer does not guarantee
+        permanent retention or automatic
+        backup of calculation history.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>4. Advertising and Third-Party Services</h3>
+
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>,
+        an advertising mediation platform,
+        and <strong>Unity Ads</strong>
+        to support its free operation.
+      </p>
+
+      <h4>4.1 Unity LevelPlay</h4>
+
+      <p>
+        Unity LevelPlay provides
+        advertising mediation and
+        management functionality.
+      </p>
+
+      <p>
+        Advertising requests and
+        performance measurement may
+        involve processing certain
+        advertising-related information.
+      </p>
+
+      <h4>4.2 Unity Ads</h4>
+
+      <p>
+        Unity Ads supports in-app
+        advertisement delivery,
+        measurement, and
+        fraud prevention.
+      </p>
+
+      <p>
+        Unity Ads and related providers
+        may process information under
+        their respective privacy policies
+        and applicable laws.
+      </p>
+
+      <h4>4.3 Advertising Formats and Rewards</h4>
+
+      <p>
+        The following advertising
+        formats may be available
+        within the App:
+      </p>
+
+      <ul>
+        <li>Banner advertisements</li>
+        <li>Interstitial advertisements</li>
+        <li>
+          Optional rewarded advertisements
+          initiated by users
+        </li>
+      </ul>
+
+      <p>
+        After successfully viewing
+        a rewarded advertisement
+        and receiving the reward,
+        users may receive
+        <strong>10 minutes without
+        interstitial advertisements</strong>
+        under the App's current
+        reward configuration.
+      </p>
+
+      <p>
+        Information required to manage
+        advertising state and reward
+        benefits may be stored locally.
+      </p>
+
+      <h4>4.4 Advertising Data Processing</h4>
+
+      <p>
+        Unity and related advertising
+        service providers may process
+        information such as:
+      </p>
+
+      <ul>
+        <li>
+          Android Advertising ID
+          and similar identifiers
+        </li>
+
+        <li>
+          Device model and
+          operating system information
+        </li>
+
+        <li>
+          IP address and network information
+        </li>
+
+        <li>
+          App identifier and App version
+        </li>
+
+        <li>
+          Advertising requests,
+          impressions, clicks,
+          and interactions
+        </li>
+
+        <li>
+          Advertising views and
+          performance measurement data
+        </li>
+
+        <li>
+          Fraud prevention and
+          technical diagnostics
+        </li>
+      </ul>
+
+      <p>
+        Some information, including
+        IP addresses, may be used
+        to estimate approximate location.
+      </p>
+
+      <p>
+        Actual data processing depends
+        on SDK configuration,
+        device environment,
+        location, privacy choices,
+        and applicable laws.
+      </p>
+
+      <p>
+        The Developer does not
+        intentionally transmit users'
+        calculation amounts or history
+        to advertising SDKs
+        for targeted advertising.
+      </p>
+
+      <h4>4.5 Advertising Privacy Choices</h4>
+
+      <p>
+        Users may manage available
+        advertising and privacy
+        settings on their
+        Android devices.
+      </p>
+
+      <p>
+        Depending on the Android version,
+        users may be able to reset
+        or delete their advertising ID.
+      </p>
+
+      <p>
+        Where Unity advertisements
+        provide privacy controls,
+        users may review or
+        modify applicable choices.
+      </p>
+
+      <p>
+        Restricting personalised advertising
+        does not necessarily stop
+        non-personalised advertisements.
+      </p>
+
+      <h4>4.6 Third-Party Services and Policies</h4>
+
+      <div class="service-box">
+
+        <p>
+          <strong>Unity LevelPlay</strong><br>
+          Advertising mediation
+          and management
+        </p>
+
+        <p>
+          <strong>Unity Ads</strong><br>
+          Advertising delivery
+          and measurement
+        </p>
+
+        <p>
+          <strong>Unity Privacy Policy</strong>
+        </p>
+
+        <p>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and App User Privacy Policy
+          </a>
+        </p>
+
+        <p>
+          <strong>Google Play</strong><br>
+          Application distribution
+          and related platform services
+        </p>
+
+        <p>
+          <strong>Google Privacy Policy</strong>
+        </p>
+
+        <p>
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Google Privacy Policy
+          </a>
+        </p>
+
+      </div>
+
+      <p>
+        Third-party providers may
+        process information under
+        their respective privacy policies
+        and applicable laws.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>5. Children's Privacy</h3>
+
+      <p>
+        The App is a general-purpose
+        calculation utility and is not
+        primarily directed to children.
+      </p>
+
+      <p>
+        The Developer does not intentionally
+        require direct personal identifiers
+        from children for the App's
+        core functionality.
+      </p>
+
+      <p>
+        However, advertising and platform
+        providers may process limited
+        device-related information
+        subject to applicable laws
+        and their privacy policies.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>6. Data Retention and Deletion</h3>
+
+      <p>
+        Calculation history,
+        language preferences,
+        and App settings may remain
+        on the user's device
+        while needed for
+        App functionality.
+      </p>
+
+      <p>
+        Users may remove available
+        history records through the
+        App's deletion features or
+        clear App data through
+        Android device settings.
+      </p>
+
+      <p>
+        Uninstalling the App generally
+        removes App-specific local data.
+      </p>
+
+      <p>
+        However, some information may
+        be restored depending on
+        device backup settings.
+      </p>
+
+      <p>
+        Information processed by Unity
+        and other advertising providers
+        is retained and deleted
+        under their respective policies.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>7. User Rights</h3>
+
+      <p>
+        Depending on applicable laws,
+        users may exercise rights
+        relating to personal data
+        access, correction, deletion,
+        and restriction of processing.
+      </p>
+
+      <ul>
+        <li>Delete calculation history</li>
+        <li>Clear App data or uninstall the App</li>
+        <li>Manage Android advertising ID settings</li>
+        <li>Review third-party privacy policies</li>
+        <li>Contact the Developer with privacy inquiries</li>
+      </ul>
+
+      <p>
+        For privacy rights relating
+        to advertising data processed
+        by Unity, please refer to
+        Unity's official privacy policy.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>8. Security</h3>
+
+      <p>
+        The Developer makes reasonable
+        efforts to maintain appropriate
+        safeguards for App stability
+        and information protection.
+      </p>
+
+      <p>
+        However, no method of
+        electronic storage,
+        internet communication,
+        or device operation can
+        guarantee absolute security.
+      </p>
+
+      <p>
+        Risks may arise from device loss,
+        malware, operating system
+        vulnerabilities, or user errors.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>9. Disclaimer and Limitation of Liability</h3>
+
+      <ul>
+        <li>
+          Calculation results depend
+          on the values entered by users.
+          Users should verify results
+          before making actual payments.
+        </li>
+
+        <li>
+          Liability for damages
+          arising from calculation results,
+          stored records, advertisements,
+          third-party services,
+          or device conditions
+          may be limited to the
+          extent permitted by law.
+        </li>
+
+        <li>
+          Stored data may be lost
+          due to App removal,
+          device replacement,
+          storage errors,
+          or system reset.
+        </li>
+      </ul>
+
+      <p>
+        Nothing in this section
+        excludes legal rights
+        or liabilities that
+        cannot lawfully be excluded.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>10. External Links and Third-Party Policies</h3>
+
+      <p>
+        The App or its Google Play
+        listing may contain links
+        to external websites
+        and third-party services.
+      </p>
+
+      <p>
+        Such services are subject
+        to their own privacy policies
+        and terms of service.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>11. Changes to This Privacy Policy</h3>
+
+      <p>
+        This Privacy Policy may
+        be updated due to changes
+        in App functionality,
+        applicable laws,
+        Google Play policies,
+        or advertising services.
+      </p>
+
+      <p>
+        Material changes will be
+        reflected by publishing
+        an updated version
+        of this Privacy Policy.
+      </p>
+
+      <p>
+        This revision updates
+        the advertising disclosures
+        to reflect the use of
+        Unity LevelPlay and Unity Ads.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>12. Developer Information and Contact</h3>
+
+      <p>
+        <strong>Developer: JCraft Studio</strong>
+      </p>
+
+      <p>
+        For App inquiries,
+        privacy-related requests,
+        or questions about
+        user rights, please use
+        the developer contact information
+        displayed on the App's
+        Google Play Store listing.
+      </p>
+
+      <p>
+        Current developer and publisher
+        information is available
+        on the Google Play listing.
+      </p>
+
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    © 2026 JCraft Studio.
+    Bill Splitter Privacy Policy.
+    All rights reserved.
+  </footer>
+
+</div>
+
+<script>
+  function showLang(lang) {
+    var selected = lang === "en" ? "en" : "ko";
+
+    var ko = document.getElementById("policy-ko");
+    var en = document.getElementById("policy-en");
+
+    var btnKo = document.getElementById("btn-ko");
+    var btnEn = document.getElementById("btn-en");
+
+    var showKo = selected === "ko";
+
+    ko.classList.toggle("active", showKo);
+    en.classList.toggle("active", !showKo);
+
+    btnKo.classList.toggle("active", showKo);
+    btnEn.classList.toggle("active", !showKo);
+
+    btnKo.setAttribute(
+      "aria-pressed",
+      String(showKo)
+    );
+
+    btnEn.setAttribute(
+      "aria-pressed",
+      String(!showKo)
+    );
+
+    document.documentElement.lang = selected;
+  }
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+      showLang("ko");
     }
-  </script>
+  );
+</script>
+
 </body>
 </html>
