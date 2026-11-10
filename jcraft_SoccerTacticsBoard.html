@@ -1,0 +1,823 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="JCraft Tactics Lab 개인정보처리방침 / Privacy Policy">
+  <title>개인정보처리방침 | JCraft Tactics Lab</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1b2633;
+      --muted: #586678;
+      --line: #e0e6eb;
+      --panel: #f5f8fa;
+      --accent: #087e75;
+    }
+    @media (prefers-color-scheme:dark) {
+      :root {
+        --bg: #0d1722;
+        --fg: #eef4f8;
+        --muted: #b8c6d2;
+        --line: #304353;
+        --panel: #172633;
+        --accent: #71e5c8;
+      }
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:system-ui,-apple-system,"Segoe UI",
+        Roboto,"Noto Sans KR",sans-serif;
+      line-height:1.75;
+      overflow-wrap:anywhere;
+    }
+    .wrap {
+      max-width:880px;
+      margin:0 auto;
+      padding:26px 18px 54px;
+    }
+    header {
+      border-bottom:1px solid var(--line);
+      padding-bottom:20px;
+    }
+    h1 {
+      font-size:clamp(24px,5vw,32px);
+      line-height:1.3;
+      margin:0 0 8px;
+    }
+    h2 {
+      font-size:19px;
+      line-height:1.4;
+      margin:28px 0 10px;
+    }
+    p { margin:9px 0; }
+    ul { padding-left:23px; margin:8px 0 14px; }
+    li { margin:6px 0; }
+    a {
+      color:var(--accent);
+      text-underline-offset:3px;
+    }
+    .meta,.small {
+      color:var(--muted);
+      font-size:14px;
+    }
+    .language-switch {
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .language-switch button {
+      cursor:pointer;
+      border:1px solid var(--line);
+      background:var(--panel);
+      color:var(--fg);
+      padding:9px 18px;
+      border-radius:10px;
+      font:inherit;
+      font-weight:650;
+    }
+    .language-switch button[aria-pressed="true"] {
+      background:var(--accent);
+      color:var(--bg);
+      border-color:var(--accent);
+    }
+    .notice {
+      margin:20px 0;
+      padding:15px 17px;
+      background:var(--panel);
+      border-radius:12px;
+      border:1px solid var(--line);
+    }
+    section { margin:0 0 8px; }
+    [hidden] { display:none !important; }
+    footer {
+      border-top:1px solid var(--line);
+      margin-top:32px;
+      padding-top:18px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    button:focus-visible,
+    a:focus-visible {
+      outline:3px solid var(--accent);
+      outline-offset:3px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="page-title">개인정보처리방침</h1>
+    <p class="meta">JCraft Tactics Lab · JCraft Studio</p>
+    <p class="meta" id="updated-label">
+      최종 수정일: 2026년 11월 10일
+    </p>
+    <nav class="language-switch" aria-label="Language / 언어">
+      <button id="lang-ko-btn" type="button"
+        aria-pressed="true" onclick="setLanguage('ko')">
+        한국어
+      </button>
+      <button id="lang-en-btn" type="button"
+        aria-pressed="false" onclick="setLanguage('en')">
+        English
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <article id="policy-ko" lang="ko">
+      <div class="notice">
+        <strong>핵심 안내:</strong>
+        전술 프로젝트·선수명·포메이션·장면 정보는
+        기본적으로 이용자 기기에 저장됩니다.
+        개발자는 이를 자체 서버로 업로드하는
+        기능을 운영하지 않습니다.
+        다만 광고를 제공하는 Unity LevelPlay 및
+        Unity Ads와 관련 광고 파트너가 기기 정보와
+        광고 관련 데이터를 처리할 수 있습니다.
+      </div>
+
+      <section>
+        <h2>1. 적용 범위 및 운영자</h2>
+        <p>
+          본 개인정보처리방침은
+          <strong>JCraft Studio</strong>
+          (이하 “개발자”)가 제공하는
+          <strong>JCraft Tactics Lab</strong>
+          (이하 “앱”)에서 정보를 어떻게 처리하는지
+          설명합니다.
+          앱은 축구 포메이션, 선수 및 공의 움직임을
+          작성·재생·보관하는 전술 설계 도구입니다.
+        </p>
+        <p>
+          기본 기능은 회원가입이나 로그인 없이
+          사용할 수 있습니다.
+          앱의 핵심 기능과 광고 서비스의 정보 처리는
+          구분됩니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. 기기에 저장하는 정보</h2>
+        <p>
+          앱은 기능을 제공하기 위해 다음 데이터를
+          사용자 기기의 앱 저장 영역에 보관할 수 있습니다.
+        </p>
+        <ul>
+          <li>전술 프로젝트 이름, 생성·수정 시각 및 기록 목록</li>
+          <li>팀 이름, 포메이션, 선수 이름·포지션</li>
+          <li>장면별 선수·공 좌표, 이동 경로 및 애니메이션 재생 시간</li>
+          <li>언어·화면 테마 설정, 보상형 광고로 부여된 전면광고 면제 종료 시각</li>
+        </ul>
+        <p>
+          이러한 정보는 앱의 로컬 저장 기능을 위해
+          사용되며, 개발자의 별도 사용자 계정이나
+          전술 데이터 서버로 자동 전송하지 않습니다.
+        </p>
+        <p>
+          이용자가 전술 JSON을 복사하거나 가져오는 경우
+          해당 내용은 이용자의 선택에 따라 클립보드를
+          거칠 수 있습니다.
+          복사된 데이터는 운영체제 또는 사용자가
+          붙여넣은 다른 앱의 처리 정책에 영향을
+          받을 수 있습니다.
+          타인의 민감한 개인정보를 선수명이나 메모 등에
+          입력하지 않는 것을 권장합니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. 광고 SDK가 처리할 수 있는 정보</h2>
+        <p>
+          앱은 광고 표시를 위해
+          <strong>Unity LevelPlay</strong> 광고 미디에이션과
+          <strong>Unity Ads</strong>를 사용합니다.
+          SDK 및 실제 연동된 광고 파트너는
+          서비스 제공 방식과 이용자 설정에 따라
+          다음 정보를 수집·이용·공유할 수 있습니다.
+        </p>
+        <ul>
+          <li>광고 식별자(Android Advertising ID), 기타 기기·앱 식별 정보</li>
+          <li>IP 주소, 국가·지역 등 IP 주소에서 추정되는 대략적 위치</li>
+          <li>기기 모델, 운영체제, 언어, 앱 버전 및 기술적 진단 정보</li>
+          <li>광고 요청·노출·클릭·시청, 보상형 광고 완료 등 광고 상호작용 정보</li>
+          <li>광고 성과 분석, 빈도 관리 및 부정행위 방지에 필요한 정보</li>
+        </ul>
+        <p>
+          광고 네트워크는 관련 법령과 이용자 선택에 따라
+          맞춤형 광고를 위해 데이터를 처리하거나
+          파트너와 공유할 수 있습니다.
+          여기 기재한 항목이 모든 이용자에게 항상
+          수집된다는 의미는 아닙니다.
+        </p>
+        <p>
+          자세한 내용:
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank" rel="noopener noreferrer">
+            Unity 앱 이용자 개인정보처리방침
+          </a>,
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank" rel="noopener noreferrer">
+            Unity 개인정보 FAQ
+          </a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 정보 이용 목적 및 제3자</h2>
+        <ul>
+          <li>
+            <strong>개발자:</strong>
+            전술 편집, 애니메이션 재생,
+            기록 저장·삭제, 앱 설정 유지
+          </li>
+          <li>
+            <strong>Unity 및 실제 연동 광고 파트너:</strong>
+            배너·전면·보상형 광고 제공, 측정,
+            보안 및 부정행위 방지
+          </li>
+        </ul>
+        <p>
+          개발자는 로컬 전술 기록을 광고 목적으로
+          외부 업체에 직접 판매하지 않습니다.
+          다만 광고 SDK를 통한 데이터의 제공·공유는
+          별개이며 Unity의 정책과 적용되는
+          광고 파트너의 정책에 따릅니다.
+        </p>
+        <p>
+          광고 관련 정보는 국외에 위치한
+          서비스 제공업체의 시스템에서 처리될 수 있습니다.
+          실제 처리 주체, 국가, 보관·삭제 기간은
+          해당 사업자의 최신 공지와 적용 법령을 따릅니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. 접근 권한</h2>
+        <p>
+          앱은 광고 및 네트워크 서비스를 위해
+          인터넷·네트워크 상태 관련 기능과
+          광고 식별자를 사용할 수 있습니다.
+          축구 전술 편집 자체에는 카메라, 마이크,
+          연락처 또는 정밀 위치 권한이 필요하지 않습니다.
+          실제 권한은 설치 버전과 포함된 SDK의
+          최종 권한 목록에 따라 달라질 수 있습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. 보관 기간 및 삭제 방법</h2>
+        <ul>
+          <li>
+            전술 기록은 이용자가 앱에서 개별 삭제하거나
+            전체 삭제하기 전까지 기기에 보관될 수 있습니다.
+          </li>
+          <li>
+            앱 설정 및 보상형 광고 면제 기록은
+            앱 데이터 삭제 시 제거할 수 있습니다.
+            면제 혜택은 설정된 시간이 지나면 만료됩니다.
+          </li>
+          <li>
+            기기 설정에서 앱 데이터를 삭제하거나
+            앱을 제거하면 일반적으로 기기에 저장된
+            앱 데이터가 삭제됩니다.
+          </li>
+          <li>
+            운영체제 백업·복원 기능,
+            사용자가 별도로 복사한 JSON 또는
+            클립보드 데이터는 별도로 남을 수 있습니다.
+          </li>
+          <li>
+            광고 SDK가 처리한 정보는 개발자의
+            로컬 기록 삭제와 별도로 해당 광고 서비스
+            제공업체의 보관·삭제 정책을 따릅니다.
+          </li>
+        </ul>
+        <p>
+          앱은 회원 계정을 생성하지 않으므로
+          별도의 계정 삭제 절차는 없습니다.
+          데이터 관련 추가 문의는 아래 문의처를
+          이용해 주세요.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. 이용자의 권리 및 광고 선택</h2>
+        <p>
+          이용자는 전술 기록을 확인·수정·삭제하고,
+          기기 설정에서 광고 식별자 및 관련
+          개인정보 선택을 관리할 수 있습니다.
+          Unity 광고에서 개인정보 설정 기능이 제공되면
+          해당 기능을 통해 맞춤형 광고 관련 선택을
+          변경할 수 있습니다.
+        </p>
+        <p>
+          Unity가 처리하는 개인정보의
+          열람·정정·삭제 등의 요청은
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank" rel="noopener noreferrer">
+            Unity의 개인정보 안내
+          </a>에 기재된 절차를 참고할 수 있습니다.
+          적용 법령에 따른 권리 행사와
+          개발자 문의도 가능합니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. 데이터 보안</h2>
+        <p>
+          앱은 주요 전술 데이터를 사용자 기기에 저장하여
+          개발자 서버로의 불필요한 전송을
+          줄이도록 설계되었습니다.
+          광고 서비스와의 통신 및 광고 데이터
+          보안 조치는 관련 SDK 제공업체의
+          기술적·관리적 보호조치와 정책에 따릅니다.
+          다만 어떠한 저장·전송 방식도
+          절대적인 보안을 보장하지는 않습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. 아동 관련 안내</h2>
+        <p>
+          앱의 핵심 기능은 이용자의 연령,
+          연락처나 실명 입력을 요구하지 않습니다.
+          아동이 앱을 사용하는 경우에도 광고 SDK의
+          데이터 처리는 해당 법령, Google Play 정책,
+          광고 서비스의 연령 관련 설정에 따라
+          달라질 수 있습니다.
+          보호자는 기기의 개인정보·광고 설정을 확인하고
+          필요한 경우 개발자에게 문의할 수 있습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. 저작권 및 제3자 권리</h2>
+        <p>
+          앱의 자체 개발 소프트웨어,
+          인터페이스 및 독창적인 디자인에 관한 권리는
+          개발자 또는 정당한 권리자에게 있습니다.
+          이용자가 직접 작성한 전술 내용에 대한 권리 및
+          제3자 콘텐츠 사용 책임은 관련 법령과
+          원권리자의 권리에 따릅니다.
+        </p>
+        <p>
+          이용자는 권한이 없는 구단 로고, 선수 사진,
+          상표 또는 기타 저작물을 앱의 자료나
+          외부 공유 콘텐츠에 무단 사용하지 않아야 합니다.
+          본 앱은 특정 축구 구단·리그·협회·대회 운영기관의
+          공식 제품이 아니며, 별도 표시가 없는 한
+          제휴·후원·승인을 의미하지 않습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. 서비스 및 외부 광고에 관한 안내</h2>
+        <p>
+          앱은 이용자가 수동으로 축구 전술을 구성하고
+          시각화하기 위한 도구로,
+          실제 경기 결과, 전술의 성공 또는
+          전문적인 지도 성과를 보증하지 않습니다.
+          외부 광고나 연결된 사이트·서비스에는
+          해당 제3자의 정책이 적용될 수 있습니다.
+          본 안내는 적용 법령상 인정되는 이용자의
+          권리를 제한하지 않습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>12. 방침 변경</h2>
+        <p>
+          앱 기능, 광고 SDK, 적용 법령 또는
+          실제 정보 처리 방식이 변경되면
+          본 방침을 수정할 수 있습니다.
+          중요한 변경사항은 본 페이지 또는 앱을 통해
+          알리고, 수정일을 갱신합니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>13. 개발자 및 문의</h2>
+        <p>
+          <strong>개발자:</strong> JCraft Studio
+        </p>
+        <p>
+          <strong>앱:</strong> JCraft Tactics Lab
+        </p>
+        <p>
+          개인정보 보호 및 앱 이용 관련 문의는
+          <strong>Google Play 스토어의
+          JCraft Tactics Lab 앱 상세 페이지</strong>에
+          표시된 <strong>‘앱 지원’ 또는
+          ‘개발자 연락처’</strong>를
+          참고해 주시기 바랍니다.
+        </p>
+      </section>
+    </article>
+
+    <!-- ENGLISH -->
+    <article id="policy-en" lang="en" hidden>
+      <div class="notice">
+        <strong>At a glance:</strong>
+        Tactical projects, player names,
+        formations and animation frames are
+        stored primarily on your device.
+        The Developer does not operate a server
+        that automatically uploads this content.
+        However, Unity LevelPlay, Unity Ads and
+        their advertising partners may process
+        device and advertising information.
+      </div>
+
+      <section>
+        <h2>1. Scope and Developer</h2>
+        <p>
+          This Privacy Policy describes how
+          <strong>JCraft Studio</strong>
+          (the “Developer”) handles information in
+          <strong>JCraft Tactics Lab</strong>
+          (the “App”), a tool for designing,
+          animating and saving soccer/football tactics.
+        </p>
+        <p>
+          The core features do not require
+          account registration or sign-in.
+          Local tactical data and advertising
+          data are handled separately.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Information Stored on Your Device</h2>
+        <p>
+          The App may save the following
+          information in its local app storage:
+        </p>
+        <ul>
+          <li>
+            Tactical project names, created or
+            updated times, and saved records
+          </li>
+          <li>
+            Team names, formations, player names
+            and positions
+          </li>
+          <li>
+            Player and ball coordinates,
+            movement paths and animation timing
+          </li>
+          <li>
+            Language and theme preferences,
+            and the expiry time of any
+            rewarded interstitial-ad exemption
+          </li>
+        </ul>
+        <p>
+          These data support local app features
+          and are not automatically uploaded
+          to a separate Developer-operated
+          account or tactics server.
+        </p>
+        <p>
+          If you copy or import tactics as JSON,
+          that content may pass through your
+          device clipboard at your direction.
+          Clipboard content may be accessible
+          according to your operating system
+          or the privacy practices of other apps
+          into which you paste it.
+          Please avoid entering sensitive
+          personal information about other people
+          in player names or other fields.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Information Advertising SDKs May Process</h2>
+        <p>
+          The App uses
+          <strong>Unity LevelPlay</strong> mediation
+          and <strong>Unity Ads</strong>
+          to display advertising.
+          Depending on SDK configuration,
+          active advertising partners,
+          device settings and applicable law,
+          these services may collect, use or share:
+        </p>
+        <ul>
+          <li>
+            Advertising identifiers
+            (such as the Android Advertising ID)
+            and other device/app identifiers
+          </li>
+          <li>
+            IP address and approximate location
+            inferred from it
+          </li>
+          <li>
+            Device model, operating system,
+            language, app version and
+            technical diagnostic data
+          </li>
+          <li>
+            Ad requests, impressions, clicks,
+            views and rewarded-ad completion events
+          </li>
+          <li>
+            Information needed for measurement,
+            frequency management and fraud prevention
+          </li>
+        </ul>
+        <p>
+          Ad networks may process or share
+          information with advertising partners
+          for personalized advertising where
+          permitted by law and user choices.
+          This does not mean every listed data
+          type is collected from every user
+          in every situation.
+        </p>
+        <p>
+          More information:
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank" rel="noopener noreferrer">
+            Unity Game Player and App User Privacy Policy
+          </a> and
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-faq"
+            target="_blank" rel="noopener noreferrer">
+            Unity Privacy FAQ
+          </a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Purposes and Third Parties</h2>
+        <ul>
+          <li>
+            <strong>Developer:</strong>
+            tactical editing, animation playback,
+            local record storage/deletion and
+            preference management
+          </li>
+          <li>
+            <strong>Unity and active advertising partners:</strong>
+            banner, interstitial and rewarded ads,
+            measurement, security and fraud prevention
+          </li>
+        </ul>
+        <p>
+          The Developer does not directly sell
+          locally saved tactical records
+          for advertising purposes.
+          Advertising SDK processing and sharing
+          are separate activities governed by Unity's
+          and applicable partners' policies.
+        </p>
+        <p>
+          Advertising information may be processed
+          by service providers in other countries.
+          The relevant providers' current notices
+          and applicable laws govern the actual
+          recipients, locations, retention and
+          deletion practices.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Permissions</h2>
+        <p>
+          The App may use internet/network
+          connectivity and advertising identifiers
+          to deliver ads and related services.
+          Editing soccer tactics itself does
+          not require access to your camera,
+          microphone, contacts or precise location.
+          Actual permissions may depend on
+          the released version and SDKs
+          included in the final build.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Retention and Deletion</h2>
+        <ul>
+          <li>
+            Tactical records may remain on
+            your device until you delete
+            individual records or all records
+            in the App.
+          </li>
+          <li>
+            App preferences and rewarded-ad
+            exemption information can be removed
+            by clearing app data.
+            A rewarded exemption expires
+            at its configured time.
+          </li>
+          <li>
+            Clearing the App's storage or
+            uninstalling it generally removes
+            its locally stored data.
+          </li>
+          <li>
+            Operating-system backups,
+            separately copied JSON content and
+            clipboard data may remain independently.
+          </li>
+          <li>
+            Advertising data retained by SDK providers
+            is subject to their separate retention
+            and deletion procedures.
+          </li>
+        </ul>
+        <p>
+          The App does not create user accounts,
+          so there is no separate account-deletion process.
+          Please use the contact below for
+          additional questions.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Your Rights and Advertising Choices</h2>
+        <p>
+          You may view, edit and delete
+          tactical records.
+          You can also manage advertising identifiers
+          and related privacy choices
+          in your device settings.
+          Where a Unity ad provides privacy controls,
+          you may use them to manage certain
+          personalized advertising choices.
+        </p>
+        <p>
+          For requests regarding personal data
+          processed by Unity, including access,
+          correction or deletion, see
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank" rel="noopener noreferrer">
+            Unity's privacy information
+          </a>.
+          You may also contact the Developer
+          to exercise rights available under
+          applicable law.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Data Security</h2>
+        <p>
+          The App stores core tactics locally
+          to reduce unnecessary transmission
+          to Developer-operated servers.
+          Security safeguards for advertising
+          communications and advertising-related
+          data are governed by the relevant
+          SDK providers' practices and policies.
+          No method of storage or transmission
+          can be guaranteed completely secure.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Children's Privacy</h2>
+        <p>
+          The App's core features do not ask
+          users to provide their age,
+          contact details or legal name.
+          Where children use the App,
+          advertising data practices may depend
+          on applicable laws, Google Play policies
+          and the advertising providers'
+          age-related settings.
+          Parents or guardians can review device
+          privacy and ad settings and contact
+          the Developer with questions.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Copyright and Third-Party Rights</h2>
+        <p>
+          Rights in the App's original software,
+          interface and original designs
+          belong to the Developer or their
+          legitimate rights holders.
+          Rights to tactics created by users,
+          and responsibility for third-party
+          materials used in them, remain subject
+          to applicable law and the rights
+          of their owners.
+        </p>
+        <p>
+          Users should not use club logos,
+          player photographs, trademarks or
+          other copyrighted materials without
+          appropriate rights or permissions.
+          The App is not an official product
+          of any particular football club,
+          league, association or competition
+          organizer and does not imply endorsement,
+          sponsorship or affiliation unless
+          expressly stated.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Service and External Advertising Notice</h2>
+        <p>
+          The App is a tool for manually
+          designing and visualizing tactics,
+          not a guarantee of match results,
+          tactical success or professional
+          coaching outcomes.
+          External advertisements and linked
+          services may be governed by their
+          respective third-party terms and policies.
+          This notice does not limit
+          non-waivable rights under applicable law.
+        </p>
+      </section>
+
+      <section>
+        <h2>12. Changes to This Policy</h2>
+        <p>
+          We may update this Policy if app
+          functionality, advertising SDKs,
+          applicable law or actual data
+          practices change.
+          Material updates will be communicated
+          through this page or the App,
+          and the revision date will be updated.
+        </p>
+      </section>
+
+      <section>
+        <h2>13. Developer and Contact</h2>
+        <p>
+          <strong>Developer:</strong> JCraft Studio
+        </p>
+        <p>
+          <strong>App:</strong> JCraft Tactics Lab
+        </p>
+        <p>
+          For privacy-related questions or
+          App support, please refer to the
+          <strong>‘App support’ or
+          ‘Developer contact’</strong> section of
+          the <strong>JCraft Tactics Lab
+          listing on the Google Play Store</strong>.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div>
+      © 2026 JCraft Studio.
+      All rights reserved in original app materials,
+      subject to applicable third-party rights.
+    </div>
+    <div>
+      JCraft Tactics Lab · Privacy Policy · 2026-11-10
+    </div>
+  </footer>
+</div>
+
+<script>
+  function setLanguage(lang) {
+    var english = lang === 'en';
+
+    document.getElementById('policy-ko').hidden = english;
+    document.getElementById('policy-en').hidden = !english;
+
+    document.getElementById('lang-ko-btn')
+      .setAttribute('aria-pressed', String(!english));
+
+    document.getElementById('lang-en-btn')
+      .setAttribute('aria-pressed', String(english));
+
+    document.getElementById('page-title').textContent =
+      english ? 'Privacy Policy' : '개인정보처리방침';
+
+    document.getElementById('updated-label').textContent =
+      english
+        ? 'Last updated: November 10, 2026'
+        : '최종 수정일: 2026년 11월 10일';
+
+    document.documentElement.lang = english ? 'en' : 'ko';
+
+    document.title = english
+      ? 'Privacy Policy | JCraft Tactics Lab'
+      : '개인정보처리방침 | JCraft Tactics Lab';
+  }
+</script>
+</body>
+</html>
