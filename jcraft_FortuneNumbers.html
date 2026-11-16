@@ -2,172 +2,1350 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privacy Policy / 개인정보처리방침 - Fortune Numbers</title>
-  <meta name="description" content="Privacy Policy for Fortune Numbers - Random Number Picker (KO/EN)" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+  <meta
+    name="description"
+    content="Privacy Policy for Fortune Numbers - Random Number Picker (KO/EN)"
+  />
+  <meta name="robots" content="index, follow" />
+
+  <title>
+    Privacy Policy / 개인정보처리방침 - Fortune Numbers
+  </title>
+
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; line-height:1.65; margin:0; background:#fafafa; color:#111; }
-    header { background:#111; color:#fff; padding:26px 16px; }
-    header h1 { margin:0; font-size:20px; }
-    header p { margin:6px 0 0; opacity:.92; }
-    main { max-width: 900px; margin:0 auto; padding:16px 16px 42px; }
-    section { background:#fff; border:1px solid #e6e6e6; border-radius:12px; padding:16px; margin:12px 0; }
-    h2 { margin:0 0 8px; font-size:16px; }
-    ul { margin:8px 0 0 18px; }
-    code { background:#f2f2f2; padding:2px 6px; border-radius:6px; }
-    a { color:#0b57d0; }
-    .muted { color:#666; font-size:13px; }
-    .cols { display:grid; grid-template-columns: 1fr; gap:12px; }
-    @media (min-width: 860px) { .cols { grid-template-columns: 1fr 1fr; } }
-    .box { border:1px solid #eee; border-radius:12px; padding:14px; }
-    .lang { font-weight:700; margin:0 0 10px; }
+    :root {
+      color-scheme: light dark;
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --text: #111827;
+      --muted: #64748b;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --notice: #eff6ff;
+      --notice-border: #bfdbfe;
+      --code: #f1f5f9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220;
+        --surface: #111827;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #334155;
+        --accent: #93c5fd;
+        --notice: #172554;
+        --notice-border: #1d4ed8;
+        --code: #1e293b;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        "Apple SD Gothic Neo",
+        "Noto Sans KR",
+        sans-serif;
+
+      line-height: 1.7;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      overflow-wrap: break-word;
+    }
+
+    header {
+      background: #111827;
+      color: #ffffff;
+      padding: 28px 16px;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #e2e8f0;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 16px 48px;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 12px 0;
+    }
+
+    h2 {
+      margin: 24px 0 10px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 15px;
+    }
+
+    p, li {
+      font-size: 14px;
+    }
+
+    ul {
+      margin: 8px 0 12px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    code {
+      background: var(--code);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .cols {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    @media (min-width: 860px) {
+      .cols {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .box {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      min-width: 0;
+    }
+
+    .lang {
+      font-weight: 800;
+      font-size: 18px;
+      margin: 0 0 16px;
+      color: var(--accent);
+    }
+
+    .notice {
+      background: var(--notice);
+      border: 1px solid var(--notice-border);
+      border-radius: 12px;
+      padding: 14px;
+      margin: 16px 0;
+    }
+
+    .notice ul {
+      margin-bottom: 0;
+    }
+
+    .date {
+      color: #cbd5e1;
+      font-size: 13px;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 16px 8px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 24px 16px;
+      }
+
+      header h1 {
+        font-size: 21px;
+      }
+
+      main {
+        padding: 12px 10px 32px;
+      }
+
+      section {
+        padding: 12px;
+      }
+
+      .box {
+        padding: 17px;
+      }
+
+      h2 {
+        font-size: 17px;
+      }
+
+      p, li {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
-<body>
+
+<body id="top">
+
 <header>
-  <h1>Privacy Policy / 개인정보처리방침</h1>
-  <p>Fortune Numbers – Random Number Picker (by JCraft Studio)</p>
-  <p class="muted">Last updated / 최종 업데이트: <strong>2025-12-23</strong></p>
+  <div class="header-inner">
+    <h1>
+      Privacy Policy / 개인정보처리방침
+    </h1>
+
+    <p>
+      Fortune Numbers – Random Number Picker
+    </p>
+
+    <p>
+      Developer: JCraft Studio
+    </p>
+
+    <p class="date">
+      Original Publication: December 23, 2025<br />
+      Last Updated / 최종 수정일:
+      November 16, 2026
+    </p>
+  </div>
 </header>
 
 <main>
+
   <section>
     <div class="cols">
-      <!-- KO -->
-      <div class="box">
+
+      <!-- ========================= -->
+      <!-- Korean Privacy Policy     -->
+      <!-- ========================= -->
+
+      <div class="box" lang="ko">
+
         <p class="lang">한국어</p>
 
         <h2>1. 개요</h2>
+
         <p>
-          본 개인정보처리방침은 <strong>Fortune Numbers – Random Number Picker</strong>(이하 “앱”)이
-          사용자의 정보를 어떻게 처리하는지 설명합니다. 본 앱은 계정 생성 없이 핵심 기능을 사용할 수 있도록 설계되었습니다.
+          본 개인정보처리방침은
+          <strong>
+            Fortune Numbers – Random Number Picker
+          </strong>
+          (이하 "앱")에서
+          이용자의 정보가 어떻게 처리되는지
+          설명합니다.
         </p>
 
-        <h2>2. 수집하지 않는 정보</h2>
         <p>
-          본 앱은 이름, 이메일 주소, 전화번호, 정확한 위치 정보 등 <strong>개인 식별 정보를 직접 수집하지 않습니다.</strong>
+          본 앱은 JCraft Studio에서 제공하는
+          무작위 번호 생성 유틸리티이며,
+          별도의 회원가입이나 계정 로그인 없이
+          주요 기능을 이용할 수 있습니다.
         </p>
 
-        <h2>3. 기기 내 로컬 저장 데이터</h2>
-        <p>앱은 다음 기능 제공을 위해 일부 데이터를 <strong>사용자 기기에만</strong> 저장합니다.</p>
+        <p>
+          본 방침은 앱 내부의 로컬 데이터 저장,
+          제3자 광고 서비스,
+          개인정보 처리 및 이용자의 권리를
+          설명합니다.
+        </p>
+
+        <div class="notice">
+          <strong>개인정보 처리 핵심 안내</strong>
+
+          <ul>
+            <li>
+              회원가입이나 로그인이 필요하지 않습니다.
+            </li>
+
+            <li>
+              번호 생성 기록, 즐겨찾기,
+              언어 설정 등은 기기 내부에
+              저장될 수 있습니다.
+            </li>
+
+            <li>
+              개발자는 해당 기록을
+              자체 서버로 자동 전송하거나
+              저장하지 않습니다.
+            </li>
+
+            <li>
+              광고 제공을 위해
+              Unity LevelPlay 및 Unity Ads를
+              사용하며, 광고 SDK가
+              일부 기기 및 광고 관련 정보를
+              처리할 수 있습니다.
+            </li>
+          </ul>
+        </div>
+
+        <h2>2. 개인정보 수집 및 이용</h2>
+
+        <p>
+          본 앱은 이름, 이메일 주소,
+          전화번호, 계정 정보,
+          정확한 위치 정보 등
+          개인을 직접 식별할 수 있는 정보를
+          앱 이용을 위해 별도로 요구하거나
+          직접 수집하지 않습니다.
+        </p>
+
+        <p>
+          앱의 번호 생성 및 관리 기능은
+          기기 내부에서 실행됩니다.
+        </p>
+
+        <p>
+          개발자는 이용자의 번호 생성 기록이나
+          즐겨찾기 정보를 수집하기 위한
+          별도의 서버를 운영하지 않습니다.
+        </p>
+
+        <p>
+          다만 제3자 광고 SDK는
+          광고 제공 및 측정 등을 위해
+          일부 기기 정보를 별도로
+          처리할 수 있습니다.
+        </p>
+
+        <h2>3. 기기 내부에 저장되는 정보</h2>
+
+        <p>
+          본 앱은 기능 제공 및
+          사용자 설정 유지를 위해
+          다음 정보를 기기 내부에
+          저장할 수 있습니다.
+        </p>
+
         <ul>
-          <li>번호 생성 히스토리 (최대 50개)</li>
-          <li>즐겨찾기</li>
-          <li>언어 설정 및 앱 옵션</li>
-          <li>일일 사용 제한 및 24시간 해금 상태(남은 시간 포함)</li>
+          <li>
+            번호 생성 기록
+            (최대 50개)
+          </li>
+
+          <li>
+            즐겨찾기에 등록한 번호
+          </li>
+
+          <li>
+            선택한 언어 및 앱 설정
+          </li>
+
+          <li>
+            일일 사용 제한 관련 정보
+          </li>
+
+          <li>
+            보상형 광고를 통한
+            기능 해금 또는 광고 면제 상태
+          </li>
+
+          <li>
+            해금 또는 광고 면제의
+            만료 시각 및 남은 시간
+          </li>
         </ul>
+
         <p>
-          해당 데이터는 Android 로컬 저장소(예: <code>SharedPreferences</code>)에 저장되며,
-          개발자는 해당 데이터에 접근할 수 없습니다.
+          해당 정보는 Android 로컬 저장소
+          (예: <code>SharedPreferences</code>)에
+          저장될 수 있습니다.
         </p>
 
-        <h2>4. 광고 (Google AdMob)</h2>
         <p>
-          본 앱은 <strong>Google AdMob</strong>을 사용하여 광고를 표시합니다.
-          Google은 광고 제공·측정·개인화 및 부정 사용 방지 등을 위해 기기 정보, 광고 식별자,
-          IP 기반의 대략적인 위치 정보, 광고 노출/클릭 정보 등을 자동으로 수집할 수 있습니다.
-        </p>
-        <p class="muted">
-          자세한 내용은 Google 정책을 확인하세요:
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
-          /
-          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites</a>
+          개발자는 이 정보를 자체 서버로
+          자동 업로드하거나 원격으로
+          열람하지 않습니다.
         </p>
 
-        <h2>5. 보상형 광고 및 24시간 해금</h2>
         <p>
-          사용자는 선택적으로 보상형 광고를 시청하여 일부 기능을 <strong>24시간 동안</strong> 해금할 수 있습니다.
-          해금 상태 및 남은 시간은 기기에만 저장되며, 서버로 전송되지 않습니다.
+          저장된 기록 및 설정은
+          앱에서 제공하는 기능이나
+          기기의 앱 데이터 관리 기능을 통해
+          삭제할 수 있습니다.
         </p>
 
-        <h2>6. 데이터 공유</h2>
+        <h2>4. 광고 및 제3자 서비스</h2>
+
         <p>
-          본 앱은 사용자의 개인정보를 판매하지 않습니다. 광고 제공 및 부정 사용 방지 목적의 제3자 처리(예: AdMob) 외에
-          별도로 개인정보를 공유하지 않습니다.
+          본 앱은 광고 제공을 위해
+          <strong>Unity LevelPlay</strong>
+          광고 미디에이션 플랫폼을
+          사용합니다.
         </p>
 
-        <h2>7. 아동의 개인정보</h2>
-        <p>본 앱은 만 13세 미만 아동을 대상으로 하지 않습니다.</p>
-
-        <h2>8. 보안</h2>
         <p>
-          본 앱은 개인정보 수집을 최소화하고 로컬 저장 방식을 사용합니다. 다만, 모든 데이터 보호가 100% 보장될 수는 없습니다.
+          실제 광고는
+          <strong>Unity Ads</strong> 및
+          Unity LevelPlay에 활성화된
+          기타 제휴 광고 네트워크를 통해
+          제공될 수 있습니다.
         </p>
 
-        <h2>9. 문의</h2>
         <p>
-          문의처는 <strong>Google Play 스토어의 앱 정보(개발자 연락처)</strong>에서 확인할 수 있습니다.
+          참여 광고 네트워크는
+          개발자의 광고 운영 설정에 따라
+          변경될 수 있습니다.
         </p>
+
+        <h3>
+          4.1 광고 서비스에서 처리할 수 있는 정보
+        </h3>
+
+        <p>
+          광고 SDK 및 제휴 광고 제공업체는
+          광고 제공, 성과 측정,
+          부정행위 방지, 서비스 보안
+          등을 위해 일부 정보를
+          자동으로 수집하거나 처리할 수 있습니다.
+        </p>
+
+        <ul>
+          <li>
+            Android 광고 ID 등
+            광고 및 기기 관련 식별자
+          </li>
+
+          <li>
+            IP 주소 및 IP 주소를 통해
+            추정한 대략적인 위치 정보
+          </li>
+
+          <li>
+            기기 제조사, 모델명 및
+            운영체제 버전
+          </li>
+
+          <li>
+            앱 버전 및 언어 설정
+          </li>
+
+          <li>
+            광고 요청, 노출, 클릭 및
+            광고 상호작용 기록
+          </li>
+
+          <li>
+            앱 성능, 진단 및
+            오류 관련 정보
+          </li>
+
+          <li>
+            광고 제공 및 부정행위 방지에
+            필요한 기타 기술 정보
+          </li>
+        </ul>
+
+        <p>
+          실제 처리 항목은
+          이용자의 기기, 국가,
+          개인정보 관련 선택 사항 및
+          활성화된 광고 네트워크에 따라
+          달라질 수 있습니다.
+        </p>
+
+        <h3>4.2 광고 정보의 이용 목적</h3>
+
+        <p>
+          광고 서비스 제공업체는
+          다음 목적을 위해
+          관련 정보를 처리할 수 있습니다.
+        </p>
+
+        <ul>
+          <li>광고 제공 및 표시</li>
+          <li>광고 성과 측정</li>
+          <li>광고 노출 빈도 관리</li>
+          <li>부정 광고 및 사기 방지</li>
+          <li>서비스 보안 및 안정성 유지</li>
+          <li>관련 법적 의무 준수</li>
+        </ul>
+
+        <p>
+          이용자의 설정과 관련 법률에서
+          요구하는 동의 조건에 따라
+          맞춤형 광고 제공 목적으로도
+          정보가 처리될 수 있습니다.
+        </p>
+
+        <h3>4.3 광고 개인정보 선택 및 관리</h3>
+
+        <p>
+          사용자는 기기 설정에서 제공하는
+          광고 식별자 및 맞춤형 광고 관련
+          개인정보 선택 기능을 이용할 수 있습니다.
+        </p>
+
+        <p>
+          관련 법률에서 요구하는 지역에서는
+          광고 데이터 처리에 관한
+          적절한 동의 또는
+          개인정보 선택 수단이
+          제공되어야 합니다.
+        </p>
+
+        <p>
+          실제 동의 및 개인정보 선택 기능의
+          제공 방식은 앱의 구현 및
+          사용자의 지역에 따라
+          달라질 수 있습니다.
+        </p>
+
+        <h3>4.4 제3자 광고 서비스</h3>
+
+        <ul>
+          <li>
+            <strong>Unity LevelPlay</strong>
+            — 광고 미디에이션 및 관리
+          </li>
+
+          <li>
+            <strong>Unity Ads</strong>
+            — 광고 제공 및 성과 측정
+          </li>
+
+          <li>
+            <strong>기타 활성화된 광고 네트워크</strong>
+            — 해당하는 경우 광고 제공
+          </li>
+
+          <li>
+            <strong>Google Play 서비스</strong>
+            — Android 플랫폼 기능 및 관련 서비스
+          </li>
+        </ul>
+
+        <p>
+          Unity의 개인정보 처리에 관한
+          자세한 내용은 다음 공식 문서를
+          참고하시기 바랍니다.
+        </p>
+
+        <ul>
+          <li>
+            <a
+              href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unity 게임 플레이어 및
+              앱 이용자 개인정보처리방침
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://unity.com/legal/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unity 개인정보처리방침
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          각 제3자 서비스는
+          자체 개인정보처리방침에 따라
+          관련 정보를 처리할 수 있습니다.
+        </p>
+
+        <h2>5. 보상형 광고 및 기능 해금</h2>
+
+        <p>
+          본 앱은 이용자가 선택적으로
+          보상형 광고를 시청하여
+          일부 기능을 해금하거나
+          일정 시간 동안 광고 표시를
+          면제받을 수 있는 기능을
+          제공할 수 있습니다.
+        </p>
+
+        <p>
+          해금 또는 광고 면제 시간과
+          적용 조건은 앱에 표시된
+          실제 설정을 따릅니다.
+        </p>
+
+        <p>
+          보상 상태, 만료 시각 및
+          남은 시간 등은 기기 내부에
+          저장될 수 있습니다.
+        </p>
+
+        <p>
+          개발자는 이러한 로컬 상태를
+          자체 서버로 자동 전송하거나
+          저장하지 않습니다.
+        </p>
+
+        <p>
+          다만 보상형 광고의 제공 및
+          시청 완료 여부 확인 과정에서는
+          광고 서비스 제공업체가
+          광고 관련 정보를 처리할 수 있습니다.
+        </p>
+
+        <h2>6. 데이터 공유 및 판매</h2>
+
+        <p>
+          개발자는 사용자의 번호 생성 기록,
+          즐겨찾기 및 기타 로컬 데이터를
+          판매하지 않습니다.
+        </p>
+
+        <p>
+          이러한 기록을 광고 제공업체에
+          의도적으로 전달하지 않습니다.
+        </p>
+
+        <p>
+          다만 광고 SDK는 각 업체의
+          개인정보처리방침에 따라
+          광고 관련 정보를 처리하거나
+          제3자와 공유할 수 있습니다.
+        </p>
+
+        <h2>7. 데이터 보관 및 삭제</h2>
+
+        <p>
+          번호 생성 기록, 즐겨찾기,
+          언어 설정 및 보상 상태 등은
+          기기 내부에 저장될 수 있습니다.
+        </p>
+
+        <p>
+          이용자는 앱에서 제공하는
+          기록 삭제 기능 또는 기기의
+          앱 데이터 삭제 기능을 통해
+          관련 정보를 삭제할 수 있습니다.
+        </p>
+
+        <p>
+          앱을 제거하면 일반적으로
+          앱 내부에 저장된 로컬 데이터도
+          삭제됩니다.
+        </p>
+
+        <p>
+          단, 기기의 백업 및 복원 설정에
+          따라 일부 정보가 복원될 수 있습니다.
+        </p>
+
+        <p>
+          광고 제공업체가 처리하는
+          데이터의 보관과 삭제에는
+          각 업체의 개인정보처리방침이
+          적용됩니다.
+        </p>
+
+        <h2>8. 아동의 개인정보</h2>
+
+        <p>
+          본 앱은 일반적인 번호 생성
+          유틸리티이며 만 13세 미만
+          아동을 주요 대상으로
+          설계되지 않았습니다.
+        </p>
+
+        <p>
+          개발자는 아동의 개인정보를
+          고의로 요구하거나
+          직접 수집하지 않습니다.
+        </p>
+
+        <h2>9. 데이터 보안</h2>
+
+        <p>
+          개발자는 개인정보 수집을 최소화하고
+          번호 생성 기록과 설정 정보를
+          가능한 범위에서 기기 내부에
+          저장하도록 앱을 설계했습니다.
+        </p>
+
+        <p>
+          다만 어떠한 전자적 저장이나
+          전송 방식도 절대적인 보안을
+          보장할 수는 없습니다.
+        </p>
+
+        <h2>10. 이용자의 권리</h2>
+
+        <p>
+          이용자는 관련 개인정보 보호법에 따라
+          개인정보의 열람, 정정, 삭제,
+          처리 제한 또는 처리에 대한
+          이의를 요청할 권리가 있을 수 있습니다.
+        </p>
+
+        <p>
+          광고 제공업체가 처리하는 정보와
+          관련된 권리 행사 방법은
+          각 업체의 개인정보처리방침을
+          참고하시기 바랍니다.
+        </p>
+
+        <h2>11. 국외 데이터 처리</h2>
+
+        <p>
+          Unity 및 광고 제휴업체는
+          광고 관련 정보를 이용자의
+          거주 국가 외의 지역에서
+          처리할 수 있습니다.
+        </p>
+
+        <p>
+          이러한 정보 처리에는
+          각 업체의 개인정보처리방침 및
+          관련 데이터 보호 조치가
+          적용됩니다.
+        </p>
+
+        <h2>12. 개인정보처리방침 변경</h2>
+
+        <p>
+          본 개인정보처리방침은
+          앱 기능, 광고 서비스,
+          관련 법률 또는 플랫폼 정책
+          변경에 따라 수정될 수 있습니다.
+        </p>
+
+        <p>
+          중요한 변경사항이 발생하면
+          본 페이지의 최종 수정일을
+          갱신하여 안내할 수 있습니다.
+        </p>
+
+        <h2>13. 개발자 정보 및 문의</h2>
+
+        <p>
+          <strong>개발자:</strong>
+          JCraft Studio
+        </p>
+
+        <p>
+          개인정보 및 앱 이용 관련 문의는
+          Google Play 스토어의
+          해당 앱 등록정보에 표시된
+          개발자 연락처를
+          참고하시기 바랍니다.
+        </p>
+
       </div>
 
-      <!-- EN -->
-      <div class="box">
+      <!-- ========================= -->
+      <!-- English Privacy Policy    -->
+      <!-- ========================= -->
+
+      <div class="box" lang="en">
+
         <p class="lang">English</p>
 
         <h2>1. Overview</h2>
+
         <p>
-          This Privacy Policy explains how <strong>Fortune Numbers – Random Number Picker</strong> (the “App”)
-          handles information. The App works without requiring an account.
+          This Privacy Policy explains how
+          <strong>
+            Fortune Numbers – Random Number Picker
+          </strong>
+          ("App") handles user information.
         </p>
 
-        <h2>2. Information We Do Not Collect</h2>
         <p>
-          We do <strong>not</strong> directly collect personal information such as names, email addresses,
-          phone numbers, or precise location data.
+          The App is a random number
+          generation utility provided by
+          JCraft Studio and does not require
+          account registration or login
+          for its main features.
+        </p>
+
+        <p>
+          This Policy covers locally
+          stored data, third-party
+          advertising services,
+          information processing,
+          and user rights.
+        </p>
+
+        <div class="notice">
+          <strong>Privacy Summary</strong>
+
+          <ul>
+            <li>
+              The App does not require
+              user registration or login.
+            </li>
+
+            <li>
+              Number generation history,
+              favorites, and preferences
+              may be stored locally
+              on the device.
+            </li>
+
+            <li>
+              The Developer does not
+              automatically upload these
+              records to its own servers.
+            </li>
+
+            <li>
+              The App uses Unity LevelPlay
+              and Unity Ads for advertising.
+              Advertising providers may
+              process certain device
+              and advertising-related data.
+            </li>
+          </ul>
+        </div>
+
+        <h2>2. Information Collection and Use</h2>
+
+        <p>
+          The App does not require or
+          directly collect personally
+          identifying information such as
+          names, email addresses,
+          telephone numbers,
+          account details, or
+          precise location information
+          for its core functionality.
+        </p>
+
+        <p>
+          Number generation and management
+          functions operate locally
+          on the user's device.
+        </p>
+
+        <p>
+          The Developer does not operate
+          a server for collecting
+          number generation history
+          or favorite numbers.
+        </p>
+
+        <p>
+          Third-party advertising SDKs
+          may independently process
+          device-related and advertising
+          information as described below.
         </p>
 
         <h2>3. Local Data Stored on Your Device</h2>
-        <p>The App stores certain data locally on your device for features such as:</p>
+
+        <p>
+          The App may store the
+          following information locally:
+        </p>
+
         <ul>
-          <li>History (up to 50 items)</li>
-          <li>Favorites</li>
-          <li>Language and app settings</li>
-          <li>Daily usage limits and 24-hour unlock state (including remaining time)</li>
+          <li>
+            Number generation history
+            (up to 50 items)
+          </li>
+
+          <li>
+            Favorite numbers
+          </li>
+
+          <li>
+            Language preferences
+            and application settings
+          </li>
+
+          <li>
+            Daily usage limit information
+          </li>
+
+          <li>
+            Rewarded advertisement
+            unlock or ad exemption status
+          </li>
+
+          <li>
+            Unlock or ad exemption
+            expiration times
+            and remaining duration
+          </li>
         </ul>
+
         <p>
-          This data is stored using Android local storage (e.g., <code>SharedPreferences</code>) and is not accessible to us.
+          This information may be stored
+          using Android local storage,
+          such as
+          <code>SharedPreferences</code>.
         </p>
 
-        <h2>4. Advertising (Google AdMob)</h2>
         <p>
-          The App uses <strong>Google AdMob</strong> to display ads. Google may automatically collect certain information
-          to serve, measure, personalize ads, and prevent fraud/abuse, such as device information, advertising identifiers,
-          approximate location (IP-based), and ad interaction data.
-        </p>
-        <p class="muted">
-          Please review Google’s policies:
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>
-          /
-          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites</a>
+          The Developer does not
+          automatically upload
+          these records to its own
+          servers or remotely
+          access their contents.
         </p>
 
-        <h2>5. Rewarded Ads & 24-Hour Unlock</h2>
         <p>
-          The App may offer optional rewarded ads that unlock certain features for up to <strong>24 hours</strong>.
-          Unlock status and remaining time are stored locally on your device and are not sent to our servers.
+          Users may delete locally
+          stored information through
+          available App features
+          or device settings.
         </p>
 
-        <h2>6. Data Sharing</h2>
+        <h2>4. Advertising and Third-Party Services</h2>
+
         <p>
-          We do not sell personal information. Data may be processed by third-party services (e.g., AdMob)
-          only for advertising and fraud prevention as described above.
+          The App uses
+          <strong>Unity LevelPlay</strong>,
+          an advertising mediation
+          platform, to manage and
+          display advertisements.
         </p>
 
-        <h2>7. Children’s Privacy</h2>
-        <p>The App is not intended for children under the age of 13.</p>
-
-        <h2>8. Security</h2>
         <p>
-          We minimize data collection and store core data locally, but no method of storage is completely secure.
+          Advertisements may be delivered
+          through <strong>Unity Ads</strong>
+          and other advertising networks
+          enabled through the
+          Unity LevelPlay configuration.
         </p>
 
-        <h2>9. Contact</h2>
         <p>
-          Contact details are available in the <strong>Google Play Store listing</strong> under developer contact information.
+          Participating advertising
+          networks may change depending
+          on the Developer's
+          advertising configuration.
         </p>
+
+        <h3>
+          4.1 Information Processed
+          by Advertising Services
+        </h3>
+
+        <p>
+          Advertising SDKs and their
+          partners may process certain
+          information for advertising
+          delivery, measurement,
+          fraud prevention,
+          security, and related purposes.
+        </p>
+
+        <ul>
+          <li>
+            Advertising identifiers,
+            including Android Advertising ID
+          </li>
+
+          <li>
+            IP address and approximate
+            location inferred from
+            IP information
+          </li>
+
+          <li>
+            Device manufacturer,
+            model, and OS version
+          </li>
+
+          <li>
+            App version and language
+          </li>
+
+          <li>
+            Advertisement requests,
+            impressions, clicks,
+            and interactions
+          </li>
+
+          <li>
+            Diagnostic, performance,
+            and error information
+          </li>
+
+          <li>
+            Other technical information
+            necessary for advertising
+            and fraud prevention
+          </li>
+        </ul>
+
+        <p>
+          Actual categories of data
+          processed may depend on
+          the user's device, region,
+          privacy choices, and
+          enabled advertising networks.
+        </p>
+
+        <h3>
+          4.2 Advertising Data
+          Processing Purposes
+        </h3>
+
+        <ul>
+          <li>Advertisement delivery</li>
+          <li>Advertising performance measurement</li>
+          <li>Advertisement frequency management</li>
+          <li>Advertising fraud prevention</li>
+          <li>Service security and stability</li>
+          <li>Legal compliance</li>
+        </ul>
+
+        <p>
+          Subject to applicable laws
+          and user privacy choices,
+          data may also be used
+          for personalized advertising.
+        </p>
+
+        <h3>4.3 Advertising Privacy Choices</h3>
+
+        <p>
+          Users may manage certain
+          advertising preferences
+          through their device settings.
+        </p>
+
+        <p>
+          Where required by applicable law,
+          appropriate consent or privacy
+          choice mechanisms must be provided.
+        </p>
+
+        <p>
+          The availability and presentation
+          of such mechanisms depend on
+          the App's implementation
+          and the user's region.
+        </p>
+
+        <h3>4.4 Third-Party Providers</h3>
+
+        <ul>
+          <li>
+            <strong>Unity LevelPlay</strong>
+            — advertising mediation
+            and management
+          </li>
+
+          <li>
+            <strong>Unity Ads</strong>
+            — advertisement delivery
+            and performance measurement
+          </li>
+
+          <li>
+            <strong>Other enabled ad networks</strong>
+            — advertising services,
+            where applicable
+          </li>
+
+          <li>
+            <strong>Google Play services</strong>
+            — Android platform
+            functionality and related services
+          </li>
+        </ul>
+
+        <p>
+          For information about
+          Unity's privacy practices,
+          please refer to:
+        </p>
+
+        <ul>
+          <li>
+            <a
+              href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unity Game Player
+              and App User Privacy Policy
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://unity.com/legal/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unity Privacy Policy
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          Each third-party provider
+          may process relevant information
+          under its own privacy policy.
+        </p>
+
+        <h2>5. Rewarded Ads and Feature Unlocks</h2>
+
+        <p>
+          The App may offer optional
+          rewarded advertisements
+          that unlock certain features
+          or temporarily exempt users
+          from advertising.
+        </p>
+
+        <p>
+          The duration and conditions
+          of the benefit are determined
+          by the actual settings
+          displayed within the App.
+        </p>
+
+        <p>
+          Unlock status, expiration
+          times, and remaining duration
+          may be stored locally
+          on the user's device.
+        </p>
+
+        <p>
+          The Developer does not
+          automatically transmit
+          these local records
+          to its own servers.
+        </p>
+
+        <p>
+          Advertising providers may
+          process advertising-related
+          information to deliver
+          rewarded advertisements
+          and verify reward completion.
+        </p>
+
+        <h2>6. Data Sharing and Sale</h2>
+
+        <p>
+          The Developer does not sell
+          number generation history,
+          favorite numbers, or
+          other locally stored records.
+        </p>
+
+        <p>
+          The Developer does not
+          intentionally provide these
+          local records to
+          advertising providers.
+        </p>
+
+        <p>
+          Advertising SDKs may process
+          or share advertising-related
+          information in accordance
+          with their respective
+          privacy policies.
+        </p>
+
+        <h2>7. Data Retention and Deletion</h2>
+
+        <p>
+          Number generation history,
+          favorites, language settings,
+          and reward status may
+          be stored locally.
+        </p>
+
+        <p>
+          Users can delete available
+          records through App features
+          or device application
+          data management settings.
+        </p>
+
+        <p>
+          Uninstalling the App
+          generally removes locally
+          stored App data.
+        </p>
+
+        <p>
+          However, some data may
+          be restored depending on
+          device backup and
+          restoration settings.
+        </p>
+
+        <p>
+          Advertising providers
+          retain and delete data
+          in accordance with
+          their own privacy policies.
+        </p>
+
+        <h2>8. Children's Privacy</h2>
+
+        <p>
+          The App is a general-purpose
+          random number utility
+          and is not specifically
+          directed toward children
+          under the age of 13.
+        </p>
+
+        <p>
+          The Developer does not
+          knowingly request or
+          directly collect personal
+          information from children.
+        </p>
+
+        <h2>9. Data Security</h2>
+
+        <p>
+          The Developer minimizes
+          direct information collection
+          and designs the App to
+          store number history
+          and preferences locally
+          wherever reasonably possible.
+        </p>
+
+        <p>
+          However, no electronic
+          storage or transmission
+          method can guarantee
+          absolute security.
+        </p>
+
+        <h2>10. User Rights</h2>
+
+        <p>
+          Depending on applicable
+          privacy laws, users may
+          have rights to access,
+          correct, delete, restrict,
+          or object to the processing
+          of personal information.
+        </p>
+
+        <p>
+          For information processed
+          by advertising providers,
+          please consult their
+          privacy policies and
+          privacy request procedures.
+        </p>
+
+        <h2>11. International Data Processing</h2>
+
+        <p>
+          Unity and advertising
+          partners may process
+          advertising-related information
+          outside the user's
+          country of residence.
+        </p>
+
+        <p>
+          Such processing is governed
+          by the relevant provider's
+          privacy policy and applicable
+          data protection safeguards.
+        </p>
+
+        <h2>12. Changes to This Policy</h2>
+
+        <p>
+          This Privacy Policy may
+          be updated to reflect
+          changes in App features,
+          advertising services,
+          applicable laws,
+          or platform policies.
+        </p>
+
+        <p>
+          Material changes may be
+          reflected through an updated
+          revision date on this page.
+        </p>
+
+        <h2>13. Developer Information and Contact</h2>
+
+        <p>
+          <strong>Developer:</strong>
+          JCraft Studio
+        </p>
+
+        <p>
+          For privacy-related questions
+          or other inquiries,
+          please refer to the
+          Developer Contact information
+          displayed on the App's
+          Google Play Store listing.
+        </p>
+
       </div>
+
     </div>
   </section>
+
+  <div class="footer">
+    © 2026 JCraft Studio. All rights reserved.
+  </div>
+
 </main>
 </body>
 </html>
