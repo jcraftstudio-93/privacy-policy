@@ -1,21 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Privacy Policy</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Privacy Policy for JCraft Studio Study and D-Day Management App" />
+  <meta name="robots" content="index, follow" />
+  <title>Privacy Policy | JCraft Studio</title>
 
   <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f1115;
+      --surface: #171b22;
+      --text: #f5f7fa;
+      --muted: #a7b0bd;
+      --body: #d6d9df;
+      --accent: #63e6be;
+      --border: #2a2f38;
+      --notice: #152c29;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background: #0f1115;
-      color: #f5f7fa;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Arial,
+        "Noto Sans KR", sans-serif;
+      line-height: 1.75;
+      overflow-wrap: break-word;
     }
 
     .container {
@@ -25,324 +50,1296 @@
     }
 
     h1 {
-      font-size: 32px;
-      margin-bottom: 12px;
+      font-size: 30px;
+      line-height: 1.35;
+      margin: 0 0 12px;
     }
 
     h2 {
-      margin-top: 42px;
-      font-size: 24px;
-      color: #63e6be;
+      margin: 34px 0 12px;
+      font-size: 21px;
+      color: var(--accent);
+      line-height: 1.4;
     }
 
-    p,
+    h3 {
+      font-size: 17px;
+      margin: 24px 0 10px;
+    }
+
+    p, li {
+      color: var(--body);
+      font-size: 15px;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+
     li {
-      color: #d6d9df;
-    }
-
-    .card {
-      background: #171b22;
-      border-radius: 18px;
-      padding: 24px;
-      margin-top: 24px;
-    }
-
-    .lang-divider {
-      margin-top: 70px;
-      border-top: 1px solid #2a2f38;
-      padding-top: 50px;
-    }
-
-    a {
-      color: #63e6be;
-      text-decoration: none;
+      margin-bottom: 8px;
     }
 
     strong {
       color: #ffffff;
     }
 
-    ul {
-      padding-left: 20px;
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .header {
+      margin-bottom: 24px;
+    }
+
+    .header .subtitle {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin: 18px 0;
+    }
+
+    .notice {
+      background: var(--notice);
+      border: 1px solid #275549;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 22px 0;
+    }
+
+    .notice ul {
+      margin-bottom: 0;
+    }
+
+    .date {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    .langbar {
+      display: flex;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 8px;
+      border-radius: 14px;
+      margin: 22px 0;
+    }
+
+    .lang-button {
+      flex: 1;
+      padding: 12px 16px;
+      border: 0;
+      border-radius: 10px;
+      background: transparent;
+      color: var(--body);
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .lang-button.active {
+      background: var(--accent);
+      color: #0f1115;
     }
 
     .footer {
-      margin-top: 60px;
-      color: #9aa3af;
-      font-size: 14px;
+      border-top: 1px solid var(--border);
+      margin-top: 48px;
+      padding-top: 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 13px;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 14px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+
+      .card {
+        padding: 19px 17px;
+      }
+
+      p, li {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+<div class="container" id="top">
 
-    <h1>Privacy Policy</h1>
+  <header class="header">
+    <h1>Privacy Policy / 개인정보처리방침</h1>
+    <p class="subtitle">
+      Study Records &amp; D-Day Management
+    </p>
+    <p class="subtitle">
+      Developer: JCraft Studio
+    </p>
+    <p class="date">
+      Last Updated / 최종 수정일:
+      November 16, 2026
+    </p>
+  </header>
+
+  <nav class="langbar" aria-label="Language selection">
+    <button
+      type="button"
+      id="btn-ko"
+      class="lang-button active"
+      aria-pressed="true">
+      한국어
+    </button>
+
+    <button
+      type="button"
+      id="btn-en"
+      class="lang-button"
+      aria-pressed="false">
+      English
+    </button>
+  </nav>
+
+  <!-- ================================== -->
+  <!-- Korean Privacy Policy              -->
+  <!-- ================================== -->
+
+  <section id="privacy-ko" lang="ko">
 
     <div class="card">
+      <h2>개인정보처리방침</h2>
+
       <p>
-        This Privacy Policy explains how this application may collect,
-        use, and protect information while using the app.
+        JCraft Studio(이하 "개발자")는
+        공부 기록, D-Day 일정 및
+        세션 관리 기능을 제공하는
+        애플리케이션(이하 "앱")을 운영합니다.
       </p>
 
       <p>
-        By using this application, you agree to this Privacy Policy.
+        본 개인정보처리방침은
+        앱 이용 과정에서 정보가
+        수집, 이용, 저장, 공유 및
+        삭제되는 방식을 설명합니다.
       </p>
+
+      <div class="notice">
+        <strong>개인정보 처리 핵심 안내</strong>
+        <ul>
+          <li>
+            앱은 회원가입이나 로그인을
+            요구하지 않습니다.
+          </li>
+          <li>
+            공부 기록, D-Day 일정,
+            세션 기록 및 설정은
+            사용자 기기 내부에
+            저장될 수 있습니다.
+          </li>
+          <li>
+            개발자는 이러한 기록을
+            자체 서버로 자동 전송하거나
+            저장하지 않습니다.
+          </li>
+          <li>
+            광고 제공을 위해 Unity LevelPlay
+            및 Unity Ads를 사용하며,
+            제3자 광고 SDK가 일부
+            기기 및 이용 정보를
+            처리할 수 있습니다.
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <h2>1. Information Collection</h2>
-
-    <p>
-      This application may use third-party services such as Google AdMob.
-      These services may collect limited device-related information
-      for advertising, analytics, and app functionality purposes.
-    </p>
-
-    <p>
-      Information that may be collected includes:
-    </p>
-
-    <ul>
-      <li>Device identifiers</li>
-      <li>Advertising identifiers</li>
-      <li>Crash and diagnostic information</li>
-      <li>Basic app interaction data</li>
-    </ul>
-
-    <p>
-      This application does not intentionally collect personally identifiable information such as:
-    </p>
-
-    <ul>
-      <li>Name</li>
-      <li>Email address</li>
-      <li>Phone number</li>
-      <li>Government identification information</li>
-    </ul>
-
-    <h2>2. Local Storage</h2>
-
-    <p>
-      Study records, D-Day schedules, settings, and session history
-      may be stored locally on the user's device.
-    </p>
-
-    <p>
-      Local data remains on the device unless deleted by the user
-      or removed during app uninstallation.
-    </p>
-
-    <h2>3. Advertising</h2>
-
-    <p>
-      This app may display advertisements provided by Google AdMob
-      or other advertising partners.
-    </p>
-
-    <p>
-      Advertising providers may use advertising identifiers
-      according to their own policies.
-    </p>
-
-    <p>
-      For more information:
-    </p>
-
-    <ul>
-      <li>
-        <a
-          href="https://policies.google.com/privacy"
-          target="_blank"
-        >
-          Google Privacy Policy
-        </a>
-      </li>
-
-      <li>
-        <a
-          href="https://support.google.com/admob"
-          target="_blank"
-        >
-          Google AdMob
-        </a>
-      </li>
-    </ul>
-
-    <h2>4. Copyright and Intellectual Property</h2>
-
-    <p>
-      All app content, UI elements, graphics, and source materials
-      are protected by applicable copyright and intellectual property laws.
-    </p>
-
-    <p>
-      Unauthorized copying, redistribution, reverse engineering,
-      or commercial reuse of the app contents may violate applicable laws.
-    </p>
-
-    <h2>5. Disclaimer</h2>
-
-    <p>
-      This application is provided "as is" without warranties of any kind.
-    </p>
-
-    <p>
-      The developer does not guarantee uninterrupted operation,
-      accuracy, or suitability for any specific purpose.
-    </p>
-
-    <p>
-      Users are responsible for how they use the application.
-    </p>
-
-    <h2>6. Policy Updates</h2>
-
-    <p>
-      This Privacy Policy may be updated at any time without prior notice.
-    </p>
-
-    <p>
-      Continued use of the application after updates constitutes acceptance
-      of the revised policy.
-    </p>
-
-    <h2>7. Developer Information</h2>
-
-    <p>
-      Developer information can be found on the official Google Play Store listing.
-    </p>
-
-    <div class="lang-divider"></div>
-
-    <h1>개인정보처리방침</h1>
 
     <div class="card">
+
+      <h2>1. 개인정보 수집 및 이용</h2>
+
       <p>
-        본 개인정보처리방침은 앱 사용 중 수집될 수 있는 정보와
-        정보 처리 방식에 대해 설명합니다.
+        본 앱은 주요 기능 제공을 위해
+        이용자의 이름, 이메일 주소,
+        전화번호, 주민등록번호 및
+        결제정보 등을 별도로 요구하거나
+        개발자가 직접 수집하지 않습니다.
       </p>
 
       <p>
-        사용자는 본 앱을 사용함으로써 본 방침에 동의한 것으로 간주됩니다.
+        이용자는 별도의 계정 생성 없이
+        앱의 주요 기능을 사용할 수 있습니다.
       </p>
+
+      <p>
+        다만 앱에 포함된 제3자 광고 SDK는
+        광고 제공 및 관련 서비스 운영을 위해
+        일부 기기 및 광고 관련 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <h2>2. 기기 내부에 저장되는 정보</h2>
+
+      <p>
+        앱은 주요 기능과 사용자 설정
+        유지를 위해 다음 정보를
+        기기 내부에 저장할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          공부 기록 및 학습 관련 정보
+        </li>
+        <li>
+          D-Day 일정 및 목표 날짜
+        </li>
+        <li>
+          공부 세션 및 이용 기록
+        </li>
+        <li>
+          언어 및 기타 앱 설정
+        </li>
+        <li>
+          광고 표시 횟수 및
+          빈도 제한 관련 설정
+        </li>
+        <li>
+          보상형 광고를 통한
+          광고 면제 상태 및 만료 시각
+          (해당 기능을 제공하는 경우)
+        </li>
+      </ul>
+
+      <p>
+        이러한 정보는 사용자 기기의
+        앱 로컬 저장공간에 저장될 수 있습니다.
+      </p>
+
+      <p>
+        개발자는 이용자의 공부 기록이나
+        D-Day 일정을 자체 서버에
+        자동 업로드하거나
+        원격으로 열람하지 않습니다.
+      </p>
+
+      <h2>3. 광고 및 제3자 서비스</h2>
+
+      <p>
+        본 앱은 서비스 운영을 위해
+        <strong>Unity LevelPlay</strong>
+        광고 미디에이션 플랫폼을 사용합니다.
+      </p>
+
+      <p>
+        실제 광고는
+        <strong>Unity Ads</strong> 및
+        Unity LevelPlay에 활성화된
+        다른 제휴 광고 네트워크를 통해
+        제공될 수 있습니다.
+      </p>
+
+      <p>
+        광고 네트워크 구성은
+        서비스 운영 설정에 따라
+        변경될 수 있습니다.
+      </p>
+
+      <p>
+        앱은 배너 광고, 전면 광고 및
+        이용자가 선택적으로 시청하는
+        보상형 광고 등을
+        제공할 수 있습니다.
+      </p>
+
+      <h3>3.1 광고 서비스에서 처리할 수 있는 정보</h3>
+
+      <p>
+        광고 SDK와 관련 제공업체는
+        광고 제공, 성과 측정,
+        노출 빈도 관리, 부정행위 방지
+        및 보안 목적을 위해
+        다음 정보를 처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 광고 ID 등
+          광고 및 기기 관련 식별자
+        </li>
+        <li>
+          IP 주소 및 이를 통해
+          추정한 대략적인 위치 정보
+        </li>
+        <li>
+          기기 제조사, 모델명,
+          운영체제 및 앱 버전
+        </li>
+        <li>
+          기기 언어 및 앱 설정 관련 정보
+        </li>
+        <li>
+          광고 요청, 노출, 클릭
+          및 광고 상호작용 정보
+        </li>
+        <li>
+          오류, 진단 및 성능 관련 정보
+        </li>
+        <li>
+          부정행위 방지 및 보안에
+          필요한 기술 정보
+        </li>
+      </ul>
+
+      <p>
+        실제 처리 항목은
+        이용자의 기기, 거주 지역,
+        개인정보 선택 사항 및
+        활성화된 광고 네트워크에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h3>3.2 광고 정보의 이용 목적</h3>
+
+      <ul>
+        <li>광고 제공 및 표시</li>
+        <li>광고 성과 및 노출 측정</li>
+        <li>광고 노출 빈도 관리</li>
+        <li>부정 광고 및 사기 방지</li>
+        <li>서비스 보안 및 안정성 유지</li>
+        <li>관련 법적 의무 준수</li>
+      </ul>
+
+      <p>
+        이용자의 개인정보 선택 사항과
+        관련 법률에서 요구하는
+        동의 조건에 따라 맞춤형 광고
+        제공 목적으로도 정보가
+        처리될 수 있습니다.
+      </p>
+
+      <h3>3.3 광고 개인정보 선택</h3>
+
+      <p>
+        이용자는 기기 설정에서 제공되는
+        광고 식별자 및 맞춤형 광고 관련
+        개인정보 설정을 관리할 수 있습니다.
+      </p>
+
+      <p>
+        관련 법률에서 요구되는 경우
+        앱은 적절한 동의 또는
+        개인정보 선택 수단을
+        제공해야 합니다.
+      </p>
+
+      <p>
+        실제 동의 기능의 제공 방식은
+        앱의 구현과 이용자의
+        지역에 따라 달라질 수 있습니다.
+      </p>
+
+      <h3>3.4 광고 제공업체의 개인정보처리방침</h3>
+
+      <p>
+        광고 관련 정보는 Unity 및
+        활성화된 광고 네트워크에서
+        각 업체의 정책에 따라
+        처리될 수 있습니다.
+      </p>
+
+      <p>
+        Unity의 개인정보 처리에 관한
+        자세한 사항은 다음 공식 문서를
+        참고하시기 바랍니다.
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity 게임 플레이어 및
+            앱 이용자 개인정보처리방침
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity 개인정보처리방침
+          </a>
+        </li>
+      </ul>
+
+      <h2>4. 정보의 이용 목적</h2>
+
+      <ul>
+        <li>
+          공부 기록 및 학습 관리 기능 제공
+        </li>
+        <li>
+          D-Day 일정 및 목표 관리
+        </li>
+        <li>
+          공부 세션 및 기록 표시
+        </li>
+        <li>
+          사용자 설정 및 기록 복원
+        </li>
+        <li>
+          앱 기능 및 안정성 유지
+        </li>
+        <li>
+          광고 제공 및 성과 측정
+        </li>
+      </ul>
+
+      <p>
+        공부 기록 및 일정 관련 로컬 정보와
+        광고 SDK가 처리하는 정보는
+        서로 구분됩니다.
+      </p>
+
+      <h2>5. 데이터 공유 및 판매</h2>
+
+      <p>
+        개발자는 이용자의 공부 기록,
+        D-Day 일정, 세션 기록 및
+        기타 로컬 데이터를 판매하지 않습니다.
+      </p>
+
+      <p>
+        이러한 정보를 광고 제공업체에
+        의도적으로 전달하지 않습니다.
+      </p>
+
+      <p>
+        다만 광고 SDK는
+        광고 제공 및 관련 목적을 위해
+        광고 관련 정보를 처리하거나
+        제3자와 공유할 수 있습니다.
+      </p>
+
+      <h2>6. 데이터 보관 및 삭제</h2>
+
+      <p>
+        공부 기록, D-Day 일정 및
+        기타 앱 설정 정보는
+        이용자의 기기에 저장될 수 있습니다.
+      </p>
+
+      <p>
+        이용자는 앱에서 제공하는
+        삭제 기능 또는 Android의
+        앱 저장공간 관리 기능을 통해
+        관련 데이터를 삭제할 수 있습니다.
+      </p>
+
+      <p>
+        앱 삭제 시 일반적으로
+        앱 내부에 저장된 데이터도
+        삭제됩니다.
+      </p>
+
+      <p>
+        다만 운영체제의 백업 및 복원
+        기능에 따라 일부 데이터가
+        복원될 수 있습니다.
+      </p>
+
+      <p>
+        광고 SDK가 처리하는 데이터는
+        각 제3자 제공업체의
+        개인정보처리방침 및
+        보관 정책에 따릅니다.
+      </p>
+
+      <h2>7. 데이터 보안</h2>
+
+      <p>
+        개발자는 공부 기록과
+        일정 정보를 가능한 범위에서
+        사용자 기기 내부에
+        저장하도록 앱을 설계했습니다.
+      </p>
+
+      <p>
+        앱 내부 정보는 Android의
+        앱 저장공간 및 접근 제어
+        기능의 보호를 받을 수 있습니다.
+      </p>
+
+      <p>
+        다만 전자적 저장이나
+        전송 방식의 특성상
+        절대적인 보안을 보장할 수는 없습니다.
+      </p>
+
+      <h2>8. 아동의 개인정보</h2>
+
+      <p>
+        본 앱은 일반적인 공부 기록 및
+        일정 관리 유틸리티이며,
+        아동만을 주요 대상으로
+        설계된 서비스가 아닙니다.
+      </p>
+
+      <p>
+        개발자는 아동의 개인정보를
+        고의로 요구하거나
+        직접 수집하지 않습니다.
+      </p>
+
+      <h2>9. 국외 데이터 처리</h2>
+
+      <p>
+        Unity 및 다른 광고 제공업체는
+        광고 관련 정보를 이용자의
+        거주 국가가 아닌 지역에서
+        처리할 수 있습니다.
+      </p>
+
+      <p>
+        관련 데이터 처리에는
+        각 업체의 개인정보처리방침 및
+        적용 가능한 데이터 보호
+        조치가 적용됩니다.
+      </p>
+
+      <h2>10. 이용자의 권리</h2>
+
+      <p>
+        이용자는 적용되는 법률에 따라
+        개인정보의 열람, 정정, 삭제,
+        처리 제한 또는 이의를
+        요청할 권리가 있을 수 있습니다.
+      </p>
+
+      <p>
+        이용자는 기기에 저장된
+        공부 기록과 일정을
+        앱 기능 또는 기기 설정을
+        통해 관리할 수 있습니다.
+      </p>
+
+      <p>
+        광고 서비스에서 처리되는
+        정보에 대한 권리 행사 방법은
+        각 서비스의 개인정보처리방침을
+        참고하시기 바랍니다.
+      </p>
+
+      <h2>11. 저작권 및 지적재산권</h2>
+
+      <p>
+        앱에 포함된 자체 제작 콘텐츠,
+        인터페이스, 디자인 및
+        그래픽 등은 관련 저작권 및
+        지적재산권 법률의 보호를
+        받을 수 있습니다.
+      </p>
+
+      <p>
+        관련 법률에서 허용하는
+        경우를 제외하고 무단 복제,
+        재배포 및 상업적 이용은
+        권리 침해에 해당할 수 있습니다.
+      </p>
+
+      <h2>12. 면책 사항</h2>
+
+      <p>
+        본 앱은 일반적인 공부 기록과
+        일정 관리를 지원하는
+        유틸리티입니다.
+      </p>
+
+      <p>
+        개발자는 관련 법률에서
+        허용하는 범위 내에서
+        앱의 중단 없는 운영,
+        모든 기록의 정확성 및
+        특정 목적에 대한 적합성을
+        보장하지 않습니다.
+      </p>
+
+      <p>
+        이용자는 중요한 공부 기록이나
+        일정을 별도로 백업하고
+        확인할 것을 권장합니다.
+      </p>
+
+      <h2>13. 개인정보처리방침 변경</h2>
+
+      <p>
+        본 개인정보처리방침은
+        관련 법률, 앱 기능,
+        광고 서비스 또는 데이터
+        처리 방식의 변경에 따라
+        수정될 수 있습니다.
+      </p>
+
+      <p>
+        중요한 변경사항은
+        관련 법률에서 요구하는 방식에
+        따라 안내하며, 본 페이지의
+        최종 수정일을 갱신할 수 있습니다.
+      </p>
+
+      <h2>14. 개발자 정보 및 문의</h2>
+
+      <p>
+        <strong>개발자:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        개인정보 보호 및 앱 이용 관련
+        문의는 Google Play 스토어에
+        게시된 해당 앱의 개발자 연락처를
+        참고하시기 바랍니다.
+      </p>
+
+      <a class="top-link" href="#top">
+        페이지 위로 이동
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ================================== -->
+  <!-- English Privacy Policy             -->
+  <!-- ================================== -->
+
+  <section id="privacy-en" lang="en" hidden>
+
+    <div class="card">
+      <h2>Privacy Policy</h2>
+
+      <p>
+        JCraft Studio ("Developer") operates
+        this study record and D-Day
+        management application ("App").
+      </p>
+
+      <p>
+        This Privacy Policy explains
+        how information may be
+        collected, used, stored,
+        shared, and deleted
+        when using the App.
+      </p>
+
+      <div class="notice">
+        <strong>Privacy Summary</strong>
+        <ul>
+          <li>
+            The App does not require
+            registration or login.
+          </li>
+          <li>
+            Study records, D-Day schedules,
+            session history, and settings
+            may be stored locally.
+          </li>
+          <li>
+            The Developer does not
+            automatically upload
+            these records to
+            Developer-operated servers.
+          </li>
+          <li>
+            The App uses Unity LevelPlay
+            and Unity Ads for advertising.
+            Advertising providers may process
+            device and advertising information.
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <h2>1. 정보 수집</h2>
+    <div class="card">
 
-    <p>
-      본 앱은 Google AdMob 등 제3자 서비스를 사용할 수 있으며,
-      광고 및 앱 기능 제공을 위해 제한적인 기기 정보를 수집할 수 있습니다.
-    </p>
+      <h2>1. Information Collection and Use</h2>
 
-    <p>
-      수집될 수 있는 정보:
-    </p>
+      <p>
+        The App does not directly
+        require users to provide
+        names, email addresses,
+        telephone numbers,
+        government identification
+        numbers, or payment details
+        for its main features.
+      </p>
 
-    <ul>
-      <li>기기 식별자</li>
-      <li>광고 식별자</li>
-      <li>오류 및 진단 정보</li>
-      <li>기본 앱 사용 정보</li>
-    </ul>
+      <p>
+        Users can access core
+        functionality without
+        creating an account.
+      </p>
 
-    <p>
-      본 앱은 아래와 같은 개인정보를 의도적으로 수집하지 않습니다.
-    </p>
+      <p>
+        However, advertising SDKs
+        may independently process
+        certain device and
+        advertising-related information.
+      </p>
 
-    <ul>
-      <li>이름</li>
-      <li>이메일 주소</li>
-      <li>전화번호</li>
-      <li>주민등록번호 등 민감정보</li>
-    </ul>
+      <h2>2. Local Data Storage</h2>
 
-    <h2>2. 로컬 저장 데이터</h2>
+      <p>
+        The App may store
+        the following information
+        locally on the device:
+      </p>
 
-    <p>
-      공부 기록, D-Day 일정, 설정 정보 등은
-      사용자 기기에 로컬 저장될 수 있습니다.
-    </p>
+      <ul>
+        <li>Study records and related information</li>
+        <li>D-Day schedules and target dates</li>
+        <li>Study sessions and session history</li>
+        <li>Language and other App preferences</li>
+        <li>Ad display counts and frequency settings</li>
+        <li>
+          Rewarded ad exemption status
+          and expiration time,
+          where the feature is available
+        </li>
+      </ul>
 
-    <p>
-      저장된 데이터는 사용자가 삭제하거나 앱 삭제 시 제거될 수 있습니다.
-    </p>
+      <p>
+        These records may be stored
+        using local application storage.
+      </p>
 
-    <h2>3. 광고</h2>
+      <p>
+        The Developer does not
+        automatically upload
+        study records or schedules
+        to its own servers
+        or remotely access them.
+      </p>
 
-    <p>
-      본 앱은 Google AdMob 등 광고 서비스를 사용할 수 있습니다.
-    </p>
+      <h2>3. Advertising and Third-Party Services</h2>
 
-    <p>
-      광고 제공업체는 자체 정책에 따라 광고 식별자를 사용할 수 있습니다.
-    </p>
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>
+        to manage advertisement mediation.
+      </p>
 
-    <ul>
-      <li>
-        <a
-          href="https://policies.google.com/privacy"
-          target="_blank"
-        >
-          Google 개인정보처리방침
-        </a>
-      </li>
+      <p>
+        Ads may be delivered through
+        <strong>Unity Ads</strong>
+        and other advertising networks
+        enabled in LevelPlay.
+      </p>
 
-      <li>
-        <a
-          href="https://support.google.com/admob"
-          target="_blank"
-        >
-          Google AdMob
-        </a>
-      </li>
-    </ul>
+      <p>
+        Participating advertising
+        networks may change depending
+        on the mediation configuration.
+      </p>
 
-    <h2>4. 저작권 및 지적재산권</h2>
+      <p>
+        Advertising formats may
+        include banners,
+        interstitial ads,
+        and optional rewarded ads.
+      </p>
 
-    <p>
-      앱 내 콘텐츠, UI, 디자인 및 기타 구성 요소는
-      관련 저작권 및 지적재산권 법률의 보호를 받을 수 있습니다.
-    </p>
+      <h3>3.1 Data Processed by Advertising Services</h3>
 
-    <p>
-      무단 복제, 배포, 역컴파일 또는 상업적 재사용은
-      관련 법률 위반이 될 수 있습니다.
-    </p>
+      <p>
+        Advertising SDKs and
+        their partners may process
+        information for ad delivery,
+        performance measurement,
+        frequency management,
+        fraud prevention,
+        and security.
+      </p>
 
-    <h2>5. 면책조항</h2>
+      <ul>
+        <li>
+          Advertising identifiers,
+          including Android Advertising ID
+        </li>
+        <li>
+          IP addresses and approximate
+          location inferred from them
+        </li>
+        <li>
+          Device manufacturer,
+          model, OS version,
+          and App version
+        </li>
+        <li>
+          Device language and
+          related settings
+        </li>
+        <li>
+          Ad requests, impressions,
+          clicks, and interactions
+        </li>
+        <li>
+          Diagnostic, performance,
+          and error data
+        </li>
+        <li>
+          Technical information used
+          for fraud prevention
+          and security
+        </li>
+      </ul>
 
-    <p>
-      본 앱은 별도의 보증 없이 제공됩니다.
-    </p>
+      <p>
+        Actual processing may vary
+        depending on the device,
+        region, privacy choices,
+        and enabled advertising networks.
+      </p>
 
-    <p>
-      개발자는 앱의 지속성, 정확성, 특정 목적 적합성을 보장하지 않습니다.
-    </p>
+      <h3>3.2 Advertising Data Processing Purposes</h3>
 
-    <p>
-      사용자는 본 앱 사용에 대한 책임을 스스로 부담합니다.
-    </p>
+      <ul>
+        <li>Advertisement delivery</li>
+        <li>Advertising performance measurement</li>
+        <li>Advertisement frequency management</li>
+        <li>Advertising fraud prevention</li>
+        <li>Service security and stability</li>
+        <li>Legal compliance</li>
+      </ul>
 
-    <h2>6. 정책 변경</h2>
+      <p>
+        Depending on applicable laws
+        and user privacy choices,
+        information may also be used
+        for personalized advertising.
+      </p>
 
-    <p>
-      본 개인정보처리방침은 사전 고지 없이 변경될 수 있습니다.
-    </p>
+      <h3>3.3 Advertising Privacy Choices</h3>
 
-    <p>
-      변경 이후 앱을 계속 사용하는 경우 변경 사항에 동의한 것으로 간주됩니다.
-    </p>
+      <p>
+        Users may manage certain
+        advertising privacy settings
+        through their Android
+        device settings.
+      </p>
 
-    <h2>7. 개발자 정보</h2>
+      <p>
+        Where required by applicable law,
+        appropriate consent or
+        privacy choice mechanisms
+        must be provided.
+      </p>
 
-    <p>
-      개발자 정보는 Google Play 스토어 등록 정보를 참고하시기 바랍니다.
-    </p>
+      <p>
+        The availability of these
+        mechanisms depends on the
+        App's implementation
+        and the user's region.
+      </p>
 
-    <div class="footer">
-      © 2026 JCraft Studio. All rights reserved.
+      <h3>3.4 Advertising Provider Policies</h3>
+
+      <p>
+        Advertising-related information
+        may be processed by Unity
+        and enabled ad networks
+        under their respective policies.
+      </p>
+
+      <p>
+        More information about
+        Unity's privacy practices
+        is available at:
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player
+            and App User Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+      </ul>
+
+      <h2>4. How Information Is Used</h2>
+
+      <ul>
+        <li>Providing study record features</li>
+        <li>Managing D-Day schedules and goals</li>
+        <li>Displaying study sessions and history</li>
+        <li>Restoring preferences and local records</li>
+        <li>Maintaining App functionality and stability</li>
+        <li>Delivering ads and measuring performance</li>
+      </ul>
+
+      <p>
+        Locally stored study data
+        is separate from information
+        processed by advertising SDKs.
+      </p>
+
+      <h2>5. Data Sharing and Sale</h2>
+
+      <p>
+        The Developer does not sell
+        study records, D-Day schedules,
+        session history, or
+        other locally stored data.
+      </p>
+
+      <p>
+        These records are not
+        intentionally provided
+        to advertising networks.
+      </p>
+
+      <p>
+        Advertising SDKs may process
+        or share advertising-related
+        information according to their
+        respective privacy policies.
+      </p>
+
+      <h2>6. Data Retention and Deletion</h2>
+
+      <p>
+        Study records, D-Day schedules,
+        and settings may be
+        stored locally on the device.
+      </p>
+
+      <p>
+        Users may manage or delete
+        these records using
+        available App functions
+        or Android application
+        storage settings.
+      </p>
+
+      <p>
+        Uninstalling the App generally
+        removes locally stored App data.
+      </p>
+
+      <p>
+        Some information may be
+        restored through operating
+        system backup features.
+      </p>
+
+      <p>
+        Advertising providers
+        retain and delete data
+        according to their policies.
+      </p>
+
+      <h2>7. Data Security</h2>
+
+      <p>
+        The Developer aims to
+        store study records
+        and schedules locally
+        wherever reasonably possible.
+      </p>
+
+      <p>
+        Locally stored information
+        may benefit from
+        Android application storage
+        and access controls.
+      </p>
+
+      <p>
+        No electronic storage
+        or transmission method
+        guarantees absolute security.
+      </p>
+
+      <h2>8. Children's Privacy</h2>
+
+      <p>
+        The App is a general-purpose
+        study and schedule utility
+        and is not designed
+        exclusively for children.
+      </p>
+
+      <p>
+        The Developer does not
+        knowingly request or
+        directly collect
+        children's personal information.
+      </p>
+
+      <h2>9. International Data Processing</h2>
+
+      <p>
+        Unity and other advertising
+        providers may process
+        advertising-related data
+        outside the user's
+        country of residence.
+      </p>
+
+      <p>
+        Such processing is governed
+        by the relevant provider's
+        privacy policy and
+        applicable safeguards.
+      </p>
+
+      <h2>10. User Rights</h2>
+
+      <p>
+        Depending on applicable
+        privacy laws, users may
+        have rights to access,
+        correct, delete, restrict,
+        or object to the processing
+        of personal information.
+      </p>
+
+      <p>
+        Users may manage locally
+        stored records and schedules
+        through App features
+        or Android settings.
+      </p>
+
+      <p>
+        For advertising-related data,
+        please consult the
+        relevant provider's
+        privacy policy and
+        privacy request procedures.
+      </p>
+
+      <h2>11. Copyright and Intellectual Property</h2>
+
+      <p>
+        Original App content,
+        interface elements,
+        graphics, and design
+        may be protected by
+        applicable copyright and
+        intellectual property laws.
+      </p>
+
+      <p>
+        Unauthorized reproduction,
+        redistribution, or
+        commercial use may infringe
+        intellectual property rights
+        unless permitted by law.
+      </p>
+
+      <h2>12. Disclaimer</h2>
+
+      <p>
+        The App is a general-purpose
+        study record and
+        scheduling utility.
+      </p>
+
+      <p>
+        To the extent permitted
+        by applicable law,
+        the Developer does not
+        guarantee uninterrupted service,
+        absolute accuracy,
+        or fitness for a
+        particular purpose.
+      </p>
+
+      <p>
+        Users are encouraged
+        to maintain backups
+        of important study records
+        and schedules.
+      </p>
+
+      <h2>13. Changes to This Policy</h2>
+
+      <p>
+        This Privacy Policy may be
+        updated to reflect changes
+        in laws, application features,
+        advertising services,
+        or data processing practices.
+      </p>
+
+      <p>
+        Material changes will be
+        communicated where required
+        by applicable laws and
+        may be reflected through
+        an updated revision date.
+      </p>
+
+      <h2>14. Developer Information and Contact</h2>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        For privacy-related
+        inquiries or other questions,
+        please refer to the
+        Developer Contact information
+        displayed on the App's
+        Google Play Store listing.
+      </p>
+
+      <a class="top-link" href="#top">
+        Back to top
+      </a>
+
     </div>
+  </section>
 
-  </div>
+  <footer class="footer">
+    © 2026 JCraft Studio. All rights reserved.
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  const ko = document.getElementById("privacy-ko");
+  const en = document.getElementById("privacy-en");
+
+  const btnKo = document.getElementById("btn-ko");
+  const btnEn = document.getElementById("btn-en");
+
+  const STORAGE_KEY = "study_privacy_language";
+
+  function setLanguage(language) {
+    const isKorean = language === "ko";
+
+    ko.hidden = !isKorean;
+    en.hidden = isKorean;
+
+    btnKo.classList.toggle("active", isKorean);
+    btnEn.classList.toggle("active", !isKorean);
+
+    btnKo.setAttribute(
+      "aria-pressed",
+      String(isKorean)
+    );
+
+    btnEn.setAttribute(
+      "aria-pressed",
+      String(!isKorean)
+    );
+
+    document.documentElement.lang =
+      isKorean ? "ko" : "en";
+
+    try {
+      localStorage.setItem(
+        STORAGE_KEY,
+        language
+      );
+    } catch (error) {
+      // Local storage may be unavailable.
+    }
+  }
+
+  btnKo.addEventListener("click", function () {
+    setLanguage("ko");
+  });
+
+  btnEn.addEventListener("click", function () {
+    setLanguage("en");
+  });
+
+  let savedLanguage = null;
+
+  try {
+    savedLanguage =
+      localStorage.getItem(STORAGE_KEY);
+  } catch (error) {
+    savedLanguage = null;
+  }
+
+  if (savedLanguage !== "ko" &&
+      savedLanguage !== "en") {
+    const browserLanguage =
+      (navigator.language || "en").toLowerCase();
+
+    savedLanguage =
+      browserLanguage.startsWith("ko")
+        ? "ko"
+        : "en";
+  }
+
+  setLanguage(savedLanguage);
+
+})();
+</script>
+
 </body>
 </html>
