@@ -2,348 +2,1632 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>개인정보처리방침 | WiFi Log & Password Memo</title>
-  <meta name="description" content="WiFi Log & Password Memo 개인정보처리방침 (한국어/English)" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+
+  <meta name="description"
+        content="WiFi Log & Password Memo Privacy Policy / 개인정보처리방침" />
+
+  <meta name="robots" content="index, follow" />
+
+  <title>
+    개인정보처리방침 | WiFi Log & Password Memo
+  </title>
+
   <style>
-    :root{
-      --fg:#0f172a; --bg:#ffffff; --muted:#475569; --card:#f8fafc; --line:#e2e8f0; --accent:#2563eb;
-      --danger:#b91c1c; --ok:#047857;
+    :root {
+      color-scheme: light dark;
+      --fg: #0f172a;
+      --bg: #ffffff;
+      --muted: #475569;
+      --card: #f8fafc;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --danger: #b91c1c;
+      --ok: #047857;
     }
-    @media (prefers-color-scheme: dark){
-      :root{
-        --fg:#e5e7eb; --bg:#0b1220; --muted:#94a3b8; --card:#0f172a; --line:#22304a; --accent:#60a5fa;
-        --danger:#fb7185; --ok:#34d399;
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e5e7eb;
+        --bg: #0b1220;
+        --muted: #94a3b8;
+        --card: #0f172a;
+        --line: #22304a;
+        --accent: #60a5fa;
+        --danger: #fb7185;
+        --ok: #34d399;
       }
     }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:980px;margin:0 auto;padding:24px 16px 48px}
-    .top{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:14px}
-    .brand{display:flex;flex-direction:column;gap:4px}
-    .brand h1{font-size:20px;margin:0}
-    .brand p{margin:0;color:var(--muted);font-size:13px}
-    .lang{display:flex;gap:8px;align-items:center}
-    .btn{
-      border:1px solid var(--line); background:transparent; color:var(--fg);
-      padding:8px 12px;border-radius:10px;font-weight:800;cursor:pointer;
+
+    * {
+      box-sizing: border-box;
     }
-    .btn.active{border-color:var(--accent); box-shadow:0 0 0 2px color-mix(in srgb, var(--accent) 25%, transparent);}
-    .card{
-      background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px;
-      margin-top:12px;
+
+    html {
+      scroll-behavior: smooth;
     }
-    h2{font-size:16px;margin:18px 0 10px}
-    h3{font-size:14px;margin:16px 0 8px;color:var(--fg)}
-    ul{margin:8px 0 0 18px}
-    li{margin:6px 0;line-height:1.45}
-    .muted{color:var(--muted)}
-    .pill{display:inline-block;padding:3px 10px;border-radius:999px;border:1px solid var(--line);font-size:12px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:1fr;gap:12px}
-    @media (min-width:800px){ .grid{grid-template-columns:1fr 1fr;} }
-    .notice{border-left:4px solid var(--accent); padding:10px 12px; background:color-mix(in srgb, var(--accent) 10%, transparent); border-radius:10px}
-    .danger{border-left-color:var(--danger); background:color-mix(in srgb, var(--danger) 12%, transparent)}
-    .ok{border-left-color:var(--ok); background:color-mix(in srgb, var(--ok) 12%, transparent)}
-    .table{width:100%;border-collapse:collapse;margin-top:8px;overflow:hidden;border-radius:12px}
-    .table th,.table td{border:1px solid var(--line);padding:10px 10px;vertical-align:top}
-    .table th{background:color-mix(in srgb, var(--line) 35%, transparent);text-align:left}
-    footer{margin-top:24px;color:var(--muted);font-size:12px}
-    code{background:color-mix(in srgb, var(--line) 25%, transparent);padding:2px 6px;border-radius:6px}
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui,
+        -apple-system, "Segoe UI", Roboto,
+        "Noto Sans KR", Arial, sans-serif;
+      line-height: 1.7;
+      overflow-wrap: break-word;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .top {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .brand h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .brand p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .lang {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--fg);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .btn.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px
+        color-mix(in srgb, var(--accent) 25%, transparent);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 12px;
+    }
+
+    h2 {
+      font-size: 17px;
+      margin: 22px 0 10px;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin: 18px 0 8px;
+    }
+
+    p, li {
+      font-size: 14px;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+      padding-left: 12px;
+    }
+
+    li {
+      margin: 7px 0;
+      line-height: 1.6;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .notice {
+      border-left: 4px solid var(--accent);
+      padding: 12px 14px;
+      background: color-mix(
+        in srgb, var(--accent) 10%, transparent
+      );
+      border-radius: 10px;
+    }
+
+    .danger {
+      border-left-color: var(--danger);
+      background: color-mix(
+        in srgb, var(--danger) 12%, transparent
+      );
+    }
+
+    .ok {
+      border-left-color: var(--ok);
+      background: color-mix(
+        in srgb, var(--ok) 12%, transparent
+      );
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+    }
+
+    .table th,
+    .table td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      vertical-align: top;
+      font-size: 13px;
+    }
+
+    .table th {
+      background: color-mix(
+        in srgb, var(--line) 35%, transparent
+      );
+      text-align: left;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    code {
+      background: color-mix(
+        in srgb, var(--line) 25%, transparent
+      );
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    .section-link {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: 13px;
+    }
+
+    footer {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        padding: 16px 10px 32px;
+      }
+
+      .brand h1 {
+        font-size: 19px;
+      }
+
+      .top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .card {
+        padding: 15px;
+      }
+
+      .lang {
+        width: 100%;
+      }
+
+      .btn {
+        flex: 1;
+      }
+
+      .table th,
+      .table td {
+        padding: 8px;
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="top">
-      <div class="brand">
-        <h1>WiFi Log &amp; Password Memo</h1>
-        <p class="muted">개인정보처리방침 / Privacy Policy</p>
-      </div>
-      <div class="lang">
-        <span class="pill" id="lastUpdated"></span>
-        <button class="btn active" id="btnKo" type="button">한국어</button>
-        <button class="btn" id="btnEn" type="button">English</button>
-      </div>
+<div class="wrap" id="top">
+
+  <header class="top">
+    <div class="brand">
+      <h1>WiFi Log &amp; Password Memo</h1>
+      <p>개인정보처리방침 / Privacy Policy</p>
+      <p>Developer: JCraft Studio</p>
     </div>
 
-    <!-- KO -->
-    <section id="ko">
-      <div class="card notice ok">
-        <b>요약</b>
-        <ul>
-          <li>이 앱은 <b>로그인/계정</b> 기능이 없으며, 사용자의 <b>개인정보를 개발자 서버로 전송하거나 저장하지 않습니다.</b></li>
-          <li>Wi-Fi 기록/즐겨찾기/비밀번호/메모는 <b>기기 로컬 저장소</b>에 저장됩니다(암호화 저장 사용).</li>
-          <li>광고 제공을 위해 <b>Google AdMob(google_mobile_ads)</b> 등 제3자 SDK가 기기 정보/광고 식별자 등을 처리할 수 있습니다.</li>
-        </ul>
-      </div>
+    <nav class="lang" aria-label="Language selection">
+      <span class="pill" id="lastUpdated">
+        Last updated: 2026-11-16
+      </span>
 
-      <div class="card">
-        <h2>1. 앱 정보</h2>
-        <p>
-          <b>앱명:</b> WiFi Log &amp; Password Memo<br/>
-          <b>개발자/사업자 정보:</b> Google Play 스토어의 개발자 정보(“개발자 연락처”)를 참고해 주세요.
-        </p>
-        <p class="muted">
-          본 개인정보처리방침은 앱 기능 및 제3자 SDK(광고 등) 사용에 따라 변경될 수 있습니다.
-        </p>
+      <button
+        class="btn active"
+        id="btnKo"
+        type="button"
+        aria-pressed="true"
+      >
+        한국어
+      </button>
 
-        <h2>2. 수집하는 정보</h2>
-        <div class="grid">
-          <div class="notice ok">
-            <b>(A) 개발자가 직접 수집/전송하는 정보</b>
-            <ul>
-              <li><b>없음</b> — 이 앱은 사용자의 개인정보를 개발자 서버로 전송하지 않습니다.</li>
-              <li>회원가입/로그인/계정/이메일/전화번호 등의 직접 식별정보를 수집하지 않습니다.</li>
-            </ul>
-          </div>
-          <div class="notice">
-            <b>(B) 기기 로컬에 저장되는 정보</b>
-            <ul>
-              <li>사용자가 입력한 SSID, 메모, (선택) 비밀번호/힌트, 사용 기록(History), 즐겨찾기(Favorites)</li>
-              <li>언어 설정, 광고 해금 만료 시간(예: 24시간 해금)</li>
-              <li>이 정보는 <b>기기 내에만 저장</b>되며, 앱 삭제 시 일반적으로 함께 삭제됩니다.</li>
-            </ul>
-          </div>
+      <button
+        class="btn"
+        id="btnEn"
+        type="button"
+        aria-pressed="false"
+      >
+        English
+      </button>
+    </nav>
+  </header>
+
+  <!-- ================================= -->
+  <!-- Korean Privacy Policy             -->
+  <!-- ================================= -->
+
+  <section id="ko" lang="ko">
+
+    <div class="card notice ok">
+      <strong>개인정보 처리 핵심 안내</strong>
+
+      <ul>
+        <li>
+          이 앱은 회원가입 및 로그인 기능이 없으며,
+          사용자의 개인정보를 개발자 서버로
+          직접 전송하거나 저장하지 않습니다.
+        </li>
+
+        <li>
+          Wi-Fi 기록, 즐겨찾기, 비밀번호 및 메모는
+          기기 로컬 저장소에 보관됩니다.
+          앱은 로컬 암호화 저장 방식을 사용합니다.
+        </li>
+
+        <li>
+          광고 제공을 위해 Unity LevelPlay 및
+          Unity Ads를 사용하며, 광고 SDK는
+          일부 기기 정보와 광고 식별자 등을
+          처리할 수 있습니다.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+
+      <h2>1. 앱 정보</h2>
+
+      <p>
+        <strong>앱명:</strong>
+        WiFi Log &amp; Password Memo
+      </p>
+
+      <p>
+        <strong>개발자:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        개인정보 관련 문의 및 개발자 연락 방법은
+        Google Play 스토어에 게시된
+        해당 앱의 개발자 연락처를
+        참고하시기 바랍니다.
+      </p>
+
+      <p class="muted">
+        본 개인정보처리방침은 앱 기능,
+        관련 법률 또는 제3자 광고 서비스
+        변경에 따라 수정될 수 있습니다.
+      </p>
+
+      <h2>2. 수집 및 저장하는 정보</h2>
+
+      <div class="grid">
+
+        <div class="notice ok">
+          <strong>
+            (A) 개발자가 직접 수집하는 정보
+          </strong>
+
+          <ul>
+            <li>
+              개발자는 앱 사용자의 개인정보를
+              수집하거나 보관하기 위한
+              별도 서버를 운영하지 않습니다.
+            </li>
+
+            <li>
+              회원가입, 로그인, 이메일,
+              전화번호 등의 직접적인 식별 정보를
+              앱 이용을 위해 요구하지 않습니다.
+            </li>
+
+            <li>
+              이용자가 입력한 Wi-Fi 기록과
+              비밀번호를 개발자 서버로
+              자동 전송하지 않습니다.
+            </li>
+          </ul>
         </div>
 
-        <h2>3. 제3자 서비스(광고) 및 자동 수집 가능 정보</h2>
-        <p>
-          앱은 광고 제공 및 성능 측정을 위해 <b>Google AdMob / Google Mobile Ads SDK</b>를 사용할 수 있습니다.
-          이 과정에서 제3자 SDK가 아래와 같은 정보를 <b>자동으로 처리</b>할 수 있습니다(앱이 직접 수집/보관하는 것이 아님).
-        </p>
-        <ul>
-          <li><b>광고 식별자(Advertising ID)</b> 또는 유사 식별자</li>
-          <li>대략적 위치 정보(예: IP 기반 지역 추정) <span class="muted">— 광고 측정/부정클릭 방지 목적일 수 있음</span></li>
-          <li>기기/앱 정보(기기 모델, OS 버전, 앱 버전), 진단 정보(크래시 로그 등), 광고 노출/클릭 이벤트</li>
-          <li>맞춤형 광고(관심 기반 광고)가 제공될 수 있으며, 사용자는 기기 설정에서 광고 개인 최적화/식별자 옵션을 조정할 수 있습니다.</li>
-        </ul>
+        <div class="notice">
+          <strong>
+            (B) 기기 내부에 저장되는 정보
+          </strong>
 
-        <h3>제3자 제공자</h3>
-        <ul>
-          <li><b>Google AdMob (Google Mobile Ads SDK)</b> — 광고 제공/측정</li>
-          <li><b>Google Play Services</b> — (Android 환경에서) 기본 서비스/광고 식별자 등</li>
-        </ul>
-        <p class="muted">
-          제3자의 데이터 처리 방식은 해당 제공자의 정책을 따르며, 제공자는 서비스 운영을 위해 정보의 일부를 해외 서버에서 처리할 수 있습니다.
-        </p>
+          <ul>
+            <li>
+              사용자가 입력한 Wi-Fi SSID
+            </li>
 
-        <h2>4. 권한(Permissions) 사용</h2>
-        <p>앱은 다음 권한을 사용할 수 있습니다. 권한은 기능 제공을 위해서만 사용됩니다.</p>
+            <li>
+              메모 및 선택적으로 입력한
+              비밀번호 또는 비밀번호 힌트
+            </li>
+
+            <li>
+              Wi-Fi 사용 기록(History)
+            </li>
+
+            <li>
+              즐겨찾기(Favorites)
+            </li>
+
+            <li>
+              언어 및 기타 앱 환경설정
+            </li>
+
+            <li>
+              광고 면제 종료 시각 등
+              광고 표시 제어를 위한 로컬 설정
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p>
+        해당 정보는 앱 기능 제공,
+        사용 기록 관리 및 설정 유지를
+        위한 목적으로 사용됩니다.
+      </p>
+
+      <p>
+        로컬 데이터는 개발자 서버로
+        자동 업로드되지 않으며,
+        이용자가 직접 내보내거나 공유하지
+        않는 한 앱 내부에 보관됩니다.
+      </p>
+
+      <p>
+        단, 광고 제공업체는 아래에
+        설명된 광고 관련 정보를
+        별도로 처리할 수 있습니다.
+      </p>
+
+      <h2>3. 광고 및 제3자 서비스</h2>
+
+      <p>
+        본 앱은 광고 제공을 위해
+        <strong>Unity LevelPlay</strong>
+        광고 미디에이션 플랫폼을 사용합니다.
+      </p>
+
+      <p>
+        실제 광고는
+        <strong>Unity Ads</strong> 및
+        Unity LevelPlay에 활성화된
+        기타 제휴 광고 네트워크를 통해
+        제공될 수 있습니다.
+      </p>
+
+      <p>
+        참여 광고 네트워크는
+        개발자의 광고 운영 설정에 따라
+        변경될 수 있습니다.
+      </p>
+
+      <h3>3.1 광고 서비스에서 처리할 수 있는 정보</h3>
+
+      <p>
+        광고 SDK와 광고 제공업체는
+        광고 제공, 성과 측정,
+        광고 노출 빈도 관리,
+        부정행위 방지 및 서비스 보안 등을
+        위해 일부 정보를 자동으로
+        수집하거나 처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          <strong>광고 식별자</strong>
+          — Android Advertising ID 등
+        </li>
+
+        <li>
+          <strong>IP 주소</strong>
+          — IP 주소를 통한 대략적인
+          위치 정보 추정 등
+        </li>
+
+        <li>
+          <strong>기기 및 앱 정보</strong>
+          — 기기 모델, 운영체제 버전,
+          앱 버전 및 언어 정보
+        </li>
+
+        <li>
+          <strong>광고 이용 정보</strong>
+          — 광고 요청, 노출,
+          클릭 및 광고 상호작용 기록
+        </li>
+
+        <li>
+          <strong>진단 및 성능 정보</strong>
+          — 오류, 성능 및 부정행위
+          방지 관련 기술 정보
+        </li>
+      </ul>
+
+      <p>
+        실제로 처리되는 정보는
+        사용자의 기기, 국가,
+        개인정보 관련 선택 사항 및
+        활성화된 광고 네트워크에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h3>3.2 광고 정보의 이용 목적</h3>
+
+      <ul>
+        <li>광고 제공 및 표시</li>
+        <li>광고 성과 및 노출 측정</li>
+        <li>광고 노출 빈도 관리</li>
+        <li>부정 광고 및 사기 방지</li>
+        <li>서비스 보안 및 안정성 유지</li>
+        <li>관련 법적 의무 준수</li>
+      </ul>
+
+      <p>
+        관련 법률 및 이용자의
+        개인정보 선택 사항에 따라
+        맞춤형 광고 제공 목적으로
+        정보가 이용될 수 있습니다.
+      </p>
+
+      <h3>3.3 광고 개인정보 선택</h3>
+
+      <p>
+        사용자는 기기 설정에서
+        광고 식별자 및 맞춤형 광고와
+        관련된 선택 사항을
+        관리할 수 있습니다.
+      </p>
+
+      <p>
+        관련 법률에서 요구하는 경우
+        광고 정보 처리에 관한
+        동의 또는 개인정보 선택 수단이
+        제공되어야 합니다.
+      </p>
+
+      <p>
+        해당 기능의 제공 방식은
+        앱의 실제 구현 및
+        사용자의 지역에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h3>3.4 제3자 광고 및 플랫폼 제공업체</h3>
+
+      <ul>
+        <li>
+          <strong>Unity LevelPlay</strong>
+          — 광고 미디에이션 및 관리
+        </li>
+
+        <li>
+          <strong>Unity Ads</strong>
+          — 광고 제공 및 성과 측정
+        </li>
+
+        <li>
+          <strong>기타 활성화된 광고 네트워크</strong>
+          — 해당하는 경우 광고 제공
+        </li>
+
+        <li>
+          <strong>Google Play 서비스</strong>
+          — Android 플랫폼 기능 및 관련 서비스
+        </li>
+      </ul>
+
+      <p>
+        각 광고 서비스 제공업체는
+        자체 개인정보처리방침에 따라
+        관련 정보를 처리할 수 있습니다.
+      </p>
+
+      <p>
+        Unity의 개인정보 처리에 관한
+        자세한 내용은 다음 문서를
+        참고하시기 바랍니다.
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Unity 게임 플레이어 및
+            앱 이용자 개인정보처리방침
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Unity 개인정보처리방침
+          </a>
+        </li>
+      </ul>
+
+      <p class="muted">
+        Unity 및 기타 광고 제공업체는
+        서비스 운영 과정에서 광고 관련
+        정보를 이용자의 거주 국가 외
+        지역에서 처리할 수 있습니다.
+      </p>
+
+      <h2>4. 권한(Permissions) 사용</h2>
+
+      <p>
+        앱은 Wi-Fi 기록 및 파일 공유
+        기능 제공을 위해 다음과 같은
+        권한을 사용할 수 있습니다.
+      </p>
+
+      <div class="table-wrap">
         <table class="table" aria-label="permissions">
           <thead>
             <tr>
-              <th>권한</th>
+              <th>권한 또는 접근</th>
               <th>사용 목적</th>
             </tr>
           </thead>
+
           <tbody>
             <tr>
-              <td><code>위치 권한</code> / <code>근처 Wi-Fi 기기</code></td>
-              <td>일부 Android 버전에서 현재 연결된 Wi-Fi SSID를 읽기 위해 필요할 수 있습니다. <span class="muted">(기기/정책에 따라 SSID 자동 읽기가 실패할 수 있으며, 이 경우 사용자가 직접 입력합니다.)</span></td>
+              <td>
+                <code>위치 권한</code>
+                또는
+                <code>근처 Wi-Fi 기기</code>
+              </td>
+
+              <td>
+                일부 Android 버전에서
+                현재 연결된 Wi-Fi SSID를
+                확인하기 위해
+                필요할 수 있습니다.
+                <p class="muted">
+                  기기 및 Android 정책에 따라
+                  자동 읽기가 제한될 수 있으며,
+                  이 경우 수동으로 입력할 수 있습니다.
+                </p>
+              </td>
             </tr>
+
             <tr>
-              <td><code>저장공간/파일 접근</code> (시스템 동작에 따라)</td>
-              <td>CSV 내보내기 및 공유 기능에서 파일 생성/공유를 위해 사용될 수 있습니다.</td>
+              <td>
+                <code>저장공간/파일 접근</code>
+              </td>
+
+              <td>
+                CSV 파일 내보내기 및
+                공유 기능 사용 시
+                파일을 생성하거나
+                공유하는 데 사용될 수 있습니다.
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <code>INTERNET</code>
+                /
+                <code>ACCESS_NETWORK_STATE</code>
+              </td>
+
+              <td>
+                광고 SDK의 광고 요청,
+                네트워크 상태 확인 및
+                관련 서비스 제공에 사용될 수 있습니다.
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <code>AD_ID</code>
+              </td>
+
+              <td>
+                기기 및 Android 버전에서
+                허용되는 경우 광고 식별자를
+                이용한 광고 제공,
+                성과 측정 및 부정행위
+                방지에 사용될 수 있습니다.
+              </td>
             </tr>
           </tbody>
         </table>
+      </div>
 
-        <h2>5. 데이터 보관 및 삭제</h2>
+      <h2>5. 데이터 보관 및 삭제</h2>
+
+      <ul>
+        <li>
+          사용자가 입력한 Wi-Fi 기록,
+          비밀번호 및 메모 등은
+          기기 내부에 저장됩니다.
+          앱은 로컬 암호화 저장 방식을 사용합니다.
+        </li>
+
+        <li>
+          사용자는 앱에서 제공하는 기능을
+          통해 기록 및 즐겨찾기
+          항목을 삭제할 수 있습니다.
+        </li>
+
+        <li>
+          앱을 삭제하거나 앱 데이터를
+          초기화하면 일반적으로
+          로컬 데이터도 삭제됩니다.
+        </li>
+
+        <li>
+          단, 기기의 백업·복원 설정이나
+          저장 위치에 따라 일부 데이터는
+          별도로 남아 있을 수 있습니다.
+        </li>
+
+        <li>
+          Unity 및 광고 제공업체가 처리하는
+          데이터의 보관·삭제에는
+          각 업체의 개인정보처리방침이
+          적용됩니다.
+        </li>
+      </ul>
+
+      <div class="notice danger">
+        <strong>보안 유의사항</strong>
+
         <ul>
-          <li>앱 데이터는 기기 내 로컬 저장소에 저장됩니다(암호화 저장 사용).</li>
-          <li>사용자는 앱 내에서 기록/즐겨찾기 항목을 삭제할 수 있습니다.</li>
-          <li>앱을 삭제하면 일반적으로 앱 로컬 데이터가 함께 삭제됩니다. 다만 기기/OS 상태(백업/복원, 루팅 등)에 따라 다를 수 있습니다.</li>
-        </ul>
+          <li>
+            앱은 로컬 암호화 저장을 사용하지만,
+            루팅된 기기, 악성코드 감염,
+            물리적 기기 접근 등의 환경에서는
+            보호가 제한될 수 있습니다.
+          </li>
 
-        <div class="notice danger">
-          <b>보안 유의사항</b>
+          <li>
+            중요한 비밀번호를 보관하는 경우
+            기기 잠금 및 보안 기능을
+            함께 사용하는 것을 권장합니다.
+          </li>
+        </ul>
+      </div>
+
+      <h2>6. 공유 기능(사용자 선택)</h2>
+
+      <ul>
+        <li>
+          CSV 내보내기 및 공유 기능은
+          사용자가 선택한 메신저,
+          이메일 또는 기타 외부 앱으로
+          내용을 전달할 수 있습니다.
+        </li>
+
+        <li>
+          사용자가 외부 앱으로
+          데이터를 공유한 이후에는
+          해당 서비스의 개인정보처리방침 및
+          이용약관이 적용됩니다.
+        </li>
+
+        <li>
+          개발자는 사용자가 선택한
+          외부 서비스의 개인정보 처리 및
+          보안 정책을 통제하지 않습니다.
+        </li>
+      </ul>
+
+      <h2>7. 개인정보의 공유 및 판매</h2>
+
+      <p>
+        개발자는 사용자가 저장한
+        Wi-Fi 기록, 비밀번호,
+        메모 또는 기타 로컬 정보를
+        판매하지 않습니다.
+      </p>
+
+      <p>
+        개발자는 이러한 로컬 기록을
+        광고 제공업체에 의도적으로
+        전달하지 않습니다.
+      </p>
+
+      <p>
+        다만 광고 SDK는 자체 서비스를
+        제공하기 위해 광고 관련 정보를
+        각 업체의 개인정보처리방침에 따라
+        처리하거나 공유할 수 있습니다.
+      </p>
+
+      <h2>8. 아동의 개인정보</h2>
+
+      <p>
+        이 앱은 일반적인 Wi-Fi 기록 및
+        메모 유틸리티이며
+        만 13세 미만 아동을
+        주요 대상으로 설계되지 않았습니다.
+      </p>
+
+      <p>
+        개발자는 아동의 개인정보를
+        고의로 요구하거나 직접 수집하지 않습니다.
+      </p>
+
+      <h2>9. 이용자의 권리</h2>
+
+      <p>
+        이용자는 관련 개인정보 보호법에 따라
+        개인정보의 열람, 정정, 삭제,
+        처리 제한 또는 이의를
+        요청할 권리가 있을 수 있습니다.
+      </p>
+
+      <p>
+        기기에 저장된 Wi-Fi 기록과
+        메모는 앱에서 제공하는 기능이나
+        기기의 앱 데이터 관리 기능을
+        통해 관리할 수 있습니다.
+      </p>
+
+      <p>
+        광고 제공업체가 처리하는
+        정보에 관한 권리 행사 방법은
+        각 업체의 개인정보처리방침을
+        참고하시기 바랍니다.
+      </p>
+
+      <h2>10. 개인정보처리방침 변경</h2>
+
+      <p>
+        본 개인정보처리방침은
+        앱 기능, 광고 서비스,
+        관련 법률 또는 플랫폼 정책
+        변경에 따라 수정될 수 있습니다.
+      </p>
+
+      <p>
+        중요한 변경사항이 발생하면
+        본 페이지의 최종 수정일을
+        갱신하여 안내할 수 있습니다.
+      </p>
+
+      <h2>11. 개발자 정보 및 문의</h2>
+
+      <p>
+        <strong>개발자:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        개인정보 관련 문의 및
+        기타 연락 방법은
+        Google Play 스토어에 표시된
+        해당 앱의 개발자 연락처를
+        참고하시기 바랍니다.
+      </p>
+
+      <a class="section-link" href="#top">
+        페이지 위로 이동
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ================================= -->
+  <!-- English Privacy Policy            -->
+  <!-- ================================= -->
+
+  <section id="en" lang="en" hidden>
+
+    <div class="card notice ok">
+      <strong>Privacy Summary</strong>
+
+      <ul>
+        <li>
+          The App does not require
+          user registration or login.
+          It does not upload or store
+          personal records on
+          Developer-operated servers.
+        </li>
+
+        <li>
+          Wi-Fi logs, favorites,
+          passwords, and memos are
+          stored locally on the device
+          using encrypted local storage.
+        </li>
+
+        <li>
+          The App uses Unity LevelPlay
+          and Unity Ads for advertising.
+          Advertising providers may
+          process certain device and
+          advertising-related information.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+
+      <h2>1. App Information</h2>
+
+      <p>
+        <strong>App name:</strong>
+        WiFi Log &amp; Password Memo
+      </p>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        For privacy inquiries and
+        contact information, please
+        refer to the Developer Contact
+        section of the App's
+        Google Play Store listing.
+      </p>
+
+      <p class="muted">
+        This Privacy Policy may be
+        updated when App features,
+        legal requirements, or
+        third-party advertising
+        services change.
+      </p>
+
+      <h2>2. Information Collection and Local Storage</h2>
+
+      <div class="grid">
+
+        <div class="notice ok">
+          <strong>
+            (A) Information Collected by the Developer
+          </strong>
+
           <ul>
-            <li>앱은 로컬 암호화 저장을 사용하지만, 루팅/탈옥된 기기, 악성코드 감염, 물리적 접근 등 환경에서는 보호가 제한될 수 있습니다.</li>
-            <li>중요한 비밀번호를 저장하는 경우, 기기 잠금/보안 설정을 함께 사용하는 것을 권장합니다.</li>
+            <li>
+              The Developer does not
+              operate a server that
+              collects or stores
+              users' personal records.
+            </li>
+
+            <li>
+              The App does not require
+              accounts, email addresses,
+              phone numbers, or other
+              directly identifying information.
+            </li>
+
+            <li>
+              User-entered Wi-Fi records
+              and passwords are not
+              automatically uploaded
+              to Developer-operated servers.
+            </li>
           </ul>
         </div>
 
-        <h2>6. 공유 기능(사용자 선택)</h2>
-        <ul>
-          <li>CSV 내보내기/공유 기능은 사용자가 선택한 앱(메신저, 이메일 등)으로 내용을 전달할 수 있습니다.</li>
-          <li>공유 이후의 데이터 처리(저장/전송)는 사용자가 선택한 앱 및 해당 서비스의 정책을 따릅니다.</li>
-        </ul>
+        <div class="notice">
+          <strong>
+            (B) Information Stored Locally
+          </strong>
 
-        <h2>7. 아동의 개인정보</h2>
-        <p>
-          이 앱은 <b>만 13세 미만 아동</b>을 대상으로 설계되지 않았으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.
-        </p>
+          <ul>
+            <li>
+              Wi-Fi SSIDs entered by users
+            </li>
 
-        <h2>8. 정책 변경</h2>
-        <p>
-          정책이 변경되는 경우, 이 페이지의 내용이 업데이트됩니다.
-        </p>
+            <li>
+              Memos and optional passwords
+              or password hints
+            </li>
 
-        <h2>9. 문의</h2>
-        <p>
-          개인정보 관련 문의는 Google Play 스토어의 “개발자 연락처” 정보를 참고해 주세요.
-        </p>
-      </div>
-    </section>
+            <li>
+              Wi-Fi usage history
+            </li>
 
-    <!-- EN -->
-    <section id="en" style="display:none">
-      <div class="card notice ok">
-        <b>Summary</b>
-        <ul>
-          <li>This app has <b>no sign-in / no account</b> and <b>does not send or store your personal data on the developer’s servers.</b></li>
-          <li>Your Wi-Fi logs / favorites / passwords / memos are stored <b>locally on your device</b> (encrypted storage is used).</li>
-          <li>For ads, <b>Google AdMob (google_mobile_ads)</b> and other third-party SDKs may process device/ads identifiers and related signals.</li>
-        </ul>
-      </div>
+            <li>
+              Favorites
+            </li>
 
-      <div class="card">
-        <h2>1. App Information</h2>
-        <p>
-          <b>App name:</b> WiFi Log &amp; Password Memo<br/>
-          <b>Developer info:</b> Please refer to the Developer Contact information on the Google Play listing.
-        </p>
-        <p class="muted">
-          This policy may be updated if app features or third-party SDK usage changes.
-        </p>
+            <li>
+              Language and application settings
+            </li>
 
-        <h2>2. What We Collect</h2>
-        <div class="grid">
-          <div class="notice ok">
-            <b>(A) Data collected/transmitted by the developer</b>
-            <ul>
-              <li><b>None</b> — the app does not transmit personal data to the developer’s servers.</li>
-              <li>No account creation, email, phone number, or other directly identifying info is collected by the app.</li>
-            </ul>
-          </div>
-          <div class="notice">
-            <b>(B) Data stored locally on your device</b>
-            <ul>
-              <li>SSID, memo, (optional) password/hint, History, Favorites entered by you</li>
-              <li>Language preference, ad-unlock expiration times (e.g., 24-hour unlock)</li>
-              <li>This data stays <b>on your device</b>. It is typically removed when the app is uninstalled.</li>
-            </ul>
-          </div>
+            <li>
+              Advertising exemption expiration
+              times and related local settings
+            </li>
+          </ul>
         </div>
 
-        <h2>3. Third-Party Services (Ads) &amp; Possible Automatic Data Processing</h2>
-        <p>
-          The app may use <b>Google AdMob / Google Mobile Ads SDK</b> to show ads and measure performance.
-          During this process, third-party SDKs may automatically process certain information (this is not data that the app directly collects and stores).
-        </p>
-        <ul>
-          <li><b>Advertising ID</b> (or similar identifiers)</li>
-          <li>Approximate location signals (e.g., inferred region) <span class="muted">— for measurement or fraud prevention</span></li>
-          <li>Device/app info (model, OS version, app version), diagnostics (crash logs), ad impressions/click events</li>
-          <li>Interest-based (personalized) ads may be served. You can manage ad personalization / identifiers in your device settings.</li>
-        </ul>
+      </div>
 
-        <h3>Third-party providers</h3>
-        <ul>
-          <li><b>Google AdMob (Google Mobile Ads SDK)</b> — ad serving &amp; measurement</li>
-          <li><b>Google Play Services</b> — core Android services and related identifiers/signals</li>
-        </ul>
-        <p class="muted">
-          Third-party providers handle data according to their own policies and may process data on servers outside your country/region.
-        </p>
+      <p>
+        This information is used
+        for application functionality,
+        record management,
+        and preference retention.
+      </p>
 
-        <h2>4. Permissions</h2>
-        <p>The app may request the following permissions strictly to provide features:</p>
+      <p>
+        Local data is not automatically
+        uploaded to Developer-operated
+        servers and remains within
+        the App unless the user chooses
+        to export or share it.
+      </p>
+
+      <p>
+        Third-party advertising providers
+        may independently process
+        advertising-related information
+        as described below.
+      </p>
+
+      <h2>3. Advertising and Third-Party Services</h2>
+
+      <p>
+        This application uses
+        <strong>Unity LevelPlay</strong>,
+        an advertising mediation platform,
+        to manage and display advertisements.
+      </p>
+
+      <p>
+        Advertisements may be delivered
+        through <strong>Unity Ads</strong>
+        and other advertising networks
+        enabled within the
+        Unity LevelPlay configuration.
+      </p>
+
+      <p>
+        The participating advertising
+        networks may change based
+        on the Developer's
+        advertising configuration.
+      </p>
+
+      <h3>3.1 Information Processed by Advertising Services</h3>
+
+      <p>
+        Advertising SDKs and their partners
+        may automatically process certain
+        information for advertisement
+        delivery, performance measurement,
+        frequency management,
+        fraud prevention, and security.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Advertising identifiers</strong>,
+          including Android Advertising ID
+        </li>
+
+        <li>
+          <strong>IP address</strong>
+          and approximate location
+          inferred from IP information
+        </li>
+
+        <li>
+          <strong>Device and App details</strong>,
+          including device model,
+          operating system version,
+          App version, and language
+        </li>
+
+        <li>
+          <strong>Advertising activity</strong>,
+          including ad requests,
+          impressions, clicks,
+          and interactions
+        </li>
+
+        <li>
+          <strong>Diagnostic information</strong>,
+          including errors, performance,
+          and fraud-prevention data
+        </li>
+      </ul>
+
+      <p>
+        The actual information processed
+        may depend on the user's device,
+        region, privacy choices,
+        and active advertising networks.
+      </p>
+
+      <h3>3.2 Purposes of Advertising Data Processing</h3>
+
+      <ul>
+        <li>Advertisement delivery</li>
+        <li>Advertising performance measurement</li>
+        <li>Advertisement frequency management</li>
+        <li>Advertising fraud prevention</li>
+        <li>Service security and stability</li>
+        <li>Legal compliance</li>
+      </ul>
+
+      <p>
+        Information may also be used
+        for personalized advertising,
+        subject to applicable laws
+        and user privacy choices.
+      </p>
+
+      <h3>3.3 Advertising Privacy Choices</h3>
+
+      <p>
+        Users may manage certain
+        advertising preferences through
+        their device settings.
+      </p>
+
+      <p>
+        Where required by applicable law,
+        appropriate consent or privacy
+        choice mechanisms must be provided.
+      </p>
+
+      <p>
+        The availability of these
+        mechanisms depends on the
+        actual App implementation
+        and the user's region.
+      </p>
+
+      <h3>3.4 Third-Party Providers</h3>
+
+      <ul>
+        <li>
+          <strong>Unity LevelPlay</strong>
+          — advertising mediation
+        </li>
+
+        <li>
+          <strong>Unity Ads</strong>
+          — advertisement delivery
+          and performance measurement
+        </li>
+
+        <li>
+          <strong>Other enabled ad networks</strong>
+          — advertisement delivery,
+          where applicable
+        </li>
+
+        <li>
+          <strong>Google Play services</strong>
+          — Android platform
+          functionality and related services
+        </li>
+      </ul>
+
+      <p>
+        Third-party providers process
+        information according to
+        their respective privacy policies.
+      </p>
+
+      <p>
+        For additional information
+        about Unity's data practices,
+        please refer to:
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Unity Game Player and App User Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Unity Privacy Policy
+          </a>
+        </li>
+      </ul>
+
+      <p class="muted">
+        Unity and other advertising
+        providers may process
+        advertising-related information
+        on servers outside the
+        user's country or region.
+      </p>
+
+      <h2>4. Permissions</h2>
+
+      <p>
+        The application may request
+        permissions necessary to
+        provide its features.
+      </p>
+
+      <div class="table-wrap">
         <table class="table" aria-label="permissions">
+
           <thead>
             <tr>
-              <th>Permission</th>
+              <th>Permission or Access</th>
               <th>Purpose</th>
             </tr>
           </thead>
+
           <tbody>
             <tr>
-              <td><code>Location</code> / <code>Nearby Wi-Fi devices</code></td>
-              <td>On some Android versions, this may be required to read the currently connected Wi-Fi SSID. <span class="muted">(SSID reading can fail depending on device/policy; you can always type it manually.)</span></td>
+              <td>
+                <code>Location</code>
+                /
+                <code>Nearby Wi-Fi devices</code>
+              </td>
+
+              <td>
+                On some Android versions,
+                these permissions may
+                be required to read
+                the currently connected
+                Wi-Fi SSID.
+
+                <p class="muted">
+                  Automatic SSID detection
+                  may be restricted by
+                  Android version or
+                  device settings.
+                  Manual entry is available.
+                </p>
+              </td>
             </tr>
+
             <tr>
-              <td><code>Storage / File access</code> (system-dependent)</td>
-              <td>Used for CSV export and sharing (creating a temporary CSV file to share).</td>
+              <td>
+                <code>Storage / File Access</code>
+              </td>
+
+              <td>
+                May be used for creating,
+                exporting, and sharing
+                CSV files.
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <code>INTERNET</code>
+                /
+                <code>ACCESS_NETWORK_STATE</code>
+              </td>
+
+              <td>
+                May be used for
+                advertisement requests,
+                network status checks,
+                and related services.
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <code>AD_ID</code>
+              </td>
+
+              <td>
+                Where available and permitted,
+                may be used for advertising,
+                performance measurement,
+                and fraud prevention.
+              </td>
             </tr>
           </tbody>
+
         </table>
-
-        <h2>5. Data Retention &amp; Deletion</h2>
-        <ul>
-          <li>App data is stored locally on your device (encrypted storage is used).</li>
-          <li>You can delete items (History/Favorites) inside the app.</li>
-          <li>Uninstalling the app typically removes local app data; behavior may vary with backups/restores or rooted devices.</li>
-        </ul>
-
-        <div class="notice danger">
-          <b>Security Notice</b>
-          <ul>
-            <li>While the app uses encrypted local storage, protection may be limited on rooted/jailbroken devices, malware-infected devices, or under physical access.</li>
-            <li>For sensitive passwords, we recommend enabling device lock and using your device’s security features.</li>
-          </ul>
-        </div>
-
-        <h2>6. Sharing (User-Initiated)</h2>
-        <ul>
-          <li>CSV export/share can send content to apps you choose (messengers, email, etc.).</li>
-          <li>After sharing, the selected app/service governs how the data is stored/processed under its own policy.</li>
-        </ul>
-
-        <h2>7. Children’s Privacy</h2>
-        <p>
-          This app is not directed to children under 13 and does not knowingly collect personal information from children.
-        </p>
-
-        <h2>8. Changes to This Policy</h2>
-        <p>
-          We may update this policy and reflect the changes on this page.
-        </p>
-
-        <h2>9. Contact</h2>
-        <p>
-          For privacy inquiries, please refer to the Developer Contact information on the Google Play listing.
-        </p>
       </div>
-    </section>
 
-    <footer>
-      <div class="muted">
-        참고: 이 문서는 일반적인 템플릿 성격의 안내이며, 법률 자문이 아닙니다. 지역/국가별 규정에 따라 추가 고지가 필요할 수 있습니다.
+      <h2>5. Data Retention and Deletion</h2>
+
+      <ul>
+        <li>
+          User-entered Wi-Fi records,
+          passwords, and memos are
+          stored locally on the device.
+          The App uses encrypted
+          local storage.
+        </li>
+
+        <li>
+          Users can delete history
+          and favorite items through
+          available App features.
+        </li>
+
+        <li>
+          Clearing application data
+          or uninstalling the App
+          generally removes local data.
+        </li>
+
+        <li>
+          Some information may remain
+          depending on device backups,
+          restoration settings,
+          or storage locations.
+        </li>
+
+        <li>
+          Advertising data processed
+          by Unity and other providers
+          is governed by their
+          respective retention
+          and deletion policies.
+        </li>
+      </ul>
+
+      <div class="notice danger">
+        <strong>Security Notice</strong>
+
+        <ul>
+          <li>
+            Although the App uses
+            encrypted local storage,
+            security may be limited
+            on rooted devices,
+            malware-infected devices,
+            or devices with unauthorized
+            physical access.
+          </li>
+
+          <li>
+            Users storing sensitive
+            passwords should enable
+            device locks and other
+            available security features.
+          </li>
+        </ul>
       </div>
-    </footer>
-  </div>
 
-  <script>
-    // Last updated (set once here)
-    const UPDATED = "2026-02-02";
-    document.getElementById("lastUpdated").textContent = "Last updated: " + UPDATED;
+      <h2>6. Sharing (User-Initiated)</h2>
 
-    const ko = document.getElementById("ko");
-    const en = document.getElementById("en");
-    const btnKo = document.getElementById("btnKo");
-    const btnEn = document.getElementById("btnEn");
+      <ul>
+        <li>
+          CSV export and sharing
+          may transfer information
+          to messaging applications,
+          email services, or other
+          external apps selected
+          by the user.
+        </li>
 
-    function showLang(which){
-      const isKo = which === "ko";
-      ko.style.display = isKo ? "" : "none";
-      en.style.display = isKo ? "none" : "";
-      btnKo.classList.toggle("active", isKo);
-      btnEn.classList.toggle("active", !isKo);
-      document.documentElement.lang = isKo ? "ko" : "en";
-      try { localStorage.setItem("pp_lang", isKo ? "ko" : "en"); } catch(e) {}
-    }
+        <li>
+          Once shared, the external
+          service's privacy policy
+          and terms govern how
+          the information is processed.
+        </li>
 
-    btnKo.addEventListener("click", () => showLang("ko"));
-    btnEn.addEventListener("click", () => showLang("en"));
+        <li>
+          The Developer does not
+          control the privacy
+          or security practices
+          of external services
+          chosen by the user.
+        </li>
+      </ul>
 
-    // restore
+      <h2>7. Data Sharing and Sale</h2>
+
+      <p>
+        The Developer does not sell
+        user-entered Wi-Fi records,
+        passwords, memos,
+        or other locally stored data.
+      </p>
+
+      <p>
+        The Developer does not
+        intentionally provide
+        locally stored records
+        to advertising providers.
+      </p>
+
+      <p>
+        However, advertising SDKs
+        may process or share
+        advertising-related information
+        under their respective policies.
+      </p>
+
+      <h2>8. Children's Privacy</h2>
+
+      <p>
+        This application is a
+        general-purpose Wi-Fi log
+        and memo utility.
+        It is not directed toward
+        children under the age of 13.
+      </p>
+
+      <p>
+        The Developer does not
+        knowingly request or directly
+        collect personal information
+        from children.
+      </p>
+
+      <h2>9. User Rights</h2>
+
+      <p>
+        Depending on applicable laws,
+        users may have rights to
+        access, correct, delete,
+        restrict, or object to
+        the processing of personal data.
+      </p>
+
+      <p>
+        Locally stored Wi-Fi records
+        and memos can be managed
+        through available App features
+        or device application settings.
+      </p>
+
+      <p>
+        For data processed by
+        advertising providers,
+        please refer to their
+        respective privacy policies
+        and privacy request procedures.
+      </p>
+
+      <h2>10. Changes to This Policy</h2>
+
+      <p>
+        This Privacy Policy may
+        be updated to reflect
+        changes in application features,
+        advertising services,
+        applicable laws,
+        or platform requirements.
+      </p>
+
+      <p>
+        Material changes may
+        be reflected by updating
+        the revision date on this page.
+      </p>
+
+      <h2>11. Developer Information and Contact</h2>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        For privacy-related questions
+        or other inquiries,
+        please refer to the
+        Developer Contact information
+        displayed on the application's
+        Google Play Store listing.
+      </p>
+
+      <a class="section-link" href="#top">
+        Back to top
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © 2026 JCraft Studio. All rights reserved.
+    </p>
+    <p>
+      본 개인정보처리방침은 앱의 실제 기능,
+      사용되는 광고 SDK 및 관련 법률에 따라
+      수정될 수 있습니다.
+    </p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  const UPDATED = "2026-11-16";
+  const STORAGE_KEY = "wifi_log_privacy_language";
+
+  const ko = document.getElementById("ko");
+  const en = document.getElementById("en");
+
+  const btnKo = document.getElementById("btnKo");
+  const btnEn = document.getElementById("btnEn");
+
+  const updatedLabel =
+    document.getElementById("lastUpdated");
+
+  updatedLabel.textContent =
+    "Last updated: " + UPDATED;
+
+  function showLang(language) {
+    const isKo = language === "ko";
+
+    ko.hidden = !isKo;
+    en.hidden = isKo;
+
+    btnKo.classList.toggle("active", isKo);
+    btnEn.classList.toggle("active", !isKo);
+
+    btnKo.setAttribute(
+      "aria-pressed",
+      String(isKo)
+    );
+
+    btnEn.setAttribute(
+      "aria-pressed",
+      String(!isKo)
+    );
+
+    document.documentElement.lang =
+      isKo ? "ko" : "en";
+
     try {
-      const saved = localStorage.getItem("pp_lang");
-      if(saved === "en") showLang("en");
-      else showLang("ko");
-    } catch(e) {
-      showLang("ko");
+      localStorage.setItem(
+        STORAGE_KEY,
+        language
+      );
+    } catch (error) {
+      // Storage may be unavailable.
     }
-  </script>
+  }
+
+  btnKo.addEventListener("click", function () {
+    showLang("ko");
+  });
+
+  btnEn.addEventListener("click", function () {
+    showLang("en");
+  });
+
+  let savedLanguage = null;
+
+  try {
+    savedLanguage =
+      localStorage.getItem(STORAGE_KEY);
+
+    if (!savedLanguage) {
+      savedLanguage =
+        localStorage.getItem("pp_lang");
+    }
+  } catch (error) {
+    savedLanguage = null;
+  }
+
+  if (savedLanguage === "ko" ||
+      savedLanguage === "en") {
+
+    showLang(savedLanguage);
+
+  } else {
+
+    const browserLanguage = (
+      navigator.language || "en"
+    ).toLowerCase();
+
+    showLang(
+      browserLanguage.startsWith("ko")
+        ? "ko"
+        : "en"
+    );
+  }
+
+})();
+</script>
+
 </body>
 </html>
