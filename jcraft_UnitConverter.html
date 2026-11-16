@@ -2,242 +2,1472 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+  <meta
+    name="description"
+    content="Privacy Policy for Unit Converter ++ by JCraft Studio."
+  />
+  <meta name="robots" content="index, follow" />
+
   <title>Privacy Policy | Unit Converter ++</title>
+
   <style>
-    :root { color-scheme: light dark; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 0; }
-    header { padding: 18px 16px; border-bottom: 1px solid rgba(0,0,0,.12); }
-    main { max-width: 860px; margin: 0 auto; padding: 18px 16px 40px; }
-    h1 { font-size: 20px; margin: 0; }
-    h2 { font-size: 16px; margin-top: 22px; }
-    p, li { font-size: 14px; }
-    .muted { opacity: .75; }
-    .langbar { display: flex; gap: 8px; padding-top: 10px; flex-wrap: wrap; }
-    .btn {
-      border: 1px solid rgba(0,0,0,.18);
-      background: transparent;
-      padding: 8px 10px;
-      border-radius: 10px;
-      cursor: pointer;
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --notice: #eff6ff;
+      --notice-border: #bfdbfe;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220;
+        --surface: #111827;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --border: #334155;
+        --accent: #93c5fd;
+        --notice: #172554;
+        --notice-border: #1d4ed8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Noto Sans KR",
+        Arial,
+        sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      color: var(--text);
+      background: var(--bg);
+      overflow-wrap: break-word;
+    }
+
+    header {
+      padding: 28px 16px;
+      background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8,
+        #4338ca
+      );
+      color: #ffffff;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-size: 26px;
+      margin: 0 0 8px;
+    }
+
+    header p {
+      margin: 5px 0;
+      color: #dbeafe;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 16px 48px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 19px;
+      margin: 28px 0 12px;
+      line-height: 1.4;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin: 20px 0 10px;
+    }
+
+    p, li {
+      font-size: 14px;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .muted {
+      color: var(--muted);
       font-size: 13px;
     }
-    .card {
-      border: 1px solid rgba(0,0,0,.12);
+
+    .langbar {
+      display: flex;
+      gap: 10px;
+      padding: 8px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      background: var(--surface);
+      border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 14px 14px;
+    }
+
+    .btn {
+      flex: 1;
+      min-height: 44px;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .btn.active {
+      background: #2563eb;
+      color: #ffffff;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
       margin-top: 14px;
-      background: rgba(0,0,0,.03);
+      background: var(--surface);
     }
-    a { color: inherit; }
-    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
-    footer { max-width: 860px; margin: 0 auto; padding: 16px; border-top: 1px solid rgba(0,0,0,.12); }
+
+    .notice {
+      background: var(--notice);
+      border: 1px solid var(--notice-border);
+      padding: 16px;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+
+    .notice ul {
+      margin-bottom: 0;
+    }
+
+    .app-info {
+      background: var(--notice);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    .app-info p {
+      margin: 6px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+
+    code {
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Consolas,
+        monospace;
+      font-size: 13px;
+    }
+
+    footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 24px 16px;
+      }
+
+      header h1 {
+        font-size: 23px;
+      }
+
+      main {
+        padding: 12px 10px 32px;
+      }
+
+      .card {
+        padding: 19px 16px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p, li {
+        font-size: 14px;
+      }
+    }
   </style>
-  <script>
-    function setLang(lang) {
-      const ko = document.getElementById("ko");
-      const en = document.getElementById("en");
-      if (lang === "en") { ko.style.display = "none"; en.style.display = "block"; }
-      else { en.style.display = "none"; ko.style.display = "block"; }
-      try { localStorage.setItem("pp_lang", lang); } catch(e) {}
-    }
-    window.addEventListener("DOMContentLoaded", () => {
-      let lang = "ko";
-      try {
-        const saved = localStorage.getItem("pp_lang");
-        if (saved === "en" || saved === "ko") lang = saved;
-      } catch(e) {}
-      setLang(lang);
-    });
-  </script>
 </head>
 
-<body>
-  <header>
+<body id="top">
+
+<header>
+  <div class="header-inner">
     <h1>Privacy Policy</h1>
-    <div class="langbar">
-      <button class="btn" onclick="setLang('ko')">한국어</button>
-      <button class="btn" onclick="setLang('en')">English</button>
-    </div>
-    <p class="muted" style="margin:10px 0 0;">
-      Last updated: <strong>2026-01-02</strong>
+
+    <p>Unit Converter ++</p>
+    <p>Developer: JCraft Studio</p>
+
+    <p>
+      Original Publication: January 2, 2026<br />
+      Last Updated: November 16, 2026
     </p>
-  </header>
+  </div>
+</header>
 
-  <main>
+<main>
 
-    <!-- ===================== KOREAN ===================== -->
-    <section id="ko" style="display:none;">
-      <div class="card">
-        <p><strong>앱 이름:</strong> Unit Converter ++</p>
-        <p><strong>개발자/연락처:</strong> Google Play 스토어의 개발자 정보(이메일/주소 등)를 확인해 주세요.</p>
+  <!-- Language Selection -->
+
+  <nav class="langbar" aria-label="Language selection">
+
+    <button
+      id="btnKo"
+      class="btn active"
+      type="button"
+      aria-pressed="true">
+      한국어
+    </button>
+
+    <button
+      id="btnEn"
+      class="btn"
+      type="button"
+      aria-pressed="false">
+      English
+    </button>
+
+  </nav>
+
+  <!-- ================================ -->
+  <!-- Korean Privacy Policy            -->
+  <!-- ================================ -->
+
+  <section id="ko" lang="ko">
+
+    <div class="card">
+
+      <div class="app-info">
+        <p>
+          <strong>앱 이름:</strong>
+          Unit Converter ++
+        </p>
+
+        <p>
+          <strong>개발자:</strong>
+          JCraft Studio
+        </p>
+
+        <p class="muted">
+          최종 수정일: 2026년 11월 16일
+        </p>
       </div>
 
       <h2>1. 개요</h2>
+
       <p>
-        본 개인정보처리방침은 Unit Converter ++(이하 “앱”) 이용 과정에서 어떤 정보가 수집/이용/공유되는지 설명합니다.
-        본 앱은 단위 변환 기능(길이, 무게, 온도, 면적, 부피, 속도 등)과 기록/즐겨찾기/설정 저장 기능을 제공합니다.
+        본 개인정보처리방침은
+        Unit Converter ++
+        (이하 "앱")의 이용 과정에서
+        정보가 어떻게 수집, 이용,
+        공유 및 저장되는지 설명합니다.
       </p>
 
-      <h2>2. 수집하는 정보</h2>
-      <p>앱은 사용자의 편의를 위해 아래 정보를 기기 내에 저장할 수 있습니다.</p>
-      <ul>
-        <li><strong>변환 기록/즐겨찾기/설정/세션 정보</strong>: 사용자가 입력한 값(예: 숫자), 선택한 단위, 표시 설정(소수점/콤마 등) 등</li>
-      </ul>
-      <p class="muted">
-        위 정보는 기본적으로 <strong>사용자 기기(로컬)</strong>에 저장되며, 개발자가 별도로 서버에 업로드하지 않습니다.
+      <p>
+        본 앱은 길이, 무게, 온도,
+        면적, 부피, 속도 등의
+        단위 변환 기능을 제공하는
+        일반 유틸리티 앱입니다.
       </p>
 
-      <h2>3. 광고 및 제3자 SDK</h2>
       <p>
-        앱은 서비스 운영을 위해 Google AdMob(구글 모바일 광고 SDK)을 사용하여 광고를 표시할 수 있습니다
-        (예: 하단 배너, 앱 오픈 광고, 선택형 “응원하기” 광고).
+        이용자는 별도의 회원가입이나
+        로그인 없이 주요 기능을
+        사용할 수 있습니다.
       </p>
+
+      <div class="notice">
+        <strong>개인정보 처리 핵심 안내</strong>
+
+        <ul>
+          <li>
+            회원가입이나 로그인이
+            필요하지 않습니다.
+          </li>
+
+          <li>
+            변환 기록, 즐겨찾기,
+            언어 및 표시 설정은
+            기기 내부에 저장됩니다.
+          </li>
+
+          <li>
+            개발자는 해당 기록을
+            자체 서버로 자동 전송하거나
+            저장하지 않습니다.
+          </li>
+
+          <li>
+            광고는 Unity LevelPlay를 통해
+            제공되며, Unity Ads 및
+            ironSource Ads 등이
+            사용될 수 있습니다.
+          </li>
+
+          <li>
+            광고 제공업체는 광고 식별자,
+            IP 주소, 기기 정보 등을
+            처리할 수 있습니다.
+          </li>
+        </ul>
+      </div>
+
+      <h2>2. 수집 및 저장하는 정보</h2>
+
+      <p>
+        앱은 단위 변환 기능 제공을 위해
+        사용자의 이름, 이메일 주소,
+        전화번호, 계정 정보 등의
+        개인정보를 직접 요구하지 않습니다.
+      </p>
+
+      <p>
+        앱은 사용자 편의를 위해
+        다음 정보를 기기 내부에
+        저장할 수 있습니다.
+      </p>
+
       <ul>
         <li>
-          광고 SDK는 광고 제공/측정/부정행위 방지 등을 위해 <strong>광고 식별자(Advertising ID)</strong>,
-          기기 정보, 대략적인 위치(추정), 앱 상호작용 정보 등을 수집할 수 있습니다.
+          변환 기록 및 즐겨찾기
         </li>
+
         <li>
-          이러한 데이터 처리는 Google의 정책 및 설정(예: 사용자 동의, 광고 개인화 설정 등)에 따라 달라질 수 있습니다.
+          사용자가 입력한 숫자와
+          선택한 단위
+        </li>
+
+        <li>
+          소수점 자리수 및
+          숫자 구분 기호 등의 표시 설정
+        </li>
+
+        <li>
+          선택한 언어 및 앱 설정
+        </li>
+
+        <li>
+          현재 세션 및
+          이용 환경설정
+        </li>
+
+        <li>
+          보상형 광고를 통한
+          광고 면제 상태 및
+          만료 시각 등의 설정
         </li>
       </ul>
+
       <p>
-        Google의 광고 데이터 처리에 대한 자세한 내용은 Google 정책 문서를 참고해 주세요:
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+        이러한 정보는 Android의
+        로컬 저장 기능을 통해
+        사용자 기기 내부에
+        저장될 수 있습니다.
       </p>
+
+      <p>
+        개발자는 해당 기록을
+        자체 서버로 자동 업로드하거나
+        원격으로 열람하지 않습니다.
+      </p>
+
+      <h2>3. 광고 및 제3자 서비스</h2>
+
+      <p>
+        본 앱은 무료 서비스 제공 및
+        운영을 위해
+        <strong>Unity LevelPlay</strong>
+        광고 미디에이션 플랫폼을 사용합니다.
+      </p>
+
+      <p>
+        실제 광고는
+        <strong>Unity Ads</strong>,
+        <strong>ironSource Ads</strong>
+        및 Unity LevelPlay에 활성화된
+        기타 광고 네트워크를 통해
+        제공될 수 있습니다.
+      </p>
+
+      <p>
+        광고는 배너 광고,
+        전면 광고 및
+        이용자가 선택적으로 시청하는
+        보상형 광고 등의 형태로
+        표시될 수 있습니다.
+      </p>
+
+      <h3>3.1 광고 서비스에서 처리할 수 있는 정보</h3>
+
+      <p>
+        광고 SDK와 광고 제공업체는
+        광고 제공, 성과 측정,
+        부정행위 방지, 보안 및
+        관련 서비스 운영을 위해
+        일부 정보를 처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          Android 광고 ID 등
+          광고 관련 식별자
+        </li>
+
+        <li>
+          IP 주소 및 IP 기반
+          대략적인 위치 정보
+        </li>
+
+        <li>
+          기기 제조사, 모델명,
+          운영체제 및 앱 버전
+        </li>
+
+        <li>
+          앱 언어 및 기기 설정
+        </li>
+
+        <li>
+          광고 요청, 노출,
+          클릭 및 상호작용 정보
+        </li>
+
+        <li>
+          성능, 오류 및 진단 정보
+        </li>
+
+        <li>
+          광고 부정행위 방지와
+          서비스 보안을 위한
+          기타 기술 정보
+        </li>
+      </ul>
+
+      <p>
+        실제 처리되는 정보는
+        이용자의 국가, 기기,
+        개인정보 선택 사항 및
+        활성화된 광고 네트워크에 따라
+        달라질 수 있습니다.
+      </p>
+
+      <h3>3.2 광고 정보의 이용 목적</h3>
+
+      <ul>
+        <li>광고 제공 및 표시</li>
+        <li>광고 성과 측정</li>
+        <li>광고 노출 빈도 관리</li>
+        <li>광고 부정행위 및 사기 방지</li>
+        <li>서비스 안정성 및 보안 유지</li>
+        <li>관련 법적 의무 준수</li>
+      </ul>
+
+      <p>
+        이용자의 개인정보 설정 및
+        적용 법률에서 요구하는
+        동의 조건에 따라
+        맞춤형 광고 제공 목적으로
+        정보가 처리될 수 있습니다.
+      </p>
+
+      <h3>3.3 광고 개인정보 선택 및 관리</h3>
+
+      <p>
+        이용자는 Android 기기의
+        개인정보 보호 설정을 통해
+        광고 식별자 및 맞춤형 광고 관련
+        선택 사항을 관리할 수 있습니다.
+      </p>
+
+      <p>
+        관련 법률에서 요구하는 경우
+        광고 데이터 처리에 대한
+        적절한 동의 또는
+        개인정보 선택 수단이
+        제공되어야 합니다.
+      </p>
+
+      <p>
+        실제 동의 기능의 제공 방식은
+        앱의 구현과 이용자의
+        지역에 따라 달라질 수 있습니다.
+      </p>
+
+      <h3>3.4 제3자 광고 서비스 및 개인정보처리방침</h3>
+
+      <p>
+        Unity LevelPlay는 광고 요청을
+        관리하는 미디에이션 플랫폼이며,
+        실제 광고는 활성화된
+        광고 네트워크에서 제공됩니다.
+      </p>
+
+      <p>
+        각 광고 서비스 제공업체는
+        자체 개인정보처리방침에 따라
+        관련 데이터를 처리할 수 있습니다.
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and
+            App User Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+      </ul>
 
       <h2>4. 정보의 이용 목적</h2>
+
       <ul>
-        <li>단위 변환 결과 제공 및 사용자 경험 개선(기록/즐겨찾기/설정 복원)</li>
-        <li>앱 안정성/품질 유지</li>
-        <li>광고 표시 및 광고 성과 측정(AdMob)</li>
+        <li>
+          길이, 무게, 온도, 면적,
+          부피 및 속도 등의
+          단위 변환 결과 제공
+        </li>
+
+        <li>
+          변환 기록, 즐겨찾기,
+          언어 및 설정 복원
+        </li>
+
+        <li>
+          앱 기능의 안정적인 제공
+        </li>
+
+        <li>
+          광고 제공 및
+          광고 성과 측정
+        </li>
+
+        <li>
+          광고 부정행위 방지 및
+          서비스 보안 유지
+        </li>
       </ul>
 
-      <h2>5. 정보의 공유</h2>
       <p>
-        개발자는 사용자의 변환 기록/즐겨찾기/설정 정보를 외부로 판매하거나 임의로 공유하지 않습니다.
-        단, 광고 제공을 위해 Google AdMob 등 제3자 SDK가 위 “3. 광고 및 제3자 SDK” 범위에서 데이터를 처리할 수 있습니다.
+        단위 변환 관련 로컬 데이터와
+        광고 SDK가 처리하는 정보는
+        서로 구분됩니다.
       </p>
 
-      <h2>6. 데이터 보관 및 삭제</h2>
-      <ul>
-        <li>기기 로컬에 저장되는 기록/즐겨찾기/설정은 사용자가 앱 내에서 삭제하거나, 앱을 제거하면 삭제됩니다.</li>
-        <li>제3자(광고 SDK)가 처리하는 데이터의 보관 기간은 해당 제공자의 정책을 따릅니다.</li>
-      </ul>
+      <h2>5. 보상형 광고 및 광고 면제</h2>
 
-      <h2>7. 보안</h2>
       <p>
-        개발자는 앱 품질 유지를 위해 합리적인 보안 조치를 적용하려고 노력합니다.
-        다만, 인터넷/기기 환경의 특성상 100% 보안을 보장할 수는 없습니다.
+        본 앱은 이용자가 선택적으로
+        보상형 광고를 시청하여
+        일정 시간 동안 광고 표시를
+        면제받을 수 있는 기능을
+        제공할 수 있습니다.
       </p>
 
-      <h2>8. 아동의 개인정보</h2>
       <p>
-        본 앱은 일반 사용자 대상의 유틸리티 앱이며, 법령상 아동(또는 미성년자)만을 대상으로 서비스를 제공하도록 설계되지 않았습니다.
+        광고 면제 시간 및 적용 조건은
+        앱에 실제 표시된
+        설정을 따릅니다.
       </p>
 
-      <h2>9. 정책 변경</h2>
       <p>
-        본 방침은 법령/정책/서비스 변경에 따라 업데이트될 수 있으며,
-        중요한 변경이 있는 경우 본 페이지를 통해 안내합니다.
+        면제 상태와 만료 시각 등은
+        이용자의 기기 내부에
+        저장될 수 있습니다.
       </p>
 
-      <h2>10. 문의</h2>
       <p>
-        개인정보 관련 문의는 Google Play 스토어에 기재된 개발자 연락처(이메일)로 문의해 주세요.
+        개발자는 이러한 로컬 정보를
+        자체 서버로 자동 전송하지 않습니다.
       </p>
-    </section>
 
-    <!-- ===================== ENGLISH ===================== -->
-    <section id="en" style="display:none;">
-      <div class="card">
-        <p><strong>App name:</strong> Unit Converter ++</p>
-        <p><strong>Developer/Contact:</strong> Please refer to the developer contact information on the Google Play Store listing.</p>
+      <p>
+        다만 보상형 광고 제공 및
+        시청 완료 여부 확인 과정에서는
+        광고 서비스 제공업체가
+        광고 관련 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <h2>6. 정보의 공유 및 판매</h2>
+
+      <p>
+        개발자는 이용자의
+        변환 기록, 즐겨찾기,
+        설정 정보 등을
+        판매하지 않습니다.
+      </p>
+
+      <p>
+        이러한 로컬 기록을
+        광고 제공업체에
+        의도적으로 전달하지 않습니다.
+      </p>
+
+      <p>
+        다만 광고 SDK는
+        광고 제공 및 관련 목적을 위해
+        각 업체의 정책에 따라
+        일부 정보를 처리하거나
+        제3자와 공유할 수 있습니다.
+      </p>
+
+      <h2>7. 데이터 보관 및 삭제</h2>
+
+      <p>
+        앱의 변환 기록,
+        즐겨찾기 및 설정 정보는
+        이용자의 기기에 저장됩니다.
+      </p>
+
+      <p>
+        이용자는 앱에서 제공하는
+        기록 삭제 기능 또는
+        Android 앱 데이터 관리 기능을
+        통해 관련 정보를 삭제할 수 있습니다.
+      </p>
+
+      <p>
+        앱을 삭제하면 일반적으로
+        앱 내부에 저장된
+        로컬 데이터도 삭제됩니다.
+      </p>
+
+      <p>
+        단, Android 백업 및 복원
+        기능에 따라 일부 데이터가
+        다시 복원될 수 있습니다.
+      </p>
+
+      <p>
+        광고 SDK가 처리하는
+        정보의 보관 기간과 삭제는
+        각 제공업체의 정책에 따릅니다.
+      </p>
+
+      <h2>8. 보안</h2>
+
+      <p>
+        개발자는 단위 변환 기록과
+        설정 정보를 가능한 범위에서
+        기기 내부에 저장하도록
+        앱을 설계했습니다.
+      </p>
+
+      <p>
+        앱의 로컬 데이터는
+        Android 운영체제의
+        앱 저장공간 및
+        접근 제어 기능의
+        보호를 받습니다.
+      </p>
+
+      <p>
+        다만 어떠한 전자적
+        저장 및 전송 방식도
+        완전한 보안을
+        보장할 수는 없습니다.
+      </p>
+
+      <h2>9. 아동의 개인정보</h2>
+
+      <p>
+        본 앱은 일반 사용자 대상의
+        단위 변환 유틸리티이며,
+        아동만을 주요 대상으로
+        설계된 서비스가 아닙니다.
+      </p>
+
+      <p>
+        개발자는 아동의 개인정보를
+        고의로 요구하거나
+        직접 수집하지 않습니다.
+      </p>
+
+      <h2>10. 국외 데이터 처리</h2>
+
+      <p>
+        Unity 및 기타 광고 서비스는
+        이용자의 거주 국가 외의
+        지역에서 광고 관련 정보를
+        처리할 수 있습니다.
+      </p>
+
+      <p>
+        해당 처리에는 각 제공업체의
+        개인정보처리방침 및
+        적용 가능한 데이터
+        보호 조치가 적용됩니다.
+      </p>
+
+      <h2>11. 이용자의 권리</h2>
+
+      <p>
+        이용자는 관련 법령에 따라
+        개인정보의 열람, 정정,
+        삭제, 처리 제한 또는
+        처리에 대한 이의를
+        요청할 권리가 있을 수 있습니다.
+      </p>
+
+      <p>
+        기기에 저장된 기록과 설정은
+        앱에서 제공하는 기능 또는
+        Android 앱 데이터 관리 기능을
+        통해 관리할 수 있습니다.
+      </p>
+
+      <p>
+        광고 제공업체가 처리하는
+        정보에 관한 권리 행사 방법은
+        해당 업체의 개인정보처리방침을
+        참고하시기 바랍니다.
+      </p>
+
+      <h2>12. 정책 변경</h2>
+
+      <p>
+        본 개인정보처리방침은
+        법령, 앱 기능, 광고 서비스
+        및 데이터 처리 방식의
+        변경에 따라 수정될 수 있습니다.
+      </p>
+
+      <p>
+        중요한 변경사항이 발생하면
+        본 페이지의 최종 수정일을
+        갱신하여 안내할 수 있습니다.
+      </p>
+
+      <h2>13. 개발자 정보 및 문의</h2>
+
+      <p>
+        <strong>개발자:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        개인정보 및 앱 이용 관련
+        문의는 Google Play 스토어의
+        해당 앱 등록정보에 표시된
+        개발자 연락처를 참고하시기 바랍니다.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ================================ -->
+  <!-- English Privacy Policy           -->
+  <!-- ================================ -->
+
+  <section id="en" lang="en" hidden>
+
+    <div class="card">
+
+      <div class="app-info">
+        <p>
+          <strong>App Name:</strong>
+          Unit Converter ++
+        </p>
+
+        <p>
+          <strong>Developer:</strong>
+          JCraft Studio
+        </p>
+
+        <p class="muted">
+          Last Updated: November 16, 2026
+        </p>
       </div>
 
       <h2>1. Overview</h2>
+
       <p>
-        This Privacy Policy explains how Unit Converter ++ (the “App”) handles information when you use the App.
-        The App provides unit conversion features (length, weight, temperature, area, volume, speed) and saves history,
-        favourites, and display settings for convenience.
+        This Privacy Policy explains how
+        Unit Converter ++
+        ("App") collects, uses,
+        shares, and stores information.
       </p>
 
-      <h2>2. Information We Store</h2>
-      <p>The App may store the following information on your device to provide core features:</p>
-      <ul>
-        <li><strong>History / favourites / settings / session data</strong>: values you enter (e.g., numbers), selected units, formatting preferences (decimals, separators), etc.</li>
-      </ul>
-      <p class="muted">
-        This information is stored <strong>locally on your device</strong>. The developer does not upload it to a separate server.
+      <p>
+        The App provides unit conversion
+        functions for length, weight,
+        temperature, area, volume,
+        speed, and related categories.
       </p>
 
-      <h2>3. Ads and Third-Party SDKs</h2>
       <p>
-        The App may display ads using Google AdMob (Google Mobile Ads SDK) to support ongoing development and operation
-        (e.g., banner ads, app open ads, optional “Support” rewarded ads).
+        Users can access the App's
+        main features without
+        account registration or login.
       </p>
+
+      <div class="notice">
+        <strong>Privacy Summary</strong>
+
+        <ul>
+          <li>
+            The App does not require
+            registration or login.
+          </li>
+
+          <li>
+            Conversion history,
+            favorites, language,
+            and display preferences
+            are stored locally.
+          </li>
+
+          <li>
+            The Developer does not
+            automatically upload
+            these records to
+            its own servers.
+          </li>
+
+          <li>
+            The App uses Unity LevelPlay,
+            Unity Ads, and ironSource Ads
+            for advertising services.
+          </li>
+
+          <li>
+            Advertising providers may
+            process advertising identifiers,
+            IP addresses, and
+            device-related information.
+          </li>
+        </ul>
+      </div>
+
+      <h2>2. Information Collection and Storage</h2>
+
+      <p>
+        The App does not directly require
+        users to provide names,
+        email addresses,
+        phone numbers,
+        or account details
+        for unit conversion.
+      </p>
+
+      <p>
+        The App may store
+        the following information
+        locally on the user's device:
+      </p>
+
       <ul>
         <li>
-          Ad SDKs may collect and process information such as the <strong>Advertising ID</strong>, device information,
-          approximate location (inferred), and app interaction data for ad delivery, measurement, and fraud prevention.
+          Conversion history and favorites
         </li>
+
         <li>
-          Data handling may vary based on Google’s policies and your settings (e.g., consent and ad personalisation controls).
+          Entered values and selected units
+        </li>
+
+        <li>
+          Decimal places, number separators,
+          and display preferences
+        </li>
+
+        <li>
+          Language and App settings
+        </li>
+
+        <li>
+          Current session preferences
+        </li>
+
+        <li>
+          Rewarded advertising exemption
+          status and expiration timestamps
         </li>
       </ul>
+
       <p>
-        For more details, please see:
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+        This data may be stored
+        using Android local
+        storage mechanisms.
       </p>
 
-      <h2>4. How We Use Information</h2>
+      <p>
+        The Developer does not
+        automatically upload
+        these records to
+        its own servers or
+        remotely access them.
+      </p>
+
+      <h2>3. Advertising and Third-Party Services</h2>
+
+      <p>
+        The App uses
+        <strong>Unity LevelPlay</strong>,
+        an advertising mediation platform,
+        to manage advertisements.
+      </p>
+
+      <p>
+        Advertisements may be delivered
+        through <strong>Unity Ads</strong>,
+        <strong>ironSource Ads</strong>,
+        and other enabled advertising networks.
+      </p>
+
+      <p>
+        Advertising formats may include
+        banners, interstitial advertisements,
+        and optional rewarded advertisements.
+      </p>
+
+      <h3>3.1 Information Processed by Advertising Services</h3>
+
+      <p>
+        Advertising providers may
+        process certain information
+        for ad delivery, measurement,
+        fraud prevention, security,
+        and related purposes.
+      </p>
+
       <ul>
-        <li>Provide unit conversion and improve user experience (history/favourites/settings restore)</li>
-        <li>Maintain app stability and quality</li>
-        <li>Display ads and measure performance (AdMob)</li>
+        <li>
+          Advertising identifiers,
+          including Android Advertising ID
+        </li>
+
+        <li>
+          IP addresses and approximate
+          location inferred from them
+        </li>
+
+        <li>
+          Device manufacturer,
+          model, operating system
+          version, and App version
+        </li>
+
+        <li>
+          App language and
+          device settings
+        </li>
+
+        <li>
+          Ad requests, impressions,
+          clicks, and interactions
+        </li>
+
+        <li>
+          Diagnostic, performance,
+          and error information
+        </li>
+
+        <li>
+          Technical information used
+          for advertising fraud
+          prevention and security
+        </li>
       </ul>
 
-      <h2>5. Sharing</h2>
       <p>
-        The developer does not sell or share your conversion history/favourites/settings stored on your device.
-        However, third-party SDKs (such as AdMob) may process data as described above for advertising purposes.
+        The categories of information
+        processed may depend on
+        device settings, region,
+        user privacy choices,
+        and enabled ad networks.
       </p>
 
-      <h2>6. Data Retention and Deletion</h2>
+      <h3>3.2 Advertising Data Processing Purposes</h3>
+
       <ul>
-        <li>Local data (history/favourites/settings) can be cleared within the App (where available) or by uninstalling the App.</li>
-        <li>Retention for data processed by third parties is governed by their respective policies.</li>
+        <li>Advertisement delivery</li>
+        <li>Advertising performance measurement</li>
+        <li>Advertisement frequency management</li>
+        <li>Advertising fraud prevention</li>
+        <li>Service security and reliability</li>
+        <li>Compliance with applicable laws</li>
       </ul>
 
-      <h2>7. Security</h2>
       <p>
-        We take reasonable measures to help protect information. However, no method of transmission or storage is 100% secure.
+        Depending on applicable laws
+        and user privacy choices,
+        information may also
+        be processed for
+        personalized advertising.
       </p>
 
-      <h2>8. Children’s Privacy</h2>
+      <h3>3.3 Advertising Privacy Choices</h3>
+
       <p>
-        The App is a general utility app and is not designed specifically for children.
+        Users may manage advertising
+        identifiers and certain
+        personalized advertising
+        settings through their
+        Android device settings.
       </p>
 
-      <h2>9. Changes to This Policy</h2>
       <p>
-        This policy may be updated from time to time due to legal, policy, or service changes.
-        Material changes will be reflected on this page.
+        Where required by applicable law,
+        appropriate consent or privacy
+        choice mechanisms must be provided.
       </p>
 
-      <h2>10. Contact</h2>
       <p>
-        For privacy-related questions, please contact the developer using the email listed on the Google Play Store listing.
+        The availability and operation
+        of these mechanisms depend on
+        the App's implementation
+        and the user's region.
       </p>
-    </section>
 
-  </main>
+      <h3>3.4 Third-Party Providers</h3>
 
-  <footer>
-    <p class="muted" style="margin:0;">
-      © Unit Converter ++ — Privacy Policy
-    </p>
-  </footer>
+      <p>
+        Unity LevelPlay manages
+        advertising mediation,
+        while advertisements may
+        be provided by enabled
+        advertising networks.
+      </p>
+
+      <p>
+        Third-party services
+        process relevant information
+        according to their respective
+        privacy policies.
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Game Player and
+            App User Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://unity.com/legal/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer">
+            Unity Privacy Policy
+          </a>
+        </li>
+      </ul>
+
+      <h2>4. How Information Is Used</h2>
+
+      <ul>
+        <li>
+          Providing unit conversion results
+        </li>
+
+        <li>
+          Restoring conversion history,
+          favorites, language,
+          and user preferences
+        </li>
+
+        <li>
+          Maintaining application
+          stability and functionality
+        </li>
+
+        <li>
+          Delivering advertisements
+          and measuring performance
+        </li>
+
+        <li>
+          Preventing advertising fraud
+          and maintaining security
+        </li>
+      </ul>
+
+      <p>
+        Locally stored conversion data
+        is separate from information
+        processed by advertising SDKs.
+      </p>
+
+      <h2>5. Rewarded Ads and Advertising Exemption</h2>
+
+      <p>
+        The App may offer optional
+        rewarded advertisements
+        that temporarily exempt users
+        from advertisements.
+      </p>
+
+      <p>
+        The duration and conditions
+        of this benefit are determined
+        by the settings displayed
+        within the App.
+      </p>
+
+      <p>
+        Exemption status and expiration
+        times may be stored locally
+        on the user's device.
+      </p>
+
+      <p>
+        The Developer does not
+        automatically upload
+        this local information
+        to its own servers.
+      </p>
+
+      <p>
+        Advertising providers may
+        process information associated
+        with rewarded advertisement
+        delivery and reward verification.
+      </p>
+
+      <h2>6. Data Sharing and Sale</h2>
+
+      <p>
+        The Developer does not
+        sell conversion history,
+        favorites, or locally
+        stored App settings.
+      </p>
+
+      <p>
+        The Developer does not
+        intentionally share these
+        local records with
+        advertising providers.
+      </p>
+
+      <p>
+        Advertising SDKs may
+        process or share
+        advertising-related information
+        according to their
+        respective privacy policies.
+      </p>
+
+      <h2>7. Data Retention and Deletion</h2>
+
+      <p>
+        Conversion history,
+        favorites, and settings
+        may be stored locally.
+      </p>
+
+      <p>
+        Users may delete
+        available records through
+        App features or Android
+        application storage settings.
+      </p>
+
+      <p>
+        Uninstalling the App
+        generally removes locally
+        stored App data.
+      </p>
+
+      <p>
+        However, Android backup and
+        restoration settings may
+        affect data retention.
+      </p>
+
+      <p>
+        Information processed
+        by advertising providers
+        is subject to their own
+        data retention policies.
+      </p>
+
+      <h2>8. Data Security</h2>
+
+      <p>
+        The Developer aims to
+        store conversion history
+        and preferences locally
+        wherever reasonably possible.
+      </p>
+
+      <p>
+        Local data benefits from
+        Android application storage
+        and access controls.
+      </p>
+
+      <p>
+        No electronic storage or
+        transmission method can
+        guarantee absolute security.
+      </p>
+
+      <h2>9. Children's Privacy</h2>
+
+      <p>
+        The App is intended for
+        general audiences and
+        is not designed specifically
+        for children.
+      </p>
+
+      <p>
+        The Developer does not
+        knowingly request or
+        directly collect
+        children's personal information.
+      </p>
+
+      <h2>10. International Data Processing</h2>
+
+      <p>
+        Unity and other advertising
+        providers may process
+        advertising-related information
+        in countries outside
+        the user's country of residence.
+      </p>
+
+      <p>
+        Such processing is governed
+        by their respective
+        privacy policies and
+        applicable safeguards.
+      </p>
+
+      <h2>11. User Rights</h2>
+
+      <p>
+        Depending on applicable laws,
+        users may have rights
+        to access, correct,
+        delete, restrict,
+        or object to the
+        processing of personal data.
+      </p>
+
+      <p>
+        Locally stored data
+        may be managed through
+        App features and
+        Android application settings.
+      </p>
+
+      <p>
+        For information processed
+        by advertising providers,
+        please consult their
+        respective privacy policies
+        and request procedures.
+      </p>
+
+      <h2>12. Changes to This Policy</h2>
+
+      <p>
+        This Privacy Policy may
+        be updated to reflect
+        changes in applicable laws,
+        App functionality,
+        advertising services,
+        or data processing practices.
+      </p>
+
+      <p>
+        Material changes may
+        be reflected through
+        an updated revision
+        date on this page.
+      </p>
+
+      <h2>13. Developer Information and Contact</h2>
+
+      <p>
+        <strong>Developer:</strong>
+        JCraft Studio
+      </p>
+
+      <p>
+        For privacy-related inquiries
+        or other questions,
+        please refer to the
+        Developer Contact information
+        available on the
+        Google Play Store listing.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p class="muted">
+    © 2026 JCraft Studio. All rights reserved.
+  </p>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  const ko = document.getElementById("ko");
+  const en = document.getElementById("en");
+
+  const btnKo = document.getElementById("btnKo");
+  const btnEn = document.getElementById("btnEn");
+
+  const STORAGE_KEY =
+    "unit_converter_privacy_language";
+
+  function setLang(language) {
+    const isKorean = language === "ko";
+
+    ko.hidden = !isKorean;
+    en.hidden = isKorean;
+
+    btnKo.classList.toggle("active", isKorean);
+    btnEn.classList.toggle("active", !isKorean);
+
+    btnKo.setAttribute(
+      "aria-pressed",
+      String(isKorean)
+    );
+
+    btnEn.setAttribute(
+      "aria-pressed",
+      String(!isKorean)
+    );
+
+    document.documentElement.lang =
+      isKorean ? "ko" : "en";
+
+    try {
+      localStorage.setItem(
+        STORAGE_KEY,
+        language
+      );
+    } catch (error) {
+      // Local storage may be unavailable.
+    }
+  }
+
+  btnKo.addEventListener("click", function () {
+    setLang("ko");
+  });
+
+  btnEn.addEventListener("click", function () {
+    setLang("en");
+  });
+
+  let savedLanguage = null;
+
+  try {
+    savedLanguage =
+      localStorage.getItem(STORAGE_KEY);
+  } catch (error) {
+    savedLanguage = null;
+  }
+
+  if (savedLanguage === "ko" ||
+      savedLanguage === "en") {
+
+    setLang(savedLanguage);
+
+  } else {
+
+    const browserLanguage = (
+      navigator.language || "en"
+    ).toLowerCase();
+
+    setLang(
+      browserLanguage.startsWith("ko")
+        ? "ko"
+        : "en"
+    );
+  }
+
+})();
+</script>
+
 </body>
 </html>
